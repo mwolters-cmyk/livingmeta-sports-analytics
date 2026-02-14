@@ -130,7 +130,7 @@ export default function Home() {
             {
               step: "1",
               title: "Monitor",
-              desc: "OpenAlex API scans 13 journals + 60+ keywords weekly",
+              desc: "OpenAlex API scans 25 journals + 90+ keywords weekly",
               icon: "&#128225;",
             },
             {
