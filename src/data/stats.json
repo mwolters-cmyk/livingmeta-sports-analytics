@@ -1,0 +1,142 @@
+{
+  "totalPapers": 39480,
+  "totalAuthors": 125209,
+  "authorsWithGender": 94438,
+  "genderPercentage": 75.4,
+  "papersWithAbstract": 10489,
+  "abstractPercentage": 26.6,
+  "journalCount": 12460,
+  "oldestPaper": "2015-01-01",
+  "newestPaper": "2026-12-19",
+  "topJournals": [
+    {
+      "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+      "count": 718
+    },
+    {
+      "journal": "Frontiers in Sports and Active Living",
+      "count": 600
+    },
+    {
+      "journal": "PLoS ONE",
+      "count": 521
+    },
+    {
+      "journal": "Journal of Sports Sciences",
+      "count": 515
+    },
+    {
+      "journal": "Journal of science and medicine in sport",
+      "count": 511
+    },
+    {
+      "journal": "Medicine & Science in Sports & Exercise",
+      "count": 509
+    },
+    {
+      "journal": "International Journal of Sports Physiology and Performance",
+      "count": 444
+    },
+    {
+      "journal": "British Journal of Sports Medicine",
+      "count": 441
+    },
+    {
+      "journal": "European Journal of Sport Science",
+      "count": 405
+    },
+    {
+      "journal": "Scientific Reports",
+      "count": 362
+    },
+    {
+      "journal": "Frontiers in Psychology",
+      "count": 301
+    },
+    {
+      "journal": "International Journal of Environmental Research and Public Health",
+      "count": 275
+    },
+    {
+      "journal": "Sustainability",
+      "count": 228
+    },
+    {
+      "journal": "K-State Research Exchange (Kansas State University)",
+      "count": 225
+    },
+    {
+      "journal": "Applied Sciences",
+      "count": 184
+    }
+  ],
+  "genderBreakdown": [
+    {
+      "gender": "male",
+      "count": 48380
+    },
+    {
+      "gender": "female",
+      "count": 35322
+    },
+    {
+      "gender": "unknown",
+      "count": 30771
+    },
+    {
+      "gender": "andy",
+      "count": 10736
+    }
+  ],
+  "yearlyPapers": [
+    {
+      "year": 2015,
+      "count": 2438
+    },
+    {
+      "year": 2016,
+      "count": 2439
+    },
+    {
+      "year": 2017,
+      "count": 2418
+    },
+    {
+      "year": 2018,
+      "count": 2414
+    },
+    {
+      "year": 2019,
+      "count": 2480
+    },
+    {
+      "year": 2020,
+      "count": 2415
+    },
+    {
+      "year": 2021,
+      "count": 2407
+    },
+    {
+      "year": 2022,
+      "count": 2417
+    },
+    {
+      "year": 2023,
+      "count": 2340
+    },
+    {
+      "year": 2024,
+      "count": 4912
+    },
+    {
+      "year": 2025,
+      "count": 9902
+    },
+    {
+      "year": 2026,
+      "count": 2898
+    }
+  ],
+  "exportedAt": "2026-02-14T09:20:01.841Z"
+}

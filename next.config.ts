@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Required for better-sqlite3 (native Node.js module)
-  serverExternalPackages: ["better-sqlite3"],
+  // Static export for Vercel — no server-side runtime needed
+  output: "export",
 };
 
 export default nextConfig;
