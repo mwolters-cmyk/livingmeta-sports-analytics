@@ -34,6 +34,7 @@ const navItems = [
   { href: "/explore", label: "Papers" },
   { href: "/trends", label: "Trends" },
   { href: "/gaps", label: "Research Gaps" },
+  { href: "/resources", label: "Resources" },
 ];
 
 export default function RootLayout({
