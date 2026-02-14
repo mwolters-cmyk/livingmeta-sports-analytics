@@ -180,6 +180,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured Analysis */}
+      <section className="bg-orange/5 px-4 py-16">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-2 text-sm font-semibold uppercase tracking-wider text-orange">
+            Featured Analysis
+          </div>
+          <h2 className="mb-3 text-2xl font-bold text-navy">
+            Living Evidence in Action
+          </h2>
+          <p className="mb-6 max-w-2xl text-gray-500">
+            Each analysis follows a living review protocol: literature review,
+            open data, transparent methods, and results that update as new
+            data arrives.
+          </p>
+
+          <Link
+            href="/analyses/lane-advantage-1000m"
+            className="block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <div className="mb-2 flex flex-wrap items-center gap-2">
+              <span className="rounded-full border border-green-300 bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800">
+                &#9679; Active
+              </span>
+              <span className="text-xs text-gray-400">
+                v1.0 &middot; 15 papers reviewed &middot; 14,774 observations
+              </span>
+            </div>
+            <h3 className="mb-1 text-lg font-bold text-navy">
+              Inner Lane Advantage in 1000m Speed Skating
+            </h3>
+            <p className="mb-3 text-sm text-gray-500">
+              Does starting in the inner lane give an unfair advantage at the
+              Olympics? A replication of Kuper et al. (2012) with 18 seasons of ISU data.
+            </p>
+            <div className="rounded-lg bg-navy/5 p-3 text-sm text-navy">
+              <strong>Key finding:</strong> No significant time advantage &mdash; but
+              inner lane winners are overrepresented (60% women, 58% men).
+            </div>
+          </Link>
+
+          <div className="mt-4 text-center">
+            <Link
+              href="/analyses"
+              className="text-sm font-medium text-orange hover:underline"
+            >
+              View all analyses &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Current status — proof it works */}
       <section className="bg-gray-50 px-4 py-16">
         <div className="mx-auto max-w-5xl">
