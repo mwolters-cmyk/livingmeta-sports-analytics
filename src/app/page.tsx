@@ -244,12 +244,18 @@ export default function Home() {
             Live data from our automated pipeline &mdash; updated after each sync cycle.
           </p>
 
-          <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-5">
             <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
               <div className="text-3xl font-bold text-orange">
                 {stats.totalPapers.toLocaleString()}
               </div>
-              <div className="mt-1 text-sm text-gray-500">Papers in database</div>
+              <div className="mt-1 text-sm text-gray-500">Papers indexed</div>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+              <div className="text-3xl font-bold text-navy">
+                {(stats.classifiedRelevant || 0).toLocaleString()}
+              </div>
+              <div className="mt-1 text-sm text-gray-500">AI-classified</div>
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
               <div className="text-3xl font-bold text-navy">
@@ -258,7 +264,9 @@ export default function Home() {
               <div className="mt-1 text-sm text-gray-500">Authors tracked</div>
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-              <div className="text-3xl font-bold text-navy">15+</div>
+              <div className="text-3xl font-bold text-navy">
+                {(stats.sportDistribution || []).length}
+              </div>
               <div className="mt-1 text-sm text-gray-500">Sports covered</div>
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
@@ -425,15 +433,16 @@ export default function Home() {
           Explore the Database
         </h2>
         <p className="mb-6 mx-auto max-w-lg text-gray-500">
-          Browse {stats.totalPapers.toLocaleString()} papers across {stats.journalCount.toLocaleString()} journals.
-          Filter by title, journal, or year. Every paper links to its DOI.
+          Browse {(stats.classifiedRelevant || 0).toLocaleString()} classified
+          papers. Filter by sport, methodology, theme, or keyword. Every paper
+          links to its DOI. Download as JSON for your own research.
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <Link
             href="/explore"
             className="rounded-lg bg-navy px-6 py-3 font-semibold text-white transition-colors hover:bg-navy-light"
           >
-            Browse Papers
+            Explore Papers
           </Link>
           <Link
             href="/trends"
@@ -441,6 +450,12 @@ export default function Home() {
           >
             View Trends
           </Link>
+          <a
+            href="/api/classifications.json"
+            className="rounded-lg border border-navy/20 px-6 py-3 font-semibold text-navy transition-colors hover:bg-navy/5"
+          >
+            Download JSON
+          </a>
         </div>
       </section>
     </div>

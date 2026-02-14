@@ -1,31 +1,56 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import recentPapersData from "@/data/recent-papers.json";
-import journalsData from "@/data/journals.json";
+import classifiedPapersData from "@/data/classified-papers.json";
+import {
+  SPORT_LABELS,
+  THEME_LABELS,
+  METHODOLOGY_LABELS,
+} from "@/lib/db";
+import type { ClassifiedPaper } from "@/lib/db";
 
-interface Paper {
-  work_id: string;
-  title: string;
-  pub_date: string | null;
-  journal: string | null;
-  cited_by_count: number;
-  abstract: string | null;
-  open_access: number;
-  doi: string | null;
-}
+const allPapers = classifiedPapersData as ClassifiedPaper[];
 
-const allPapers = recentPapersData as Paper[];
-// Only show journals that appear in our exported papers for the filter dropdown
-const paperJournals = [
-  ...new Set(allPapers.map((p) => p.journal).filter(Boolean)),
-].sort() as string[];
+// Build filter options from actual data
+const sports = [...new Set(allPapers.map((p) => p.sport))].sort();
+const themes = [...new Set(allPapers.map((p) => p.theme))].sort();
+const methodologies = [...new Set(allPapers.map((p) => p.methodology))].sort();
+
+// Color maps for badges
+const sportColors: Record<string, string> = {
+  football: "bg-green-100 text-green-800",
+  basketball: "bg-orange-100 text-orange-800",
+  tennis: "bg-yellow-100 text-yellow-800",
+  baseball: "bg-red-100 text-red-800",
+  ice_hockey: "bg-blue-100 text-blue-800",
+  athletics: "bg-purple-100 text-purple-800",
+  swimming: "bg-cyan-100 text-cyan-800",
+  cycling: "bg-lime-100 text-lime-800",
+  speed_skating: "bg-sky-100 text-sky-800",
+  volleyball: "bg-amber-100 text-amber-800",
+  rugby: "bg-emerald-100 text-emerald-800",
+  multi_sport: "bg-gray-100 text-gray-700",
+};
+
+const themeColors: Record<string, string> = {
+  performance_analysis: "bg-blue-100 text-blue-800",
+  injury_prevention: "bg-red-100 text-red-800",
+  tactical_analysis: "bg-indigo-100 text-indigo-800",
+  player_development: "bg-green-100 text-green-800",
+  psychology: "bg-violet-100 text-violet-800",
+  biomechanics: "bg-teal-100 text-teal-800",
+  physiology: "bg-pink-100 text-pink-800",
+  methodology: "bg-gray-100 text-gray-700",
+  gender_equity: "bg-fuchsia-100 text-fuchsia-800",
+  epidemiology: "bg-orange-100 text-orange-800",
+};
 
 export default function ExplorePage() {
   const [query, setQuery] = useState("");
-  const [journal, setJournal] = useState("");
-  const [yearFrom, setYearFrom] = useState("");
-  const [yearTo, setYearTo] = useState("");
+  const [sport, setSport] = useState("");
+  const [theme, setTheme] = useState("");
+  const [methodology, setMethodology] = useState("");
+  const [womenOnly, setWomenOnly] = useState(false);
   const [page, setPage] = useState(0);
   const limit = 25;
 
@@ -37,56 +62,69 @@ export default function ExplorePage() {
       results = results.filter(
         (p) =>
           (p.title && p.title.toLowerCase().includes(q)) ||
-          (p.abstract && p.abstract.toLowerCase().includes(q))
+          (p.abstract && p.abstract.toLowerCase().includes(q)) ||
+          (p.ai_summary && p.ai_summary.toLowerCase().includes(q)) ||
+          (p.sub_theme && p.sub_theme.toLowerCase().includes(q))
       );
     }
 
-    if (journal) {
-      results = results.filter((p) => p.journal === journal);
+    if (sport) {
+      results = results.filter((p) => p.sport === sport);
     }
 
-    if (yearFrom) {
-      results = results.filter(
-        (p) => p.pub_date && p.pub_date >= `${yearFrom}-01-01`
-      );
+    if (theme) {
+      results = results.filter((p) => p.theme === theme);
     }
 
-    if (yearTo) {
-      results = results.filter(
-        (p) => p.pub_date && p.pub_date <= `${yearTo}-12-31`
-      );
+    if (methodology) {
+      results = results.filter((p) => p.methodology === methodology);
+    }
+
+    if (womenOnly) {
+      results = results.filter((p) => p.is_womens_sport === 1);
     }
 
     return results;
-  }, [query, journal, yearFrom, yearTo]);
+  }, [query, sport, theme, methodology, womenOnly]);
 
   const total = filtered.length;
   const totalPages = Math.ceil(total / limit);
   const papers = filtered.slice(page * limit, (page + 1) * limit);
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
+  const resetFilters = () => {
+    setQuery("");
+    setSport("");
+    setTheme("");
+    setMethodology("");
+    setWomenOnly(false);
     setPage(0);
   };
 
+  const activeFilterCount =
+    (sport ? 1 : 0) +
+    (theme ? 1 : 0) +
+    (methodology ? 1 : 0) +
+    (womenOnly ? 1 : 0) +
+    (query ? 1 : 0);
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
-      <h1 className="mb-2 text-3xl font-bold text-navy">Explore Papers</h1>
+      <h1 className="mb-2 text-3xl font-bold text-navy">
+        Explore Classified Papers
+      </h1>
       <p className="mb-6 text-gray-500">
-        Browse the {allPapers.length.toLocaleString()} most recent sports
-        analytics research papers
+        {allPapers.length.toLocaleString()} AI-classified sports analytics
+        papers &mdash; search by sport, methodology, theme, or keyword
       </p>
 
-      {/* Search / Filters */}
-      <form
-        onSubmit={handleSearch}
-        className="mb-6 rounded-xl border border-gray-200 bg-white p-4 shadow-sm"
-      >
-        <div className="grid gap-3 md:grid-cols-5">
+      {/* Filters */}
+      <div className="mb-6 rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+        <div className="grid gap-3 md:grid-cols-6">
+          {/* Text search */}
           <div className="md:col-span-2">
             <input
               type="text"
-              placeholder="Search title or abstract..."
+              placeholder="Search title, abstract, or AI summary..."
               value={query}
               onChange={(e) => {
                 setQuery(e.target.value);
@@ -95,113 +133,188 @@ export default function ExplorePage() {
               className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-orange focus:outline-none focus:ring-1 focus:ring-orange"
             />
           </div>
+
+          {/* Sport filter */}
           <select
-            value={journal}
+            value={sport}
             onChange={(e) => {
-              setJournal(e.target.value);
+              setSport(e.target.value);
               setPage(0);
             }}
             className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-orange focus:outline-none"
           >
-            <option value="">All journals</option>
-            {paperJournals.map((j) => (
-              <option key={j} value={j}>
-                {j}
+            <option value="">All sports</option>
+            {sports.map((s) => (
+              <option key={s} value={s}>
+                {SPORT_LABELS[s] || s}
               </option>
             ))}
           </select>
-          <div className="flex gap-2">
-            <input
-              type="number"
-              placeholder="From year"
-              value={yearFrom}
-              onChange={(e) => {
-                setYearFrom(e.target.value);
-                setPage(0);
-              }}
-              min="2000"
-              max="2030"
-              className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-orange focus:outline-none"
-            />
-            <input
-              type="number"
-              placeholder="To year"
-              value={yearTo}
-              onChange={(e) => {
-                setYearTo(e.target.value);
-                setPage(0);
-              }}
-              min="2000"
-              max="2030"
-              className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-orange focus:outline-none"
-            />
-          </div>
-          <button
-            type="submit"
-            className="rounded-lg bg-navy px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-navy-light"
-          >
-            Search
-          </button>
-        </div>
-      </form>
 
-      {/* Results */}
+          {/* Theme filter */}
+          <select
+            value={theme}
+            onChange={(e) => {
+              setTheme(e.target.value);
+              setPage(0);
+            }}
+            className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-orange focus:outline-none"
+          >
+            <option value="">All themes</option>
+            {themes.map((t) => (
+              <option key={t} value={t}>
+                {THEME_LABELS[t] || t}
+              </option>
+            ))}
+          </select>
+
+          {/* Methodology filter */}
+          <select
+            value={methodology}
+            onChange={(e) => {
+              setMethodology(e.target.value);
+              setPage(0);
+            }}
+            className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-orange focus:outline-none"
+          >
+            <option value="">All methods</option>
+            {methodologies.map((m) => (
+              <option key={m} value={m}>
+                {METHODOLOGY_LABELS[m] || m}
+              </option>
+            ))}
+          </select>
+
+          {/* Women's sport toggle */}
+          <label className="flex cursor-pointer items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm">
+            <input
+              type="checkbox"
+              checked={womenOnly}
+              onChange={(e) => {
+                setWomenOnly(e.target.checked);
+                setPage(0);
+              }}
+              className="rounded text-orange focus:ring-orange"
+            />
+            <span>Women&apos;s sport</span>
+          </label>
+        </div>
+
+        {/* Active filters + reset */}
+        {activeFilterCount > 0 && (
+          <div className="mt-3 flex items-center gap-2">
+            <span className="text-xs text-gray-400">
+              {total.toLocaleString()} results
+            </span>
+            <button
+              onClick={resetFilters}
+              className="rounded-md bg-gray-100 px-2 py-1 text-xs text-gray-600 hover:bg-gray-200"
+            >
+              Clear all filters
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* Results count */}
       <div className="mb-4 text-sm text-gray-500">
         {total > 0 ? (
           <>
             Showing {page * limit + 1}&ndash;
             {Math.min((page + 1) * limit, total)} of{" "}
-            {total.toLocaleString()} results
+            {total.toLocaleString()} papers
           </>
         ) : (
           "No papers found matching your filters."
         )}
       </div>
 
+      {/* Paper cards */}
       <div className="space-y-3">
         {papers.map((p) => (
           <div
             key={p.work_id}
             className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
           >
-            <div className="flex items-start justify-between gap-4">
-              <div className="flex-1">
-                <h3 className="font-semibold text-navy">
-                  {p.doi ? (
-                    <a
-                      href={`https://doi.org/${p.doi}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-orange hover:underline"
-                    >
-                      {p.title}
-                    </a>
-                  ) : (
-                    p.title
-                  )}
-                </h3>
-                <div className="mt-1 flex flex-wrap gap-2 text-xs text-gray-400">
-                  {p.journal && (
-                    <span className="rounded bg-gray-100 px-2 py-0.5">
-                      {p.journal}
-                    </span>
-                  )}
-                  {p.pub_date && <span>{p.pub_date}</span>}
-                  {p.cited_by_count > 0 && (
-                    <span>{p.cited_by_count} citations</span>
-                  )}
-                  {p.open_access === 1 && (
-                    <span className="rounded bg-green-100 px-2 py-0.5 text-green-700">
-                      Open Access
-                    </span>
-                  )}
-                </div>
-                {p.abstract && (
-                  <p className="mt-2 text-sm text-gray-500 line-clamp-2">
-                    {p.abstract}
-                  </p>
+            <div className="flex-1">
+              {/* Title */}
+              <h3 className="font-semibold text-navy">
+                {p.doi ? (
+                  <a
+                    href={`https://doi.org/${p.doi}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-orange hover:underline"
+                  >
+                    {p.title}
+                  </a>
+                ) : (
+                  p.title
+                )}
+              </h3>
+
+              {/* Metadata row */}
+              <div className="mt-1 flex flex-wrap gap-2 text-xs text-gray-400">
+                {p.journal && (
+                  <span className="rounded bg-gray-100 px-2 py-0.5">
+                    {p.journal}
+                  </span>
+                )}
+                {p.pub_date && <span>{p.pub_date}</span>}
+                {p.cited_by_count > 0 && (
+                  <span>{p.cited_by_count} citations</span>
+                )}
+                {p.open_access === 1 && (
+                  <span className="rounded bg-green-100 px-2 py-0.5 text-green-700">
+                    Open Access
+                  </span>
                 )}
               </div>
+
+              {/* Classification badges */}
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                <span
+                  className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
+                    sportColors[p.sport] || "bg-gray-100 text-gray-700"
+                  }`}
+                >
+                  {SPORT_LABELS[p.sport] || p.sport}
+                </span>
+                <span
+                  className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
+                    themeColors[p.theme] || "bg-gray-100 text-gray-700"
+                  }`}
+                >
+                  {THEME_LABELS[p.theme] || p.theme}
+                </span>
+                <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700">
+                  {METHODOLOGY_LABELS[p.methodology] || p.methodology}
+                </span>
+                {p.is_womens_sport === 1 && (
+                  <span className="rounded-full bg-fuchsia-100 px-2.5 py-0.5 text-xs font-medium text-fuchsia-800">
+                    Women&apos;s Sport
+                  </span>
+                )}
+                {p.sub_theme && (
+                  <span className="rounded-full border border-gray-200 px-2.5 py-0.5 text-xs text-gray-500">
+                    {p.sub_theme}
+                  </span>
+                )}
+              </div>
+
+              {/* AI Summary */}
+              {p.ai_summary && (
+                <p className="mt-2 text-sm italic text-gray-600">
+                  {p.ai_summary}
+                </p>
+              )}
+
+              {/* Abstract preview (fallback if no summary) */}
+              {p.abstract && !p.ai_summary && (
+                <p className="mt-2 text-sm text-gray-500 line-clamp-2">
+                  {p.abstract}
+                </p>
+              )}
             </div>
           </div>
         ))}
@@ -229,6 +342,28 @@ export default function ExplorePage() {
           </button>
         </div>
       )}
+
+      {/* API notice */}
+      <div className="mt-8 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-4 text-center text-sm text-gray-500">
+        <p>
+          Need this data programmatically? Download the full classification
+          dataset:
+        </p>
+        <div className="mt-2 flex justify-center gap-3">
+          <a
+            href="/api/classifications.json"
+            className="rounded-lg bg-navy px-4 py-2 text-xs font-medium text-white hover:bg-navy-light"
+          >
+            classifications.json
+          </a>
+          <a
+            href="/api/summary.json"
+            className="rounded-lg border border-navy px-4 py-2 text-xs font-medium text-navy hover:bg-navy/5"
+          >
+            summary.json
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

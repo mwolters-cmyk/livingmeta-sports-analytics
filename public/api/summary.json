@@ -1,0 +1,542 @@
+{
+  "description": "Summary statistics for the Living Sports Analytics platform",
+  "exported_at": "2026-02-14T15:02:00.483Z",
+  "papers": {
+    "total": 39480,
+    "with_abstract": 10489,
+    "classified": 1688,
+    "relevant": 430
+  },
+  "authors": {
+    "total": 125209,
+    "with_gender": 94438
+  },
+  "distributions": {
+    "sport": [
+      {
+        "sport": "multi_sport",
+        "count": 178
+      },
+      {
+        "sport": "football",
+        "count": 65
+      },
+      {
+        "sport": "athletics",
+        "count": 29
+      },
+      {
+        "sport": "other",
+        "count": 29
+      },
+      {
+        "sport": "basketball",
+        "count": 25
+      },
+      {
+        "sport": "volleyball",
+        "count": 15
+      },
+      {
+        "sport": "baseball",
+        "count": 10
+      },
+      {
+        "sport": "swimming",
+        "count": 10
+      },
+      {
+        "sport": "rowing",
+        "count": 9
+      },
+      {
+        "sport": "rugby",
+        "count": 7
+      },
+      {
+        "sport": "boxing_mma",
+        "count": 6
+      },
+      {
+        "sport": "esports",
+        "count": 6
+      },
+      {
+        "sport": "handball",
+        "count": 6
+      },
+      {
+        "sport": "speed_skating",
+        "count": 6
+      },
+      {
+        "sport": "tennis",
+        "count": 6
+      },
+      {
+        "sport": "american_football",
+        "count": 4
+      },
+      {
+        "sport": "gymnastics",
+        "count": 4
+      },
+      {
+        "sport": "skiing",
+        "count": 4
+      },
+      {
+        "sport": "golf",
+        "count": 3
+      },
+      {
+        "sport": "cricket",
+        "count": 2
+      },
+      {
+        "sport": "cycling",
+        "count": 2
+      },
+      {
+        "sport": "figure_skating",
+        "count": 2
+      },
+      {
+        "sport": "ice_hockey",
+        "count": 2
+      }
+    ],
+    "methodology": [
+      {
+        "methodology": "statistical",
+        "count": 210
+      },
+      {
+        "methodology": "review",
+        "count": 56
+      },
+      {
+        "methodology": "qualitative",
+        "count": 47
+      },
+      {
+        "methodology": "descriptive",
+        "count": 39
+      },
+      {
+        "methodology": "mixed_methods",
+        "count": 26
+      },
+      {
+        "methodology": "meta_analysis",
+        "count": 13
+      },
+      {
+        "methodology": "machine_learning",
+        "count": 13
+      },
+      {
+        "methodology": "deep_learning",
+        "count": 9
+      },
+      {
+        "methodology": "other",
+        "count": 8
+      },
+      {
+        "methodology": "simulation",
+        "count": 5
+      },
+      {
+        "methodology": "computer_vision",
+        "count": 3
+      },
+      {
+        "methodology": "optimization",
+        "count": 1
+      }
+    ],
+    "theme": [
+      {
+        "theme": "injury_prevention",
+        "count": 114
+      },
+      {
+        "theme": "performance_analysis",
+        "count": 68
+      },
+      {
+        "theme": "player_development",
+        "count": 40
+      },
+      {
+        "theme": "psychology",
+        "count": 40
+      },
+      {
+        "theme": "physiology",
+        "count": 28
+      },
+      {
+        "theme": "methodology",
+        "count": 23
+      },
+      {
+        "theme": "gender_equity",
+        "count": 21
+      },
+      {
+        "theme": "biomechanics",
+        "count": 18
+      },
+      {
+        "theme": "nutrition_recovery",
+        "count": 16
+      },
+      {
+        "theme": "epidemiology",
+        "count": 14
+      },
+      {
+        "theme": "coaching",
+        "count": 13
+      },
+      {
+        "theme": "tactical_analysis",
+        "count": 10
+      },
+      {
+        "theme": "other",
+        "count": 8
+      },
+      {
+        "theme": "data_engineering",
+        "count": 7
+      },
+      {
+        "theme": "fan_engagement",
+        "count": 5
+      },
+      {
+        "theme": "bias_detection",
+        "count": 2
+      },
+      {
+        "theme": "player_valuation",
+        "count": 2
+      },
+      {
+        "theme": "betting_markets",
+        "count": 1
+      }
+    ],
+    "data_type": [
+      {
+        "data_type": "mixed",
+        "count": 97
+      },
+      {
+        "data_type": "survey",
+        "count": 94
+      },
+      {
+        "data_type": "physiological",
+        "count": 84
+      },
+      {
+        "data_type": "not_specified",
+        "count": 39
+      },
+      {
+        "data_type": "tracking",
+        "count": 38
+      },
+      {
+        "data_type": "event",
+        "count": 35
+      },
+      {
+        "data_type": "text",
+        "count": 24
+      },
+      {
+        "data_type": "video",
+        "count": 19
+      }
+    ]
+  },
+  "womens_sport": 103,
+  "trends": {
+    "sport_by_year": [
+      {
+        "year": 2026,
+        "sport": "multi_sport",
+        "count": 178
+      },
+      {
+        "year": 2026,
+        "sport": "football",
+        "count": 65
+      },
+      {
+        "year": 2026,
+        "sport": "other",
+        "count": 29
+      },
+      {
+        "year": 2026,
+        "sport": "athletics",
+        "count": 29
+      },
+      {
+        "year": 2026,
+        "sport": "basketball",
+        "count": 25
+      },
+      {
+        "year": 2026,
+        "sport": "volleyball",
+        "count": 15
+      },
+      {
+        "year": 2026,
+        "sport": "swimming",
+        "count": 10
+      },
+      {
+        "year": 2026,
+        "sport": "baseball",
+        "count": 10
+      },
+      {
+        "year": 2026,
+        "sport": "rowing",
+        "count": 9
+      },
+      {
+        "year": 2026,
+        "sport": "rugby",
+        "count": 7
+      },
+      {
+        "year": 2026,
+        "sport": "tennis",
+        "count": 6
+      },
+      {
+        "year": 2026,
+        "sport": "speed_skating",
+        "count": 6
+      },
+      {
+        "year": 2026,
+        "sport": "handball",
+        "count": 6
+      },
+      {
+        "year": 2026,
+        "sport": "esports",
+        "count": 6
+      },
+      {
+        "year": 2026,
+        "sport": "boxing_mma",
+        "count": 6
+      },
+      {
+        "year": 2026,
+        "sport": "skiing",
+        "count": 4
+      },
+      {
+        "year": 2026,
+        "sport": "gymnastics",
+        "count": 4
+      },
+      {
+        "year": 2026,
+        "sport": "american_football",
+        "count": 4
+      },
+      {
+        "year": 2026,
+        "sport": "golf",
+        "count": 3
+      },
+      {
+        "year": 2026,
+        "sport": "ice_hockey",
+        "count": 2
+      },
+      {
+        "year": 2026,
+        "sport": "figure_skating",
+        "count": 2
+      },
+      {
+        "year": 2026,
+        "sport": "cycling",
+        "count": 2
+      },
+      {
+        "year": 2026,
+        "sport": "cricket",
+        "count": 2
+      }
+    ],
+    "methodology_by_year": [
+      {
+        "year": 2026,
+        "methodology": "statistical",
+        "count": 210
+      },
+      {
+        "year": 2026,
+        "methodology": "review",
+        "count": 56
+      },
+      {
+        "year": 2026,
+        "methodology": "qualitative",
+        "count": 47
+      },
+      {
+        "year": 2026,
+        "methodology": "descriptive",
+        "count": 39
+      },
+      {
+        "year": 2026,
+        "methodology": "mixed_methods",
+        "count": 26
+      },
+      {
+        "year": 2026,
+        "methodology": "meta_analysis",
+        "count": 13
+      },
+      {
+        "year": 2026,
+        "methodology": "machine_learning",
+        "count": 13
+      },
+      {
+        "year": 2026,
+        "methodology": "deep_learning",
+        "count": 9
+      },
+      {
+        "year": 2026,
+        "methodology": "other",
+        "count": 8
+      },
+      {
+        "year": 2026,
+        "methodology": "simulation",
+        "count": 5
+      },
+      {
+        "year": 2026,
+        "methodology": "computer_vision",
+        "count": 3
+      },
+      {
+        "year": 2026,
+        "methodology": "optimization",
+        "count": 1
+      }
+    ],
+    "theme_by_year": [
+      {
+        "year": 2026,
+        "theme": "injury_prevention",
+        "count": 114
+      },
+      {
+        "year": 2026,
+        "theme": "performance_analysis",
+        "count": 68
+      },
+      {
+        "year": 2026,
+        "theme": "psychology",
+        "count": 40
+      },
+      {
+        "year": 2026,
+        "theme": "player_development",
+        "count": 40
+      },
+      {
+        "year": 2026,
+        "theme": "physiology",
+        "count": 28
+      },
+      {
+        "year": 2026,
+        "theme": "methodology",
+        "count": 23
+      },
+      {
+        "year": 2026,
+        "theme": "gender_equity",
+        "count": 21
+      },
+      {
+        "year": 2026,
+        "theme": "biomechanics",
+        "count": 18
+      },
+      {
+        "year": 2026,
+        "theme": "nutrition_recovery",
+        "count": 16
+      },
+      {
+        "year": 2026,
+        "theme": "epidemiology",
+        "count": 14
+      },
+      {
+        "year": 2026,
+        "theme": "coaching",
+        "count": 13
+      },
+      {
+        "year": 2026,
+        "theme": "tactical_analysis",
+        "count": 10
+      },
+      {
+        "year": 2026,
+        "theme": "other",
+        "count": 8
+      },
+      {
+        "year": 2026,
+        "theme": "data_engineering",
+        "count": 7
+      },
+      {
+        "year": 2026,
+        "theme": "fan_engagement",
+        "count": 5
+      },
+      {
+        "year": 2026,
+        "theme": "player_valuation",
+        "count": 2
+      },
+      {
+        "year": 2026,
+        "theme": "bias_detection",
+        "count": 2
+      },
+      {
+        "year": 2026,
+        "theme": "betting_markets",
+        "count": 1
+      }
+    ]
+  }
+}

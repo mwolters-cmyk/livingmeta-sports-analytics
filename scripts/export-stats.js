@@ -11,13 +11,17 @@ const fs = require("fs");
 
 const DB_PATH = path.join(__dirname, "..", "..", "data", "living_meta.db");
 const OUTPUT_DIR = path.join(__dirname, "..", "src", "data");
+const PUBLIC_DIR = path.join(__dirname, "..", "public", "api");
 
 console.log(`Reading database from: ${DB_PATH}`);
 
 const db = new Database(DB_PATH, { readonly: true });
 db.pragma("journal_mode = WAL");
 
-// Export stats
+// =============================================================================
+// BASIC STATS (existing)
+// =============================================================================
+
 const totalPapers = db.prepare("SELECT COUNT(*) as c FROM papers").get().c;
 const totalAuthors = db.prepare("SELECT COUNT(*) as c FROM authors").get().c;
 const authorsWithGender = db
@@ -66,34 +70,170 @@ const journalCount = db
   )
   .get().c;
 
+// =============================================================================
+// CLASSIFICATION STATS (new)
+// =============================================================================
+
+const totalClassified = db
+  .prepare("SELECT COUNT(*) as c FROM classifications")
+  .get().c;
+
+const classifiedRelevant = db
+  .prepare(
+    "SELECT COUNT(*) as c FROM classifications WHERE sport != 'not_applicable'"
+  )
+  .get().c;
+
+// Sport distribution (excluding not_applicable)
+const sportDistribution = db
+  .prepare(
+    `SELECT sport, COUNT(*) as count
+     FROM classifications
+     WHERE sport != 'not_applicable'
+     GROUP BY sport ORDER BY count DESC`
+  )
+  .all();
+
+// Methodology distribution (only relevant papers)
+const methodologyDistribution = db
+  .prepare(
+    `SELECT methodology, COUNT(*) as count
+     FROM classifications
+     WHERE sport != 'not_applicable'
+     GROUP BY methodology ORDER BY count DESC`
+  )
+  .all();
+
+// Theme distribution (only relevant papers)
+const themeDistribution = db
+  .prepare(
+    `SELECT theme, COUNT(*) as count
+     FROM classifications
+     WHERE sport != 'not_applicable'
+     GROUP BY theme ORDER BY count DESC`
+  )
+  .all();
+
+// Women's sport count
+const womensSportCount = db
+  .prepare(
+    "SELECT COUNT(*) as c FROM classifications WHERE is_womens_sport = 1 AND sport != 'not_applicable'"
+  )
+  .get().c;
+
+// Data type distribution
+const dataTypeDistribution = db
+  .prepare(
+    `SELECT data_type, COUNT(*) as count
+     FROM classifications
+     WHERE sport != 'not_applicable'
+     GROUP BY data_type ORDER BY count DESC`
+  )
+  .all();
+
+// Sport x year (for trend charts)
+const sportByYear = db
+  .prepare(
+    `SELECT p.pub_year as year, c.sport, COUNT(*) as count
+     FROM classifications c
+     JOIN papers p ON c.paper_id = p.work_id
+     WHERE c.sport != 'not_applicable' AND p.pub_year IS NOT NULL AND p.pub_year >= 2014
+     GROUP BY p.pub_year, c.sport
+     ORDER BY p.pub_year, count DESC`
+  )
+  .all();
+
+// Methodology x year
+const methodologyByYear = db
+  .prepare(
+    `SELECT p.pub_year as year, c.methodology, COUNT(*) as count
+     FROM classifications c
+     JOIN papers p ON c.paper_id = p.work_id
+     WHERE c.sport != 'not_applicable' AND p.pub_year IS NOT NULL AND p.pub_year >= 2014
+     GROUP BY p.pub_year, c.methodology
+     ORDER BY p.pub_year, count DESC`
+  )
+  .all();
+
+// Theme x year
+const themeByYear = db
+  .prepare(
+    `SELECT p.pub_year as year, c.theme, COUNT(*) as count
+     FROM classifications c
+     JOIN papers p ON c.paper_id = p.work_id
+     WHERE c.sport != 'not_applicable' AND p.pub_year IS NOT NULL AND p.pub_year >= 2014
+     GROUP BY p.pub_year, c.theme
+     ORDER BY p.pub_year, count DESC`
+  )
+  .all();
+
+// Top sub-themes
+const topSubThemes = db
+  .prepare(
+    `SELECT sub_theme, COUNT(*) as count
+     FROM classifications
+     WHERE sport != 'not_applicable' AND sub_theme IS NOT NULL AND sub_theme != ''
+     GROUP BY sub_theme ORDER BY count DESC LIMIT 30`
+  )
+  .all();
+
+// =============================================================================
+// BUILD STATS OBJECT
+// =============================================================================
+
 const stats = {
   totalPapers,
   totalAuthors,
   authorsWithGender,
-  genderPercentage: Math.round((authorsWithGender / totalAuthors) * 1000) / 10,
+  genderPercentage:
+    Math.round((authorsWithGender / totalAuthors) * 1000) / 10,
   papersWithAbstract,
-  abstractPercentage: Math.round((papersWithAbstract / totalPapers) * 1000) / 10,
+  abstractPercentage:
+    Math.round((papersWithAbstract / totalPapers) * 1000) / 10,
   journalCount,
   oldestPaper: dateRange.oldest || "N/A",
   newestPaper: dateRange.newest || "N/A",
   topJournals,
   genderBreakdown,
   yearlyPapers,
+  // Classification stats
+  totalClassified,
+  classifiedRelevant,
+  classifiedNotApplicable: totalClassified - classifiedRelevant,
+  womensSportCount,
+  sportDistribution,
+  methodologyDistribution,
+  themeDistribution,
+  dataTypeDistribution,
+  topSubThemes,
+  sportByYear,
+  methodologyByYear,
+  themeByYear,
   exportedAt: new Date().toISOString(),
 };
 
-// Export recent papers (top 500 by date, for static explore page)
-const recentPapers = db
+// =============================================================================
+// CLASSIFIED PAPERS (for explore page — all relevant classified papers)
+// =============================================================================
+
+const classifiedPapers = db
   .prepare(
-    `SELECT work_id, title, pub_date, journal_name as journal, cited_by_count,
-            SUBSTR(abstract, 1, 300) as abstract, open_access, doi
-     FROM papers
-     ORDER BY pub_date DESC, cited_by_count DESC
-     LIMIT 500`
+    `SELECT p.work_id, p.title, p.pub_date, p.journal_name as journal,
+            p.cited_by_count, SUBSTR(p.abstract, 1, 300) as abstract,
+            p.open_access, p.doi, p.pub_year,
+            c.sport, c.methodology, c.theme, c.sub_theme,
+            c.is_womens_sport, c.data_type, c.summary as ai_summary
+     FROM classifications c
+     JOIN papers p ON c.paper_id = p.work_id
+     WHERE c.sport != 'not_applicable'
+     ORDER BY p.pub_date DESC, p.cited_by_count DESC`
   )
   .all();
 
-// Export journal list
+// =============================================================================
+// EXPORT JOURNAL LIST
+// =============================================================================
+
 const journals = db
   .prepare(
     `SELECT DISTINCT journal_name as journal FROM papers
@@ -103,20 +243,29 @@ const journals = db
   .all()
   .map((r) => r.journal);
 
-// Write files
-fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+// =============================================================================
+// WRITE FILES
+// =============================================================================
 
+fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+fs.mkdirSync(PUBLIC_DIR, { recursive: true });
+
+// Internal data files (imported by Next.js pages)
 fs.writeFileSync(
   path.join(OUTPUT_DIR, "stats.json"),
   JSON.stringify(stats, null, 2)
 );
-console.log(`Exported stats: ${totalPapers} papers, ${totalAuthors} authors`);
+console.log(
+  `Exported stats: ${totalPapers} papers, ${totalAuthors} authors, ${totalClassified} classified`
+);
 
 fs.writeFileSync(
-  path.join(OUTPUT_DIR, "recent-papers.json"),
-  JSON.stringify(recentPapers)
+  path.join(OUTPUT_DIR, "classified-papers.json"),
+  JSON.stringify(classifiedPapers)
 );
-console.log(`Exported ${recentPapers.length} recent papers`);
+console.log(
+  `Exported ${classifiedPapers.length} classified papers (relevant only)`
+);
 
 fs.writeFileSync(
   path.join(OUTPUT_DIR, "journals.json"),
@@ -124,5 +273,98 @@ fs.writeFileSync(
 );
 console.log(`Exported ${journals.length} journals`);
 
-console.log(`\nAll data exported to: ${OUTPUT_DIR}`);
+// =============================================================================
+// PUBLIC API FILES (downloadable by AI agents, researchers, students)
+// =============================================================================
+
+// Full classification export with all fields
+const fullClassifications = db
+  .prepare(
+    `SELECT p.work_id, p.doi, p.title, p.pub_date, p.pub_year,
+            p.journal_name as journal, p.cited_by_count, p.open_access,
+            c.sport, c.methodology, c.theme, c.sub_theme,
+            c.is_womens_sport, c.data_type, c.summary,
+            c.relevance_json, c.classified_by, c.classified_at
+     FROM classifications c
+     JOIN papers p ON c.paper_id = p.work_id
+     ORDER BY p.pub_date DESC`
+  )
+  .all()
+  .map((r) => ({
+    ...r,
+    relevance: r.relevance_json ? JSON.parse(r.relevance_json) : null,
+    relevance_json: undefined,
+  }));
+
+fs.writeFileSync(
+  path.join(PUBLIC_DIR, "classifications.json"),
+  JSON.stringify({
+    description:
+      "AI-classified sports analytics research papers from the Living Sports Analytics platform",
+    source: "https://living-sports-analytics.vercel.app",
+    github:
+      "https://github.com/mwolters-cmyk/living-sports-analytics-research",
+    license: "CC-BY-4.0",
+    exported_at: new Date().toISOString(),
+    total: fullClassifications.length,
+    relevant: fullClassifications.filter(
+      (r) => r.sport !== "not_applicable"
+    ).length,
+    schema: {
+      sport:
+        "Primary sport (football, basketball, tennis, etc. or not_applicable for non-sport papers)",
+      methodology:
+        "Research methodology (statistical, machine_learning, deep_learning, review, etc.)",
+      theme:
+        "Research theme (performance_analysis, injury_prevention, tactical_analysis, etc.)",
+      is_womens_sport: "Whether the study focuses on women's/girls' sport",
+      data_type: "Primary data type (event, tracking, video, survey, etc.)",
+      summary: "AI-generated one-sentence summary of the key finding",
+      relevance:
+        "Relevance scores (0-10) for sports_analytics, sports_medicine, sports_management",
+    },
+    data: fullClassifications,
+  })
+);
+console.log(
+  `Exported public API: ${fullClassifications.length} classifications`
+);
+
+// Compact summary for quick consumption
+const summaryApi = {
+  description: "Summary statistics for the Living Sports Analytics platform",
+  exported_at: new Date().toISOString(),
+  papers: {
+    total: totalPapers,
+    with_abstract: papersWithAbstract,
+    classified: totalClassified,
+    relevant: classifiedRelevant,
+  },
+  authors: {
+    total: totalAuthors,
+    with_gender: authorsWithGender,
+  },
+  distributions: {
+    sport: sportDistribution,
+    methodology: methodologyDistribution,
+    theme: themeDistribution,
+    data_type: dataTypeDistribution,
+  },
+  womens_sport: womensSportCount,
+  trends: {
+    sport_by_year: sportByYear,
+    methodology_by_year: methodologyByYear,
+    theme_by_year: themeByYear,
+  },
+};
+
+fs.writeFileSync(
+  path.join(PUBLIC_DIR, "summary.json"),
+  JSON.stringify(summaryApi, null, 2)
+);
+console.log("Exported public API summary");
+
+console.log(`\nAll data exported to:`);
+console.log(`  Internal: ${OUTPUT_DIR}`);
+console.log(`  Public API: ${PUBLIC_DIR}`);
 db.close();
