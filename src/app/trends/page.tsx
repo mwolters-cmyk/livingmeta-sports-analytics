@@ -86,62 +86,6 @@ export default function TrendsPage() {
         </div>
       </section>
 
-      {/* Gender overview */}
-      <section className="mb-10">
-        <h2 className="mb-4 text-xl font-semibold text-navy">
-          Author Gender Distribution
-        </h2>
-        <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-          <div className="mb-4 flex h-8 overflow-hidden rounded-full">
-            {stats.genderBreakdown.map((g) => {
-              const pct = (g.count / stats.totalAuthors) * 100;
-              const colors: Record<string, string> = {
-                male: "bg-blue-500",
-                mostly_male: "bg-blue-300",
-                female: "bg-pink-500",
-                mostly_female: "bg-pink-300",
-                andy: "bg-yellow-400",
-                unknown: "bg-gray-300",
-              };
-              return (
-                <div
-                  key={g.gender}
-                  className={`${colors[g.gender] || "bg-gray-400"} transition-all`}
-                  style={{ width: `${pct}%` }}
-                  title={`${g.gender}: ${g.count.toLocaleString()} (${pct.toFixed(1)}%)`}
-                />
-              );
-            })}
-          </div>
-          <div className="flex flex-wrap gap-4 text-sm">
-            {stats.genderBreakdown.map((g) => {
-              const pct = ((g.count / stats.totalAuthors) * 100).toFixed(1);
-              const dots: Record<string, string> = {
-                male: "text-blue-500",
-                mostly_male: "text-blue-300",
-                female: "text-pink-500",
-                mostly_female: "text-pink-300",
-                andy: "text-yellow-400",
-                unknown: "text-gray-300",
-              };
-              return (
-                <div key={g.gender} className="flex items-center gap-1">
-                  <span className={`text-lg ${dots[g.gender] || "text-gray-400"}`}>
-                    &#9679;
-                  </span>
-                  <span className="capitalize text-gray-600">
-                    {g.gender.replace("_", " ")}
-                  </span>
-                  <span className="text-gray-400">
-                    ({g.count.toLocaleString()}, {pct}%)
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* Coming soon */}
       <section className="rounded-xl border border-dashed border-gray-300 bg-white p-8 text-center">
         <h2 className="mb-2 text-lg font-semibold text-navy">

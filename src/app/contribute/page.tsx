@@ -1,7 +1,7 @@
-export default function GettingStartedPage() {
+export default function ContributePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
-      <h1 className="mb-2 text-3xl font-bold text-navy">Getting Started</h1>
+      <h1 className="mb-2 text-3xl font-bold text-navy">Contribute</h1>
       <p className="mb-8 text-gray-500">
         Three ways to contribute to the Living Sports Analytics platform
       </p>
@@ -126,8 +126,9 @@ export default function GettingStartedPage() {
         </div>
         <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
           <p className="mb-4 text-sm text-gray-600">
-            Students at RSM can use this platform as the foundation for their thesis. Each project
-            has a clear scope, available data, and expected deliverables.
+            BSc and MSc students at RSM can use this platform as the foundation for their thesis.
+            Each project has a clear scope, available data, and expected deliverables. Theses build
+            on a real platform &mdash; not a throwaway assignment.
           </p>
 
           <div className="space-y-3">
@@ -143,11 +144,6 @@ export default function GettingStartedPage() {
                 desc: "Apply NLP topic modeling (LDA, BERTopic) to 39K+ paper abstracts to discover emerging research themes.",
               },
               {
-                title: "Citation Network Gender Analysis",
-                level: "BSc/MSc",
-                desc: "Do papers about women's sport receive fewer citations? Analyze 125K+ author records with citation data.",
-              },
-              {
                 title: "Generic Elo Rating Framework",
                 level: "BSc",
                 desc: "Build a sport-agnostic Elo rating system that can be configured for any competitive sport.",
@@ -161,6 +157,11 @@ export default function GettingStartedPage() {
                 title: "Injury Prediction Literature Synthesis",
                 level: "BSc/MSc",
                 desc: "Systematic analysis of injury prediction papers: which methods work best for which sports?",
+              },
+              {
+                title: "Methodology Evolution Tracker",
+                level: "BSc/MSc",
+                desc: "Trace the shift from statistical to ML to deep learning to LLM methods in sports analytics over time.",
               },
             ].map((proj) => (
               <div

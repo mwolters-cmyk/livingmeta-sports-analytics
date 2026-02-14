@@ -28,11 +28,11 @@ export const metadata: Metadata = {
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/explore", label: "Explore Papers" },
+  { href: "/about", label: "How It Works" },
+  { href: "/contribute", label: "Contribute" },
+  { href: "/explore", label: "Papers" },
   { href: "/trends", label: "Trends" },
   { href: "/gaps", label: "Research Gaps" },
-  { href: "/getting-started", label: "Getting Started" },
-  { href: "/about", label: "About" },
 ];
 
 export default function RootLayout({

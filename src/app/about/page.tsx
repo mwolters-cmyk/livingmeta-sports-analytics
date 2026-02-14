@@ -12,6 +12,10 @@ export default function AboutPage() {
           updated as new evidence becomes available. Unlike traditional reviews that become outdated
           within months, living reviews maintain an always-current picture of the research landscape.
         </p>
+        <p className="mb-3 text-gray-600 leading-relaxed">
+          This approach exists in clinical medicine &mdash; Cochrane&apos;s Living Systematic Reviews,
+          COVID-NMA, and the Australian Living Evidence Collaboration are well-known examples.
+        </p>
         <p className="text-gray-600 leading-relaxed">
           This is the <strong>first living review platform in sports analytics</strong>. It
           automatically monitors academic databases, classifies new publications, and updates
@@ -31,7 +35,7 @@ export default function AboutPage() {
             {
               step: "2",
               title: "Enrich",
-              desc: "We fetch abstracts, infer author gender using the gender-guesser library, and normalize metadata (institutions, countries, concepts).",
+              desc: "We fetch abstracts, normalize metadata (institutions, countries, concepts), and link papers to our operational sport datasets where relevant.",
             },
             {
               step: "3",
@@ -41,12 +45,12 @@ export default function AboutPage() {
             {
               step: "4",
               title: "Analyze",
-              desc: "Automated meta-analysis computes publication trends, methodology evolution, gender ratios, citation networks, and identifies research gaps.",
+              desc: "Automated meta-analysis computes publication trends, methodology evolution, citation networks, and identifies research gaps.",
             },
             {
               step: "5",
               title: "Publish",
-              desc: "Results are published on this website and the interactive dashboard, updated automatically after each sync cycle.",
+              desc: "Results are published on this website, updated automatically after each sync cycle. The database is open for download and exploration.",
             },
           ].map((s) => (
             <div key={s.step} className="flex gap-4 rounded-lg border border-gray-200 bg-white p-4">
@@ -88,10 +92,10 @@ export default function AboutPage() {
         <h2 className="mb-4 text-xl font-semibold text-navy">Technology Stack</h2>
         <div className="grid gap-3 md:grid-cols-3">
           {[
-            { cat: "Data Pipeline", items: "Python, SQLite, OpenAlex API, gender-guesser" },
+            { cat: "Data Pipeline", items: "Python, SQLite, OpenAlex API" },
             { cat: "AI Classification", items: "Claude API (Anthropic), batch processing" },
             { cat: "Website", items: "Next.js, Tailwind CSS, Vercel" },
-            { cat: "Dashboard", items: "Streamlit, Plotly" },
+            { cat: "Dashboard", items: "Streamlit, Plotly (planned)" },
             { cat: "Automation", items: "GitHub Actions (weekly sync)" },
             { cat: "Collaboration", items: "Claude Code, GitHub PRs, CLAUDE.md" },
           ].map((t) => (
@@ -127,10 +131,10 @@ export default function AboutPage() {
           This platform is designed for collaboration. Students, researchers, and developers are welcome.
         </p>
         <Link
-          href="/getting-started"
+          href="/contribute"
           className="inline-block rounded-lg bg-orange px-6 py-3 font-semibold text-white transition-colors hover:bg-orange-light"
         >
-          Getting Started Guide
+          Contribution Guide
         </Link>
       </section>
     </div>
