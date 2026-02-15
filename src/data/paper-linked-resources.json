@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-15T23:20:02.410326",
-  "total_papers": 763,
-  "total_resources": 378,
-  "resources_skipped_no_url": 5407,
+  "generated_at": "2026-02-15T23:22:54.499005",
+  "total_papers": 773,
+  "total_resources": 364,
+  "resources_skipped_no_url": 5465,
   "resources": [
     {
       "name": "basketball-reference.com",
@@ -821,48 +821,6 @@
       "paper_count": 2
     },
     {
-      "name": "Google Scholar",
-      "url": "https://scholar.google.com",
-      "type": "bibliographic_database",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4390815199",
-          "title": "Quantitative analysis of professional basketball: A qualitative discussion",
-          "sport": "basketball",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W7117651259",
-          "title": "Performance and Health in Combined Events: A Scoping Review",
-          "sport": "athletics",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W7118516888",
-          "title": "Variability of Energy System Contributions in Basketball Across Playing Positions, Phases of Play, and Competition Levels: A Systematic Review",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W7125212040",
-          "title": "Impact of mental and physiological fatigue on attentional focus in basketball players: a systematic review",
-          "sport": "basketball",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W7128609913",
-          "title": "An Examination of the Performance Relationship Between Athletics Throwing Events and Anthropometric Characteristics Based on Branch-Specific Determinant Structural Factors",
-          "sport": "athletics",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 5
-    },
-    {
       "name": "Polar API",
       "url": "https://www.polar.com/",
       "type": "api",
@@ -1009,6 +967,35 @@
       ],
       "url_status": "verified",
       "paper_count": 2
+    },
+    {
+      "name": "IAAF Competition Records and Protocols",
+      "url": "https://www.iaaf.org/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W2991365398",
+          "title": "The Performance Gap in Sport Can Help Determine Which Movements Were Most Essential to Human Evolution",
+          "sport": "athletics",
+          "year": 2019
+        },
+        {
+          "work_id": "https://openalex.org/W4405453454",
+          "title": "Relative Age Effect Among World-Class Jump Athletes",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W3036948793",
+          "title": "Analysis and characteristics of results, achieved by short-distance runners (100-200m) at the major competitive events in 1992-2019",
+          "sport": "athletics",
+          "year": 2019
+        }
+      ],
+      "paper_count": 3
     },
     {
       "name": "SPSS",
@@ -1242,42 +1229,6 @@
         }
       ],
       "paper_count": 2
-    },
-    {
-      "name": "MEDLINE via PubMed",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7117651259",
-          "title": "Performance and Health in Combined Events: A Scoping Review",
-          "sport": "athletics",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W7124448490",
-          "title": "Cuantificación de la carga externa en baloncesto mediante WIMU Pro: una revisión sistemática",
-          "sport": "basketball",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W7128594415",
-          "title": "Are Specific Performance Factors Influenced by Stress-Related Sleep Disturbances in Basketball Players? A PRISMA-Guided Descriptive and Qualitative Systematic Review",
-          "sport": "basketball",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W7128609913",
-          "title": "An Examination of the Performance Relationship Between Athletics Throwing Events and Anthropometric Characteristics Based on Branch-Specific Determinant Structural Factors",
-          "sport": "athletics",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 4
     },
     {
       "name": "statista.com",
@@ -1635,27 +1586,21 @@
       "paper_count": 3
     },
     {
-      "name": "IAAF Competition Records and Protocols",
-      "url": "https://www.iaaf.org/",
+      "name": "external transcriptomic datasets (Pillon et al. 2020 meta-analysis)",
+      "url": "www.metamex.eu",
       "type": "open_dataset",
       "access": "fully_open",
-      "platform": null,
+      "platform": "GEO (Gene Expression Omnibus)",
       "category": "dataset",
       "papers": [
         {
-          "work_id": "https://openalex.org/W2991365398",
-          "title": "The Performance Gap in Sport Can Help Determine Which Movements Were Most Essential to Human Evolution",
-          "sport": "athletics",
-          "year": 2019
-        },
-        {
-          "work_id": "https://openalex.org/W3036948793",
-          "title": "Analysis and characteristics of results, achieved by short-distance runners (100-200m) at the major competitive events in 1992-2019",
-          "sport": "athletics",
-          "year": 2019
+          "work_id": "https://openalex.org/W3116895538",
+          "title": "Exhaustive Exercise and Post-exercise Protein Plus Carbohydrate Supplementation Affect Plasma and Urine Concentrations of Sulfur Amino Acids, the Ratio of Methionine to Homocysteine and Glutathione in Elite Male Cyclists",
+          "sport": "cycling",
+          "year": 2020
         }
       ],
-      "paper_count": 2
+      "paper_count": 1
     },
     {
       "name": "Android SDK",
@@ -1800,23 +1745,6 @@
       ],
       "url_status": "verified",
       "paper_count": 2
-    },
-    {
-      "name": "Twitter/X social media platform",
-      "url": "https://twitter.com",
-      "type": "social_media",
-      "access": "public",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4396589245",
-          "title": "From Tweet to Conflict: Critical Discourse Analysis on Daryl Morey's Tweet about Hong Kong Protest",
-          "sport": "basketball",
-          "year": 2024
-        }
-      ],
-      "paper_count": 1
     },
     {
       "name": "Fitlight technology system",
@@ -2705,27 +2633,6 @@
         }
       ],
       "url_status": "verified",
-      "paper_count": 2
-    },
-    {
-      "name": "ggrain",
-      "url": "https://doi.org/10.32614/CRAN.package.ggrain",
-      "type": "library",
-      "category": "library",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7128323779",
-          "title": "National-standard middle-distance runners maintain 1500 m time trial running performance on successive days",
-          "sport": "athletics",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W7128542929",
-          "title": "National‐Standard Middle‐Distance Runners Maintain 1500 m Time Trial Running Performance on Successive Days",
-          "sport": "athletics",
-          "year": 2026
-        }
-      ],
       "paper_count": 2
     },
     {
@@ -4024,16 +3931,14 @@
       "paper_count": 1
     },
     {
-      "name": "Synthetic IMU data, ground truth joint angle trajectories, and ground truth S2S parameters (Online Resource 2)",
-      "url": "https://doi.org/10.1007/s12283-024-00483-3",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "Springer Online",
-      "category": "dataset",
+      "name": "Hiplot",
+      "url": "www.hiplot.com.cn",
+      "type": "software_tool",
+      "category": "tool",
       "papers": [
         {
-          "work_id": "https://openalex.org/W4405702019",
-          "title": "Simulating effects of sensor-to-segment alignment errors on IMU-based estimates of lower limb joint angles during running",
+          "work_id": "https://openalex.org/W4405453454",
+          "title": "Relative Age Effect Among World-Class Jump Athletes",
           "sport": "athletics",
           "year": 2024
         }
@@ -4091,23 +3996,6 @@
       "paper_count": 1
     },
     {
-      "name": "Sanchez et al. (2023) - Positional Movement Demands during NFL Football Games: A 3-Year Review",
-      "url": "https://doi.org/10.3390/app13169278",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4406270121",
-          "title": "Implementing the Reverse Acute to Chronic Workload Ratio Model to Improve Movement Capacity and Roster Availability: An Example Using Data from the NFL",
-          "sport": "american_football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "Code repo: Fractional tackles: leveraging player tracking dat",
       "url": "https://github.com/qntkhvn/tackle",
       "type": "code_repository",
@@ -4151,22 +4039,6 @@
           "work_id": "https://openalex.org/W4406677735",
           "title": "Combining Smartphone Inertial Sensors and Machine Learning Algorithms to Estimate Power Variables in Standing Long Jump",
           "sport": "athletics",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "SHAP (SHapley Additive exPlanations)",
-      "url": "https://arxiv.org/abs/1705.07874v2",
-      "type": "library",
-      "category": "library",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4406925909",
-          "title": "When should a runner on third base advance? Analyzing factors that influence the success of sacrifice flies in US Major League Baseball games",
-          "sport": "baseball",
           "year": 2025
         }
       ],
@@ -4457,23 +4329,6 @@
           "work_id": "https://openalex.org/W4409976233",
           "title": "A study on the key predictors of 100m sprint performance: identification and ranking",
           "sport": "athletics",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "Betke, Carl. Sports Promotion in the Western Canadian City: The Example of Early Edmonton",
-      "url": "https://doi.org/10.7202/1018956ar",
-      "type": "journal_article",
-      "access": "open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4410029085",
-          "title": "From Dunking to Dead Ball",
-          "sport": "basketball",
           "year": 2025
         }
       ],
@@ -5773,23 +5628,6 @@
       "paper_count": 1
     },
     {
-      "name": "Zenodo digital database",
-      "url": "https://doi.org/10.5281/zenodo.10377112",
-      "type": "open_dataset",
-      "access": "upon_request",
-      "platform": "Zenodo",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4414673938",
-          "title": "Effect of Contextual Interference and Differential Learning on Motor Skill Development and Motivation in Novice Basketball Players",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "Hawkin Cloud data warehousing and export",
       "url": "cloud.hawkindynamics.com",
       "type": "proprietary_dataset",
@@ -5815,23 +5653,6 @@
         {
           "work_id": "https://openalex.org/W4414817433",
           "title": "Unlocking Basketball Athletic Performance: Countermovement Jump Rebound (CMJ-RE) Normative Reference Values Derived from Force Plate Data Across Seven NCAA Division-I Power Five Men’s College Basketball Teams",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "Custom dataset - ACL injury prediction",
-      "url": "https://doi.org/10.5281/zenodo.16930816",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "Zenodo",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4415169931",
-          "title": "Prediction of ACL injury incidence and analysis of key features in basketball players based on multi-algorithm models",
           "sport": "basketball",
           "year": 2025
         }
@@ -6192,23 +6013,6 @@
       "paper_count": 1
     },
     {
-      "name": "Science Data Bank - anonymized data and supplementary materials",
-      "url": "https://doi.org/10.57760/sciencedb.29824",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "Science Data Bank",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7117113221",
-          "title": "Coaching beyond gender: a mixed-methods study of relational quality and mental toughness in adolescent female basketball players in Turkey",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "Rayyan",
       "url": "https://new.rayyan.ai",
       "type": "platform",
@@ -6270,23 +6074,6 @@
         }
       ],
       "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "International Journal of Sports and Physical Education (IJSPE)",
-      "url": "http://dx.doi.org/10.20431/2454-6380.1101001",
-      "type": "academic_journal",
-      "access": "open_with_registration",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7119894908",
-          "title": "Women's Cricket World Cup Victory and a Lingering Doubt",
-          "sport": "cricket",
-          "year": 2026
-        }
-      ],
       "paper_count": 1
     },
     {
@@ -6468,24 +6255,6 @@
       "type": "legal_document",
       "access": "fully_open",
       "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7128471103",
-          "title": "Sex testing in women's sport: historical harms, contemporary risks, and World Athletics' 2025 policy shift",
-          "sport": "athletics",
-          "year": 2026
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Supplementary Material Files",
-      "url": "https://www.frontiersin.org/articles/10.3389/fspor.2025.1723127/full#supplementary-material",
-      "type": "supplementary_documents",
-      "access": "fully_open",
-      "platform": "Frontiers in Sports and Active Living",
       "category": "dataset",
       "papers": [
         {
@@ -6742,23 +6511,6 @@
       "paper_count": 1
     },
     {
-      "name": "USC Research Bank",
-      "url": "http://dx.doi.org/10.4227/39/55e790119f54f",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "USC Research Bank",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W1866889851",
-          "title": "Influence of Yo-Yo IR2 Scores on Internal and External Workloads and Fatigue Responses of Tag Football Players during Tournament Competition",
-          "sport": "american_football",
-          "year": 2015
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "Novo Basquete Brasil (NBB) - Official competition website",
       "url": "www.lnb.com.br",
       "type": "open_dataset",
@@ -6873,24 +6625,6 @@
           "title": "The Embodied Experience of a Football Championship Subdivision Student-Athlete",
           "sport": "american_football",
           "year": 2017
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Facebook",
-      "url": "https://www.facebook.com",
-      "type": "software_tool",
-      "access": "fully_open",
-      "platform": "Facebook",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2889456783",
-          "title": "Protocol for a gender-sensitised weight loss and healthy living programme for overweight and obese men delivered in Australian football league settings (Aussie-FIT): A feasibility and pilot randomised controlled trial",
-          "sport": "american_football",
-          "year": 2018
         }
       ],
       "url_status": "verified",
@@ -7019,23 +6753,6 @@
         }
       ],
       "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "2017 Black Voter Project (BVP) Pilot Study",
-      "url": "https://doi.org/10.7910/DVN/LGLTN2",
-      "type": "survey",
-      "access": "open_with_registration",
-      "platform": "Harvard Dataverse",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2970921632",
-          "title": "Shut Up and Play: Black Athletes, Protest Politics, and Black Political Action",
-          "sport": "american_football",
-          "year": 2019
-        }
-      ],
       "paper_count": 1
     },
     {

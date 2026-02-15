@@ -30,12 +30,12 @@ export const metadata: Metadata = {
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/explore", label: "Papers" },
+  { href: "/resources", label: "Resources" },
   { href: "/trends", label: "Trends" },
   { href: "/gaps", label: "Research Gaps" },
   { href: "/analyses", label: "Analyses" },
   { href: "/methodology", label: "Methodology" },
   { href: "/contribute", label: "Contribute" },
-  { href: "/resources", label: "Resources" },
 ];
 
 export default function RootLayout({
