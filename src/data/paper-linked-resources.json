@@ -1,17 +1,47 @@
 {
-  "generated_at": "2026-02-15T20:30:34.986656",
-  "total_papers": 565,
-  "total_resources": 299,
-  "resources_skipped_no_url": 4150,
+  "generated_at": "2026-02-15T22:57:59.189129",
+  "total_papers": 724,
+  "total_resources": 362,
+  "resources_skipped_no_url": 5183,
   "resources": [
     {
-      "name": "Basketballreference.com",
+      "name": "basketball-reference.com",
       "url": "https://www.basketball-reference.com",
-      "type": "proprietary_dataset",
-      "access": "open_with_registration",
+      "type": "open_dataset",
+      "access": "fully_open",
       "platform": null,
       "category": "dataset",
       "papers": [
+        {
+          "work_id": "https://openalex.org/W4390933438",
+          "title": "Evidence of good and bad player momentum between games in basketball",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4391883999",
+          "title": "Injury Patterns and Impact on Performance in the NBA League Using Sports Analytics",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4395065959",
+          "title": "Performance Differences in Elite National Basketball Association and Women’s National Basketball Association Players Based Upon Whether the Dominant or Non-dominant Achilles Tendon Was Ruptured",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4401610480",
+          "title": "The Three-Point Revolution: A Profound Impact on NBA Game Strategy",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4405569364",
+          "title": "On predicting an NBA game outcome from half-time statistics",
+          "sport": "basketball",
+          "year": 2024
+        },
         {
           "work_id": "https://openalex.org/W4407988403",
           "title": "Evaluating Market Disparities: A Comparative Study of the NBA and WNBA Ecosystems",
@@ -67,32 +97,44 @@
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W4408967593",
-          "title": "Applying the Four Factors to the WNBA and Exploring Shared Leadership as a Fifth Factor",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4414473946",
-          "title": "Offensive efficiency and traditional positional roles in Hungarian basketball: an empirical analysis",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
           "work_id": "https://openalex.org/W4414223133",
           "title": "Rethinking the strongest link: VAL, ratings, and team success in Hungarian basketball",
           "sport": "basketball",
           "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4408967593",
+          "title": "Applying the Four Factors to the WNBA and Exploring Shared Leadership as a Fifth Factor",
+          "sport": "basketball",
+          "year": 2025
         }
       ],
-      "paper_count": 12
+      "paper_count": 16
     },
     {
       "name": "R",
-      "url": "https://www.r-project.org/",
+      "url": "https://www.R-project.org/",
       "type": "programming_language",
       "category": "tool",
       "papers": [
+        {
+          "work_id": "https://openalex.org/W4390588824",
+          "title": "Comparing Self-Reported Running Distance and Pace With a Commercial Fitness Watch Data: Reliability Study",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4396552536",
+          "title": "Effects of the Flying Start on Estimated Short Sprint Profiles Using Timing Gates",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4396814116",
+          "title": "Filling the gaps: A multiple imputation approach to estimating aging curves in baseball",
+          "sport": "baseball",
+          "year": 2024
+        },
         {
           "work_id": "https://openalex.org/W4406613379",
           "title": "A model-based approach to shot charts estimation in basketball",
@@ -142,16 +184,16 @@
           "year": 2025
         },
         {
+          "work_id": "https://openalex.org/W7117879332",
+          "title": "Prevalence of Hamstring Injuries in Collegiate Softball Players and Comparison to Collegiate Baseball Players",
+          "sport": "baseball",
+          "year": 2025
+        },
+        {
           "work_id": "https://openalex.org/W2884713724",
           "title": "Regional Differences in Women’s Basketball: A Comparison among Continental Championships",
           "sport": "basketball",
           "year": 2018
-        },
-        {
-          "work_id": "https://openalex.org/W4396814116",
-          "title": "Filling the gaps: A multiple imputation approach to estimating aging curves in baseball",
-          "sport": "baseball",
-          "year": 2024
         },
         {
           "work_id": "https://openalex.org/W4408090152",
@@ -161,16 +203,82 @@
         }
       ],
       "url_status": "verified",
-      "paper_count": 11
+      "paper_count": 14
     },
     {
-      "name": "NBA.com",
-      "url": "http://www.nba.com",
-      "type": "web_scraping",
+      "name": "World Athletics",
+      "url": "worldathletics.org/athletes",
+      "type": "government_data",
       "access": "fully_open",
       "platform": null,
       "category": "dataset",
       "papers": [
+        {
+          "work_id": "https://openalex.org/W4408926403",
+          "title": "Performance prediction and athlete categorization using the anaerobic speed reserve in 400m sprinters",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4413431795",
+          "title": "Birthplace Altitude and Long-Distance Running Medals: An Ecologic Analysis of Olympic and World Championship Data",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4417058006",
+          "title": "Performance Prediction and Athlete categorization using the Anaerobic Power Reserve Framework in Rowing",
+          "sport": "rowing",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7118707828",
+          "title": "Thrown off balance: left-handers are under-represented in elite throwing sports",
+          "sport": "athletics",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W7128468061",
+          "title": "Commercial Running Spaces on the Reproduction of Gender Inequality",
+          "sport": "athletics",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W4410675883",
+          "title": "The influence of track curvature on the running stride structure of a sprinter athlete in an indoor arena",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4412365686",
+          "title": "How to Cope with High Temperature and Humidity – The Guidelines for Marathon Organizers",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7128471103",
+          "title": "Sex testing in women's sport: historical harms, contemporary risks, and World Athletics' 2025 policy shift",
+          "sport": "athletics",
+          "year": 2026
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 8
+    },
+    {
+      "name": "Stats.NBA.com",
+      "url": "https://www.nba.com/",
+      "type": "api",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4392967462",
+          "title": "An innovative method for accurate NBA player performance forecasting and line-up optimization in daily fantasy sports",
+          "sport": "basketball",
+          "year": 2024
+        },
         {
           "work_id": "https://openalex.org/W4410748736",
           "title": "National Basketball Association Players’ Return to Play and Performance After Operative Treatment of Meniscal Tears",
@@ -214,28 +322,172 @@
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W4408820632",
-          "title": "A Data Mining Approach to Identify NBA Player Quarter-by-Quarter Performance Patterns",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4414473946",
-          "title": "Offensive efficiency and traditional positional roles in Hungarian basketball: an empirical analysis",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
           "work_id": "https://openalex.org/W4410600350",
           "title": "Efficient Statistical Computation for K-Player Basketball Lineups Using Semilattice Structures",
           "sport": "basketball",
           "year": 2025
         }
       ],
-      "paper_count": 10
+      "paper_count": 9
     },
     {
-      "name": "Baseball Savant",
+      "name": "FIBA World Rankings",
+      "url": "https://www.fiba.basketball",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7118274183",
+          "title": "The relative age effect in Brazilian national basketball teams over time",
+          "sport": "basketball",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W2884713724",
+          "title": "Regional Differences in Women’s Basketball: A Comparison among Continental Championships",
+          "sport": "basketball",
+          "year": 2018
+        },
+        {
+          "work_id": "https://openalex.org/W4313325669",
+          "title": "Solutions for The Lack of Social Attention on The Chinese Women's Basketball Team",
+          "sport": "basketball",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W4390815199",
+          "title": "Quantitative analysis of professional basketball: A qualitative discussion",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4410839945",
+          "title": "Game-related statistics and performance trends in the FIBA Under-17 Basketball World Cup",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 5
+    },
+    {
+      "name": "ESPN Cricinfo - Cricket information and statistics",
+      "url": "https://www.espncricinfo.com",
+      "type": "web_scraping",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390827763",
+          "title": "Winner prediction in an ongoing one day international cricket match",
+          "sport": "cricket",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4396519610",
+          "title": "Predicting Team Success in the Indian Premier League Cricket 2024 Season Using Random Forest Analysis",
+          "sport": "cricket",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4413131869",
+          "title": "Comparative Analysis of Players in T-20 International Cricket Using Survival Analysis",
+          "sport": "cricket",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4415466776",
+          "title": "Does the backlift also matter in female cricket? A biomechanical investigation among local and international female cricket batters",
+          "sport": "cricket",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7127599910",
+          "title": "How Data Analytics Has Transformed Player Selection in Franchise Cricket: Evidence from the IPL",
+          "sport": "cricket",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W4200167319",
+          "title": "Oculomotor Behavior Predict Professional Cricket Batting and Bowling Performance",
+          "sport": "cricket",
+          "year": 2021
+        },
+        {
+          "work_id": "https://openalex.org/W4404448473",
+          "title": "Analysis of performance in English women’s domestic Twenty20 cricket",
+          "sport": "cricket",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 7
+    },
+    {
+      "name": "ESPN",
+      "url": "www.ESPN.com",
+      "type": "proprietary_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4408557862",
+          "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4411285363",
+          "title": "College-to-NFL Stadium Turf Transitions as a Risk Factor for Lower Extremity Non-Contact Injuries in Rookie Players: A 13-Year Cohort Analysis",
+          "sport": "american_football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4286615937",
+          "title": "Concussions in the Women’s National Basketball Association: Analysis of Incidence, Return-to-Play Timing, and Player Performance From 1997 to 2020",
+          "sport": "basketball",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W4391883999",
+          "title": "Injury Patterns and Impact on Performance in the NBA League Using Sports Analytics",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4413313707",
+          "title": "Sports Analytics for Evaluating Injury Impact on NBA Performance",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4401422166",
+          "title": "APPLICATION OF THE AHP METHOD IN SELECTING BASEBALL PITCHERS",
+          "sport": "baseball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4406613379",
+          "title": "A model-based approach to shot charts estimation in basketball",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4412811219",
+          "title": "A predictive metamodel for college football",
+          "sport": "american_football",
+          "year": 2025
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 8
+    },
+    {
+      "name": "Statcast data",
       "url": "https://baseballsavant.mlb.com",
       "type": "open_dataset",
       "access": "fully_open",
@@ -273,20 +525,67 @@
           "year": 2025
         },
         {
+          "work_id": "https://openalex.org/W4399282537",
+          "title": "Introducing Grid WAR: rethinking WAR for starting pitchers",
+          "sport": "baseball",
+          "year": 2024
+        },
+        {
           "work_id": "https://openalex.org/W4406925909",
           "title": "When should a runner on third base advance? Analyzing factors that influence the success of sacrifice flies in US Major League Baseball games",
           "sport": "baseball",
           "year": 2025
-        },
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 7
+    },
+    {
+      "name": "FanGraphs WAR (FIP)",
+      "url": "https://www.fangraphs.com/",
+      "type": "proprietary_dataset",
+      "access": "open_with_registration",
+      "platform": "not_stated",
+      "category": "dataset",
+      "papers": [
         {
           "work_id": "https://openalex.org/W4399282537",
           "title": "Introducing Grid WAR: rethinking WAR for starting pitchers",
           "sport": "baseball",
           "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4406244847",
+          "title": "Machine Learning Approach to Baseball Player Assessment using KNN, Logistic Regression, and Gaussian Naive Bayes",
+          "sport": "baseball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4409942617",
+          "title": "Machine Learning in Baseball Analytics: Sabermetrics and Beyond",
+          "sport": "baseball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4411151928",
+          "title": "Fielding before and after baseball's great transformation",
+          "sport": "baseball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4415764539",
+          "title": "The Impact of the Pitch Clock on UCL Surgery Rates and Performance in Major League Baseball Pitchers",
+          "sport": "baseball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4413961931",
+          "title": "Temporary employment and the protection of investments in human capital: Examining the Major League Baseball player market",
+          "sport": "baseball",
+          "year": 2025
         }
       ],
-      "url_status": "verified",
-      "paper_count": 7
+      "paper_count": 6
     },
     {
       "name": "nba_api Python Library",
@@ -319,162 +618,76 @@
       "paper_count": 3
     },
     {
-      "name": "World Athletics",
-      "url": "worldathletics.org/athletes",
-      "type": "government_data",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
+      "name": "MATLAB",
+      "url": "https://www.mathworks.com/",
+      "type": "programming_language",
+      "category": "tool",
       "papers": [
         {
-          "work_id": "https://openalex.org/W4408926403",
-          "title": "Performance prediction and athlete categorization using the anaerobic speed reserve in 400m sprinters",
+          "work_id": "https://openalex.org/W4391365435",
+          "title": "Human‐in‐the‐loop optimized rocker profile of running shoes to enhance ankle work and running economy",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4399921193",
+          "title": "Muscle morphological changes and enhanced sprint running performance: A 1‐year observational study of well‐trained sprinters",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4405702019",
+          "title": "Simulating effects of sensor-to-segment alignment errors on IMU-based estimates of lower limb joint angles during running",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4406677735",
+          "title": "Combining Smartphone Inertial Sensors and Machine Learning Algorithms to Estimate Power Variables in Standing Long Jump",
           "sport": "athletics",
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W4417058006",
-          "title": "Performance Prediction and Athlete categorization using the Anaerobic Power Reserve Framework in Rowing",
-          "sport": "rowing",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W7118707828",
-          "title": "Thrown off balance: left-handers are under-represented in elite throwing sports",
-          "sport": "athletics",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W7128468061",
-          "title": "Commercial Running Spaces on the Reproduction of Gender Inequality",
-          "sport": "athletics",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W4410675883",
-          "title": "The influence of track curvature on the running stride structure of a sprinter athlete in an indoor arena",
+          "work_id": "https://openalex.org/W4415272698",
+          "title": "Durability of physiological and biomechanical variables during a marathon",
           "sport": "athletics",
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W4412365686",
-          "title": "How to Cope with High Temperature and Humidity – The Guidelines for Marathon Organizers",
+          "work_id": "https://openalex.org/W4409955799",
+          "title": "A comparison between common measurement systems for quantifying spatiotemporal variables during the early sprint acceleration phase",
           "sport": "athletics",
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W7128471103",
-          "title": "Sex testing in women's sport: historical harms, contemporary risks, and World Athletics' 2025 policy shift",
-          "sport": "athletics",
-          "year": 2026
+          "work_id": "https://openalex.org/W4410489682",
+          "title": "Radar image processing application based on space cloud computing in basketball game guidance camera",
+          "sport": "basketball",
+          "year": 2025
         }
       ],
       "url_status": "verified",
       "paper_count": 7
     },
     {
-      "name": "ESPNcricinfo",
-      "url": "https://www.espncricinfo.com",
+      "name": "pro-football-reference.com",
+      "url": "https://www.pro-football-reference.com",
       "type": "web_scraping",
-      "access": "fully_open",
+      "access": "open_with_registration",
       "platform": null,
       "category": "dataset",
       "papers": [
         {
-          "work_id": "https://openalex.org/W4413131869",
-          "title": "Comparative Analysis of Players in T-20 International Cricket Using Survival Analysis",
-          "sport": "cricket",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4415466776",
-          "title": "Does the backlift also matter in female cricket? A biomechanical investigation among local and international female cricket batters",
-          "sport": "cricket",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W7127599910",
-          "title": "How Data Analytics Has Transformed Player Selection in Franchise Cricket: Evidence from the IPL",
-          "sport": "cricket",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W4200167319",
-          "title": "Oculomotor Behavior Predict Professional Cricket Batting and Bowling Performance",
-          "sport": "cricket",
-          "year": 2021
-        },
-        {
-          "work_id": "https://openalex.org/W4390827763",
-          "title": "Winner prediction in an ongoing one day international cricket match",
-          "sport": "cricket",
+          "work_id": "https://openalex.org/W4401276487",
+          "title": "Does Draft Currency Promote Competitive Balance? An Empirical Investigation of the National Football League 2002–2021",
+          "sport": "american_football",
           "year": 2024
         },
         {
-          "work_id": "https://openalex.org/W4396519610",
-          "title": "Predicting Team Success in the Indian Premier League Cricket 2024 Season Using Random Forest Analysis",
-          "sport": "cricket",
+          "work_id": "https://openalex.org/W4405260642",
+          "title": "Forecasting Stadium Attendance Using Machine Learning Models: A Case of the National Football League",
+          "sport": "american_football",
           "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4404448473",
-          "title": "Analysis of performance in English women’s domestic Twenty20 cricket",
-          "sport": "cricket",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 7
-    },
-    {
-      "name": "FIBA World Rankings",
-      "url": "https://www.fiba.basketball",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7118274183",
-          "title": "The relative age effect in Brazilian national basketball teams over time",
-          "sport": "basketball",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W2884713724",
-          "title": "Regional Differences in Women’s Basketball: A Comparison among Continental Championships",
-          "sport": "basketball",
-          "year": 2018
-        },
-        {
-          "work_id": "https://openalex.org/W4313325669",
-          "title": "Solutions for The Lack of Social Attention on The Chinese Women's Basketball Team",
-          "sport": "basketball",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4410839945",
-          "title": "Game-related statistics and performance trends in the FIBA Under-17 Basketball World Cup",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 4
-    },
-    {
-      "name": "ESPN",
-      "url": "www.ESPN.com",
-      "type": "proprietary_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4408557862",
-          "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
-          "sport": "basketball",
-          "year": 2025
         },
         {
           "work_id": "https://openalex.org/W4411285363",
@@ -483,41 +696,73 @@
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W4286615937",
-          "title": "Concussions in the Women’s National Basketball Association: Analysis of Incidence, Return-to-Play Timing, and Player Performance From 1997 to 2020",
-          "sport": "basketball",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4406613379",
-          "title": "A model-based approach to shot charts estimation in basketball",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4412811219",
-          "title": "A predictive metamodel for college football",
+          "work_id": "https://openalex.org/W4414086638",
+          "title": "Redefining the draft pick valuation in the National Football League",
           "sport": "american_football",
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W4413313707",
-          "title": "Sports Analytics for Evaluating Injury Impact on NBA Performance",
-          "sport": "basketball",
+          "work_id": "https://openalex.org/W4414261973",
+          "title": "Advancing NFL win prediction: from Pythagorean formulas to machine learning algorithms",
+          "sport": "american_football",
           "year": 2025
         }
       ],
-      "url_status": "verified",
-      "paper_count": 6
+      "paper_count": 5
+    },
+    {
+      "name": "Randomizer.org",
+      "url": "https://www.randomizer.org",
+      "type": "platform",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4391036445",
+          "title": "Changes in running economy and running technique following 6 months of running with and without wearable‐based real‐time feedback",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4406247739",
+          "title": "Impact of Caffeine Intake on Female Basketball Players’ Performance",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4411765446",
+          "title": "Sports bra tightness affects respiratory muscle fatigue, breathing pattern, and perceptual responses during running",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4412163663",
+          "title": "Self‐Regulated Moderate Intensity Habitual Exercise and Next‐Day Resting Metabolic Rate in Male Endurance Athletes: Implications for Athlete Testing",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4414204807",
+          "title": "Physical Fitness in World-Class Shot Put Para Athletes During Six Months of Training: A Longitudinal Case Report",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
+      "paper_count": 5
     },
     {
       "name": "Retrosheet",
       "url": "https://retrosheet.org/",
       "type": "open_dataset",
       "access": "fully_open",
-      "platform": null,
+      "platform": "not_stated",
       "category": "dataset",
       "papers": [
+        {
+          "work_id": "https://openalex.org/W4399282537",
+          "title": "Introducing Grid WAR: rethinking WAR for starting pitchers",
+          "sport": "baseball",
+          "year": 2024
+        },
         {
           "work_id": "https://openalex.org/W7126046152",
           "title": "A Monte Carlo simulation of baseball offense with speed-stratified baserunning and distributional validation",
@@ -529,12 +774,6 @@
           "title": "Double steals in Major League Baseball",
           "sport": "baseball",
           "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W4399282537",
-          "title": "Introducing Grid WAR: rethinking WAR for starting pitchers",
-          "sport": "baseball",
-          "year": 2024
         },
         {
           "work_id": "https://openalex.org/W4409487186",
@@ -585,8 +824,8 @@
           "year": 2024
         },
         {
-          "work_id": "https://openalex.org/W4402407614",
-          "title": "The Ballpark Effect: Spatial-Data-Driven Insights into Baseball’s Local Economic Impact",
+          "work_id": "https://openalex.org/W4399282537",
+          "title": "Introducing Grid WAR: rethinking WAR for starting pitchers",
           "sport": "baseball",
           "year": 2024
         }
@@ -594,20 +833,69 @@
       "paper_count": 6
     },
     {
-      "name": "AWS Lambda",
-      "url": "https://aws.amazon.com/lambda/",
-      "type": "platform",
-      "category": "tool",
+      "name": "Hawkin Dynamics software",
+      "url": "https://www.hawkindynamics.com/",
+      "type": "sensor_device",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
       "papers": [
         {
-          "work_id": "https://openalex.org/W7116711884",
-          "title": "Architectural Design of an IoT-Enabled Real-Time Athlete Monitoring System: A Multi-Sensor Integration Framework",
+          "work_id": "https://openalex.org/W4413902271",
+          "title": "Comparison of lower-body neuromuscular performance profiles between 100 m and 400 m Olympic sprinters",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4414817433",
+          "title": "Unlocking Basketball Athletic Performance: Countermovement Jump Rebound (CMJ-RE) Normative Reference Values Derived from Force Plate Data Across Seven NCAA Division-I Power Five Men’s College Basketball Teams",
           "sport": "basketball",
           "year": 2025
         }
       ],
+      "paper_count": 2
+    },
+    {
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com",
+      "type": "bibliographic_database",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390815199",
+          "title": "Quantitative analysis of professional basketball: A qualitative discussion",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W7117651259",
+          "title": "Performance and Health in Combined Events: A Scoping Review",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7118516888",
+          "title": "Variability of Energy System Contributions in Basketball Across Playing Positions, Phases of Play, and Competition Levels: A Systematic Review",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7125212040",
+          "title": "Impact of mental and physiological fatigue on attentional focus in basketball players: a systematic review",
+          "sport": "basketball",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W7128609913",
+          "title": "An Examination of the Performance Relationship Between Athletics Throwing Events and Anthropometric Characteristics Based on Branch-Specific Determinant Structural Factors",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
       "url_status": "verified",
-      "paper_count": 1
+      "paper_count": 5
     },
     {
       "name": "Stryd PowerCenter",
@@ -699,162 +987,172 @@
       "paper_count": 2
     },
     {
-      "name": "FanGraphs",
-      "url": "https://www.fangraphs.com",
-      "type": "open_dataset",
-      "access": "open_with_registration",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4409942617",
-          "title": "Machine Learning in Baseball Analytics: Sabermetrics and Beyond",
-          "sport": "baseball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4411151928",
-          "title": "Fielding before and after baseball's great transformation",
-          "sport": "baseball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4415764539",
-          "title": "The Impact of the Pitch Clock on UCL Surgery Rates and Performance in Major League Baseball Pitchers",
-          "sport": "baseball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4406244847",
-          "title": "Machine Learning Approach to Baseball Player Assessment using KNN, Logistic Regression, and Gaussian Naive Bayes",
-          "sport": "baseball",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4413961931",
-          "title": "Temporary employment and the protection of investments in human capital: Examining the Major League Baseball player market",
-          "sport": "baseball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 5
-    },
-    {
-      "name": "Pro-Football-Reference",
-      "url": "https://www.pro-football-reference.com/",
-      "type": "open_dataset",
+      "name": "Google Earth Pro",
+      "url": "https://www.google.com",
+      "type": "survey",
       "access": "fully_open",
       "platform": null,
       "category": "dataset",
       "papers": [
         {
-          "work_id": "https://openalex.org/W4411285363",
-          "title": "College-to-NFL Stadium Turf Transitions as a Risk Factor for Lower Extremity Non-Contact Injuries in Rookie Players: A 13-Year Cohort Analysis",
-          "sport": "american_football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4414086638",
-          "title": "Redefining the draft pick valuation in the National Football League",
-          "sport": "american_football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4414261973",
-          "title": "Advancing NFL win prediction: from Pythagorean formulas to machine learning algorithms",
-          "sport": "american_football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4401276487",
-          "title": "Does Draft Currency Promote Competitive Balance? An Empirical Investigation of the National Football League 2002–2021",
-          "sport": "american_football",
-          "year": 2024
-        }
-      ],
-      "paper_count": 4
-    },
-    {
-      "name": "MATLAB",
-      "url": "https://www.mathworks.com/",
-      "type": "programming_language",
-      "category": "tool",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4406677735",
-          "title": "Combining Smartphone Inertial Sensors and Machine Learning Algorithms to Estimate Power Variables in Standing Long Jump",
-          "sport": "athletics",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4415272698",
-          "title": "Durability of physiological and biomechanical variables during a marathon",
-          "sport": "athletics",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4409955799",
-          "title": "A comparison between common measurement systems for quantifying spatiotemporal variables during the early sprint acceleration phase",
-          "sport": "athletics",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4410489682",
-          "title": "Radar image processing application based on space cloud computing in basketball game guidance camera",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 4
-    },
-    {
-      "name": "Research Randomizer",
-      "url": "www.randomizer.org",
-      "type": "software_tool",
-      "category": "tool",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4406247739",
-          "title": "Impact of Caffeine Intake on Female Basketball Players’ Performance",
+          "work_id": "https://openalex.org/W4413048285",
+          "title": "Youth Basketball Players' Awareness and Experiences of Sports‐Related Traumatic Dental Injuries and Mouthguards in Turkey: A Cross‐Sectional Study",
           "sport": "basketball",
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W4411765446",
-          "title": "Sports bra tightness affects respiratory muscle fatigue, breathing pattern, and perceptual responses during running",
+          "work_id": "https://openalex.org/W4413431795",
+          "title": "Birthplace Altitude and Long-Distance Running Medals: An Ecologic Analysis of Olympic and World Championship Data",
           "sport": "athletics",
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W4412163663",
-          "title": "Self‐Regulated Moderate Intensity Habitual Exercise and Next‐Day Resting Metabolic Rate in Male Endurance Athletes: Implications for Athlete Testing",
-          "sport": "athletics",
-          "year": 2025
+          "work_id": "https://openalex.org/W4286615937",
+          "title": "Concussions in the Women’s National Basketball Association: Analysis of Incidence, Return-to-Play Timing, and Player Performance From 1997 to 2020",
+          "sport": "basketball",
+          "year": 2022
         }
       ],
       "url_status": "verified",
       "paper_count": 3
     },
     {
-      "name": "Sprint Speed metric",
-      "url": "https://www.mlb.com/",
+      "name": "Open Science Framework",
+      "url": "https://osf.io/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "OSF",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390588824",
+          "title": "Comparing Self-Reported Running Distance and Pace With a Commercial Fitness Watch Data: Reliability Study",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4396552536",
+          "title": "Effects of the Flying Start on Estimated Short Sprint Profiles Using Timing Gates",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W7122843687",
+          "title": "Profiling measures of muscle strength and power throughout a 156 km ultra-trail running event",
+          "sport": "athletics",
+          "year": 2026
+        }
+      ],
+      "paper_count": 3
+    },
+    {
+      "name": "Polar API",
+      "url": "https://www.polar.com/",
       "type": "api",
-      "access": "open_with_registration",
+      "access": "upon_request",
       "platform": null,
       "category": "dataset",
       "papers": [
         {
-          "work_id": "https://openalex.org/W2901284829",
-          "title": "Characteristics of Relative Age Effects and Anthropometric Data in Japanese Recreational and Elite Male Junior Baseball Players",
-          "sport": "baseball",
-          "year": 2018
+          "work_id": "https://openalex.org/W4390970225",
+          "title": "Enhancing Running Exercise With IoT, Blockchain, and Heart Rate Adaptive Running Music",
+          "sport": "athletics",
+          "year": 2024
         },
+        {
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 2
+    },
+    {
+      "name": "SPSS",
+      "url": "https://www.ibm.com/spss",
+      "type": "statistical_package",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399921193",
+          "title": "Muscle morphological changes and enhanced sprint running performance: A 1‐year observational study of well‐trained sprinters",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4391365435",
+          "title": "Human‐in‐the‐loop optimized rocker profile of running shoes to enhance ankle work and running economy",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4409955799",
+          "title": "A comparison between common measurement systems for quantifying spatiotemporal variables during the early sprint acceleration phase",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
+      "paper_count": 4
+    },
+    {
+      "name": "spm1D",
+      "url": "www.spm1d.org",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4391365435",
+          "title": "Human‐in‐the‐loop optimized rocker profile of running shoes to enhance ankle work and running economy",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4408778760",
+          "title": "The effect of increased strength on ball release speed and front foot contact-phase technique in elite male cricket fast bowlers",
+          "sport": "cricket",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4410977692",
+          "title": "A Comparison of Inswing and Outswing Bowling Arm Kinematics of Pathway and Elite Male Fast Bowlers",
+          "sport": "cricket",
+          "year": 2025
+        }
+      ],
+      "paper_count": 3
+    },
+    {
+      "name": "Sprint Speed metric",
+      "url": "https://www.mlb.com",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
         {
           "work_id": "https://openalex.org/W4393181806",
           "title": "Predicting Team Advancement in Major League Baseball Postseason Using Borda Count",
           "sport": "baseball",
           "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4401422166",
+          "title": "APPLICATION OF THE AHP METHOD IN SELECTING BASEBALL PITCHERS",
+          "sport": "baseball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W2901284829",
+          "title": "Characteristics of Relative Age Effects and Anthropometric Data in Japanese Recreational and Elite Male Junior Baseball Players",
+          "sport": "baseball",
+          "year": 2018
         },
         {
           "work_id": "https://openalex.org/W4406925909",
@@ -863,7 +1161,271 @@
           "year": 2025
         }
       ],
+      "paper_count": 4
+    },
+    {
+      "name": "Axivity AX6",
+      "url": "https://axivity.com/",
+      "type": "sensor_device",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405738096",
+          "title": "Instrumenting Parkrun: Usefulness and Validity of Inertial Sensors",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W7117299617",
+          "title": "Activity Detection of Paralympic Athletes with Lower Limb Running-Specific Prosthesis During Extended Periods of Time: Software Development and Preliminary Validation",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
+      "paper_count": 2
+    },
+    {
+      "name": "ForceDecks Max force plate system",
+      "url": "https://www.valdperformance.com/",
+      "type": "sensor_device",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405738147",
+          "title": "Sex-Specific Differences in Vertical Jump Force–Time Metrics in Youth Basketball Players",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4406247739",
+          "title": "Impact of Caffeine Intake on Female Basketball Players’ Performance",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 2
+    },
+    {
+      "name": "MEDLINE via PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7117651259",
+          "title": "Performance and Health in Combined Events: A Scoping Review",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7124448490",
+          "title": "Cuantificación de la carga externa en baloncesto mediante WIMU Pro: una revisión sistemática",
+          "sport": "basketball",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W7128594415",
+          "title": "Are Specific Performance Factors Influenced by Stress-Related Sleep Disturbances in Basketball Players? A PRISMA-Guided Descriptive and Qualitative Systematic Review",
+          "sport": "basketball",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W7128609913",
+          "title": "An Examination of the Performance Relationship Between Athletics Throwing Events and Anthropometric Characteristics Based on Branch-Specific Determinant Structural Factors",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
       "url_status": "verified",
+      "paper_count": 4
+    },
+    {
+      "name": "statista.com",
+      "url": "https://www.statista.com",
+      "type": "proprietary_dataset",
+      "access": "restricted",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390815199",
+          "title": "Quantitative analysis of professional basketball: A qualitative discussion",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4412119505",
+          "title": "Exploring the Gender-Wage Gap in a World of Exogenous Revenue: The Case of Professional Basketball",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4414088232",
+          "title": "How Marketing Strategies, Particularly Ticket Prices in the NBA, Affect Attendance and Revenue",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 3
+    },
+    {
+      "name": "NBA Official Website",
+      "url": "https://stats.nba.com",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4391883999",
+          "title": "Injury Patterns and Impact on Performance in the NBA League Using Sports Analytics",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4413313707",
+          "title": "Sports Analytics for Evaluating Injury Impact on NBA Performance",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 2
+    },
+    {
+      "name": "Garmin Fenix 7® smartwatch",
+      "url": "https://www.garmin.com",
+      "type": "sensor_device",
+      "access": "purchased",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396744263",
+          "title": "Garmin Fénix 7® Underestimates Performance at the Lactate Threshold in Comparison to Standardized Blood Lactate Field Test",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Baidu Maps Street View Imagery",
+      "url": "https://map.baidu.com/",
+      "type": "api",
+      "access": "restricted",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401856308",
+          "title": "Utilizing Multi-Source Geospatial Big Data to Examine How Environmental Factors Attract Outdoor Jogging Activities",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Microsoft Excel",
+      "url": "https://www.microsoft.com/excel",
+      "type": "statistical_package",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W7123713758",
+          "title": "Assessing criterion validity and test-retest reliability of a computer vision-based system for tracking player location in cricket",
+          "sport": "cricket",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W7128526728",
+          "title": "The Role of Sleep on Physical and Cognitive Performance of Ultra-Endurance Athletes: A Systematic Review",
+          "sport": "athletics",
+          "year": 2026
+        }
+      ],
+      "paper_count": 3
+    },
+    {
+      "name": "OpenSim musculoskeletal modeling platform",
+      "url": "Simtk.org",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "OpenSim",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4409135013",
+          "title": "Modelling Female Breast Motion During Running: Implications of Breast Support on the Spine",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4405702019",
+          "title": "Simulating effects of sensor-to-segment alignment errors on IMU-based estimates of lower limb joint angles during running",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 2
+    },
+    {
+      "name": "Polish OLAF growth reference charts",
+      "url": "https://nauka.czd.pl/kalkulator-2/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405967258",
+          "title": "Analysis of Nutrition Knowledge After One Year of Intervention in a National Extracurricular Athletics Program: A Cross-Sectional Study with Pair-Matched Controls of Polish Adolescents",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Youth Basketball Training dataset",
+      "url": "https://www.kaggle.com/datasets/ziya07/youth-basketball-training/data",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "Kaggle",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406542986",
+          "title": "Biomechanical research on the construction and optimization of youth basketball training system based on the integration of sports and education",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4410777219",
+          "title": "Enhancing Basketball Team Strategies Through Predictive Analytics of Player Performance",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7116397374",
+          "title": "Enhancing Runner Safety: A Machine Learning Framework for Injury Prediction",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
       "paper_count": 3
     },
     {
@@ -912,27 +1474,6 @@
       ],
       "url_status": "verified",
       "paper_count": 3
-    },
-    {
-      "name": "SPM1D",
-      "url": "spm1d.org",
-      "type": "library",
-      "category": "library",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4408778760",
-          "title": "The effect of increased strength on ball release speed and front foot contact-phase technique in elite male cricket fast bowlers",
-          "sport": "cricket",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4410977692",
-          "title": "A Comparison of Inswing and Outswing Bowling Arm Kinematics of Pathway and Elite Male Fast Bowlers",
-          "sport": "cricket",
-          "year": 2025
-        }
-      ],
-      "paper_count": 2
     },
     {
       "name": "RStudio",
@@ -1009,45 +1550,32 @@
       "paper_count": 3
     },
     {
-      "name": "Google Search Engine",
-      "url": "https://www.google.com",
-      "type": "survey",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
+      "name": "Jamovi",
+      "url": "https://www.jamovi.org",
+      "type": "statistical_package",
+      "category": "tool",
       "papers": [
         {
-          "work_id": "https://openalex.org/W4413048285",
-          "title": "Youth Basketball Players' Awareness and Experiences of Sports‐Related Traumatic Dental Injuries and Mouthguards in Turkey: A Cross‐Sectional Study",
+          "work_id": "https://openalex.org/W4412450387",
+          "title": "Impact of a Four-Week NCAA-Compliant Pre-Season Strength and Conditioning Program on Body Composition in NCAA Division II Women’s Basketball",
           "sport": "basketball",
           "year": 2025
         },
         {
-          "work_id": "https://openalex.org/W4286615937",
-          "title": "Concussions in the Women’s National Basketball Association: Analysis of Incidence, Return-to-Play Timing, and Player Performance From 1997 to 2020",
+          "work_id": "https://openalex.org/W4413279609",
+          "title": "Subjective mental fatigue ratings are not associated with basketball game-related statistics during official semiprofessional male games",
           "sport": "basketball",
-          "year": 2022
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 2
-    },
-    {
-      "name": "Hawkin Dynamics software",
-      "url": "https://www.hawkindynamics.com/",
-      "type": "sensor_device",
-      "access": "proprietary",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
+          "year": 2025
+        },
         {
-          "work_id": "https://openalex.org/W4413902271",
-          "title": "Comparison of lower-body neuromuscular performance profiles between 100 m and 400 m Olympic sprinters",
+          "work_id": "https://openalex.org/W4415272698",
+          "title": "Durability of physiological and biomechanical variables during a marathon",
           "sport": "athletics",
           "year": 2025
         }
       ],
-      "paper_count": 1
+      "url_status": "verified",
+      "paper_count": 3
     },
     {
       "name": "InStat Basketball",
@@ -1096,36 +1624,6 @@
       "paper_count": 2
     },
     {
-      "name": "MEDLINE via PubMed",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7117651259",
-          "title": "Performance and Health in Combined Events: A Scoping Review",
-          "sport": "athletics",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W7124448490",
-          "title": "Cuantificación de la carga externa en baloncesto mediante WIMU Pro: una revisión sistemática",
-          "sport": "basketball",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W7128594415",
-          "title": "Are Specific Performance Factors Influenced by Stress-Related Sleep Disturbances in Basketball Players? A PRISMA-Guided Descriptive and Qualitative Systematic Review",
-          "sport": "basketball",
-          "year": 2026
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 3
-    },
-    {
       "name": "PROSPERO",
       "url": "https://www.crd.york.ac.uk/prospero/",
       "type": "platform",
@@ -1154,6 +1652,381 @@
       "paper_count": 3
     },
     {
+      "name": "Android SDK",
+      "url": "https://developer.android.com/training/wearables",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390970225",
+          "title": "Enhancing Running Exercise With IoT, Blockchain, and Heart Rate Adaptive Running Music",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4416992830",
+          "title": "An Explorative Evaluation of Using Smartwatches to Track Athletes in Marathon Events",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
+      "paper_count": 2
+    },
+    {
+      "name": "Athletic.net website - USA Track and Field (USATF) National Youth Outdoor Championships and National Junior Olympic Championships",
+      "url": "https://www.athletic.net",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4391592359",
+          "title": "Sex‐based differences in track running distances of 100, 200, 400, 800, and 1500m in the 8 and under and 9–10‐year‐old age groups",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4405390422",
+          "title": "Sex‐based differences in shot put, javelin throw, and long jump in 8‐and‐under and 9–10‐year‐old athletes",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 2
+    },
+    {
+      "name": "JotForm online survey platform",
+      "url": "https://www.jotform.com",
+      "type": "survey",
+      "access": "not_stated",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4392451517",
+          "title": "Predicting performance of elite kickboxers using the multi‐states theory framework",
+          "sport": "boxing_mma",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "GitHub Repository - Evaluating-the-Effectiveness-of-Machine-Learning-Models-for-Performance-Forecasting-in-Basketball",
+      "url": "github.com/gpapageorgiouedu/Evaluating-the-Effectiveness-of-Machine-Learning-Models-for-Performance-Forecasting-in-Basketball",
+      "type": "code_and_data",
+      "access": "fully_open",
+      "platform": "GitHub",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4393130958",
+          "title": "Evaluating the effectiveness of machine learning models for performance forecasting in basketball: a comparative study",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "GRANMO application v.7",
+      "url": "https://www.imim.es/ofertadeserveis/software-public/granmo/",
+      "type": "software_tool",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4395002556",
+          "title": "Assessing the Impact of COVID-19 on Amateur Runners’ Performance: An Analysis through Monitoring Devices",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "FanGraphs Library",
+      "url": "https://library.fangraphs.com/war/calculating-war-pitchers/",
+      "type": "api",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4395033344",
+          "title": "Sabermetrics by the sea: Evaluating college players with the Cape Cod Baseball League",
+          "sport": "baseball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4410892071",
+          "title": "Team Production and Factor Substitution in Major League Baseball",
+          "sport": "baseball",
+          "year": 2025
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 2
+    },
+    {
+      "name": "Indian Premier League official website",
+      "url": "https://www.iplt20.com/",
+      "type": "web_scraping",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396519610",
+          "title": "Predicting Team Success in the Indian Premier League Cricket 2024 Season Using Random Forest Analysis",
+          "sport": "cricket",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4405842881",
+          "title": "Transformational influence of the impact player rule on performance quality and entertainment value in the 2023 season: a comprehensive analysis of cricket",
+          "sport": "cricket",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 2
+    },
+    {
+      "name": "Fitlight technology system",
+      "url": "https://www.fitlighttraining.com/",
+      "type": "sensor_device",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399075215",
+          "title": "Study on the Impact of Implementing an Exercise Program Using Fitlight Technology for the Development of Upper Limb Coordinative Abilities in Basketball Players",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "GitHub Repository - Association Rules Dataset",
+      "url": "https://github.com/vsarlis/associasionrules",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "GitHub",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399960774",
+          "title": "Leveraging Sports Analytics and Association Rule Mining to Uncover Recovery and Economic Impacts in NBA Basketball",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Stan",
+      "url": "https://mc-stan.org/",
+      "type": "programming_language",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4400459836",
+          "title": "A comprehensive survey of the home advantage in American football",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "GraphPad Prism",
+      "url": "https://www.graphpad.com",
+      "type": "statistical_package",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4400594258",
+          "title": "High‐level performances following low altitude training and tapering in warm environments in elite racewalkers",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4405964178",
+          "title": "Effectiveness of a Foam Roller Warm-Up in Professional Basketball Players: A Randomized Controlled Trial",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 2
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://www.wikipedia.org",
+      "type": "web_scraping",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401276487",
+          "title": "Does Draft Currency Promote Competitive Balance? An Empirical Investigation of the National Football League 2002–2021",
+          "sport": "american_football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4413160759",
+          "title": "The impact of coach gender on team performance: A quantitative analysis of women’s five-a-side basketball leagues",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 2
+    },
+    {
+      "name": "EuroLeague Basketball Statistics",
+      "url": "https://www.euroleaguebasketball.net/euroleague/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401728387",
+          "title": "Comparative analysis of national and foreign players’ performance in Euroleague Basketball",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4414223133",
+          "title": "Rethinking the strongest link: VAL, ratings, and team success in Hungarian basketball",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 2
+    },
+    {
+      "name": "Keep fitness app",
+      "url": "http://api.gotokeep.com",
+      "type": "api",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401856308",
+          "title": "Utilizing Multi-Source Geospatial Big Data to Examine How Environmental Factors Attract Outdoor Jogging Activities",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Luojia 1-01 Nighttime Lights (NTLs) Dataset",
+      "url": "http://59.175.109.173:8888/index.html",
+      "type": "proprietary_dataset",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401856308",
+          "title": "Utilizing Multi-Source Geospatial Big Data to Examine How Environmental Factors Attract Outdoor Jogging Activities",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Federal Reserve Economic Data (FRED)",
+      "url": "https://fred.stlouisfed.org/",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": "FRED (Federal Reserve Economic Data)",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402407614",
+          "title": "The Ballpark Effect: Spatial-Data-Driven Insights into Baseball’s Local Economic Impact",
+          "sport": "baseball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4405260642",
+          "title": "Forecasting Stadium Attendance Using Machine Learning Models: A Case of the National Football League",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 2
+    },
+    {
+      "name": "Kubios HRV Scientific (version 4.1)",
+      "url": "https://www.kubios.com/",
+      "type": "software_tool",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "emmeans",
+      "url": "https://CRAN.R-project.org/package=emmeans",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405124151",
+          "title": "Influence of menstrual- and hormonal contraceptive cycle on self-reported symptom severity and recovery measures across an annual season in female endurance athletes: The FENDURA project",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4409366403",
+          "title": "Changes in mental fatigue across preparation and competition periods in elite male Australian football players",
+          "sport": "american_football",
+          "year": 2025
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 2
+    },
+    {
+      "name": "Garmin wearable device and Garmin Connect",
+      "url": "https://connect.garmin.com/",
+      "type": "sensor_device",
+      "access": "restricted",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405262432",
+          "title": "Runners with a high body mass index and previous running‐related problems is a high‐risk population for sustaining a new running‐related injury: A 18‐month cohort study",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "RStudio",
       "url": "http://www.rstudio.com/",
       "type": "programming_language",
@@ -1173,51 +2046,6 @@
         }
       ],
       "url_status": "verified",
-      "paper_count": 2
-    },
-    {
-      "name": "GraphPad Prism",
-      "url": "https://www.graphpad.com",
-      "type": "statistical_package",
-      "category": "tool",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4405964178",
-          "title": "Effectiveness of a Foam Roller Warm-Up in Professional Basketball Players: A Randomized Controlled Trial",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4400594258",
-          "title": "High‐level performances following low altitude training and tapering in warm environments in elite racewalkers",
-          "sport": "athletics",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 2
-    },
-    {
-      "name": "Youth Basketball Training dataset",
-      "url": "https://www.kaggle.com/datasets/ziya07/youth-basketball-training/data",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "Kaggle",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4406542986",
-          "title": "Biomechanical research on the construction and optimization of youth basketball training system based on the integration of sports and education",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4410777219",
-          "title": "Enhancing Basketball Team Strategies Through Predictive Analytics of Player Performance",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
       "paper_count": 2
     },
     {
@@ -1250,6 +2078,40 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "ChirpStack LoRaWAN Network Server (LNS)",
+      "url": "https://www.chirpstack.io/",
+      "type": "software_tool",
+      "access": "open_with_registration",
+      "platform": "GitHub",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4407417863",
+          "title": "Athlete Tracking at a Marathon Event with LoRa: A Performance Evaluation with Mobile Gateways",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "MariaDB database",
+      "url": "https://mariadb.com/kb/en/documentation/",
+      "type": "software_tool",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4407417863",
+          "title": "Athlete Tracking at a Marathon Event with LoRa: A Performance Evaluation with Mobile Gateways",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -1322,23 +2184,6 @@
       ],
       "url_status": "verified",
       "paper_count": 2
-    },
-    {
-      "name": "OpenSim musculoskeletal modeling platform",
-      "url": "Simtk.org",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "OpenSim",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4409135013",
-          "title": "Modelling Female Breast Motion During Running: Implications of Breast Support on the Spine",
-          "sport": "athletics",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
     },
     {
       "name": "IWBF Official Records Website",
@@ -1422,30 +2267,6 @@
       "paper_count": 1
     },
     {
-      "name": "FanGraphs Library",
-      "url": "https://library.fangraphs.com/war/calculating-war-pitchers/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4410892071",
-          "title": "Team Production and Factor Substitution in Major League Baseball",
-          "sport": "baseball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4395033344",
-          "title": "Sabermetrics by the sea: Evaluating college players with the Cape Cod Baseball League",
-          "sport": "baseball",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 2
-    },
-    {
       "name": "Pupil Labs Neon Eye Tracker",
       "url": "https://pupil-labs.com/products/neon",
       "type": "sensor_device",
@@ -1482,51 +2303,6 @@
       "paper_count": 1
     },
     {
-      "name": "NBA television ratings data",
-      "url": "https://www.statista.com/statistics/289993/nba-number-of-tv-viewers-usa/",
-      "type": "open_dataset",
-      "access": "open_with_registration",
-      "platform": "Statista",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4412119505",
-          "title": "Exploring the Gender-Wage Gap in a World of Exogenous Revenue: The Case of Professional Basketball",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4414088232",
-          "title": "How Marketing Strategies, Particularly Ticket Prices in the NBA, Affect Attendance and Revenue",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 2
-    },
-    {
-      "name": "Jamovi",
-      "url": "https://www.jamovi.org",
-      "type": "statistical_package",
-      "category": "tool",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4412450387",
-          "title": "Impact of a Four-Week NCAA-Compliant Pre-Season Strength and Conditioning Program on Body Composition in NCAA Division II Women’s Basketball",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4415272698",
-          "title": "Durability of physiological and biomechanical variables during a marathon",
-          "sport": "athletics",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 2
-    },
-    {
       "name": "Beck (2025c) - The Prediction Tracker NCAA prediction archive",
       "url": "https://www.thepredictiontracker.com/predncaa.php",
       "type": "web_scraping",
@@ -1538,24 +2314,6 @@
           "work_id": "https://openalex.org/W4412811219",
           "title": "A predictive metamodel for college football",
           "sport": "american_football",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "NBA.Com Official Stats",
-      "url": "https://stats.nba.com",
-      "type": "api",
-      "access": "open_with_registration",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4413313707",
-          "title": "Sports Analytics for Evaluating Injury Impact on NBA Performance",
-          "sport": "basketball",
           "year": 2025
         }
       ],
@@ -1582,6 +2340,29 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 2
+    },
+    {
+      "name": "Paris Olympics 2024 Athletics Results",
+      "url": "https://olympics.com/en/paris-2024/sports/athletics",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413431795",
+          "title": "Birthplace Altitude and Long-Distance Running Medals: An Ecologic Analysis of Olympic and World Championship Data",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4415172804",
+          "title": "Effect of pacing strategy modification on 200 m performance in athletics",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
       "paper_count": 2
     },
     {
@@ -1617,6 +2398,23 @@
       "paper_count": 1
     },
     {
+      "name": "Johnson Basketball Dribble Test",
+      "url": "https://www.ymcacollege.ac.in/pdf/E_learning/MCC203-Test-Measurement-and-Evaluation-in-Physical-Education.pdf",
+      "type": "manual_collection",
+      "access": "upon_request",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7117418874",
+          "title": "Effect Of Interactive Video Analysis Training on The Acquisition of Dribbling Skills in Basketball Among Students at College of Physical Education and Sports Sciences Baghdad University",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Web of Science",
       "url": "https://www.webofscience.com/",
       "type": "proprietary_dataset",
@@ -1641,27 +2439,22 @@
       "paper_count": 2
     },
     {
-      "name": "Google Scholar",
-      "url": "https://scholar.google.com/",
-      "type": "open_dataset",
-      "access": "fully_open",
+      "name": "NEISS database narrative and structured injury coding",
+      "url": "https://www.cpsc.gov/Research--Statistics/NEISS-Injury-Data",
+      "type": "government_data",
+      "access": "open_with_registration",
       "platform": null,
       "category": "dataset",
       "papers": [
         {
-          "work_id": "https://openalex.org/W7117651259",
-          "title": "Performance and Health in Combined Events: A Scoping Review",
-          "sport": "athletics",
+          "work_id": "https://openalex.org/W7117883448",
+          "title": "Injuries in Female American Football Players from 2015 to 2024: An Age-stratified Epidemiological Analysis",
+          "sport": "american_football",
           "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W7125212040",
-          "title": "Impact of mental and physiological fatigue on attentional focus in basketball players: a systematic review",
-          "sport": "basketball",
-          "year": 2026
         }
       ],
-      "paper_count": 2
+      "url_status": "verified",
+      "paper_count": 1
     },
     {
       "name": "Global Gender Gap Report 2025 by World Economic Forum",
@@ -1775,28 +2568,6 @@
         {
           "work_id": "https://openalex.org/W7121549501",
           "title": "MARATHON RUNNING IN AN ERA OF RISING TEMPERATURES: ASSESSING THE HEAT-RELATED ILLNESS RISK IN A SIMULATED STUDY",
-          "sport": "athletics",
-          "year": 2026
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 2
-    },
-    {
-      "name": "Microsoft Excel",
-      "url": "https://www.microsoft.com/excel",
-      "type": "statistical_package",
-      "category": "tool",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7123713758",
-          "title": "Assessing criterion validity and test-retest reliability of a computer vision-based system for tracking player location in cricket",
-          "sport": "cricket",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W7128526728",
-          "title": "The Role of Sleep on Physical and Cognitive Performance of Ultra-Endurance Athletes: A Systematic Review",
           "sport": "athletics",
           "year": 2026
         }
@@ -2033,22 +2804,6 @@
       "paper_count": 1
     },
     {
-      "name": "SHAP",
-      "url": "https://shap.readthedocs.io/en/latest/",
-      "type": "library",
-      "category": "library",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4390827763",
-          "title": "Winner prediction in an ongoing one day international cricket match",
-          "sport": "cricket",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
       "name": "Nielsen TV ratings",
       "url": "https://www.nielsen.com/",
       "type": "proprietary_dataset",
@@ -2067,21 +2822,806 @@
       "paper_count": 1
     },
     {
-      "name": "ForceDecks FD4000 Dual Force Platforms",
-      "url": "https://www.valdperformance.com/",
+      "name": "GDAtools",
+      "url": "https://CRAN.R-project.org/package=GDAtools",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4389867631",
+          "title": "Analyser les relations entre la prise de décision et les émotions à l’aide d’une méthode mixte : étude de cas d’un entraîneur de basket-ball en situation de compétition",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Google Trends",
+      "url": "https://trends.google.com",
+      "type": "web_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390815199",
+          "title": "Quantitative analysis of professional basketball: A qualitative discussion",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Cricsheet - Cricket match data repository",
+      "url": "http://cricsheet.org",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "other",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390827763",
+          "title": "Winner prediction in an ongoing one day international cricket match",
+          "sport": "cricket",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "SHAP (SHapley Additive exPlanations)",
+      "url": "https://shap.readthedocs.io/en/latest/",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390827763",
+          "title": "Winner prediction in an ongoing one day international cricket match",
+          "sport": "cricket",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Secret Network Blockchain",
+      "url": "https://scrt.network/graypaper/",
+      "type": "other",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390970225",
+          "title": "Enhancing Running Exercise With IoT, Blockchain, and Heart Rate Adaptive Running Music",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "DataVault Protocol",
+      "url": "https://data-vault.medium.com/datavault-a-modular-encrypted-data-paywall-and-storage-access-protocol-773a60cfbabb",
+      "type": "other",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390970225",
+          "title": "Enhancing Running Exercise With IoT, Blockchain, and Heart Rate Adaptive Running Music",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Orienteering Information System (ORIS) - Czech Orienteering Sports Association",
+      "url": "https://oris.orientacnisporty.cz/",
+      "type": "proprietary_dataset",
+      "access": "restricted",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4391804850",
+          "title": "The relative age effect in Czech orienteering runners",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "SocSciStatistics",
+      "url": "https://www.socscistatistics.com/tests/goodnessoffit/Default2.aspx",
+      "type": "platform",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4391804850",
+          "title": "The relative age effect in Czech orienteering runners",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "DUV Ultra Marathon Statistics (distance records database)",
+      "url": "https://statistik.d‐u‐v.org/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4392451478",
+          "title": "Are pre‐race serum blood biomarkers associated with the 24‐h ultramarathon race performance?",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Code repo: Sports Analytics: Data Mining to Uncover NBA Playe",
+      "url": "https://github.com/vsarlis/NBAinjurydemoeconomics",
+      "type": "code_repository",
+      "category": "code",
+      "language": "Python, SQL",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4395010438",
+          "title": "Sports Analytics: Data Mining to Uncover NBA Player Position, Age, and Injury Impact on Performance and Economics",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Baseball Prospectus SIERA reference",
+      "url": "https://blogs.fangraphs.com/new-siera-part-two-of-five-unlocking-underrated-pitching-skills/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4395033344",
+          "title": "Sabermetrics by the sea: Evaluating college players with the Cape Cod Baseball League",
+          "sport": "baseball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "PitcherList run expectancy matrix",
+      "url": "https://www.pitcherlist.com/adjusting-for-the-current-run-expectancy-matrix/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4395033344",
+          "title": "Sabermetrics by the sea: Evaluating college players with the Cape Cod Baseball League",
+          "sport": "baseball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "shorts",
+      "url": "https://CRAN.R-project.org/package=shorts",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396552536",
+          "title": "Effects of the Flying Start on Estimated Short Sprint Profiles Using Timing Gates",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "minpack.lm",
+      "url": "https://CRAN.R-project.org/package=minpack.lm",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396552536",
+          "title": "Effects of the Flying Start on Estimated Short Sprint Profiles Using Timing Gates",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "bmbstats",
+      "url": "https://mladenjovanovic.github.io/bmbstats/",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396552536",
+          "title": "Effects of the Flying Start on Estimated Short Sprint Profiles Using Timing Gates",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "boot",
+      "url": "https://CRAN.R-project.org/package=boot",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396552536",
+          "title": "Effects of the Flying Start on Estimated Short Sprint Profiles Using Timing Gates",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "LambertW",
+      "url": "https://CRAN.R-project.org/package=LambertW",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396552536",
+          "title": "Effects of the Flying Start on Estimated Short Sprint Profiles Using Timing Gates",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Fitrockr health data research & analytics platform",
+      "url": "https://www.fitrockr.com/research/",
+      "type": "api",
+      "access": "open_with_registration",
+      "platform": "Fitrockr",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396744263",
+          "title": "Garmin Fénix 7® Underestimates Performance at the Lactate Threshold in Comparison to Standardized Blood Lactate Field Test",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Lahman",
+      "url": "https://CRAN.R-project.org/package=Lahman",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396814116",
+          "title": "Filling the gaps: A multiple imputation approach to estimating aging curves in baseball",
+          "sport": "baseball",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Code repo: Filling the gaps: A multiple imputation approach t",
+      "url": "https://github.com/qntkhvn/aging",
+      "type": "code_repository",
+      "category": "code",
+      "language": "R",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4396814116",
+          "title": "Filling the gaps: A multiple imputation approach to estimating aging curves in baseball",
+          "sport": "baseball",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "rpart",
+      "url": "https://CRAN.R-project.org/package=rpart",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399129708",
+          "title": "Markov-switching decision trees",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Code repo: Markov-switching decision trees",
+      "url": "https://github.com/timoadam/MarkovSwitchingDecisionTrees",
+      "type": "code_repository",
+      "category": "code",
+      "language": "R",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399129708",
+          "title": "Markov-switching decision trees",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Code repo: Introducing Grid WAR: rethinking WAR for starting ",
+      "url": "https://github.com/snoopryan123/grid_war",
+      "type": "code_repository",
+      "category": "code",
+      "language": "R",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399282537",
+          "title": "Introducing Grid WAR: rethinking WAR for starting pitchers",
+          "sport": "baseball",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Grid WAR metric",
+      "url": "https://gridwar.xyz",
+      "type": "software_tool",
+      "category": "instrument",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399282537",
+          "title": "Introducing Grid WAR: rethinking WAR for starting pitchers",
+          "sport": "baseball",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Image J",
+      "url": "https://imagej.nih.gov/ij/",
+      "type": "software_tool",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399921193",
+          "title": "Muscle morphological changes and enhanced sprint running performance: A 1‐year observational study of well‐trained sprinters",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Witty Gate timing gates",
+      "url": "https://microgate.it/",
+      "type": "sensor",
+      "category": "instrument",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399921193",
+          "title": "Muscle morphological changes and enhanced sprint running performance: A 1‐year observational study of well‐trained sprinters",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "MAGNETOM Skyra 3.0T MRI scanner",
+      "url": "https://www.siemens-healthineers.com/",
+      "type": "physiological_device",
+      "category": "instrument",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399921193",
+          "title": "Muscle morphological changes and enhanced sprint running performance: A 1‐year observational study of well‐trained sprinters",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "MasseyRatings.com",
+      "url": "https://masseyratings.com/ranks?s=cf",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "MasseyRatings",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4400459836",
+          "title": "A comprehensive survey of the home advantage in American football",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Max Preps",
+      "url": "https://www.maxpreps.com/football/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "Max Preps",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4400459836",
+          "title": "A comprehensive survey of the home advantage in American football",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "nflfastR",
+      "url": "https://www.nflfastr.com/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "GitHub",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4400459836",
+          "title": "A comprehensive survey of the home advantage in American football",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Code repo: A comprehensive survey of the home advantage in Am",
+      "url": "https://github.com/ThompsonJamesBliss/comprehensive_survey_american_football_home_adv",
+      "type": "code_repository",
+      "category": "code",
+      "language": "R",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4400459836",
+          "title": "A comprehensive survey of the home advantage in American football",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Meteorological data (temperature, humidity, barometric pressure)",
+      "url": "https://www.meteosuisse.admin.ch",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4400594258",
+          "title": "High‐level performances following low altitude training and tapering in warm environments in elite racewalkers",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "graphreader.com",
+      "url": "https://www.graphreader.com",
+      "type": "software_tool",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401276487",
+          "title": "Does Draft Currency Promote Competitive Balance? An Empirical Investigation of the National Football League 2002–2021",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Digital Elevation Model (DEM) data",
+      "url": "www.gscloud.cn",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401856308",
+          "title": "Utilizing Multi-Source Geospatial Big Data to Examine How Environmental Factors Attract Outdoor Jogging Activities",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Samozino force-velocity model spreadsheet",
+      "url": "https://jbmorin.net/2017/12/13/a-spreadsheet-for-sprint-acceleration-force-velocity-power-profiling",
+      "type": "software_tool",
+      "access": "upon_request",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402080161",
+          "title": "Effect of Advanced Footwear Technology Spikes on Sprint Acceleration: A Multiple N-of-1 Trial",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "SafeGraph spending data",
+      "url": "https://docs.safegraph.com/docs/places-data-evaluation",
+      "type": "proprietary_dataset",
+      "access": "proprietary",
+      "platform": "AWS",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402407614",
+          "title": "The Ballpark Effect: Spatial-Data-Driven Insights into Baseball’s Local Economic Impact",
+          "sport": "baseball",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Lightbox parcel data",
+      "url": "https://www.lightboxre.com/",
+      "type": "proprietary_dataset",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402407614",
+          "title": "The Ballpark Effect: Spatial-Data-Driven Insights into Baseball’s Local Economic Impact",
+          "sport": "baseball",
+          "year": 2024
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Biosen C-line blood lactate analyzer",
+      "url": "https://www.ekinc.de/",
       "type": "sensor_device",
       "access": "proprietary",
       "platform": null,
       "category": "dataset",
       "papers": [
         {
-          "work_id": "https://openalex.org/W4406247739",
-          "title": "Impact of Caffeine Intake on Female Basketball Players’ Performance",
-          "sport": "basketball",
-          "year": 2025
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
         }
       ],
-      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Metamax 3B portable breath-by-breath metabolic cart",
+      "url": "https://www.cortex-biophysik.de/",
+      "type": "sensor_device",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Woodway DESMO Pro XL treadmill",
+      "url": "https://www.woodway.com/",
+      "type": "sensor_device",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Polar Flow web service",
+      "url": "https://flow.polar.com/",
+      "type": "api",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "AMSSM Runner Health Consortium",
+      "url": "www.runhealthy.org",
+      "type": "proprietary_dataset",
+      "access": "upon_request",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4403978233",
+          "title": "Standardising health history and injury surveillance of participants in endurance events: a modified Delphi consensus statement from the AMSSM runner health consortium",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "MedCalc",
+      "url": "https://www.medcalc.org/calc/index.php",
+      "type": "statistical_package",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4404393203",
+          "title": "The effectiveness of neuromuscular training warm-up program for injury prevention in adolescent male basketball players",
+          "sport": "basketball",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "ordinal",
+      "url": "https://CRAN.R-project.org/package=ordinal",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405124151",
+          "title": "Influence of menstrual- and hormonal contraceptive cycle on self-reported symptom severity and recovery measures across an annual season in female endurance athletes: The FENDURA project",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Meteostat API",
+      "url": "https://dev.meteostat.net/python/api/timeseries/",
+      "type": "api",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405260642",
+          "title": "Forecasting Stadium Attendance Using Machine Learning Models: A Case of the National Football League",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Weather Underground",
+      "url": "https://www.wunderground.com/",
+      "type": "proprietary_dataset",
+      "access": "upon_request",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405260642",
+          "title": "Forecasting Stadium Attendance Using Machine Learning Models: A Case of the National Football League",
+          "sport": "american_football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Synthetic IMU data, ground truth joint angle trajectories, and ground truth S2S parameters (Online Resource 2)",
+      "url": "https://doi.org/10.1007/s12283-024-00483-3",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "Springer Online",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405702019",
+          "title": "Simulating effects of sensor-to-segment alignment errors on IMU-based estimates of lower limb joint angles during running",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "OpenSim",
+      "url": "https://opensim.stanford.edu/",
+      "type": "software_platform",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405702019",
+          "title": "Simulating effects of sensor-to-segment alignment errors on IMU-based estimates of lower limb joint angles during running",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Polish Central Statistical Office data",
+      "url": "https://stat.gov.pl/obszary-tematyczne/roczniki-statystyczne/roczniki-statystyczne/rocznik-demograficzny-2022,3,16.html",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405967258",
+          "title": "Analysis of Nutrition Knowledge After One Year of Intervention in a National Extracurricular Athletics Program: A Cross-Sectional Study with Pair-Matched Controls of Polish Adolescents",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -2183,6 +3723,36 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "LoRa Basics™Station",
+      "url": "https://doc.sm.tc/station/",
+      "type": "software_tool",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4407417863",
+          "title": "Athlete Tracking at a Marathon Event with LoRa: A Performance Evaluation with Mobile Gateways",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "OpenLayers",
+      "url": "https://openlayers.org/en/latest/apidoc/module-ol_format_JSONFeature-JSONFeature.html",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4407417863",
+          "title": "Athlete Tracking at a Marathon Event with LoRa: A Performance Evaluation with Mobile Gateways",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -2325,22 +3895,6 @@
       "paper_count": 1
     },
     {
-      "name": "emmeans",
-      "url": "https://CRAN.R-project.org/package=emmeans",
-      "type": "library",
-      "category": "library",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4409366403",
-          "title": "Changes in mental fatigue across preparation and competition periods in elite male Australian football players",
-          "sport": "american_football",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
       "name": "Official AFL website and Champion Data statistics",
       "url": "www.afl.com",
       "type": "web_scraping",
@@ -2425,21 +3979,6 @@
         }
       ],
       "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "SPSS Statistics",
-      "url": "https://www.ibm.com/analytics/spss",
-      "type": "statistical_package",
-      "category": "tool",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4409955799",
-          "title": "A comparison between common measurement systems for quantifying spatiotemporal variables during the early sprint acceleration phase",
-          "sport": "athletics",
-          "year": 2025
-        }
-      ],
       "paper_count": 1
     },
     {
@@ -3368,6 +4907,23 @@
       "paper_count": 1
     },
     {
+      "name": "Baidu Encyclopedia",
+      "url": "https://baike.baidu.com",
+      "type": "web_scraping",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413160759",
+          "title": "The impact of coach gender on team performance: A quantitative analysis of women’s five-a-side basketball leagues",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Flashscore.com",
       "url": "www.flashscore.com",
       "type": "web_scraping",
@@ -3410,6 +4966,90 @@
           "work_id": "https://openalex.org/W4413313707",
           "title": "Sports Analytics for Evaluating Injury Impact on NBA Performance",
           "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Biography",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413431795",
+          "title": "Birthplace Altitude and Long-Distance Running Medals: An Ecologic Analysis of Olympic and World Championship Data",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "NASA Shuttle Radar Topography Mission (SRTM) Global Dataset",
+      "url": "https://www.earthdata.nasa.gov/data/instruments/srtm",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413431795",
+          "title": "Birthplace Altitude and Long-Distance Running Medals: An Ecologic Analysis of Olympic and World Championship Data",
+          "sport": "athletics",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "FIBA Chinese official website",
+      "url": "http://cn.fiba.com/",
+      "type": "web_scraping",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413521312",
+          "title": "A Comparative Study on the Offensive Ability of the Guard Players of the Top Four Teams in the 28th Men's Basketball Asian Championships",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Library of Congress Chronicling America database",
+      "url": "https://chroniclingamerica.loc.gov/",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": "Library of Congress",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413650954",
+          "title": "Theodore Roosevelt, Media, and the Martial Arts During the Progressive Era",
+          "sport": "boxing_mma",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Psychometrica",
+      "url": "https://www.psychometrica.de/correlation.html",
+      "type": "software_tool",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413763130",
+          "title": "Sex Differences in the High Jump Kinematics of U18 Adolescent Athletes",
+          "sport": "athletics",
           "year": 2025
         }
       ],
@@ -3587,6 +5227,41 @@
       "paper_count": 1
     },
     {
+      "name": "Athlete Game Lost",
+      "url": "https://www.athletegamelost.com",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413961931",
+          "title": "Temporary employment and the protection of investments in human capital: Examining the Major League Baseball player market",
+          "sport": "baseball",
+          "year": 2025
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Cot's Baseball Contracts",
+      "url": "http://legacy.baseballprospectus.com/compensation/cots/",
+      "type": "proprietary_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413961931",
+          "title": "Temporary employment and the protection of investments in human capital: Examining the Major League Baseball player market",
+          "sport": "baseball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "NBA Fan Demographics",
       "url": "https://www.sponsorpulse.com/insights/thesponsorpulse-guide-to-nba-fan-demographics",
       "type": "open_dataset",
@@ -3638,23 +5313,6 @@
       "paper_count": 1
     },
     {
-      "name": "EuroLeague Basketball Statistics",
-      "url": "https://www.EuroLeaguebasketball.net/EuroLeague/stats/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4414223133",
-          "title": "Rethinking the strongest link: VAL, ratings, and team success in Hungarian basketball",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "DUV (Deutscher Ultramarathon Verband) Race Database",
       "url": "https://statistik.d-u-v.org",
       "type": "proprietary_dataset",
@@ -3689,6 +5347,38 @@
       "paper_count": 1
     },
     {
+      "name": "Hawkin Cloud data warehousing and export",
+      "url": "cloud.hawkindynamics.com",
+      "type": "proprietary_dataset",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4414817433",
+          "title": "Unlocking Basketball Athletic Performance: Countermovement Jump Rebound (CMJ-RE) Normative Reference Values Derived from Force Plate Data Across Seven NCAA Division-I Power Five Men’s College Basketball Teams",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Hawkin Capture",
+      "url": "https://play.google.com/store/apps/details?id=com.dynamics.hawkin.hawkin",
+      "type": "software_tool",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4414817433",
+          "title": "Unlocking Basketball Athletic Performance: Countermovement Jump Rebound (CMJ-RE) Normative Reference Values Derived from Force Plate Data Across Seven NCAA Division-I Power Five Men’s College Basketball Teams",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Custom dataset - ACL injury prediction",
       "url": "https://doi.org/10.5281/zenodo.16930816",
       "type": "open_dataset",
@@ -3700,23 +5390,6 @@
           "work_id": "https://openalex.org/W4415169931",
           "title": "Prediction of ACL injury incidence and analysis of key features in basketball players based on multi-algorithm models",
           "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "Paris Olympics 2024 Athletics Results",
-      "url": "https://olympics.com/en/paris-2024/sports/athletics",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4415172804",
-          "title": "Effect of pacing strategy modification on 200 m performance in athletics",
-          "sport": "athletics",
           "year": 2025
         }
       ],
@@ -3943,22 +5616,6 @@
       "paper_count": 1
     },
     {
-      "name": "Android SDK",
-      "url": "https://developer.android.com/training/wearables",
-      "type": "framework",
-      "category": "library",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4416992830",
-          "title": "An Explorative Evaluation of Using Smartwatches to Track Athletes in Marathon Events",
-          "sport": "athletics",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
       "name": "Google Pixel Watch 2",
       "url": "https://www.qualcomm.com/products/mobile/snapdragon/wearables/wearables-device-finder/pixel-watch-2",
       "type": "smartwatch",
@@ -3972,6 +5629,21 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "DeepSeek AI (chat.deepseek.com)",
+      "url": "https://chat.deepseek.com/",
+      "type": "custom_tool",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4417173738",
+          "title": "Correlation of the caloric contribution of macronutrients and the corporal composition in baseball players",
+          "sport": "baseball",
+          "year": 2025
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -4192,24 +5864,6 @@
       "paper_count": 1
     },
     {
-      "name": "Open Science Framework - all data and results",
-      "url": "https://osf.io/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "OSF",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7122843687",
-          "title": "Profiling measures of muscle strength and power throughout a 156 km ultra-trail running event",
-          "sport": "athletics",
-          "year": 2026
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
       "name": "Google Colab Pro",
       "url": "https://colab.google.com",
       "type": "platform",
@@ -4348,6 +6002,23 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "PERBASI (Indonesian Basketball Association) data and standards",
+      "url": "https://www.sportlinknews.com/basket/571292468/perbasi-kualitas-wasit-ibl-belum-sepenuhnya-imbangi-level-kompetisi",
+      "type": "organizational_data",
+      "access": "publicly_available",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7127900318",
+          "title": "Sosialisasi Perwasitan Terbaru Bola Basket sebagai Upaya Peningkatan Pemahaman Aturan Permainan bagi Mahasiswa FIKK UNM",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -5393,110 +7064,6 @@
       "paper_count": 1
     },
     {
-      "name": "Cricsheet",
-      "url": "http://cricsheet.org",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4390827763",
-          "title": "Winner prediction in an ongoing one day international cricket match",
-          "sport": "cricket",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Indian Premier League (IPL) 2024 season player statistics and match outcomes",
-      "url": "https://www.iplt20.com/",
-      "type": "open_dataset",
-      "access": "open_with_registration",
-      "platform": "IPL official website",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4396519610",
-          "title": "Predicting Team Success in the Indian Premier League Cricket 2024 Season Using Random Forest Analysis",
-          "sport": "cricket",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Lahman package in R",
-      "url": "https://CRAN.R-project.org/package=Lahman",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "CRAN",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4396814116",
-          "title": "Filling the gaps: A multiple imputation approach to estimating aging curves in baseball",
-          "sport": "baseball",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Code repo: Filling the gaps: A multiple imputation approach t",
-      "url": "https://github.com/qntkhvn/aging",
-      "type": "code_repository",
-      "category": "code",
-      "language": "R",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4396814116",
-          "title": "Filling the gaps: A multiple imputation approach to estimating aging curves in baseball",
-          "sport": "baseball",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "rpart",
-      "url": "https://CRAN.R-project.org/package=rpart",
-      "type": "library",
-      "category": "library",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4399129708",
-          "title": "Markov-switching decision trees",
-          "sport": "american_football",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Code repo: Markov-switching decision trees",
-      "url": "https://github.com/timoadam/MarkovSwitchingDecisionTrees",
-      "type": "code_repository",
-      "category": "code",
-      "language": "R",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4399129708",
-          "title": "Markov-switching decision trees",
-          "sport": "american_football",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
       "name": "Twitter/X",
       "url": "https://developer.twitter.com/en/use-cases/do-research/academic-research",
       "type": "api",
@@ -5527,111 +7094,6 @@
           "year": 2024
         }
       ],
-      "paper_count": 1
-    },
-    {
-      "name": "Code repo: Introducing Grid WAR: rethinking WAR for starting ",
-      "url": "https://github.com/snoopryan123/grid_war",
-      "type": "code_repository",
-      "category": "code",
-      "language": "R",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4399282537",
-          "title": "Introducing Grid WAR: rethinking WAR for starting pitchers",
-          "sport": "baseball",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Grid WAR (GWAR)",
-      "url": "https://gridwar.xyz",
-      "type": "software_tool",
-      "category": "instrument",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4399282537",
-          "title": "Introducing Grid WAR: rethinking WAR for starting pitchers",
-          "sport": "baseball",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "World Anti-Doping Agency (WADA) ABP Operating Guidelines",
-      "url": "https://www.wada-ama.org/sites/default/files/2023-07/guidelines_abp_v9_2023_final_eng_1.pdf",
-      "type": "other",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4400594258",
-          "title": "High‐level performances following low altitude training and tapering in warm environments in elite racewalkers",
-          "sport": "athletics",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "MeteoSuisse meteorological data",
-      "url": "https://www.meteosuisse.admin.ch",
-      "type": "government_data",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4400594258",
-          "title": "High‐level performances following low altitude training and tapering in warm environments in elite racewalkers",
-          "sport": "athletics",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "AccuWeather meteorological data",
-      "url": "https://www.accuweather.com",
-      "type": "other",
-      "access": "not_stated",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4400594258",
-          "title": "High‐level performances following low altitude training and tapering in warm environments in elite racewalkers",
-          "sport": "athletics",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Wikipedia",
-      "url": "https://www.wikipedia.org/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4401276487",
-          "title": "Does Draft Currency Promote Competitive Balance? An Empirical Investigation of the National Football League 2002–2021",
-          "sport": "american_football",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
       "paper_count": 1
     },
     {
@@ -5721,161 +7183,6 @@
           "year": 2024
         }
       ],
-      "paper_count": 1
-    },
-    {
-      "name": "SafeGraph spending data",
-      "url": "https://docs.safegraph.com/docs/places-data-evaluation",
-      "type": "open_dataset",
-      "access": "upon_request",
-      "platform": "AWS",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4402407614",
-          "title": "The Ballpark Effect: Spatial-Data-Driven Insights into Baseball’s Local Economic Impact",
-          "sport": "baseball",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Parcel data",
-      "url": "https://www.lightboxre.com/",
-      "type": "proprietary_dataset",
-      "access": "purchased",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4402407614",
-          "title": "The Ballpark Effect: Spatial-Data-Driven Insights into Baseball’s Local Economic Impact",
-          "sport": "baseball",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "U.S. Census Bureau population data for St. Louis",
-      "url": "https://fred.stlouisfed.org/series/STLPOP",
-      "type": "government_data",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4402407614",
-          "title": "The Ballpark Effect: Spatial-Data-Driven Insights into Baseball’s Local Economic Impact",
-          "sport": "baseball",
-          "year": 2024
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Psychometrica",
-      "url": "https://www.psychometrica.de/correlation.html",
-      "type": "software_tool",
-      "category": "tool",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4413763130",
-          "title": "Sex Differences in the High Jump Kinematics of U18 Adolescent Athletes",
-          "sport": "athletics",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Athlete Game Lost",
-      "url": "https://www.athletegamelost.com",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4413961931",
-          "title": "Temporary employment and the protection of investments in human capital: Examining the Major League Baseball player market",
-          "sport": "baseball",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Cot's Baseball Contracts",
-      "url": "http://legacy.baseballprospectus.com/compensation/cots/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4413961931",
-          "title": "Temporary employment and the protection of investments in human capital: Examining the Major League Baseball player market",
-          "sport": "baseball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "Eclipse Mosquitto",
-      "url": "https://mosquitto.org/",
-      "type": "platform",
-      "category": "tool",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7116711884",
-          "title": "Architectural Design of an IoT-Enabled Real-Time Athlete Monitoring System: A Multi-Sensor Integration Framework",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "Axivity AX6",
-      "url": "https://axivity.com/downloads/ax6",
-      "type": "sensor",
-      "category": "instrument",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7117299617",
-          "title": "Activity Detection of Paralympic Athletes with Lower Limb Running-Specific Prosthesis During Extended Periods of Time: Software Development and Preliminary Validation",
-          "sport": "athletics",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 1
-    },
-    {
-      "name": "National Electronic Injury Surveillance System (NEISS)",
-      "url": "https://www.cpsc.gov/Research--Statistics/NEISS-Injury-Data",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W7117883448",
-          "title": "Injuries in Female American Football Players from 2015 to 2024: An Age-stratified Epidemiological Analysis",
-          "sport": "american_football",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
       "paper_count": 1
     }
   ]
