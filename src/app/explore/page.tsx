@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import classifiedPapersData from "@/data/classified-papers.json";
@@ -739,20 +740,26 @@ function ExploreContent() {
                         <span className="text-[10px] font-medium text-gray-500">Data sources: </span>
                         <span className="flex flex-wrap gap-1 mt-0.5">
                           {r.data_sources.map((ds, i) => (
-                            ds.url && ds.url_status !== "dead" ? (
-                              <a key={i} href={ds.url} target="_blank" rel="noopener noreferrer"
-                                 className="inline-flex items-center gap-0.5 rounded-full border border-teal-200 bg-white px-2 py-0.5 text-[10px] text-teal-800 hover:bg-teal-100 transition-colors">
-                                {ds.name}
-                                {ds.url_status === "verified" && <span className="text-green-500 ml-0.5" title="Link verified">&#10003;</span>}
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor" className="h-2.5 w-2.5 opacity-50"><path d="M3.5 3a.5.5 0 0 0 0 1h2.793L2.146 8.146a.5.5 0 1 0 .708.708L7 4.707V7.5a.5.5 0 0 0 1 0V3H3.5z"/></svg>
-                              </a>
-                            ) : (
-                              <span key={i} className={`rounded-full border px-2 py-0.5 text-[10px] ${
-                                ds.url_status === "dead" ? "border-red-200 bg-red-50 text-red-400 line-through" : "border-teal-200 bg-white text-teal-700"
-                              }`}>
-                                {ds.name}{ds.url_status === "dead" && " (broken link)"}
-                              </span>
-                            )
+                            <span key={i} className="inline-flex items-center gap-0.5">
+                              {ds.url && ds.url_status !== "dead" ? (
+                                <a href={ds.url} target="_blank" rel="noopener noreferrer"
+                                   className="inline-flex items-center gap-0.5 rounded-full border border-teal-200 bg-white px-2 py-0.5 text-[10px] text-teal-800 hover:bg-teal-100 transition-colors">
+                                  {ds.name}
+                                  {ds.url_status === "verified" && <span className="text-green-500 ml-0.5" title="Link verified">&#10003;</span>}
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor" className="h-2.5 w-2.5 opacity-50"><path d="M3.5 3a.5.5 0 0 0 0 1h2.793L2.146 8.146a.5.5 0 1 0 .708.708L7 4.707V7.5a.5.5 0 0 0 1 0V3H3.5z"/></svg>
+                                </a>
+                              ) : (
+                                <span className={`rounded-full border px-2 py-0.5 text-[10px] ${
+                                  ds.url_status === "dead" ? "border-red-200 bg-red-50 text-red-400 line-through" : "border-teal-200 bg-white text-teal-700"
+                                }`}>
+                                  {ds.name}{ds.url_status === "dead" && " (broken link)"}
+                                </span>
+                              )}
+                              <Link href={`/resources?search=${encodeURIComponent(ds.name)}`}
+                                    className="text-[9px] text-teal-500 hover:text-teal-700" title="View on Resources page">
+                                &#8599;
+                              </Link>
+                            </span>
                           ))}
                         </span>
                       </div>
