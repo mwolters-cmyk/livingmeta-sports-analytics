@@ -136,7 +136,7 @@ const researchTypes = [
     steps: [
       "Study the existing classifier prompt in living_meta/classifier.py",
       "Design your classification approach (fine-tuning, prompt engineering, RAG)",
-      "Use the database (39K+ papers) as training/test data",
+      "Use the database (39K+ papers (12K+ classified)) as training/test data",
       "Validate against human-tagged ground truth",
       "Integrate into the pipeline for automatic classification",
     ],
@@ -187,7 +187,7 @@ export default function ContributePage() {
                     CLAUDE.md
                   </code>{" "}
                   file gives Claude full project context: database schema, 39K+
-                  papers, 25 journals, coding conventions, and available
+                  papers, 24 journals, coding conventions, and available
                   datasets for 15+ sports.
                 </p>
               </div>
@@ -395,10 +395,10 @@ export default function ContributePage() {
           <div className="grid gap-4 md:grid-cols-2">
             {[
               {
-                title: "AI Paper Classifier",
+                title: "AI Classifier Improvement",
                 level: "MSc",
-                desc: "Build a classifier that categorizes sports analytics papers by sport, methodology, and theme. Validate against Jan Van Haaren\u0027s annual reviews (~200 papers/year).",
-                data: "39K+ papers in database",
+                desc: "Our baseline Claude Haiku classifier achieves good coverage. Can you improve it with fine-tuning, RAG, or ensemble methods? Validate against our gold standard set and Jan Van Haaren\u0027s annual reviews.",
+                data: "12K+ classified papers, 50 gold standard extractions",
               },
               {
                 title: "Topic Modeling Pipeline",
@@ -461,13 +461,14 @@ export default function ContributePage() {
           </h2>
           <div className="rounded-xl border border-gray-200 bg-white p-6">
             <p className="mb-4 text-sm text-gray-600">
-              Help improve our AI classifier by manually tagging papers with
-              their correct sport, methodology, and research theme. Your tags
-              serve as ground truth for training the automated classifier.
+              Our AI classifier (Claude Haiku 4.5) has classified 35,000+ papers, with 12,000+ identified
+              as sport-relevant. Help validate and improve these classifications by reviewing papers
+              and correcting any misclassifications.
             </p>
-            <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
-              The paper tagging interface is coming soon. It will be available
-              through the interactive dashboard.
+            <div className="rounded-lg border border-green-200 bg-green-50 p-4 text-sm text-green-800">
+              AI classification is active! Browse classified papers on the{" "}
+              <Link href="/explore" className="font-medium underline hover:text-green-900">Explore page</Link>.
+              Manual validation interface coming soon.
             </div>
           </div>
         </section>
@@ -479,11 +480,11 @@ export default function ContributePage() {
           </h2>
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-xl border border-gray-200 bg-white p-5 text-center">
-              <div className="text-3xl font-bold text-navy">39,480</div>
+              <div className="text-3xl font-bold text-navy">39,620</div>
               <div className="mt-1 text-sm text-gray-500">papers indexed</div>
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-5 text-center">
-              <div className="text-3xl font-bold text-navy">25</div>
+              <div className="text-3xl font-bold text-navy">24</div>
               <div className="mt-1 text-sm text-gray-500">
                 journals monitored
               </div>

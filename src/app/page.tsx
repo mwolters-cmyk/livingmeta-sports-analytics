@@ -130,13 +130,13 @@ export default function Home() {
             {
               step: "1",
               title: "Monitor",
-              desc: "OpenAlex API scans 25 journals + 90+ keywords weekly",
+              desc: "OpenAlex API scans 24 journals + 90+ keywords weekly",
               icon: "&#128225;",
             },
             {
               step: "2",
               title: "Enrich",
-              desc: "Fetch abstracts, normalize metadata, link to datasets",
+              desc: "Fetch abstracts, impact metrics (FWCI, h-index), author data",
               icon: "&#128269;",
             },
             {
@@ -246,22 +246,16 @@ export default function Home() {
 
           <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-5">
             <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-              <div className="text-3xl font-bold text-orange">
+              <div className="text-3xl font-bold text-gray-400">
                 {stats.totalPapers.toLocaleString()}
               </div>
-              <div className="mt-1 text-sm text-gray-500">Papers indexed</div>
+              <div className="mt-1 text-sm text-gray-500">Papers screened</div>
             </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-              <div className="text-3xl font-bold text-navy">
+            <div className="rounded-xl border-2 border-orange bg-white p-5 shadow-sm">
+              <div className="text-3xl font-bold text-orange">
                 {(stats.classifiedRelevant || 0).toLocaleString()}
               </div>
-              <div className="mt-1 text-sm text-gray-500">AI-classified</div>
-            </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-              <div className="text-3xl font-bold text-navy">
-                {stats.totalAuthors.toLocaleString()}
-              </div>
-              <div className="mt-1 text-sm text-gray-500">Authors tracked</div>
+              <div className="mt-1 text-sm text-gray-500">Sport-relevant papers</div>
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
               <div className="text-3xl font-bold text-navy">
@@ -274,6 +268,12 @@ export default function Home() {
                 {stats.journalCount.toLocaleString()}
               </div>
               <div className="mt-1 text-sm text-gray-500">Journals indexed</div>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+              <div className="text-3xl font-bold text-navy">
+                {stats.totalAuthors.toLocaleString()}
+              </div>
+              <div className="mt-1 text-sm text-gray-500">Authors tracked</div>
             </div>
           </div>
 
@@ -357,12 +357,12 @@ export default function Home() {
             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-navy text-lg text-white">
               &#128196;
             </div>
-            <h3 className="mb-2 font-semibold text-navy">Tag Papers</h3>
+            <h3 className="mb-2 font-semibold text-navy">Validate Papers</h3>
             <p className="mb-3 text-sm text-gray-500">
-              Help train the AI classifier by manually tagging papers with sport,
-              methodology, and theme. No coding required &mdash; just domain expertise.
+              Review AI-classified papers and validate sport, methodology, and theme labels.
+              No coding required &mdash; just domain expertise. 12K+ papers already classified.
             </p>
-            <span className="text-xs font-medium text-orange">Non-technical &bull; Coming soon</span>
+            <span className="text-xs font-medium text-orange">Non-technical &bull; Browse on Explore page</span>
           </div>
         </div>
 

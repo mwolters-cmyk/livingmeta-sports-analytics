@@ -222,9 +222,21 @@ const classifiedPapers = db
             p.cited_by_count, SUBSTR(p.abstract, 1, 300) as abstract,
             p.open_access, p.doi, p.pub_year,
             c.sport, c.methodology, c.theme, c.sub_theme,
-            c.is_womens_sport, c.data_type, c.summary as ai_summary
+            c.is_womens_sport, c.data_type, c.summary as ai_summary,
+            -- Impact metrics
+            p.fwci, p.citation_percentile, p.is_top_10_percent,
+            p.citations_per_year, p.primary_topic,
+            -- Journal metrics (from sources table)
+            s.h_index as journal_h_index,
+            s.two_yr_mean_citedness as journal_if_proxy,
+            -- First author metrics
+            fa.name as first_author_name,
+            fa.h_index as first_author_h_index
      FROM classifications c
      JOIN papers p ON c.paper_id = p.work_id
+     LEFT JOIN sources s ON p.source_id = s.source_id
+     LEFT JOIN paper_authors pa ON p.work_id = pa.paper_id AND pa.is_first = 1
+     LEFT JOIN authors fa ON pa.author_id = fa.author_id
      WHERE c.sport != 'not_applicable'
      ORDER BY p.pub_date DESC, p.cited_by_count DESC`
   )
@@ -277,16 +289,21 @@ console.log(`Exported ${journals.length} journals`);
 // PUBLIC API FILES (downloadable by AI agents, researchers, students)
 // =============================================================================
 
-// Full classification export with all fields
+// Full classification export with all fields (including impact metrics)
 const fullClassifications = db
   .prepare(
     `SELECT p.work_id, p.doi, p.title, p.pub_date, p.pub_year,
             p.journal_name as journal, p.cited_by_count, p.open_access,
+            p.fwci, p.citation_percentile, p.is_top_10_percent,
+            p.citations_per_year, p.primary_topic,
+            s.h_index as journal_h_index,
+            s.two_yr_mean_citedness as journal_if_proxy,
             c.sport, c.methodology, c.theme, c.sub_theme,
             c.is_womens_sport, c.data_type, c.summary,
             c.relevance_json, c.classified_by, c.classified_at
      FROM classifications c
      JOIN papers p ON c.paper_id = p.work_id
+     LEFT JOIN sources s ON p.source_id = s.source_id
      ORDER BY p.pub_date DESC`
   )
   .all()
@@ -322,6 +339,12 @@ fs.writeFileSync(
       summary: "AI-generated one-sentence summary of the key finding",
       relevance:
         "Relevance scores (0-10) for sports_analytics, sports_medicine, sports_management",
+      fwci: "Field-Weighted Citation Impact (1.0 = world average, from OpenAlex)",
+      citation_percentile: "Citation percentile within field (0-100, from OpenAlex)",
+      is_top_10_percent: "Whether this paper is in the top 10% most cited in its field",
+      citations_per_year: "Average citations per year since publication",
+      journal_h_index: "Journal h-index (from OpenAlex)",
+      journal_if_proxy: "Journal 2-year mean citedness (Impact Factor proxy, from OpenAlex)",
     },
     data: fullClassifications,
   })

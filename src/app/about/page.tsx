@@ -30,17 +30,17 @@ export default function AboutPage() {
             {
               step: "1",
               title: "Monitor",
-              desc: "Every week, we poll the OpenAlex API for new papers across 13 target journals and 60+ keyword queries spanning 15+ sports.",
+              desc: "Every week, we poll the OpenAlex API for new papers across 24 target journals and 90+ keyword queries spanning 15+ sports.",
             },
             {
               step: "2",
               title: "Enrich",
-              desc: "We fetch abstracts, normalize metadata (institutions, countries, concepts), and link papers to our operational sport datasets where relevant.",
+              desc: "We fetch abstracts, enrich with impact metrics (FWCI, citation percentiles, h-indices), infer author gender, and link to sport datasets.",
             },
             {
               step: "3",
               title: "Classify",
-              desc: "AI-powered classification assigns each paper a sport, methodology type, research theme, and relevance scores. (Coming soon)",
+              desc: "Claude Haiku 4.5 classifies each paper by sport, methodology, theme, and relevance scores. 12,000+ sport-relevant papers classified so far.",
             },
             {
               step: "4",
@@ -93,7 +93,7 @@ export default function AboutPage() {
         <div className="grid gap-3 md:grid-cols-3">
           {[
             { cat: "Data Pipeline", items: "Python, SQLite, OpenAlex API" },
-            { cat: "AI Classification", items: "Claude API (Anthropic), batch processing" },
+            { cat: "AI Classification", items: "Claude Haiku 4.5 (Anthropic), 12K+ papers classified" },
             { cat: "Website", items: "Next.js, Tailwind CSS, Vercel" },
             { cat: "Dashboard", items: "Streamlit, Plotly (planned)" },
             { cat: "Automation", items: "GitHub Actions (weekly sync)" },

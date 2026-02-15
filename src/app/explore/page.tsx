@@ -16,6 +16,42 @@ const sports = [...new Set(allPapers.map((p) => p.sport))].sort();
 const themes = [...new Set(allPapers.map((p) => p.theme))].sort();
 const methodologies = [...new Set(allPapers.map((p) => p.methodology))].sort();
 
+type SortOption = "date" | "citations" | "fwci" | "citations_per_year" | "journal_impact";
+
+const SORT_LABELS: Record<SortOption, string> = {
+  date: "Date (newest)",
+  citations: "Citations (most)",
+  fwci: "FWCI (highest)",
+  citations_per_year: "Citations/year",
+  journal_impact: "Journal Impact",
+};
+
+/** Format FWCI with color coding: >1 is above world average */
+function FwciTag({ value }: { value: number | null }) {
+  if (value === null || value === undefined) return null;
+  const color =
+    value >= 2
+      ? "bg-emerald-100 text-emerald-800"
+      : value >= 1
+        ? "bg-blue-100 text-blue-800"
+        : "bg-gray-100 text-gray-500";
+  return (
+    <span className={`rounded px-1.5 py-0.5 text-xs font-medium ${color}`} title="Field-Weighted Citation Impact (1.0 = world average)">
+      FWCI {value.toFixed(2)}
+    </span>
+  );
+}
+
+/** Small impact indicator for journal/author */
+function ImpactBadge({ label, value, title }: { label: string; value: number | null | undefined; title: string }) {
+  if (value === null || value === undefined) return null;
+  return (
+    <span className="text-xs text-gray-400" title={title}>
+      {label}: {typeof value === "number" && value % 1 !== 0 ? value.toFixed(1) : value}
+    </span>
+  );
+}
+
 // Color maps for badges
 const sportColors: Record<string, string> = {
   football: "bg-green-100 text-green-800",
@@ -51,6 +87,7 @@ export default function ExplorePage() {
   const [theme, setTheme] = useState("");
   const [methodology, setMethodology] = useState("");
   const [womenOnly, setWomenOnly] = useState(false);
+  const [sortBy, setSortBy] = useState<SortOption>("date");
   const [page, setPage] = useState(0);
   const limit = 25;
 
@@ -64,7 +101,9 @@ export default function ExplorePage() {
           (p.title && p.title.toLowerCase().includes(q)) ||
           (p.abstract && p.abstract.toLowerCase().includes(q)) ||
           (p.ai_summary && p.ai_summary.toLowerCase().includes(q)) ||
-          (p.sub_theme && p.sub_theme.toLowerCase().includes(q))
+          (p.sub_theme && p.sub_theme.toLowerCase().includes(q)) ||
+          (p.first_author_name && p.first_author_name.toLowerCase().includes(q)) ||
+          (p.primary_topic && p.primary_topic.toLowerCase().includes(q))
       );
     }
 
@@ -84,8 +123,29 @@ export default function ExplorePage() {
       results = results.filter((p) => p.is_womens_sport === 1);
     }
 
-    return results;
-  }, [query, sport, theme, methodology, womenOnly]);
+    // Sort
+    const sorted = [...results];
+    switch (sortBy) {
+      case "citations":
+        sorted.sort((a, b) => (b.cited_by_count ?? 0) - (a.cited_by_count ?? 0));
+        break;
+      case "fwci":
+        sorted.sort((a, b) => (b.fwci ?? -1) - (a.fwci ?? -1));
+        break;
+      case "citations_per_year":
+        sorted.sort((a, b) => (b.citations_per_year ?? -1) - (a.citations_per_year ?? -1));
+        break;
+      case "journal_impact":
+        sorted.sort((a, b) => (b.journal_if_proxy ?? -1) - (a.journal_if_proxy ?? -1));
+        break;
+      case "date":
+      default:
+        // Already sorted by date from export
+        break;
+    }
+
+    return sorted;
+  }, [query, sport, theme, methodology, womenOnly, sortBy]);
 
   const total = filtered.length;
   const totalPages = Math.ceil(total / limit);
@@ -97,6 +157,7 @@ export default function ExplorePage() {
     setTheme("");
     setMethodology("");
     setWomenOnly(false);
+    setSortBy("date");
     setPage(0);
   };
 
@@ -105,7 +166,112 @@ export default function ExplorePage() {
     (theme ? 1 : 0) +
     (methodology ? 1 : 0) +
     (womenOnly ? 1 : 0) +
-    (query ? 1 : 0);
+    (query ? 1 : 0) +
+    (sortBy !== "date" ? 1 : 0);
+
+  // --- Export helpers ---
+
+  function downloadFile(content: string, filename: string, mimeType: string) {
+    const blob = new Blob([content], { type: mimeType });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  function exportCSV() {
+    const headers = [
+      "title",
+      "first_author",
+      "doi",
+      "year",
+      "journal",
+      "journal_if_proxy",
+      "sport",
+      "theme",
+      "methodology",
+      "is_womens_sport",
+      "data_type",
+      "cited_by_count",
+      "citations_per_year",
+      "fwci",
+      "citation_percentile",
+      "is_top_10_percent",
+      "first_author_h_index",
+      "ai_summary",
+    ];
+
+    const escapeCSV = (val: string | number | null | undefined): string => {
+      if (val === null || val === undefined) return "";
+      const s = String(val);
+      if (s.includes(",") || s.includes('"') || s.includes("\n")) {
+        return `"${s.replace(/"/g, '""')}"`;
+      }
+      return s;
+    };
+
+    const rows = filtered.map((p) =>
+      [
+        escapeCSV(p.title),
+        escapeCSV(p.first_author_name),
+        escapeCSV(p.doi),
+        escapeCSV(p.pub_year),
+        escapeCSV(p.journal),
+        escapeCSV(p.journal_if_proxy),
+        escapeCSV(p.sport),
+        escapeCSV(p.theme),
+        escapeCSV(p.methodology),
+        escapeCSV(p.is_womens_sport),
+        escapeCSV(p.data_type),
+        escapeCSV(p.cited_by_count),
+        escapeCSV(p.citations_per_year),
+        escapeCSV(p.fwci),
+        escapeCSV(p.citation_percentile),
+        escapeCSV(p.is_top_10_percent),
+        escapeCSV(p.first_author_h_index),
+        escapeCSV(p.ai_summary),
+      ].join(",")
+    );
+
+    const csv = [headers.join(","), ...rows].join("\n");
+    downloadFile(csv, "sports-analytics-papers.csv", "text/csv;charset=utf-8;");
+  }
+
+  function exportBibTeX() {
+    const entries = filtered
+      .filter((p) => p.doi)
+      .map((p) => {
+        // Clean work_id to create a valid BibTeX key
+        const key = (p.work_id || "unknown")
+          .replace("https://openalex.org/", "")
+          .replace(/[^a-zA-Z0-9_-]/g, "_");
+
+        // Strip https://doi.org/ prefix if present
+        const doi = p.doi!.startsWith("https://doi.org/")
+          ? p.doi!.slice("https://doi.org/".length)
+          : p.doi!.startsWith("http://doi.org/")
+            ? p.doi!.slice("http://doi.org/".length)
+            : p.doi!;
+
+        const year = p.pub_year ?? "";
+        const title = (p.title || "").replace(/[{}]/g, "");
+        const journal = (p.journal || "").replace(/[{}]/g, "");
+
+        return `@article{${key},
+  title = {${title}},
+  journal = {${journal}},
+  year = {${year}},
+  doi = {${doi}},
+}`;
+      });
+
+    const bib = entries.join("\n\n") + "\n";
+    downloadFile(bib, "sports-analytics-papers.bib", "application/x-bibtex");
+  }
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
@@ -119,12 +285,12 @@ export default function ExplorePage() {
 
       {/* Filters */}
       <div className="mb-6 rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-        <div className="grid gap-3 md:grid-cols-6">
+        <div className="grid gap-3 md:grid-cols-7">
           {/* Text search */}
           <div className="md:col-span-2">
             <input
               type="text"
-              placeholder="Search title, abstract, or AI summary..."
+              placeholder="Search title, abstract, author, or topic..."
               value={query}
               onChange={(e) => {
                 setQuery(e.target.value);
@@ -185,6 +351,20 @@ export default function ExplorePage() {
             ))}
           </select>
 
+          {/* Sort by */}
+          <select
+            value={sortBy}
+            onChange={(e) => {
+              setSortBy(e.target.value as SortOption);
+              setPage(0);
+            }}
+            className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-orange focus:outline-none"
+          >
+            {Object.entries(SORT_LABELS).map(([key, label]) => (
+              <option key={key} value={key}>{label}</option>
+            ))}
+          </select>
+
           {/* Women's sport toggle */}
           <label className="flex cursor-pointer items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm">
             <input
@@ -216,16 +396,44 @@ export default function ExplorePage() {
         )}
       </div>
 
-      {/* Results count */}
-      <div className="mb-4 text-sm text-gray-500">
-        {total > 0 ? (
-          <>
-            Showing {page * limit + 1}&ndash;
-            {Math.min((page + 1) * limit, total)} of{" "}
-            {total.toLocaleString()} papers
-          </>
-        ) : (
-          "No papers found matching your filters."
+      {/* Results count + export buttons */}
+      <div className="mb-4 flex items-center justify-between">
+        <div className="text-sm text-gray-500">
+          {total > 0 ? (
+            <>
+              Showing {page * limit + 1}&ndash;
+              {Math.min((page + 1) * limit, total)} of{" "}
+              {total.toLocaleString()} papers
+            </>
+          ) : (
+            "No papers found matching your filters."
+          )}
+        </div>
+        {total > 0 && (
+          <div className="flex gap-2">
+            <button
+              onClick={exportCSV}
+              className="inline-flex items-center gap-1.5 rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-50"
+              title="Export filtered results as CSV"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5">
+                <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
+                <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
+              </svg>
+              CSV
+            </button>
+            <button
+              onClick={exportBibTeX}
+              className="inline-flex items-center gap-1.5 rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-50"
+              title="Export filtered results as BibTeX"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5">
+                <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
+                <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
+              </svg>
+              BibTeX
+            </button>
+          </div>
         )}
       </div>
 
@@ -241,12 +449,31 @@ export default function ExplorePage() {
               <h3 className="font-semibold text-navy">
                 {p.doi ? (
                   <a
-                    href={`https://doi.org/${p.doi}`}
+                    href={p.doi.startsWith("http") ? p.doi : `https://doi.org/${p.doi}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-orange hover:underline"
                   >
                     {p.title}
+                    <span className="ml-1.5 inline-block align-text-top text-gray-400 transition-colors group-hover:text-orange">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="inline h-3.5 w-3.5">
+                        <path fillRule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clipRule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                ) : p.work_id ? (
+                  <a
+                    href={`https://openalex.org/works/${p.work_id.replace("https://openalex.org/", "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-orange hover:underline"
+                  >
+                    {p.title}
+                    <span className="ml-1.5 inline-block align-text-top text-gray-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="inline h-3.5 w-3.5">
+                        <path fillRule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clipRule="evenodd" />
+                      </svg>
+                    </span>
                   </a>
                 ) : (
                   p.title
@@ -254,15 +481,42 @@ export default function ExplorePage() {
               </h3>
 
               {/* Metadata row */}
-              <div className="mt-1 flex flex-wrap gap-2 text-xs text-gray-400">
+              <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-gray-400">
+                {p.first_author_name && (
+                  <span className="font-medium text-gray-500">
+                    {p.first_author_name}
+                    {p.first_author_h_index != null && (
+                      <span className="ml-0.5 text-gray-400" title={`First author h-index: ${p.first_author_h_index}`}>
+                        (h={p.first_author_h_index})
+                      </span>
+                    )}
+                  </span>
+                )}
+                {p.first_author_name && p.journal && <span className="text-gray-300">·</span>}
                 {p.journal && (
-                  <span className="rounded bg-gray-100 px-2 py-0.5">
+                  <span className="rounded bg-gray-100 px-2 py-0.5" title={p.journal_if_proxy ? `Journal IF proxy: ${p.journal_if_proxy.toFixed(1)}` : p.journal}>
                     {p.journal}
+                    {p.journal_if_proxy != null && (
+                      <span className="ml-1 text-gray-400">
+                        (IF≈{p.journal_if_proxy.toFixed(1)})
+                      </span>
+                    )}
                   </span>
                 )}
                 {p.pub_date && <span>{p.pub_date}</span>}
                 {p.cited_by_count > 0 && (
-                  <span>{p.cited_by_count} citations</span>
+                  <span title={p.citations_per_year ? `${p.citations_per_year.toFixed(1)} citations/year` : undefined}>
+                    {p.cited_by_count} citations
+                    {p.citations_per_year != null && p.citations_per_year > 0 && (
+                      <span className="text-gray-300"> ({p.citations_per_year.toFixed(1)}/yr)</span>
+                    )}
+                  </span>
+                )}
+                <FwciTag value={p.fwci ?? null} />
+                {p.is_top_10_percent === 1 && (
+                  <span className="rounded bg-amber-100 px-1.5 py-0.5 text-xs font-semibold text-amber-800" title="In the top 10% of cited works in its field">
+                    Top 10%
+                  </span>
                 )}
                 {p.open_access === 1 && (
                   <span className="rounded bg-green-100 px-2 py-0.5 text-green-700">
@@ -343,8 +597,39 @@ export default function ExplorePage() {
         </div>
       )}
 
+      {/* Export filtered results */}
+      {total > 0 && (
+        <div className="mt-8 rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+          <p className="text-center text-sm font-medium text-navy">
+            Export filtered results
+          </p>
+          <div className="mt-3 flex justify-center gap-3">
+            <button
+              onClick={exportCSV}
+              className="inline-flex items-center gap-2 rounded-lg bg-navy px-4 py-2 text-xs font-medium text-white hover:bg-navy-light"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
+                <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
+                <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
+              </svg>
+              Export CSV ({total.toLocaleString()} papers)
+            </button>
+            <button
+              onClick={exportBibTeX}
+              className="inline-flex items-center gap-2 rounded-lg border border-navy px-4 py-2 text-xs font-medium text-navy hover:bg-navy/5"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
+                <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
+                <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
+              </svg>
+              Export BibTeX ({total.toLocaleString()} papers)
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* API notice */}
-      <div className="mt-8 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-4 text-center text-sm text-gray-500">
+      <div className="mt-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-4 text-center text-sm text-gray-500">
         <p>
           Need this data programmatically? Download the full classification
           dataset:

@@ -58,6 +58,18 @@ export interface ClassifiedPaper {
   is_womens_sport: number;
   data_type: string;
   ai_summary: string | null;
+  // Impact metrics (from OpenAlex)
+  fwci: number | null;
+  citation_percentile: number | null;
+  is_top_10_percent: number;
+  citations_per_year: number | null;
+  primary_topic: string | null;
+  // Journal metrics (from sources table)
+  journal_h_index: number | null;
+  journal_if_proxy: number | null;
+  // Author metrics (first author)
+  first_author_name: string | null;
+  first_author_h_index: number | null;
 }
 
 export function getStats(): Stats {

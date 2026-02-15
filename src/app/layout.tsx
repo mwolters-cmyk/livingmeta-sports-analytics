@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import { getStats } from "@/lib/db";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,12 +29,12 @@ export const metadata: Metadata = {
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/analyses", label: "Analyses" },
-  { href: "/about", label: "How It Works" },
-  { href: "/contribute", label: "Contribute" },
   { href: "/explore", label: "Papers" },
   { href: "/trends", label: "Trends" },
   { href: "/gaps", label: "Research Gaps" },
+  { href: "/analyses", label: "Analyses" },
+  { href: "/methodology", label: "Methodology" },
+  { href: "/contribute", label: "Contribute" },
   { href: "/resources", label: "Resources" },
 ];
 
@@ -42,11 +43,43 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const stats = getStats();
+  const exportDate = stats.exportedAt
+    ? new Date(stats.exportedAt).toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+      })
+    : null;
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
+        {/* Living update banner */}
+        <div className="border-b border-green-200 bg-green-50 text-center text-xs text-green-800">
+          <div className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-1.5">
+            <span className="inline-block h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+            <span>
+              Living review &mdash; updated weekly &middot;{" "}
+              <strong>{(stats.classifiedRelevant || 0).toLocaleString()}</strong>{" "}
+              papers classified
+              {exportDate && (
+                <>
+                  {" "}&middot; last sync: <strong>{exportDate}</strong>
+                </>
+              )}
+            </span>
+            <Link
+              href="/methodology"
+              className="ml-1 underline decoration-green-400 hover:text-green-900"
+            >
+              methodology
+            </Link>
+          </div>
+        </div>
+
         {/* Navigation */}
         <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
@@ -87,11 +120,26 @@ export default function RootLayout({
         <footer className="border-t border-gray-200 bg-white">
           <div className="mx-auto max-w-7xl px-4 py-8">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-              <div className="text-sm text-gray-500">
-                Rotterdam School of Management, Erasmus University Rotterdam
+              <div>
+                <div className="text-sm text-gray-500">
+                  Rotterdam School of Management, Erasmus University Rotterdam
+                </div>
+                {exportDate && (
+                  <div className="mt-1 text-xs text-gray-400">
+                    Data last exported: {exportDate} &middot;{" "}
+                    {stats.totalPapers.toLocaleString()} papers indexed &middot;{" "}
+                    {(stats.classifiedRelevant || 0).toLocaleString()} classified
+                  </div>
+                )}
               </div>
               <div className="flex gap-4 text-sm text-gray-400">
                 <span>Matthijs Wolters &amp; Otto Koppius</span>
+                <Link
+                  href="/methodology"
+                  className="transition-colors hover:text-navy"
+                >
+                  Methodology
+                </Link>
                 <a
                   href="https://github.com/mwolters-cmyk/living-sports-analytics-research"
                   target="_blank"
