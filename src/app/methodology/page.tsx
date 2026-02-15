@@ -1,5 +1,7 @@
 import { getStats } from "@/lib/db";
 import Link from "next/link";
+import methodologyExtractions from "@/data/methodology-extractions.json";
+import unifiedResources from "@/data/unified-resources.json";
 
 /* ─── PRISMA flow box component ─── */
 function FlowBox({
@@ -109,6 +111,7 @@ const sectionNav = [
   { id: "search-strategy", label: "Search Strategy" },
   { id: "prisma-flow", label: "PRISMA Flow" },
   { id: "classification", label: "AI Classification" },
+  { id: "extraction", label: "Full-Text Extraction" },
   { id: "update-protocol", label: "Update Protocol" },
   { id: "limitations", label: "Limitations" },
 ];
@@ -125,6 +128,11 @@ export default function MethodologyPage() {
   const classifiedRelevant = stats.classifiedRelevant;
   const classifiedNotApplicable = stats.classifiedNotApplicable;
   const totalPapers = stats.totalPapers;
+  const extractionCount = Object.keys(methodologyExtractions).length;
+  const resourceCount = unifiedResources.resources.length;
+  const resourcesWithPapers = unifiedResources.resources.filter(
+    (r: { papers?: unknown[] }) => r.papers && r.papers.length > 0
+  ).length;
 
   return (
     <div>
@@ -149,6 +157,10 @@ export default function MethodologyPage() {
             <div className="rounded-lg border border-white/20 bg-white/10 px-4 py-2">
               <span className="font-semibold">{classifiedRelevant.toLocaleString()}</span>{" "}
               included as relevant
+            </div>
+            <div className="rounded-lg border border-white/20 bg-white/10 px-4 py-2">
+              <span className="font-semibold">{extractionCount.toLocaleString()}</span>{" "}
+              full-text extracted
             </div>
           </div>
         </div>
@@ -765,14 +777,303 @@ export default function MethodologyPage() {
         </section>
 
         {/* ════════════════════════════════════════════════════════════════════
-           4. UPDATE PROTOCOL
+           4. FULL-TEXT EXTRACTION PROTOCOL
+           ════════════════════════════════════════════════════════════════════ */}
+        <section id="extraction" className="mb-14">
+          <h2 className="mb-2 text-2xl font-bold text-navy">
+            Full-Text Extraction Protocol
+          </h2>
+          <p className="mb-6 text-gray-600 leading-relaxed">
+            For papers where we have the full-text PDF (via our Zotero reference
+            library), we run a deep extraction that goes far beyond
+            abstract-based classification &mdash; extracting methodology details,
+            data sources, code availability, tools, and instruments directly from
+            the paper text.
+          </p>
+
+          {/* Model config */}
+          <div className="mb-6 rounded-xl border border-gray-200 bg-white shadow-sm">
+            <div className="border-b border-gray-100 bg-gray-50 px-6 py-3">
+              <h3 className="font-semibold text-navy">
+                Extraction Model Configuration
+              </h3>
+            </div>
+            <div className="grid gap-4 p-6 md:grid-cols-2">
+              <div>
+                <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                  Model
+                </div>
+                <div className="mt-1 text-sm font-medium text-navy">
+                  Claude Haiku 4.5
+                </div>
+                <div className="text-xs text-gray-500">
+                  claude-haiku-4-5-20251001 (Anthropic)
+                </div>
+              </div>
+              <div>
+                <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                  Mode
+                </div>
+                <div className="mt-1 text-sm font-medium text-navy">
+                  Single API call per paper
+                </div>
+                <div className="text-xs text-gray-500">
+                  Methodology + resources extracted together
+                </div>
+              </div>
+              <div>
+                <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                  Cost
+                </div>
+                <div className="mt-1 text-sm font-medium text-navy">
+                  ~$0.25 / million input tokens
+                </div>
+                <div className="text-xs text-gray-500">
+                  $1.25 / million output tokens
+                </div>
+              </div>
+              <div>
+                <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                  Source
+                </div>
+                <div className="mt-1 text-sm font-medium text-navy">
+                  Zotero reference library
+                </div>
+                <div className="text-xs text-gray-500">
+                  3,656+ PDFs matched to OpenAlex records
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Extraction Schema Part A: Methodology */}
+          <div className="mb-6 rounded-xl border border-gray-200 bg-white shadow-sm">
+            <div className="border-b border-gray-100 bg-gray-50 px-6 py-3">
+              <h3 className="font-semibold text-navy">
+                Extraction Schema &mdash; Part A: Methodology
+              </h3>
+            </div>
+            <div className="divide-y divide-gray-100">
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  study_design
+                </div>
+                <div className="text-sm text-gray-600">
+                  Research design type: RCT, observational, cohort, case-control,
+                  cross-sectional, meta-analysis, systematic review, etc.
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  sample_size
+                </div>
+                <div className="text-sm text-gray-600">
+                  Total N, size bucket (n_lt_30 to n_gt_10000), unit of analysis,
+                  subgroups, and demographics when available.
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  statistical_methods
+                </div>
+                <div className="text-sm text-gray-600">
+                  Primary and all statistical methods used, software packages,
+                  significance level, effect sizes, and confidence intervals.
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  key_results
+                </div>
+                <div className="text-sm text-gray-600">
+                  Main finding, primary outcome measure, key statistics (p-values,
+                  effect sizes, accuracy metrics).
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  data_characteristics
+                </div>
+                <div className="text-sm text-gray-600">
+                  Data source, collection period, sampling method, competition
+                  level (elite/amateur/recreational), sex of participants.
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  methodological_quality
+                </div>
+                <div className="text-sm text-gray-600">
+                  Control group presence, longitudinal design, blinding,
+                  validated instruments, quality score indicators.
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  sports_analytics_specifics
+                </div>
+                <div className="text-sm text-gray-600">
+                  Model performance metrics, tracking technology used, match
+                  events analyzed, temporal granularity (frame/event/match/season).
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Extraction Schema Part B: Resources */}
+          <div className="mb-6 rounded-xl border border-gray-200 bg-white shadow-sm">
+            <div className="border-b border-gray-100 bg-gray-50 px-6 py-3">
+              <h3 className="font-semibold text-navy">
+                Extraction Schema &mdash; Part B: Resources &amp; Reproducibility
+              </h3>
+            </div>
+            <div className="divide-y divide-gray-100">
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  data_sources
+                </div>
+                <div className="text-sm text-gray-600">
+                  All datasets used: name, URL, type (event/tracking/survey/etc.),
+                  access level (open/restricted/commercial), platform, license.
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  code_availability
+                </div>
+                <div className="text-sm text-gray-600">
+                  Availability status, URL, programming language, framework.
+                  Tracks whether papers share reproducible code.
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  software_tools
+                </div>
+                <div className="text-sm text-gray-600">
+                  All software packages, libraries, and tools mentioned (e.g.,
+                  R, Python, SPSS, scikit-learn, TensorFlow, Stata).
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  instruments
+                </div>
+                <div className="text-sm text-gray-600">
+                  Questionnaires, validated scales, and measurement instruments
+                  (e.g., GPS sensors, force plates, accelerometers, RPE scales).
+                </div>
+              </div>
+              <div className="flex items-start gap-4 px-6 py-4">
+                <div className="mt-0.5 shrink-0 rounded bg-navy/10 px-2 py-0.5 text-xs font-mono text-navy">
+                  data_availability_statement
+                </div>
+                <div className="text-sm text-gray-600">
+                  Statement status, repository, and conditions for data access.
+                  Tracks open science practices across the field.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Quality controls */}
+          <div className="mb-6 rounded-xl border border-orange/30 bg-orange/5 p-6">
+            <h3 className="mb-3 font-semibold text-orange">
+              Extraction Quality Controls
+            </h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-orange">&#9679;</span>
+                <span>
+                  <strong>Zero-hallucination rule</strong>: Every extracted value
+                  must be accompanied by a verbatim <code className="text-xs bg-gray-100 px-1 rounded">quote</code> from
+                  the paper. Values without supporting text are recorded
+                  as <code className="text-xs bg-gray-100 px-1 rounded">not_stated</code> with
+                  a null quote.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-orange">&#9679;</span>
+                <span>
+                  <strong>Auto-unwrap nested JSON</strong>: Safety mechanism for
+                  AI nesting bugs &mdash; if the model wraps its response in an
+                  extra layer, the parser automatically unwraps it.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-orange">&#9679;</span>
+                <span>
+                  <strong>URL validation</strong>: All extracted URLs are checked
+                  for validity. Dead links are flagged; junk strings and
+                  non-URL content are filtered.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-orange">&#9679;</span>
+                <span>
+                  <strong>Domain-level deduplication</strong>: Multiple URLs from
+                  the same domain across papers are merged into a single resource
+                  entry. 30+ blocked domains (social media, DOI resolvers,
+                  publisher landing pages) are filtered out.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Progress stats */}
+          <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+            <div className="grid gap-6 md:grid-cols-3">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-navy">
+                  {extractionCount.toLocaleString()}
+                </div>
+                <div className="mt-1 text-sm text-gray-500">
+                  papers with full-text extraction
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-orange">
+                  {resourceCount.toLocaleString()}
+                </div>
+                <div className="mt-1 text-sm text-gray-500">
+                  unified resources discovered
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-navy">
+                  {resourcesWithPapers.toLocaleString()}
+                </div>
+                <div className="mt-1 text-sm text-gray-500">
+                  resources linked to papers
+                </div>
+              </div>
+            </div>
+            <div className="mt-4 flex flex-wrap justify-center gap-3">
+              <Link
+                href="/explore"
+                className="rounded-lg bg-navy/10 px-4 py-2 text-sm font-medium text-navy hover:bg-navy/20 transition-colors"
+              >
+                Explore Extracted Papers &rarr;
+              </Link>
+              <Link
+                href="/resources"
+                className="rounded-lg bg-orange/10 px-4 py-2 text-sm font-medium text-orange hover:bg-orange/20 transition-colors"
+              >
+                Browse Resource Directory &rarr;
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ════════════════════════════════════════════════════════════════════
+           5. UPDATE PROTOCOL
            ════════════════════════════════════════════════════════════════════ */}
         <section id="update-protocol" className="mb-14">
           <h2 className="mb-2 text-2xl font-bold text-navy">Update Protocol</h2>
           <p className="mb-6 text-gray-600 leading-relaxed">
             As a living review, this platform is designed for continuous updates.
-            The pipeline runs in four stages, each with its own data source and
-            update frequency.
+            The pipeline runs in six stages, from paper discovery through
+            full-text extraction to automated deployment.
           </p>
 
           <div className="space-y-4">
@@ -940,11 +1241,119 @@ export default function MethodologyPage() {
               </div>
             </div>
 
-            {/* Stage 4: Publish */}
+            {/* Stage 4: Extract */}
             <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy text-sm font-bold text-white">
                   4
+                </div>
+                <div>
+                  <h3 className="font-semibold text-navy">
+                    Extract &mdash; Full-Text PDF Extraction
+                  </h3>
+                  <div className="mt-2 grid gap-3 text-sm text-gray-600 md:grid-cols-2">
+                    <div>
+                      <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                        Model
+                      </div>
+                      <div className="mt-1">
+                        Claude Haiku 4.5 (Anthropic), 1 paper per call
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                        Source
+                      </div>
+                      <div className="mt-1">
+                        Zotero reference library (3,656+ PDFs matched to
+                        OpenAlex records)
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                        Output
+                      </div>
+                      <div className="mt-1">
+                        Per-paper methodology details + data sources, code, tools,
+                        and instruments (17 top-level fields)
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                        Progress
+                      </div>
+                      <div className="mt-1">
+                        {extractionCount.toLocaleString()} papers extracted
+                        &mdash; extraction is ongoing
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Stage 5: Aggregate */}
+            <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy text-sm font-bold text-white">
+                  5
+                </div>
+                <div>
+                  <h3 className="font-semibold text-navy">
+                    Aggregate &mdash; Resource Directory
+                  </h3>
+                  <div className="mt-2 grid gap-3 text-sm text-gray-600 md:grid-cols-2">
+                    <div>
+                      <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                        Data Sources
+                      </div>
+                      <div className="mt-1">
+                        4 sources merged: curated resources, AI-extracted
+                        resources, sport_datasets table, scrapers inventory
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                        Quality Filters
+                      </div>
+                      <div className="mt-1">
+                        URL validation, dead link removal, 30+ blocked domains,
+                        domain-level deduplication
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                        Output
+                      </div>
+                      <div className="mt-1">
+                        {resourceCount.toLocaleString()} unified resources,{" "}
+                        {resourcesWithPapers.toLocaleString()} with paper citations
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
+                        Browse
+                      </div>
+                      <div className="mt-1">
+                        <Link
+                          href="/resources"
+                          className="font-medium text-navy hover:text-orange hover:underline"
+                        >
+                          Resource Directory
+                        </Link>{" "}
+                        &mdash; searchable, filterable, with paper links
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Stage 6: Publish */}
+            <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy text-sm font-bold text-white">
+                  6
                 </div>
                 <div>
                   <h3 className="font-semibold text-navy">
@@ -956,25 +1365,46 @@ export default function MethodologyPage() {
                         Website
                       </div>
                       <div className="mt-1">
-                        Next.js on Vercel, server-rendered with pre-exported
-                        JSON data files
+                        Next.js 15 static export, auto-deployed via Vercel
+                        on <code className="text-xs bg-gray-100 px-1 rounded">git push</code>
                       </div>
                     </div>
                     <div>
                       <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
-                        Data Format
+                        Data Exports
                       </div>
                       <div className="mt-1">
-                        JSON exports (stats, classified papers, journals) plus
-                        SQLite database for full access
+                        7+ JSON data files including stats, classified papers,
+                        methodology extractions, paper resources, and unified
+                        resource directory
                       </div>
                     </div>
                     <div>
                       <div className="text-xs font-medium uppercase tracking-wider text-gray-400">
-                        Dashboard
+                        Pages
                       </div>
                       <div className="mt-1">
-                        Streamlit interactive dashboard (planned)
+                        <Link
+                          href="/explore"
+                          className="font-medium text-navy hover:text-orange hover:underline"
+                        >
+                          Explore Papers
+                        </Link>
+                        ,{" "}
+                        <Link
+                          href="/resources"
+                          className="font-medium text-navy hover:text-orange hover:underline"
+                        >
+                          Resources
+                        </Link>
+                        ,{" "}
+                        <Link
+                          href="/trends"
+                          className="font-medium text-navy hover:text-orange hover:underline"
+                        >
+                          Trends
+                        </Link>
+                        , and Methodology documentation
                       </div>
                     </div>
                     <div>
@@ -982,15 +1412,8 @@ export default function MethodologyPage() {
                         Open Data
                       </div>
                       <div className="mt-1">
-                        Full classification dataset available for download as
-                        JSON via the{" "}
-                        <Link
-                          href="/explore"
-                          className="font-medium text-navy hover:text-orange hover:underline"
-                        >
-                          Explore Papers
-                        </Link>{" "}
-                        page
+                        Full classification dataset + extraction data available
+                        as JSON; SQLite database for full access
                       </div>
                     </div>
                   </div>
@@ -1001,7 +1424,7 @@ export default function MethodologyPage() {
         </section>
 
         {/* ════════════════════════════════════════════════════════════════════
-           5. LIMITATIONS & TRANSPARENCY
+           6. LIMITATIONS & TRANSPARENCY
            ════════════════════════════════════════════════════════════════════ */}
         <section id="limitations" className="mb-14">
           <h2 className="mb-2 text-2xl font-bold text-navy">
@@ -1035,11 +1458,24 @@ export default function MethodologyPage() {
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-gray-400">&bull;</span>
                   <span>
-                    <strong>Abstract-only classification.</strong> The AI reads
-                    only the paper title and abstract. Full-text content, figures,
-                    and supplementary materials are not considered. This may lead
-                    to misclassification when abstracts are vague or
-                    non-standard.
+                    <strong>Abstract-based classification, enhanced by full-text
+                    extraction.</strong> The AI classifier reads paper title and
+                    abstract. For {extractionCount.toLocaleString()} papers where
+                    we have full-text PDFs, a separate deep extraction provides
+                    detailed methodology, data sources, and code availability.
+                    For the remaining papers, abstract-based classification is
+                    the only signal.
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gray-400">&bull;</span>
+                  <span>
+                    <strong>Full-text extraction is still in progress.</strong>{" "}
+                    Deep methodology extraction is available
+                    for {extractionCount.toLocaleString()} papers with PDFs.
+                    Abstract-based classification covers
+                    all {totalClassified.toLocaleString()}+ classified papers but
+                    provides less granular detail.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
