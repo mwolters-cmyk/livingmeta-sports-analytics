@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import classifiedPapersData from "@/data/classified-papers.json";
 import pdfManifest from "../../../public/api/paper-pdfs.json";
 import methodologyData from "@/data/methodology-extractions.json";
@@ -125,7 +126,16 @@ const themeColors: Record<string, string> = {
 };
 
 export default function ExplorePage() {
-  const [query, setQuery] = useState("");
+  return (
+    <Suspense fallback={<div className="p-8 text-center text-gray-500">Loading...</div>}>
+      <ExploreContent />
+    </Suspense>
+  );
+}
+
+function ExploreContent() {
+  const searchParams = useSearchParams();
+  const [query, setQuery] = useState(searchParams.get("search") || "");
   const [sport, setSport] = useState("");
   const [theme, setTheme] = useState("");
   const [methodology, setMethodology] = useState("");
@@ -134,6 +144,12 @@ export default function ExplorePage() {
   const [sortBy, setSortBy] = useState<SortOption>("date");
   const [page, setPage] = useState(0);
   const limit = 25;
+
+  // Sync with URL search param when navigating from other pages
+  useEffect(() => {
+    const s = searchParams.get("search");
+    if (s && s !== query) setQuery(s);
+  }, [searchParams]);
 
   const filtered = useMemo(() => {
     let results = allPapers;
