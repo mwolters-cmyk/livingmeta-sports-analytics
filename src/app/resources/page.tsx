@@ -1720,9 +1720,13 @@ for (const curated of resources) {
       continue;
     }
     // Match by URL containment (e.g., github.com/statsbomb/open-data contains statsbomb)
-    if (linked.url && curatedUrlNorm && (
-      normalizeUrl(linked.url).includes(curatedUrlNorm) ||
-      curatedUrlNorm.includes(normalizeUrl(linked.url))
+    // Skip domain-only URLs to prevent overly broad matches
+    const linkedUrlNorm = linked.url ? normalizeUrl(linked.url) : "";
+    const linkedHasPath = linkedUrlNorm.includes("/") && linkedUrlNorm.split("/").filter(Boolean).length > 1;
+    const curatedHasPath = curatedUrlNorm.includes("/") && curatedUrlNorm.split("/").filter(Boolean).length > 1;
+    if (linkedUrlNorm && curatedUrlNorm && linkedHasPath && curatedHasPath && (
+      linkedUrlNorm.includes(curatedUrlNorm) ||
+      curatedUrlNorm.includes(linkedUrlNorm)
     )) {
       matches.push(linked);
       continue;
