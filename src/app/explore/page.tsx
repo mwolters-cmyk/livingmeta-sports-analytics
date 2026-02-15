@@ -2,6 +2,8 @@
 
 import { useState, useMemo } from "react";
 import classifiedPapersData from "@/data/classified-papers.json";
+import pdfManifest from "../../../public/api/paper-pdfs.json";
+import methodologyData from "@/data/methodology-extractions.json";
 import {
   SPORT_LABELS,
   THEME_LABELS,
@@ -10,6 +12,34 @@ import {
 import type { ClassifiedPaper } from "@/lib/db";
 
 const allPapers = classifiedPapersData as ClassifiedPaper[];
+
+// Build a Set of work_ids that have full-text PDFs available
+const pdfMap = new Map<string, string>();
+for (const p of (pdfManifest as { papers: { work_id: string; pdf_url: string }[] }).papers) {
+  pdfMap.set(p.work_id, p.pdf_url);
+}
+const pdfCount = pdfMap.size;
+
+// Methodology extraction data (deep AI analysis from full-text PDFs)
+interface MethodologyExtraction {
+  study_design?: string;
+  sample_size?: number | string;
+  sample_unit?: string;
+  sample_bucket?: string;
+  primary_method?: string;
+  all_methods?: string[];
+  software?: string;
+  has_effect_sizes?: boolean;
+  has_confidence_intervals?: boolean;
+  temporal_scope?: string;
+  level_of_analysis?: string;
+  main_result?: string;
+  limitations?: string[];
+  data_availability?: string;
+  code_availability?: string;
+}
+const methodExtractions = methodologyData as unknown as Record<string, MethodologyExtraction>;
+const methodExtractionCount = Object.keys(methodExtractions).length;
 
 // Build filter options from actual data
 const sports = [...new Set(allPapers.map((p) => p.sport))].sort();
@@ -87,6 +117,7 @@ export default function ExplorePage() {
   const [theme, setTheme] = useState("");
   const [methodology, setMethodology] = useState("");
   const [womenOnly, setWomenOnly] = useState(false);
+  const [fullTextOnly, setFullTextOnly] = useState(false);
   const [sortBy, setSortBy] = useState<SortOption>("date");
   const [page, setPage] = useState(0);
   const limit = 25;
@@ -123,6 +154,10 @@ export default function ExplorePage() {
       results = results.filter((p) => p.is_womens_sport === 1);
     }
 
+    if (fullTextOnly) {
+      results = results.filter((p) => pdfMap.has(p.work_id));
+    }
+
     // Sort
     const sorted = [...results];
     switch (sortBy) {
@@ -145,7 +180,7 @@ export default function ExplorePage() {
     }
 
     return sorted;
-  }, [query, sport, theme, methodology, womenOnly, sortBy]);
+  }, [query, sport, theme, methodology, womenOnly, fullTextOnly, sortBy]);
 
   const total = filtered.length;
   const totalPages = Math.ceil(total / limit);
@@ -157,6 +192,7 @@ export default function ExplorePage() {
     setTheme("");
     setMethodology("");
     setWomenOnly(false);
+    setFullTextOnly(false);
     setSortBy("date");
     setPage(0);
   };
@@ -166,6 +202,7 @@ export default function ExplorePage() {
     (theme ? 1 : 0) +
     (methodology ? 1 : 0) +
     (womenOnly ? 1 : 0) +
+    (fullTextOnly ? 1 : 0) +
     (query ? 1 : 0) +
     (sortBy !== "date" ? 1 : 0);
 
@@ -280,7 +317,7 @@ export default function ExplorePage() {
       </h1>
       <p className="mb-6 text-gray-500">
         {allPapers.length.toLocaleString()} AI-classified sports analytics
-        papers &mdash; search by sport, methodology, theme, or keyword
+        papers &mdash; {pdfCount.toLocaleString()} with full-text PDF &mdash; search by sport, methodology, theme, or keyword
       </p>
 
       {/* Filters */}
@@ -365,19 +402,38 @@ export default function ExplorePage() {
             ))}
           </select>
 
-          {/* Women's sport toggle */}
-          <label className="flex cursor-pointer items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm">
-            <input
-              type="checkbox"
-              checked={womenOnly}
-              onChange={(e) => {
-                setWomenOnly(e.target.checked);
-                setPage(0);
-              }}
-              className="rounded text-orange focus:ring-orange"
-            />
-            <span>Women&apos;s sport</span>
-          </label>
+          {/* Toggles */}
+          <div className="flex gap-2">
+            <label className="flex cursor-pointer items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm">
+              <input
+                type="checkbox"
+                checked={womenOnly}
+                onChange={(e) => {
+                  setWomenOnly(e.target.checked);
+                  setPage(0);
+                }}
+                className="rounded text-orange focus:ring-orange"
+              />
+              <span>Women&apos;s</span>
+            </label>
+            <label className="flex cursor-pointer items-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm" title={`${pdfCount} papers with full-text PDF`}>
+              <input
+                type="checkbox"
+                checked={fullTextOnly}
+                onChange={(e) => {
+                  setFullTextOnly(e.target.checked);
+                  setPage(0);
+                }}
+                className="rounded text-red-500 focus:ring-red-500"
+              />
+              <span className="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3.5 w-3.5 text-red-500">
+                  <path d="M3 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3Zm2.5 4a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5Z" />
+                </svg>
+                PDF
+              </span>
+            </label>
+          </div>
         </div>
 
         {/* Active filters + reset */}
@@ -523,6 +579,20 @@ export default function ExplorePage() {
                     Open Access
                   </span>
                 )}
+                {pdfMap.has(p.work_id) && (
+                  <a
+                    href={pdfMap.get(p.work_id)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 rounded bg-red-50 px-2 py-0.5 text-xs font-medium text-red-700 hover:bg-red-100 transition-colors"
+                    title="View full-text PDF"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-3 w-3">
+                      <path d="M3 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3Zm2.5 4a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5Z" />
+                    </svg>
+                    PDF
+                  </a>
+                )}
               </div>
 
               {/* Classification badges */}
@@ -569,6 +639,61 @@ export default function ExplorePage() {
                   {p.abstract}
                 </p>
               )}
+
+              {/* Methodology extraction details (from full-text AI analysis) */}
+              {methodExtractions[p.work_id] && (() => {
+                const m = methodExtractions[p.work_id];
+                return (
+                  <div className="mt-2 rounded-lg border border-indigo-100 bg-indigo-50/50 p-3">
+                    <div className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-indigo-500">
+                      Deep methodology extraction (AI from full text)
+                    </div>
+                    <div className="grid gap-x-6 gap-y-1 text-xs text-gray-600 md:grid-cols-2">
+                      {m.study_design && (
+                        <div><span className="font-medium text-gray-700">Design:</span> {m.study_design}</div>
+                      )}
+                      {m.sample_size != null && (
+                        <div><span className="font-medium text-gray-700">Sample:</span> n={typeof m.sample_size === "number" ? m.sample_size.toLocaleString() : m.sample_size}{m.sample_unit ? ` ${m.sample_unit}` : ""}</div>
+                      )}
+                      {m.primary_method && (
+                        <div><span className="font-medium text-gray-700">Primary method:</span> {m.primary_method}</div>
+                      )}
+                      {m.software && (
+                        <div><span className="font-medium text-gray-700">Software:</span> {m.software}</div>
+                      )}
+                      {m.temporal_scope && (
+                        <div><span className="font-medium text-gray-700">Temporal scope:</span> {m.temporal_scope}</div>
+                      )}
+                      {m.level_of_analysis && (
+                        <div><span className="font-medium text-gray-700">Level:</span> {m.level_of_analysis}</div>
+                      )}
+                      {m.data_availability && m.data_availability !== "not_stated" && (
+                        <div><span className="font-medium text-gray-700">Data:</span> {m.data_availability}</div>
+                      )}
+                      {m.code_availability && m.code_availability !== "not_stated" && (
+                        <div><span className="font-medium text-gray-700">Code:</span> {m.code_availability}</div>
+                      )}
+                    </div>
+                    {m.all_methods && m.all_methods.length > 1 && (
+                      <div className="mt-1.5 flex flex-wrap gap-1">
+                        {m.all_methods.map((method, i) => (
+                          <span key={i} className="rounded-full border border-indigo-200 bg-white px-2 py-0.5 text-[10px] text-indigo-700">
+                            {method}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    <div className="mt-1.5 flex gap-2">
+                      {m.has_effect_sizes && (
+                        <span className="rounded bg-green-100 px-1.5 py-0.5 text-[10px] font-medium text-green-700">Effect sizes reported</span>
+                      )}
+                      {m.has_confidence_intervals && (
+                        <span className="rounded bg-green-100 px-1.5 py-0.5 text-[10px] font-medium text-green-700">CIs reported</span>
+                      )}
+                    </div>
+                  </div>
+                );
+              })()}
             </div>
           </div>
         ))}
