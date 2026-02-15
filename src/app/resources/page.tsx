@@ -2,8 +2,32 @@
 
 import Link from "next/link";
 import { useState, useMemo } from "react";
+import linkedResourcesData from "@/data/paper-linked-resources.json";
 
 /* ─── Types ─── */
+
+/* Paper-linked resource from AI extraction */
+interface LinkedResource {
+  name: string;
+  url: string | null;
+  type: string;
+  category: string;
+  access?: string;
+  platform?: string;
+  language?: string;
+  url_status?: "verified" | "dead";
+  paper_count: number;
+  papers: { work_id: string; title: string; sport: string; year: number | null }[];
+}
+
+interface LinkedResourcesData {
+  generated_at: string;
+  total_papers: number;
+  total_resources: number;
+  resources: LinkedResource[];
+}
+
+const linkedResources = linkedResourcesData as LinkedResourcesData;
 type SportTag =
   | "football"
   | "tennis"
@@ -1674,8 +1698,65 @@ const categoryOrder: ResourceCategory[] = [
   "api",
 ];
 
+/* ─── Cross-reference: match curated resources to paper-extracted ones ─── */
+function normalizeUrl(url: string): string {
+  return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/$/, "").toLowerCase();
+}
+function normalizeName(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+/** Build a map from curated resource name -> paper mentions from the linked resources data */
+const paperMentionsMap: Record<string, LinkedResource[]> = {};
+for (const curated of resources) {
+  const curatedUrlNorm = normalizeUrl(curated.url);
+  const curatedNameNorm = normalizeName(curated.name);
+  const matches: LinkedResource[] = [];
+
+  for (const linked of linkedResources.resources) {
+    // Match by URL (most reliable)
+    if (linked.url && curatedUrlNorm && normalizeUrl(linked.url) === curatedUrlNorm) {
+      matches.push(linked);
+      continue;
+    }
+    // Match by URL containment (e.g., github.com/statsbomb/open-data contains statsbomb)
+    if (linked.url && curatedUrlNorm && (
+      normalizeUrl(linked.url).includes(curatedUrlNorm) ||
+      curatedUrlNorm.includes(normalizeUrl(linked.url))
+    )) {
+      matches.push(linked);
+      continue;
+    }
+    // Match by name similarity
+    const linkedNameNorm = normalizeName(linked.name);
+    if (curatedNameNorm.length >= 4 && linkedNameNorm.length >= 4 && (
+      linkedNameNorm.includes(curatedNameNorm) ||
+      curatedNameNorm.includes(linkedNameNorm)
+    )) {
+      matches.push(linked);
+    }
+  }
+
+  if (matches.length > 0) {
+    paperMentionsMap[curated.name] = matches;
+  }
+}
+
 /* ─── Resource Card ─── */
 function ResourceCard({ r }: { r: Resource }) {
+  const mentions = paperMentionsMap[r.name];
+  // Deduplicate papers across all matching linked resources
+  const paperSet = new Map<string, { work_id: string; title: string; sport: string; year: number | null }>();
+  if (mentions) {
+    for (const m of mentions) {
+      for (const p of m.papers) {
+        if (!paperSet.has(p.work_id)) {
+          paperSet.set(p.work_id, p);
+        }
+      }
+    }
+  }
+  const paperCount = paperSet.size;
   return (
     <a
       href={r.url}
@@ -1720,7 +1801,206 @@ function ResourceCard({ r }: { r: Resource }) {
           {r.onPlatform}
         </div>
       )}
+      {paperCount > 0 && (
+        <div className="mt-2 rounded-md bg-blue-50 border border-blue-200 px-2.5 py-1.5 text-xs text-blue-700">
+          <span className="font-medium">Referenced in {paperCount} paper{paperCount !== 1 ? "s" : ""}:</span>{" "}
+          {Array.from(paperSet.values()).slice(0, 3).map((p, i) => (
+            <span key={p.work_id}>
+              {i > 0 && ", "}
+              <Link
+                href={`/explore?search=${encodeURIComponent(p.title.slice(0, 40))}`}
+                className="underline hover:text-blue-900"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {p.title.length > 50 ? p.title.slice(0, 50) + "..." : p.title}
+              </Link>
+              {p.year && <span className="text-blue-500"> ({p.year})</span>}
+            </span>
+          ))}
+          {paperCount > 3 && <span className="text-blue-500"> +{paperCount - 3} more</span>}
+        </div>
+      )}
     </a>
+  );
+}
+
+/* ─── Paper-Extracted Resources Section ─── */
+
+const LINKED_CATEGORY_LABELS: Record<string, string> = {
+  dataset: "Data Sources",
+  tool: "Software & Tools",
+  library: "Libraries & Packages",
+  code: "Code Repositories",
+  instrument: "Instruments & Scales",
+};
+
+const LINKED_CATEGORY_ICONS: Record<string, string> = {
+  dataset: "\u{1F4CA}",
+  tool: "\u{1F6E0}\u{FE0F}",
+  library: "\u{1F4E6}",
+  code: "\u{1F4BB}",
+  instrument: "\u{1F4CF}",
+};
+
+const URL_STATUS_BADGES: Record<string, { label: string; className: string }> = {
+  verified: { label: "Link verified", className: "bg-green-100 text-green-700" },
+  dead: { label: "Link broken", className: "bg-red-100 text-red-700 line-through" },
+};
+
+function PaperExtractedSection() {
+  const [showAll, setShowAll] = useState(false);
+  const [linkedCategory, setLinkedCategory] = useState<string>("all");
+
+  // Group linked resources by category, only those with URLs (most useful)
+  const categorized = useMemo(() => {
+    const cats: Record<string, LinkedResource[]> = {};
+    for (const r of linkedResources.resources) {
+      // Skip dead URLs
+      if (r.url_status === "dead") continue;
+      const cat = r.category;
+      if (!cats[cat]) cats[cat] = [];
+      cats[cat].push(r);
+    }
+    return cats;
+  }, []);
+
+  const filteredLinked = useMemo(() => {
+    const all = linkedCategory === "all"
+      ? linkedResources.resources.filter(r => r.url_status !== "dead")
+      : (categorized[linkedCategory] || []);
+    // Prioritize resources with URLs
+    return all.sort((a, b) => {
+      if (a.url && !b.url) return -1;
+      if (!a.url && b.url) return 1;
+      return b.paper_count - a.paper_count;
+    });
+  }, [linkedCategory, categorized]);
+
+  const displayedLinked = showAll ? filteredLinked : filteredLinked.slice(0, 20);
+
+  return (
+    <section className="mt-14">
+      <div className="mb-2 flex items-center gap-2">
+        <span className="text-2xl">{"\uD83D\uDD0D"}</span>
+        <h2 className="text-xl font-bold text-navy">
+          Discovered in Research Papers
+        </h2>
+        <span className="rounded-full bg-teal-100 px-2 py-0.5 text-xs text-teal-700 font-medium">
+          AI-extracted
+        </span>
+      </div>
+      <p className="mb-4 text-sm text-gray-500">
+        Data sources, software tools, and instruments extracted by AI from the full text of{" "}
+        {linkedResources.total_papers} academic papers. URLs are validated before display.
+      </p>
+
+      {/* Category filter */}
+      <div className="mb-4 flex flex-wrap gap-1.5">
+        <button
+          onClick={() => setLinkedCategory("all")}
+          className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+            linkedCategory === "all"
+              ? "bg-teal-600 text-white"
+              : "bg-gray-100 text-gray-600 hover:bg-teal-50 hover:text-teal-700"
+          }`}
+        >
+          All ({linkedResources.resources.filter(r => r.url_status !== "dead").length})
+        </button>
+        {Object.entries(categorized).map(([cat, items]) => (
+          <button
+            key={cat}
+            onClick={() => setLinkedCategory(cat)}
+            className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+              linkedCategory === cat
+                ? "bg-teal-600 text-white"
+                : "bg-gray-100 text-gray-600 hover:bg-teal-50 hover:text-teal-700"
+            }`}
+          >
+            {LINKED_CATEGORY_ICONS[cat] || ""} {LINKED_CATEGORY_LABELS[cat] || cat} ({items.length})
+          </button>
+        ))}
+      </div>
+
+      {/* Linked resource cards */}
+      <div className="grid gap-3 md:grid-cols-2">
+        {displayedLinked.map((r, idx) => (
+          <div
+            key={`${r.name}-${idx}`}
+            className="rounded-xl border border-gray-200 bg-white p-4 transition-all hover:border-teal-300 hover:shadow-sm"
+          >
+            <div className="mb-1.5 flex items-start justify-between gap-2">
+              <div className="flex items-center gap-1.5">
+                <span className="text-sm">
+                  {LINKED_CATEGORY_ICONS[r.category] || "\u{1F4C4}"}
+                </span>
+                {r.url ? (
+                  <a
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-navy hover:text-teal-700 transition-colors"
+                  >
+                    {r.name} <span className="text-xs text-gray-400">\u2197</span>
+                  </a>
+                ) : (
+                  <span className="font-semibold text-navy">{r.name}</span>
+                )}
+              </div>
+              <div className="flex items-center gap-1.5 shrink-0">
+                {r.url_status && URL_STATUS_BADGES[r.url_status] && (
+                  <span className={`rounded-full px-1.5 py-0.5 text-[9px] font-medium ${URL_STATUS_BADGES[r.url_status].className}`}>
+                    {URL_STATUS_BADGES[r.url_status].label}
+                  </span>
+                )}
+                <span className="rounded-full bg-teal-100 px-1.5 py-0.5 text-[10px] font-medium text-teal-700">
+                  {r.paper_count} paper{r.paper_count !== 1 ? "s" : ""}
+                </span>
+              </div>
+            </div>
+            {r.access && r.access !== "not_stated" && (
+              <span className={`inline-block rounded-full px-1.5 py-0.5 text-[9px] font-medium mb-1.5 ${
+                r.access === "fully_open" ? "bg-green-100 text-green-700" :
+                r.access === "upon_request" ? "bg-amber-100 text-amber-700" :
+                r.access === "proprietary" ? "bg-red-100 text-red-700" :
+                "bg-gray-100 text-gray-600"
+              }`}>
+                {r.access.replace(/_/g, " ")}
+              </span>
+            )}
+            {/* Paper references */}
+            <div className="mt-1.5 text-xs text-gray-500">
+              {r.papers.slice(0, 2).map((p, i) => (
+                <span key={p.work_id}>
+                  {i > 0 && " \u2022 "}
+                  <Link
+                    href={`/explore?search=${encodeURIComponent(p.title.slice(0, 40))}`}
+                    className="text-gray-500 hover:text-teal-700 underline decoration-dotted"
+                  >
+                    {p.title.length > 55 ? p.title.slice(0, 55) + "\u2026" : p.title}
+                  </Link>
+                  {p.year && <span className="text-gray-400"> ({p.year})</span>}
+                </span>
+              ))}
+              {r.papers.length > 2 && (
+                <span className="text-gray-400"> +{r.papers.length - 2} more</span>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Show more */}
+      {filteredLinked.length > 20 && (
+        <div className="mt-4 text-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="text-sm font-medium text-teal-700 hover:text-teal-900 underline"
+          >
+            {showAll ? "Show less" : `Show all ${filteredLinked.length} resources`}
+          </button>
+        </div>
+      )}
+    </section>
   );
 }
 
@@ -1776,8 +2056,9 @@ export default function ResourcesPage() {
             Resources for Sports Analytics
           </h1>
           <p className="mb-4 max-w-2xl text-lg text-gray-300">
-            Datasets, scrapers, libraries, and APIs &mdash; everything you need
-            to start a sports analytics project. Designed as a launchpad for
+            {resources.length} curated datasets, scrapers, libraries, and APIs &mdash; plus{" "}
+            {linkedResources.total_resources} resources discovered across{" "}
+            {linkedResources.total_papers} papers by AI extraction. Designed as a launchpad for
             researchers and AI agents.
           </p>
           <div className="rounded-lg border border-white/20 bg-white/10 p-4">
@@ -1968,6 +2249,11 @@ export default function ResourcesPage() {
               Clear all filters
             </button>
           </div>
+        )}
+
+        {/* Paper-extracted Resources section */}
+        {linkedResources.total_resources > 0 && (
+          <PaperExtractedSection />
         )}
 
         {/* For AI Agents section */}

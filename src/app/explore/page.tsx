@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import classifiedPapersData from "@/data/classified-papers.json";
 import pdfManifest from "../../../public/api/paper-pdfs.json";
 import methodologyData from "@/data/methodology-extractions.json";
+import paperResourcesData from "@/data/paper-resources.json";
 import {
   SPORT_LABELS,
   THEME_LABELS,
@@ -40,6 +41,18 @@ interface MethodologyExtraction {
 }
 const methodExtractions = methodologyData as unknown as Record<string, MethodologyExtraction>;
 const methodExtractionCount = Object.keys(methodExtractions).length;
+
+// Paper resource extraction data (data sources, code, tools, instruments)
+interface PaperResourceData {
+  data_sources?: { name: string; type: string; access: string; url?: string; platform?: string; url_status?: "verified" | "dead" }[];
+  code?: { status: string; url?: string; language?: string; framework?: string; url_status?: "verified" | "dead" };
+  tools?: { name: string; type: string; url?: string; version?: string }[];
+  instruments?: { name: string; type: string; url?: string }[];
+  data_availability?: { status: string; contact?: string; url?: string; conditions?: string };
+  contact?: { name: string; email: string; institution?: string };
+}
+const paperResources = paperResourcesData as unknown as Record<string, PaperResourceData>;
+const paperResourceCount = Object.keys(paperResources).length;
 
 // Build filter options from actual data
 const sports = [...new Set(allPapers.map((p) => p.sport))].sort();
@@ -317,7 +330,7 @@ export default function ExplorePage() {
       </h1>
       <p className="mb-6 text-gray-500">
         {allPapers.length.toLocaleString()} AI-classified sports analytics
-        papers &mdash; {pdfCount.toLocaleString()} with full-text PDF &mdash; search by sport, methodology, theme, or keyword
+        papers &mdash; {pdfCount.toLocaleString()} with full-text PDF &mdash; {paperResourceCount.toLocaleString()} with resource extraction &mdash; search by sport, methodology, theme, or keyword
       </p>
 
       {/* Filters */}
@@ -691,6 +704,111 @@ export default function ExplorePage() {
                         <span className="rounded bg-green-100 px-1.5 py-0.5 text-[10px] font-medium text-green-700">CIs reported</span>
                       )}
                     </div>
+                  </div>
+                );
+              })()}
+
+              {/* Resource extraction details (data sources, code, tools) */}
+              {paperResources[p.work_id] && (() => {
+                const r = paperResources[p.work_id];
+                return (
+                  <div className="mt-2 rounded-lg border border-teal-100 bg-teal-50/50 p-3">
+                    <div className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-teal-600">
+                      Data &amp; Code Resources (AI from full text)
+                    </div>
+
+                    {/* Data sources */}
+                    {r.data_sources && r.data_sources.length > 0 && (
+                      <div className="mb-1.5">
+                        <span className="text-[10px] font-medium text-gray-500">Data sources: </span>
+                        <span className="flex flex-wrap gap-1 mt-0.5">
+                          {r.data_sources.map((ds, i) => (
+                            ds.url && ds.url_status !== "dead" ? (
+                              <a key={i} href={ds.url} target="_blank" rel="noopener noreferrer"
+                                 className="inline-flex items-center gap-0.5 rounded-full border border-teal-200 bg-white px-2 py-0.5 text-[10px] text-teal-800 hover:bg-teal-100 transition-colors">
+                                {ds.name}
+                                {ds.url_status === "verified" && <span className="text-green-500 ml-0.5" title="Link verified">&#10003;</span>}
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor" className="h-2.5 w-2.5 opacity-50"><path d="M3.5 3a.5.5 0 0 0 0 1h2.793L2.146 8.146a.5.5 0 1 0 .708.708L7 4.707V7.5a.5.5 0 0 0 1 0V3H3.5z"/></svg>
+                              </a>
+                            ) : (
+                              <span key={i} className={`rounded-full border px-2 py-0.5 text-[10px] ${
+                                ds.url_status === "dead" ? "border-red-200 bg-red-50 text-red-400 line-through" : "border-teal-200 bg-white text-teal-700"
+                              }`}>
+                                {ds.name}{ds.url_status === "dead" && " (broken link)"}
+                              </span>
+                            )
+                          ))}
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Code availability */}
+                    {r.code && (
+                      <div className="mb-1">
+                        <span className="text-[10px] font-medium text-gray-500">Code: </span>
+                        {r.code.url && r.code.url_status !== "dead" ? (
+                          <a href={r.code.url} target="_blank" rel="noopener noreferrer"
+                             className="inline-flex items-center gap-1 rounded bg-emerald-100 px-1.5 py-0.5 text-[10px] font-medium text-emerald-800 hover:bg-emerald-200 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-2.5 w-2.5"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                            {r.code.language ? `${r.code.language} repo` : "Code repo"}
+                            {r.code.url_status === "verified" && <span className="text-green-600" title="Link verified">&#10003;</span>}
+                          </a>
+                        ) : (
+                          <span className={`rounded px-1.5 py-0.5 text-[10px] font-medium ${
+                            r.code.status === "upon_request" ? "bg-amber-100 text-amber-700" :
+                            r.code.status === "not_available" ? "bg-red-100 text-red-600" :
+                            "bg-gray-100 text-gray-600"
+                          }`}>
+                            {r.code.status === "upon_request" ? "Upon request" :
+                             r.code.status === "not_available" ? "Not available" :
+                             r.code.status}
+                          </span>
+                        )}
+                      </div>
+                    )}
+
+                    {/* Software tools as tags */}
+                    {r.tools && r.tools.length > 0 && (
+                      <div className="mb-1">
+                        <span className="text-[10px] font-medium text-gray-500">Tools: </span>
+                        <span className="inline-flex flex-wrap gap-1">
+                          {r.tools.map((t, i) => (
+                            <span key={i} className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] text-gray-600">
+                              {t.name}{t.version ? ` ${t.version}` : ""}
+                            </span>
+                          ))}
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Data availability + contact */}
+                    {r.data_availability && (
+                      <div className="mt-1">
+                        {r.data_availability.url ? (
+                          <a href={r.data_availability.url} target="_blank" rel="noopener noreferrer"
+                             className="inline-flex items-center gap-1 rounded bg-emerald-100 px-1.5 py-0.5 text-[10px] font-medium text-emerald-800 hover:bg-emerald-200 transition-colors">
+                            Data: openly available
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor" className="h-2.5 w-2.5 opacity-50"><path d="M3.5 3a.5.5 0 0 0 0 1h2.793L2.146 8.146a.5.5 0 1 0 .708.708L7 4.707V7.5a.5.5 0 0 0 1 0V3H3.5z"/></svg>
+                          </a>
+                        ) : r.data_availability.status === "upon_request" && r.contact?.email ? (
+                          <span className="inline-flex items-center gap-1 rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
+                            Data upon request: {r.contact.email}
+                          </span>
+                        ) : r.data_availability.status === "fully_open" ? (
+                          <span className="rounded bg-emerald-100 px-1.5 py-0.5 text-[10px] font-medium text-emerald-700">
+                            Data: openly available
+                          </span>
+                        ) : r.data_availability.status !== "not_stated" ? (
+                          <span className={`rounded px-1.5 py-0.5 text-[10px] font-medium ${
+                            r.data_availability.status === "upon_request" ? "bg-amber-100 text-amber-700" :
+                            r.data_availability.status === "restricted" ? "bg-red-100 text-red-600" :
+                            "bg-gray-100 text-gray-600"
+                          }`}>
+                            Data: {r.data_availability.status.replace(/_/g, " ")}
+                          </span>
+                        ) : null}
+                      </div>
+                    )}
                   </div>
                 );
               })()}
