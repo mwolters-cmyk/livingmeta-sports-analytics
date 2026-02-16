@@ -5,7 +5,7 @@
     <link>https://living-sports-analytics.vercel.app</link>
     <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 10:17:13 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 14:25:32 GMT</lastBuildDate>
     <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://living-sports-analytics.vercel.app/icon.png</url>
@@ -13,552 +13,554 @@
       <link>https://living-sports-analytics.vercel.app</link>
     </image>
     <item>
-      <title>Modeling Event Dynamics by Self-Exciting Processes with Random Memory</title>
-      <link>https://arxiv.org/abs/2601.07980v1</link>
-      <description>Proposes self-exciting point process models with random memory to capture event clustering and self-excitation patterns in sports competition data.</description>
-      <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:3a0d5395373a4a8f</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
-      <category>methodology</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Running to the Top: Investigating Running Back Archetypes and Player Trajectories</title>
-      <link>https://harvardsportsanalysis.org/2024/06/running-to-the-top-investigating-running-back-archetypes-and-player-trajectories/</link>
-      <description>Statistical analysis identifies distinct running back archetypes in the NFL and characterizes how these players evolve over their careers.</description>
-      <pubDate>Mon, 03 Jun 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:579ee85688a83818</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
+      <title>Who is More Injury‐Prone? Prediction and Assessment of Injury Risk</title>
+      <link>https://doi.org/https://doi.org/10.1111/deci.12333</link>
+      <description>Develops machine learning model using movement efficiency, IoT acceleration data, functional roles, and exposure metrics to predict injury risk in college football players, enabling individualized rather than one-size-fits-all injury prevention interventions.</description>
+      <pubDate>Thu, 09 Aug 2018 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2885866444</guid>
+      <source url="https://living-sports-analytics.vercel.app">Decision Sciences</source>
       <category>american_football</category>
-      <category>performance_analysis</category>
-      <category>thesis</category>
+      <category>injury_prevention</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Stats for Success: Linebackers and Tight Ends</title>
-      <link>https://harvardsportsanalysis.org/2023/09/stats-for-success-linebackers-and-tight-ends/</link>
-      <description>Analysis of statistical performance metrics for linebackers and tight ends in American football.</description>
-      <pubDate>Sat, 02 Sep 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:5e2b27a94aea04c4</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>american_football</category>
-      <category>performance_analysis</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>A Unified Server Quality Metric for Tennis</title>
-      <link>https://arxiv.org/abs/2602.08083v1</link>
-      <description>Develops serve-specific player metrics using logistic mixed-effects models on point-by-point data to isolate serving quality from overall tennis performance across gender and tournament.</description>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:6f4e26a38930bdf5</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>tennis</category>
-      <category>performance_analysis</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>How Valuable Is the Perfect Kicker?</title>
-      <link>https://harvardsportsanalysis.org/2025/11/how-valuable-is-the-perfect-kicker/</link>
-      <description>Exploratory analysis of elite kicker value in NFL, using Cam Little&apos;s record field goal as a case study to quantify positional importance.</description>
-      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:92e9c94d9c29df77</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>american_football</category>
-      <category>player_valuation</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>Beyond Expected Goals: A Probabilistic Framework for Shot Occurrences in Soccer</title>
-      <link>https://arxiv.org/abs/2512.00203v2</link>
-      <description>xG+ framework extends expected goals models by jointly estimating shot occurrence probability and shot quality at the possession level in soccer, improving on traditional xG metrics that only evaluate observed shots.</description>
-      <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:b4dcf8103ec2701d</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>football</category>
-      <category>performance_analysis</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Kicking for Goal or Touch? An Expected Points Framework for Penalty Decisions in Rugby Union</title>
-      <link>https://arxiv.org/abs/2512.00312v2</link>
-      <description>Expected Points framework quantifies the value of penalty decisions (shoot at goal vs. kick to touch) in rugby union as a function of field location and game context using Premiership data.</description>
-      <pubDate>Sat, 29 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:ba37630b426406ef</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>rugby</category>
-      <category>performance_analysis</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Inside the Flags?: A Data-Driven Investigation of NFL Penalties</title>
-      <link>https://harvardsportsanalysis.org/2025/09/inside-the-flags-a-data-driven-investigation-of-nfl-penalties/</link>
-      <description>Data-driven investigation of NFL penalty decisions examines whether referees exhibit neutral decision-making or contextual bias in flag enforcement.</description>
-      <pubDate>Thu, 04 Sep 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:c0efb3acc2d34ab9</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>american_football</category>
-      <category>bias_detection</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>Playoff Prophecy: Which Regular Season Stats Spell Postseason Glory?</title>
-      <link>https://harvardsportsanalysis.org/2024/06/playoff-prophecy-which-regular-season-stats-spell-postseason-glory/</link>
-      <description>Statistical analysis identifies which regular season statistics are most strongly associated with NBA playoff success.</description>
-      <pubDate>Fri, 14 Jun 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:c1d557bc8490ac0e</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>What Minute Matters Most? Scoring in College Basketball</title>
-      <link>https://harvardsportsanalysis.org/2023/08/what-minute-matters-most-scoring-in-college-basketball/</link>
-      <description>Analysis of scoring patterns across different game minutes in college basketball to determine which quarter most influences outcomes.</description>
-      <pubDate>Tue, 29 Aug 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:cc3c9ba46153504b</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>Analysing Skill Predominance in Generalized Fantasy Cricket</title>
-      <link>https://arxiv.org/abs/2512.18467v1</link>
-      <description>Limited-selection fantasy cricket contest framework demonstrates that success is predominantly skill-based rather than chance-based through simulation and real performance data.</description>
-      <pubDate>Sat, 20 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:d2078183568cc0c3</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
+      <title>Predicting outcome of matches using pressure index: evidence from Twenty20 cricket</title>
+      <link>https://doi.org/https://doi.org/10.1080/03610918.2018.1532003</link>
+      <description>Discriminant analysis applied to pressure index predicts Twenty20 cricket match outcomes with 90.7% accuracy on training data and 78.4% on holdout validation.</description>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2913545232</guid>
+      <source url="https://living-sports-analytics.vercel.app">Communications in Statistics - Simulation and Computation</source>
       <category>cricket</category>
       <category>performance_analysis</category>
-      <category>working_paper</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Probabilistic Analysis of Various Squash Shots and Skill Study of Different Levels of Squash Players and Teams</title>
-      <link>https://arxiv.org/abs/2512.02210v1</link>
-      <description>Probabilistic model of squash matches shows that professional players employ wider shot variety and favor backcourt control compared to intermediate players, with quantifiable skill differences.</description>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:d97b6a5ab3d60cb7</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>other</category>
-      <category>performance_analysis</category>
-      <category>working_paper</category>
+      <title>A ski injury risk assessment model for ski resorts</title>
+      <link>https://doi.org/https://doi.org/10.1080/13669877.2020.1749113</link>
+      <description>A spatial-temporal ski injury risk assessment model using ski lift transportation data identifies critical regions and injury patterns across ski resort terrain to enable targeted prevention strategies.</description>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3016083624</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Risk Research</source>
+      <category>skiing</category>
+      <category>injury_prevention</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>TacEleven: generative tactic discovery for football open play</title>
-      <link>https://arxiv.org/abs/2511.13326v2</link>
-      <description>TacEleven, a generative deep learning framework for automated discovery of offensive tactics during open play in football, developed with AJ Auxerre to assist coaches and analysts.</description>
-      <pubDate>Mon, 17 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:da1e3ab6d0cd16a9</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>football</category>
-      <category>tactical_analysis</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Extreme-Path Benchmarks for Sequential Probability Forecasts</title>
-      <link>https://arxiv.org/abs/2601.18774v2</link>
-      <description>Develops extreme-path benchmarks to evaluate sequential probability forecasts in sports, addressing how frequently forecast extremes should occur under correct calibration.</description>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:da7c8eb169d24f64</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
-      <category>methodology</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>A probabilistic match classification model for sports tournaments</title>
-      <link>https://arxiv.org/abs/2601.09673v2</link>
-      <description>Develops a probabilistic framework to classify matches in tournaments by simulating outcomes to compute qualifying probabilities and contestant incentives.</description>
-      <pubDate>Wed, 14 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:dd3bfdfe83347693</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
-      <category>methodology</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Discovering the NBA Talent in March Madness</title>
-      <link>https://harvardsportsanalysis.org/2024/05/discovering-the-nba-talent-in-march-madness/</link>
-      <description>Statistical analysis examines how March Madness performance translates to subsequent NBA success.</description>
-      <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:ebe4f09d5c7144da</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>basketball</category>
-      <category>player_development</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>Roaring to Glory</title>
-      <link>https://harvardsportsanalysis.org/2023/09/roaring-to-glory/</link>
-      <description>Case study analysis of the 2023 Florida Panthers&apos; historically unprecedented playoff surge to the Stanley Cup Finals.</description>
-      <pubDate>Sat, 02 Sep 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:edccaf6f717b9b2a</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>ice_hockey</category>
-      <category>performance_analysis</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>Rao-Blackwellizing FG% with Daniel Daly-Grafstein</title>
-      <link>https://statthinksportsanalytics.substack.com/p/rao-blackwellizing-fg-with-daniel-3fb</link>
-      <description>Rao-Blackwellizing methods improve field goal percentage estimation and in-game shot trajectory analysis quantifies defensive impact in the NBA.</description>
-      <pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:075ef32f6df7bd8d</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Careful Clustering of Soccer Players</title>
-      <link>https://statthinksportsanalytics.substack.com/p/careful-clustering-of-soccer-players</link>
-      <description>Paper:</description>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:1a3e251c6b739d49</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>How often does the best team win with Michael Lopez</title>
-      <link>https://statthinksportsanalytics.substack.com/p/how-often-does-the-best-team-win-c73</link>
-      <description>Statistical analysis examines how frequently the best team wins across sports competitions.</description>
-      <pubDate>Sat, 31 Oct 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:1dd430a7715e3b74</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>&apos;Tis the Big Data Bowl season</title>
-      <link>https://statthinksportsanalytics.substack.com/p/tis-the-big-data-bowl-season</link>
-      <description>Overview of NFL Big Data Bowl as an annual open competition leveraging publicly released player-tracking data to advance American football analytics.</description>
-      <pubDate>Tue, 09 Jan 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:57bfb708078a8357</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <title>The Relationship Between the National Football League Scouting Combine and Game Performance Over a 5-Year Period</title>
+      <link>https://doi.org/https://doi.org/10.1519/jsc.0000000000003676</link>
+      <description>5-year analysis of 1,537 NFL players shows Scouting Combine physical tests explain only 2.6% of first-year game performance variance with weak correlations (r&lt;0.3), suggesting Combine measures have minimal predictive validity for player selection.</description>
+      <pubDate>Mon, 25 May 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3029664187</guid>
+      <source url="https://living-sports-analytics.vercel.app">The Journal of Strength and Conditioning Research</source>
       <category>american_football</category>
-      <category>data_engineering</category>
-      <category>blog_post</category>
+      <category>player_development</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>openWAR with Gregory J. Matthews</title>
-      <link>https://statthinksportsanalytics.substack.com/p/openwar-with-gregory-j-matthews-755</link>
-      <description>openWAR presents an open-source statistical framework for calculating Wins Above Replacement in baseball.</description>
-      <pubDate>Sun, 10 May 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:6b163d8200bcb037</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <title>Data‐driven exploratory approach on player valuation in football transfer market</title>
+      <link>https://doi.org/https://doi.org/10.1002/cpe.5353</link>
+      <description>Regression, feature selection, and cluster analysis classify football players into four performance-fee groups, revealing position-dependent skill impacts on valuation in the transfer market.</description>
+      <pubDate>Thu, 23 May 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2945495661</guid>
+      <source url="https://living-sports-analytics.vercel.app">Concurrency and Computation Practice and Experience</source>
+      <category>football</category>
+      <category>player_valuation</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Measurement Space Partitioning for Estimation and Prediction</title>
+      <link>https://doi.org/https://doi.org/10.1109/access.2021.3117911</link>
+      <description>Proposes measurement space partitioning method using batted-ball trajectory data to improve prediction accuracy of batter talent, outperforming traditional linear regression and standard machine learning approaches with contextual adjustments.</description>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3184870026</guid>
+      <source url="https://living-sports-analytics.vercel.app">IEEE Access</source>
       <category>baseball</category>
       <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>True Shot Charts with Justin Ehrlich and Shane Sanders</title>
-      <link>https://statthinksportsanalytics.substack.com/p/true-shot-charts-with-justin-ehrlich-3eb</link>
-      <description>Discussion of true shot charts methodology for basketball analysis and shooting performance evaluation.</description>
-      <pubDate>Thu, 23 Jun 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:6c78046c728613a3</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>basketball</category>
+      <title>The effects of travel on performance: a 13-year analysis of the National Rugby League (NRL) competition</title>
+      <link>https://doi.org/https://doi.org/10.1080/24733938.2021.1876243</link>
+      <description>Analysis of 2,352 NRL matches (2007-2019) shows that travel reduces winning probability by 2.7% per 1,000 km, with effects diminishing over time, though modern conditions appear to mitigate travel disadvantage.</description>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4229038326</guid>
+      <source url="https://living-sports-analytics.vercel.app">Science and Medicine in Football</source>
+      <category>rugby</category>
       <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Expected Hypothetical Completion Probability with Sameer Deshpande and Katherine Evans</title>
-      <link>https://statthinksportsanalytics.substack.com/p/expected-hypothetical-completion-5cd</link>
-      <description>Discussion of a Bayesian approach to modeling expected hypothetical completion probability in NFL passing plays for evaluating receiver quality.</description>
-      <pubDate>Sun, 10 Jan 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:7e50b8405eb63b60</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>american_football</category>
+      <title>Finding Your Feet: A Gaussian Process Model for Estimating the Abilities of Batsmen in Test Cricket</title>
+      <link>https://doi.org/https://doi.org/10.1111/rssc.12470</link>
+      <description>A Bayesian Gaussian process model quantifies and predicts career-long fluctuations in cricket batsmen&apos;s abilities, outperforming traditional batting averages and ICC ratings.</description>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2970828838</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of the Royal Statistical Society Series C (Applied Statistics)</source>
+      <category>cricket</category>
       <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Down, set, hut!</title>
-      <link>https://statthinksportsanalytics.substack.com/p/down-set-hut</link>
-      <description>Statistical analysis of snap timing variability in American football plays involving motion to explain performance fluctuations.</description>
-      <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:942bd49d59fa4b59</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>american_football</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>A Statistical Model of Serve Return Impact Patterns in Professional Tennis with Stephanie Kovalchik</title>
-      <link>https://statthinksportsanalytics.substack.com/p/a-statistical-model-of-serve-return-206</link>
-      <description>Statistical model predicting serve return impact patterns in professional tennis to evaluate return of serve effectiveness.</description>
-      <pubDate>Tue, 23 Aug 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:ab3e5c8cf74f476b</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <title>The Winning Probability of a Game and the Importance of Points in Tennis Matches</title>
+      <link>https://doi.org/https://doi.org/10.1080/02701367.2019.1666203</link>
+      <description>A discrete-time Markov chain analysis of ATP tour matches (2011-2015) demonstrates that server point-winning probabilities vary significantly across game states and depend on previous point outcomes.</description>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2994643663</guid>
+      <source url="https://living-sports-analytics.vercel.app">Research Quarterly for Exercise and Sport</source>
       <category>tennis</category>
       <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Grinding the Mocks with Benjamin Robinson</title>
-      <link>https://statthinksportsanalytics.substack.com/p/grinding-the-mocks-with-benjamin-77b</link>
-      <description>Hierarchical Bayesian modeling approach to predicting NFL draft outcomes using historical draft data and player evaluations.</description>
-      <pubDate>Tue, 24 Aug 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:ba2a03a496c96b1b</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>american_football</category>
+      <title>Pursuing sources of heterogeneity in modeling clustered population</title>
+      <link>https://doi.org/https://doi.org/10.1111/biom.13434</link>
+      <description>A regularized finite mixture effects regression identifies heterogeneous relationships between MLB player performance metrics, contract status, and salary levels across player clusters.</description>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3126443958</guid>
+      <source url="https://living-sports-analytics.vercel.app">Biometrics</source>
+      <category>baseball</category>
       <category>player_valuation</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Bang the can slowly with Ryan Elmore and Gregory J. Matthews</title>
-      <link>https://statthinksportsanalytics.substack.com/p/bang-the-can-slowly-with-ryan-elmore-c47</link>
-      <description>Statistical investigation examines the 2017 Houston Astros sign-stealing scandal using novel analytical methods.</description>
-      <pubDate>Sat, 12 Dec 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:cf23b600f49d0353</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <title>Detecting drivers of basketball successful games: an exploratory study with machine learning algorithms</title>
+      <link>https://doi.org/https://doi.org/10.1285/i20705948v13n2p454</link>
+      <description>CART and Random Forest models identify defensive performance as the key driver of Golden State Warriors&apos; NBA victories using box scores and Dean&apos;s four factors.</description>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3127705661</guid>
+      <source url="https://living-sports-analytics.vercel.app">Università del Salento</source>
+      <category>basketball</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Are “Tech-Savvy” Owners Better for Business? Evidence From Major League Baseball</title>
+      <link>https://doi.org/https://doi.org/10.1123/jsm.2021-0252</link>
+      <description>MLB analysis over 14 years shows owners with business intelligence expertise increase operating margins modestly through labor cost efficiency rather than revenue generation, with effects moderated by tenure.</description>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4220894189</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Sport Management</source>
+      <category>baseball</category>
+      <category>player_valuation</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Examining the evolution and classification of player position using performance indicators in the National Rugby League during the 2015–2019 seasons</title>
+      <link>https://doi.org/https://doi.org/10.1016/j.jsams.2020.02.013</link>
+      <description>Cluster analysis and discriminant analysis of National Rugby League performance data (2015-2019) identified six distinct positional groups and revealed significant seasonal changes in positional performance demands.</description>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3006929148</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of science and medicine in sport</source>
+      <category>rugby</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Analysis of styles of play according to season and end of season rank in the National Rugby League</title>
+      <link>https://doi.org/https://doi.org/10.1016/j.jsams.2020.09.006</link>
+      <description>Principal component analysis identified nine distinct styles of play in the National Rugby League (2015-2019), with attacking, defensive, and contested dimensions differing by season and final ladder position.</description>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3085766350</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of science and medicine in sport</source>
+      <category>rugby</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Simulation-based decision making in the NFL using NFLSimulatoR</title>
+      <link>https://doi.org/https://doi.org/10.1007/s10479-022-04524-7</link>
+      <description>NFLSimulatoR R package enables simulation-based evaluation of NFL in-game strategies like fourth-down decisions, demonstrating teams should pass more frequently than current standard practice.</description>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3128980345</guid>
+      <source url="https://living-sports-analytics.vercel.app">Annals of Operations Research</source>
+      <category>american_football</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>A regularized hidden Markov model for analyzing the ‘hot shoe’ in football</title>
+      <link>https://doi.org/https://doi.org/10.1177/1471082x211008014</link>
+      <description>Penalized hidden Markov models with elastic net regularization detected a &apos;hot shoe&apos; effect in soccer penalty takers, identifying latent performance states affecting success probability.</description>
+      <pubDate>Wed, 19 May 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2991499484</guid>
+      <source url="https://living-sports-analytics.vercel.app">Statistical Modelling</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Dealing With Statistical Significance in Big Data: The Social Media Value of Game Outcomes in Professional Football</title>
+      <link>https://doi.org/https://doi.org/10.1123/jsm.2020-0275</link>
+      <description>Game outcomes significantly affect professional football clubs&apos; social media follower growth across Facebook, Twitter, and Instagram, with victories yielding the highest follower increases.</description>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3157926967</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Sport Management</source>
+      <category>football</category>
+      <category>fan_engagement</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Forecasting binary outcomes in soccer</title>
+      <link>https://doi.org/https://doi.org/10.1007/s10479-021-04224-8</link>
+      <description>Score-driven models forecasted binary soccer outcomes (red cards, Under/Over, Goal/No Goal) in English Premier League and Italian Serie A for profitable betting strategies.</description>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3197767830</guid>
+      <source url="https://living-sports-analytics.vercel.app">Annals of Operations Research</source>
+      <category>football</category>
+      <category>betting_markets</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Change the rules, change the game? Offensive tactics in elite men’s water polo from London to Tokyo</title>
+      <link>https://doi.org/https://doi.org/10.1080/24748668.2022.2106109</link>
+      <description>Water polo offensive tactics shifted significantly between 2012 and 2020 Olympics, with increased perimeter shooting and decreased counterattacks; exclusions and counterattack efficiency were key predictors of match outcomes.</description>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4288040058</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Performance Analysis in Sport</source>
+      <category>other</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Markov Switching Modelling of Shooting Performance Variability and Teammate Interactions in Basketball</title>
+      <link>https://doi.org/https://doi.org/10.1111/rssc.12442</link>
+      <description>Markov switching models identified positive and negative player interactions affecting team shooting performance, providing a network-based tool for coaching lineup decisions.</description>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3082565509</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of the Royal Statistical Society Series C (Applied Statistics)</source>
+      <category>basketball</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Continuous-time state-space modelling of the hot hand in basketball</title>
+      <link>https://doi.org/https://doi.org/10.1007/s10182-021-00410-y</link>
+      <description>Continuous-time state-space modeling of 110,513 NBA free throws confirmed the hot hand effect exists but with small magnitude, elevating success probabilities by only a few percentage points.</description>
+      <pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3105202937</guid>
+      <source url="https://living-sports-analytics.vercel.app">AStA Advances in Statistical Analysis</source>
+      <category>basketball</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Differentiating movement styles in professional tennis: A machine learning and hierarchical clustering approach</title>
+      <link>https://doi.org/https://doi.org/10.1080/17461391.2021.2006800</link>
+      <description>Hierarchical clustering of 150,000 direction changes from 62 male and 77 female professional tennis players identifies five distinct COD styles (Cutters, Gear Changers, Lateral Changers, Balanced Changers, Passive Changers) for athlete profiling.</description>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3212701786</guid>
+      <source url="https://living-sports-analytics.vercel.app">European Journal of Sport Science</source>
+      <category>tennis</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Return to performance following severe ankle, knee, and hip injuries in National Basketball Association players</title>
+      <link>https://doi.org/https://doi.org/10.1093/pnasnexus/pgac176</link>
+      <description>NBA players with severe lower extremity injuries showed limited return to performance, with fewer than 45% playing 2 years post-injury and fewer than 42% reaching preinjury performance levels.</description>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4295353291</guid>
+      <source url="https://living-sports-analytics.vercel.app">PNAS Nexus</source>
+      <category>basketball</category>
+      <category>injury_prevention</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>The relationship between match performance indicators and outcome in Australian Football</title>
+      <link>https://doi.org/https://doi.org/10.1016/j.jsams.2018.09.235</link>
+      <description>Decision tree and GLM models predict Australian Football match outcomes with up to 95.1% accuracy, identifying turnovers forced and inside 50s per shot as most predictive indicators.</description>
+      <pubDate>Wed, 10 Oct 2018 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2897174849</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of science and medicine in sport</source>
+      <category>other</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Constructing Spaces and Times for Tactical Analysis in Football</title>
+      <link>https://doi.org/https://doi.org/10.1109/tvcg.2019.2952129</link>
+      <description>A framework for analyzing football tracking data constructs dynamic spatial-temporal reference systems to detect and visualize general patterns of coordinated team movement in different game situations.</description>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2986447659</guid>
+      <source url="https://living-sports-analytics.vercel.app">IEEE Transactions on Visualization and Computer Graphics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>The effect of team formation on defensive performance in Australian football</title>
+      <link>https://doi.org/https://doi.org/10.1016/j.jsams.2021.09.002</link>
+      <description>Logistic regression and decision tree analysis of Australian Football GPS and event data show team formation wider than long associated with positive turnover outcomes, though most formation characteristics lack defensive impact.</description>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3201107368</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of science and medicine in sport</source>
+      <category>other</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Reimagining the role of technology in sport officiating: how artificial intelligence (AI) supports the design and delivery of ecologically dynamic development processes</title>
+      <link>https://doi.org/https://doi.org/10.1080/23750472.2022.2126996</link>
+      <description>Conceptual framework proposes using AI/machine learning technologies to support ecologically dynamic development of sport officials&apos; decision-making and judgment across multiple sports contexts.</description>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4302362314</guid>
+      <source url="https://living-sports-analytics.vercel.app">Managing Sport and Leisure</source>
+      <category>multi_sport</category>
+      <category>methodology</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Bayesian hierarchical modelling of basketball tracking data - a case study of spatial entropy and spatial effectiveness</title>
+      <link>https://doi.org/https://doi.org/10.1080/02640414.2020.1736252</link>
+      <description>A Bayesian hierarchical model was applied to basketball tracking data to analyze spatial autocorrelation and found a generally positive association between ball movement entropy and spatial effectiveness, with strength varying by spatial scale.</description>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3009878004</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Sports Sciences</source>
+      <category>basketball</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Exploring the components of brand equity amid declining ticket sales in Major League Baseball</title>
+      <link>https://doi.org/https://doi.org/10.1057/s41270-020-00083-7</link>
+      <description>A PLS-SEM analysis of MLB data found that attendance and local television partially/fully mediate the relationship between marketing assets and financial performance, with Twitter followers moderating several relationships in the brand equity model.</description>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3044417319</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Marketing Analytics</source>
+      <category>baseball</category>
+      <category>fan_engagement</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Technological advances in elite marathon performance</title>
+      <link>https://doi.org/https://doi.org/10.1152/japplphysiol.00002.2021</link>
+      <description>Analysis of World Marathon Major races shows elite runners wearing advanced Nike shoes achieved 2.0-2.6% faster marathon times compared to other footwear.</description>
+      <pubDate>Thu, 13 May 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3160304906</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Applied Physiology</source>
+      <category>athletics</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Rating Player Actions in Soccer</title>
+      <link>https://doi.org/https://doi.org/10.3389/fspor.2021.682986</link>
+      <description>A graph recurrent neural network trained on soccer tracking data was used to predict player trajectories and ball possession outcomes, enabling data-driven rating of individual player actions and their contribution to team success.</description>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3184133131</guid>
+      <source url="https://living-sports-analytics.vercel.app">Frontiers in Sports and Active Living</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Where to go: Computational and visual what-if analyses in soccer</title>
+      <link>https://doi.org/https://doi.org/10.1080/02640414.2019.1652541</link>
+      <description>An automated system using computer vision was developed to detect faulty region-based player movements in professional soccer matches and suggest improved alternatives, validated by expert coaches with 83% agreement on recommendations.</description>
+      <pubDate>Sun, 11 Aug 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2968005755</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Sports Sciences</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Toward Automatically Labeling Situations in Soccer</title>
+      <link>https://doi.org/https://doi.org/10.3389/fspor.2021.725431</link>
+      <description>Variational autoencoders learn feature representations from unlabeled soccer video to detect corner kicks, crosses, and counterattacks with &gt;90% AUC using minimal labeled training data.</description>
+      <pubDate>Wed, 03 Nov 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3209025434</guid>
+      <source url="https://living-sports-analytics.vercel.app">Frontiers in Sports and Active Living</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Scheduling the Valley Baseball League</title>
+      <link>https://doi.org/https://doi.org/10.1287/inte.2021.1076</link>
+      <description>Mathematical programming was used to generate an optimized schedule for the Valley Baseball League that significantly outperformed manually produced schedules while satisfying league mandates and team-specific constraints.</description>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3212313686</guid>
+      <source url="https://living-sports-analytics.vercel.app">INFORMS Journal on Applied Analytics</source>
       <category>baseball</category>
       <category>methodology</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Models for hockey player ratings with Andrew Thomas and Sam Ventura</title>
-      <link>https://statthinksportsanalytics.substack.com/p/models-for-hockey-player-ratings-a4b</link>
-      <description>Competing process hazard function models provide improved player rating systems for ice hockey.</description>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:d285c70041147486</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>ice_hockey</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
+      <title>Clustering algorithms to increase fairness in collegiate wrestling</title>
+      <link>https://doi.org/https://doi.org/10.1515/jqas-2020-0101</link>
+      <description>Custom clustering algorithms based on genetic algorithms were developed to optimally assign NCAA Division III wrestling schools to regions, improving fairness for individual wrestlers competing for national tournament qualification.</description>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4283697826</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Quantitative Analysis in Sports</source>
+      <category>other</category>
+      <category>methodology</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Player Chemistry in Soccer with Lotte Bransen</title>
-      <link>https://statthinksportsanalytics.substack.com/p/player-chemistry-in-soccer-with-lotte-2f8</link>
-      <description>Statistical analysis quantifies player chemistry effects on team balance and performance in soccer.</description>
-      <pubDate>Sun, 13 Sep 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:fdec6459c090e409</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <title>Can Social Media Predict Soccer Clubs’ Stock Prices? The Case of Turkish Teams and Twitter</title>
+      <link>https://doi.org/https://doi.org/10.1177/21582440211004153</link>
+      <description>Twitter sentiment analysis predicts stock prices of Turkish soccer clubs better than traditional betting odds as indicator of pre-match investor expectations.</description>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3154577610</guid>
+      <source url="https://living-sports-analytics.vercel.app">SAGE Open</source>
       <category>football</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>betting_markets</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Why it pays to know some nerds in football</title>
-      <link>https://socceranalytics.substack.com/p/why-it-pays-to-know-some-nerds-in</link>
-      <description>Commentary on the value of employing analytics-minded professionals in soccer organizations.</description>
-      <pubDate>Fri, 13 Dec 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:1184321021d8eb90</guid>
-      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
-      <category>football</category>
-      <category>coaching</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>📈2025 NFL Power Ratings and Projections🏈</title>
-      <link>https://neilpaine.substack.com/p/2025-nfl-power-ratings-and-projections</link>
-      <description>NFL power ratings and seasonal projections for all teams in 2025.</description>
-      <pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:4bf485a605ce4ca3</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
+      <title>Simulating Defensive Trajectories in American Football for Predicting League Average Defensive Movements</title>
+      <link>https://doi.org/https://doi.org/10.3389/fspor.2021.669845</link>
+      <description>Multi-agent imitation learning with deep neural networks simulates NFL defensive player trajectories from tracking data, achieving 81% accuracy in pass completion probability prediction for evaluating defensive performance.</description>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3183523428</guid>
+      <source url="https://living-sports-analytics.vercel.app">Frontiers in Sports and Active Living</source>
       <category>american_football</category>
       <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>🏁 2026 NASCAR Cup Series Driver Rankings 🚗</title>
-      <link>https://neilpaine.substack.com/p/2026-nascar-cup-series-driver-rankings</link>
-      <description>NASCAR Cup Series driver performance rankings tracked throughout the 2026 season.</description>
-      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:631ad65361ac5e91</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>motorsport</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Soccer analytics in the 2020s</title>
-      <link>https://socceranalytics.substack.com/p/soccer-analytics-in-the-2020s</link>
-      <description>Prospective review of the evolution, expected changes, and future directions of soccer analytics in the 2020s.</description>
-      <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:7525670502b2961a</guid>
-      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
-      <category>football</category>
-      <category>methodology</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Why xG matters</title>
-      <link>https://socceranalytics.substack.com/p/why-xg-matters</link>
-      <description>Essay discussing the importance and applications of expected goals (xG) as an analytical metric in soccer.</description>
-      <pubDate>Mon, 02 Dec 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:81f14b55e220e1e7</guid>
-      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
-      <category>football</category>
-      <category>methodology</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>I&apos;m still here!</title>
-      <link>https://socceranalytics.substack.com/p/im-still-here</link>
-      <description>Sorry!</description>
-      <pubDate>Tue, 21 Jan 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:a11036075a19ecf3</guid>
-      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
-      <category>football</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>🏀 2025-26 NBA Elo Forecast and Player Ratings 📈</title>
-      <link>https://neilpaine.substack.com/p/2025-26-nba-elo-forecast-and-player</link>
-      <description>NBA team Elo ratings and forecasts for Finals appearance and victory probabilities throughout the 2025-26 season.</description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:a8118a7dfa2c5c1f</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>🏀2026 NCAA Tournament Forecast 📊</title>
-      <link>https://neilpaine.substack.com/p/2026-ncaa-tournament-forecast</link>
-      <description>NCAA Division I men&apos;s basketball tournament probability forecasts for all teams&apos; tournament qualification and championship odds.</description>
-      <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:d188670b72af8d61</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Analytics makes us more human</title>
-      <link>https://socceranalytics.substack.com/p/analytics-makes-us-more-human</link>
-      <description>Essay on how analytics enhances human decision-making in soccer management.</description>
-      <pubDate>Mon, 16 Dec 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:d92bf3637c69296f</guid>
-      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
-      <category>football</category>
+      <title>In-game win probability models for Canadian football</title>
+      <link>https://doi.org/https://doi.org/10.1080/2573234x.2021.2015252</link>
+      <description>Logistic regression and gradient boosting models predict in-game win probability for Canadian Football League using play-by-play data and wagering information to support coaching decisions.</description>
+      <pubDate>Sat, 18 Dec 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4200470363</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Business Analytics</source>
       <category>other</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Squad age profiles, 2024-25</title>
-      <link>https://www.experimental361.com/p/squad-age-profiles-2024-25</link>
-      <description>Descriptive visualization of squad age profiles across football clubs for the 2024-25 season using an established analytic approach.</description>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:0459196d09aed984</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
-      <category>football</category>
       <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Squad retention in the big European leagues</title>
-      <link>https://www.experimental361.com/p/squad-retention-in-the-big-european</link>
-      <description>Comparative analysis of squad retention across major European leagues, measuring minutes lost from previous season rosters.</description>
-      <pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:248b079fb5f63473</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
-      <category>football</category>
+      <title>Identifying and analysing game styles and factors influencing a team’s strategy in field hockey</title>
+      <link>https://doi.org/https://doi.org/10.1080/02640414.2022.2037839</link>
+      <description>K-means clustering and decision trees identify game styles in international field hockey (74 female, 57 male matches) showing that opponent strategy is more influential than contextual factors in predicting team tactics.</description>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4211109871</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Sports Sciences</source>
+      <category>other</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Data Reduction Approaches to Athlete Monitoring in Professional Australian Football</title>
+      <link>https://doi.org/https://doi.org/10.1123/ijspp.2020-0083</link>
+      <description>Principal component analysis of GPS and wellness data from Australian Football League players reduces monitoring data overload by identifying key components: external load, perceived wellness, and chronic speed exposure.</description>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3095913219</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physiology and Performance</source>
+      <category>other</category>
       <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>League One scatter graphics: 2024-25</title>
-      <link>https://www.experimental361.com/p/league-one-scatter-graphics-2024</link>
-      <description>Descriptive analysis of League One (third-tier) team attacking and defensive performance across the 2024-25 season using scatter plot visualizations.</description>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:29e386cc84bfa4d8</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <title>Extraordinary circumstances: Covid-19 – Italian Serie A scenario</title>
+      <link>https://doi.org/https://doi.org/10.1177/17543371211019289</link>
+      <description>Hierarchical cluster analysis methodology proposes reducing remaining Serie A matches from 124 to 14 to conclude interrupted season, validated across 10 past seasons.</description>
+      <pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3164137196</guid>
+      <source url="https://living-sports-analytics.vercel.app">Proceedings of the Institution of Mechanical Engineers Part P Journal of Sports Engineering and Technology</source>
       <category>football</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>methodology</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Premier League match dashboards</title>
-      <link>https://johnspacemuller.substack.com/p/premier-league-match-dashboards</link>
-      <description>Development of match dashboards incorporating threat timelines, territory maps, and passing network visualizations for Premier League analysis.</description>
-      <pubDate>Mon, 18 Dec 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:2ea895e742a4a35f</guid>
-      <source url="https://living-sports-analytics.vercel.app">John Muller (space space space)</source>
+      <title>A cluster analysis of basketball players for each of the five traditionally defined positions</title>
+      <link>https://doi.org/https://doi.org/10.1177/17543371211062064</link>
+      <description>Hierarchical clustering of 15 NBA seasons identifies 4-6 position-specific player style clusters per position, using adjusted plus-minus and win differential to guide roster construction.</description>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4200615282</guid>
+      <source url="https://living-sports-analytics.vercel.app">Proceedings of the Institution of Mechanical Engineers Part P Journal of Sports Engineering and Technology</source>
+      <category>basketball</category>
+      <category>player_development</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Business Intelligence: How Sport Scientists Can Support Organization Decision Making in Professional Sport</title>
+      <link>https://doi.org/https://doi.org/10.1123/ijspp.2018-0903</link>
+      <description>Commentary proposing a business intelligence framework for sport scientists in professional organizations, integrating data collection, statistical analysis, and decision-support models to enhance organizational performance across multiple sports domains.</description>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2913946667</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physiology and Performance</source>
+      <category>multi_sport</category>
+      <category>methodology</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Visual recognition and performance prediction of athletes based on target tracking EIA algorithm</title>
+      <link>https://doi.org/https://doi.org/10.3233/jifs-189550</link>
+      <description>Development of multi-feature adaptive fusion algorithm combining EIA and compressed sensing for improved athlete target tracking and visual feature recognition in sports.</description>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3114845147</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Intelligent &amp; Fuzzy Systems</source>
+      <category>other</category>
+      <category>methodology</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>A Dimension Reduction Approach to Player Rankings in European Football</title>
+      <link>https://doi.org/https://doi.org/10.1109/access.2021.3107585</link>
+      <description>Dimension reduction framework for evaluating left and right back performance across global football competitions shows that highly-ranked players experience increased transfer values and move to suitable teams.</description>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3195655518</guid>
+      <source url="https://living-sports-analytics.vercel.app">IEEE Access</source>
       <category>football</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>player_valuation</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Early season update: squad retention, table-topping droughts and fixture difficulty</title>
-      <link>https://www.experimental361.com/p/early-season-update-squad-retention</link>
-      <description>Summary analysis of early season updates including squad retention metrics, table-topping droughts, and fixture difficulty across Premier League and EFL.</description>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:32342cf5a746707c</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
-      <category>football</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>League Two scatter graphics: 2024-25</title>
-      <link>https://www.experimental361.com/p/league-two-scatter-graphics-2024</link>
-      <description>Descriptive analysis of League Two (fourth-tier) team attacking and defensive performance across the 2024-25 season using scatter plot visualizations.</description>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:41d5e21d15267bdb</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
-      <category>football</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>League table footprints: 2024-25</title>
-      <link>https://www.experimental361.com/p/league-table-footprints-2024-25</link>
-      <description>Descriptive analysis tracking the duration each football team spent in each league position throughout the 2024-25 season.</description>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:43722ef5184ca3fa</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
-      <category>football</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Analysing the 2025-26 Premier League fixtures</title>
-      <link>https://www.experimental361.com/p/analysing-the-2025-26-premier-league</link>
-      <description>Descriptive analysis of 2025-26 Premier League fixture scheduling to identify easiest and toughest runs for each club.</description>
-      <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:5e0957868c40e9e5</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <title>Individual role classification for players defending corners in football (soccer)</title>
+      <link>https://doi.org/https://doi.org/10.1515/jqas-2022-0003</link>
+      <description>CNN-LSTM model achieves 89.3% accuracy classifying seven defensive player roles during soccer corners using positional tracking data, enabling fact-based tactical decision-making.</description>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4306398697</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Quantitative Analysis in Sports</source>
       <category>football</category>
       <category>tactical_analysis</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
     <item>
-      <title>Squad retention: 2025-26</title>
-      <link>https://www.experimental361.com/p/squad-retention-2025-26</link>
-      <description>Tracking analysis of league minutes lost by Premier League and EFL teams between seasons to assess squad retention impact.</description>
-      <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:63f60d26e7b064ac</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <title>Major league baseball’s&lt;i&gt;Moneyball&lt;/i&gt;at age 15: a re-appraisal</title>
+      <link>https://doi.org/https://doi.org/10.1080/00036846.2019.1617399</link>
+      <description>Re-appraisal of Moneyball&apos;s central premise using 45 seasons of MLB data validates the importance of on-base percentage for team success, though payroll efficiency gains following the book&apos;s publication appear to have dissipated over time.</description>
+      <pubDate>Mon, 20 May 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2945785742</guid>
+      <source url="https://living-sports-analytics.vercel.app">Applied Economics</source>
+      <category>baseball</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>High-Performance Practice Processes</title>
+      <link>https://doi.org/https://doi.org/10.1287/mnsc.2019.3286</link>
+      <description>Mathematical modeling of optimal practice strategies for both motor and cognitive skill acquisition shows that performance is maximized through U-shaped effort profiles with alternating cycles of stress and rest, consistent across multiple sports.</description>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2972484715</guid>
+      <source url="https://living-sports-analytics.vercel.app">Management Science</source>
+      <category>multi_sport</category>
+      <category>player_development</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>A Variance Gamma model for Rugby Union matches</title>
+      <link>https://doi.org/https://doi.org/10.1515/jqas-2019-0088</link>
+      <description>A Variance Gamma statistical model for Rugby Union matches provides analytical solutions for predicting match outcomes, total scores, and bonus points using bookmakers&apos; data and historical results.</description>
+      <pubDate>Tue, 05 May 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3033272870</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Quantitative Analysis in Sports</source>
+      <category>rugby</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>How the COVID-19 Pandemic has Changed the Game of Soccer</title>
+      <link>https://doi.org/https://doi.org/10.1055/a-1518-7778</link>
+      <description>Analysis of Bundesliga matches during COVID-19 lockdown found that empty stadiums reduced home advantage by 44.2% in away wins, decreased referee bias in yellow card distribution, and increased player running intensity and tactical adaptations.</description>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3187582337</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Medicine</source>
       <category>football</category>
       <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Analysing the 2025-26 EFL fixtures</title>
-      <link>https://www.experimental361.com/p/analysing-the-2025-26-efl-fixtures</link>
-      <description>Descriptive analysis of 2025-26 EFL fixture scheduling to identify easiest and toughest runs for each club.</description>
-      <pubDate>Thu, 26 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:7a690c49d653d5b8</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
-      <category>football</category>
-      <category>tactical_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Premier League scatter graphics: 2024-25</title>
-      <link>https://www.experimental361.com/p/premier-league-scatter-graphics-2024</link>
-      <description>Descriptive analysis of Premier League team attacking and defensive performance across the 2024-25 season using scatter plot visualizations.</description>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:8156687009082164</guid>
-      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
-      <category>football</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
+      <category>journal_article</category>
     </item>
   </channel>
 </rss>

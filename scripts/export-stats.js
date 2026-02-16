@@ -32,9 +32,10 @@ const BEST_CTE = `
       PARTITION BY paper_id
       ORDER BY CASE classified_by
         WHEN 'ai:haiku' THEN 1
-        WHEN 'source:vanhaaren_review' THEN 2
-        WHEN 'source:inherited' THEN 3
-        ELSE 4
+        WHEN 'ai:haiku_bib_screen' THEN 2
+        WHEN 'source:vanhaaren_review' THEN 3
+        WHEN 'source:inherited' THEN 4
+        ELSE 5
       END
     ) AS rn
     FROM classifications

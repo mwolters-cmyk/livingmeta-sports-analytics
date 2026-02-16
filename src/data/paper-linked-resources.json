@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-16T14:10:40.514913",
-  "total_papers": 2102,
-  "total_resources": 430,
-  "resources_skipped_no_url": 13174,
+  "generated_at": "2026-02-16T15:26:31.302154",
+  "total_papers": 2158,
+  "total_resources": 442,
+  "resources_skipped_no_url": 13481,
   "resources": [
     {
       "name": "Win Shares (WS)",
@@ -150,17 +150,10 @@
     {
       "name": "Open Science Framework",
       "url": "osf.io/kqcye/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "OSF",
-      "category": "dataset",
+      "type": "code_repository",
+      "category": "code",
+      "language": "R",
       "papers": [
-        {
-          "work_id": "https://openalex.org/W4390588824",
-          "title": "Comparing Self-Reported Running Distance and Pace With a Commercial Fitness Watch Data: Reliability Study",
-          "sport": "athletics",
-          "year": 2024
-        },
         {
           "work_id": "https://openalex.org/W4390838132",
           "title": "Physiological and Performance Adaptations to Interval Training in Endurance-Trained Cyclists: An Exploratory Systematic Review and Meta-Analysis",
@@ -171,6 +164,18 @@
           "work_id": "https://openalex.org/W4401567061",
           "title": "Physiological and Performance Adaptations to Varying Rest Distributions During Short Sprint Interval Training Trials in Female Volleyball Players: A Comparative Analysis of Interindividual Variability",
           "sport": "volleyball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4413902433",
+          "title": "Physiological and Performance Adaptations to Running-Based Interval Interventions in Soccer Players: Comparative Analysis of Sprint Interval Training, Small-Sided Games, and Repeated-Sprint Training",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4390588824",
+          "title": "Comparing Self-Reported Running Distance and Pace With a Commercial Fitness Watch Data: Reliability Study",
+          "sport": "athletics",
           "year": 2024
         },
         {
@@ -204,7 +209,7 @@
           "year": 2026
         }
       ],
-      "paper_count": 8
+      "paper_count": 9
     },
     {
       "name": "World Athletics database",
@@ -350,47 +355,6 @@
       "paper_count": 11
     },
     {
-      "name": "Spotrac",
-      "url": "http://spotrac.com",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4377997143",
-          "title": "Wage dispersion and sports performance: does gender matter?",
-          "sport": "basketball",
-          "year": 2023
-        },
-        {
-          "work_id": "https://openalex.org/W4385648291",
-          "title": "“Injury risk, concussions, race, and pay in the NFL”",
-          "sport": "american_football",
-          "year": 2023
-        },
-        {
-          "work_id": "https://openalex.org/W4409087716",
-          "title": "Valuation of NHL draft picks using functional data analysis",
-          "sport": "ice_hockey",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4412685988",
-          "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4412996568",
-          "title": "Do Games Missed Predict Rankings in the NBA: A Machine Learning Approach",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 5
-    },
-    {
       "name": "IAAF World Records",
       "url": "http://www.iaaf.org/",
       "type": "open_dataset",
@@ -439,6 +403,100 @@
           "title": "Relative Age Effect Among World-Class Jump Athletes",
           "sport": "athletics",
           "year": 2024
+        }
+      ],
+      "paper_count": 7
+    },
+    {
+      "name": "Spotrac",
+      "url": "http://spotrac.com",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4377997143",
+          "title": "Wage dispersion and sports performance: does gender matter?",
+          "sport": "basketball",
+          "year": 2023
+        },
+        {
+          "work_id": "https://openalex.org/W4385648291",
+          "title": "“Injury risk, concussions, race, and pay in the NFL”",
+          "sport": "american_football",
+          "year": 2023
+        },
+        {
+          "work_id": "https://openalex.org/W4409087716",
+          "title": "Valuation of NHL draft picks using functional data analysis",
+          "sport": "ice_hockey",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4412685988",
+          "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4412996568",
+          "title": "Do Games Missed Predict Rankings in the NBA: A Machine Learning Approach",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 5
+    },
+    {
+      "name": "Transfermarkt market value data",
+      "url": "www.transfermarkt.com",
+      "type": "web_scraping",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4312108124",
+          "title": "What should clubs monitor to predict future value of football players",
+          "sport": "football",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W4405791145",
+          "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4407105460",
+          "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4415991703",
+          "title": "Uncovering the Latent Components of Physical Performance in Professional Soccer: Evidence from the Turkish First Division",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4417500780",
+          "title": "How competitive environments shape career progression in youth football: Context-dependent influence of geographical proximity to U19 Bundesliga teams and professional clubs",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W6929289632",
+          "title": "SoccerMap: A Deep Learning Architecture for Visually-Interpretable Analysis in Soccer",
+          "sport": "football",
+          "year": 2020
+        },
+        {
+          "work_id": "https://openalex.org/W6966797101",
+          "title": "What Happened Next? Using Deep Learning to Value Defensive Actions in Football Event-Data",
+          "sport": "football",
+          "year": 2021
         }
       ],
       "paper_count": 7
@@ -598,47 +656,6 @@
       "paper_count": 5
     },
     {
-      "name": "Transfermarkt market value data",
-      "url": "www.transfermarkt.com",
-      "type": "web_scraping",
-      "access": "open_with_registration",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4312108124",
-          "title": "What should clubs monitor to predict future value of football players",
-          "sport": "football",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4405791145",
-          "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
-          "sport": "football",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4407105460",
-          "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
-          "sport": "football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4417500780",
-          "title": "How competitive environments shape career progression in youth football: Context-dependent influence of geographical proximity to U19 Bundesliga teams and professional clubs",
-          "sport": "football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W6966797101",
-          "title": "What Happened Next? Using Deep Learning to Value Defensive Actions in Football Event-Data",
-          "sport": "football",
-          "year": 2021
-        }
-      ],
-      "paper_count": 5
-    },
-    {
       "name": "FanGraphs WAR (FIP)",
       "url": "https://www.fangraphs.com/",
       "type": "proprietary_dataset",
@@ -784,6 +801,35 @@
         }
       ],
       "paper_count": 6
+    },
+    {
+      "name": "Hawkin Dynamics uni-axial force plate system",
+      "url": "https://www.hawkindynamics.com/",
+      "type": "sensor_device",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4412198233",
+          "title": "Normative data and objective benchmarks for selected force plate tests for professional and youth soccer players in the English Football League",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4413902271",
+          "title": "Comparison of lower-body neuromuscular performance profiles between 100 m and 400 m Olympic sprinters",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4414817433",
+          "title": "Unlocking Basketball Athletic Performance: Countermovement Jump Rebound (CMJ-RE) Normative Reference Values Derived from Force Plate Data Across Seven NCAA Division-I Power Five Men’s College Basketball Teams",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 3
     },
     {
       "name": "Baseball-Reference.com",
@@ -1134,6 +1180,23 @@
       "paper_count": 2
     },
     {
+      "name": "NHL revenue data",
+      "url": "http://perma.cc/8BLQ-57B3",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W1966593544",
+          "title": "Does the sex difference in competitiveness decrease in selective sub-populations? A test with intercollegiate distance runners",
+          "sport": "athletics",
+          "year": 2015
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "statista.com",
       "url": "https://www.statista.com",
       "type": "proprietary_dataset",
@@ -1205,6 +1268,41 @@
       "paper_count": 2
     },
     {
+      "name": "StatsBomb Event Data Format",
+      "url": "https://statsbomb.com/",
+      "type": "proprietary_dataset",
+      "access": "provided_for_research",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3147376827",
+          "title": "Leaving Goals on the Pitch: Evaluating Decision Making in Soccer",
+          "sport": "football",
+          "year": 2021
+        },
+        {
+          "work_id": "https://openalex.org/W6966797101",
+          "title": "What Happened Next? Using Deep Learning to Value Defensive Actions in Football Event-Data",
+          "sport": "football",
+          "year": 2021
+        },
+        {
+          "work_id": "https://openalex.org/W7128292520",
+          "title": "PENERAPAN ALGORITMA BRANCH AND BOUND DENGAN STATISTIK EXPECTED GOALS UNTUK MENENTUKAN KOMBINASI PASSING OPTIMAL DALAM SEPAK BOLA",
+          "sport": "football",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W4400889002",
+          "title": "Expected Pass Turnovers (xPT) - a model to analyse turnovers from passing events in football",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 4
+    },
+    {
       "name": "Ansys Fluent",
       "url": "https://www.ansys.com/products/fluids/ansys-fluent",
       "type": "statistical_package",
@@ -1247,29 +1345,6 @@
         }
       ],
       "paper_count": 3
-    },
-    {
-      "name": "Hawkin Dynamics software",
-      "url": "https://www.hawkindynamics.com/",
-      "type": "sensor_device",
-      "access": "proprietary",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4413902271",
-          "title": "Comparison of lower-body neuromuscular performance profiles between 100 m and 400 m Olympic sprinters",
-          "sport": "athletics",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4414817433",
-          "title": "Unlocking Basketball Athletic Performance: Countermovement Jump Rebound (CMJ-RE) Normative Reference Values Derived from Force Plate Data Across Seven NCAA Division-I Power Five Men’s College Basketball Teams",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 2
     },
     {
       "name": "Sprint Speed metric",
@@ -1351,35 +1426,6 @@
         }
       ],
       "paper_count": 1
-    },
-    {
-      "name": "StatsBomb Event Data Format",
-      "url": "https://statsbomb.com/",
-      "type": "proprietary_dataset",
-      "access": "provided_for_research",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W3147376827",
-          "title": "Leaving Goals on the Pitch: Evaluating Decision Making in Soccer",
-          "sport": "football",
-          "year": 2021
-        },
-        {
-          "work_id": "https://openalex.org/W6966797101",
-          "title": "What Happened Next? Using Deep Learning to Value Defensive Actions in Football Event-Data",
-          "sport": "football",
-          "year": 2021
-        },
-        {
-          "work_id": "https://openalex.org/W4400889002",
-          "title": "Expected Pass Turnovers (xPT) - a model to analyse turnovers from passing events in football",
-          "sport": "football",
-          "year": 2024
-        }
-      ],
-      "paper_count": 3
     },
     {
       "name": "WNBA.com",
@@ -1841,6 +1887,35 @@
       "paper_count": 2
     },
     {
+      "name": "football-data.co.uk",
+      "url": "football-data.co.uk",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4392781219",
+          "title": "Machine Learning for Soccer Match Result Prediction",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7128157956",
+          "title": "Can simple models predict football — and beat the odds? Lessons from the German Bundesliga",
+          "sport": "football",
+          "year": 2026
+        }
+      ],
+      "paper_count": 3
+    },
+    {
       "name": "Axivity AX6",
       "url": "https://axivity.com/",
       "type": "sensor_device",
@@ -1858,6 +1933,29 @@
           "work_id": "https://openalex.org/W7117299617",
           "title": "Activity Detection of Paralympic Athletes with Lower Limb Running-Specific Prosthesis During Extended Periods of Time: Software Development and Preliminary Validation",
           "sport": "athletics",
+          "year": 2025
+        }
+      ],
+      "paper_count": 2
+    },
+    {
+      "name": "InStat Fitness / InStat Scout",
+      "url": "https://football.instatscout.com/",
+      "type": "proprietary_dataset",
+      "access": "upon_request",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406269423",
+          "title": "The Limited Impact of Running Performance on Football Success in the Turkish Super League",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4415991703",
+          "title": "Uncovering the Latent Components of Physical Performance in Professional Soccer: Evidence from the Turkish First Division",
+          "sport": "football",
           "year": 2025
         }
       ],
@@ -1925,23 +2023,6 @@
         }
       ],
       "paper_count": 3
-    },
-    {
-      "name": "Sports-Reference Olympic Database",
-      "url": "http://sports-reference.com",
-      "type": "web_scraping",
-      "access": "open_with_registration",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4410616927",
-          "title": "The Effects of Postseason College Football Bowl Games on Recruiting: A Discontinuity-Based Approach",
-          "sport": "american_football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
     },
     {
       "name": "Digital Elevation Model (NASA SRTM3)",
@@ -2228,6 +2309,29 @@
       "paper_count": 1
     },
     {
+      "name": "understat.com",
+      "url": "understat.com",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4392781219",
+          "title": "Machine Learning for Soccer Match Result Prediction",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W7128157956",
+          "title": "Can simple models predict football — and beat the odds? Lessons from the German Bundesliga",
+          "sport": "football",
+          "year": 2026
+        }
+      ],
+      "paper_count": 2
+    },
+    {
       "name": "Roboflow",
       "url": "https://app.roboflow.com/",
       "type": "open_dataset",
@@ -2374,18 +2478,18 @@
       "paper_count": 1
     },
     {
-      "name": "NCAA online directory of sports sponsorship",
-      "url": "http://perma.cc/8BLQ-57B3",
-      "type": "government_data",
-      "access": "fully_open",
+      "name": "College Football Sports Reference",
+      "url": "http://sports-reference.com",
+      "type": "web_scraping",
+      "access": "open_with_registration",
       "platform": null,
       "category": "dataset",
       "papers": [
         {
-          "work_id": "https://openalex.org/W1966593544",
-          "title": "Does the sex difference in competitiveness decrease in selective sub-populations? A test with intercollegiate distance runners",
-          "sport": "athletics",
-          "year": 2015
+          "work_id": "https://openalex.org/W4410616927",
+          "title": "The Effects of Postseason College Football Bowl Games on Recruiting: A Discontinuity-Based Approach",
+          "sport": "american_football",
+          "year": 2025
         }
       ],
       "paper_count": 1
@@ -2445,6 +2549,23 @@
         }
       ],
       "paper_count": 2
+    },
+    {
+      "name": "World Bank website",
+      "url": "http://data.worldbank.org/indicator/NY.GNP.PCAP.CD",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W2565322267",
+          "title": "“A More Equitable Society”: The Politics of Global Fairness in Paralympic Sport",
+          "sport": "athletics",
+          "year": 2016
+        }
+      ],
+      "paper_count": 1
     },
     {
       "name": "Champion Data performance indicators",
@@ -2623,6 +2744,23 @@
       "paper_count": 1
     },
     {
+      "name": "SoccerNet",
+      "url": "https://soccer-net.org/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3108842862",
+          "title": "SoccerNet-v2: A Dataset and Benchmarks for Holistic Understanding of Broadcast Soccer Videos",
+          "sport": "football",
+          "year": 2021
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Hawkin Capture",
       "url": "https://play.google.com/store/apps/details?id=com.dynamics.hawkin.hawkin",
       "type": "other",
@@ -2672,6 +2810,23 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "Liga Endesa official website",
+      "url": "http://www.lfendesa.es/resultados.aspx",
+      "type": "web_scraping",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4225338668",
+          "title": "Aportación de las jugadoras profesionales de baloncesto en función del puesto específico y la fase de competición",
+          "sport": "basketball",
+          "year": 2021
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -2850,6 +3005,23 @@
         {
           "work_id": "https://openalex.org/W4388555674",
           "title": "Explainable artificial intelligence model for identifying Market Value in Professional Soccer Players",
+          "sport": "football",
+          "year": 2023
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "EPV (Expected Possession Value)",
+      "url": "https://github.com/Friends-ofTracking-Data-FoTD/LaurieOnTracking",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "GitHub",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4388936656",
+          "title": "Action Valuation of On- and Off-Ball Soccer Players Based on Multi-Agent Deep Reinforcement Learning",
           "sport": "football",
           "year": 2023
         }
@@ -3247,23 +3419,6 @@
       "paper_count": 2
     },
     {
-      "name": "InStat Fitness / InStat Scout",
-      "url": "https://football.instatscout.com/",
-      "type": "proprietary_dataset",
-      "access": "upon_request",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4406269423",
-          "title": "The Limited Impact of Running Performance on Football Success in the Turkish Super League",
-          "sport": "football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "GMMBasketShotCharts",
       "url": "https://github.com/luca-scr/GMMBasketShotCharts",
       "type": "library",
@@ -3329,6 +3484,29 @@
         }
       ],
       "paper_count": 1
+    },
+    {
+      "name": "Football Reference (FBref.com)",
+      "url": "https://fbref.com/en/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "Web",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4407595434",
+          "title": "Associations Between Match‐Play Characteristics and Environmental Temperatures in 4 Professional Football Leagues",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7118313619",
+          "title": "A Statistical Look into how Common Soccer Metrics Influence Expected Goal Measures in the Professional Game",
+          "sport": "football",
+          "year": 2026
+        }
+      ],
+      "paper_count": 2
     },
     {
       "name": "Pro Sports Transactions",
@@ -3813,23 +3991,6 @@
       "paper_count": 1
     },
     {
-      "name": "World Bank website - Economic classification, GDP, and population data",
-      "url": "http://data.worldbank.org/indicator/NY.GNP.PCAP.CD",
-      "type": "government_data",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2565322267",
-          "title": "“A More Equitable Society”: The Politics of Global Fairness in Paralympic Sport",
-          "sport": "athletics",
-          "year": 2016
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "College Sport Racial and Gender Report Cards",
       "url": "http://www.tidesport.org/",
       "type": "open_dataset",
@@ -4009,21 +4170,6 @@
           "work_id": "https://openalex.org/W2898380981",
           "title": "A development model to guide the recruiting of female shot putters at the NCAA Division I Championship level",
           "sport": "athletics",
-          "year": 2018
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "yarrr package",
-      "url": "https://cran.r-project.org/web/packages/yarrr/vignettes/guide.html",
-      "type": "library",
-      "category": "library",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2898592372",
-          "title": "Fans’ responses to the National Basketball Association’s (NBA) pilot jersey sponsorship program: An experimental approach",
-          "sport": "basketball",
           "year": 2018
         }
       ],
@@ -4346,6 +4492,36 @@
       "paper_count": 1
     },
     {
+      "name": "Bayesian Optimization",
+      "url": "https://github.com/fmfn/BayesianOptimization",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3108842862",
+          "title": "SoccerNet-v2: A Dataset and Benchmarks for Holistic Understanding of Broadcast Soccer Videos",
+          "sport": "football",
+          "year": 2021
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Scikit-Video",
+      "url": "https://github.com/scikitvideo/scikit-video",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3108842862",
+          "title": "SoccerNet-v2: A Dataset and Benchmarks for Holistic Understanding of Broadcast Soccer Videos",
+          "sport": "football",
+          "year": 2021
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Dutch National Sprint Triathlon Championships results",
       "url": "http://nl.mylaps.com/evenementen/uitslagen/2018",
       "type": "web_scraping",
@@ -4578,23 +4754,6 @@
       "paper_count": 1
     },
     {
-      "name": "Liga Endesa Official Website",
-      "url": "http://www.lfendesa.es/resultados.aspx",
-      "type": "web_scraping",
-      "access": "not_stated",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4225338668",
-          "title": "Aportación de las jugadoras profesionales de baloncesto en función del puesto específico y la fase de competición",
-          "sport": "basketball",
-          "year": 2021
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "Scientific Research in Aerobic Gymnastics: Summary 2010-2014",
       "url": "https://aerobic5.com/wp-content/uploads/2021/01/Scientific-13.06.2014-2.pdf",
       "type": "open_dataset",
@@ -4706,6 +4865,57 @@
           "work_id": "https://openalex.org/W4385648291",
           "title": "“Injury risk, concussions, race, and pay in the NFL”",
           "sport": "american_football",
+          "year": 2023
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Metrica Sports Sample Data",
+      "url": "https://github.com/metrica-sports/sample-data",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "GitHub",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4386556980",
+          "title": "Passing Heatmap Prediction Based on Transformer Model and Tracking Data",
+          "sport": "football",
+          "year": 2023
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Season goals data (J-League 2019)",
+      "url": "https://www.jleague.jp/stats/2019/goal.html",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4388936656",
+          "title": "Action Valuation of On- and Off-Ball Soccer Players Based on Multi-Agent Deep Reinforcement Learning",
+          "sport": "football",
+          "year": 2023
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Expert ratings data (Soccer Digest Web J1 Rating)",
+      "url": "https://www.soccerdigestweb.com",
+      "type": "proprietary_dataset",
+      "access": "restricted",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4388936656",
+          "title": "Action Valuation of On- and Off-Ball Soccer Players Based on Multi-Agent Deep Reinforcement Learning",
+          "sport": "football",
           "year": 2023
         }
       ],
@@ -5133,40 +5343,6 @@
     {
       "name": "Football Database",
       "url": "footballdatabase.com",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4392781219",
-          "title": "Machine Learning for Soccer Match Result Prediction",
-          "sport": "football",
-          "year": 2024
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "understat.com",
-      "url": "understat.com",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4392781219",
-          "title": "Machine Learning for Soccer Match Result Prediction",
-          "sport": "football",
-          "year": 2024
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "football-data.co.uk",
-      "url": "football-data.co.uk",
       "type": "open_dataset",
       "access": "fully_open",
       "platform": null,
@@ -6182,23 +6358,6 @@
       "paper_count": 1
     },
     {
-      "name": "FBREF (Football Stats and History)",
-      "url": "https://fbref.com/en/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "Web",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4407595434",
-          "title": "Associations Between Match‐Play Characteristics and Environmental Temperatures in 4 Professional Football Leagues",
-          "sport": "football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "Meteostat.net",
       "url": "https://meteostat.net/en/",
       "type": "open_dataset",
@@ -6436,6 +6595,57 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "BetExplorer",
+      "url": "www.betexplorer.com",
+      "type": "web_scraping",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "ClubElo",
+      "url": "www.clubelo.com",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Transfermarkt",
+      "url": "www.transfermarkt.pl",
+      "type": "web_scraping",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -7156,6 +7366,21 @@
           "work_id": "https://openalex.org/W4413521312",
           "title": "A Comparative Study on the Offensive Ability of the Guard Players of the Top Four Teams in the 28th Men's Basketball Asian Championships",
           "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "WINSTEPS",
+      "url": "https://winsteps.com",
+      "type": "software_tool",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413614431",
+          "title": "Validation of “creactability” scale in football: a Rasch modeling approach",
+          "sport": "football",
           "year": 2025
         }
       ],
@@ -8192,6 +8417,22 @@
       "paper_count": 1
     },
     {
+      "name": "alokpurohit18/footstats",
+      "url": "https://github.com/alokpurohit18/footstats",
+      "type": "code_repository",
+      "category": "code",
+      "language": "Python, JavaScript, HTML, CSS, JSON",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7121602014",
+          "title": "Goalstats - An application for statistics and predicitve analytics in football using Xg Algorithm in AI and Machine learning",
+          "sport": "football",
+          "year": 2026
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "UCI (Union Cycliste Internationale) Cycling Regulations for track specifications",
       "url": "https://www.uci.org/",
       "type": "government_data",
@@ -8343,6 +8584,23 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "The Analyst match center",
+      "url": "theanalyst.com",
+      "type": "proprietary_dataset",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7128292520",
+          "title": "PENERAPAN ALGORITMA BRANCH AND BOUND DENGAN STATISTIK EXPECTED GOALS UNTUK MENENTUKAN KOMBINASI PASSING OPTIMAL DALAM SEPAK BOLA",
+          "sport": "football",
+          "year": 2026
+        }
+      ],
       "paper_count": 1
     },
     {
