@@ -411,11 +411,17 @@ console.log("Exported public API summary");
 try {
   const contentSources = db
     .prepare(
-      `SELECT cs.*,
+      `SELECT cs.id, cs.name, cs.platform, cs.url, cs.feed_url, cs.feed_type,
+              cs.sport_focus, cs.category, cs.description, cs.author_name,
+              cs.active, cs.last_checked, cs.last_new_item, cs.check_frequency,
               (SELECT COUNT(*) FROM papers p
-               JOIN classifications c ON p.work_id = c.paper_id
-               WHERE p.source_platform = cs.platform OR p.journal_name = cs.name) as item_count
+               WHERE p.journal_name = cs.name
+                 AND p.content_type != 'journal_article') as item_count,
+              (SELECT MAX(p.pub_date) FROM papers p
+               WHERE p.journal_name = cs.name
+                 AND p.content_type != 'journal_article') as latest_item_date
        FROM content_sources cs
+       WHERE cs.active = 1
        ORDER BY cs.category, cs.name`
     )
     .all();

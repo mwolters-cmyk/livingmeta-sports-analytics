@@ -36,7 +36,7 @@ export default function GapsPage() {
     .filter((s) => !excludedSports.has(s.sport))
     .slice(0, 12);
   const heatmapThemes = themeDist
-    .filter((t) => t.theme !== "other")
+    .filter((t) => t.theme && t.theme !== "other")
     .slice(0, 10);
 
   const sportThemeMatrix: Record<string, Record<string, number>> = {};
@@ -218,7 +218,7 @@ export default function GapsPage() {
                     style={{ minWidth: "70px" }}
                   >
                     <div className="whitespace-nowrap">
-                      {(THEME_LABELS[t.theme] || t.theme)
+                      {(THEME_LABELS[t.theme] || t.theme || "Unknown")
                         .split(" ")
                         .map((word, i) => (
                           <span key={i}>

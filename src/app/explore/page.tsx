@@ -679,16 +679,20 @@ function ExploreContent() {
                 >
                   {SPORT_LABELS[p.sport] || p.sport}
                 </span>
-                <span
-                  className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
-                    themeColors[p.theme] || "bg-gray-100 text-gray-700"
-                  }`}
-                >
-                  {THEME_LABELS[p.theme] || p.theme}
-                </span>
-                <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700">
-                  {METHODOLOGY_LABELS[p.methodology] || p.methodology}
-                </span>
+                {p.theme && (
+                  <span
+                    className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
+                      themeColors[p.theme] || "bg-gray-100 text-gray-700"
+                    }`}
+                  >
+                    {THEME_LABELS[p.theme] || p.theme}
+                  </span>
+                )}
+                {p.methodology && (
+                  <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700">
+                    {METHODOLOGY_LABELS[p.methodology] || p.methodology}
+                  </span>
+                )}
                 {p.is_womens_sport === 1 && (
                   <span className="rounded-full bg-fuchsia-100 px-2.5 py-0.5 text-xs font-medium text-fuchsia-800">
                     Women&apos;s Sport

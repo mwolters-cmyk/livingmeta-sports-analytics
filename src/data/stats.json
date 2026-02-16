@@ -1,11 +1,11 @@
 {
-  "totalPapers": 39887,
+  "totalPapers": 40187,
   "totalAuthors": 125479,
   "authorsWithGender": 94438,
   "genderPercentage": 75.3,
-  "papersWithAbstract": 35546,
-  "abstractPercentage": 89.1,
-  "journalCount": 12506,
+  "papersWithAbstract": 35846,
+  "abstractPercentage": 89.2,
+  "journalCount": 12524,
   "oldestPaper": "2015-01-01",
   "newestPaper": "2026-12-19",
   "topJournals": [
@@ -107,53 +107,53 @@
     },
     {
       "year": 2018,
-      "count": 2416
+      "count": 2419
     },
     {
       "year": 2019,
-      "count": 2481
+      "count": 2492
     },
     {
       "year": 2020,
-      "count": 2427
+      "count": 2457
     },
     {
       "year": 2021,
-      "count": 2421
-    },
-    {
-      "year": 2022,
       "count": 2431
     },
     {
+      "year": 2022,
+      "count": 2435
+    },
+    {
       "year": 2023,
-      "count": 2378
+      "count": 2389
     },
     {
       "year": 2024,
-      "count": 5062
+      "count": 5079
     },
     {
       "year": 2025,
-      "count": 10064
+      "count": 10113
     },
     {
       "year": 2026,
-      "count": 2912
+      "count": 3077
     }
   ],
-  "totalClassified": 35564,
-  "classifiedRelevant": 12275,
+  "totalClassified": 35864,
+  "classifiedRelevant": 12575,
   "classifiedNotApplicable": 23289,
   "womensSportCount": 2132,
   "sportDistribution": [
     {
       "sport": "multi_sport",
-      "count": 3546
+      "count": 3676
     },
     {
       "sport": "football",
-      "count": 2512
+      "count": 2592
     },
     {
       "sport": "other",
@@ -161,7 +161,7 @@
     },
     {
       "sport": "basketball",
-      "count": 750
+      "count": 770
     },
     {
       "sport": "athletics",
@@ -177,7 +177,7 @@
     },
     {
       "sport": "tennis",
-      "count": 307
+      "count": 317
     },
     {
       "sport": "rugby",
@@ -204,16 +204,16 @@
       "count": 172
     },
     {
+      "sport": "baseball",
+      "count": 166
+    },
+    {
       "sport": "gymnastics",
       "count": 157
     },
     {
-      "sport": "baseball",
-      "count": 126
-    },
-    {
       "sport": "ice_hockey",
-      "count": 116
+      "count": 126
     },
     {
       "sport": "skiing",
@@ -237,7 +237,7 @@
     },
     {
       "sport": "motorsport",
-      "count": 19
+      "count": 29
     },
     {
       "sport": "figure_skating",
@@ -270,12 +270,12 @@
       "count": 613
     },
     {
-      "methodology": "machine_learning",
-      "count": 456
+      "methodology": null,
+      "count": 567
     },
     {
-      "methodology": null,
-      "count": 267
+      "methodology": "machine_learning",
+      "count": 456
     },
     {
       "methodology": "deep_learning",
@@ -340,6 +340,10 @@
       "count": 602
     },
     {
+      "theme": null,
+      "count": 567
+    },
+    {
       "theme": "fan_engagement",
       "count": 564
     },
@@ -358,10 +362,6 @@
     {
       "theme": "nutrition_recovery",
       "count": 379
-    },
-    {
-      "theme": null,
-      "count": 267
     },
     {
       "theme": "data_engineering",
@@ -402,12 +402,12 @@
       "count": 2518
     },
     {
-      "data_type": "mixed",
-      "count": 1674
+      "data_type": "not_specified",
+      "count": 1728
     },
     {
-      "data_type": "not_specified",
-      "count": 1428
+      "data_type": "mixed",
+      "count": 1674
     },
     {
       "data_type": "event",
@@ -555,7 +555,7 @@
     },
     {
       "content_type": "blog_post",
-      "count": 154
+      "count": 434
     },
     {
       "content_type": "news_article",
@@ -567,11 +567,11 @@
     },
     {
       "content_type": "working_paper",
-      "count": 6
+      "count": 16
     },
     {
       "content_type": "thesis",
-      "count": 5
+      "count": 15
     }
   ],
   "sportByYear": [
@@ -997,6 +997,11 @@
     },
     {
       "year": 2018,
+      "sport": "motorsport",
+      "count": 4
+    },
+    {
+      "year": 2018,
       "sport": "skiing",
       "count": 3
     },
@@ -1017,11 +1022,6 @@
     },
     {
       "year": 2018,
-      "sport": "motorsport",
-      "count": 1
-    },
-    {
-      "year": 2018,
       "sport": "cricket",
       "count": 1
     },
@@ -1038,7 +1038,7 @@
     {
       "year": 2019,
       "sport": "football",
-      "count": 102
+      "count": 107
     },
     {
       "year": 2019,
@@ -1087,6 +1087,11 @@
     },
     {
       "year": 2019,
+      "sport": "motorsport",
+      "count": 6
+    },
+    {
+      "year": 2019,
       "sport": "gymnastics",
       "count": 6
     },
@@ -1143,17 +1148,17 @@
     {
       "year": 2020,
       "sport": "multi_sport",
-      "count": 170
+      "count": 176
+    },
+    {
+      "year": 2020,
+      "sport": "football",
+      "count": 102
     },
     {
       "year": 2020,
       "sport": "other",
       "count": 99
-    },
-    {
-      "year": 2020,
-      "sport": "football",
-      "count": 90
     },
     {
       "year": 2020,
@@ -1187,6 +1192,11 @@
     },
     {
       "year": 2020,
+      "sport": "baseball",
+      "count": 14
+    },
+    {
+      "year": 2020,
       "sport": "handball",
       "count": 12
     },
@@ -1194,6 +1204,11 @@
       "year": 2020,
       "sport": "rugby",
       "count": 11
+    },
+    {
+      "year": 2020,
+      "sport": "ice_hockey",
+      "count": 6
     },
     {
       "year": 2020,
@@ -1217,16 +1232,6 @@
     },
     {
       "year": 2020,
-      "sport": "ice_hockey",
-      "count": 5
-    },
-    {
-      "year": 2020,
-      "sport": "baseball",
-      "count": 4
-    },
-    {
-      "year": 2020,
       "sport": "rowing",
       "count": 3
     },
@@ -1237,17 +1242,17 @@
     },
     {
       "year": 2020,
+      "sport": "motorsport",
+      "count": 2
+    },
+    {
+      "year": 2020,
       "sport": "figure_skating",
       "count": 2
     },
     {
       "year": 2020,
       "sport": "speed_skating",
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "sport": "motorsport",
       "count": 1
     },
     {
@@ -1268,7 +1273,7 @@
     {
       "year": 2021,
       "sport": "multi_sport",
-      "count": 163
+      "count": 165
     },
     {
       "year": 2021,
@@ -1322,6 +1327,11 @@
     },
     {
       "year": 2021,
+      "sport": "ice_hockey",
+      "count": 11
+    },
+    {
+      "year": 2021,
       "sport": "gymnastics",
       "count": 11
     },
@@ -1362,11 +1372,6 @@
     },
     {
       "year": 2021,
-      "sport": "ice_hockey",
-      "count": 3
-    },
-    {
-      "year": 2021,
       "sport": "motorsport",
       "count": 2
     },
@@ -1388,7 +1393,7 @@
     {
       "year": 2022,
       "sport": "multi_sport",
-      "count": 166
+      "count": 169
     },
     {
       "year": 2022,
@@ -1453,7 +1458,7 @@
     {
       "year": 2022,
       "sport": "ice_hockey",
-      "count": 7
+      "count": 8
     },
     {
       "year": 2022,
@@ -1503,12 +1508,12 @@
     {
       "year": 2023,
       "sport": "multi_sport",
-      "count": 178
+      "count": 185
     },
     {
       "year": 2023,
       "sport": "football",
-      "count": 139
+      "count": 143
     },
     {
       "year": 2023,
@@ -1608,12 +1613,12 @@
     {
       "year": 2024,
       "sport": "football",
-      "count": 543
+      "count": 553
     },
     {
       "year": 2024,
       "sport": "multi_sport",
-      "count": 520
+      "count": 527
     },
     {
       "year": 2024,
@@ -1733,12 +1738,12 @@
     {
       "year": 2025,
       "sport": "multi_sport",
-      "count": 1061
+      "count": 1071
     },
     {
       "year": 2025,
       "sport": "football",
-      "count": 933
+      "count": 970
     },
     {
       "year": 2025,
@@ -1773,7 +1778,7 @@
     {
       "year": 2025,
       "sport": "tennis",
-      "count": 85
+      "count": 87
     },
     {
       "year": 2025,
@@ -1858,12 +1863,12 @@
     {
       "year": 2026,
       "sport": "multi_sport",
-      "count": 457
+      "count": 552
     },
     {
       "year": 2026,
       "sport": "football",
-      "count": 145
+      "count": 157
     },
     {
       "year": 2026,
@@ -1878,7 +1883,12 @@
     {
       "year": 2026,
       "sport": "basketball",
-      "count": 55
+      "count": 75
+    },
+    {
+      "year": 2026,
+      "sport": "baseball",
+      "count": 44
     },
     {
       "year": 2026,
@@ -1892,13 +1902,13 @@
     },
     {
       "year": 2026,
-      "sport": "swimming",
-      "count": 26
+      "sport": "tennis",
+      "count": 27
     },
     {
       "year": 2026,
-      "sport": "tennis",
-      "count": 19
+      "sport": "swimming",
+      "count": 26
     },
     {
       "year": 2026,
@@ -1928,11 +1938,6 @@
     {
       "year": 2026,
       "sport": "rowing",
-      "count": 14
-    },
-    {
-      "year": 2026,
-      "sport": "baseball",
       "count": 14
     },
     {
@@ -2209,6 +2214,11 @@
     },
     {
       "year": 2018,
+      "methodology": null,
+      "count": 3
+    },
+    {
+      "year": 2018,
       "methodology": "network_analysis",
       "count": 1
     },
@@ -2251,6 +2261,11 @@
       "year": 2019,
       "methodology": "review",
       "count": 23
+    },
+    {
+      "year": 2019,
+      "methodology": null,
+      "count": 11
     },
     {
       "year": 2019,
@@ -2316,6 +2331,11 @@
       "year": 2020,
       "methodology": "review",
       "count": 39
+    },
+    {
+      "year": 2020,
+      "methodology": null,
+      "count": 30
     },
     {
       "year": 2020,
@@ -2399,6 +2419,11 @@
     },
     {
       "year": 2021,
+      "methodology": null,
+      "count": 10
+    },
+    {
+      "year": 2021,
       "methodology": "deep_learning",
       "count": 8
     },
@@ -2479,6 +2504,11 @@
     },
     {
       "year": 2022,
+      "methodology": null,
+      "count": 4
+    },
+    {
+      "year": 2022,
       "methodology": "optimization",
       "count": 3
     },
@@ -2534,6 +2564,11 @@
     },
     {
       "year": 2023,
+      "methodology": null,
+      "count": 12
+    },
+    {
+      "year": 2023,
       "methodology": "NLP",
       "count": 7
     },
@@ -2568,11 +2603,6 @@
       "count": 1
     },
     {
-      "year": 2023,
-      "methodology": null,
-      "count": 1
-    },
-    {
       "year": 2024,
       "methodology": "statistical",
       "count": 1065
@@ -2590,7 +2620,7 @@
     {
       "year": 2024,
       "methodology": null,
-      "count": 127
+      "count": 144
     },
     {
       "year": 2024,
@@ -2679,13 +2709,13 @@
     },
     {
       "year": 2025,
-      "methodology": "deep_learning",
-      "count": 161
+      "methodology": null,
+      "count": 174
     },
     {
       "year": 2025,
-      "methodology": null,
-      "count": 125
+      "methodology": "deep_learning",
+      "count": 161
     },
     {
       "year": 2025,
@@ -2734,6 +2764,11 @@
     },
     {
       "year": 2026,
+      "methodology": null,
+      "count": 179
+    },
+    {
+      "year": 2026,
       "methodology": "qualitative",
       "count": 114
     },
@@ -2770,11 +2805,6 @@
     {
       "year": 2026,
       "methodology": "simulation",
-      "count": 14
-    },
-    {
-      "year": 2026,
-      "methodology": null,
       "count": 14
     },
     {
@@ -3146,6 +3176,11 @@
     },
     {
       "year": 2018,
+      "theme": null,
+      "count": 3
+    },
+    {
+      "year": 2018,
       "theme": "transfer_market",
       "count": 1
     },
@@ -3208,6 +3243,11 @@
       "year": 2019,
       "theme": "biomechanics",
       "count": 20
+    },
+    {
+      "year": 2019,
+      "theme": null,
+      "count": 11
     },
     {
       "year": 2019,
@@ -3278,6 +3318,11 @@
       "year": 2020,
       "theme": "fan_engagement",
       "count": 31
+    },
+    {
+      "year": 2020,
+      "theme": null,
+      "count": 30
     },
     {
       "year": 2020,
@@ -3396,6 +3441,11 @@
     },
     {
       "year": 2021,
+      "theme": null,
+      "count": 10
+    },
+    {
+      "year": 2021,
       "theme": "data_engineering",
       "count": 9
     },
@@ -3506,6 +3556,11 @@
     },
     {
       "year": 2022,
+      "theme": null,
+      "count": 4
+    },
+    {
+      "year": 2022,
       "theme": "transfer_market",
       "count": 1
     },
@@ -3586,6 +3641,11 @@
     },
     {
       "year": 2023,
+      "theme": null,
+      "count": 12
+    },
+    {
+      "year": 2023,
       "theme": "epidemiology",
       "count": 9
     },
@@ -3603,11 +3663,6 @@
       "year": 2023,
       "theme": "betting_markets",
       "count": 3
-    },
-    {
-      "year": 2023,
-      "theme": null,
-      "count": 1
     },
     {
       "year": 2024,
@@ -3632,7 +3687,7 @@
     {
       "year": 2024,
       "theme": null,
-      "count": 127
+      "count": 144
     },
     {
       "year": 2024,
@@ -3741,6 +3796,11 @@
     },
     {
       "year": 2025,
+      "theme": null,
+      "count": 174
+    },
+    {
+      "year": 2025,
       "theme": "biomechanics",
       "count": 165
     },
@@ -3763,11 +3823,6 @@
       "year": 2025,
       "theme": "other",
       "count": 129
-    },
-    {
-      "year": 2025,
-      "theme": null,
-      "count": 125
     },
     {
       "year": 2025,
@@ -3818,6 +3873,11 @@
       "year": 2026,
       "theme": "injury_prevention",
       "count": 202
+    },
+    {
+      "year": 2026,
+      "theme": null,
+      "count": 179
     },
     {
       "year": 2026,
@@ -3886,11 +3946,6 @@
     },
     {
       "year": 2026,
-      "theme": null,
-      "count": 14
-    },
-    {
-      "year": 2026,
       "theme": "bias_detection",
       "count": 5
     },
@@ -3905,5 +3960,5 @@
       "count": 4
     }
   ],
-  "exportedAt": "2026-02-16T08:35:00.287Z"
+  "exportedAt": "2026-02-16T08:44:08.682Z"
 }

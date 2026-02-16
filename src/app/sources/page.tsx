@@ -26,21 +26,33 @@ const CATEGORY_LABELS: Record<string, string> = {
   blog: "Blogs",
   corporate_blog: "Corporate Blogs",
   newsletter: "Newsletters",
-  thesis_portfolio: "Thesis Portfolios",
+  data_platform: "Data Platforms",
+  thesis_portfolio: "Academic Programs",
+  working_paper_repo: "Working Paper Repositories",
   conference: "Conferences",
   news: "News",
+  resource_hub: "Resource Hubs",
+  podcast: "Podcasts",
 };
 
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   blog: "Independent sports analytics blogs by researchers and analysts.",
   corporate_blog: "Analytics content published by sports data companies.",
   newsletter: "Regular email newsletters covering sports analytics.",
-  thesis_portfolio: "University thesis collections on sports analytics topics.",
+  data_platform: "Platforms providing sports data, advanced metrics, and interactive tools.",
+  thesis_portfolio: "University research groups and student programs producing sports analytics work.",
+  working_paper_repo: "Preprint servers and paper archives for sports analytics research.",
   conference: "Academic and industry conferences featuring sports analytics.",
   news: "Data-driven sports journalism and news outlets.",
+  resource_hub: "Curated collections of sports analytics tools, datasets, and tutorials.",
+  podcast: "Sports analytics podcasts with interviews and technical discussions.",
 };
 
-const CATEGORY_ORDER = ["blog", "corporate_blog", "newsletter", "thesis_portfolio", "conference", "news"];
+const CATEGORY_ORDER = [
+  "blog", "newsletter", "corporate_blog", "data_platform",
+  "thesis_portfolio", "working_paper_repo", "conference",
+  "news", "resource_hub", "podcast",
+];
 
 export const metadata = {
   title: "Sources | Living Sports Analytics",
