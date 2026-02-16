@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-16T16:11:38.838443",
-  "total_papers": 2192,
+  "generated_at": "2026-02-16T16:28:59.053643",
+  "total_papers": 2208,
   "total_resources": 453,
-  "resources_skipped_no_url": 13658,
+  "resources_skipped_no_url": 13753,
   "resources": [
     {
       "name": "Win Shares (WS)",
@@ -4532,10 +4532,10 @@
       "paper_count": 1
     },
     {
-      "name": "allsport-tv.com video database",
+      "name": "allsport-tv.com video recordings",
       "url": "www.allsport-tv.com",
       "type": "video",
-      "access": "restricted",
+      "access": "not_stated",
       "platform": null,
       "category": "dataset",
       "papers": [
