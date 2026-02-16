@@ -5,7 +5,7 @@
     <link>https://living-sports-analytics.vercel.app</link>
     <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 08:44:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 09:11:55 GMT</lastBuildDate>
     <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://living-sports-analytics.vercel.app/icon.png</url>
@@ -13,273 +13,234 @@
       <link>https://living-sports-analytics.vercel.app</link>
     </image>
     <item>
-      <title>Harvard Square vs Vegas: Who Nailed the 2025 MLB World Series?</title>
-      <link>https://harvardsportsanalysis.org/2025/12/harvard-square-vs-vegas-who-nailed-the-2025-mlb-world-series/</link>
-      <description>We surveyed almost 100 people around Harvard to see if everyday intuition could beat Vegas in predicting the 2025 MLB World Series.</description>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:f80bfba393e64a09</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>multi_sport</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>How Valuable Is the Perfect Kicker?</title>
-      <link>https://harvardsportsanalysis.org/2025/11/how-valuable-is-the-perfect-kicker/</link>
-      <description>With Cam Little&apos;s record-breaking 68-yard field goal, we had to wonder: just how valuable is an elite kicker?</description>
-      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:92e9c94d9c29df77</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>multi_sport</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>Inside the Flags?: A Data-Driven Investigation of NFL Penalties</title>
-      <link>https://harvardsportsanalysis.org/2025/09/inside-the-flags-a-data-driven-investigation-of-nfl-penalties/</link>
-      <description>Are the referees truly neutral arbiters, or does the context matter?</description>
-      <pubDate>Thu, 04 Sep 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:c0efb3acc2d34ab9</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>multi_sport</category>
-      <category>thesis</category>
-    </item>
-    <item>
       <title>Pathways to Success: The Role of Transfers in Shaping Elite MLB Careers</title>
       <link>https://harvardsportsanalysis.org/2025/01/pathways-to-success-the-role-of-transfers-in-shaping-elite-mlb-careers/</link>
-      <description>Tylor Megill. Bryce Harper. Paul Skenes. These guys didn’t just stick to the script. Instead, they rewrote it.</description>
+      <description>Case study analysis of MLB player career pathways, examining how transfers and non-traditional routes shaped elite player development.</description>
       <pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">blog:0df2ee0ad10b802a</guid>
       <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>multi_sport</category>
+      <category>baseball</category>
+      <category>player_development</category>
       <category>thesis</category>
     </item>
     <item>
-      <title>Playoff Prophecy: Which Regular Season Stats Spell Postseason Glory?</title>
-      <link>https://harvardsportsanalysis.org/2024/06/playoff-prophecy-which-regular-season-stats-spell-postseason-glory/</link>
-      <description>Can we find the statistic most strongly associated with playoff success in the NBA?</description>
-      <pubDate>Fri, 14 Jun 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:c1d557bc8490ac0e</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
+      <title>Modeling Event Dynamics by Self-Exciting Processes with Random Memory</title>
+      <link>https://arxiv.org/abs/2601.07980v1</link>
+      <description>Proposes self-exciting point process models with random memory to capture event clustering and self-excitation patterns in sports competition data.</description>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:3a0d5395373a4a8f</guid>
+      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
       <category>multi_sport</category>
-      <category>thesis</category>
+      <category>methodology</category>
+      <category>working_paper</category>
     </item>
     <item>
       <title>Running to the Top: Investigating Running Back Archetypes and Player Trajectories</title>
       <link>https://harvardsportsanalysis.org/2024/06/running-to-the-top-investigating-running-back-archetypes-and-player-trajectories/</link>
-      <description>What do statistical methods tell us about the different types of running backs in the NFL today? And how do these players morph over time?</description>
+      <description>Statistical analysis identifies distinct running back archetypes in the NFL and characterizes how these players evolve over their careers.</description>
       <pubDate>Mon, 03 Jun 2024 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">blog:579ee85688a83818</guid>
       <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>multi_sport</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>Discovering the NBA Talent in March Madness</title>
-      <link>https://harvardsportsanalysis.org/2024/05/discovering-the-nba-talent-in-march-madness/</link>
-      <description>An analysis of how March Madness performances translate to NBA success.</description>
-      <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:ebe4f09d5c7144da</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>multi_sport</category>
+      <category>american_football</category>
+      <category>performance_analysis</category>
       <category>thesis</category>
     </item>
     <item>
       <title>Stats for Success: Linebackers and Tight Ends</title>
       <link>https://harvardsportsanalysis.org/2023/09/stats-for-success-linebackers-and-tight-ends/</link>
-      <description>By: Evelyn Tjoa, Daniel Bittner, Victor Zeidenfeld, Matt Melucci, Matthew Doctoroff, Jennifer Yu, Andrew Christie, Arthur Macedo, Praveen Kumar, Cyril Leahy</description>
+      <description>Analysis of statistical performance metrics for linebackers and tight ends in American football.</description>
       <pubDate>Sat, 02 Sep 2023 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">blog:5e2b27a94aea04c4</guid>
       <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>multi_sport</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>Roaring to Glory</title>
-      <link>https://harvardsportsanalysis.org/2023/09/roaring-to-glory/</link>
-      <description>The 2023 Florida Panthers&amp;#8217; Unprecedented Playoff Surge By Nicholas Lopez and Victor Zeidenfeld Historically Unparalleled SuccessIn a word, the 2023 Florida Panthers’ playoff performance was nothing less than unprecedented. Saturday, June 3rd, marked the start of the Stanley Cup Finals, a match</description>
-      <pubDate>Sat, 02 Sep 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:edccaf6f717b9b2a</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>multi_sport</category>
-      <category>thesis</category>
-    </item>
-    <item>
-      <title>What Minute Matters Most? Scoring in College Basketball</title>
-      <link>https://harvardsportsanalysis.org/2023/08/what-minute-matters-most-scoring-in-college-basketball/</link>
-      <description>By Elliot Chin Do you ever turn on a game in the fourth quarter, only to see that you’ve caught the tail end of a barely competitive blowout? Alternatively, do you ever watch your team go blow-for-blow for three quarters (or one-and-a-half halves!) but fall apart at the end, making it feel like all </description>
-      <pubDate>Tue, 29 Aug 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:cc3c9ba46153504b</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>multi_sport</category>
+      <category>american_football</category>
+      <category>performance_analysis</category>
       <category>thesis</category>
     </item>
     <item>
       <title>A Unified Server Quality Metric for Tennis</title>
       <link>https://arxiv.org/abs/2602.08083v1</link>
-      <description>Traditional tennis rating systems, such as Elo, summarize overall player strength but do not isolate the independent value of serving. Using point-by-point data from Wimbledon and the U.S. Open, we develop serve-specific player metrics to isolate serving quality from overall performance. For each to</description>
+      <description>Develops serve-specific player metrics using logistic mixed-effects models on point-by-point data to isolate serving quality from overall tennis performance across gender and tournament.</description>
       <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">blog:6f4e26a38930bdf5</guid>
       <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
+      <category>tennis</category>
+      <category>performance_analysis</category>
       <category>working_paper</category>
     </item>
     <item>
-      <title>Extreme-Path Benchmarks for Sequential Probability Forecasts</title>
-      <link>https://arxiv.org/abs/2601.18774v2</link>
-      <description>Real-time probability forecasts for binary outcomes are routine in sports, online experimentation, medicine, and finance. Retrospective narratives, however, often hinge on pathwise extremes: for example, a forecast that reaches $90\%$ for an event that ultimately does not occur. Standard pointwise c</description>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:da7c8eb169d24f64</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
-      <category>working_paper</category>
+      <title>How Valuable Is the Perfect Kicker?</title>
+      <link>https://harvardsportsanalysis.org/2025/11/how-valuable-is-the-perfect-kicker/</link>
+      <description>Exploratory analysis of elite kicker value in NFL, using Cam Little&apos;s record field goal as a case study to quantify positional importance.</description>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:92e9c94d9c29df77</guid>
+      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
+      <category>american_football</category>
+      <category>player_valuation</category>
+      <category>thesis</category>
     </item>
     <item>
-      <title>A probabilistic match classification model for sports tournaments</title>
-      <link>https://arxiv.org/abs/2601.09673v2</link>
-      <description>Existing match classification models in the tournament design literature have two major limitations: a contestant is considered indifferent only if uncertain future results do never affect its prize, and competitive matches are not distinguished with respect to the incentives of the contestants. We </description>
-      <pubDate>Wed, 14 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:dd3bfdfe83347693</guid>
+      <title>Beyond Expected Goals: A Probabilistic Framework for Shot Occurrences in Soccer</title>
+      <link>https://arxiv.org/abs/2512.00203v2</link>
+      <description>xG+ framework extends expected goals models by jointly estimating shot occurrence probability and shot quality at the possession level in soccer, improving on traditional xG metrics that only evaluate observed shots.</description>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:b4dcf8103ec2701d</guid>
       <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Modeling Event Dynamics by Self-Exciting Processes with Random Memory</title>
-      <link>https://arxiv.org/abs/2601.07980v1</link>
-      <description>Event history data from sports competitions have recently drawn increasing attention in sports analytics to generate data-driven strategies. Such data often exhibit self-excitation in the event occurrence and dependence within event clusters. The conventional event models based on gap times may stru</description>
-      <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:3a0d5395373a4a8f</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Cyclists Cardiac Conundrum</title>
-      <link>https://arxiv.org/abs/2601.02011v1</link>
-      <description>Arrhythmia is an abnormality of the heart&apos;s rhythm, caused by problems in the conductive system and resulting in irregular heartbeats. There is increasing evidence that undertaking frequent endurance sports training elevates one&apos;s risk of arrhythmia. Arrhythmia is diagnosed using an electrocardiogra</description>
-      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:bfa223ceb0ee2cf1</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Analysing Skill Predominance in Generalized Fantasy Cricket</title>
-      <link>https://arxiv.org/abs/2512.18467v1</link>
-      <description>In fantasy sports, strategic thinking-not mere luck-often defines who wins and who falls short. As fantasy cricket grows in popularity across India, understanding whether success stems from skill or chance has become both an analytical and regulatory question. This study introduces a new limited-sel</description>
-      <pubDate>Sat, 20 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:d2078183568cc0c3</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Probabilistic Analysis of Various Squash Shots and Skill Study of Different Levels of Squash Players and Teams</title>
-      <link>https://arxiv.org/abs/2512.02210v1</link>
-      <description>We introduce a compact probabilistic model for two-player and two-team (four-player) squash matches, along with a practical skill-comparison rule derived from point-scoring probabilities. Using recorded shot types and court locations, we analyze how shot distributions differ between professional-lev</description>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:d97b6a5ab3d60cb7</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
+      <category>football</category>
+      <category>performance_analysis</category>
       <category>working_paper</category>
     </item>
     <item>
       <title>Kicking for Goal or Touch? An Expected Points Framework for Penalty Decisions in Rugby Union</title>
       <link>https://arxiv.org/abs/2512.00312v2</link>
-      <description>Following a penalty in rugby union, teams typically choose between attempting a shot at goal or kicking to touch to pursue a try. We develop an Expected Points (EP) framework that quantifies the value of each option as a function of both field location and game context. Using phase-level data from t</description>
+      <description>Expected Points framework quantifies the value of penalty decisions (shoot at goal vs. kick to touch) in rugby union as a function of field location and game context using Premiership data.</description>
       <pubDate>Sat, 29 Nov 2025 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">blog:ba37630b426406ef</guid>
       <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
+      <category>rugby</category>
+      <category>performance_analysis</category>
       <category>working_paper</category>
     </item>
     <item>
-      <title>Beyond Expected Goals: A Probabilistic Framework for Shot Occurrences in Soccer</title>
-      <link>https://arxiv.org/abs/2512.00203v2</link>
-      <description>Expected goals (xG) models estimate the probability that a shot results in a goal from its context (e.g., location, pressure), but they operate only on observed shots. We propose xG+, a possession-level framework that first estimates the probability that a shot occurs within the next second and its </description>
-      <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:b4dcf8103ec2701d</guid>
+      <title>Cyclists Cardiac Conundrum</title>
+      <link>https://arxiv.org/abs/2601.02011v1</link>
+      <description>Uses electrocardiogram and heart rate data to detect arrhythmia risk in cyclists undertaking frequent endurance training.</description>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:bfa223ceb0ee2cf1</guid>
       <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
+      <category>cycling</category>
+      <category>physiology</category>
+      <category>working_paper</category>
+    </item>
+    <item>
+      <title>Inside the Flags?: A Data-Driven Investigation of NFL Penalties</title>
+      <link>https://harvardsportsanalysis.org/2025/09/inside-the-flags-a-data-driven-investigation-of-nfl-penalties/</link>
+      <description>Data-driven investigation of NFL penalty decisions examines whether referees exhibit neutral decision-making or contextual bias in flag enforcement.</description>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:c0efb3acc2d34ab9</guid>
+      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
+      <category>american_football</category>
+      <category>bias_detection</category>
+      <category>thesis</category>
+    </item>
+    <item>
+      <title>Playoff Prophecy: Which Regular Season Stats Spell Postseason Glory?</title>
+      <link>https://harvardsportsanalysis.org/2024/06/playoff-prophecy-which-regular-season-stats-spell-postseason-glory/</link>
+      <description>Statistical analysis identifies which regular season statistics are most strongly associated with NBA playoff success.</description>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:c1d557bc8490ac0e</guid>
+      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
+      <category>basketball</category>
+      <category>performance_analysis</category>
+      <category>thesis</category>
+    </item>
+    <item>
+      <title>What Minute Matters Most? Scoring in College Basketball</title>
+      <link>https://harvardsportsanalysis.org/2023/08/what-minute-matters-most-scoring-in-college-basketball/</link>
+      <description>Analysis of scoring patterns across different game minutes in college basketball to determine which quarter most influences outcomes.</description>
+      <pubDate>Tue, 29 Aug 2023 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:cc3c9ba46153504b</guid>
+      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
+      <category>basketball</category>
+      <category>performance_analysis</category>
+      <category>thesis</category>
+    </item>
+    <item>
+      <title>Analysing Skill Predominance in Generalized Fantasy Cricket</title>
+      <link>https://arxiv.org/abs/2512.18467v1</link>
+      <description>Limited-selection fantasy cricket contest framework demonstrates that success is predominantly skill-based rather than chance-based through simulation and real performance data.</description>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:d2078183568cc0c3</guid>
+      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
+      <category>cricket</category>
+      <category>performance_analysis</category>
+      <category>working_paper</category>
+    </item>
+    <item>
+      <title>Probabilistic Analysis of Various Squash Shots and Skill Study of Different Levels of Squash Players and Teams</title>
+      <link>https://arxiv.org/abs/2512.02210v1</link>
+      <description>Probabilistic model of squash matches shows that professional players employ wider shot variety and favor backcourt control compared to intermediate players, with quantifiable skill differences.</description>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:d97b6a5ab3d60cb7</guid>
+      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
+      <category>other</category>
+      <category>performance_analysis</category>
       <category>working_paper</category>
     </item>
     <item>
       <title>TacEleven: generative tactic discovery for football open play</title>
       <link>https://arxiv.org/abs/2511.13326v2</link>
-      <description>Creating offensive advantages during open play is fundamental to football success. However, due to the highly dynamic and long-sequence nature of open play, the potential tactic space grows exponentially as the sequence progresses, making automated tactic discovery extremely challenging. To address </description>
+      <description>TacEleven, a generative deep learning framework for automated discovery of offensive tactics during open play in football, developed with AJ Auxerre to assist coaches and analysts.</description>
       <pubDate>Mon, 17 Nov 2025 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">blog:da1e3ab6d0cd16a9</guid>
       <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>multi_sport</category>
+      <category>football</category>
+      <category>tactical_analysis</category>
       <category>working_paper</category>
     </item>
     <item>
-      <title>Thoughts on Big Data Bowl 2025</title>
-      <link>https://statthinksportsanalytics.substack.com/p/thoughts-on-big-data-bowl-2025</link>
-      <description>Let me start with this: I have no idea who will be selected as finalists in this year&amp;#8217;s Big Data Bowl.</description>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:f62de0c4b876e898</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <title>Extreme-Path Benchmarks for Sequential Probability Forecasts</title>
+      <link>https://arxiv.org/abs/2601.18774v2</link>
+      <description>Develops extreme-path benchmarks to evaluate sequential probability forecasts in sports, addressing how frequently forecast extremes should occur under correct calibration.</description>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:da7c8eb169d24f64</guid>
+      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
       <category>multi_sport</category>
-      <category>blog_post</category>
+      <category>methodology</category>
+      <category>working_paper</category>
     </item>
     <item>
-      <title>Down, set, hut!</title>
-      <link>https://statthinksportsanalytics.substack.com/p/down-set-hut</link>
-      <description>Explaining variability in snap timing on plays with motion</description>
-      <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:942bd49d59fa4b59</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <title>A probabilistic match classification model for sports tournaments</title>
+      <link>https://arxiv.org/abs/2601.09673v2</link>
+      <description>Develops a probabilistic framework to classify matches in tournaments by simulating outcomes to compute qualifying probabilities and contestant incentives.</description>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:dd3bfdfe83347693</guid>
+      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
       <category>multi_sport</category>
-      <category>blog_post</category>
+      <category>methodology</category>
+      <category>working_paper</category>
     </item>
     <item>
-      <title>CMSACamp 2024</title>
-      <link>https://statthinksportsanalytics.substack.com/p/cmsacamp-2024</link>
-      <description>CMSACamp: Data Science in Sports Analytics</description>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:9b97ff51e61b8149</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
+      <title>Discovering the NBA Talent in March Madness</title>
+      <link>https://harvardsportsanalysis.org/2024/05/discovering-the-nba-talent-in-march-madness/</link>
+      <description>Statistical analysis examines how March Madness performance translates to subsequent NBA success.</description>
+      <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:ebe4f09d5c7144da</guid>
+      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
+      <category>basketball</category>
+      <category>player_development</category>
+      <category>thesis</category>
     </item>
     <item>
-      <title>Statistical Thinking in Sports Analytics</title>
-      <link>https://statthinksportsanalytics.substack.com/p/statistical-thinking-in-sports-analytics</link>
-      <description>A brief overview of my recent experience teaching a sports analytics methods course</description>
-      <pubDate>Thu, 20 Jun 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:5176be02def03c03</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
+      <title>Roaring to Glory</title>
+      <link>https://harvardsportsanalysis.org/2023/09/roaring-to-glory/</link>
+      <description>Case study analysis of the 2023 Florida Panthers&apos; historically unprecedented playoff surge to the Stanley Cup Finals.</description>
+      <pubDate>Sat, 02 Sep 2023 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:edccaf6f717b9b2a</guid>
+      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
+      <category>ice_hockey</category>
+      <category>performance_analysis</category>
+      <category>thesis</category>
     </item>
     <item>
-      <title>&apos;Tis the Big Data Bowl season</title>
-      <link>https://statthinksportsanalytics.substack.com/p/tis-the-big-data-bowl-season</link>
-      <description>Thanks to Mike Lopez and others in the NFL league office, the NFL&amp;#8217;s Big Data Bowl has evolved into an annual opportunity for anyone to contribute to the study of American football via the release of public player-tracking data.</description>
-      <pubDate>Tue, 09 Jan 2024 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:57bfb708078a8357</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
+      <title>Harvard Square vs Vegas: Who Nailed the 2025 MLB World Series?</title>
+      <link>https://harvardsportsanalysis.org/2025/12/harvard-square-vs-vegas-who-nailed-the-2025-mlb-world-series/</link>
+      <description>Comparative study of intuitive crowd predictions vs. Vegas odds for 2025 MLB World Series, surveying ~100 Harvard community members.</description>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:f80bfba393e64a09</guid>
+      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
+      <category>baseball</category>
+      <category>betting_markets</category>
+      <category>thesis</category>
     </item>
     <item>
-      <title>Here comes the STRAIN and CMSAC</title>
-      <link>https://statthinksportsanalytics.substack.com/p/here-comes-the-strain-and-cmsac</link>
-      <description>Well I&amp;#8217;m behind on this newsletter due to the busy semester&amp;#8230; but this post will share recent news within the CMSAC network:</description>
-      <pubDate>Wed, 11 Oct 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:7a203310da97e699</guid>
+      <title>Rao-Blackwellizing FG% with Daniel Daly-Grafstein</title>
+      <link>https://statthinksportsanalytics.substack.com/p/rao-blackwellizing-fg-with-daniel-3fb</link>
+      <description>Rao-Blackwellizing methods improve field goal percentage estimation and in-game shot trajectory analysis quantifies defensive impact in the NBA.</description>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:075ef32f6df7bd8d</guid>
       <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>CMSACamp 2023</title>
-      <link>https://statthinksportsanalytics.substack.com/p/cmsacamp-2023</link>
-      <description>CMSACamp: Data Science in Sports Analytics</description>
-      <pubDate>Sat, 29 Jul 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:1578610fc0a28773</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
+      <category>basketball</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
@@ -293,223 +254,310 @@
       <category>blog_post</category>
     </item>
     <item>
-      <title>Coming soon...</title>
-      <link>https://statthinksportsanalytics.substack.com/p/coming-soon</link>
-      <description>Welcome to Open Source Sports!</description>
-      <pubDate>Mon, 03 Jul 2023 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:1d6fbab578d18e43</guid>
+      <title>How often does the best team win with Michael Lopez</title>
+      <link>https://statthinksportsanalytics.substack.com/p/how-often-does-the-best-team-win-c73</link>
+      <description>Statistical analysis examines how frequently the best team wins across sports competitions.</description>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:1dd430a7715e3b74</guid>
       <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
       <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>A Statistical Model of Serve Return Impact Patterns in Professional Tennis with Stephanie Kovalchik</title>
-      <link>https://statthinksportsanalytics.substack.com/p/a-statistical-model-of-serve-return-206</link>
-      <description>In this episode we talk to Stephanie Kovalchik about her paper &apos;A Statistical Model of Serve Return Impact Patterns in Professional Tennis&apos; (co-authored with Jim Albert).</description>
-      <pubDate>Tue, 23 Aug 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:ab3e5c8cf74f476b</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>True Shot Charts with Justin Ehrlich and Shane Sanders</title>
-      <link>https://statthinksportsanalytics.substack.com/p/true-shot-charts-with-justin-ehrlich-3eb</link>
-      <description>We discuss True Shot Charts with Syracuse University Professors Justin Ehrlich and Shane Sanders. For references mentioned in the show:</description>
-      <pubDate>Thu, 23 Jun 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:6c78046c728613a3</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
       <title>An Examination of Sport Climbing with Quang Nguyen</title>
       <link>https://statthinksportsanalytics.substack.com/p/an-examination-of-sport-climbing-a1e</link>
-      <description>We discuss An Examination of Olympic Sport Climbing Competition Format and Scoring System with Quang Nguyen (@qntkhvn).</description>
+      <description>Examination of Olympic sport climbing competition format and scoring systems.</description>
       <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">blog:37c88b3bb4941a2e</guid>
       <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
+      <category>other</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>Grinding the Mocks with Benjamin Robinson</title>
-      <link>https://statthinksportsanalytics.substack.com/p/grinding-the-mocks-with-benjamin-77b</link>
-      <description>We discuss Grinding the Bayes: A Hierarchical Modeling Approach to Predicting the NFL Draft with Benjamin Robinson (@benj_robinson).</description>
-      <pubDate>Tue, 24 Aug 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:ba2a03a496c96b1b</guid>
+      <title>&apos;Tis the Big Data Bowl season</title>
+      <link>https://statthinksportsanalytics.substack.com/p/tis-the-big-data-bowl-season</link>
+      <description>Overview of NFL Big Data Bowl as an annual open competition leveraging publicly released player-tracking data to advance American football analytics.</description>
+      <pubDate>Tue, 09 Jan 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:57bfb708078a8357</guid>
       <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Expected Hypothetical Completion Probability with Sameer Deshpande and Katherine Evans</title>
-      <link>https://statthinksportsanalytics.substack.com/p/expected-hypothetical-completion-5cd</link>
-      <description>We discuss a previous Big Data Bowl finalist paper `Expected Hypothetical Completion Probability` (https://arxiv.org/abs/1910.12337) with authors Sameer Deshpande (@skdeshpande91) and Kathy Evans (@CausalKathy).</description>
-      <pubDate>Sun, 10 Jan 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:7e50b8405eb63b60</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Bang the can slowly with Ryan Elmore and Gregory J. Matthews</title>
-      <link>https://statthinksportsanalytics.substack.com/p/bang-the-can-slowly-with-ryan-elmore-c47</link>
-      <description>We discuss Bang the Can Slowly: An Investigation into the 2017 Houston Astros with Ryan Elmore (@rtelmore) and Gregory J.</description>
-      <pubDate>Sat, 12 Dec 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:cf23b600f49d0353</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>How often does the best team win with Michael Lopez</title>
-      <link>https://statthinksportsanalytics.substack.com/p/how-often-does-the-best-team-win-c73</link>
-      <description>We discuss &apos;How often does the best team win?</description>
-      <pubDate>Sat, 31 Oct 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:1dd430a7715e3b74</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Player Chemistry in Soccer with Lotte Bransen</title>
-      <link>https://statthinksportsanalytics.substack.com/p/player-chemistry-in-soccer-with-lotte-2f8</link>
-      <description>We discuss &apos;Player Chemistry: Striving for a Perfectly Balanced Soccer Team&apos; with Lotte Bransen.</description>
-      <pubDate>Sun, 13 Sep 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:fdec6459c090e409</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Models for hockey player ratings with Andrew Thomas and Sam Ventura</title>
-      <link>https://statthinksportsanalytics.substack.com/p/models-for-hockey-player-ratings-a4b</link>
-      <description>In the third episode of the show we discuss &apos;Competing process hazard function models for player ratings in ice hockey&apos; with two guests, Andrew Thomas and Sam Ventura.</description>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:d285c70041147486</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Rao-Blackwellizing FG% with Daniel Daly-Grafstein</title>
-      <link>https://statthinksportsanalytics.substack.com/p/rao-blackwellizing-fg-with-daniel-3fb</link>
-      <description>In the second episode we discuss two papers by our guest Daniel Daly-Grafstein and Luke Bornn: Rao-Blackwellizing field goal percentage (published in JQAS and available at: http://www.lukebornn.com/papers/dalygrafstein_jqas_2019.pdf) and Using In-Game Shot Trajectories to Better Understand Defensive</description>
-      <pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:075ef32f6df7bd8d</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
+      <category>american_football</category>
+      <category>data_engineering</category>
       <category>blog_post</category>
     </item>
     <item>
       <title>openWAR with Gregory J. Matthews</title>
       <link>https://statthinksportsanalytics.substack.com/p/openwar-with-gregory-j-matthews-755</link>
-      <description>In the first official Open Source Sports podcast episode, we discuss openWAR (available on arXiv https://arxiv.org/abs/1312.7158 and JQAS ) with author Gregory J.</description>
+      <description>openWAR presents an open-source statistical framework for calculating Wins Above Replacement in baseball.</description>
       <pubDate>Sun, 10 May 2020 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">blog:6b163d8200bcb037</guid>
       <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>multi_sport</category>
+      <category>baseball</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>🏁 2026 NASCAR Cup Series Driver Rankings 🚗</title>
-      <link>https://neilpaine.substack.com/p/2026-nascar-cup-series-driver-rankings</link>
-      <description>Tracking the top drivers in the sport, all season long.</description>
-      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:631ad65361ac5e91</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
+      <title>True Shot Charts with Justin Ehrlich and Shane Sanders</title>
+      <link>https://statthinksportsanalytics.substack.com/p/true-shot-charts-with-justin-ehrlich-3eb</link>
+      <description>Discussion of true shot charts methodology for basketball analysis and shooting performance evaluation.</description>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:6c78046c728613a3</guid>
+      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <category>basketball</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>🏀2026 NCAA Tournament Forecast 📊</title>
-      <link>https://neilpaine.substack.com/p/2026-ncaa-tournament-forecast</link>
-      <description>Track each Division I men&apos;s basketball team&apos;s odds to make (and, later, win) the 2025 NCAA basketball tourney.</description>
-      <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:d188670b72af8d61</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
+      <title>Expected Hypothetical Completion Probability with Sameer Deshpande and Katherine Evans</title>
+      <link>https://statthinksportsanalytics.substack.com/p/expected-hypothetical-completion-5cd</link>
+      <description>Discussion of a Bayesian approach to modeling expected hypothetical completion probability in NFL passing plays for evaluating receiver quality.</description>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:7e50b8405eb63b60</guid>
+      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <category>american_football</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>The Week That Was (February 9-13, 2026)</title>
-      <link>https://neilpaine.substack.com/p/the-week-that-was-february-9-13-2026</link>
-      <description>A roundup of what I wrote, read, watched, etc. over the past week.</description>
-      <pubDate>Sat, 14 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:263b416183834e68</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
+      <title>Down, set, hut!</title>
+      <link>https://statthinksportsanalytics.substack.com/p/down-set-hut</link>
+      <description>Statistical analysis of snap timing variability in American football plays involving motion to explain performance fluctuations.</description>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:942bd49d59fa4b59</guid>
+      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <category>american_football</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>All the stars are shining</title>
-      <link>https://neilpaine.substack.com/p/all-the-stars-are-shining</link>
-      <description>Subscribe to Scoreboard by clicking here!</description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:07d9b2e65a2fd210</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
+      <title>A Statistical Model of Serve Return Impact Patterns in Professional Tennis with Stephanie Kovalchik</title>
+      <link>https://statthinksportsanalytics.substack.com/p/a-statistical-model-of-serve-return-206</link>
+      <description>Statistical model predicting serve return impact patterns in professional tennis to evaluate return of serve effectiveness.</description>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:ab3e5c8cf74f476b</guid>
+      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <category>tennis</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>🏀 2025-26 NBA Elo Forecast and Player Ratings 📈</title>
-      <link>https://neilpaine.substack.com/p/2025-26-nba-elo-forecast-and-player</link>
-      <description>Track how I&apos;m forecasting every team&amp;#8217;s chance to make &amp;#8212; and win &amp;#8212; the NBA Finals, all season long.</description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:a8118a7dfa2c5c1f</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
+      <title>Grinding the Mocks with Benjamin Robinson</title>
+      <link>https://statthinksportsanalytics.substack.com/p/grinding-the-mocks-with-benjamin-77b</link>
+      <description>Hierarchical Bayesian modeling approach to predicting NFL draft outcomes using historical draft data and player evaluations.</description>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:ba2a03a496c96b1b</guid>
+      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <category>american_football</category>
+      <category>player_valuation</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>The North Dakota State FBS Experiment is Finally Here</title>
-      <link>https://neilpaine.substack.com/p/the-north-dakota-state-fbs-experiment</link>
-      <description>What happens when the FCS&apos; greatest dynasty moves up a level?</description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:8817cb24d1392706</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
+      <title>Bang the can slowly with Ryan Elmore and Gregory J. Matthews</title>
+      <link>https://statthinksportsanalytics.substack.com/p/bang-the-can-slowly-with-ryan-elmore-c47</link>
+      <description>Statistical investigation examines the 2017 Houston Astros sign-stealing scandal using novel analytical methods.</description>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:cf23b600f49d0353</guid>
+      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <category>baseball</category>
+      <category>methodology</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>Spring (training) is in the air</title>
-      <link>https://neilpaine.substack.com/p/spring-training-is-in-the-air</link>
-      <description>Subscribe to Scoreboard by clicking here!</description>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:2c642a0b2bfbc0df</guid>
+      <title>Models for hockey player ratings with Andrew Thomas and Sam Ventura</title>
+      <link>https://statthinksportsanalytics.substack.com/p/models-for-hockey-player-ratings-a4b</link>
+      <description>Competing process hazard function models provide improved player rating systems for ice hockey.</description>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:d285c70041147486</guid>
+      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <category>ice_hockey</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Player Chemistry in Soccer with Lotte Bransen</title>
+      <link>https://statthinksportsanalytics.substack.com/p/player-chemistry-in-soccer-with-lotte-2f8</link>
+      <description>Statistical analysis quantifies player chemistry effects on team balance and performance in soccer.</description>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:fdec6459c090e409</guid>
+      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>The NBA Trade Deadline Was Deeply Weird</title>
+      <link>https://neilpaine.substack.com/p/the-nba-trade-deadline-really-was</link>
+      <description>Analysis of NBA trade deadline deals and their limited impact on teams&apos; championship prospects.</description>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:05b0131f4d46ce15</guid>
       <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
+      <category>basketball</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>We back up?</title>
+      <link>https://socceranalytics.substack.com/p/we-back-up</link>
+      <description>Brief editorial note from soccer analytics newsletter with no substantive research content or methodology.</description>
+      <pubDate>Tue, 27 May 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:07a64cbdce14602c</guid>
+      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
+      <category>football</category>
+      <category>other</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Why it pays to know some nerds in football</title>
+      <link>https://socceranalytics.substack.com/p/why-it-pays-to-know-some-nerds-in</link>
+      <description>Commentary on the value of employing analytics-minded professionals in soccer organizations.</description>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:1184321021d8eb90</guid>
+      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
+      <category>football</category>
+      <category>coaching</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>A Footballing Theory of Value</title>
+      <link>https://socceranalytics.substack.com/p/a-footballing-theory-of-value</link>
+      <description>Philosophical essay explores fundamental reasons for the appeal and value of football to fans and participants.</description>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:3b1af1a49573e256</guid>
+      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
+      <category>football</category>
+      <category>other</category>
       <category>blog_post</category>
     </item>
     <item>
       <title>🏅 Who&apos;s Winning The 2026 Olympic Medal Race — And Who&apos;s Beating History?</title>
       <link>https://neilpaine.substack.com/p/whos-winning-the-2026-olympic-medal</link>
-      <description>A look at which nations are outperforming (or falling short of) their historical share of Olympic medals in 2026 events completed so far.</description>
+      <description>Comparative analysis of nations&apos; Olympic medal performance against historical trends in 2026 events.</description>
       <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">blog:48ecb4870a71d011</guid>
       <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
       <category>multi_sport</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>Hunting for hardware</title>
-      <link>https://neilpaine.substack.com/p/hunting-for-hardware</link>
-      <description>Greetings to you on this wonderful Wednesday in sports.</description>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:6e77050fd588441a</guid>
+      <title>📈2025 NFL Power Ratings and Projections🏈</title>
+      <link>https://neilpaine.substack.com/p/2025-nfl-power-ratings-and-projections</link>
+      <description>NFL power ratings and seasonal projections for all teams in 2025.</description>
+      <pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:4bf485a605ce4ca3</guid>
       <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
+      <category>american_football</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
-      <title>Scoreboard Newsletter Archives</title>
-      <link>https://neilpaine.substack.com/p/scoreboard-newsletter-archives</link>
-      <description>A list of past published editions for Sherwood&apos;s Scoreboard daily newsletter</description>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:b01a1b33b69374a8</guid>
+      <title>🏁 2026 NASCAR Cup Series Driver Rankings 🚗</title>
+      <link>https://neilpaine.substack.com/p/2026-nascar-cup-series-driver-rankings</link>
+      <description>NASCAR Cup Series driver performance rankings tracked throughout the 2026 season.</description>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:631ad65361ac5e91</guid>
+      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
+      <category>motorsport</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Soccer analytics in the 2020s</title>
+      <link>https://socceranalytics.substack.com/p/soccer-analytics-in-the-2020s</link>
+      <description>Prospective review of the evolution, expected changes, and future directions of soccer analytics in the 2020s.</description>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:7525670502b2961a</guid>
+      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
+      <category>football</category>
+      <category>methodology</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>The OTHER problem with pay-to-play</title>
+      <link>https://socceranalytics.substack.com/p/the-other-problem-with-pay-to-play</link>
+      <description>A qualitative discussion of inequity in pay-to-play youth football systems and broader systemic barriers to participation.</description>
+      <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:79543b4364987bc7</guid>
+      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
+      <category>football</category>
+      <category>gender_equity</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Why xG matters</title>
+      <link>https://socceranalytics.substack.com/p/why-xg-matters</link>
+      <description>Essay discussing the importance and applications of expected goals (xG) as an analytical metric in soccer.</description>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:81f14b55e220e1e7</guid>
+      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
+      <category>football</category>
+      <category>methodology</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Stars, stripes, and stones</title>
+      <link>https://neilpaine.substack.com/p/stars-stripes-and-stones</link>
+      <description>General sports news commentary transitioning from Super Bowl to Olympic coverage.</description>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:843c09acdce1d44a</guid>
       <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
       <category>multi_sport</category>
+      <category>other</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>The North Dakota State FBS Experiment is Finally Here</title>
+      <link>https://neilpaine.substack.com/p/the-north-dakota-state-fbs-experiment</link>
+      <description>Commentary on North Dakota State&apos;s transition from FCS to FBS college football competition.</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:8817cb24d1392706</guid>
+      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
+      <category>american_football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>I&apos;m still here!</title>
+      <link>https://socceranalytics.substack.com/p/im-still-here</link>
+      <description>Sorry!</description>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:a11036075a19ecf3</guid>
+      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Football talent: strive to survive</title>
+      <link>https://socceranalytics.substack.com/p/football-talent-strive-to-survive</link>
+      <description>A brief commentary on talent development in football, emphasizing the importance of participation and presence in player development.</description>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:a68065e725c5d58c</guid>
+      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
+      <category>football</category>
+      <category>player_development</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>🏀 2025-26 NBA Elo Forecast and Player Ratings 📈</title>
+      <link>https://neilpaine.substack.com/p/2025-26-nba-elo-forecast-and-player</link>
+      <description>NBA team Elo ratings and forecasts for Finals appearance and victory probabilities throughout the 2025-26 season.</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:a8118a7dfa2c5c1f</guid>
+      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
+      <category>basketball</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Let&apos;s look at OGS and Mourinho!</title>
+      <link>https://socceranalytics.substack.com/p/lets-look-at-ogs-and-mourinho</link>
+      <description>Comparative analysis of managerial approaches of Ole Gunnar Solskjaer and José Mourinho in soccer.</description>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:ac5716ed5d121778</guid>
+      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
+      <category>football</category>
+      <category>coaching</category>
       <category>blog_post</category>
     </item>
   </channel>

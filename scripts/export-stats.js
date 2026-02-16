@@ -19,6 +19,32 @@ const db = new Database(DB_PATH, { readonly: true });
 db.pragma("journal_mode = WAL");
 
 // =============================================================================
+// BEST CLASSIFICATION PER PAPER
+// When a paper has multiple classifications (e.g., source:inherited + ai:haiku),
+// prefer the AI classification. This CTE deduplicates to one row per paper.
+// Priority: ai:haiku > source:vanhaaren_review > source:inherited
+// =============================================================================
+
+// CTE that picks the best classification per paper, then filters to rn=1
+const BEST_CTE = `
+  WITH ranked AS (
+    SELECT *, ROW_NUMBER() OVER (
+      PARTITION BY paper_id
+      ORDER BY CASE classified_by
+        WHEN 'ai:haiku' THEN 1
+        WHEN 'source:vanhaaren_review' THEN 2
+        WHEN 'source:inherited' THEN 3
+        ELSE 4
+      END
+    ) AS rn
+    FROM classifications
+  ),
+  best_class AS (
+    SELECT * FROM ranked WHERE rn = 1
+  )
+`;
+
+// =============================================================================
 // BASIC STATS (existing)
 // =============================================================================
 
@@ -75,20 +101,20 @@ const journalCount = db
 // =============================================================================
 
 const totalClassified = db
-  .prepare("SELECT COUNT(*) as c FROM classifications")
+  .prepare(`${BEST_CTE} SELECT COUNT(*) as c FROM best_class`)
   .get().c;
 
 const classifiedRelevant = db
   .prepare(
-    "SELECT COUNT(*) as c FROM classifications WHERE sport != 'not_applicable'"
+    `${BEST_CTE} SELECT COUNT(*) as c FROM best_class WHERE sport != 'not_applicable'`
   )
   .get().c;
 
 // Sport distribution (excluding not_applicable)
 const sportDistribution = db
   .prepare(
-    `SELECT sport, COUNT(*) as count
-     FROM classifications
+    `${BEST_CTE} SELECT sport, COUNT(*) as count
+     FROM best_class
      WHERE sport != 'not_applicable'
      GROUP BY sport ORDER BY count DESC`
   )
@@ -97,8 +123,8 @@ const sportDistribution = db
 // Methodology distribution (only relevant papers)
 const methodologyDistribution = db
   .prepare(
-    `SELECT methodology, COUNT(*) as count
-     FROM classifications
+    `${BEST_CTE} SELECT methodology, COUNT(*) as count
+     FROM best_class
      WHERE sport != 'not_applicable'
      GROUP BY methodology ORDER BY count DESC`
   )
@@ -107,8 +133,8 @@ const methodologyDistribution = db
 // Theme distribution (only relevant papers)
 const themeDistribution = db
   .prepare(
-    `SELECT theme, COUNT(*) as count
-     FROM classifications
+    `${BEST_CTE} SELECT theme, COUNT(*) as count
+     FROM best_class
      WHERE sport != 'not_applicable'
      GROUP BY theme ORDER BY count DESC`
   )
@@ -117,15 +143,15 @@ const themeDistribution = db
 // Women's sport count
 const womensSportCount = db
   .prepare(
-    "SELECT COUNT(*) as c FROM classifications WHERE is_womens_sport = 1 AND sport != 'not_applicable'"
+    `${BEST_CTE} SELECT COUNT(*) as c FROM best_class WHERE is_womens_sport = 1 AND sport != 'not_applicable'`
   )
   .get().c;
 
 // Data type distribution
 const dataTypeDistribution = db
   .prepare(
-    `SELECT data_type, COUNT(*) as count
-     FROM classifications
+    `${BEST_CTE} SELECT data_type, COUNT(*) as count
+     FROM best_class
      WHERE sport != 'not_applicable'
      GROUP BY data_type ORDER BY count DESC`
   )
@@ -134,8 +160,8 @@ const dataTypeDistribution = db
 // Sport x year (for trend charts)
 const sportByYear = db
   .prepare(
-    `SELECT p.pub_year as year, c.sport, COUNT(*) as count
-     FROM classifications c
+    `${BEST_CTE} SELECT p.pub_year as year, c.sport, COUNT(*) as count
+     FROM best_class c
      JOIN papers p ON c.paper_id = p.work_id
      WHERE c.sport != 'not_applicable' AND p.pub_year IS NOT NULL AND p.pub_year >= 2014
      GROUP BY p.pub_year, c.sport
@@ -146,8 +172,8 @@ const sportByYear = db
 // Methodology x year
 const methodologyByYear = db
   .prepare(
-    `SELECT p.pub_year as year, c.methodology, COUNT(*) as count
-     FROM classifications c
+    `${BEST_CTE} SELECT p.pub_year as year, c.methodology, COUNT(*) as count
+     FROM best_class c
      JOIN papers p ON c.paper_id = p.work_id
      WHERE c.sport != 'not_applicable' AND p.pub_year IS NOT NULL AND p.pub_year >= 2014
      GROUP BY p.pub_year, c.methodology
@@ -158,8 +184,8 @@ const methodologyByYear = db
 // Theme x year
 const themeByYear = db
   .prepare(
-    `SELECT p.pub_year as year, c.theme, COUNT(*) as count
-     FROM classifications c
+    `${BEST_CTE} SELECT p.pub_year as year, c.theme, COUNT(*) as count
+     FROM best_class c
      JOIN papers p ON c.paper_id = p.work_id
      WHERE c.sport != 'not_applicable' AND p.pub_year IS NOT NULL AND p.pub_year >= 2014
      GROUP BY p.pub_year, c.theme
@@ -170,8 +196,8 @@ const themeByYear = db
 // Top sub-themes
 const topSubThemes = db
   .prepare(
-    `SELECT sub_theme, COUNT(*) as count
-     FROM classifications
+    `${BEST_CTE} SELECT sub_theme, COUNT(*) as count
+     FROM best_class
      WHERE sport != 'not_applicable' AND sub_theme IS NOT NULL AND sub_theme != ''
      GROUP BY sub_theme ORDER BY count DESC LIMIT 30`
   )
@@ -180,8 +206,8 @@ const topSubThemes = db
 // Content type distribution (blog_post, thesis, conference_paper, etc.)
 const contentTypeDistribution = db
   .prepare(
-    `SELECT COALESCE(p.content_type, 'journal_article') as content_type, COUNT(*) as count
-     FROM classifications c
+    `${BEST_CTE} SELECT COALESCE(p.content_type, 'journal_article') as content_type, COUNT(*) as count
+     FROM best_class c
      JOIN papers p ON c.paper_id = p.work_id
      WHERE c.sport != 'not_applicable'
      GROUP BY content_type ORDER BY count DESC`
@@ -230,7 +256,8 @@ const stats = {
 
 const classifiedPapers = db
   .prepare(
-    `SELECT p.work_id, p.title, p.pub_date, p.journal_name as journal,
+    `${BEST_CTE}
+     SELECT p.work_id, p.title, p.pub_date, p.journal_name as journal,
             p.cited_by_count, SUBSTR(p.abstract, 1, 300) as abstract,
             p.open_access, p.doi, p.pub_year,
             c.sport, c.methodology, c.theme, c.sub_theme,
@@ -247,7 +274,7 @@ const classifiedPapers = db
             -- First author metrics
             fa.name as first_author_name,
             fa.h_index as first_author_h_index
-     FROM classifications c
+     FROM best_class c
      JOIN papers p ON c.paper_id = p.work_id
      LEFT JOIN sources s ON p.source_id = s.source_id
      LEFT JOIN paper_authors pa ON p.work_id = pa.paper_id AND pa.is_first = 1
@@ -476,11 +503,12 @@ try {
 
 const recentItems = db
   .prepare(
-    `SELECT p.work_id, p.title, p.pub_date, p.doi, p.source_url,
+    `${BEST_CTE}
+     SELECT p.work_id, p.title, p.pub_date, p.doi, p.source_url,
             COALESCE(p.content_type, 'journal_article') as content_type,
             p.journal_name, SUBSTR(p.abstract, 1, 300) as abstract,
             c.sport, c.theme, c.summary
-     FROM classifications c
+     FROM best_class c
      JOIN papers p ON c.paper_id = p.work_id
      WHERE c.sport != 'not_applicable'
      ORDER BY p.created_at DESC LIMIT 50`
