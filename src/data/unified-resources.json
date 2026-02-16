@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-02-15T23:46:43.296689",
+  "generated_at": "2026-02-16T01:03:56.031264",
   "total_resources": 517,
   "with_papers": 368,
-  "with_scraper": 57,
+  "with_scraper": 58,
   "with_data": 61,
-  "needs_scraper": 52,
+  "needs_scraper": 51,
   "categories": {
     "dataset": 332,
     "scraper": 53,
@@ -419,9 +419,12 @@
       ],
       "paper_count": 4,
       "on_platform": null,
-      "scraper": null,
+      "scraper": {
+        "file": "scrapers/scrape_retrosheet.py",
+        "status": "working"
+      },
       "url_status": "verified",
-      "needs_scraper": true
+      "needs_scraper": false
     },
     {
       "id": "nba-api",
