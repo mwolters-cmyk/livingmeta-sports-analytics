@@ -11,6 +11,7 @@
 import statsData from "@/data/stats.json";
 import classifiedPapersData from "@/data/classified-papers.json";
 import journalsData from "@/data/journals.json";
+import gapAnalysesData from "@/data/gap-analyses.json";
 export interface Stats {
   totalPapers: number;
   totalAuthors: number;
@@ -74,6 +75,98 @@ export interface ClassifiedPaper {
   // Author metrics (first author)
   first_author_name: string | null;
   first_author_h_index: number | null;
+}
+
+// =============================================================================
+// Gap Analysis types
+// =============================================================================
+
+export interface GapPaperRef {
+  work_id: string;
+  title: string;
+  year: number | null;
+  sport?: string;
+  doi?: string | null;
+  why_key?: string;
+}
+
+export interface GapFinding {
+  finding: string;
+  evidence_strength: "strong" | "moderate" | "weak";
+  papers: GapPaperRef[];
+  paper_count: number;
+}
+
+export interface Gap {
+  id: string;
+  type: "topic" | "methodology" | "data" | "population" | "replication" | "temporal" | "integration";
+  title: string;
+  description: string;
+  evidence: string;
+  supporting_papers: GapPaperRef[];
+  importance: "high" | "medium" | "low";
+  importance_rationale: string;
+  feasibility: "high" | "medium" | "low";
+  feasibility_rationale: string;
+  confidence: "high" | "medium" | "low";
+}
+
+export interface AgendaItem {
+  priority: number;
+  title: string;
+  description: string;
+  addresses_gaps: string[];
+  suggested_methodology: string;
+  suggested_data: string;
+  estimated_difficulty: "accessible_thesis" | "standard_phd" | "challenging_project" | "major_initiative";
+  potential_impact: string;
+}
+
+export interface GapAnalysis {
+  slug: string;
+  question: string;
+  created_at: string;
+  analyzed_at: string;
+  prompt_version: string;
+  model: string;
+  papers_analyzed: number;
+  cost_usd: number;
+  analysis_confidence: "high" | "medium" | "low" | "unknown";
+  scope_assessment: string;
+  database_coverage: string;
+  confidence_explanation: string;
+  landscape: {
+    summary: string;
+    key_findings: GapFinding[];
+    methodology_profile: {
+      dominant_methods: string[];
+      sample_size_patterns: string;
+      data_sources_used: string;
+      temporal_patterns: string;
+    };
+    key_papers: GapPaperRef[];
+  };
+  gaps: Gap[];
+  research_agenda: AgendaItem[];
+  self_reflection: {
+    synthesis_quality: string;
+    strengths: string[];
+    limitations: string[];
+    assumptions: string[];
+    database_coverage_gaps: string[];
+    what_would_improve_this: string[];
+    process_cost_reflection: string;
+  };
+}
+
+export interface GapAnalysesData {
+  generated_at: string;
+  total_analyses: number;
+  analyses: GapAnalysis[];
+}
+
+export function getGapAnalyses(): GapAnalysesData {
+  return gapAnalysesData as GapAnalysesData;
 }
 
 export function getStats(): Stats {
