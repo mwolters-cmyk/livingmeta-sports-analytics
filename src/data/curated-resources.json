@@ -1748,5 +1748,208 @@
     "category": "dataset",
     "access": "free",
     "onPlatform": "82,074 dive scores with J1-J7 individual judge marks from 112 international competitions (2017-2025) in our database."
+  },
+  {
+    "name": "European Soccer Database (Kaggle)",
+    "url": "https://www.kaggle.com/datasets/hugomathien/soccer",
+    "desc": "25K+ matches from 11 European leagues (2008-2016) with match stats, player attributes, team lineups, and betting odds. SQLite format with FIFA player ratings. One of the most cited football analytics datasets.",
+    "sports": ["football"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Open Science Framework (OSF)",
+    "url": "https://osf.io",
+    "desc": "Open-access research data repository. Many sports analytics studies deposit their datasets, code, and supplementary materials here. Search by sport or methodology.",
+    "sports": ["multi_sport"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "PHYAFB Database",
+    "url": "https://zenodo.org/records/3264930",
+    "desc": "Physiology-based analytical framework for basketball. Player tracking and physiological data for sports science research. Hosted on Zenodo under open access.",
+    "sports": ["basketball"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Spotrac",
+    "url": "https://www.spotrac.com",
+    "desc": "Salary and contract data for NFL, NBA, MLB, NHL, MLS, and more. Player salaries, cap hits, free agency, and transaction details. Essential for sports economics research.",
+    "sports": ["american_football", "basketball", "baseball", "ice_hockey"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Hockey-Reference",
+    "url": "https://www.hockey-reference.com",
+    "desc": "Comprehensive NHL statistics: player stats, team stats, standings, awards, and draft data. Part of the Sports Reference family.",
+    "sports": ["ice_hockey"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "EliteProspects",
+    "url": "https://www.eliteprospects.com",
+    "desc": "The most comprehensive ice hockey database worldwide. Player profiles, stats, and transfer history for NHL, KHL, SHL, and 100+ leagues across all levels.",
+    "sports": ["ice_hockey"],
+    "category": "dataset",
+    "access": "freemium"
+  },
+  {
+    "name": "ACB Basketball League",
+    "url": "https://www.acb.com",
+    "desc": "Official website of the Spanish ACB basketball league. Match results, player statistics, and historical records for one of Europe's top leagues.",
+    "sports": ["basketball"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "EuroLeague Basketball",
+    "url": "https://www.euroleaguebasketball.net/euroleague/",
+    "desc": "Official EuroLeague and EuroCup statistics. Advanced box scores, play-by-play, and shot charts for Europe's premier club basketball competition.",
+    "sports": ["basketball"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Football Outsiders",
+    "url": "https://www.footballoutsiders.com",
+    "desc": "NFL advanced analytics: DVOA (Defense-adjusted Value Over Average), DYAR, and other proprietary metrics. Pioneers of football analytics since 2003.",
+    "sports": ["american_football"],
+    "category": "dataset",
+    "access": "freemium"
+  },
+  {
+    "name": "NBAStuffer.com",
+    "url": "https://www.nbastuffer.com",
+    "desc": "NBA advanced statistics, analytics tools, and historical data. Daily-updated player and team metrics including Four Factors, pace-adjusted stats.",
+    "sports": ["basketball"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "NCAA Statistics",
+    "url": "https://stats.ncaa.org",
+    "desc": "Official NCAA statistics portal. Box scores, player stats, and team records for all NCAA Division I/II/III sports including basketball, football, baseball.",
+    "sports": ["multi_sport"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Indian Premier League (IPL)",
+    "url": "https://www.iplt20.com",
+    "desc": "Official IPL website with match results, player stats, and team data for cricket's richest T20 league.",
+    "sports": ["cricket"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "IHF Competition Results",
+    "url": "https://www.ihf.info/competitions",
+    "desc": "International Handball Federation competition results. World Championships, Olympics, and continental championships with team rosters and match statistics.",
+    "sports": ["handball"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "NPB Official Statistics",
+    "url": "https://npb.jp",
+    "desc": "Official Nippon Professional Baseball statistics. Player and team stats for Japan's top professional baseball league.",
+    "sports": ["baseball"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Stryd Running Power",
+    "url": "https://www.stryd.com",
+    "desc": "Running power meter data platform. Provides power-based running metrics, training analytics, and race predictions. Used in running biomechanics research.",
+    "sports": ["athletics"],
+    "category": "dataset",
+    "access": "paid"
+  },
+  {
+    "name": "Athletic.net",
+    "url": "https://www.athletic.net",
+    "desc": "US high school and collegiate track & field and cross country results database. Race results, rankings, and athlete profiles for 500K+ athletes.",
+    "sports": ["athletics"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Omega Timing / Diamond League",
+    "url": "https://www.omegatiming.com/sports-timing-live-results",
+    "desc": "Official timing data for Diamond League, Olympics, and World Athletics events. Split times, reaction times, and wind readings.",
+    "sports": ["athletics"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "FIG Gymnastics Results",
+    "url": "https://www.gymnastics.sport/site/events/results.php",
+    "desc": "Official FIG competition results and Code of Points documentation. Scores, deductions, and execution marks for World Championships and World Cups.",
+    "sports": ["gymnastics"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Riot Games Developer API",
+    "url": "https://developer.riotgames.com",
+    "desc": "Official API for League of Legends, Valorant, and TFT data. Match history, player stats, rankings, and champion data. Free API key with rate limits.",
+    "sports": ["esports"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Paris 2024 Olympics Results",
+    "url": "https://olympics.com/en/paris-2024",
+    "desc": "Complete results for all Paris 2024 Olympic events. Medal tallies, event results, and athlete profiles across 32 sports.",
+    "sports": ["multi_sport"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Hockey Canada Registration Data",
+    "url": "https://www.hockeycanada.ca",
+    "desc": "Hockey Canada player registration statistics by province, gender, and age group. Used for participation trend and relative age effect research.",
+    "sports": ["ice_hockey"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "Pro Sports Transactions",
+    "url": "https://www.prosportstransactions.com",
+    "desc": "Comprehensive transaction database for NFL, NBA, MLB, and NHL: injuries, suspensions, trades, signings, and roster moves dating back decades.",
+    "sports": ["multi_sport"],
+    "category": "dataset",
+    "access": "free"
+  },
+  {
+    "name": "spm1d",
+    "url": "https://spm1d.org",
+    "desc": "Statistical Parametric Mapping for 1D biomechanical data. Python and MATLAB packages for analyzing time-series data from force plates, EMG, and motion capture in sports biomechanics.",
+    "sports": ["multi_sport"],
+    "category": "library",
+    "access": "free",
+    "language": "Python"
+  },
+  {
+    "name": "nflscrapR",
+    "url": "https://github.com/maksimhorowitz/nflscrapR",
+    "desc": "R package for scraping and analyzing NFL play-by-play data. Predecessor to nflfastR, introduced EPA and WPA to the NFL analytics community.",
+    "sports": ["american_football"],
+    "category": "library",
+    "access": "free",
+    "language": "R"
+  },
+  {
+    "name": "riotwatcher",
+    "url": "https://github.com/pseudonym117/Riot-Watcher",
+    "desc": "Python wrapper for the Riot Games API. Easy access to League of Legends match data, summoner stats, and champion information.",
+    "sports": ["esports"],
+    "category": "library",
+    "access": "free",
+    "language": "Python"
   }
 ]
