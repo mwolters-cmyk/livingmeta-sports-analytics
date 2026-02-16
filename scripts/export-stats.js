@@ -177,6 +177,17 @@ const topSubThemes = db
   )
   .all();
 
+// Content type distribution (blog_post, thesis, conference_paper, etc.)
+const contentTypeDistribution = db
+  .prepare(
+    `SELECT COALESCE(p.content_type, 'journal_article') as content_type, COUNT(*) as count
+     FROM classifications c
+     JOIN papers p ON c.paper_id = p.work_id
+     WHERE c.sport != 'not_applicable'
+     GROUP BY content_type ORDER BY count DESC`
+  )
+  .all();
+
 // =============================================================================
 // BUILD STATS OBJECT
 // =============================================================================
@@ -206,6 +217,7 @@ const stats = {
   themeDistribution,
   dataTypeDistribution,
   topSubThemes,
+  contentTypeDistribution,
   sportByYear,
   methodologyByYear,
   themeByYear,
@@ -223,6 +235,9 @@ const classifiedPapers = db
             p.open_access, p.doi, p.pub_year,
             c.sport, c.methodology, c.theme, c.sub_theme,
             c.is_womens_sport, c.data_type, c.summary as ai_summary,
+            -- Content type (blog_post, thesis, etc.)
+            COALESCE(p.content_type, 'journal_article') as content_type,
+            p.source_url, p.source_platform,
             -- Impact metrics
             p.fwci, p.citation_percentile, p.is_top_10_percent,
             p.citations_per_year, p.primary_topic,
@@ -294,6 +309,8 @@ const fullClassifications = db
   .prepare(
     `SELECT p.work_id, p.doi, p.title, p.pub_date, p.pub_year,
             p.journal_name as journal, p.cited_by_count, p.open_access,
+            COALESCE(p.content_type, 'journal_article') as content_type,
+            p.source_url, p.source_platform,
             p.fwci, p.citation_percentile, p.is_top_10_percent,
             p.citations_per_year, p.primary_topic,
             s.h_index as journal_h_index,
@@ -386,6 +403,102 @@ fs.writeFileSync(
   JSON.stringify(summaryApi, null, 2)
 );
 console.log("Exported public API summary");
+
+// =============================================================================
+// CONTENT SOURCES (for /sources page)
+// =============================================================================
+
+try {
+  const contentSources = db
+    .prepare(
+      `SELECT cs.*,
+              (SELECT COUNT(*) FROM papers p
+               JOIN classifications c ON p.work_id = c.paper_id
+               WHERE p.source_platform = cs.platform OR p.journal_name = cs.name) as item_count
+       FROM content_sources cs
+       ORDER BY cs.category, cs.name`
+    )
+    .all();
+
+  fs.writeFileSync(
+    path.join(OUTPUT_DIR, "content-sources.json"),
+    JSON.stringify(contentSources)
+  );
+  console.log(`Exported ${contentSources.length} content sources`);
+} catch (e) {
+  console.log(`No content_sources table found (run seed_sources first): ${e.message}`);
+}
+
+// =============================================================================
+// RSS FEED (static, regenerated on each export)
+// =============================================================================
+
+const recentItems = db
+  .prepare(
+    `SELECT p.work_id, p.title, p.pub_date, p.doi, p.source_url,
+            COALESCE(p.content_type, 'journal_article') as content_type,
+            p.journal_name, SUBSTR(p.abstract, 1, 300) as abstract,
+            c.sport, c.theme, c.summary
+     FROM classifications c
+     JOIN papers p ON c.paper_id = p.work_id
+     WHERE c.sport != 'not_applicable'
+     ORDER BY p.created_at DESC LIMIT 50`
+  )
+  .all();
+
+function escapeXml(str) {
+  if (!str) return "";
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+function buildRssFeed(items) {
+  const now = new Date().toUTCString();
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Living Sports Analytics</title>
+    <link>https://living-sports-analytics.vercel.app</link>
+    <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
+    <language>en</language>
+    <lastBuildDate>${now}</lastBuildDate>
+    <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://living-sports-analytics.vercel.app/icon.png</url>
+      <title>Living Sports Analytics</title>
+      <link>https://living-sports-analytics.vercel.app</link>
+    </image>\n`;
+
+  for (const item of items) {
+    const link = item.source_url || (item.doi ? `https://doi.org/${item.doi}` : `https://living-sports-analytics.vercel.app/explore`);
+    const desc = item.summary || item.abstract || "";
+    const pubDate = item.pub_date ? new Date(item.pub_date).toUTCString() : now;
+    const categories = [item.sport, item.theme, item.content_type].filter(Boolean);
+
+    xml += `    <item>
+      <title>${escapeXml(item.title)}</title>
+      <link>${escapeXml(link)}</link>
+      <description>${escapeXml(desc)}</description>
+      <pubDate>${pubDate}</pubDate>
+      <guid isPermaLink="false">${escapeXml(item.work_id)}</guid>
+      <source url="https://living-sports-analytics.vercel.app">${escapeXml(item.journal_name || "Living Sports Analytics")}</source>\n`;
+    for (const cat of categories) {
+      xml += `      <category>${escapeXml(cat)}</category>\n`;
+    }
+    xml += `    </item>\n`;
+  }
+
+  xml += `  </channel>\n</rss>\n`;
+  return xml;
+}
+
+const rssXml = buildRssFeed(recentItems);
+fs.writeFileSync(path.join(__dirname, "..", "public", "feed.xml"), rssXml);
+console.log(`Exported RSS feed: ${recentItems.length} items`);
 
 console.log(`\nAll data exported to:`);
 console.log(`  Internal: ${OUTPUT_DIR}`);

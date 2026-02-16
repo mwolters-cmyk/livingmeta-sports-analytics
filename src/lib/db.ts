@@ -37,6 +37,7 @@ export interface Stats {
   topSubThemes: { sub_theme: string; count: number }[];
   sportByYear: { year: number; sport: string; count: number }[];
   methodologyByYear: { year: number; methodology: string; count: number }[];
+  contentTypeDistribution: { content_type: string; count: number }[];
   themeByYear: { year: number; theme: string; count: number }[];
   exportedAt?: string;
 }
@@ -58,6 +59,10 @@ export interface ClassifiedPaper {
   is_womens_sport: number;
   data_type: string;
   ai_summary: string | null;
+  // Content type (blog_post, thesis, conference_paper, etc.)
+  content_type: string | null;
+  source_url: string | null;
+  source_platform: string | null;
   // Impact metrics (from OpenAlex)
   fwci: number | null;
   citation_percentile: number | null;
@@ -133,6 +138,16 @@ export const THEME_LABELS: Record<string, string> = {
   methodology: "Methodology",
   epidemiology: "Epidemiology",
   other: "Other",
+};
+
+export const CONTENT_TYPE_LABELS: Record<string, string> = {
+  journal_article: "Journal Article",
+  blog_post: "Blog Post",
+  thesis: "Thesis",
+  conference_paper: "Conference Paper",
+  working_paper: "Working Paper",
+  news_article: "News Article",
+  report: "Report",
 };
 
 export const METHODOLOGY_LABELS: Record<string, string> = {

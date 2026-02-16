@@ -11,6 +11,7 @@ import {
   SPORT_LABELS,
   THEME_LABELS,
   METHODOLOGY_LABELS,
+  CONTENT_TYPE_LABELS,
 } from "@/lib/db";
 import type { ClassifiedPaper } from "@/lib/db";
 
@@ -60,6 +61,15 @@ const paperResourceCount = Object.keys(paperResources).length;
 const sports = [...new Set(allPapers.map((p) => p.sport))].sort();
 const themes = [...new Set(allPapers.map((p) => p.theme))].sort();
 const methodologies = [...new Set(allPapers.map((p) => p.methodology))].sort();
+const contentTypes = [...new Set(allPapers.map((p) => p.content_type || "journal_article"))].sort();
+
+// Count non-journal content for header stats
+const blogPostCount = allPapers.filter((p) => p.content_type === "blog_post").length;
+const thesisCount = allPapers.filter((p) => p.content_type === "thesis").length;
+const newsCount = allPapers.filter((p) => p.content_type === "news_article").length;
+const conferenceCount = allPapers.filter((p) => p.content_type === "conference_paper").length;
+const workingPaperCount = allPapers.filter((p) => p.content_type === "working_paper").length;
+const nonJournalCount = blogPostCount + thesisCount + newsCount + conferenceCount + workingPaperCount;
 
 type SortOption = "date" | "citations" | "fwci" | "citations_per_year" | "journal_impact";
 
@@ -140,6 +150,7 @@ function ExploreContent() {
   const [sport, setSport] = useState("");
   const [theme, setTheme] = useState("");
   const [methodology, setMethodology] = useState("");
+  const [contentType, setContentType] = useState("");
   const [womenOnly, setWomenOnly] = useState(false);
   const [fullTextOnly, setFullTextOnly] = useState(false);
   const [sortBy, setSortBy] = useState<SortOption>("date");
@@ -180,6 +191,10 @@ function ExploreContent() {
       results = results.filter((p) => p.methodology === methodology);
     }
 
+    if (contentType) {
+      results = results.filter((p) => (p.content_type || "journal_article") === contentType);
+    }
+
     if (womenOnly) {
       results = results.filter((p) => p.is_womens_sport === 1);
     }
@@ -210,7 +225,7 @@ function ExploreContent() {
     }
 
     return sorted;
-  }, [query, sport, theme, methodology, womenOnly, fullTextOnly, sortBy]);
+  }, [query, sport, theme, methodology, contentType, womenOnly, fullTextOnly, sortBy]);
 
   const total = filtered.length;
   const totalPages = Math.ceil(total / limit);
@@ -221,6 +236,7 @@ function ExploreContent() {
     setSport("");
     setTheme("");
     setMethodology("");
+    setContentType("");
     setWomenOnly(false);
     setFullTextOnly(false);
     setSortBy("date");
@@ -231,6 +247,7 @@ function ExploreContent() {
     (sport ? 1 : 0) +
     (theme ? 1 : 0) +
     (methodology ? 1 : 0) +
+    (contentType ? 1 : 0) +
     (womenOnly ? 1 : 0) +
     (fullTextOnly ? 1 : 0) +
     (query ? 1 : 0) +
@@ -343,16 +360,24 @@ function ExploreContent() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
       <h1 className="mb-2 text-3xl font-bold text-navy">
-        Explore Classified Papers
+        Explore
       </h1>
       <p className="mb-6 text-gray-500">
-        {allPapers.length.toLocaleString()} AI-classified sports analytics
-        papers &mdash; {pdfCount.toLocaleString()} with full-text PDF &mdash; {paperResourceCount.toLocaleString()} with resource extraction &mdash; search by sport, methodology, theme, or keyword
+        {(allPapers.length - nonJournalCount).toLocaleString()} papers
+        {nonJournalCount > 0 && (
+          <> &middot; <span className="text-violet-600">{blogPostCount} blog posts</span>
+          {thesisCount > 0 && <> &middot; {thesisCount} theses</>}
+          {conferenceCount > 0 && <> &middot; {conferenceCount} conference papers</>}
+          {workingPaperCount > 0 && <> &middot; {workingPaperCount} working papers</>}
+          {newsCount > 0 && <> &middot; {newsCount} news articles</>}
+          </>
+        )}
+        {" "}&mdash; {pdfCount.toLocaleString()} with full-text PDF &mdash; search by sport, methodology, theme, or keyword
       </p>
 
       {/* Filters */}
       <div className="mb-6 rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-        <div className="grid gap-3 md:grid-cols-7">
+        <div className="grid gap-3 md:grid-cols-8">
           {/* Text search */}
           <div className="md:col-span-2">
             <input
@@ -414,6 +439,23 @@ function ExploreContent() {
             {methodologies.map((m) => (
               <option key={m} value={m}>
                 {METHODOLOGY_LABELS[m] || m}
+              </option>
+            ))}
+          </select>
+
+          {/* Content type filter */}
+          <select
+            value={contentType}
+            onChange={(e) => {
+              setContentType(e.target.value);
+              setPage(0);
+            }}
+            className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-orange focus:outline-none"
+          >
+            <option value="">All types</option>
+            {contentTypes.map((ct) => (
+              <option key={ct} value={ct}>
+                {CONTENT_TYPE_LABELS[ct] || ct}
               </option>
             ))}
           </select>
@@ -533,37 +575,34 @@ function ExploreContent() {
             <div className="flex-1">
               {/* Title */}
               <h3 className="font-semibold text-navy">
-                {p.doi ? (
-                  <a
-                    href={p.doi.startsWith("http") ? p.doi : `https://doi.org/${p.doi}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-orange hover:underline"
-                  >
-                    {p.title}
-                    <span className="ml-1.5 inline-block align-text-top text-gray-400 transition-colors group-hover:text-orange">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="inline h-3.5 w-3.5">
-                        <path fillRule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clipRule="evenodd" />
-                      </svg>
-                    </span>
-                  </a>
-                ) : p.work_id ? (
-                  <a
-                    href={`https://openalex.org/works/${p.work_id.replace("https://openalex.org/", "")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-orange hover:underline"
-                  >
-                    {p.title}
-                    <span className="ml-1.5 inline-block align-text-top text-gray-400">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="inline h-3.5 w-3.5">
-                        <path fillRule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clipRule="evenodd" />
-                      </svg>
-                    </span>
-                  </a>
-                ) : (
-                  p.title
-                )}
+                {(() => {
+                  // Determine best link: source_url for blogs/grey lit, DOI for papers, OpenAlex as fallback
+                  const href = p.source_url
+                    ? p.source_url
+                    : p.doi
+                      ? (p.doi.startsWith("http") ? p.doi : `https://doi.org/${p.doi}`)
+                      : p.work_id?.startsWith("https://openalex.org/")
+                        ? `https://openalex.org/works/${p.work_id.replace("https://openalex.org/", "")}`
+                        : null;
+
+                  return href ? (
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-orange hover:underline"
+                    >
+                      {p.title}
+                      <span className="ml-1.5 inline-block align-text-top text-gray-400 transition-colors group-hover:text-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="inline h-3.5 w-3.5">
+                          <path fillRule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clipRule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                  ) : (
+                    p.title
+                  );
+                })()}
               </h3>
 
               {/* Metadata row */}
@@ -627,6 +666,12 @@ function ExploreContent() {
 
               {/* Classification badges */}
               <div className="mt-2 flex flex-wrap gap-1.5">
+                {/* Content type badge (only for non-journal content) */}
+                {p.content_type && p.content_type !== "journal_article" && (
+                  <span className="rounded-full bg-violet-100 px-2.5 py-0.5 text-xs font-medium text-violet-700">
+                    {CONTENT_TYPE_LABELS[p.content_type] || p.content_type}
+                  </span>
+                )}
                 <span
                   className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
                     sportColors[p.sport] || "bg-gray-100 text-gray-700"

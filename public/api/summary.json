@@ -1,11 +1,11 @@
 {
   "description": "Summary statistics for the Living Sports Analytics platform",
-  "exported_at": "2026-02-15T12:14:46.926Z",
+  "exported_at": "2026-02-16T08:04:21.230Z",
   "papers": {
-    "total": 39620,
-    "with_abstract": 35279,
-    "classified": 35297,
-    "relevant": 12008
+    "total": 39887,
+    "with_abstract": 35546,
+    "classified": 35564,
+    "relevant": 12275
   },
   "authors": {
     "total": 125479,
@@ -15,11 +15,11 @@
     "sport": [
       {
         "sport": "multi_sport",
-        "count": 3536
+        "count": 3546
       },
       {
         "sport": "football",
-        "count": 2255
+        "count": 2512
       },
       {
         "sport": "other",
@@ -140,6 +140,10 @@
         "count": 456
       },
       {
+        "methodology": null,
+        "count": 267
+      },
+      {
         "methodology": "deep_learning",
         "count": 264
       },
@@ -222,6 +226,10 @@
         "count": 379
       },
       {
+        "theme": null,
+        "count": 267
+      },
+      {
         "theme": "data_engineering",
         "count": 245
       },
@@ -264,12 +272,12 @@
         "count": 1674
       },
       {
-        "data_type": "event",
-        "count": 1165
+        "data_type": "not_specified",
+        "count": 1428
       },
       {
-        "data_type": "not_specified",
-        "count": 1161
+        "data_type": "event",
+        "count": 1165
       },
       {
         "data_type": "text",
@@ -1221,7 +1229,7 @@
       {
         "year": 2023,
         "sport": "football",
-        "count": 138
+        "count": 139
       },
       {
         "year": 2023,
@@ -1320,13 +1328,13 @@
       },
       {
         "year": 2024,
-        "sport": "multi_sport",
-        "count": 510
+        "sport": "football",
+        "count": 543
       },
       {
         "year": 2024,
-        "sport": "football",
-        "count": 426
+        "sport": "multi_sport",
+        "count": 520
       },
       {
         "year": 2024,
@@ -1451,7 +1459,7 @@
       {
         "year": 2025,
         "sport": "football",
-        "count": 808
+        "count": 933
       },
       {
         "year": 2025,
@@ -1576,7 +1584,7 @@
       {
         "year": 2026,
         "sport": "football",
-        "count": 131
+        "count": 145
       },
       {
         "year": 2026,
@@ -2281,6 +2289,11 @@
         "count": 1
       },
       {
+        "year": 2023,
+        "methodology": null,
+        "count": 1
+      },
+      {
         "year": 2024,
         "methodology": "statistical",
         "count": 1065
@@ -2294,6 +2307,11 @@
         "year": 2024,
         "methodology": "descriptive",
         "count": 230
+      },
+      {
+        "year": 2024,
+        "methodology": null,
+        "count": 127
       },
       {
         "year": 2024,
@@ -2387,6 +2405,11 @@
       },
       {
         "year": 2025,
+        "methodology": null,
+        "count": 125
+      },
+      {
+        "year": 2025,
         "methodology": "other",
         "count": 48
       },
@@ -2468,6 +2491,11 @@
       {
         "year": 2026,
         "methodology": "simulation",
+        "count": 14
+      },
+      {
+        "year": 2026,
+        "methodology": null,
         "count": 14
       },
       {
@@ -3298,6 +3326,11 @@
         "count": 3
       },
       {
+        "year": 2023,
+        "theme": null,
+        "count": 1
+      },
+      {
         "year": 2024,
         "theme": "performance_analysis",
         "count": 567
@@ -3316,6 +3349,11 @@
         "year": 2024,
         "theme": "player_development",
         "count": 160
+      },
+      {
+        "year": 2024,
+        "theme": null,
+        "count": 127
       },
       {
         "year": 2024,
@@ -3449,6 +3487,11 @@
       },
       {
         "year": 2025,
+        "theme": null,
+        "count": 125
+      },
+      {
+        "year": 2025,
         "theme": "nutrition_recovery",
         "count": 101
       },
@@ -3561,6 +3604,11 @@
         "year": 2026,
         "theme": "tactical_analysis",
         "count": 15
+      },
+      {
+        "year": 2026,
+        "theme": null,
+        "count": 14
       },
       {
         "year": 2026,

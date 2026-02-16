@@ -29,8 +29,9 @@ export const metadata: Metadata = {
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/explore", label: "Papers" },
+  { href: "/explore", label: "Explore" },
   { href: "/resources", label: "Resources" },
+  { href: "/sources", label: "Sources" },
   { href: "/trends", label: "Trends" },
   { href: "/gaps", label: "Research Gaps" },
   { href: "/analyses", label: "Analyses" },
@@ -54,6 +55,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <link rel="alternate" type="application/rss+xml" title="Living Sports Analytics" href="/feed.xml" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
@@ -147,6 +151,13 @@ export default function RootLayout({
                   className="transition-colors hover:text-navy"
                 >
                   GitHub
+                </a>
+                <a
+                  href="/feed.xml"
+                  className="transition-colors hover:text-orange"
+                  title="RSS Feed"
+                >
+                  RSS
                 </a>
               </div>
             </div>

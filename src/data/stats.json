@@ -1,11 +1,11 @@
 {
-  "totalPapers": 39620,
+  "totalPapers": 39887,
   "totalAuthors": 125479,
   "authorsWithGender": 94438,
   "genderPercentage": 75.3,
-  "papersWithAbstract": 35279,
-  "abstractPercentage": 89,
-  "journalCount": 12465,
+  "papersWithAbstract": 35546,
+  "abstractPercentage": 89.1,
+  "journalCount": 12506,
   "oldestPaper": "2015-01-01",
   "newestPaper": "2026-12-19",
   "topJournals": [
@@ -127,33 +127,33 @@
     },
     {
       "year": 2023,
-      "count": 2377
+      "count": 2378
     },
     {
       "year": 2024,
-      "count": 4935
+      "count": 5062
     },
     {
       "year": 2025,
-      "count": 9939
+      "count": 10064
     },
     {
       "year": 2026,
-      "count": 2898
+      "count": 2912
     }
   ],
-  "totalClassified": 35297,
-  "classifiedRelevant": 12008,
+  "totalClassified": 35564,
+  "classifiedRelevant": 12275,
   "classifiedNotApplicable": 23289,
   "womensSportCount": 2132,
   "sportDistribution": [
     {
       "sport": "multi_sport",
-      "count": 3536
+      "count": 3546
     },
     {
       "sport": "football",
-      "count": 2255
+      "count": 2512
     },
     {
       "sport": "other",
@@ -274,6 +274,10 @@
       "count": 456
     },
     {
+      "methodology": null,
+      "count": 267
+    },
+    {
       "methodology": "deep_learning",
       "count": 264
     },
@@ -356,6 +360,10 @@
       "count": 379
     },
     {
+      "theme": null,
+      "count": 267
+    },
+    {
       "theme": "data_engineering",
       "count": 245
     },
@@ -398,12 +406,12 @@
       "count": 1674
     },
     {
-      "data_type": "event",
-      "count": 1165
+      "data_type": "not_specified",
+      "count": 1428
     },
     {
-      "data_type": "not_specified",
-      "count": 1161
+      "data_type": "event",
+      "count": 1165
     },
     {
       "data_type": "text",
@@ -538,6 +546,32 @@
     {
       "sub_theme": "technology adoption, AI platform integration, TAM model extension",
       "count": 2
+    }
+  ],
+  "contentTypeDistribution": [
+    {
+      "content_type": "journal_article",
+      "count": 12038
+    },
+    {
+      "content_type": "blog_post",
+      "count": 154
+    },
+    {
+      "content_type": "news_article",
+      "count": 54
+    },
+    {
+      "content_type": "conference_paper",
+      "count": 18
+    },
+    {
+      "content_type": "working_paper",
+      "count": 6
+    },
+    {
+      "content_type": "thesis",
+      "count": 5
     }
   ],
   "sportByYear": [
@@ -1474,7 +1508,7 @@
     {
       "year": 2023,
       "sport": "football",
-      "count": 138
+      "count": 139
     },
     {
       "year": 2023,
@@ -1573,13 +1607,13 @@
     },
     {
       "year": 2024,
-      "sport": "multi_sport",
-      "count": 510
+      "sport": "football",
+      "count": 543
     },
     {
       "year": 2024,
-      "sport": "football",
-      "count": 426
+      "sport": "multi_sport",
+      "count": 520
     },
     {
       "year": 2024,
@@ -1704,7 +1738,7 @@
     {
       "year": 2025,
       "sport": "football",
-      "count": 808
+      "count": 933
     },
     {
       "year": 2025,
@@ -1829,7 +1863,7 @@
     {
       "year": 2026,
       "sport": "football",
-      "count": 131
+      "count": 145
     },
     {
       "year": 2026,
@@ -2534,6 +2568,11 @@
       "count": 1
     },
     {
+      "year": 2023,
+      "methodology": null,
+      "count": 1
+    },
+    {
       "year": 2024,
       "methodology": "statistical",
       "count": 1065
@@ -2547,6 +2586,11 @@
       "year": 2024,
       "methodology": "descriptive",
       "count": 230
+    },
+    {
+      "year": 2024,
+      "methodology": null,
+      "count": 127
     },
     {
       "year": 2024,
@@ -2640,6 +2684,11 @@
     },
     {
       "year": 2025,
+      "methodology": null,
+      "count": 125
+    },
+    {
+      "year": 2025,
       "methodology": "other",
       "count": 48
     },
@@ -2721,6 +2770,11 @@
     {
       "year": 2026,
       "methodology": "simulation",
+      "count": 14
+    },
+    {
+      "year": 2026,
+      "methodology": null,
       "count": 14
     },
     {
@@ -3551,6 +3605,11 @@
       "count": 3
     },
     {
+      "year": 2023,
+      "theme": null,
+      "count": 1
+    },
+    {
       "year": 2024,
       "theme": "performance_analysis",
       "count": 567
@@ -3569,6 +3628,11 @@
       "year": 2024,
       "theme": "player_development",
       "count": 160
+    },
+    {
+      "year": 2024,
+      "theme": null,
+      "count": 127
     },
     {
       "year": 2024,
@@ -3702,6 +3766,11 @@
     },
     {
       "year": 2025,
+      "theme": null,
+      "count": 125
+    },
+    {
+      "year": 2025,
       "theme": "nutrition_recovery",
       "count": 101
     },
@@ -3817,6 +3886,11 @@
     },
     {
       "year": 2026,
+      "theme": null,
+      "count": 14
+    },
+    {
+      "year": 2026,
       "theme": "bias_detection",
       "count": 5
     },
@@ -3831,5 +3905,5 @@
       "count": 4
     }
   ],
-  "exportedAt": "2026-02-15T12:14:42.771Z"
+  "exportedAt": "2026-02-16T08:04:17.332Z"
 }

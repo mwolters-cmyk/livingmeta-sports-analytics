@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Living Sports Analytics</title>
+    <link>https://living-sports-analytics.vercel.app</link>
+    <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Feb 2026 08:04:23 GMT</lastBuildDate>
+    <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://living-sports-analytics.vercel.app/icon.png</url>
+      <title>Living Sports Analytics</title>
+      <link>https://living-sports-analytics.vercel.app</link>
+    </image>
+    <item>
+      <title>Should We Account for Team Quality in an xG Model?</title>
+      <link>https://tonyelhabr.rbind.io/posts/xg-team-quality/</link>
+      <description>By Tony ElHabr. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:2c652ac470fa8bc0</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Corner Threat Score: Measuring the Threat a Player Generates from Taking Inswinging and Outswinging Corners</title>
+      <link>https://marclamberts.medium.com/corner-threat-score-measuring-the-threat-a-player-generates-from-taking-inswinging-and-outswinging-8e070634f4a9</link>
+      <description>By Marc Lamberts. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:a398aca336d372af</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Football Tactics and Rolling Dice</title>
+      <link>https://absoluteunit.substack.com/p/football-tactics-and-rolling-dice</link>
+      <description>By Tiotal Football. Published in Absolute Unit. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:5850f39ae352603d</guid>
+      <source url="https://living-sports-analytics.vercel.app">Absolute Unit</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Introducing âClubStrength+â: Adjusting Performance by Opponent Strength</title>
+      <link>https://analyticsfc.co.uk/blog/2024/01/22/introducing-clubstrength-adjusting-performance-by-opponent-strength/</link>
+      <description>By Opponent Strength by Analytics FC. Published in Analytics FC. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:2aff3a2bdb314ed4</guid>
+      <source url="https://living-sports-analytics.vercel.app">Analytics FC</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>On Randomness (and Parity)</title>
+      <link>https://absoluteunit.substack.com/p/on-randomness-and-parity</link>
+      <description>By Tiotal Football. Published in Absolute Unit. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:c2065c9fc0f0162c</guid>
+      <source url="https://living-sports-analytics.vercel.app">Absolute Unit</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>From Our Lab to the Pitch: Advancements in Soccer Analytics Through AI</title>
+      <link>https://medium.com/@keisuke198619/from-our-lab-to-the-pitch-advancements-in-soccer-analytics-through-ai-e16e65b55937</link>
+      <description>By Keisuke Fujii. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Wed, 07 Feb 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:9c4c1d79d8af64f1</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Biases in Expected Goals Models Confound Finishing Ability</title>
+      <link>https://dtai.cs.kuleuven.be/sports/blog/biases-in-expected-goals-models-confound-finishing-ability/</link>
+      <description>By Jesse Davis and Pieter Robberechts. Published in DTAI Sports Analytics Lab. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:42eda5cc75fbd9d7</guid>
+      <source url="https://living-sports-analytics.vercel.app">DTAI Sports Analytics Lab</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Gamestate xG Score: Expected Goals Adjusted by Game State</title>
+      <link>https://marclamberts.medium.com/gamestate-xg-score-expected-goals-adjusted-by-game-state-83bc40562d66</link>
+      <description>By Game State by Marc Lamberts. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:8a1598fca0fdfb6c</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>How to Scout South America Like Brighton</title>
+      <link>https://www.scoutednotebook.com/p/scouting-south-america-like-brighton</link>
+      <description>By Stephen Ganavas. Published in Scouted Notebook. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:e9664758a130e690</guid>
+      <source url="https://living-sports-analytics.vercel.app">Scouted Notebook</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>What Do We Actually Know About Football?</title>
+      <link>https://get-goalside-newsletter-archive.beehiiv.com/p/actually-know-football</link>
+      <description>By Mark Thompson. Published in Get Goalside. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:f6c1b97b4e40eafb</guid>
+      <source url="https://living-sports-analytics.vercel.app">Get Goalside</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Applications of Generative AI in Sport: Q1 Update</title>
+      <link>https://www.statsperform.com/resource/the-evolution-of-ai-to-genai-in-sport/</link>
+      <description>By Patrick Lucey. Published in Stats Perform. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:1e2c3343190b0a08</guid>
+      <source url="https://living-sports-analytics.vercel.app">Stats Perform</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Theory of Soccer: Mike Leach &amp; the Air Raid</title>
+      <link>https://absoluteunit.substack.com/p/theory-of-soccer-interlude-mike-leach</link>
+      <description>By Tiotal Football. Published in Absolute Unit. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 21 Mar 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:4703c761ae600000</guid>
+      <source url="https://living-sports-analytics.vercel.app">Absolute Unit</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Identifying Attacking Overloads and Measuring Their Impact</title>
+      <link>https://statsbomb.com/articles/soccer/identifying-attacking-overloads-and-measuring-their-impact/</link>
+      <description>By Jaymes Monte. Published in Hudl Statsbomb. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:1aaf927876a486bc</guid>
+      <source url="https://living-sports-analytics.vercel.app">Hudl Statsbomb</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>What We Talk About When We Talk About âAnalyticsâ</title>
+      <link>https://get-goalside-newsletter-archive.beehiiv.com/p/talk-talk-analytics</link>
+      <description>By Mark Thompson. Published in Get Goalside. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Wed, 27 Mar 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:55c457cfbabed36c</guid>
+      <source url="https://living-sports-analytics.vercel.app">Get Goalside</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>How Football Is Changing</title>
+      <link>https://statsbomb.com/articles/soccer/how-football-is-changing/</link>
+      <description>By Duncan Hunter. Published in Hudl Statsbomb. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 16 Apr 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:a9724ffa22fd0350</guid>
+      <source url="https://living-sports-analytics.vercel.app">Hudl Statsbomb</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Ball Progression Is All You Need</title>
+      <link>https://tonyelhabr.rbind.io/posts/ball-progression-epv/</link>
+      <description>By Tony ElHabr. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Mon, 22 Apr 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:20fe58bd4da82e10</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Estimating Shooting Performance Unlikeliness</title>
+      <link>https://tonyelhabr.rbind.io/posts/xg-likelihood/</link>
+      <description>By Tony ElHabr. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Sun, 05 May 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:3287f696357383ab</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>How Do You Assess the Value of an Academy?</title>
+      <link>https://analyticsfc.co.uk/blog/2024/05/11/how-do-you-assess-the-value-of-an-academy/</link>
+      <description>By Casey Evans. Published in Analytics FC. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Sat, 11 May 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:8250ee0b022c9fd4</guid>
+      <source url="https://living-sports-analytics.vercel.app">Analytics FC</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Applications of Generative AI in Sport: Q2 Update, Part I</title>
+      <link>https://www.statsperform.com/resource/applications-of-generative-ai-in-sport-q2-update/</link>
+      <description>By Patrick Lucey. Published in Stats Perform. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Wed, 22 May 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:140d77af48382d59</guid>
+      <source url="https://living-sports-analytics.vercel.app">Stats Perform</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Theory of Soccer: A World Without Tactics</title>
+      <link>https://absoluteunit.substack.com/p/theory-of-soccer-a-world-without</link>
+      <description>By Tiotal Football. Published in Absolute Unit. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Fri, 24 May 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:ca9930788941d831</guid>
+      <source url="https://living-sports-analytics.vercel.app">Absolute Unit</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Voetbal Anno 2024: Wie Niet Rijk Is, Moet Slim Zijn (Met Cijfertjes) [Dutch]</title>
+      <link>https://decorrespondent.nl/15337/voetbal-anno-2024-wie-niet-rijk-is-moet-slim-zijn-met-cijfertjes/ebdbf85a-0a31-036d-084a-4b21872734eb</link>
+      <description>By Michiel de Hoog. Published in De Correspondent. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Mon, 27 May 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:a0c9f59fe63ce42e</guid>
+      <source url="https://living-sports-analytics.vercel.app">De Correspondent</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Applications of Generative AI in Sport: Q2 Update, Part II</title>
+      <link>https://www.statsperform.com/resource/applications-of-generative-ai-in-sport-q2-update-part-two/</link>
+      <description>By Patrick Lucey. Published in Stats Perform. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 28 May 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:3a1ac36b3b05bc2e</guid>
+      <source url="https://living-sports-analytics.vercel.app">Stats Perform</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Marginal Gains in the Lower Levels of Football</title>
+      <link>https://statsbomb.com/articles/soccer/marginal-gains-in-the-lower-levels-of-football/</link>
+      <description>By Hudl Statsbomb. Published in Hudl Statsbomb. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:b3fb2b79d7c444a9</guid>
+      <source url="https://living-sports-analytics.vercel.app">Hudl Statsbomb</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>The Idea Behind the Threat: Creating Pass Progression Score (PPS)</title>
+      <link>https://marclamberts.medium.com/the-idea-behind-the-threat-creating-pass-progression-score-pps-7b0357e843ca</link>
+      <description>By Marc Lamberts. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:ee18898929500a66</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Developing New Metrics: Shots and Finishing</title>
+      <link>https://analyticsfc.co.uk/blog/2024/06/13/developing-new-metrics-shots-and-finishing/</link>
+      <description>By Alex Stewart. Published in Analytics FC. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:c8cda93ef2f9e8e2</guid>
+      <source url="https://living-sports-analytics.vercel.app">Analytics FC</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Fixed to Fluid: Frame-by-Frame Role Classification</title>
+      <link>https://github.com/devinpleuler/research/blob/master/frame-by-frame-position.md</link>
+      <description>By Devin Pleuler. Published in GitHub. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:06c743945c9e6299</guid>
+      <source url="https://living-sports-analytics.vercel.app">GitHub</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Using Data in The Search For a New Manager</title>
+      <link>https://statsbomb.com/articles/soccer/using-data-in-the-search-for-a-new-manager/</link>
+      <description>By Jaymes Monte. Published in Hudl Statsbomb. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:a6b836093917215d</guid>
+      <source url="https://living-sports-analytics.vercel.app">Hudl Statsbomb</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Long Throw-Ins: Scouting to Find Marginal Gains</title>
+      <link>https://analyticsfc.co.uk/blog/2024/06/18/long-throw-ins-scouting-to-find-marginal-gains/</link>
+      <description>By Alex Stewart. Published in Analytics FC. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 18 Jun 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:094000bdca489335</guid>
+      <source url="https://living-sports-analytics.vercel.app">Analytics FC</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Expected Goals, Gamestate, and Predictiveness</title>
+      <link>https://tonyelhabr.rbind.io/posts/xg-predictor-future-results/</link>
+      <description>By Tony ElHabr. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Wed, 19 Jun 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:b81cec59d581996f</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>The Cost of Injuries in the Premier League: 2023/2024</title>
+      <link>https://analyticsfc.co.uk/blog/2024/07/18/the-cost-of-injuries-in-the-premier-league-2023-2024/</link>
+      <description>By Jason McKenna. Published in Analytics FC. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:e70906d17e793d37</guid>
+      <source url="https://living-sports-analytics.vercel.app">Analytics FC</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Understand Football and Youâll Understand AI</title>
+      <link>https://get-goalside-newsletter-archive.beehiiv.com/p/understand-football-understand-ai</link>
+      <description>By Mark Thompson. Published in Get Goalside. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:179e349bcaa60ff4</guid>
+      <source url="https://living-sports-analytics.vercel.app">Get Goalside</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Measuring Throw-In Success</title>
+      <link>https://statsbomb.com/articles/soccer/measuring-throw-in-success/</link>
+      <description>By Jaymes Monte. Published in Hudl Statsbomb. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:5244183dd836d9e8</guid>
+      <source url="https://living-sports-analytics.vercel.app">Hudl Statsbomb</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>The Complexity of Outliers in Data Scouting in Football</title>
+      <link>https://marclamberts.medium.com/the-complexity-of-outliers-in-data-scouting-in-football-31e9fdca5171</link>
+      <description>By Marc Lamberts. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Sat, 03 Aug 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:04bbe0a8abcc5718</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Ball Tracking in Sports with Computer Vision</title>
+      <link>https://blog.roboflow.com/tracking-ball-sports-computer-vision/</link>
+      <description>By Piotr Skalski. Published in Roboflow. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:e5baa79b8aa43642</guid>
+      <source url="https://living-sports-analytics.vercel.app">Roboflow</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Camera Calibration in Sports With Keypoints</title>
+      <link>https://blog.roboflow.com/camera-calibration-sports-computer-vision/</link>
+      <description>By Piotr Skalski. Published in Roboflow. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:a172d44dbe0ea5cd</guid>
+      <source url="https://living-sports-analytics.vercel.app">Roboflow</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Gone with the Wind FC: Exploring the Past to Find Enduring Truths and Market Inefficiencies</title>
+      <link>https://absoluteunit.substack.com/p/gone-with-the-wind-fc-exploring-the</link>
+      <description>By Jared Young. Published in Absolute Unit. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:73748f3309063baa</guid>
+      <source url="https://living-sports-analytics.vercel.app">Absolute Unit</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>xPass 360: Upgrading Expected Pass Models</title>
+      <link>https://statsbomb.com/articles/soccer/xpass-360-upgrading-expected-pass-xpass-models/</link>
+      <description>By Conor Sharpe. Published in Hudl Statsbomb. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 13 Aug 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:b043e39f9539bf64</guid>
+      <source url="https://living-sports-analytics.vercel.app">Hudl Statsbomb</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>pip install unravelsports</title>
+      <link>https://unravelsports.github.io/2024/08/24/unravelsports-package.html</link>
+      <description>By Joris Bekkers. Published in Unravel Sports. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Mon, 16 Feb 2026 08:04:23 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:7afd3c9146be5e17</guid>
+      <source url="https://living-sports-analytics.vercel.app">Unravel Sports</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>How to Get Started in Football Analytics</title>
+      <link>https://statsbomb.com/articles/soccer/how-to-get-started-in-football-analytics/</link>
+      <description>By Hudl Statsbomb. Published in Hudl Statsbomb. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:ffd29c7b6ed47c33</guid>
+      <source url="https://living-sports-analytics.vercel.app">Hudl Statsbomb</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Why Is the Impact of Football Analytics a Question?</title>
+      <link>https://get-goalside-newsletter-archive.beehiiv.com/p/why-analytics-impact-question</link>
+      <description>By Mark Thompson. Published in Get Goalside. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:bb87e015c6bf8bee</guid>
+      <source url="https://living-sports-analytics.vercel.app">Get Goalside</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>PFF FC Athleticism Score: A Comprehensive Metric for Evaluating Athletic Performance in Football</title>
+      <link>https://www.blog.fc.pff.com/blog/pff-fc-athleticism-score</link>
+      <description>By PFF FC. Published in PFF FC. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:cebed227b1ef8cba</guid>
+      <source url="https://living-sports-analytics.vercel.app">PFF FC</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Set-Pieces: Are There Still Margins to Be Gained?</title>
+      <link>https://analyticsfc.co.uk/blog/2024/10/09/set-pieces-are-there-still-margins-to-be-gained/</link>
+      <description>By Alex Stewart. Published in Analytics FC. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Wed, 09 Oct 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:a414d3cd9760cdc8</guid>
+      <source url="https://living-sports-analytics.vercel.app">Analytics FC</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Whatâs Your Research Question?</title>
+      <link>https://get-goalside-newsletter-archive.beehiiv.com/p/whats-your-research-question</link>
+      <description>By Mark Thompson. Published in Get Goalside. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:757fd7306e65dd61</guid>
+      <source url="https://living-sports-analytics.vercel.app">Get Goalside</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>How to Get Started as a Data Analyst in Football</title>
+      <link>https://www.liamhenshaw.com/blog/getting-started-football-data-analyst</link>
+      <description>By Liam Henshaw. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:1dbade9506138d58</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Three Key Design Decisions for Possession State Value Models: An Experimental Analysis</title>
+      <link>https://dtai.cs.kuleuven.be/sports/blog/three-key-design-decisions-for-possession-state-value-models:-an-experimental-analysis/</link>
+      <description>By Jesse Davis, Lorenzo Cascioli, Pieter Robberechts and Lode Van Tente. Published in DTAI Sports Analytics Lab. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Wed, 13 Nov 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:a29c74e390aa9231</guid>
+      <source url="https://living-sports-analytics.vercel.app">DTAI Sports Analytics Lab</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>An Experimental Analysis of Possession State Value Models: Part 1</title>
+      <link>https://dtai.cs.kuleuven.be/sports/blog/an-experimental-analysis-of-possession-state-value-models:-part-1/</link>
+      <description>By Jesse Davis, Lorenzo Cascioli, Pieter Robberechts and Lode Van Tente. Published in DTAI Sports Analytics Lab. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Wed, 13 Nov 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:6a9b63cabfd2ccd1</guid>
+      <source url="https://living-sports-analytics.vercel.app">DTAI Sports Analytics Lab</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Substituting Similarity</title>
+      <link>https://www.centralwinger.com/p/substituting-similarity</link>
+      <description>By Devin Pleuler. Published in Central Winger. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:e0d8fca3e50d3791</guid>
+      <source url="https://living-sports-analytics.vercel.app">Central Winger</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Measuring Playersâ Consistent xG Performances with Coefficient of Variation (CV)</title>
+      <link>https://marclamberts.medium.com/measuring-players-consistent-xg-performances-with-coefficient-of-variation-cv-eaf436111e27</link>
+      <description>By Marc Lamberts. Published in Personal blog. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:6ebfe57ed1601828</guid>
+      <source url="https://living-sports-analytics.vercel.app">Personal blog</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Penalties and Conditional Probability</title>
+      <link>https://www.centralwinger.com/p/penalties-and-conditional-probability</link>
+      <description>By Devin Pleuler. Published in Central Winger. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Mon, 25 Nov 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:8e94a82a7cbc7c9c</guid>
+      <source url="https://living-sports-analytics.vercel.app">Central Winger</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Theory of Soccer: Structure &amp; Narrative</title>
+      <link>https://absoluteunit.substack.com/p/theory-of-soccer-structure-and-narrative</link>
+      <description>By Tiotal Football. Published in Absolute Unit. Featured in Van Haaren 2024 Review.</description>
+      <pubDate>Mon, 25 Nov 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">vanhaaren:bc62913448981fa2</guid>
+      <source url="https://living-sports-analytics.vercel.app">Absolute Unit</source>
+      <category>football</category>
+      <category>blog_post</category>
+    </item>
+  </channel>
+</rss>
