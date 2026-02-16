@@ -28,6 +28,7 @@ interface UnifiedResource {
     }[];
   } | null;
   scraper: { file: string; status: string } | null;
+  access_method: "git_clone" | "kaggle_api" | "direct_download" | null;
   url_status: string | null;
   needs_scraper: boolean;
 }
@@ -39,6 +40,8 @@ interface UnifiedResourcesData {
   with_scraper: number;
   with_data: number;
   needs_scraper: number;
+  with_access_method: number;
+  access_methods: Record<string, number>;
   categories: Record<string, number>;
   resources: UnifiedResource[];
 }
@@ -216,6 +219,7 @@ function ResourcesContent() {
       if (flagFilter === "has_scraper" && !r.scraper) return false;
       if (flagFilter === "on_platform" && !r.on_platform) return false;
       if (flagFilter === "needs_scraper" && !r.needs_scraper) return false;
+      if (flagFilter === "has_access_method" && !r.access_method) return false;
       return true;
     });
 
@@ -288,6 +292,14 @@ function ResourcesContent() {
                 {" \u00B7 "}
                 <span className="text-amber-600 font-medium">
                   {data.with_scraper} with scrapers
+                </span>
+              </>
+            )}
+            {data.with_access_method > 0 && (
+              <>
+                {" \u00B7 "}
+                <span className="text-purple-600 font-medium">
+                  {data.with_access_method} easy access
                 </span>
               </>
             )}
@@ -375,6 +387,9 @@ function ResourcesContent() {
               </option>
               <option value="on_platform">
                 Data on platform ({data.with_data})
+              </option>
+              <option value="has_access_method">
+                📦 Easy access ({data.with_access_method})
               </option>
               <option value="needs_scraper">
                 Needs scraper ({data.needs_scraper})
@@ -521,8 +536,25 @@ function ResourceCard({
             </a>
           )}
 
+          {/* Access method */}
+          {r.access_method === "git_clone" && (
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-purple-50 text-purple-700 border border-purple-200">
+              📦 Git Clone
+            </span>
+          )}
+          {r.access_method === "kaggle_api" && (
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-sky-50 text-sky-700 border border-sky-200">
+              📊 Kaggle API
+            </span>
+          )}
+          {r.access_method === "direct_download" && (
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-teal-50 text-teal-700 border border-teal-200">
+              ⬇️ Direct Download
+            </span>
+          )}
+
           {/* Needs scraper */}
-          {r.needs_scraper && !r.scraper && (
+          {r.needs_scraper && !r.scraper && !r.access_method && (
             <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-orange-50 text-orange-600 border border-orange-200">
               Needs scraper
             </span>
