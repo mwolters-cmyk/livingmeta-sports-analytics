@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-02-16T15:41:39",
+  "generated_at": "2026-02-16T18:00:59",
   "model": "claude-haiku-4-5-20251001",
-  "total_curated": 346,
-  "cost_usd": 0.20580299999999999,
-  "input_tokens": 45303,
-  "output_tokens": 32100,
+  "total_curated": 366,
+  "cost_usd": 0.012282000000000001,
+  "input_tokens": 2812,
+  "output_tokens": 1894,
   "resources": [
     {
       "name": "Open Science Framework",
@@ -4588,6 +4588,269 @@
         "football"
       ],
       "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Web of Science",
+      "url": "https://www.webofscience.com",
+      "description": "Academic citation database and research discovery platform indexing peer-reviewed publications across sports science, physiology, and analytics. Essential for systematic reviews and literature analysis in sports research.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "multi_sport"
+      ],
+      "language": null,
+      "paper_count": 5,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "IBM SPSS Statistics",
+      "url": "https://www.ibm.com/products/spss-statistics",
+      "description": "Statistical analysis software for quantitative research, commonly used in sports science for analyzing physiological measurements, performance data, and experimental designs in athletic performance studies.",
+      "category": "tool",
+      "access": "paid",
+      "sports": [
+        "multi_sport"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Altman Z-Score",
+      "url": "http://pages.stern.nyu.edu/~ealtman/Zscores.pdf",
+      "description": "Financial distress prediction model from 1968 that combines multiple financial ratios to assess bankruptcy risk. Used in sports analytics to evaluate financial health and sustainability of football clubs.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "ESG Score (GSBS Report 2022)",
+      "url": "www.thegsbs.org",
+      "description": "Environmental, Social, and Governance performance metrics dataset measuring sustainability and corporate responsibility practices in European football clubs, enabling analysis of ESG impact on organizational performance.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "ERA5 Reanalysis Data",
+      "url": "https://cds.climate.copernicus.eu/",
+      "description": "Comprehensive climate and weather reanalysis dataset from Copernicus providing historical and real-time meteorological data. Enables analysis of extreme weather impacts on sports scheduling and athlete performance across football and other outdoor sports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "European Betting Odds Dataset",
+      "url": "https://github.com/cuamckuu/domain-driven-soccer-probs",
+      "description": "Custom dataset of pre-match decimal betting odds from major European bookmakers, structured for probability modeling. Enables domain-driven approaches to predicting match outcomes in football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "RPI Ratings Database",
+      "url": "http://rpiratings.com/homecourtrec.php",
+      "description": "NCAA basketball ratings and rankings database tracking Ratings Percentage Index (RPI) metrics. Provides historical data for analyzing home court advantage effects and team strength assessment in college basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "High-Altitude Training Camp Iten",
+      "url": "https://hatc-iten.com/",
+      "description": "Elite training facility in Kenya at 2400m altitude offering athlete performance data and research opportunities. Primary source for studying adaptation to high-altitude conditions and extreme climatic impacts on distance running athletes.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Conmebol U-20 Championship Records",
+      "url": "https://www.livefutbol.com/equipos/ecuador-u-20-h-team/u20-h-campeonato-sudamericano-2019-chile/2/",
+      "description": "Match and player data from South American youth football championships. Dataset for analyzing relative age effects, talent development patterns, and competitive dynamics in youth football talent identification.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Opta Sports Data (FotMob)",
+      "url": "https://www.fotmob.com",
+      "description": "Event-level match statistics from Opta/Stats-Perform accessed via FotMob platform, including shot data, passing, and positioning information. Enables advanced metrics development such as expected goals on target for elite football performance analysis.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "buildmer",
+      "url": "https://cran.r-project.org/web/packages/buildmer",
+      "description": "R package for automated mixed-effects model building and variable selection. Facilitates statistical analysis of movement and physiological data in sports science research, particularly for analyzing inertial measurement unit-derived gait parameters.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "multi_sport"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Friends of Tracking Last Row",
+      "url": "https://github.com/Friends-of-Tracking-Data-FoTD/Last-Row",
+      "description": "GitHub repository with publicly available football tracking data and helper tools. Provides foundational datasets and utilities for developing and testing pitch control, possession, and spatial analysis models in soccer.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Laurie Shaw Pitch Control",
+      "url": "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking",
+      "description": "Python implementation of the Spearman pitch control model from Friends of Tracking. Reference implementation for spatial control analysis in football, enabling quantification of team territorial dominance and ball influence.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Will Thomson Pitch Control",
+      "url": "https://github.com/anenglishgoat/Metrica-pitch-control",
+      "description": "Python implementation of the Fernandez pitch control model for football spatial analysis. Provides alternative methodology for modeling pitch ownership and territorial control in soccer using tracking data.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "KNN Pitch Control",
+      "url": "https://github.com/nvsclub/KNNPitchControl",
+      "description": "Python GitHub repository implementing k-nearest neighbors approach to pitch control modeling in football. Enables neighbor-based spatial analysis for measuring team possession influence and territorial control on the pitch.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Footballia",
+      "url": "www.footballia.com",
+      "description": "Video archive and database of football match recordings with detailed game footage. Provides access to historical and contemporary football matches, enabling researchers to conduct observational analysis of game situations, tactical patterns, and player performance.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "HeatStress",
+      "url": "https://rdrr.io/github/anacv/HeatStress/",
+      "description": "R package for calculating and analyzing heat stress indices and thermal risk metrics. Enables football researchers to assess extreme heat conditions and their implications for match scheduling, player safety, and performance in various climate conditions.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "CRPDP - Coordination Analysis",
+      "url": "https://github.com/teresashchen/crpdp",
+      "description": "GitHub repository containing code for analyzing interlimb coordination during soccer kicking movements. Provides computational methods for processing biomechanical data to compare coordination patterns between elite and amateur football players.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Bongda.com.vn",
+      "url": "https://vir.com.vn",
+      "description": "Vietnamese football data platform providing information on clubs, players, matches, and league standings. Serves as a primary data source for analyzing digital transformation adoption and operational metrics within Vietnamese football organizations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://bongda.com.vn"
+      ]
+    },
+    {
+      "name": "Transfermarkt",
+      "url": "https://www.transfermarkt.com.tr",
+      "description": "Comprehensive football transfer and financial database tracking player transfers, market values, contract information, and club expenditures. Essential resource for analyzing transfer policies, financial governance, and spending patterns across European football clubs.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
       "paper_count": 1,
       "curated_by": "ai:haiku"
     }

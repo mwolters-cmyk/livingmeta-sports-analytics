@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-02-16T17:41:03.312047",
-  "total_resources": 552,
-  "with_papers": 417,
+  "generated_at": "2026-02-16T18:01:10.540197",
+  "total_resources": 572,
+  "with_papers": 437,
   "with_scraper": 60,
   "with_data": 61,
   "needs_scraper": 45,
@@ -12,13 +12,13 @@
     "git_clone": 16
   },
   "categories": {
-    "dataset": 338,
-    "library": 43,
+    "dataset": 350,
+    "library": 45,
     "scraper": 53,
-    "instrument": 39,
+    "instrument": 40,
     "api": 26,
-    "code": 35,
-    "tool": 18
+    "tool": 21,
+    "code": 37
   },
   "resources": [
     {
@@ -1023,6 +1023,56 @@
       "access_method": null,
       "url_status": null,
       "needs_scraper": true
+    },
+    {
+      "id": "web-of-science",
+      "name": "Web of Science",
+      "url": "https://www.webofscience.com",
+      "description": "Academic citation database and research discovery platform indexing peer-reviewed publications across sports science, physiology, and analytics. Essential for systematic reviews and literature analysis in sports research.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "multi_sport"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4409616674",
+          "title": "Correlation between Psychophysical Indicators and Motor Skills of 15-16-Year-Old Football Players: Review article",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W7116721917",
+          "title": "Use of Small-Sided Game Formats to Develop Cognitive Decision-Making Speed in Footballers",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7117651259",
+          "title": "Performance and Health in Combined Events: A Scoping Review",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7118020592",
+          "title": "Functional Asymmetries in Youth Soccer Players: A Systematic Review of Assessment Technologies and Artificial Intelligence Applications",
+          "sport": "football",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W7125964030",
+          "title": "Cryptocurrency in sport: a thematic review",
+          "sport": "football",
+          "year": 2026
+        }
+      ],
+      "paper_count": 5,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
     },
     {
       "id": "acb-basketball-league",
@@ -2081,6 +2131,38 @@
       "needs_scraper": false
     },
     {
+      "id": "ibm-spss-statistics",
+      "name": "IBM SPSS Statistics",
+      "url": "https://www.ibm.com/products/spss-statistics",
+      "description": "Statistical analysis software for quantitative research, commonly used in sports science for analyzing physiological measurements, performance data, and experimental designs in athletic performance studies.",
+      "category": "tool",
+      "access": "paid",
+      "sports": [
+        "multi_sport"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399921193",
+          "title": "Muscle morphological changes and enhanced sprint running performance: A 1‐year observational study of well‐trained sprinters",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 2,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "ihf-competition-results",
       "name": "IHF Competition Results",
       "url": "https://www.ihf.info/competitions",
@@ -2991,6 +3073,32 @@
       "needs_scraper": false
     },
     {
+      "id": "altman-z-score",
+      "name": "Altman Z-Score",
+      "url": "http://pages.stern.nyu.edu/~ealtman/Zscores.pdf",
+      "description": "Financial distress prediction model from 1968 that combines multiple financial ratios to assess bankruptcy risk. Used in sports analytics to evaluate financial health and sustainability of football clubs.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405706936",
+          "title": "Prevendo a crise financeira no futebol Espanhol (2018-2021): o papel adaptativo da competição",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "american-football-home-advantage-survey",
       "name": "American Football Home Advantage Survey",
       "url": "https://github.com/ThompsonJamesBliss/comprehensive_survey_american_football_home_adv",
@@ -3647,6 +3755,58 @@
       "needs_scraper": false
     },
     {
+      "id": "bongda-com-vn",
+      "name": "Bongda.com.vn",
+      "url": "https://vir.com.vn",
+      "description": "Vietnamese football data platform providing information on clubs, players, matches, and league standings. Serves as a primary data source for analyzing digital transformation adoption and operational metrics within Vietnamese football organizations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4416631673",
+          "title": "Evaluating Digital Transformation in Vietnamese Football Clubs Using Deloitte’s Five-Level Digital Maturity Framework - Cultural Industry Perspective",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "bongda-com-vn",
+      "name": "Bongda.com.vn",
+      "url": "https://bongda.com.vn",
+      "description": "Vietnamese football data platform providing information on clubs, players, matches, and league standings. Serves as a primary data source for analyzing digital transformation adoption and operational metrics within Vietnamese football organizations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4416631673",
+          "title": "Evaluating Digital Transformation in Vietnamese Football Clubs Using Deloitte’s Five-Level Digital Maturity Framework - Cultural Industry Perspective",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "borussia-dortmund-financial-reports",
       "name": "Borussia Dortmund Financial Reports",
       "url": "https://aktie.bvb.de/en/publications/annual-reports-2 and https://aktie.bvb.de/en/publications/semi-annual-financial-reports",
@@ -3722,6 +3882,32 @@
       "scraper": null,
       "access_method": null,
       "url_status": "verified",
+      "needs_scraper": false
+    },
+    {
+      "id": "buildmer",
+      "name": "buildmer",
+      "url": "https://cran.r-project.org/web/packages/buildmer",
+      "description": "R package for automated mixed-effects model building and variable selection. Facilitates statistical analysis of movement and physiological data in sports science research, particularly for analyzing inertial measurement unit-derived gait parameters.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "multi_sport"
+      ],
+      "language": "R",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402939916",
+          "title": "From lab to field: validity and reliability of inertial measurement unit-derived gait parameters during a standardised run",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
       "needs_scraper": false
     },
     {
@@ -4147,6 +4333,32 @@
       "needs_scraper": false
     },
     {
+      "id": "conmebol-u-20-championship-records",
+      "name": "Conmebol U-20 Championship Records",
+      "url": "https://www.livefutbol.com/equipos/ecuador-u-20-h-team/u20-h-campeonato-sudamericano-2019-chile/2/",
+      "description": "Match and player data from South American youth football championships. Dataset for analyzing relative age effects, talent development patterns, and competitive dynamics in youth football talent identification.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3216925943",
+          "title": "The New Generation of Professional Soccer Talent Is Born under the Bias of the RAE: Relative Age Effect in International Male Youth Soccer Championships",
+          "sport": "football",
+          "year": 2021
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "corsica-hockey",
       "name": "Corsica Hockey",
       "url": "https://corsica.hockey",
@@ -4277,6 +4489,32 @@
       },
       "access_method": null,
       "url_status": "verified",
+      "needs_scraper": false
+    },
+    {
+      "id": "crpdp-coordination-analysis",
+      "name": "CRPDP - Coordination Analysis",
+      "url": "https://github.com/teresashchen/crpdp",
+      "description": "GitHub repository containing code for analyzing interlimb coordination during soccer kicking movements. Provides computational methods for processing biomechanical data to compare coordination patterns between elite and amateur football players.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413295661",
+          "title": "Comparison of Interlimb Coordination During Soccer Instep Kicking Between Elite and Amateur Players",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
       "needs_scraper": false
     },
     {
@@ -4985,6 +5223,58 @@
       "needs_scraper": false
     },
     {
+      "id": "era5-reanalysis-data",
+      "name": "ERA5 Reanalysis Data",
+      "url": "https://cds.climate.copernicus.eu/",
+      "description": "Comprehensive climate and weather reanalysis dataset from Copernicus providing historical and real-time meteorological data. Enables analysis of extreme weather impacts on sports scheduling and athlete performance across football and other outdoor sports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406816900",
+          "title": "Extreme heat risk and the potential implications for the scheduling of football matches at the 2026 FIFA World Cup",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "esg-score-gsbs-report-2022",
+      "name": "ESG Score (GSBS Report 2022)",
+      "url": "www.thegsbs.org",
+      "description": "Environmental, Social, and Governance performance metrics dataset measuring sustainability and corporate responsibility practices in European football clubs, enabling analysis of ESG impact on organizational performance.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405881678",
+          "title": "The Role of ESG Performance in Enhancing Intellectual Capital and Sustainability in European Football Clubs: A First Empirical Application",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "espn-nba-database",
       "name": "ESPN NBA Database",
       "url": "http://espn.go.com/nba/",
@@ -5183,6 +5473,32 @@
           "title": "Shooting Diversity in Lithuanian Youth Female Basketball Players in Centre Position Depending on the Rank of Competition Level",
           "sport": "basketball",
           "year": 2018
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "european-betting-odds-dataset",
+      "name": "European Betting Odds Dataset",
+      "url": "https://github.com/cuamckuu/domain-driven-soccer-probs",
+      "description": "Custom dataset of pre-match decimal betting odds from major European bookmakers, structured for probability modeling. Enables domain-driven approaches to predicting match outcomes in football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4417327474",
+          "title": "Domain-Driven Identification of Football Probabilities",
+          "sport": "football",
+          "year": 2025
         }
       ],
       "paper_count": 1,
@@ -5612,6 +5928,32 @@
       "needs_scraper": false
     },
     {
+      "id": "footballia",
+      "name": "Footballia",
+      "url": "www.footballia.com",
+      "description": "Video archive and database of football match recordings with detailed game footage. Provides access to historical and contemporary football matches, enabling researchers to conduct observational analysis of game situations, tactical patterns, and player performance.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406686329",
+          "title": "Validación del NECoSsGOT. Un instrumento de observación para el análisis de las situaciones de juego reducido durante la competición en fútbol",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "footballonomics",
       "name": "footballonomics",
       "url": "https://github.com/kpelechrinis/footballonomics",
@@ -5681,6 +6023,32 @@
           "title": "Differences in countermovement vertical jump force-time metrics between starting and non-starting professional male basketball players",
           "sport": "basketball",
           "year": 2023
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "friends-of-tracking-last-row",
+      "name": "Friends of Tracking Last Row",
+      "url": "https://github.com/Friends-of-Tracking-Data-FoTD/Last-Row",
+      "description": "GitHub repository with publicly available football tracking data and helper tools. Provides foundational datasets and utilities for developing and testing pitch control, possession, and spatial analysis models in soccer.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406317775",
+          "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+          "sport": "football",
+          "year": 2025
         }
       ],
       "paper_count": 1,
@@ -6363,6 +6731,58 @@
       "needs_scraper": false
     },
     {
+      "id": "heatstress",
+      "name": "HeatStress",
+      "url": "https://rdrr.io/github/anacv/HeatStress/",
+      "description": "R package for calculating and analyzing heat stress indices and thermal risk metrics. Enables football researchers to assess extreme heat conditions and their implications for match scheduling, player safety, and performance in various climate conditions.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "R",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406816900",
+          "title": "Extreme heat risk and the potential implications for the scheduling of football matches at the 2026 FIFA World Cup",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "high-altitude-training-camp-iten",
+      "name": "High-Altitude Training Camp Iten",
+      "url": "https://hatc-iten.com/",
+      "description": "Elite training facility in Kenya at 2400m altitude offering athlete performance data and research opportunities. Primary source for studying adaptation to high-altitude conditions and extreme climatic impacts on distance running athletes.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3114378392",
+          "title": "Some like it hot? Elite female athlete perspectives on competing in extreme climatic conditions at world championship sports events",
+          "sport": "athletics",
+          "year": 2020
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "hltv-org",
       "name": "HLTV.org",
       "url": "https://www.hltv.org",
@@ -7039,6 +7459,32 @@
       "needs_scraper": false
     },
     {
+      "id": "knn-pitch-control",
+      "name": "KNN Pitch Control",
+      "url": "https://github.com/nvsclub/KNNPitchControl",
+      "description": "Python GitHub repository implementing k-nearest neighbors approach to pitch control modeling in football. Enables neighbor-based spatial analysis for measuring team possession influence and territorial control on the pitch.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406317775",
+          "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "korea-baseball-organization-kbo-statistics",
       "name": "Korea Baseball Organization (KBO) Statistics",
       "url": "https://mykbostats.com",
@@ -7239,6 +7685,32 @@
           "title": "Effects of the Flying Start on Estimated Short Sprint Profiles Using Timing Gates",
           "sport": "basketball",
           "year": 2024
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "laurie-shaw-pitch-control",
+      "name": "Laurie Shaw Pitch Control",
+      "url": "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking",
+      "description": "Python implementation of the Spearman pitch control model from Friends of Tracking. Reference implementation for spatial control analysis in football, enabling quantification of team territorial dominance and ball influence.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406317775",
+          "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+          "sport": "football",
+          "year": 2025
         }
       ],
       "paper_count": 1,
@@ -8869,6 +9341,32 @@
       "needs_scraper": false
     },
     {
+      "id": "opta-sports-data-fotmob",
+      "name": "Opta Sports Data (FotMob)",
+      "url": "https://www.fotmob.com",
+      "description": "Event-level match statistics from Opta/Stats-Perform accessed via FotMob platform, including shot data, passing, and positioning information. Enables advanced metrics development such as expected goals on target for elite football performance analysis.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401945311",
+          "title": "An Expected Goals on Target (xGOT) Metric as a New Metric for Analyzing Elite Soccer Player Performance",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "other-league",
       "name": "Other League",
       "url": "http://www.otherleague.com",
@@ -9519,6 +10017,32 @@
       "scraper": null,
       "access_method": null,
       "url_status": "verified",
+      "needs_scraper": false
+    },
+    {
+      "id": "rpi-ratings-database",
+      "name": "RPI Ratings Database",
+      "url": "http://rpiratings.com/homecourtrec.php",
+      "description": "NCAA basketball ratings and rankings database tracking Ratings Percentage Index (RPI) metrics. Provides historical data for analyzing home court advantage effects and team strength assessment in college basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W2973197556",
+          "title": "Home sweet home: Quantifying home court advantages for NCAA basketball statistics",
+          "sport": "basketball",
+          "year": 2021
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
       "needs_scraper": false
     },
     {
@@ -11084,7 +11608,7 @@
       "id": "transfermarkt",
       "name": "Transfermarkt",
       "url": "https://www.transfermarkt.com.tr",
-      "description": "Comprehensive football database containing team rosters, managerial records, and performance statistics across European leagues. Enables analysis of coaching changes and their effects on team performance outcomes.",
+      "description": "Comprehensive football transfer and financial database tracking player transfers, market values, contract information, and club expenditures. Essential resource for analyzing transfer policies, financial governance, and spending patterns across European football clubs.",
       "category": "dataset",
       "access": "free",
       "sports": [
@@ -11618,6 +12142,32 @@
           "title": "Investigation of Oxygen Uptake Kinetics and Anthropometric Profiles in Elite Kickboxing Athletes",
           "sport": "boxing_mma",
           "year": 2023
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "will-thomson-pitch-control",
+      "name": "Will Thomson Pitch Control",
+      "url": "https://github.com/anenglishgoat/Metrica-pitch-control",
+      "description": "Python implementation of the Fernandez pitch control model for football spatial analysis. Provides alternative methodology for modeling pitch ownership and territorial control in soccer using tracking data.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406317775",
+          "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+          "sport": "football",
+          "year": 2025
         }
       ],
       "paper_count": 1,
