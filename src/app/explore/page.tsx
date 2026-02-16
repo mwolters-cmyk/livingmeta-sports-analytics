@@ -751,9 +751,7 @@ function ExploreContent() {
                       {m.primary_method && (
                         <div><span className="font-medium text-gray-700">Primary method:</span> {m.primary_method}</div>
                       )}
-                      {m.software && (
-                        <div><span className="font-medium text-gray-700">Software:</span> {m.software}</div>
-                      )}
+                      {/* Software removed — not useful for users */}
                       {m.temporal_scope && (
                         <div><span className="font-medium text-gray-700">Temporal scope:</span> {m.temporal_scope}</div>
                       )}
@@ -797,31 +795,26 @@ function ExploreContent() {
                       Data &amp; Code Resources (AI from full text)
                     </div>
 
-                    {/* Data sources */}
+                    {/* Data sources — curated resources are clickable, others are plain text */}
                     {r.data_sources && r.data_sources.length > 0 && (
                       <div className="mb-1.5">
                         <span className="text-[10px] font-medium text-gray-500">Data sources: </span>
                         <span className="flex flex-wrap gap-1 mt-0.5">
-                          {r.data_sources.map((ds, i) => (
+                          {r.data_sources.map((ds: Record<string, unknown>, i: number) => (
                             <span key={i} className="inline-flex items-center gap-0.5">
-                              {ds.url && ds.url_status !== "dead" ? (
-                                <a href={ds.url} target="_blank" rel="noopener noreferrer"
+                              {ds.is_curated ? (
+                                /* Curated resource → clickable link to Resources page */
+                                <Link href={`/resources?search=${encodeURIComponent(String(ds.curated_name || ds.name))}`}
                                    className="inline-flex items-center gap-0.5 rounded-full border border-teal-200 bg-white px-2 py-0.5 text-[10px] text-teal-800 hover:bg-teal-100 transition-colors">
-                                  {ds.name}
-                                  {ds.url_status === "verified" && <span className="text-green-500 ml-0.5" title="Link verified">&#10003;</span>}
+                                  {String(ds.name)}
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor" className="h-2.5 w-2.5 opacity-50"><path d="M3.5 3a.5.5 0 0 0 0 1h2.793L2.146 8.146a.5.5 0 1 0 .708.708L7 4.707V7.5a.5.5 0 0 0 1 0V3H3.5z"/></svg>
-                                </a>
+                                </Link>
                               ) : (
-                                <span className={`rounded-full border px-2 py-0.5 text-[10px] ${
-                                  ds.url_status === "dead" ? "border-red-200 bg-red-50 text-red-400 line-through" : "border-teal-200 bg-white text-teal-700"
-                                }`}>
-                                  {ds.name}{ds.url_status === "dead" && " (broken link)"}
+                                /* Not curated → plain text pill, not clickable */
+                                <span className="rounded-full border border-gray-200 bg-gray-50 px-2 py-0.5 text-[10px] text-gray-600">
+                                  {String(ds.name)}
                                 </span>
                               )}
-                              <Link href={`/resources?search=${encodeURIComponent(ds.name)}`}
-                                    className="text-[9px] text-teal-500 hover:text-teal-700" title="View on Resources page">
-                                &#8599;
-                              </Link>
                             </span>
                           ))}
                         </span>
@@ -853,19 +846,7 @@ function ExploreContent() {
                       </div>
                     )}
 
-                    {/* Software tools as tags */}
-                    {r.tools && r.tools.length > 0 && (
-                      <div className="mb-1">
-                        <span className="text-[10px] font-medium text-gray-500">Tools: </span>
-                        <span className="inline-flex flex-wrap gap-1">
-                          {r.tools.map((t, i) => (
-                            <span key={i} className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] text-gray-600">
-                              {t.name}{t.version ? ` ${t.version}` : ""}
-                            </span>
-                          ))}
-                        </span>
-                      </div>
-                    )}
+                    {/* Software tools removed — not useful for users */}
 
                     {/* Data availability + contact */}
                     {r.data_availability && (

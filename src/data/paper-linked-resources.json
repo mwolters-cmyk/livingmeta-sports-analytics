@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-16T15:26:31.302154",
-  "total_papers": 2158,
-  "total_resources": 442,
-  "resources_skipped_no_url": 13481,
+  "generated_at": "2026-02-16T16:11:38.838443",
+  "total_papers": 2192,
+  "total_resources": 453,
+  "resources_skipped_no_url": 13658,
   "resources": [
     {
       "name": "Win Shares (WS)",
@@ -502,6 +502,48 @@
       "paper_count": 7
     },
     {
+      "name": "FIBA Box Score",
+      "url": "http://www.fiba.basketball/",
+      "type": "official_dataset",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W2897322508",
+          "title": "Basketball Game-Related Statistics that Discriminate among Continental Championships for Under-18 Women",
+          "sport": "basketball",
+          "year": 2018
+        },
+        {
+          "work_id": "https://openalex.org/W4309934823",
+          "title": "Evaluation of differences in the performance strategies of top and bottom basketball teams utilizing rank-sum ratio comprehensive",
+          "sport": "basketball",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W7118274183",
+          "title": "The relative age effect in Brazilian national basketball teams over time",
+          "sport": "basketball",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W4390815199",
+          "title": "Quantitative analysis of professional basketball: A qualitative discussion",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4410839945",
+          "title": "Game-related statistics and performance trends in the FIBA Under-17 Basketball World Cup",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "url_status": "verified",
+      "paper_count": 5
+    },
+    {
       "name": "European Soccer Database",
       "url": "kaggle.com/datasets/hugomathien/soccer",
       "type": "open_dataset",
@@ -612,48 +654,6 @@
         }
       ],
       "paper_count": 7
-    },
-    {
-      "name": "FIBA Box Score",
-      "url": "http://www.fiba.basketball/",
-      "type": "official_dataset",
-      "access": "open_with_registration",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2897322508",
-          "title": "Basketball Game-Related Statistics that Discriminate among Continental Championships for Under-18 Women",
-          "sport": "basketball",
-          "year": 2018
-        },
-        {
-          "work_id": "https://openalex.org/W4309934823",
-          "title": "Evaluation of differences in the performance strategies of top and bottom basketball teams utilizing rank-sum ratio comprehensive",
-          "sport": "basketball",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W7118274183",
-          "title": "The relative age effect in Brazilian national basketball teams over time",
-          "sport": "basketball",
-          "year": 2026
-        },
-        {
-          "work_id": "https://openalex.org/W4390815199",
-          "title": "Quantitative analysis of professional basketball: A qualitative discussion",
-          "sport": "basketball",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4410839945",
-          "title": "Game-related statistics and performance trends in the FIBA Under-17 Basketball World Cup",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "url_status": "verified",
-      "paper_count": 5
     },
     {
       "name": "FanGraphs WAR (FIP)",
@@ -1303,6 +1303,39 @@
       "paper_count": 4
     },
     {
+      "name": "spm1D",
+      "url": "www.spm1d.org",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405086939",
+          "title": "Evaluation of leg symmetry in muscle oxygen saturation during submaximal to maximal cycling exercise",
+          "sport": "cycling",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4408778760",
+          "title": "The effect of increased strength on ball release speed and front foot contact-phase technique in elite male cricket fast bowlers",
+          "sport": "cricket",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4410977692",
+          "title": "A Comparison of Inswing and Outswing Bowling Arm Kinematics of Pathway and Elite Male Fast Bowlers",
+          "sport": "cricket",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4413295661",
+          "title": "Comparison of Interlimb Coordination During Soccer Instep Kicking Between Elite and Amateur Players",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 4
+    },
+    {
       "name": "Ansys Fluent",
       "url": "https://www.ansys.com/products/fluids/ansys-fluent",
       "type": "statistical_package",
@@ -1347,6 +1380,47 @@
       "paper_count": 3
     },
     {
+      "name": "Web of Science",
+      "url": "https://www.webofscience.com",
+      "type": "open_dataset",
+      "access": "restricted",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4409616674",
+          "title": "Correlation between Psychophysical Indicators and Motor Skills of 15-16-Year-Old Football Players: Review article",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W7116721917",
+          "title": "Use of Small-Sided Game Formats to Develop Cognitive Decision-Making Speed in Footballers",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7117651259",
+          "title": "Performance and Health in Combined Events: A Scoping Review",
+          "sport": "athletics",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W7118020592",
+          "title": "Functional Asymmetries in Youth Soccer Players: A Systematic Review of Assessment Technologies and Artificial Intelligence Applications",
+          "sport": "football",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W7125964030",
+          "title": "Cryptocurrency in sport: a thematic review",
+          "sport": "football",
+          "year": 2026
+        }
+      ],
+      "paper_count": 5
+    },
+    {
       "name": "Sprint Speed metric",
       "url": "http://www.mlb.com",
       "type": "open_dataset",
@@ -1386,29 +1460,6 @@
         }
       ],
       "paper_count": 5
-    },
-    {
-      "name": "Baidu Map",
-      "url": "https://map.baidu.com/",
-      "type": "web_scraping",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2996460131",
-          "title": "The Temporal and Spatial Evolution of Marathons in China from 2010 to 2018",
-          "sport": "athletics",
-          "year": 2019
-        },
-        {
-          "work_id": "https://openalex.org/W4401856308",
-          "title": "Utilizing Multi-Source Geospatial Big Data to Examine How Environmental Factors Attract Outdoor Jogging Activities",
-          "sport": "athletics",
-          "year": 2024
-        }
-      ],
-      "paper_count": 2
     },
     {
       "name": "T-Test (T-T)",
@@ -1460,33 +1511,6 @@
         }
       ],
       "paper_count": 1
-    },
-    {
-      "name": "spm1D",
-      "url": "www.spm1d.org",
-      "type": "library",
-      "category": "library",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4405086939",
-          "title": "Evaluation of leg symmetry in muscle oxygen saturation during submaximal to maximal cycling exercise",
-          "sport": "cycling",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4408778760",
-          "title": "The effect of increased strength on ball release speed and front foot contact-phase technique in elite male cricket fast bowlers",
-          "sport": "cricket",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4410977692",
-          "title": "A Comparison of Inswing and Outswing Bowling Arm Kinematics of Pathway and Elite Male Fast Bowlers",
-          "sport": "cricket",
-          "year": 2025
-        }
-      ],
-      "paper_count": 3
     },
     {
       "name": "PsyToolkit",
@@ -1701,6 +1725,29 @@
         }
       ],
       "paper_count": 3
+    },
+    {
+      "name": "Performance Index Rating (PIR) formula",
+      "url": "https://www.euroleague.net",
+      "type": "manual_collection",
+      "access": "proprietary",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3091118591",
+          "title": "Training load, recovery and game performance in semiprofessional male basketball: influence of individual characteristics and contextual factors",
+          "sport": "basketball",
+          "year": 2020
+        },
+        {
+          "work_id": "https://openalex.org/W3107364193",
+          "title": "Home Court Advantage in Basketball – A Case Study of Žalgiris Kaunas Basketball Team",
+          "sport": "basketball",
+          "year": 2020
+        }
+      ],
+      "paper_count": 2
     },
     {
       "name": "ACB Basketball League official website",
@@ -2124,6 +2171,23 @@
       "paper_count": 2
     },
     {
+      "name": "UEFA Official Database",
+      "url": "https://www.uefa.com/",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W2902869654",
+          "title": "Analyzing the Process from the Initiation of Attack to Goal Scoring Touch in the EURO 2016",
+          "sport": "football",
+          "year": 2018
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "FIBA Official Website",
       "url": "https://archive.fiba.com",
       "type": "proprietary_dataset",
@@ -2166,29 +2230,6 @@
         }
       ],
       "paper_count": 1
-    },
-    {
-      "name": "Euroleague.net",
-      "url": "https://www.euroleague.net",
-      "type": "manual_collection",
-      "access": "proprietary",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W3091118591",
-          "title": "Training load, recovery and game performance in semiprofessional male basketball: influence of individual characteristics and contextual factors",
-          "sport": "basketball",
-          "year": 2020
-        },
-        {
-          "work_id": "https://openalex.org/W3107364193",
-          "title": "Home Court Advantage in Basketball – A Case Study of Žalgiris Kaunas Basketball Team",
-          "sport": "basketball",
-          "year": 2020
-        }
-      ],
-      "paper_count": 2
     },
     {
       "name": "FanGraphs Library",
@@ -2332,6 +2373,35 @@
       "paper_count": 2
     },
     {
+      "name": "FIFA's official post-match reports",
+      "url": "https://www.fifatrainingcentre.com/en/fwc2022/post-match-summaries/post-match-summary-reports.php",
+      "type": "proprietary_dataset",
+      "access": "restricted",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4393234237",
+          "title": "Relationship between key offensive performance indicators and match running performance in the FIFA Women’s World Cup 2023",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4402378377",
+          "title": "Analysis of FIFA 2023 Women’s World Cup match performanceaccording to match outcome and phase of the tournament",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4413926739",
+          "title": "Association Between Substitutions and Match Running Performance Under Five-Substitution Rule: Evidence from the 2022 FIFA World Cup",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 3
+    },
+    {
       "name": "Roboflow",
       "url": "https://app.roboflow.com/",
       "type": "open_dataset",
@@ -2347,6 +2417,52 @@
         }
       ],
       "paper_count": 1
+    },
+    {
+      "name": "Baidu Maps Street View Imagery",
+      "url": "https://map.baidu.com/",
+      "type": "api",
+      "access": "restricted",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401856308",
+          "title": "Utilizing Multi-Source Geospatial Big Data to Examine How Environmental Factors Attract Outdoor Jogging Activities",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Football Reference",
+      "url": "https://www.fbref.com",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401945311",
+          "title": "An Expected Goals on Target (xGOT) Metric as a New Metric for Analyzing Elite Soccer Player Performance",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W7118313619",
+          "title": "A Statistical Look into how Common Soccer Metrics Influence Expected Goal Measures in the Professional Game",
+          "sport": "football",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W4407595434",
+          "title": "Associations Between Match‐Play Characteristics and Environmental Temperatures in 4 Professional Football Leagues",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 3
     },
     {
       "name": "Supersapiens application/dashboard",
@@ -2643,7 +2759,7 @@
       "paper_count": 2
     },
     {
-      "name": "FIBA Statistics Collection System",
+      "name": "FIBA official box score data",
       "url": "http://www.archive.fiba",
       "type": "software_tool",
       "category": "instrument",
@@ -2664,10 +2780,10 @@
       "paper_count": 2
     },
     {
-      "name": "NCAA box score data from stats.ncaa.org",
+      "name": "stats.ncaa.org",
       "url": "https://stats.ncaa.org",
       "type": "web_scraping",
-      "access": "publicly_available",
+      "access": "upon_request",
       "platform": null,
       "category": "dataset",
       "papers": [
@@ -2739,6 +2855,40 @@
           "title": "YÜKSEK ATLAMA VE SIRIKLA ATLAMADA YARIŞMA STRATEJİSİ: KAÇ DENEME?",
           "sport": "athletics",
           "year": 2019
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Basketnews.lt statistics database",
+      "url": "https://www.basketnews.lt",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3107364193",
+          "title": "Home Court Advantage in Basketball – A Case Study of Žalgiris Kaunas Basketball Team",
+          "sport": "basketball",
+          "year": 2020
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Overbasket.com statistics platform",
+      "url": "http://overbasket.com",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3107364193",
+          "title": "Home Court Advantage in Basketball – A Case Study of Žalgiris Kaunas Basketball Team",
+          "sport": "basketball",
+          "year": 2020
         }
       ],
       "paper_count": 1
@@ -3133,6 +3283,29 @@
       "paper_count": 1
     },
     {
+      "name": "World Football Elo Ratings",
+      "url": "eloratings.net",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4392781219",
+          "title": "Machine Learning for Soccer Match Result Prediction",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4413926739",
+          "title": "Association Between Substitutions and Match Running Performance Under Five-Substitution Rule: Evidence from the 2022 FIFA World Cup",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 2
+    },
+    {
       "name": "GitHub Repository",
       "url": "github.com/gpapageorgiouedu/Evaluating-the-Effectiveness-of-Machine-Learning-Models-for-Performance-Forecasting-in-Basketball",
       "type": "code_and_data",
@@ -3148,29 +3321,6 @@
         }
       ],
       "paper_count": 1
-    },
-    {
-      "name": "FIFA Training Centre - Match Report Hub",
-      "url": "https://www.fifatrainingcentre.com/en/game/tournaments/fifa-womens-world-cup/2023/match-report-hub/post-match-summary-reports.php",
-      "type": "proprietary_dataset",
-      "access": "restricted",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4393234237",
-          "title": "Relationship between key offensive performance indicators and match running performance in the FIFA Women’s World Cup 2023",
-          "sport": "football",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4402378377",
-          "title": "Analysis of FIFA 2023 Women’s World Cup match performanceaccording to match outcome and phase of the tournament",
-          "sport": "football",
-          "year": 2024
-        }
-      ],
-      "paper_count": 2
     },
     {
       "name": "Indian Premier League official website",
@@ -3373,6 +3523,38 @@
       "paper_count": 1
     },
     {
+      "name": "Altman Z-Score (1968)",
+      "url": "http://pages.stern.nyu.edu/~ealtman/Zscores.pdf",
+      "type": "scale",
+      "category": "instrument",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405706936",
+          "title": "Prevendo a crise financeira no futebol Espanhol (2018-2021): o papel adaptativo da competição",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "ESG Score (GSBS Report 2022)",
+      "url": "www.thegsbs.org",
+      "type": "proprietary_dataset",
+      "access": "upon_request",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405881678",
+          "title": "The Role of ESG Performance in Enhancing Intellectual Capital and Sustainability in European Football Clubs: A First Empirical Application",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "experimental motion capture data",
       "url": "https://figshare.com/s/4c7b4fbfe1668a6d21e3",
       "type": "other",
@@ -3435,6 +3617,23 @@
       "paper_count": 1
     },
     {
+      "name": "ERA5 reanalysis data",
+      "url": "https://cds.climate.copernicus.eu/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406816900",
+          "title": "Extreme heat risk and the potential implications for the scheduling of football matches at the 2026 FIFA World Cup",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Sportmonks",
       "url": "https://www.sportmonks.com/",
       "type": "proprietary_dataset",
@@ -3484,29 +3683,6 @@
         }
       ],
       "paper_count": 1
-    },
-    {
-      "name": "Football Reference (FBref.com)",
-      "url": "https://fbref.com/en/",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": "Web",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4407595434",
-          "title": "Associations Between Match‐Play Characteristics and Environmental Temperatures in 4 Professional Football Leagues",
-          "sport": "football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W7118313619",
-          "title": "A Statistical Look into how Common Soccer Metrics Influence Expected Goal Measures in the Professional Game",
-          "sport": "football",
-          "year": 2026
-        }
-      ],
-      "paper_count": 2
     },
     {
       "name": "Pro Sports Transactions",
@@ -3800,6 +3976,23 @@
         {
           "work_id": "https://openalex.org/W4416973435",
           "title": "Hybrid-Based Multi-Object Tracking for Football Sport",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Custom-built dataset of decimal pre-match betting odds from major European bo...",
+      "url": "https://github.com/cuamckuu/domain-driven-soccer-probs",
+      "type": "proprietary_dataset",
+      "access": "open_with_registration",
+      "platform": "GitHub",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4417327474",
+          "title": "Domain-Driven Identification of Football Probabilities",
           "sport": "football",
           "year": 2025
         }
@@ -4322,6 +4515,23 @@
       "paper_count": 1
     },
     {
+      "name": "RPI Ratings database",
+      "url": "http://rpiratings.com/homecourtrec.php",
+      "type": "web_scraping",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W2973197556",
+          "title": "Home sweet home: Quantifying home court advantages for NCAA basketball statistics",
+          "sport": "basketball",
+          "year": 2021
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "allsport-tv.com video database",
       "url": "www.allsport-tv.com",
       "type": "video",
@@ -4451,40 +4661,6 @@
         {
           "work_id": "https://openalex.org/W3026529150",
           "title": "Empirical Mysteries of the 2016-17 NBA Regular Season",
-          "sport": "basketball",
-          "year": 2020
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "Basketnews.lt",
-      "url": "https://www.basketnews.lt",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W3107364193",
-          "title": "Home Court Advantage in Basketball – A Case Study of Žalgiris Kaunas Basketball Team",
-          "sport": "basketball",
-          "year": 2020
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "Overbasket.com",
-      "url": "http://overbasket.com",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W3107364193",
-          "title": "Home Court Advantage in Basketball – A Case Study of Žalgiris Kaunas Basketball Team",
           "sport": "basketball",
           "year": 2020
         }
@@ -5005,7 +5181,7 @@
       "paper_count": 1
     },
     {
-      "name": "European Athletics",
+      "name": "European Athletics website",
       "url": "https://www.european-athletics.com/",
       "type": "web_scraping",
       "access": "fully_open",
@@ -5312,23 +5488,6 @@
       "type": "open_dataset",
       "access": "fully_open",
       "platform": "GitHub",
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4392781219",
-          "title": "Machine Learning for Soccer Match Result Prediction",
-          "sport": "football",
-          "year": 2024
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "World Football Elo Ratings",
-      "url": "eloratings.net",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
       "category": "dataset",
       "papers": [
         {
@@ -5778,6 +5937,23 @@
       "paper_count": 1
     },
     {
+      "name": "Opta (Stats-Perform) via FotMob",
+      "url": "https://www.fotmob.com",
+      "type": "proprietary_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401945311",
+          "title": "An Expected Goals on Target (xGOT) Metric as a New Metric for Analyzing Elite Soccer Player Performance",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "John Harrell's Indiana Boys' Basketball website",
       "url": "https://indianahsbasketball.homestead.com/boys.html",
       "type": "manual_collection",
@@ -5929,6 +6105,21 @@
           "work_id": "https://openalex.org/W4402693444",
           "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
           "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "buildmer",
+      "url": "https://cran.r-project.org/web/packages/buildmer",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4402939916",
+          "title": "From lab to field: validity and reliability of inertial measurement unit-derived gait parameters during a standardised run",
+          "sport": "football",
           "year": 2024
         }
       ],
@@ -6226,6 +6417,21 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "HeatStress package",
+      "url": "https://rdrr.io/github/anacv/HeatStress/",
+      "type": "library",
+      "category": "library",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406816900",
+          "title": "Extreme heat risk and the potential implications for the scheduling of football matches at the 2026 FIFA World Cup",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -7332,6 +7538,22 @@
           "work_id": "https://openalex.org/W4413279288",
           "title": "Exploring Home-court Advantage and Home Win Percentage Rates in American Basketball Leagues: A Gender-Centric Examination of WNBA and NBA Teams",
           "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "teresashchen/crpdp",
+      "url": "https://github.com/teresashchen/crpdp",
+      "type": "code_repository",
+      "category": "code",
+      "language": "Python",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413295661",
+          "title": "Comparison of Interlimb Coordination During Soccer Instep Kicking Between Elite and Amateur Players",
+          "sport": "football",
           "year": 2025
         }
       ],
