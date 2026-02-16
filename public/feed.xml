@@ -5,24 +5,13 @@
     <link>https://living-sports-analytics.vercel.app</link>
     <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 09:11:55 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 10:17:13 GMT</lastBuildDate>
     <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://living-sports-analytics.vercel.app/icon.png</url>
       <title>Living Sports Analytics</title>
       <link>https://living-sports-analytics.vercel.app</link>
     </image>
-    <item>
-      <title>Pathways to Success: The Role of Transfers in Shaping Elite MLB Careers</title>
-      <link>https://harvardsportsanalysis.org/2025/01/pathways-to-success-the-role-of-transfers-in-shaping-elite-mlb-careers/</link>
-      <description>Case study analysis of MLB player career pathways, examining how transfers and non-traditional routes shaped elite player development.</description>
-      <pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:0df2ee0ad10b802a</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>baseball</category>
-      <category>player_development</category>
-      <category>thesis</category>
-    </item>
     <item>
       <title>Modeling Event Dynamics by Self-Exciting Processes with Random Memory</title>
       <link>https://arxiv.org/abs/2601.07980v1</link>
@@ -98,17 +87,6 @@
       <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
       <category>rugby</category>
       <category>performance_analysis</category>
-      <category>working_paper</category>
-    </item>
-    <item>
-      <title>Cyclists Cardiac Conundrum</title>
-      <link>https://arxiv.org/abs/2601.02011v1</link>
-      <description>Uses electrocardiogram and heart rate data to detect arrhythmia risk in cyclists undertaking frequent endurance training.</description>
-      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:bfa223ceb0ee2cf1</guid>
-      <source url="https://living-sports-analytics.vercel.app">arXiv (sports analytics)</source>
-      <category>cycling</category>
-      <category>physiology</category>
       <category>working_paper</category>
     </item>
     <item>
@@ -222,17 +200,6 @@
       <category>thesis</category>
     </item>
     <item>
-      <title>Harvard Square vs Vegas: Who Nailed the 2025 MLB World Series?</title>
-      <link>https://harvardsportsanalysis.org/2025/12/harvard-square-vs-vegas-who-nailed-the-2025-mlb-world-series/</link>
-      <description>Comparative study of intuitive crowd predictions vs. Vegas odds for 2025 MLB World Series, surveying ~100 Harvard community members.</description>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:f80bfba393e64a09</guid>
-      <source url="https://living-sports-analytics.vercel.app">Harvard Sports Analysis Collective</source>
-      <category>baseball</category>
-      <category>betting_markets</category>
-      <category>thesis</category>
-    </item>
-    <item>
       <title>Rao-Blackwellizing FG% with Daniel Daly-Grafstein</title>
       <link>https://statthinksportsanalytics.substack.com/p/rao-blackwellizing-fg-with-daniel-3fb</link>
       <description>Rao-Blackwellizing methods improve field goal percentage estimation and in-game shot trajectory analysis quantifies defensive impact in the NBA.</description>
@@ -261,17 +228,6 @@
       <guid isPermaLink="false">blog:1dd430a7715e3b74</guid>
       <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
       <category>multi_sport</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>An Examination of Sport Climbing with Quang Nguyen</title>
-      <link>https://statthinksportsanalytics.substack.com/p/an-examination-of-sport-climbing-a1e</link>
-      <description>Examination of Olympic sport climbing competition format and scoring systems.</description>
-      <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:37c88b3bb4941a2e</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Thinking in Sports Analytics</source>
-      <category>other</category>
       <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
@@ -386,28 +342,6 @@
       <category>blog_post</category>
     </item>
     <item>
-      <title>The NBA Trade Deadline Was Deeply Weird</title>
-      <link>https://neilpaine.substack.com/p/the-nba-trade-deadline-really-was</link>
-      <description>Analysis of NBA trade deadline deals and their limited impact on teams&apos; championship prospects.</description>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:05b0131f4d46ce15</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>We back up?</title>
-      <link>https://socceranalytics.substack.com/p/we-back-up</link>
-      <description>Brief editorial note from soccer analytics newsletter with no substantive research content or methodology.</description>
-      <pubDate>Tue, 27 May 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:07a64cbdce14602c</guid>
-      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
-      <category>football</category>
-      <category>other</category>
-      <category>blog_post</category>
-    </item>
-    <item>
       <title>Why it pays to know some nerds in football</title>
       <link>https://socceranalytics.substack.com/p/why-it-pays-to-know-some-nerds-in</link>
       <description>Commentary on the value of employing analytics-minded professionals in soccer organizations.</description>
@@ -416,28 +350,6 @@
       <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
       <category>football</category>
       <category>coaching</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>A Footballing Theory of Value</title>
-      <link>https://socceranalytics.substack.com/p/a-footballing-theory-of-value</link>
-      <description>Philosophical essay explores fundamental reasons for the appeal and value of football to fans and participants.</description>
-      <pubDate>Tue, 18 Feb 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:3b1af1a49573e256</guid>
-      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
-      <category>football</category>
-      <category>other</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>🏅 Who&apos;s Winning The 2026 Olympic Medal Race — And Who&apos;s Beating History?</title>
-      <link>https://neilpaine.substack.com/p/whos-winning-the-2026-olympic-medal</link>
-      <description>Comparative analysis of nations&apos; Olympic medal performance against historical trends in 2026 events.</description>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:48ecb4870a71d011</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
-      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
     <item>
@@ -474,17 +386,6 @@
       <category>blog_post</category>
     </item>
     <item>
-      <title>The OTHER problem with pay-to-play</title>
-      <link>https://socceranalytics.substack.com/p/the-other-problem-with-pay-to-play</link>
-      <description>A qualitative discussion of inequity in pay-to-play youth football systems and broader systemic barriers to participation.</description>
-      <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:79543b4364987bc7</guid>
-      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
-      <category>football</category>
-      <category>gender_equity</category>
-      <category>blog_post</category>
-    </item>
-    <item>
       <title>Why xG matters</title>
       <link>https://socceranalytics.substack.com/p/why-xg-matters</link>
       <description>Essay discussing the importance and applications of expected goals (xG) as an analytical metric in soccer.</description>
@@ -496,28 +397,6 @@
       <category>blog_post</category>
     </item>
     <item>
-      <title>Stars, stripes, and stones</title>
-      <link>https://neilpaine.substack.com/p/stars-stripes-and-stones</link>
-      <description>General sports news commentary transitioning from Super Bowl to Olympic coverage.</description>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:843c09acdce1d44a</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
-      <category>other</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>The North Dakota State FBS Experiment is Finally Here</title>
-      <link>https://neilpaine.substack.com/p/the-north-dakota-state-fbs-experiment</link>
-      <description>Commentary on North Dakota State&apos;s transition from FCS to FBS college football competition.</description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:8817cb24d1392706</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>american_football</category>
-      <category>performance_analysis</category>
-      <category>blog_post</category>
-    </item>
-    <item>
       <title>I&apos;m still here!</title>
       <link>https://socceranalytics.substack.com/p/im-still-here</link>
       <description>Sorry!</description>
@@ -525,17 +404,6 @@
       <guid isPermaLink="false">blog:a11036075a19ecf3</guid>
       <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
       <category>football</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Football talent: strive to survive</title>
-      <link>https://socceranalytics.substack.com/p/football-talent-strive-to-survive</link>
-      <description>A brief commentary on talent development in football, emphasizing the importance of participation and presence in player development.</description>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:a68065e725c5d58c</guid>
-      <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
-      <category>football</category>
-      <category>player_development</category>
       <category>blog_post</category>
     </item>
     <item>
@@ -550,14 +418,146 @@
       <category>blog_post</category>
     </item>
     <item>
-      <title>Let&apos;s look at OGS and Mourinho!</title>
-      <link>https://socceranalytics.substack.com/p/lets-look-at-ogs-and-mourinho</link>
-      <description>Comparative analysis of managerial approaches of Ole Gunnar Solskjaer and José Mourinho in soccer.</description>
-      <pubDate>Mon, 09 Dec 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:ac5716ed5d121778</guid>
+      <title>🏀2026 NCAA Tournament Forecast 📊</title>
+      <link>https://neilpaine.substack.com/p/2026-ncaa-tournament-forecast</link>
+      <description>NCAA Division I men&apos;s basketball tournament probability forecasts for all teams&apos; tournament qualification and championship odds.</description>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:d188670b72af8d61</guid>
+      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
+      <category>basketball</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Analytics makes us more human</title>
+      <link>https://socceranalytics.substack.com/p/analytics-makes-us-more-human</link>
+      <description>Essay on how analytics enhances human decision-making in soccer management.</description>
+      <pubDate>Mon, 16 Dec 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:d92bf3637c69296f</guid>
       <source url="https://living-sports-analytics.vercel.app">Soccer Analytics Newsletter</source>
       <category>football</category>
-      <category>coaching</category>
+      <category>other</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Squad age profiles, 2024-25</title>
+      <link>https://www.experimental361.com/p/squad-age-profiles-2024-25</link>
+      <description>Descriptive visualization of squad age profiles across football clubs for the 2024-25 season using an established analytic approach.</description>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:0459196d09aed984</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Squad retention in the big European leagues</title>
+      <link>https://www.experimental361.com/p/squad-retention-in-the-big-european</link>
+      <description>Comparative analysis of squad retention across major European leagues, measuring minutes lost from previous season rosters.</description>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:248b079fb5f63473</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>League One scatter graphics: 2024-25</title>
+      <link>https://www.experimental361.com/p/league-one-scatter-graphics-2024</link>
+      <description>Descriptive analysis of League One (third-tier) team attacking and defensive performance across the 2024-25 season using scatter plot visualizations.</description>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:29e386cc84bfa4d8</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Premier League match dashboards</title>
+      <link>https://johnspacemuller.substack.com/p/premier-league-match-dashboards</link>
+      <description>Development of match dashboards incorporating threat timelines, territory maps, and passing network visualizations for Premier League analysis.</description>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:2ea895e742a4a35f</guid>
+      <source url="https://living-sports-analytics.vercel.app">John Muller (space space space)</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Early season update: squad retention, table-topping droughts and fixture difficulty</title>
+      <link>https://www.experimental361.com/p/early-season-update-squad-retention</link>
+      <description>Summary analysis of early season updates including squad retention metrics, table-topping droughts, and fixture difficulty across Premier League and EFL.</description>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:32342cf5a746707c</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>League Two scatter graphics: 2024-25</title>
+      <link>https://www.experimental361.com/p/league-two-scatter-graphics-2024</link>
+      <description>Descriptive analysis of League Two (fourth-tier) team attacking and defensive performance across the 2024-25 season using scatter plot visualizations.</description>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:41d5e21d15267bdb</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>League table footprints: 2024-25</title>
+      <link>https://www.experimental361.com/p/league-table-footprints-2024-25</link>
+      <description>Descriptive analysis tracking the duration each football team spent in each league position throughout the 2024-25 season.</description>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:43722ef5184ca3fa</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Analysing the 2025-26 Premier League fixtures</title>
+      <link>https://www.experimental361.com/p/analysing-the-2025-26-premier-league</link>
+      <description>Descriptive analysis of 2025-26 Premier League fixture scheduling to identify easiest and toughest runs for each club.</description>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:5e0957868c40e9e5</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Squad retention: 2025-26</title>
+      <link>https://www.experimental361.com/p/squad-retention-2025-26</link>
+      <description>Tracking analysis of league minutes lost by Premier League and EFL teams between seasons to assess squad retention impact.</description>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:63f60d26e7b064ac</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>performance_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Analysing the 2025-26 EFL fixtures</title>
+      <link>https://www.experimental361.com/p/analysing-the-2025-26-efl-fixtures</link>
+      <description>Descriptive analysis of 2025-26 EFL fixture scheduling to identify easiest and toughest runs for each club.</description>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:7a690c49d653d5b8</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>blog_post</category>
+    </item>
+    <item>
+      <title>Premier League scatter graphics: 2024-25</title>
+      <link>https://www.experimental361.com/p/premier-league-scatter-graphics-2024</link>
+      <description>Descriptive analysis of Premier League team attacking and defensive performance across the 2024-25 season using scatter plot visualizations.</description>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:8156687009082164</guid>
+      <source url="https://living-sports-analytics.vercel.app">Experimental 361</source>
+      <category>football</category>
+      <category>performance_analysis</category>
       <category>blog_post</category>
     </item>
   </channel>

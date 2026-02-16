@@ -40,7 +40,9 @@ const BEST_CTE = `
     FROM classifications
   ),
   best_class AS (
-    SELECT * FROM ranked WHERE rn = 1
+    SELECT * FROM ranked
+    WHERE rn = 1
+      AND json_extract(relevance_json, '$.sports_analytics') >= 7
   )
 `;
 
@@ -478,6 +480,7 @@ try {
        JOIN classifications c ON p.work_id = c.paper_id
        WHERE p.pdf_source_url IS NOT NULL
          AND c.sport != 'not_applicable'
+         AND json_extract(c.relevance_json, '$.sports_analytics') >= 7
        ORDER BY p.pub_date DESC`
     )
     .all();
