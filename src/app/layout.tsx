@@ -31,11 +31,11 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/explore", label: "Explore" },
   { href: "/resources", label: "Resources" },
-  { href: "/sources", label: "Sources" },
+  { href: "/gaps", label: "Find the Gap" },
   // Soft-hidden tabs — pages still exist at their URLs, just not in nav.
   // Re-enable by uncommenting when ready:
   // { href: "/trends", label: "Trends" },
-  // { href: "/gaps", label: "Research Gaps" },
+  // { href: "/sources", label: "Sources" },
   // { href: "/analyses", label: "Analyses" },
   // { href: "/methodology", label: "Methodology" },
   // { href: "/contribute", label: "Contribute" },

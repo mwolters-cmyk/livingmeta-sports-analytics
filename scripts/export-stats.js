@@ -502,48 +502,6 @@ try {
 }
 
 // =============================================================================
-// FEED ITEMS (for /sources live feed page)
-// =============================================================================
-
-const feedItems = db
-  .prepare(
-    `${BEST_CTE}
-     SELECT p.work_id, p.title, p.pub_date, p.doi, p.source_url,
-            COALESCE(p.content_type, 'journal_article') as content_type,
-            p.journal_name, SUBSTR(p.abstract, 1, 200) as abstract,
-            p.source_platform, p.created_at,
-            c.sport, c.theme, c.methodology, c.summary, c.is_womens_sport
-     FROM best_class c
-     JOIN papers p ON c.paper_id = p.work_id
-     WHERE c.sport != 'not_applicable'
-     ORDER BY p.created_at DESC
-     LIMIT 200`
-  )
-  .all()
-  .map((item) => ({
-    work_id: item.work_id,
-    title: item.title,
-    pub_date: item.pub_date,
-    created_at: item.created_at,
-    content_type: item.content_type,
-    source_name: item.journal_name,
-    sport: item.sport,
-    theme: item.theme,
-    methodology: item.methodology,
-    summary: item.summary,
-    abstract_snippet: item.abstract,
-    is_womens_sport: item.is_womens_sport,
-    link: item.source_url || (item.doi ? (item.doi.startsWith("http") ? item.doi : `https://doi.org/${item.doi}`) : null),
-    doi: item.doi,
-  }));
-
-fs.writeFileSync(
-  path.join(OUTPUT_DIR, "feed-items.json"),
-  JSON.stringify(feedItems)
-);
-console.log(`Exported ${feedItems.length} feed items for /sources page`);
-
-// =============================================================================
 // RSS FEED (static, regenerated on each export)
 // =============================================================================
 
