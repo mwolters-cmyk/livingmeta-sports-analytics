@@ -430,6 +430,41 @@ try {
 }
 
 // =============================================================================
+// PAPER PDFs (source URLs from Zotero — replaces Vercel Blob)
+// =============================================================================
+
+try {
+  const paperPdfs = db
+    .prepare(
+      `SELECT p.work_id,
+              REPLACE(p.work_id, 'https://openalex.org/', '') as short_id,
+              p.pdf_source_url as pdf_url,
+              p.title,
+              p.pub_date
+       FROM papers p
+       JOIN classifications c ON p.work_id = c.paper_id
+       WHERE p.pdf_source_url IS NOT NULL
+         AND c.sport != 'not_applicable'
+       ORDER BY p.pub_date DESC`
+    )
+    .all();
+
+  fs.writeFileSync(
+    path.join(PUBLIC_DIR, "paper-pdfs.json"),
+    JSON.stringify({
+      description: "Full-text PDF source URLs for classified sports analytics papers",
+      note: "These are direct links to publisher/repository PDFs (OA or institutional access). Not hosted by us.",
+      exported_at: new Date().toISOString(),
+      total: paperPdfs.length,
+      papers: paperPdfs,
+    })
+  );
+  console.log(`Exported ${paperPdfs.length} paper PDF source URLs`);
+} catch (e) {
+  console.log(`paper-pdfs export failed: ${e.message}`);
+}
+
+// =============================================================================
 // RSS FEED (static, regenerated on each export)
 // =============================================================================
 
