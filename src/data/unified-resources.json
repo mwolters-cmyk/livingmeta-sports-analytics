@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-02-16T15:43:14.408032",
-  "total_resources": 557,
-  "with_papers": 420,
+  "generated_at": "2026-02-16T16:59:28.971729",
+  "total_resources": 552,
+  "with_papers": 417,
   "with_scraper": 60,
   "with_data": 61,
   "needs_scraper": 45,
@@ -12,13 +12,13 @@
     "git_clone": 16
   },
   "categories": {
-    "dataset": 340,
-    "scraper": 53,
+    "dataset": 338,
     "library": 43,
-    "instrument": 42,
+    "scraper": 53,
+    "instrument": 39,
     "api": 26,
-    "tool": 18,
-    "code": 35
+    "code": 35,
+    "tool": 18
   },
   "resources": [
     {
@@ -1066,6 +1066,50 @@
       "needs_scraper": false
     },
     {
+      "id": "spm1d",
+      "name": "spm1d",
+      "url": "https://spm1d.org",
+      "description": "Statistical Parametric Mapping for 1D biomechanical data. Python and MATLAB packages for analyzing time-series data from force plates, EMG, and motion capture in sports biomechanics.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "multi_sport"
+      ],
+      "language": "Python",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405086939",
+          "title": "Evaluation of leg symmetry in muscle oxygen saturation during submaximal to maximal cycling exercise",
+          "sport": "cycling",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4408778760",
+          "title": "The effect of increased strength on ball release speed and front foot contact-phase technique in elite male cricket fast bowlers",
+          "sport": "cricket",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4410977692",
+          "title": "A Comparison of Inswing and Outswing Bowling Arm Kinematics of Pathway and Elite Male Fast Bowlers",
+          "sport": "cricket",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4413295661",
+          "title": "Comparison of Interlimb Coordination During Soccer Instep Kicking Between Elite and Amateur Players",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 4,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "statsbomb-event-data",
       "name": "StatsBomb Event Data",
       "url": "https://statsbomb.com/",
@@ -1146,6 +1190,58 @@
       "access_method": null,
       "url_status": null,
       "needs_scraper": true
+    },
+    {
+      "id": "fbref-sports-reference",
+      "name": "FBref / Sports Reference",
+      "url": "https://fbref.com",
+      "description": "Comprehensive football statistics powered by Opta data. Player stats, match reports, xG, and advanced metrics for 100+ competitions.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401945311",
+          "title": "An Expected Goals on Target (xGOT) Metric as a New Metric for Analyzing Elite Soccer Player Performance",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W7118313619",
+          "title": "A Statistical Look into how Common Soccer Metrics Influence Expected Goal Measures in the Professional Game",
+          "sport": "football",
+          "year": 2026
+        },
+        {
+          "work_id": "https://openalex.org/W4407595434",
+          "title": "Associations Between Match‐Play Characteristics and Environmental Temperatures in 4 Professional Football Leagues",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 3,
+      "on_platform": {
+        "description": "198,372 player-match rows for men's football.",
+        "record_count": 198372,
+        "datasets": [
+          {
+            "description": "Men's FBref player-match statistics",
+            "record_count": 198372,
+            "gender": "M",
+            "date_range": "2017-2025"
+          }
+        ]
+      },
+      "scraper": {
+        "file": "scrapers/scrape_fbref.py",
+        "status": "blocked"
+      },
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
     },
     {
       "id": "fiba-official-archives",
@@ -1416,44 +1512,6 @@
       "needs_scraper": false
     },
     {
-      "id": "spm1d",
-      "name": "spm1d",
-      "url": "https://spm1d.org",
-      "description": "Statistical Parametric Mapping for 1D biomechanical data. Python and MATLAB packages for analyzing time-series data from force plates, EMG, and motion capture in sports biomechanics.",
-      "category": "library",
-      "access": "free",
-      "sports": [
-        "multi_sport"
-      ],
-      "language": "Python",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4405086939",
-          "title": "Evaluation of leg symmetry in muscle oxygen saturation during submaximal to maximal cycling exercise",
-          "sport": "cycling",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4408778760",
-          "title": "The effect of increased strength on ball release speed and front foot contact-phase technique in elite male cricket fast bowlers",
-          "sport": "cricket",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4410977692",
-          "title": "A Comparison of Inswing and Outswing Bowling Arm Kinematics of Pathway and Elite Male Fast Bowlers",
-          "sport": "cricket",
-          "year": 2025
-        }
-      ],
-      "paper_count": 3,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "statista-sports-database",
       "name": "Statista Sports Database",
       "url": "https://www.statista.com",
@@ -1584,40 +1642,6 @@
           "title": "Activity Detection of Paralympic Athletes with Lower Limb Running-Specific Prosthesis During Extended Periods of Time: Software Development and Preliminary Validation",
           "sport": "athletics",
           "year": 2025
-        }
-      ],
-      "paper_count": 2,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "baidu-map-geospatial-data",
-      "name": "Baidu Map Geospatial Data",
-      "url": "https://map.baidu.com/",
-      "description": "Chinese geospatial and mapping platform providing location data for sports events and outdoor activity venues. Enables analysis of marathon distribution, jogging patterns, and environmental factors affecting athletic participation.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "athletics",
-        "basketball",
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2996460131",
-          "title": "The Temporal and Spatial Evolution of Marathons in China from 2010 to 2018",
-          "sport": "athletics",
-          "year": 2019
-        },
-        {
-          "work_id": "https://openalex.org/W4401856308",
-          "title": "Utilizing Multi-Source Geospatial Big Data to Examine How Environmental Factors Attract Outdoor Jogging Activities",
-          "sport": "athletics",
-          "year": 2024
         }
       ],
       "paper_count": 2,
@@ -1907,38 +1931,6 @@
           "title": "The Limited Impact of Running Performance on Football Success in the Turkish Super League",
           "sport": "football",
           "year": 2025
-        }
-      ],
-      "paper_count": 2,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "fifa-training-centre-match-report-hub",
-      "name": "FIFA Training Centre - Match Report Hub",
-      "url": "https://www.fifatrainingcentre.com/en/game/tournaments/fifa-womens-world-cup/2023/match-report-hub/post-match-summary-reports.php",
-      "description": "Official FIFA women's football match analysis reports providing detailed performance data including offensive indicators, running metrics, and phase-specific performance analytics for international tournaments.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4393234237",
-          "title": "Relationship between key offensive performance indicators and match running performance in the FIFA Women’s World Cup 2023",
-          "sport": "football",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4402378377",
-          "title": "Analysis of FIFA 2023 Women’s World Cup match performanceaccording to match outcome and phase of the tournament",
-          "sport": "football",
-          "year": 2024
         }
       ],
       "paper_count": 2,
@@ -2689,39 +2681,6 @@
       "needs_scraper": true
     },
     {
-      "id": "vicon-nexus",
-      "name": "Vicon Nexus",
-      "url": "vicon.com",
-      "description": "Motion capture and biomechanics analysis software that uses optical tracking systems to measure athlete movement patterns, kinematics, and force data. Widely used for analyzing running mechanics and skating performance in research contexts.",
-      "category": "tool",
-      "access": "paid",
-      "sports": [
-        "athletics",
-        "ice_hockey"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2902515017",
-          "title": "Running in highly cushioned shoes increases leg stiffness and amplifies impact loading",
-          "sport": "athletics",
-          "year": 2018
-        },
-        {
-          "work_id": "https://openalex.org/W4312203652",
-          "title": "Measurement of temporal and spatial parameters of ice hockey skating using a wearable system",
-          "sport": "ice_hockey",
-          "year": 2022
-        }
-      ],
-      "paper_count": 2,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "whoscored",
       "name": "WhoScored",
       "url": "https://www.whoscored.com/",
@@ -2744,6 +2703,38 @@
           "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
           "sport": "football",
           "year": 2024
+        }
+      ],
+      "paper_count": 2,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "world-football-elo-ratings",
+      "name": "World Football Elo Ratings",
+      "url": "eloratings.net",
+      "description": "Historical Elo ratings dataset for international football teams with ratings updated after each match. Provides predictive features for machine learning models forecasting soccer match results and team performance.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4392781219",
+          "title": "Machine Learning for Soccer Match Result Prediction",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4413926739",
+          "title": "Association Between Substitutions and Match Running Performance Under Five-Substitution Rule: Evidence from the 2022 FIFA World Cup",
+          "sport": "football",
+          "year": 2025
         }
       ],
       "paper_count": 2,
@@ -3014,32 +3005,6 @@
       "needs_scraper": false
     },
     {
-      "id": "amti-force-platforms",
-      "name": "AMTI force platforms",
-      "url": "https://www.amti.biz",
-      "description": "Laboratory instrument for measuring ground reaction forces and biomechanical data during athletic movements, essential for analyzing running mechanics, impact loading, and footwear effects in athletics.",
-      "category": "instrument",
-      "access": "paid",
-      "sports": [
-        "athletics"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2902515017",
-          "title": "Running in highly cushioned shoes increases leg stiffness and amplifies impact loading",
-          "sport": "athletics",
-          "year": 2018
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "ansys-fluent",
       "name": "Ansys Fluent",
       "url": "https://www.ansys.com/products/fluids/ansys-fluent",
@@ -3238,6 +3203,34 @@
           "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
           "sport": "football",
           "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "baidu-map-geospatial-data",
+      "name": "Baidu Map Geospatial Data",
+      "url": "https://map.baidu.com/",
+      "description": "Chinese geospatial and mapping platform providing location data for sports events and outdoor activity venues. Enables analysis of marathon distribution, jogging patterns, and environmental factors affecting athletic participation.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics",
+        "basketball",
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4401856308",
+          "title": "Utilizing Multi-Source Geospatial Big Data to Examine How Environmental Factors Attract Outdoor Jogging Activities",
+          "sport": "athletics",
+          "year": 2024
         }
       ],
       "paper_count": 1,
@@ -3717,32 +3710,6 @@
       "scraper": null,
       "access_method": null,
       "url_status": "verified",
-      "needs_scraper": false
-    },
-    {
-      "id": "brooks-ghost-6-running-shoe",
-      "name": "Brooks Ghost 6 Running Shoe",
-      "url": "https://www.brooksrunning.com",
-      "description": "Cushioned running shoe used as a test instrument in biomechanics research. Enables controlled studies of shoe properties on impact loading, leg stiffness, and running mechanics.",
-      "category": "instrument",
-      "access": "paid",
-      "sports": [
-        "athletics"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2902515017",
-          "title": "Running in highly cushioned shoes increases leg stiffness and amplifies impact loading",
-          "sport": "athletics",
-          "year": 2018
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
       "needs_scraper": false
     },
     {
@@ -5450,32 +5417,6 @@
     {
       "id": "fifa-match-centre",
       "name": "FIFA Match Centre",
-      "url": "https://inside.fifa.com/technical/football-technology/resource-hub?id=810f07b9d0694f0c9e43b653cbc51031",
-      "description": "Official FIFA database providing football match results, player statistics, team formations, and detailed match reports from international tournaments. Supports performance analysis, injury tracking, and competitive strategy research.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4413754964",
-          "title": "Semi-automated last touch detection for out-of-bounds possession decisions in football",
-          "sport": "football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "fifa-match-centre",
-      "name": "FIFA Match Centre",
       "url": "https://img.fifa.com/image/upload/zijqly4oednqa5gffgaz.pdf",
       "description": "Official FIFA database providing football match results, player statistics, team formations, and detailed match reports from international tournaments. Supports performance analysis, injury tracking, and competitive strategy research.",
       "category": "dataset",
@@ -5621,6 +5562,32 @@
         {
           "work_id": "https://openalex.org/W4392781219",
           "title": "Machine Learning for Soccer Match Result Prediction",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "football-data-org",
+      "name": "Football-Data.org",
+      "url": "https://www.football-data.org",
+      "description": "RESTful API for competitions, teams, matches, and standings. Free tier covers major European leagues.",
+      "category": "api",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4404212078",
+          "title": "Implementing Football Prediction System Using Machine Learning",
           "sport": "football",
           "year": 2024
         }
@@ -6426,32 +6393,6 @@
           "title": "A daily longitudinal analysis of reciprocal relationships between psychological states and performance in NHL players",
           "sport": "ice_hockey",
           "year": 2025
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "hoka-conquest-running-shoe",
-      "name": "Hoka Conquest Running Shoe",
-      "url": "https://www.hokaoneone.com",
-      "description": "A highly cushioned running shoe used as a test instrument in biomechanical studies. Enables research on how footwear design affects leg stiffness, impact loading, and injury risk in distance runners.",
-      "category": "instrument",
-      "access": "paid",
-      "sports": [
-        "athletics"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2902515017",
-          "title": "Running in highly cushioned shoes increases leg stiffness and amplifies impact loading",
-          "sport": "athletics",
-          "year": 2018
         }
       ],
       "paper_count": 1,
@@ -11128,6 +11069,32 @@
       "needs_scraper": false
     },
     {
+      "id": "transfermarkt",
+      "name": "Transfermarkt",
+      "url": "https://www.transfermarkt.com.tr",
+      "description": "Comprehensive football database containing team rosters, managerial records, and performance statistics across European leagues. Enables analysis of coaching changes and their effects on team performance outcomes.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7107867268",
+          "title": "Financial Governance and Transfer Policies in Football: A Positional Analysis of Expenditures in Europe's Top Leagues",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "treeshap",
       "name": "TreeSHAP",
       "url": "https://github.com/slundberg/shap",
@@ -11430,6 +11397,33 @@
           "title": "Player archetypes within basketball: optimizing roster composition to create a championship team",
           "sport": "basketball",
           "year": 2025
+        }
+      ],
+      "paper_count": 1,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
+      "id": "vicon-nexus",
+      "name": "Vicon Nexus",
+      "url": "vicon.com",
+      "description": "Motion capture and biomechanics analysis software that uses optical tracking systems to measure athlete movement patterns, kinematics, and force data. Widely used for analyzing running mechanics and skating performance in research contexts.",
+      "category": "tool",
+      "access": "paid",
+      "sports": [
+        "athletics",
+        "ice_hockey"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4312203652",
+          "title": "Measurement of temporal and spatial parameters of ice hockey skating using a wearable system",
+          "sport": "ice_hockey",
+          "year": 2022
         }
       ],
       "paper_count": 1,
@@ -11888,32 +11882,6 @@
     {
       "id": "world-bank-economic-data",
       "name": "World Bank Economic Data",
-      "url": "http://data.worldbank.org/indicator/NY.GNP.PCAP.CD",
-      "description": "World Bank development indicators including GNP per capita and country classification data. Used in sports analytics to contextualize Paralympic participation, athlete demographics, and international fairness in competitive sport.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "athletics"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2565322267",
-          "title": "“A More Equitable Society”: The Politics of Global Fairness in Paralympic Sport",
-          "sport": "athletics",
-          "year": 2016
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "world-bank-economic-data",
-      "name": "World Bank Economic Data",
       "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups",
       "description": "World Bank development indicators including GNP per capita and country classification data. Used in sports analytics to contextualize Paralympic participation, athlete demographics, and international fairness in competitive sport.",
       "category": "dataset",
@@ -11935,32 +11903,6 @@
       "scraper": null,
       "access_method": null,
       "url_status": "verified",
-      "needs_scraper": false
-    },
-    {
-      "id": "world-football-elo-ratings",
-      "name": "World Football Elo Ratings",
-      "url": "eloratings.net",
-      "description": "Historical Elo ratings dataset for international football teams with ratings updated after each match. Provides predictive features for machine learning models forecasting soccer match results and team performance.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4392781219",
-          "title": "Machine Learning for Soccer Match Result Prediction",
-          "sport": "football",
-          "year": 2024
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
       "needs_scraper": false
     },
     {
@@ -12555,39 +12497,6 @@
       "needs_scraper": false
     },
     {
-      "id": "fbref-sports-reference",
-      "name": "FBref / Sports Reference",
-      "url": "https://fbref.com",
-      "description": "Comprehensive football statistics powered by Opta data. Player stats, match reports, xG, and advanced metrics for 100+ competitions.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [],
-      "paper_count": 0,
-      "on_platform": {
-        "description": "198,372 player-match rows for men's football.",
-        "record_count": 198372,
-        "datasets": [
-          {
-            "description": "Men's FBref player-match statistics",
-            "record_count": 198372,
-            "gender": "M",
-            "date_range": "2017-2025"
-          }
-        ]
-      },
-      "scraper": {
-        "file": "scrapers/scrape_fbref.py",
-        "status": "blocked"
-      },
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "firstcycling",
       "name": "FirstCycling",
       "url": "https://firstcycling.com",
@@ -12661,25 +12570,6 @@
         "football"
       ],
       "language": "Python",
-      "papers": [],
-      "paper_count": 0,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "football-data-org",
-      "name": "Football-Data.org",
-      "url": "https://www.football-data.org",
-      "description": "RESTful API for competitions, teams, matches, and standings. Free tier covers major European leagues.",
-      "category": "api",
-      "access": "freemium",
-      "sports": [
-        "football"
-      ],
-      "language": null,
       "papers": [],
       "paper_count": 0,
       "on_platform": null,

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-16T16:28:59.053643",
-  "total_papers": 2208,
-  "total_resources": 453,
-  "resources_skipped_no_url": 13753,
+  "generated_at": "2026-02-16T16:59:37.532849",
+  "total_papers": 2235,
+  "total_resources": 454,
+  "resources_skipped_no_url": 13911,
   "resources": [
     {
       "name": "Win Shares (WS)",
@@ -1182,7 +1182,7 @@
     {
       "name": "NHL revenue data",
       "url": "http://perma.cc/8BLQ-57B3",
-      "type": "government_data",
+      "type": "open_dataset",
       "access": "fully_open",
       "platform": null,
       "category": "dataset",
@@ -1242,27 +1242,6 @@
           "title": "Are regional differences in basketball already established in under-18 games?",
           "sport": "basketball",
           "year": 2018
-        }
-      ],
-      "paper_count": 2
-    },
-    {
-      "name": "Vicon Nexus",
-      "url": "vicon.com",
-      "type": "software_tool",
-      "category": "tool",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2902515017",
-          "title": "Running in highly cushioned shoes increases leg stiffness and amplifies impact loading",
-          "sport": "athletics",
-          "year": 2018
-        },
-        {
-          "work_id": "https://openalex.org/W4312203652",
-          "title": "Measurement of temporal and spatial parameters of ice hockey skating using a wearable system",
-          "sport": "ice_hockey",
-          "year": 2022
         }
       ],
       "paper_count": 2
@@ -1421,6 +1400,23 @@
       "paper_count": 5
     },
     {
+      "name": "FIFA Female Health Project",
+      "url": "https://inside.fifa.com/womens-football/fifa-female-health-project-snapshot",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4413754964",
+          "title": "Semi-automated last touch detection for out-of-bounds possession decisions in football",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Sprint Speed metric",
       "url": "http://www.mlb.com",
       "type": "open_dataset",
@@ -1494,6 +1490,29 @@
         }
       ],
       "paper_count": 1
+    },
+    {
+      "name": "FIFA Global Transfer Report 2022",
+      "url": "https://digitalhub.fifa.com/m/4f40a98140d305e2/original/zijqly4oednqa5gffgaz-pdf.pdf",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4311379485",
+          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
+          "sport": "football",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W4406269423",
+          "title": "The Limited Impact of Running Performance on Football Success in the Turkish Super League",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 2
     },
     {
       "name": "Polar API",
@@ -1727,6 +1746,23 @@
       "paper_count": 3
     },
     {
+      "name": "UEFA Official Database",
+      "url": "https://www.uefa.com/",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W2902869654",
+          "title": "Analyzing the Process from the Initiation of Attack to Goal Scoring Touch in the EURO 2016",
+          "sport": "football",
+          "year": 2018
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Performance Index Rating (PIR) formula",
       "url": "https://www.euroleague.net",
       "type": "manual_collection",
@@ -1867,29 +1903,6 @@
       "paper_count": 2
     },
     {
-      "name": "FIFA Global Transfer Report 2022",
-      "url": "https://digitalhub.fifa.com/m/4f40a98140d305e2/original/zijqly4oednqa5gffgaz-pdf.pdf",
-      "type": "open_dataset",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4311379485",
-          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
-          "sport": "football",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4406269423",
-          "title": "The Limited Impact of Running Performance on Football Success in the Turkish Super League",
-          "sport": "football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 2
-    },
-    {
       "name": "Football Outsiders",
       "url": "https://www.footballoutsiders.com/",
       "type": "proprietary_dataset",
@@ -2009,23 +2022,6 @@
       "paper_count": 2
     },
     {
-      "name": "Hawk-Eye Innovations (HEI) Player and Ball Tracking System",
-      "url": "https://inside.fifa.com/technical/football-technology/resource-hub?id=810f07b9d0694f0c9e43b653cbc51031",
-      "type": "sensor_device",
-      "access": "proprietary",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4413754964",
-          "title": "Semi-automated last touch detection for out-of-bounds possession decisions in football",
-          "sport": "football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "Google Earth Pro",
       "url": "https://www.google.com/earth/about/versions/",
       "type": "sensor_device",
@@ -2112,6 +2108,23 @@
       "paper_count": 2
     },
     {
+      "name": "World Bank website",
+      "url": "https://data.worldbank.org/sports",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W2565322267",
+          "title": "“A More Equitable Society”: The Politics of Global Fairness in Paralympic Sport",
+          "sport": "athletics",
+          "year": 2016
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Lahman Database",
       "url": "http://seanlahaman.com",
       "type": "software_tool",
@@ -2169,23 +2182,6 @@
         }
       ],
       "paper_count": 2
-    },
-    {
-      "name": "UEFA Official Database",
-      "url": "https://www.uefa.com/",
-      "type": "government_data",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2902869654",
-          "title": "Analyzing the Process from the Initiation of Attack to Goal Scoring Touch in the EURO 2016",
-          "sport": "football",
-          "year": 2018
-        }
-      ],
-      "paper_count": 1
     },
     {
       "name": "FIBA Official Website",
@@ -2316,6 +2312,23 @@
       "paper_count": 1
     },
     {
+      "name": "Vicon Motion-Capture System",
+      "url": "vicon.com",
+      "type": "sensor_device",
+      "access": "purchased",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4312203652",
+          "title": "Measurement of temporal and spatial parameters of ice hockey skating using a wearable system",
+          "sport": "ice_hockey",
+          "year": 2022
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "ANT+ protocol",
       "url": "https://www.thisisant.com/developer/components/antusb-m",
       "type": "sensor_device",
@@ -2400,6 +2413,27 @@
         }
       ],
       "paper_count": 3
+    },
+    {
+      "name": "IBM SPSS Statistics",
+      "url": "https://www.ibm.com/products/spss-statistics",
+      "type": "statistical_package",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4399921193",
+          "title": "Muscle morphological changes and enhanced sprint running performance: A 1‐year observational study of well‐trained sprinters",
+          "sport": "athletics",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4402693444",
+          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
+          "sport": "athletics",
+          "year": 2024
+        }
+      ],
+      "paper_count": 2
     },
     {
       "name": "Roboflow",
@@ -2665,23 +2699,6 @@
         }
       ],
       "paper_count": 2
-    },
-    {
-      "name": "World Bank website",
-      "url": "http://data.worldbank.org/indicator/NY.GNP.PCAP.CD",
-      "type": "government_data",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2565322267",
-          "title": "“A More Equitable Society”: The Politics of Global Fairness in Paralympic Sport",
-          "sport": "athletics",
-          "year": 2016
-        }
-      ],
-      "paper_count": 1
     },
     {
       "name": "Champion Data performance indicators",
@@ -4369,51 +4386,6 @@
       "paper_count": 1
     },
     {
-      "name": "AMTI force platforms",
-      "url": "https://www.amti.biz",
-      "type": "sensor",
-      "category": "instrument",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2902515017",
-          "title": "Running in highly cushioned shoes increases leg stiffness and amplifies impact loading",
-          "sport": "athletics",
-          "year": 2018
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "Hoka Conquest running shoe",
-      "url": "https://www.hokaoneone.com",
-      "type": "other",
-      "category": "instrument",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2902515017",
-          "title": "Running in highly cushioned shoes increases leg stiffness and amplifies impact loading",
-          "sport": "athletics",
-          "year": 2018
-        }
-      ],
-      "paper_count": 1
-    },
-    {
-      "name": "Brooks Ghost 6 running shoe",
-      "url": "https://www.brooksrunning.com",
-      "type": "other",
-      "category": "instrument",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2902515017",
-          "title": "Running in highly cushioned shoes increases leg stiffness and amplifies impact loading",
-          "sport": "athletics",
-          "year": 2018
-        }
-      ],
-      "paper_count": 1
-    },
-    {
       "name": "Lithuanian Women's Basketball League A (LWBAL) 2010-2011 season",
       "url": "http://www.lmkal.lt",
       "type": "open_dataset",
@@ -4698,6 +4670,23 @@
       "paper_count": 1
     },
     {
+      "name": "High-altitude training camp (HATC) in Iten, Africa at 2400 metres altitude",
+      "url": "https://hatc-iten.com/",
+      "type": "other",
+      "access": "restricted",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3114378392",
+          "title": "Some like it hot? Elite female athlete perspectives on competing in extreme climatic conditions at world championship sports events",
+          "sport": "athletics",
+          "year": 2020
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Dutch National Sprint Triathlon Championships results",
       "url": "http://nl.mylaps.com/evenementen/uitslagen/2018",
       "type": "web_scraping",
@@ -4845,10 +4834,10 @@
       "paper_count": 1
     },
     {
-      "name": "Women's Chinese Basketball Association (WCBA) official website",
+      "name": "Official website of the Chinese Basketball Association",
       "url": "https://www.cba.net.cn",
-      "type": "proprietary_dataset",
-      "access": "restricted",
+      "type": "web_scraping",
+      "access": "fully_open",
       "platform": null,
       "category": "dataset",
       "papers": [
@@ -6119,6 +6108,23 @@
         {
           "work_id": "https://openalex.org/W4402939916",
           "title": "From lab to field: validity and reliability of inertial measurement unit-derived gait parameters during a standardised run",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Football Data API",
+      "url": "https://www.football-data.org/",
+      "type": "api",
+      "access": "not_stated",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4404212078",
+          "title": "Implementing Football Prediction System Using Machine Learning",
           "sport": "football",
           "year": 2024
         }
@@ -8519,6 +8525,23 @@
           "title": "What Happened Next? Using Deep Learning to Value Defensive Actions in Football Event-Data",
           "sport": "football",
           "year": 2021
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Transfermarkt",
+      "url": "https://www.transfermarkt.com.tr",
+      "type": "proprietary_dataset",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7107867268",
+          "title": "Financial Governance and Transfer Policies in Football: A Positional Analysis of Expenditures in Europe's Top Leagues",
+          "sport": "football",
+          "year": 2025
         }
       ],
       "paper_count": 1
