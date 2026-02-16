@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getStats, getGapAnalyses } from "@/lib/db";
 import type { GapAnalysis, Gap, GapPaperRef, AgendaItem, GapPaperIndexEntry } from "@/lib/db";
+import { Collapsible } from "./collapsible";
 
 /** Gap type → visual style */
 const GAP_TYPE_STYLES: Record<string, { label: string; classes: string }> = {
@@ -264,8 +265,8 @@ function AgendaCard({ item, paperIndex }: { item: AgendaItem; paperIndex: Record
   );
 }
 
-/** Render a full gap analysis report */
-function GapAnalysisReport({ analysis, paperIndex }: { analysis: GapAnalysis; paperIndex: Record<string, GapPaperIndexEntry> }) {
+/** Render a full gap analysis report inside a collapsible */
+function GapAnalysisReport({ analysis, paperIndex, defaultOpen = false }: { analysis: GapAnalysis; paperIndex: Record<string, GapPaperIndexEntry>; defaultOpen?: boolean }) {
   const confStyle = CONFIDENCE_STYLES[analysis.analysis_confidence] || CONFIDENCE_STYLES.unknown;
   const dateStr = analysis.analyzed_at
     ? new Date(analysis.analyzed_at).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })
@@ -273,35 +274,42 @@ function GapAnalysisReport({ analysis, paperIndex }: { analysis: GapAnalysis; pa
     ? new Date(analysis.created_at).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })
     : "";
 
-  return (
-    <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
-      {/* Header */}
-      <div className="border-b border-gray-100 bg-navy/[0.02] px-6 py-5">
-        <h3 className="text-lg font-bold text-navy leading-snug mb-2">
-          &ldquo;{analysis.question}&rdquo;
-        </h3>
-        <div className="flex flex-wrap items-center gap-3 text-sm">
-          <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${confStyle.classes}`}>
-            {confStyle.label}
-          </span>
-          <span className="text-gray-400">
-            {analysis.papers_analyzed} papers analyzed
-          </span>
-          {dateStr && (
-            <>
-              <span className="text-gray-400">&middot;</span>
-              <span className="text-gray-400">{dateStr}</span>
-            </>
-          )}
-          {analysis.cost_usd > 0 && (
-            <>
-              <span className="text-gray-400">&middot;</span>
-              <span className="text-gray-400">${analysis.cost_usd.toFixed(2)} analysis cost</span>
-            </>
-          )}
-        </div>
-      </div>
+  const gapCount = analysis.gaps?.length || 0;
 
+  const header = (
+    <>
+      <h3 className="text-lg font-bold text-navy leading-snug mb-2">
+        &ldquo;{analysis.question}&rdquo;
+      </h3>
+      <div className="flex flex-wrap items-center gap-3 text-sm">
+        <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${confStyle.classes}`}>
+          {confStyle.label}
+        </span>
+        <span className="text-gray-400">
+          {analysis.papers_analyzed} papers analyzed
+        </span>
+        <span className="text-gray-400">&middot;</span>
+        <span className="text-gray-400">
+          {gapCount} gap{gapCount !== 1 ? "s" : ""} identified
+        </span>
+        {dateStr && (
+          <>
+            <span className="text-gray-400">&middot;</span>
+            <span className="text-gray-400">{dateStr}</span>
+          </>
+        )}
+        {analysis.cost_usd > 0 && (
+          <>
+            <span className="text-gray-400">&middot;</span>
+            <span className="text-gray-400">${analysis.cost_usd.toFixed(2)} analysis cost</span>
+          </>
+        )}
+      </div>
+    </>
+  );
+
+  return (
+    <Collapsible header={header} defaultOpen={defaultOpen}>
       <div className="px-6 py-5 space-y-8">
         {/* Scope Assessment */}
         {analysis.scope_assessment && (
@@ -520,7 +528,7 @@ function GapAnalysisReport({ analysis, paperIndex }: { analysis: GapAnalysis; pa
           </section>
         )}
       </div>
-    </div>
+    </Collapsible>
   );
 }
 
@@ -644,8 +652,8 @@ export default function GapsPage() {
         </p>
 
         {/* Entry: 2026-02-16 */}
-        <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
-          <div className="border-b border-gray-100 bg-navy/[0.02] px-6 py-4">
+        <Collapsible
+          header={
             <div className="flex items-center gap-3">
               <span className="rounded-full bg-navy/10 px-2.5 py-0.5 text-xs font-medium text-navy">
                 Sprint 1
@@ -655,7 +663,8 @@ export default function GapsPage() {
               </span>
               <span className="text-xs text-gray-400 ml-auto">16 Feb 2026</span>
             </div>
-          </div>
+          }
+        >
           <div className="px-6 py-5 space-y-5">
             <div>
               <div className="text-sm font-medium text-gray-700 mb-2">What we learned from the first 5 analyses</div>
@@ -768,7 +777,7 @@ export default function GapsPage() {
               </ul>
             </div>
           </div>
-        </div>
+        </Collapsible>
       </section>
     </div>
   );
