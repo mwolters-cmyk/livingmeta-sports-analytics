@@ -163,8 +163,22 @@ function ExploreContent() {
     if (s && s !== query) setQuery(s);
   }, [searchParams]);
 
+  // Direct paper ID filter (from resources page links)
+  const paperId = searchParams.get("paper");
+
   const filtered = useMemo(() => {
     let results = allPapers;
+
+    // Direct work_id lookup (exact match, takes priority over text search)
+    if (paperId) {
+      results = results.filter((p) => p.work_id === paperId);
+      if (results.length > 0) return results;
+      // Fallback: try without openalex prefix
+      results = allPapers.filter((p) => p.work_id?.endsWith(paperId));
+      if (results.length > 0) return results;
+      // Nothing found, fall through to normal search
+      results = allPapers;
+    }
 
     if (query) {
       const q = query.toLowerCase();
@@ -225,7 +239,7 @@ function ExploreContent() {
     }
 
     return sorted;
-  }, [query, sport, theme, methodology, contentType, womenOnly, fullTextOnly, sortBy]);
+  }, [query, paperId, sport, theme, methodology, contentType, womenOnly, fullTextOnly, sortBy]);
 
   const total = filtered.length;
   const totalPages = Math.ceil(total / limit);

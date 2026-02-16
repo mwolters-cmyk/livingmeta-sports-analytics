@@ -650,7 +650,7 @@ function ResourceCard({
                   <span className="text-gray-400 mt-0.5">{"\u2022"}</span>
                   <span>
                     <Link
-                      href={`/explore?search=${encodeURIComponent(p.title)}`}
+                      href={`/explore?paper=${encodeURIComponent(p.work_id)}`}
                       className="text-blue-600 hover:underline"
                     >
                       {p.title}
