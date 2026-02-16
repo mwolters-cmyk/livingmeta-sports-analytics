@@ -37,10 +37,10 @@ export default function Home() {
               How It Works
             </Link>
             <Link
-              href="/contribute"
+              href="/explore"
               className="rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10"
             >
-              Contribute
+              Explore Papers
             </Link>
             <a
               href="https://github.com/mwolters-cmyk/living-sports-analytics-research"
@@ -195,10 +195,7 @@ export default function Home() {
             data arrives.
           </p>
 
-          <Link
-            href="/analyses/lane-advantage-1000m"
-            className="block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
-          >
+          <div className="block rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
             <div className="mb-2 flex flex-wrap items-center gap-2">
               <span className="rounded-full border border-green-300 bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800">
                 &#9679; Active
@@ -218,15 +215,6 @@ export default function Home() {
               <strong>Key finding:</strong> No significant time advantage &mdash; but
               inner lane winners are overrepresented (60% women, 58% men).
             </div>
-          </Link>
-
-          <div className="mt-4 text-center">
-            <Link
-              href="/analyses"
-              className="text-sm font-medium text-orange hover:underline"
-            >
-              View all analyses &rarr;
-            </Link>
           </div>
         </div>
       </section>
@@ -367,12 +355,14 @@ export default function Home() {
         </div>
 
         <div className="mt-8 text-center">
-          <Link
-            href="/contribute"
+          <a
+            href="https://github.com/mwolters-cmyk/living-sports-analytics-research"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block rounded-lg bg-orange px-6 py-3 font-semibold text-white transition-colors hover:bg-orange-light"
           >
-            View Contribution Guide &amp; Thesis Projects
-          </Link>
+            Contribute on GitHub
+          </a>
         </div>
       </section>
 
@@ -445,10 +435,10 @@ export default function Home() {
             Explore Papers
           </Link>
           <Link
-            href="/trends"
+            href="/resources"
             className="rounded-lg border border-navy/20 px-6 py-3 font-semibold text-navy transition-colors hover:bg-navy/5"
           >
-            View Trends
+            Browse Resources
           </Link>
           <a
             href="/api/classifications.json"

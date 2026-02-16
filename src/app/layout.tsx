@@ -32,11 +32,13 @@ const navItems = [
   { href: "/explore", label: "Explore" },
   { href: "/resources", label: "Resources" },
   { href: "/sources", label: "Sources" },
-  { href: "/trends", label: "Trends" },
-  { href: "/gaps", label: "Research Gaps" },
-  { href: "/analyses", label: "Analyses" },
-  { href: "/methodology", label: "Methodology" },
-  { href: "/contribute", label: "Contribute" },
+  // Soft-hidden tabs — pages still exist at their URLs, just not in nav.
+  // Re-enable by uncommenting when ready:
+  // { href: "/trends", label: "Trends" },
+  // { href: "/gaps", label: "Research Gaps" },
+  // { href: "/analyses", label: "Analyses" },
+  // { href: "/methodology", label: "Methodology" },
+  // { href: "/contribute", label: "Contribute" },
 ];
 
 export default function RootLayout({
@@ -76,10 +78,10 @@ export default function RootLayout({
               )}
             </span>
             <Link
-              href="/methodology"
+              href="/about"
               className="ml-1 underline decoration-green-400 hover:text-green-900"
             >
-              methodology
+              about
             </Link>
           </div>
         </div>
@@ -139,10 +141,10 @@ export default function RootLayout({
               <div className="flex gap-4 text-sm text-gray-400">
                 <span>Matthijs Wolters &amp; Otto Koppius</span>
                 <Link
-                  href="/methodology"
+                  href="/about"
                   className="transition-colors hover:text-navy"
                 >
-                  Methodology
+                  About
                 </Link>
                 <a
                   href="https://github.com/mwolters-cmyk/living-sports-analytics-research"
