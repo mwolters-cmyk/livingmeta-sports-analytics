@@ -229,10 +229,9 @@ function ResourcesContent() {
     } else if (sortBy === "name") {
       results.sort((a, b) => a.name.localeCompare(b.name));
     } else {
-      // relevance: curated first (have description), then paper count
+      // relevance: all resources are curated now, sort by paper count
       results.sort(
         (a, b) =>
-          (a.description ? 0 : 1) - (b.description ? 0 : 1) ||
           b.paper_count - a.paper_count ||
           a.name.localeCompare(b.name)
       );

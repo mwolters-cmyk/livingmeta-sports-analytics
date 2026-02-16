@@ -1,0 +1,4595 @@
+{
+  "generated_at": "2026-02-16T15:41:39",
+  "model": "claude-haiku-4-5-20251001",
+  "total_curated": 346,
+  "cost_usd": 0.20580299999999999,
+  "input_tokens": 45303,
+  "output_tokens": 32100,
+  "resources": [
+    {
+      "name": "Open Science Framework",
+      "url": "osf.io/kqcye/",
+      "description": "Open-access repository for research data, protocols, and materials across sports science. Supports storing and sharing physiological, performance, and psychological datasets from intervention studies in cycling, football, volleyball, athletics, and esports research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics",
+        "basketball",
+        "cycling",
+        "esports",
+        "football",
+        "volleyball"
+      ],
+      "language": null,
+      "paper_count": 9,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Baseball-Reference.com",
+      "url": "http://www.baseball-reference.com",
+      "description": "Comprehensive historical baseball statistics database containing career records, season statistics, and detailed play-by-play data for MLB players and teams. Essential resource for sabermetrics, performance analysis, and historical baseball research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 8,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "ESPN Sports Data",
+      "url": "http://ESPN.com",
+      "description": "Aggregated sports statistics and scores across basketball, baseball, and american football from ESPN's official coverage. Provides team and player statistics, game results, and performance metrics for NBA, MLB, and NFL analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "american_football",
+        "baseball",
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 7,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "IAAF World Records Database",
+      "url": "http://www.iaaf.org/",
+      "description": "Official World Athletics (formerly IAAF) database of world records and performance standards across track and field events. Provides historical records, progression data, and competition results for athletics analysis and pacing research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 7,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "FIBA Box Score Database",
+      "url": "http://www.fiba.basketball/",
+      "description": "Official FIBA basketball statistics including game box scores, player performance data, and continental championship records. Supports comparative analysis of regional playing styles and team performance strategies.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 5,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "StatsBomb Event Data",
+      "url": "https://statsbomb.com/",
+      "description": "Granular football event-level data including passes, shots, defensive actions, and player positioning. Enables advanced analytics like expected goals (xG) and decision-making evaluation in soccer.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 4,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "FIBA Official Archives",
+      "url": "https://archive.fiba.com",
+      "description": "FIBA's official archive of basketball championship records, rules changes, and historical competition data. Supports research on game evolution, rule impacts, and performance trends across continental competitions.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 7,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "http://www.fiba.com/",
+        "http://cn.fiba.com/"
+      ]
+    },
+    {
+      "name": "FIFA Match Centre",
+      "url": "https://www.fifa.com/en/match-centre/",
+      "description": "Official FIFA database providing football match results, player statistics, team formations, and detailed match reports from international tournaments. Supports performance analysis, injury tracking, and competitive strategy research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 6,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://img.fifa.com/image/upload/zijqly4oednqa5gffgaz.pdf",
+        "https://inside.fifa.com/technical/football-technology/resource-hub?id=810f07b9d0694f0c9e43b653cbc51031",
+        "https://digitalhub.fifa.com/m/4f40a98140d305e2/original/zijqly4oednqa5gffgaz-pdf.pdf"
+      ]
+    },
+    {
+      "name": "Hawkin Dynamics Cloud",
+      "url": "https://www.hawkindynamics.com/",
+      "description": "Cloud-based force plate data warehousing system capturing lower-body neuromuscular performance metrics (jump, sprint, strength tests). Provides normative reference data and objective benchmarks for athlete assessment across sports.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "athletics",
+        "basketball",
+        "football"
+      ],
+      "language": null,
+      "paper_count": 3,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "cloud.hawkindynamics.com"
+      ]
+    },
+    {
+      "name": "NHL.com Official Statistics",
+      "url": "http://nhl.com",
+      "description": "National Hockey League's official database of game statistics, player records, team performance, and scouting data. Supports ice hockey analytics research on team performance, coaching impact, and player development.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 3,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Statista Sports Database",
+      "url": "https://www.statista.com",
+      "description": "Commercial statistical database providing aggregated sports data, attendance figures, revenue information, and demographic analysis. Supports economics and marketing research in professional basketball and sports business.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 3,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Axivity AX6 Inertial Sensor",
+      "url": "https://axivity.com/",
+      "description": "Wearable inertial measurement unit capturing acceleration, gyroscope, and magnetometer data for movement analysis. Used for activity detection, running mechanics assessment, and athlete movement classification in athletics.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Baidu Map Geospatial Data",
+      "url": "https://map.baidu.com/",
+      "description": "Chinese geospatial and mapping platform providing location data for sports events and outdoor activity venues. Enables analysis of marathon distribution, jogging patterns, and environmental factors affecting athletic participation.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics",
+        "basketball",
+        "football"
+      ],
+      "language": null,
+      "paper_count": 4,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://baike.baidu.com",
+        "https://aistudio.baidu.com/datasetdetail/254098"
+      ]
+    },
+    {
+      "name": "Candis R Package",
+      "url": "http://aoki2.si.gunma-u.ac.jp/R/src/candis.R",
+      "description": "R statistical package implementing canonical discriminant analysis for basketball game statistics. Enables identification of performance variables that differentiate between regional basketball championships and competition levels.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": "R",
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "CLRS Algorithmic Reasoning Benchmark",
+      "url": "https://github.com/google-deepmind/clrs",
+      "description": "DeepMind's algorithmic reasoning benchmark library providing neural network models for complex reasoning tasks. Applied to football tactics analysis and strategic decision-making in soccer.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Euroleague.net",
+      "url": "https://www.euroleague.net",
+      "description": "Official Euroleague Basketball API and website providing comprehensive play-by-play game data, match statistics, and season information for European professional basketball competitions. Essential for analyzing team performance, game dynamics, and competitive trends in top-tier European basketball.",
+      "category": "api",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 3,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://live.euroleague.net/api/PlaybyPlay?gamecode=333&seasoncode=E2023"
+      ]
+    },
+    {
+      "name": "Experimental Motion Capture Data",
+      "url": "https://figshare.com/s/4c7b4fbfe1668a6d21e3",
+      "description": "Motion capture dataset containing kinematic measurements for cycling and golf biomechanics research. Enables detailed technical analysis of athlete movement patterns, swing mechanics, and performance optimization in both sports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cycling",
+        "golf"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "FEB (Federación Española de Baloncesto)",
+      "url": "www.feb.es",
+      "description": "Spanish Basketball Federation official statistics repository providing comprehensive match data, player statistics, and game performance metrics for Spanish professional basketball leagues. Key resource for analyzing Spanish basketball competition structure and player/team performance.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "FIBA Statistics Collection System",
+      "url": "http://www.archive.fiba",
+      "description": "International Basketball Federation's standardized statistical collection system used in major tournaments like EuroBasket. Provides consistent game-related statistical elements (shooting, rebounds, turnovers) for analyzing competition outcomes and team performance.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "FIFA Training Centre - Match Report Hub",
+      "url": "https://www.fifatrainingcentre.com/en/game/tournaments/fifa-womens-world-cup/2023/match-report-hub/post-match-summary-reports.php",
+      "description": "Official FIFA women's football match analysis reports providing detailed performance data including offensive indicators, running metrics, and phase-specific performance analytics for international tournaments.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Garmin Enduro",
+      "url": "https://www.garmin.com",
+      "description": "Wearable sports watch with advanced power measurement and performance monitoring capabilities for cycling. Enables collection of power data, training load, and physiological metrics for analyzing cycling performance and workout effectiveness.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Hungarian Basketball Federation Repository",
+      "url": "https://hunbasket.hu/",
+      "description": "Official Hungarian Basketball Federation database containing game statistics, player performance data, and match results from Hungarian professional basketball leagues. Supports analysis of offensive efficiency, positional roles, and team success metrics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "InStat Scout",
+      "url": "https://football.instatscout.com/",
+      "description": "Professional sports analytics platform providing detailed event-level data, player statistics, and performance metrics for basketball and football. Enables advanced performance analysis, tactical insights, and competitive benchmarking across leagues.",
+      "category": "api",
+      "access": "paid",
+      "sports": [
+        "basketball",
+        "football"
+      ],
+      "language": null,
+      "paper_count": 4,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://basketball.instatscout.com/"
+      ]
+    },
+    {
+      "name": "Lahman Baseball Database",
+      "url": "http://seanlahaman.com",
+      "description": "Comprehensive historical baseball statistics database covering player records, seasonal performance, and game outcomes. Standard resource for baseball analytics research including batting, pitching, and fielding historical analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Liga ASOBAL Official Website",
+      "url": "www.mibalonmano.com",
+      "description": "Spanish Handball League official statistics repository providing match data, player statistics, and game performance metrics. Primary data source for analyzing Spanish professional handball competition and player development patterns.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "handball"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NCAA Coaches Panel Ranking",
+      "url": "http://www.ncaa.com/rankings/wrestling/d1/coaches-panel",
+      "description": "Official NCAA ranking system providing expert-curated competitive rankings for collegiate sports. Used as a standard instrument for evaluating team strength, predicting tournament outcomes, and assessing competitive performance across divisions.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "wrestling",
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NFL Play-by-Play Data",
+      "url": "www.nfl.com",
+      "description": "Official National Football League play-by-play game data from NFL.com containing detailed event-level information for every game. Essential for analyzing game outcomes, turnovers, player performance, and injury patterns in American football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Romanian Athletic Federation Archive",
+      "url": "http://www.fra.ro/men-67/Arhiva.html",
+      "description": "Romanian Athletics Federation historical performance database containing competition results and athlete records. Supports research on individual athletic performance evolution, national talent development, and event-specific performance trends.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Strava",
+      "url": "https://www.strava.com",
+      "description": "Crowd-sourced fitness tracking platform capturing real-world cycling performance data including routes, power output, and time metrics from millions of recreational and professional cyclists. Enables analysis of training patterns and competitive cycling performance.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Supplementary Material Dataset",
+      "url": "https://hdl.handle.net/10481/104892",
+      "description": "Research dataset containing performance and demographic data for ice hockey and basketball, including relative age effects in ice hockey coaching and team resilience metrics. Supports analysis of competitive structure and team performance dynamics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey",
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Vicon Nexus",
+      "url": "vicon.com",
+      "description": "Motion capture and biomechanics analysis software that uses optical tracking systems to measure athlete movement patterns, kinematics, and force data. Widely used for analyzing running mechanics and skating performance in research contexts.",
+      "category": "tool",
+      "access": "paid",
+      "sports": [
+        "athletics",
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "WhoScored",
+      "url": "https://www.whoscored.com/",
+      "description": "Comprehensive football event and performance dataset containing detailed match statistics, player ratings, and action-level data from major European leagues. Enables analysis of playing patterns, team tactics, and individual player performance metrics.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "2013 Chevron Houston Marathon Results",
+      "url": "http://results.houstonmarathon.com/2013/",
+      "description": "Marathon race results dataset containing individual participant times, splits, and demographic information. Useful for studying pacing strategies, performance variation, and comparative analysis across runner populations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "2018-2019 High School Athletics Participation Survey",
+      "url": "https://www.nfhs.org/media/1020412/2018-19_participation_survey.pdf",
+      "description": "National survey of high school sports participation across the United States, tracking participation numbers by sport and demographics. Provides aggregate data for studying sports participation trends and gender distribution in youth athletics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "2024 TCS London Marathon Results",
+      "url": "https://results.tcslondonmarathon.com/2024/",
+      "description": "Official race results and timing data from the London Marathon including individual split times and finishing information. Enables longitudinal and cross-sectional analysis of marathon performance, pacing patterns, and endurance running metrics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "247Sports Recruiting Class Ratings",
+      "url": "https://247sports.com/",
+      "description": "Comprehensive database of college football recruit evaluations and composite recruiting rankings. Provides player ratings, team recruiting class rankings, and recruitment outcomes for analyzing talent acquisition and player development trajectories.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "BNK FearX Academy Curriculum",
+      "url": "https://fearxacademy.com/",
+      "description": "Educational materials and curriculum documentation from a League of Legends esports academy. Provides insight into professional esports training methodologies, coaching structures, and player development programs in competitive gaming.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Dplus Esports Academy Curriculum",
+      "url": "https://dplusesports.academy/",
+      "description": "Training curriculum and educational materials from a professional League of Legends esports academy. Documents coaching approaches and skill development frameworks used in elite esports player preparation.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "DRX Esports Academy Curriculum",
+      "url": "https://academy.drx.gg/",
+      "description": "Educational and training materials from a top-tier League of Legends esports organization. Contains information on academy structure, player development pathways, and competitive training methodology in professional esports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "GameCoach Academy Curriculum",
+      "url": "https://gamecoach.pro/",
+      "description": "Esports academy curriculum and training documentation focused on League of Legends player development. Provides data on coaching systems and progression frameworks in professional esports training environments.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Gen.G Global Academy Curriculum",
+      "url": "https://ggacademy.gg/",
+      "description": "Training and curriculum materials from a major esports organization's academy program for League of Legends. Documents professional player development approaches and competitive training standards in elite esports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Seoul Game Academy Curriculum",
+      "url": "https://seoulgame.co.kr/",
+      "description": "Educational materials from a Korean esports academy focused on League of Legends training and player development. Provides insight into coaching methodologies and career trajectory frameworks in professional esports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://www.esports-academy.co.kr/"
+      ]
+    },
+    {
+      "name": "T1 Academy Curriculum",
+      "url": "http://t1a.gg/",
+      "description": "Training materials and curriculum from T1's official esports academy for League of Legends. Documents the development systems and methodologies used by one of the most successful professional esports organizations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Dribbling Determinants Analysis",
+      "url": "https://github.com/Alek050/dribbling_determinants",
+      "description": "GitHub repository containing code and analysis for identifying factors that determine successful one-on-one dribbling in football. Includes data processing scripts for analyzing dribble mechanics and contextual variables affecting dribble success.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "AAGPBL Official Records",
+      "url": "https://www.aagpbl.org/seasons",
+      "description": "Complete historical database of All-American Girls Professional Baseball League seasons, statistics, and records. Provides comprehensive data for studying professional women's baseball performance, career trajectories, and league dynamics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Alliance of European Hockey Clubs",
+      "url": "www.eurohockeyclubs.com",
+      "description": "Database of European ice hockey club information and competition data, providing historical records and statistics for analyzing men's ice hockey championships and performance dynamics across European leagues.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "allsport-tv.com video database",
+      "url": "www.allsport-tv.com",
+      "description": "Video archive and database of basketball matches and competitions, enabling analysis of game footage for tactical studies, competition structure analysis, and performance evaluation in basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "alltime-athletics.com",
+      "url": "https://www.alltime-athletics.com",
+      "description": "Comprehensive athletics performance records database containing historical track and field results and rankings, used for analyzing performance trends, doping effects, and long-term athlete development patterns.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "footstats",
+      "url": "https://github.com/alokpurohit18/footstats",
+      "description": "GitHub repository for football statistics and predictive analytics, implementing expected goals (xG) algorithms and analytical frameworks for evaluating team and player performance in football.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "AMTI force platforms",
+      "url": "https://www.amti.biz",
+      "description": "Laboratory instrument for measuring ground reaction forces and biomechanical data during athletic movements, essential for analyzing running mechanics, impact loading, and footwear effects in athletics.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Ansys Fluent",
+      "url": "https://www.ansys.com/products/fluids/ansys-fluent",
+      "description": "Computational fluid dynamics software used for aerodynamic analysis and optimization of cycling equipment, enabling simulation-based design improvements for helmets and other cycling gear.",
+      "category": "tool",
+      "access": "paid",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "ANT+ protocol",
+      "url": "https://www.thisisant.com/developer/components/antusb-m",
+      "description": "Wireless communication protocol for sports sensors and wearable devices in cycling, enabling real-time data collection from training equipment for personalized highlight generation and performance analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Antidoping.cz database",
+      "url": "http://www.antidoping.cz/dopingova_kontrola_pripady.php",
+      "description": "Czech Anti-Doping Commission database containing doping control records and test results, providing data for analyzing anti-doping policy effectiveness and performance trends in athletics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Arduino Pro Mini",
+      "url": "https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardProMini",
+      "description": "Microcontroller platform for building custom wearable sensor systems and real-time biomechanical feedback devices, used in athletics for training applications like hammer throw technique monitoring.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "ASC Dukla Praha athletic history",
+      "url": "http://www.duklasport.cz/?ponukaid=34",
+      "description": "Historical records of Czechoslovak Army Sports Club athletic performances and development, providing longitudinal data for analyzing running performance evolution and training effects over decades.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "soccer-fatigue-model",
+      "url": "https://github.com/askoki/soccer-fatigue-model",
+      "description": "GitHub repository implementing biophysical muscle fatigue models for dynamic soccer contexts, enabling analysis of player fatigue effects on performance and tactical decision-making during matches.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Athlete Game Lost",
+      "url": "https://www.athletegamelost.com",
+      "description": "Database documenting Major League Baseball player injuries and games missed, enabling analysis of injury impacts on career trajectories and team performance in baseball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "athlete_report_generator",
+      "url": "https://github.com/BartWil/athlete_report_generator",
+      "description": "GitHub repository for generating interpretable machine learning-based athlete profiles from multi-domain field assessment data in football, enabling motor profiling and performance prediction.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Baseball Reference",
+      "url": "https://www.baseballreference.com/",
+      "description": "Comprehensive baseball statistics database with historical records of players, teams, and seasons, widely used for analyzing performance trends, player transactions, and network analysis in baseball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Baseballprojection.com",
+      "url": "https://www.baseballprojection.com",
+      "description": "Baseball statistics and projection database including defensive efficiency rating (DER) data, used for analyzing fielding performance and evaluating defensive metrics across baseball eras.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Basketball Insiders",
+      "url": "http://www.basketballinsiders.com/",
+      "description": "A basketball news and statistics website providing NBA team performance data, salary information, and analysis resources. Used as a source for NBA regular season statistical analysis and team performance metrics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Basketball-Reference.com",
+      "url": "www.BasketballReference.com",
+      "description": "Comprehensive basketball statistics database offering detailed NBA player, team, and season-level performance data. A primary resource for basketball analytics research and historical performance analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Basketnews.lt",
+      "url": "https://www.basketnews.lt",
+      "description": "Lithuanian basketball news and statistics portal providing game results, team statistics, and match data for European basketball analysis, including home court advantage studies.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Bayesian Optimization",
+      "url": "https://github.com/fmfn/BayesianOptimization",
+      "description": "Python library implementing Bayesian optimization algorithms for hyperparameter tuning and parameter search. Applicable to sports analytics model optimization across various sports.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "The Prediction Tracker NCAA Archive",
+      "url": "https://www.thepredictiontracker.com/predncaa.php",
+      "description": "Historical database of NCAA college football predictions and outcomes. Provides prediction records and actual results for validating predictive models in college football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "BetExplorer",
+      "url": "www.betexplorer.com",
+      "description": "Betting odds and sports results aggregation platform providing historical match data, odds, and outcomes across multiple sports. Used for analyzing betting markets and team performance correlation.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "BigDataBall",
+      "url": "www.bigdataball.com",
+      "description": "Basketball analytics platform offering detailed play-by-play data, player tracking information, and advanced statistics for NBA and college basketball research.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Biosen C-line Blood Lactate Analyzer",
+      "url": "https://www.ekinc.de/",
+      "description": "Laboratory instrument for measuring blood lactate concentration during exercise testing. Used in physiology research to assess aerobic capacity and training response in running and athletics.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Body Rocket On-Bike Sensor System",
+      "url": "https://bodyrocket.cc/",
+      "description": "Wearable sensor system with four load cell force sensors for measuring cycling dynamics and aerodynamic drag during performance testing. Provides real-time biomechanical feedback during on-bike assessment.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Borussia Dortmund Financial Reports",
+      "url": "https://aktie.bvb.de/en/publications/annual-reports-2 and https://aktie.bvb.de/en/publications/semi-annual-financial-reports",
+      "description": "Annual and semi-annual financial statements from a major German football club (BVB). Provides player valuation and asset accounting data for analyzing footballer value in club financial records.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Boston Athletic Association Qualifying Standards",
+      "url": "http://www.baa.org/races/boston-marathon/participant-information/qualifying/top-qualifying-races.aspx",
+      "description": "Official Boston Marathon qualification time standards by age and gender. Dataset documenting eligibility criteria used to analyze gender-based performance effects on marathon participation.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Novo Basquete Brasil (NBB)",
+      "url": "www.cbj.com.br",
+      "description": "Official website of the Brazilian National Basketball League providing league statistics, team records, and game results. Also includes judo competition data from the Brazilian sports federation.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball",
+        "boxing_mma"
+      ],
+      "language": null,
+      "paper_count": 3,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "http://www.cbb.com.br",
+        "www.lnb.com.br"
+      ]
+    },
+    {
+      "name": "Brooks Baseball",
+      "url": "www.brooksbaseball.net",
+      "description": "Detailed baseball pitch-by-pitch database with pitch classification, velocity, and movement data collected from PITCHf/x systems. Primary resource for analyzing pitching mechanics and performance in MLB.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Brooks Ghost 6 Running Shoe",
+      "url": "https://www.brooksrunning.com",
+      "description": "Cushioned running shoe used as a test instrument in biomechanics research. Enables controlled studies of shoe properties on impact loading, leg stiffness, and running mechanics.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NFL Play Classification GNN",
+      "url": "https://github.com/CaduRomaniello/NFL-play-classification-GNN",
+      "description": "GitHub repository implementing Graph Neural Networks for classifying NFL plays using player tracking data. Enables automated play-type detection and pattern recognition from tracking coordinates.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "CAESAR Project Anthropometric Database",
+      "url": "https://www.sae.org/standardsdev/tsb/cooperative/caesar.htm",
+      "description": "Comprehensive anthropometric measurement database containing detailed body dimension data used for equipment design and optimization. Essential for cycling aerodynamics research, helmet design, and biomechanical modeling to improve athletic performance and safety.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Cap Friendly",
+      "url": "https://www.capfriendly.com",
+      "description": "Ice hockey salary cap and contract database providing detailed information on player compensation, contract terms, and team payroll data. Enables analysis of coaching staff compensation, contract structures, and their relationships to team performance in professional ice hockey.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Cardiolab +",
+      "url": "http://www.dx-sys.com.ua/en/products/",
+      "description": "Specialized cardiovascular and physiological monitoring software for measuring athletic performance metrics. Used in gymnastics and team sport contexts to assess physiological responses, training load, and aerobic capacity during competition and training.",
+      "category": "tool",
+      "access": "paid",
+      "sports": [
+        "gymnastics",
+        "multi_sport"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "CDC U.S. Birth Data",
+      "url": "https://www.cdc.gov.us",
+      "description": "U.S. Centers for Disease Control national birth registry and demographic statistics. Provides population-level birth date data essential for analyzing relative age effects and demographic patterns in youth and professional sports populations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball",
+        "multi_sport"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "CBS Israeli Birth Data",
+      "url": "https://www.cbs.gov.il/EN/Pages/default.aspx",
+      "description": "Central Bureau of Statistics Israel national birth registry and demographic data. Provides Israeli population birth records needed to analyze relative age effects and age-related patterns in female basketball and other sports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball",
+        "multi_sport"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Champion Data Chinese Super League Database",
+      "url": "http://data.champdas.com/person/rank-1-2021.html",
+      "description": "Player statistics and performance metrics database for Chinese Super League football. Contains comprehensive player stats enabling exploratory analysis, player evaluation models, and statistical profiling of soccer performance across multiple dimensions.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Lactate Pro 2",
+      "url": "http://www.championdata.com.au",
+      "description": "Portable lactate analyzer instrument measuring blood lactate levels during exercise. Used in football and gymnastics to assess metabolic responses, training intensity, aerobic fitness, and physiological demands during competition and training protocols.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "football",
+        "gymnastics"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "http://www.lactatepro.com.au/lactatepro/PRODUCT.html"
+      ]
+    },
+    {
+      "name": "China Marathon Website",
+      "url": "http://www.runchina.org.cn/",
+      "description": "Comprehensive database of marathon race results, event information, and participation data across China. Covers athletics marathon events and related national sports data, enabling temporal and spatial analysis of running events and athletic performance trends.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics",
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 3,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "http://www.athletics.org.cn",
+        "http://www.softball.org.cn/"
+      ]
+    },
+    {
+      "name": "Chinese Taipei Baseball Association",
+      "url": "http://www.ctba.org.tw/",
+      "description": "Official baseball association website providing tournament results, team rankings, and game data for Taiwanese high school and competitive baseball. Supplies match results and tournament structure data for baseball analytics and tournament ranking analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "ChirpStack LoRaWAN Network Server",
+      "url": "https://www.chirpstack.io/",
+      "description": "Open-source Long Range Wide Area Network (LoRaWAN) server platform for deploying IoT tracking systems. Enables real-time athlete positioning and performance monitoring at large-scale events like marathons through distributed wireless sensor networks.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "CIES Football Observatory InStat Index",
+      "url": "https://football-observatory.com/IMG/sites/instatindex/",
+      "description": "Football performance analytics platform providing event-level data, player valuations, and match statistics. Supplies detailed event data and performance metrics enabling advanced analysis of defensive actions, player impact, and match dynamics in soccer.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Cleaning the Glass",
+      "url": "https://cleaningtheglass.com/stats/lineups#tab-four_factors",
+      "description": "Advanced basketball analytics website providing lineup data, four-factors statistics, and team composition metrics. Enables analysis of lineup usage patterns, lineup effectiveness, and topological properties of NBA team rotations and player combinations.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Coaches Database",
+      "url": "https://www.coachesdatabase.com/",
+      "description": "Comprehensive database of college football coaching staff, contact information, and career history. Provides detailed coaching staff data enabling research on coaching recruitment, career trajectories, and the impact of coaching decisions on recruiting outcomes.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "College Sport Racial and Gender Report Cards",
+      "url": "http://www.tidesport.org/",
+      "description": "Demographic and diversity analysis database tracking racial and gender representation in college sports leadership and coaching. Provides institutional-level data on head coaches and assistant coaches enabling analysis of diversity and equity in college football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Smartphone Inertial Sensors ML for Athletics",
+      "url": "https://github.com/BeatriceDL?tab=repositories",
+      "description": "GitHub repository containing machine learning code for estimating athletic power variables using smartphone accelerometer and gyroscope sensors. Enables real-time power estimation and sprint/jumping performance analysis in athletics using accessible mobile device technology.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Corsica Hockey",
+      "url": "https://corsica.hockey",
+      "description": "A comprehensive ice hockey analytics platform providing NHL player and team statistics, advanced metrics, and historical data for performance analysis and research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Cot's Baseball Contracts",
+      "url": "http://legacy.baseballprospectus.com/compensation/cots/",
+      "description": "A detailed database of Major League Baseball player contracts and compensation data, enabling research on player wages, contract structures, and labor economics in professional baseball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "CPI Inflation Data",
+      "url": "https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-",
+      "description": "Consumer Price Index historical data from the Federal Reserve, used to adjust and normalize monetary values in sports economics research across different time periods.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Cricbuzz",
+      "url": "https://www.cricbuzz.com/",
+      "description": "A cricket statistics and match information platform providing detailed play-by-play data, player performance metrics, and coverage of franchise leagues like the IPL for analytical research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cricket"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Dota 2 Match Outcomes",
+      "url": "https://github.com/Crossofglory/Dota-2Match-Outcomes",
+      "description": "A GitHub repository containing Dota 2 esports match data and in-game chat logs with associated outcome labels, enabling machine learning models for real-time match outcome prediction.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "CTBC Black Panther Cup Database",
+      "url": "https://blackpanthercup.tw/",
+      "description": "Official match statistics and tournament results from Taiwan's high school baseball championship, providing tournament structure data for ranking and network analysis research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Cycling Safety Survey Tool",
+      "url": "https://ShinyApps.io",
+      "description": "A web-based survey application built on Shiny for collecting spatial and demographic data on cycling safety perceptions, enabling quantitative analysis of cyclist concerns and infrastructure needs.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "SKS-Transformer Activity Recognition",
+      "url": "https://github.com/cw-feng/SKS-Transformer-Multi-scale-and-direction-aware-attention-for-activity-recognition",
+      "description": "A GitHub repository containing a deep learning model (SKS-Transformer) for recognizing golf swing activities from inertial sensor data with multi-scale attention mechanisms.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "golf"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Cyclists' Workouts and Race Dataset",
+      "url": "https://www.ise.bgu.ac.il/clusters/CyclistRaceData.zip",
+      "description": "A dataset containing professional cyclists' training workouts and race performance data, enabling optimization research for team cyclist assignment and race preparation planning.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Czech Figure Skating Results Database",
+      "url": "www.skating-results.live",
+      "description": "A competitive results database from the Czech Figure Skating Association's youth training program, providing performance data to analyze physical determinants of competitive success.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "figure_skating"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Czech Ministry Sport Financing Data",
+      "url": "http://www.msmt.cz/sport/statnipodpora-sportu-pro-rok-2014",
+      "description": "Government sports funding and support data from the Czech Ministry of Education, Youth and Sports, used to contextualize athlete performance trends in relation to resource allocation.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Dartfish Connect",
+      "url": "http://goo.gl/PJi2tv",
+      "description": "A video analysis platform providing access to athletics competition footage and biomechanical data, enabling retrospective analysis of technique evolution in track and field events.",
+      "category": "tool",
+      "access": "freemium",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "WebPlotDigitizer",
+      "url": "https://automeris.io",
+      "description": "A data extraction tool that converts graphical data from images and PDFs into numerical datasets, enabling digitization of historical soccer biomechanical research for fatigue modeling.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Wrestling Observer Newsletter",
+      "url": "http://mmapayout.com/blue-book/pay-per-view/",
+      "description": "A professional wrestling and MMA industry publication providing pay-per-view buy data and business metrics, enabling analysis of celebrity fighter economic value and market impact.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "boxing_mma"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "DBL Indonesia Basketball Statistics",
+      "url": "https://www.dbl.id/statistics",
+      "description": "Official match statistics database from Indonesia's premier basketball league (DBL), providing player performance data for predictive modeling of young athlete prospects and talent evaluation.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Deneyap Development Board (240 MHz Dual Core)",
+      "url": "https://cdn.deneyapkart.org/media/upload/userFormUpload/NqjMEbvV2XUXk19JF68DzXA7H8Ok9Leo.pdf",
+      "description": "A microprocessor-based development board used for wearable sensor systems in basketball. Enables real-time inertial measurement unit (IMU) data collection through a motion-tracking vest for action recognition and performance analysis.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "DFB Membership Data",
+      "url": "https://www.dfb.de/ueber-uns/der-dfb/mitglieder",
+      "description": "Official German Football Association (Deutscher Fußball-Bund) membership statistics and records. Provides comprehensive data on player registration, participation, and demographic information across German football leagues and youth programs.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Digital Elevation Model (DEM) - GSCloud",
+      "url": "www.gscloud.cn",
+      "description": "Geospatial elevation data sourced from GSCloud that characterizes terrain features. Useful for analyzing how environmental factors like topography influence outdoor running activity patterns and route selection.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NASA SRTM3 Digital Elevation Model",
+      "url": "gpsvisualizer.com",
+      "description": "Global satellite-derived elevation data from NASA's Shuttle Radar Topography Mission. Used to analyze how altitude and terrain characteristics affect pacing strategies and physiological load in mountain running events.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Digital Terrain Model of Poland",
+      "url": "gugik.gov.pl",
+      "description": "High-resolution terrain elevation data for Poland from the national geodetic database. Enables analysis of GPS accuracy challenges and elevation measurement errors in mountain and trail running contexts.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "DINED Anthropometric Database",
+      "url": "https://dined.io.tudelft.nl/en/mannequin/introduction",
+      "description": "Comprehensive anthropometric measurements and human body dimension data from TU Delft. Used for creating digital mannequins and optimizing equipment design, including cyclist helmet aerodynamic simulations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Dokter Entropy Rating System",
+      "url": "http://www.dokterentropy.com/colfb.html",
+      "description": "Advanced statistical rating and prediction instrument for college football teams. Provides entropy-based metrics for evaluating team strength and generating probabilistic game outcome predictions.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "DP World Tour Strokes Gained Statistics",
+      "url": "www.europeantour.com/dpworld-tour/stats/",
+      "description": "Official European professional golf tour (DP World Tour) performance statistics including strokes gained metrics by category. Provides detailed shot-by-shot analysis data for elite male golfers across tournaments.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "golf"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Dutch National Sprint Triathlon Championships",
+      "url": "http://nl.mylaps.com/evenementen/uitslagen/2018",
+      "description": "Official race results and timing data from Dutch national-level sprint triathlon competitions. Contains participant performance metrics across swim, bike, and run disciplines for triathlon talent assessment.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "DUV Race Database",
+      "url": "https://statistik.d-u-v.org",
+      "description": "German Ultra Marathon Association (Deutscher Ultramarathon Verband) comprehensive race results and ultramarathon performance data. Tracks thousands of ultramarathon events and finisher records for performance analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "DUV Ultra Marathon Statistics",
+      "url": "https://statistik.d‐u‐v.org/",
+      "description": "Distance records and performance database from the German Ultra Marathon Association. Contains historical ultramarathon race data and finishing times used for trend analysis and athlete performance prediction.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Education Commission of the States",
+      "url": "https://www.ecs.org",
+      "description": "Educational institution database and statistics covering U.S. schools and colleges. Used as reference data for demographic and age analysis studies of athletes in basketball leagues.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "where-do-the-robot-umpires-see",
+      "url": "https://github.com/eis-lab/where-do-the-robot-umpires-see",
+      "description": "GitHub repository analyzing automated ball-strike detection systems in professional baseball. Contains code and analysis examining the spatial accuracy and decision patterns of automated umpire systems.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Elite Long Jumpers with Below-Knee Prostheses",
+      "url": "https://dshs-koeln.sciebo.de/index.php/s/K8wY40iRvJyhqnH",
+      "description": "Biomechanical analysis dataset and code for Paralympic elite long jumpers with prosthetic limbs. Enables comparative study of jumping technique, approach velocity, and take-off mechanics in adapted athletics.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "engsoccerdata",
+      "url": "github.com/jalapic/engsoccerdata",
+      "description": "GitHub repository containing historical English football match results, scores, and league standings data. Comprehensive dataset enabling time-series analysis and machine learning applications for soccer prediction.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "EPV (Expected Possession Value)",
+      "url": "https://github.com/Friends-ofTracking-Data-FoTD/LaurieOnTracking",
+      "description": "GitHub repository containing Expected Possession Value calculations and tutorials for football match analysis. Provides code and methods for valuing possessions in soccer using tracking data, enabling quantitative assessment of player actions and team strategies.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "ESPN NBA Database",
+      "url": "http://espn.go.com/nba/",
+      "description": "Comprehensive online database of NBA player statistics, team records, game results, and performance metrics. Provides historical and current season data for basketball research, player performance analysis, and injury/return-to-play tracking.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Esports Earnings",
+      "url": "www.esportsearnings.com/",
+      "description": "Database tracking tournament prize money, career earnings, and competitive performance data for esports players across multiple games. Enables analysis of esports career trajectories, earnings patterns, and player longevity in competitive gaming.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "EuroBasket",
+      "url": "https://www.eurobasket.com",
+      "description": "Official website and database for European basketball championships with tournament results, player statistics, and team performance data. Provides match-level and player-level analytics for European professional basketball research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "European Athletics",
+      "url": "https://www.european-athletics.com/",
+      "description": "Official database and information portal for European track and field competitions, athlete records, and competition results. Contains anthropometric data, performance metrics, and results for elite athletics analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "European Athletics Association (EAA)",
+      "url": "www.european-athletics.org",
+      "description": "Organizational database for European athletics featuring competition statistics, athlete records, and performance data across track and field events. Supports analysis of competition strategies and athlete performance in jumping events.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "European Athletics athletes database",
+      "url": "https://www.europeanathletics.org/athletes/",
+      "description": "Athlete-focused database providing personal records, competition histories, and performance metrics for European track and field competitors. Enables statistical analysis of individual and event-level performance in jumping disciplines.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "European Basketball Championship 2011 (U-18)",
+      "url": "http://u18women.fibaeurope.com/en/",
+      "description": "Tournament database for the 2011 FIBA Europe Under-18 Women's Basketball Championship containing game statistics, player performance data, and match results. Provides youth basketball performance metrics for positional and shooting analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "European Handball Federation statistics",
+      "url": "http://home.eurohandball.com/",
+      "description": "Official statistics repository for European handball competitions including match results, player performance data, and technical metrics. Supports analysis of tactical preparation and technical skill evaluation in junior handball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "handball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Expected Threat (xT)",
+      "url": "https://karun.in/blog/expected-threat.html",
+      "description": "Football analytics metric and methodology that measures the threat (goal-scoring potential) created by player actions on the ball. A defensive valuation instrument that quantifies the effectiveness of tackles, interceptions, and defensive positioning in soccer.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Expert ratings data (Soccer Digest Web J1 Rating)",
+      "url": "https://www.soccerdigestweb.com",
+      "description": "Japanese football database containing expert subjective player ratings and performance assessments for J1 League matches. Provides expert-curated valuation data complementing event-based metrics for soccer player analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Federal Reserve Economic Data (FRED)",
+      "url": "https://fred.stlouisfed.org/",
+      "description": "Macroeconomic time series database maintained by the Federal Reserve with economic indicators and data. Provides contextual economic variables for predicting NFL stadium attendance patterns and fan behavior.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "FIBA LiveStats",
+      "url": "https://www.fibalivestats.com/",
+      "description": "Real-time and historical basketball statistics platform for international competitions including player and team performance metrics. Enables analysis of player performance across different competitive contexts and leagues.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "FIFA Index",
+      "url": "fifaindex.com",
+      "description": "Database of FIFA video game player ratings and attributes used as proxy data for real-world football player performance. Provides machine-readable player characteristic data for building predictive models of match outcomes.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "FIG Code of Points 2013-2016",
+      "url": "https://www.fig-aerobic.com/attachment/407618/",
+      "description": "Official International Gymnastics Federation scoring rules and point allocation system for aerobic gymnastics competitions. Establishes the scoring framework and difficulty valuations necessary for analyzing elite aerobic gymnastics performance and judging.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "gymnastics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Fitlight Technology System",
+      "url": "https://www.fitlighttraining.com/",
+      "description": "A reactive agility training system that uses LED targets to measure and improve cognitive-motor response in athletes. Used in basketball research to assess the effectiveness of exercise programs incorporating visual-reactive training stimulus.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Flashscore.com",
+      "url": "www.flashscore.com",
+      "description": "Live score tracking and sports data platform providing match results, statistics, and historical data. Serves as a data source for basketball analytics studies analyzing home-court advantage and win percentage trends across leagues.",
+      "category": "api",
+      "access": "freemium",
+      "sports": [
+        "basketball",
+        "football",
+        "tennis",
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Handball Match Analysis Repository",
+      "url": "https://github.com/florianfelice/HandballAnalysis",
+      "description": "GitHub repository containing code and analysis tools for handball match prediction using machine learning and Bayesian statistical methods. Enables automated feature extraction and team strength estimation for match outcome forecasting.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "handball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Foot Locker Cross-Country Championships 2018 Results",
+      "url": "http://www.wisconsinrunner.com/results/flcc2018/results/nationals/GirlsChampionship.pdf and http://www.wisconsinrunner.com/results/flcc2018/results/nationals/BoysChampionship.pdf",
+      "description": "Historical race results dataset from the 2018 Foot Locker Cross-Country Championships. Provides performance data for analyzing elite distance running performance and competitive differences across athletes in track and field athletics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Football Database",
+      "url": "footballdatabase.com",
+      "description": "Comprehensive soccer match database containing historical results, team statistics, and player information. Supports machine learning applications for match outcome prediction and performance analysis in football.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "ForceDecks Max Force Plate System",
+      "url": "https://www.valdperformance.com/",
+      "description": "Advanced force measurement instrument for capturing ground reaction forces during athletic movements like vertical jump testing. Used in basketball research to analyze countermovement jump biomechanics and compare athlete force-time profiles.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "basketball",
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "FTC Ferencváros Annual Financial Reports",
+      "url": "https://www.fradi.hu/download/z/fb/jv6mv.pdf; https://www.fradi.hu/upload/d/9n/d065o.pdf; https://www.fradi.hu/upload/s/f2/fj6ml.pdf; https://www.fradi.hu/upload/t/jo/j5sy9.pdf; https://www.fradi.hu/upload/a/ra/rs4yo.pdf",
+      "description": "Official financial and operational documentation from a major European football club covering multiple seasons. Primary data source for analyzing player asset valuations and financial reporting practices in professional football organizations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Functional Movement Screen (FMS) Kit",
+      "url": "https://www.functionalmovement.com/",
+      "description": "Standardized movement assessment tool measuring functional mobility and stability through seven bodyweight exercises. Used in football athlete profiling to evaluate motor control and identify injury risk factors using machine learning interpretation.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "football",
+        "multi_sport"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Gallup Survey Data on Sports Preferences",
+      "url": "https://news.gallup.com/poll/4735/sports.aspx",
+      "description": "National survey data tracking American sports viewership and fan preferences across decades. Provides demographic context for studying historical trends and disparities in baseball, including racial representation in professional sports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball",
+        "multi_sport"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "gbm: Generalized Boosted Regression Models",
+      "url": "https://CRAN.R-project.org/package=gbm",
+      "description": "R package implementing gradient boosting machine learning algorithms for predictive modeling. Applied in American football research for forecasting turnover probability based on game situation variables.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "German Athletics Association Database",
+      "url": "https://www.leichtathletik.de/",
+      "description": "Official database and records from the German Athletics Association (Deutscher Leichtathletik-Verband) tracking junior and senior track and field performance. Source for evaluating talent identification systems and youth athlete development in athletics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Basketball ML Performance Forecasting Repository",
+      "url": "github.com/gpapageorgiouedu/Evaluating-the-Effectiveness-of-Machine-Learning-Models-for-Performance-Forecasting-in-Basketball",
+      "description": "GitHub repository containing implementations and datasets for evaluating machine learning models in basketball performance prediction. Enables comparative analysis of different algorithms for forecasting player and team metrics.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Association Rules Mining Dataset",
+      "url": "https://github.com/vsarlis/associasionrules",
+      "description": "GitHub dataset repository for applying association rule mining algorithms to basketball analytics. Supports discovery of patterns in recovery behaviors and economic impacts from game scheduling and player availability.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Skeletal Pose to Activity Classifier",
+      "url": "github.com/jwill2385/skeletal-pose-to-activity-classifier/",
+      "description": "GitHub code repository implementing neural network models for classifying basketball player activities from skeletal pose estimation data. Enables analysis of pose input variations and their impact on activity recognition accuracy.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "GMM Basketball Shot Charts",
+      "url": "https://github.com/luca-scr/GMMBasketShotCharts",
+      "description": "R package implementing Gaussian Mixture Model approach for spatial estimation and visualization of basketball shot charts. Enables model-based analysis of shooting patterns and court location effectiveness in basketball.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "GMTSAR Dataset",
+      "url": "https://topex.ucsd.edu/gmtsar/",
+      "description": "A radar image processing dataset used for spatial analysis and computer vision applications in sports contexts. This resource provides synthetic aperture radar (SAR) imagery that can be applied to tracking and monitoring in basketball game environments.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Google Drive",
+      "url": "https://maps.google.com",
+      "description": "Cloud storage and data sharing platform used by sports researchers to host and distribute datasets, including NBA playoff statistics, Olympic athletics records, American football broadcast transcripts, and youth football competition data across multiple sports.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "basketball",
+        "athletics",
+        "american_football",
+        "football"
+      ],
+      "language": null,
+      "paper_count": 6,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://play.google.com/store/apps/details?id=com.dynamics.hawkin.hawkin",
+        "https://sites.google.com/site/rscihoops/home",
+        "https://www.google.com/earth/about/versions/",
+        "https://drive.google.com",
+        "https://images.google.com"
+      ]
+    },
+    {
+      "name": "Google Pixel Watch 2",
+      "url": "https://www.qualcomm.com/products/mobile/snapdragon/wearables/wearables-device-finder/pixel-watch-2",
+      "description": "A smartwatch device with integrated sensors (heart rate, GPS, accelerometer) for real-time biometric tracking and performance monitoring in endurance sports like marathon running and long-distance athletics.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "GPT-4o",
+      "url": "https://platform.openai.com/",
+      "description": "A large language model API from OpenAI capable of processing and summarizing complex structured data. Used in esports analytics to automatically generate insights from League of Legends match data and game statistics.",
+      "category": "library",
+      "access": "freemium",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Grid WAR Metric",
+      "url": "https://gridwar.xyz",
+      "description": "An advanced baseball analytics metric that reimagines Wins Above Replacement (WAR) specifically for starting pitchers. Provides more granular performance evaluation by accounting for context-dependent pitcher contributions.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Hack-a-Stat",
+      "url": "https://hackastat.eu/en/EuroLeague-stats/",
+      "description": "A basketball statistics database providing detailed EuroLeague performance data including player and team metrics. Enables advanced statistical analysis of basketball lineups and their efficiency across European professional competition.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Lafayette Hand-Held Dynamometer",
+      "url": "https://lafayetteinstrument.com/",
+      "description": "A portable measurement instrument for quantifying muscular strength and force production in football players. Used in field assessments to profile athlete motor capabilities and inform training and injury prevention strategies.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "handball-base.com",
+      "url": "www.handball-base.com",
+      "description": "A comprehensive handball statistics database containing match results, player performance metrics, and team data. Supports machine learning applications for match prediction and statistical team strength estimation in handball.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "handball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Hashtag Basketball NBA Injury Database",
+      "url": "https://hashtagbasketball.com/nba-injury",
+      "description": "A specialized NBA injury database tracking player injuries, surgery details, and return-to-play timelines. Enables research on rehabilitation outcomes and performance recovery patterns following operative treatments in professional basketball.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "HBStatz",
+      "url": "www.hbstaz.is",
+      "description": "An Icelandic handball statistics platform providing detailed match and player performance data. Enables analysis of tactical shot selection strategies and decision-making patterns in professional handball competition.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "handball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "HealthReact Platform",
+      "url": "https://www.healthreact.eu/",
+      "description": "A health data aggregation platform providing access to Fitbit wearable sensor data (heart rate, step count, sleep) for longitudinal athlete monitoring. Enables biomechanical and epidemiological studies of running injuries like Achilles tendinopathy.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Hockey Stat Cards",
+      "url": "https://hockeystatcards.com/",
+      "description": "An ice hockey statistics database providing detailed player and team performance metrics. Supports longitudinal analysis of psychological states and their relationships with athletic performance in professional hockey.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Hoka Conquest Running Shoe",
+      "url": "https://www.hokaoneone.com",
+      "description": "A highly cushioned running shoe used as a test instrument in biomechanical studies. Enables research on how footwear design affects leg stiffness, impact loading, and injury risk in distance runners.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "HoopsHype.com",
+      "url": "www.HoopsHype.com",
+      "description": "A basketball database and news platform providing NBA salary data, draft information, and team statistics. Enables economic and performance analytics research examining relationships between analytics investment and team success.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Hopkins Online Spreadsheet",
+      "url": "sportsciorg/resource/statsxrelyxls",
+      "description": "A statistical analysis tool for reliability assessment and usefulness evaluation in sports science. Used to analyze test-retest reliability and practical utility of intermittent fitness tests in professional football.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "hsnlab/sportsanalitica",
+      "url": "https://github.com/hsnlab/sportsanalitica",
+      "description": "GitHub repository containing code for analyzing football pass reception probabilities and defensive structures using temporal graph networks. Enables quantitative analysis of offensive-defensive interactions in football match data.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Hungarian Central Statistical Office (KSH) Regional Statistics",
+      "url": "https://www.ksh.hu/docs/hun/xftp/megy/251/index.html",
+      "description": "Official Hungarian regional statistical dataset used to analyze core-periphery dynamics and regional disparities in handball, including gender-based patterns in player distribution and competitive success across regions.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "handball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "IIHF Official Website",
+      "url": "www.iihf.com",
+      "description": "International Ice Hockey Federation's official data source providing historical records and statistics from Men's Ice Hockey World and Junior Championships. Used for forecasting tournament success and competitive outcomes.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Indiana High School Athletic Association (IHSAA) Website",
+      "url": "https://www.ihsaa.org/",
+      "description": "Official IHSAA records and tournament data for Indiana high school basketball. Provides comprehensive dataset of interscholastic tournament results linked to school characteristics and performance analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "ISSA CHAMPS Regulations",
+      "url": "https://trackalerts.com/wp-content/uploads/2017/01/Champs-2017-rules.pdf",
+      "description": "Inter-Secondary School Sports Association competition rules and regulations for track and field athletics. Used as reference for analyzing contextual factors affecting athlete development and early competitive success in secondary school athletics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "International Judo Federation Ranking Data",
+      "url": "www.ijf.org",
+      "description": "Official IJF ranking and performance statistics database for competitive judo athletes. Provides performance metrics used in systematic reviews analyzing factors related to judo athlete success and competition outcomes.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "boxing_mma"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Israeli Women's Premier Basketball League",
+      "url": "https://wbi.co.il",
+      "description": "Official Israeli Women's Premier Basketball League website providing match records and player data. Used to analyze relative age effects among female professional basketball players in competitive league settings.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "IWBF Official Records Website",
+      "url": "https://iwbf.org/",
+      "description": "International Wheelchair Basketball Federation official records and match statistics database. Provides comprehensive wheelchair basketball performance data for analyzing player classifications and match outcome patterns.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Japan High Performance Sports Center Dataset",
+      "url": "https://www.jpnsport.go.jp/hpsc/business/ourwork/tabid/1322/Default.aspx",
+      "description": "Japanese national sports performance center providing biomechanical and physiological data on athletes. Contains ground reaction force and movement analysis data used to study basketball directional change mechanics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "jmerullo/football",
+      "url": "http://github.com/jmerullo/football",
+      "description": "GitHub repository containing code and corpus of American football broadcast transcripts for natural language processing. Enables analysis of commentator bias and narrative patterns in sports broadcasting.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "John Harrell's Indiana Boys' Basketball Records",
+      "url": "https://indianahsbasketball.homestead.com/boys.html",
+      "description": "Comprehensive historical database of Indiana high school boys' basketball tournament records and results. Supports analysis of interscholastic tournament success correlations with school characteristics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Johnson Basketball Dribble Test",
+      "url": "https://www.ymcacollege.ac.in/pdf/E_learning/MCC203-Test-Measurement-and-Evaluation-in-Physical-Education.pdf",
+      "description": "Standardized basketball skills assessment instrument measuring dribbling proficiency. Used as baseline measurement in research on effectiveness of interactive video analysis training for skill acquisition in basketball.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "jtools",
+      "url": "https://cran.r-project.org/package=jtools",
+      "description": "R package providing data visualization and regression analysis tools for exploratory data analysis. Used in sports analytics research for analyzing associations between match characteristics and environmental factors in football.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Juventus Football Club Financial Reports",
+      "url": "https://www.juventus.com/en/club/investor-relations/statements/reports",
+      "description": "Juventus official financial reports and investor relations documents containing player transfer valuations and asset data. Used for analyzing the monetary role and asset valuation of player rights in professional football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Kanto College Basketball Federation Records",
+      "url": "http://www.kbbbf.jp",
+      "description": "Official Kanto College Basketball Federation database providing comprehensive match records and game statistics. Used to analyze causal relationships between game flow dynamics and competitive outcomes in basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Keep fitness app",
+      "url": "http://api.gotokeep.com",
+      "description": "Mobile fitness tracking application with API access to running and outdoor activity data. Provides geospatial location data, distance, pace, and environmental context for analyzing how outdoor environmental factors influence jogging behavior and athlete training patterns.",
+      "category": "api",
+      "access": "freemium",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Keeper rating system",
+      "url": "http://www.keepratings.net/",
+      "description": "Specialized rating and evaluation system for college football quarterbacks and offensive performance. Provides advanced metrics and ratings used for predictive modeling and performance assessment in college football analytics.",
+      "category": "tool",
+      "access": "freemium",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "kknn",
+      "url": "https://CRAN.R-project.org/package=kknn",
+      "description": "R package implementing k-nearest neighbors classification algorithms. Used in sports analytics for machine learning tasks such as team playing style classification and pattern recognition in Australian Rules Football.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "australian_football"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "KHL official timekeeping records",
+      "url": "http://en.khl.ru",
+      "description": "Official Kontinental Hockey League dataset containing detailed match timing, play-by-play events, and performance records. Provides comprehensive data for analyzing workload characteristics, game intensity, and elite ice hockey training patterns.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Korea Baseball Organization (KBO) Statistics",
+      "url": "https://mykbostats.com",
+      "description": "Comprehensive Korean baseball statistics database containing player performance metrics, game results, and advanced sabermetric data. Enables machine learning applications and comparative analysis in baseball analytics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Korea Football Association Medical database",
+      "url": "http://kfamed.org",
+      "description": "Medical and injury surveillance database from the Korea Football Association tracking injury incidence across national soccer teams. Provides epidemiological data for injury risk analysis and prevention research in professional football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "footballonomics",
+      "url": "https://github.com/kpelechrinis/footballonomics",
+      "description": "GitHub repository containing code and analysis tools for NFL game data processing and statistical analysis. Provides Python/R implementations for analyzing play-by-play data, game strategy, and performance patterns in American football.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Kubios HRV Scientific",
+      "url": "https://www.kubios.com/",
+      "description": "Heart rate variability (HRV) analysis software for measuring cardiovascular response and autonomic nervous system dynamics. Used in athletics research to correlate HRV with exercise intensity, recovery, and performance during prolonged running.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Lahman",
+      "url": "https://CRAN.R-project.org/package=Lahman",
+      "description": "R package providing comprehensive historical baseball statistics and player data from Major League Baseball. Enables statistical analysis, aging curve estimation, and longitudinal performance studies in baseball analytics.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "LambertW",
+      "url": "https://CRAN.R-project.org/package=LambertW",
+      "description": "R package implementing Lambert W function mathematics for statistical modeling. Applied in sports biomechanics research for analyzing sprint performance data and timing gate measurements in basketball and athletics.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Leaguepedia",
+      "url": "https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki",
+      "description": "Comprehensive League of Legends esports wiki and database containing professional tournament results, player statistics, career records, and team information. Supports analysis of player career trajectories and competitive dynamics in esports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Lichess chess games dataset",
+      "url": "https://lichess.org/",
+      "description": "Open-access online chess platform providing millions of game records with full move sequences and player ratings. Enables pattern analysis, engine evaluation comparison, and detection of anomalies in competitive chess play.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Liga Endesa official website",
+      "url": "http://www.lfendesa.es/resultados.aspx",
+      "description": "Official Spanish professional basketball league (Liga Endesa) results and statistics database. Provides match results, team and player performance data for analyzing role-specific contributions in professional basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Lightbox parcel data",
+      "url": "https://www.lightboxre.com/",
+      "description": "Geospatial real estate and commercial parcel database with location-based analytics. Applied to baseball research for analyzing stadium locations, neighborhood characteristics, and quantifying local economic impact of baseball venues.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Lithuanian Students Basketball League (LSBL)",
+      "url": "http://www.mkl.lt",
+      "description": "Lithuanian youth basketball league database containing game results and player statistics. Provides data for analyzing player position-specific shooting performance and offensive contributions in youth basketball competition.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Lithuanian Women Basketball League",
+      "url": "http://www.lmkl.lt",
+      "description": "Official league website providing match results, statistics, and player performance data for Lithuanian women's basketball, enabling analysis of shooting patterns and positional play in youth and professional competitions.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Lithuanian Women's Basketball League A 2010-2011",
+      "url": "http://www.lmkal.lt",
+      "description": "Historical season dataset from the Lithuanian Women's Basketball League A, containing match statistics and player performance metrics useful for analyzing shooting diversity and positional performance across seasons.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "LOL.PS League of Legends Match Data",
+      "url": "https://lol.ps/",
+      "description": "Curated esports dataset providing structured League of Legends match data including game events, team compositions, and performance metrics, optimized for machine learning and large language model analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "loo R Package",
+      "url": "https://mc-stan.org/loo/",
+      "description": "R package for leave-one-out cross-validation and model comparison, used in Bayesian statistical analysis for sports analytics research including home advantage modeling in American football.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "LoRa Basics™Station",
+      "url": "https://doc.sm.tc/station/",
+      "description": "Open-source LoRa gateway management platform enabling long-range wireless athlete tracking and performance monitoring systems, particularly for outdoor endurance events like marathons.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "LSM6DSOX 6-axis IMU Sensor",
+      "url": "https://www.st.com/en/mems-and-sensors/lsm6dsox.html",
+      "description": "High-precision inertial measurement unit sensor measuring acceleration and angular velocity, used in wearable systems for real-time soccer player movement analysis and performance diagnostics.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Luojia 1-01 Nighttime Lights Dataset",
+      "url": "http://59.175.109.173:8888/index.html",
+      "description": "Geospatial nighttime remote sensing dataset used to examine environmental and infrastructure factors influencing outdoor jogging participation and athlete training location patterns.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "MAGNETOM Skyra 3.0T MRI Scanner",
+      "url": "https://www.siemens-healthineers.com/",
+      "description": "Clinical-grade 3.0 Tesla MRI imaging instrument for non-invasive measurement of muscle morphology and structural changes in athletes, enabling longitudinal performance studies in sprint running.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Man Games Lost",
+      "url": "https://www.mangameslost.com/category/nfl/",
+      "description": "NFL injury database tracking player availability and games lost due to injury, used for analyzing injury risk, concussion patterns, and disparities in player compensation and demographics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "MariaDB Database",
+      "url": "https://mariadb.com/kb/en/documentation/",
+      "description": "Open-source relational database management system used for storing and querying athlete tracking data from marathon events, enabling efficient management of high-frequency GPS and sensor data.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "MasseyRatings.com",
+      "url": "https://masseyratings.com/ranks?s=cf",
+      "description": "Sports analytics website providing college football team rankings, ratings, and historical performance data used for home advantage analysis and strength-of-schedule assessments.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "MAT-T Optical Motion Capture System",
+      "url": "http://tmpl.taylormadegolf.com/mat-t-system",
+      "description": "Non-intrusive optical motion capture system specifically designed for golf swing analysis, enabling biomechanical reconstruction and performance optimization through portable motion tracking technology.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "golf"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Max Preps",
+      "url": "https://www.maxpreps.com/football/",
+      "description": "Comprehensive high school and college football statistics database providing match results, player performance data, and schedule information for home advantage and competitive level analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Mediacoach Software Platform",
+      "url": "https://id.mediacoach.es",
+      "description": "Video analysis and performance tracking software platform for professional football, capturing detailed match statistics and physical performance metrics across competitive levels.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Metamax 3B Metabolic Cart",
+      "url": "https://www.cortex-biophysik.de/",
+      "description": "Portable breath-by-breath pulmonary gas exchange analyzer measuring aerobic metabolism and heart rate during running, used to establish exercise prescription guidelines for endurance athletes.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Meteostat API",
+      "url": "https://meteostat.net/en/",
+      "description": "A weather data API providing historical and current meteorological observations. Useful for sports analytics studying environmental factors affecting attendance, performance, and match characteristics in football and American football.",
+      "category": "api",
+      "access": "free",
+      "sports": [
+        "american_football",
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 2,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://dev.meteostat.net/python/api/timeseries/"
+      ]
+    },
+    {
+      "name": "Milesplit Network",
+      "url": "www.milesplit.com",
+      "description": "A track and field results database containing comprehensive competition records and athlete performance data. Enables recruitment analysis and performance tracking for NCAA Division I athletics programs.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "minpack.lm",
+      "url": "https://CRAN.R-project.org/package=minpack.lm",
+      "description": "An R package for nonlinear least-squares fitting using the Levenberg-Marquardt algorithm. Applied in biomechanical analysis to estimate sprint performance profiles from timing gate data.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "MMPose",
+      "url": "https://github.com/open-mmlab/mmpose",
+      "description": "An open-source Python library for pose estimation and pose-based video understanding using deep learning. Enables temporal action localization and player tracking analysis in basketball.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "MonnieMcGee/DivingData",
+      "url": "https://github.com/MonnieMcGee/DivingData",
+      "description": "A GitHub repository containing diving competition datasets and analysis code for examining judge scoring patterns and diver competency assessment in competitive diving.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "diving"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Basketball K-Player Lineups",
+      "url": "https://github.com/mountanton/Basketball_K-Player_Lineups",
+      "description": "A GitHub repository providing code for efficient statistical computation of player lineup combinations in basketball using semilattice structures, enabling lineup performance analysis.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "MSCI Global Industry Classification Standard",
+      "url": "https://www.msci.com/our-solutions/indexes/gics",
+      "description": "An industry classification system used to standardize sponsorship categorization. Applied in esports research to map and analyze sponsor portfolio diversification strategies.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Namsor API",
+      "url": "https://www.namsor.com",
+      "description": "A name-based demographic inference service that estimates ethnicity and gender from names. Used in baseball research to analyze racial representation and draft disparities in Major League Baseball.",
+      "category": "api",
+      "access": "freemium",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NASA SRTM Global Dataset",
+      "url": "https://www.earthdata.nasa.gov/data/instruments/srtm",
+      "description": "A freely available global elevation dataset from NASA's Shuttle Radar Topography Mission. Enables analysis of birthplace altitude effects on distance running performance in Olympic and world championship athletes.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Naver Sports",
+      "url": "https://sports.news.naver.com/kbaseball/index",
+      "description": "A South Korean sports news and statistics website with comprehensive baseball game data. Provides detailed records for analyzing impacts of rule changes like automated strike systems in professional baseball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NBA Fan Demographics",
+      "url": "https://www.sponsorpulse.com/insights/thesponsorpulse-guide-to-nba-fan-demographics",
+      "description": "A demographic analysis report on NBA fan characteristics and consumption patterns. Supports research on marketing strategies, ticket pricing, and their effects on attendance and team revenue.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NCD Risk Factor Collaboration Height Data",
+      "url": "https://www.ncdrisc.org",
+      "description": "A global population health dataset with average height statistics by country and demographics. Applied to analyze relative age effects and physical development patterns in basketball populations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "New Balance Outdoor Nationals 2019",
+      "url": "https://www.nbnationalsout.com/eproﬁle.php?event_id=3689&title_id=693&do=title&folder_id=1188",
+      "description": "A dataset of athletic performance results from the 2019 New Balance Outdoor National Championships. Provides track and field competition records for analyzing essential human movements in endurance sports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "nflfastR",
+      "url": "https://www.nflfastr.com/",
+      "description": "An R package providing fast, easy access to detailed play-by-play NFL data with advanced metrics. Enables comprehensive analysis of American football game dynamics, including home advantage effects.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "nflgame Python API",
+      "url": "https://github.com/BurntSushi/nflgame",
+      "description": "A Python library for retrieving and analyzing NFL game data including play-by-play information and player statistics. Supports large-scale empirical analysis of American football game structure and outcomes.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NHL Player Data 1967–2018",
+      "url": "http://www.hockeyabstract.com/testimonials",
+      "description": "Historical dataset containing player statistics and performance records from the National Hockey League spanning five decades. Provides comprehensive player-level data enabling valuation models, career trajectory analysis, and draft pick evaluation in professional ice hockey.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NHL Revenue Data",
+      "url": "http://perma.cc/8BLQ-57B3",
+      "description": "Financial and revenue data from the National Hockey League. While labeled for athletics, this dataset supports economic and competitive analysis in professional ice hockey, examining revenue patterns and market dynamics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Nielsen TV Ratings Database",
+      "url": "https://www.nielsen.com/",
+      "description": "Television viewership measurement instrument tracking broadcast ratings and audience demographics across programs and networks. Enables analysis of sports media consumption patterns and the relationship between social media activity and traditional TV viewership in basketball.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NWCA College Scorebook",
+      "url": "http://www.nwcaonline.com/nwcaonline/results/ColScorebook/Welcome.aspx",
+      "description": "Official scoring and results database from the National Wrestling Coaches Association containing match records and team statistics. Provides event-level data for ranking systems and outcome prediction models in collegiate wrestling competition.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "boxing_mma"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Tiktoken Tokenizer",
+      "url": "https://github.com/openai/tiktoken",
+      "description": "OpenAI's token encoding library used to process and analyze text data for large language models. Applied to esports match data summarization, enabling efficient natural language processing of League of Legends game information.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Odd-One-Out Cognitive Task",
+      "url": "www.cambridgebrainscienes.com",
+      "description": "Cognitive assessment instrument from Cambridge Brain Sciences measuring pattern recognition and cognitive flexibility. Used to evaluate cognitive correlates of competitive performance in complex multi-player video games like esports titles.",
+      "category": "tool",
+      "access": "freemium",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "OddsPortal",
+      "url": "https://www.oddsportal.com/",
+      "description": "Comprehensive betting odds and historical wagering database aggregating odds from multiple bookmakers. Provides market-based probability estimates and historical match data supporting predictive modeling in cricket and other sports.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cricket"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Official AFL Statistics",
+      "url": "www.afl.com",
+      "description": "Australian Football League official match statistics and performance data from Champion Data analytics division. Contains event-level data on player activity profiles and match performance enabling fatigue and skill analysis in elite Australian football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "australian_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "European Women's Football League Data",
+      "url": "www.laliga.es",
+      "description": "Official statistics and match records from top-tier women's football leagues (Primera Iberdrola, D1 Féminine, Frauen-Bundesliga). Provides match outcome and scoring sequence data for analyzing first-goal advantage effects in professional female football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Hungarian Handball Federation Registry",
+      "url": "https://www.mksz.hu",
+      "description": "Official national handball federation database containing league records, team registrations, and match statistics. Enables analysis of regional disparities, gender patterns, and network dynamics in Hungarian handball competition.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "handball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Official World Golf Ranking",
+      "url": "https://www.owgr.com/current-world-ranking",
+      "description": "Official World Golf Ranking (OWGR) system providing player rankings and performance ratings for professional golfers. Contains competitive history and ranking data supporting analysis of elite golfer performance characteristics and laterality effects.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "golf"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Omega LCFD-1k Load Cell",
+      "url": "https://www.omega.com/en-us/force-strain-measurement/load-cells/p/LCGD",
+      "description": "Force measurement instrument for capturing ground reaction forces and biomechanical data during athletic movements. Applied to real-time feedback systems in hammer throw training, enabling assessment of force application technique and performance optimization.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "TAL3×3: 3v3 Basketball Dataset",
+      "url": "https://github.com/open-starlab/TAL3×3",
+      "description": "GitHub repository containing a temporal action localization dataset and algorithm specifically designed for 3×3 basketball analysis. Enables detection and classification of game events in street basketball format for detailed performance evaluation.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "OpenDota API",
+      "url": "https://docs.opendota.com/",
+      "description": "Application programming interface providing real-time and historical match data from Dota 2 esports competitions. Includes in-game events, chat logs, and player actions enabling predictive modeling and analysis of competitive outcomes in professional Dota 2.",
+      "category": "api",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "OpenGrey Repository",
+      "url": "https://opengrey.eu",
+      "description": "Open-access repository of grey literature including conference papers, reports, and unpublished research in sports science. Provides access to technical analysis studies on football tactics, physiology, and performance effects in professional soccer.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "OpenLayers",
+      "url": "https://openlayers.org/en/latest/apidoc/module-ol_format_JSONFeature-JSONFeature.html",
+      "description": "JavaScript mapping library for visualizing geographic and spatial data. Used in sports analytics for athlete tracking and location-based performance visualization, such as marathon participant positioning and movement analysis.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": "JavaScript",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "OpenSim Musculoskeletal Modeling Platform",
+      "url": "Simtk.org",
+      "description": "Biomechanical simulation software for modeling human movement and musculoskeletal systems. Enables researchers to evaluate sensor alignment effects on IMU-based joint angle estimates and validate motion capture data in athletics.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "OpenSTARLab",
+      "url": "https://github.com/open-starlab",
+      "description": "Open-source framework for spatio-temporal analysis of agent data in soccer. Provides tools and methodology for analyzing player tracking data and spatial movement patterns in football performance research.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Other League",
+      "url": "http://www.otherleague.com",
+      "description": "Professional ice hockey statistics and roster database. Contains team, player, and coaching information useful for analyzing coach compensation, performance relationships, and organizational decisions in professional ice hockey.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Overbasket.com",
+      "url": "http://overbasket.com",
+      "description": "Basketball statistics and game data portal. Provides match results, team statistics, and performance metrics for analyzing home court advantage and team performance in basketball competitions.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Oxford CEBM Levels of Evidence",
+      "url": "https://www.cebm.ox.ac.uk/resources/levels-of-evidence/oxford-centre-for-evidence-based-medicine-levels-of-evidence-march-2009",
+      "description": "Evidence quality assessment framework defining research methodology standards from systematic reviews to expert opinion. Used to evaluate strength of evidence in sports science research synthesis and scoping reviews.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "PDDL Planning Domain Model",
+      "url": "https://github.com/skerovs/SMC2018SportDomain",
+      "description": "Automated planning domain model for sports training optimization. Enables generation of personalized training plans through computational planning techniques applied to combat sports athlete development.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "boxing_mma"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NBA Lineups Usage Dataset",
+      "url": "http://wiseman.agnesscott.org/NBA/AllYearsAllTeams.csv",
+      "description": "Historical dataset of NBA player lineup combinations and utilization patterns across seasons and teams. Enables topological and network analysis of team composition strategies using persistent homology methods.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "PitcherList Run Expectancy Matrix",
+      "url": "https://www.pitcherlist.com/adjusting-for-the-current-run-expectancy-matrix/",
+      "description": "Baseball run expectancy model quantifying scoring probability from different base-runner configurations. Used to evaluate player performance and predict outcomes in sabermetric analysis of collegiate baseball talent.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "PManalyzer",
+      "url": "https://www.uibk.ac.at/de/isw/forschung/neurophysiology‐of‐exercise/pm_analyzer/",
+      "description": "Biomechanical analysis tool for measuring and evaluating running technique from motion capture data. Enables quantitative assessment of running mechanics and identification of principal movement components for technique coaching.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Polar API",
+      "url": "https://www.polar.com/",
+      "description": "Sports wearable data platform providing heart rate, activity, and training data from Polar fitness devices. Enables analysis of cardiovascular metrics and exercise response for training prescription and performance monitoring in running.",
+      "category": "api",
+      "access": "freemium",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://flow.polar.com/"
+      ]
+    },
+    {
+      "name": "Pololu MinIMU-9 v5",
+      "url": "https://www.pololu.com/product/2738",
+      "description": "Nine-axis inertial measurement unit combining accelerometer, gyroscope, and magnetometer. Wearable sensor for capturing biomechanical movement data in athletics training and real-time feedback applications like hammer throw technique analysis.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "PRISM Model Checker",
+      "url": "https://www.prismmodelchecker.org/tutorial/",
+      "description": "Probabilistic model checking tool for analyzing stochastic systems and decision processes. Applied to soccer decision-making analysis to evaluate strategic choice outcomes and identify suboptimal in-game decisions.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Pro Football Logic Database",
+      "url": "http://www.profootballlogic.com/articles/nfl-census-2016/",
+      "description": "Comprehensive NFL player injury, demographic, and compensation database. Enables epidemiological analysis of injury risk factors, concussion patterns, and wage equity across race and position in American football.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Provispo Video Data",
+      "url": "https://provispo.com/sportscam-automatic/",
+      "description": "Automated sports video analysis platform providing computer vision-extracted tracking data from soccer matches. Enables environmental and contextual analysis of player-ball interactions and one-on-one dribble success prediction.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "PsyToolkit",
+      "url": "https://www.psytoolkit.org/",
+      "description": "A web-based experimental psychology platform that enables creation and administration of psychological tests and cognitive assessments. Useful for measuring psychological traits, reaction times, and decision-making patterns relevant to esports performance analysis and player profiling.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Prediction of Re-signing Foreign Players",
+      "url": "https://github.com/Ptaeshin/Prediction-of-Re-signing-Foreign-Players/tree/master",
+      "description": "A GitHub repository containing machine learning code for predicting whether foreign baseball players will be re-signed by their teams. Demonstrates application of predictive modeling to baseball roster management and player contract decisions.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Pupil Labs Neon software",
+      "url": "https://pupil-labs.com/products/neon",
+      "description": "Eye-tracking software platform that captures and processes gaze data from wearable eye trackers. Enables collection of eye-tracking data streams for analyzing visual attention patterns and decision-making processes in basketball players during games.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "https://docs.pupil-labs.com/neon/data-collection/data-streams/"
+      ]
+    },
+    {
+      "name": "aging",
+      "url": "https://github.com/qntkhvn/aging",
+      "description": "A GitHub repository with code implementing multiple imputation methods for estimating player aging curves in baseball. Addresses missing data challenges when analyzing how player performance changes over career progression.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "tackle",
+      "url": "https://github.com/qntkhvn/tackle",
+      "description": "A GitHub repository containing code for analyzing player tracking data to evaluate tackling performance in American football. Enables fractional tackle assignment using detailed spatial tracking information from games.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Québec population birth data (1995 onwards)",
+      "url": "https://statistique.quebec.ca/fr/document/naissances-deces-et-mariages-par-mois-et-par-trimestre-quebec/tableau/naissances-deces-et-mariages-par-mois-et-par-trimestre-quebec",
+      "description": "A provincial birth records dataset from Statistics Québec covering monthly and quarterly birth statistics. Used to analyze relative age effects in ice hockey by examining birth month distributions of players and coaches.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Ray Tune",
+      "url": "https://docs.ray.io/en/latest/tune/index.html",
+      "description": "A hyperparameter tuning library for machine learning and distributed computing. Enables optimization of models for predicting tire energy and race strategy decisions in Formula One motorsport analytics.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "motorsport"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "RealGM",
+      "url": "https://www.basketball.realgm.com",
+      "description": "A comprehensive basketball player statistics and information database covering player profiles, career statistics, and roster information. Provides data for analyzing player archetypes and evaluating roster composition strategies in basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Resilient-RAP-Framework",
+      "url": "https://github.com/TarekClarke/Resilient-RAP-Framework",
+      "description": "A GitHub repository demonstrating reproducible analytical pipeline (RAP) best practices for motorsport data analysis. Provides code infrastructure for creating robust, automated, and maintainable analytical workflows in motorsport analytics.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "motorsport"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Rival IQ",
+      "url": "https://www.rivaliq.com/",
+      "description": "A social media analytics platform that tracks engagement metrics, reach, and audience interactions across social networks. Provides data for analyzing social media engagement patterns of teams and players in basketball leagues.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Roboflow",
+      "url": "https://app.roboflow.com/",
+      "description": "A computer vision platform for creating, managing, and deploying annotated image datasets. Enables collection and labeling of gymnastics movement video data for training machine learning models on athletic techniques.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "gymnastics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Rokoko SmartSuit Pro II",
+      "url": "https://www.rokoko.com/",
+      "description": "A wireless motion capture suit that records full-body movement data with IMU sensors. Enables real-time capture of cricket player movements and shot biomechanics for classification and performance analysis.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "cricket"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "idlab-ant",
+      "url": "https://github.com/s-team-ghent/idlab-ant",
+      "description": "A GitHub repository containing code for automatic camera control and highlight generation from cycling events. Enables automated detection and extraction of key moments in cycling competitions using computer vision.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "SafeGraph spending data",
+      "url": "https://docs.safegraph.com/docs/places-data-evaluation",
+      "description": "A location-based spending and foot traffic dataset tracking consumer visits and spending patterns. Provides economic impact data for analyzing how baseball stadiums and teams influence local business activity and visitor behavior.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Samozino force-velocity model",
+      "url": "https://jbmorin.net/2017/12/13/a-spreadsheet-for-sprint-acceleration-force-velocity-power-profiling",
+      "description": "An Excel spreadsheet implementing the force-velocity profiling model for analyzing sprint acceleration capabilities. Enables quantification of athlete power production characteristics from sprint kinematics in athletics.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Scientific Research in Aerobic Gymnastics: Summary 2010-2014",
+      "url": "https://aerobic5.com/wp-content/uploads/2021/01/Scientific-13.06.2014-2.pdf",
+      "description": "A comprehensive research summary document covering scientific studies in aerobic gymnastics from 2010-2014, providing insights into training methods, performance analysis, and athlete development in this discipline.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "gymnastics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Scikit-Video",
+      "url": "https://github.com/scikitvideo/scikit-video",
+      "description": "A Python library for video processing and analysis that enables computer vision tasks on sports footage, particularly useful for extracting features from broadcast soccer videos for detection and tracking applications.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "J-League 2019 Season Goals Data",
+      "url": "https://www.jleague.jp/stats/2019/goal.html",
+      "description": "Official Japanese football league goal statistics dataset containing scoring records from the 2019 season, used for player action valuation and performance analysis in multi-agent reinforcement learning research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "SeatGeek",
+      "url": "https://seatgeek.com/",
+      "description": "A ticket marketplace platform providing NBA ticket pricing, sales, and demand data that enables analysis of ticket pricing strategies and their impact on attendance and team revenue.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "SENIAM Guidelines for Sensor Placement",
+      "url": "http://seniam.org/sensor_location.htm",
+      "description": "Standard protocol guidelines for surface electromyography (EMG) sensor placement on human muscles, essential for measuring muscular activity and co-contraction patterns during athletic movements like sprint skating.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "shorts",
+      "url": "https://CRAN.R-project.org/package=shorts",
+      "description": "An R package for analyzing sprint performance profiles and calculating acceleration metrics using timing gate data, applicable to field sports requiring acceleration assessment.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": "R",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "simula/soccermon",
+      "url": "http://www.github.com/simula/soccermon",
+      "description": "A GitHub repository containing code for processing and analyzing large-scale multivariate soccer athlete health, performance, and position monitoring data, enabling comprehensive athlete tracking research.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Sina Sports Basketball Team Database",
+      "url": "https://slamdunk.sports.sina.com.cn/teams",
+      "description": "A Chinese sports website providing comprehensive basketball team statistics and player performance data, used for statistical analysis and regression modeling in basketball analytics research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Skybox.gg",
+      "url": "https://skybox.gg/edge/",
+      "description": "An esports analytics platform providing detailed Counter-Strike 2 player performance data and role-specific metrics, enabling machine learning-based player role assessment and feature engineering.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "esports"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Smartabase Mobile Application",
+      "url": "https://www.smartabase.com",
+      "description": "A sports science platform for tracking athlete wellness, performance metrics, and mental fatigue across training and competition periods in professional sports like Australian football.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "australian_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "snoopryan123/grid_war",
+      "url": "https://github.com/snoopryan123/grid_war",
+      "description": "A GitHub repository containing code implementing Grid WAR, an advanced metric for evaluating starting pitcher performance in baseball by accounting for spatial fielding context.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Soccer Detection Dataset",
+      "url": "https://github.com/Qunmasj-Vision-Studio/Soccer-Detectiin118",
+      "description": "A computer vision dataset containing annotated soccer game imagery for training object detection models, specifically designed for improving player and ball detection in match scenes.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Soccerbase Teams Database",
+      "url": "http://www.soccerbase.com/teams/",
+      "description": "A comprehensive football teams database containing historical team data and performance records, used for analyzing team selection strategies under different financial and competitive objectives.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "SoccerNet",
+      "url": "https://soccer-net.org/",
+      "description": "A large-scale dataset of broadcast soccer videos with detailed annotations for temporal action localization, segmentation, and holistic match understanding in computer vision research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Sofifa.com",
+      "url": "https://sofifa.com",
+      "description": "A comprehensive football player database containing detailed player attributes, ratings, and market values, used for building explainable AI models to predict professional player market worth.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Spanish Basketball Federation (FEB)",
+      "url": "www.feb.com",
+      "description": "Official federation website providing basketball competition data, statistics, and results from Spanish elite leagues. Serves as a primary source for game statistics and playoff performance analysis in professional basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "RTVE Official Video Archive",
+      "url": "www.rtve.es",
+      "description": "Spanish national television video recordings providing match footage for handball competitions. Enables analysis of offensive strategies and game effectiveness through video analysis of elite-level handball matches.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "handball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "SportCode by Hudl",
+      "url": "https://www.hudl.com/en_gb/products/instat",
+      "description": "Video analysis and tagging software for sports performance analysis. Facilitates detailed annotation of game events for identifying physical impacts in American football.",
+      "category": "tool",
+      "access": "paid",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Sportmonks API",
+      "url": "https://www.sportmonks.com/",
+      "description": "Comprehensive football data API providing real-time match statistics, player data, and market information. Enables analysis of player valuations across different football leagues.",
+      "category": "api",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "StatHead Hockey",
+      "url": "https://stathead.com/hockey/",
+      "description": "Comprehensive ice hockey statistics database covering NHL player and team performance metrics. Provides detailed historical data enabling functional data analysis of draft pick valuations.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "SportScore API",
+      "url": "https://rapidapi.com/",
+      "description": "Real-time handball match data and statistics API accessible via RapidAPI. Provides team strength and match information for machine learning-based match prediction models.",
+      "category": "api",
+      "access": "freemium",
+      "sports": [
+        "handball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Statistisches Bundesamt",
+      "url": "https://www.destatis.de",
+      "description": "German federal statistical office providing demographic and socioeconomic data. Enables contextual analysis of career progression in youth football through regional and socioeconomic variables.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "StatsBomb Open Data",
+      "url": "https://github.com/statsbomb/StatsBomb",
+      "description": "Open-access repository of detailed football event-level data from major leagues and competitions. Provides structured event sequences enabling automated strategy discovery and tactical analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "StatsBomb Open Event Data",
+      "url": "https://github.com/statsbomb",
+      "description": "Publicly available football event data with player positioning and action details. Enables advanced statistical modeling such as Bayesian hierarchical analysis of expected goals (xG) metrics.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "STE Label Tool",
+      "url": "https://github.com/open-starlab/STE_Label_Tool",
+      "description": "Open-source annotation tool for labeling spatio-temporal agent data in football. Facilitates creation of labeled datasets for analyzing player movement patterns and tactical positioning in soccer.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "STORM",
+      "url": "https://www.stormchecker.org/tutorials.html",
+      "description": "Interactive tool for analyzing soccer decision-making and strategic choices. Enables evaluation of player and team decision quality through structured analysis of match scenarios.",
+      "category": "tool",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "STRADA Dataset",
+      "url": "https://github.com/robbedec/datasets/tree/master/STRADA/lierde",
+      "description": "Field test dataset containing spatio-temporal sensor data from cycling events. Provides real-world performance and positioning data enabling automated highlight generation algorithms.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Supersapiens Dashboard",
+      "url": "https://dashboard.supersapiens.com",
+      "description": "Continuous glucose monitoring data platform for endurance athletes including cyclists. Provides biometric glucose response data enabling analysis of nutrition and performance optimization.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Swimming.org Diving Directory",
+      "url": "https://www.swimming.org/diving/",
+      "description": "Official Swim England resource providing diving competition information and athlete data. Serves as information source for analyzing judge scoring patterns and diver performance competencies.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "diving"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "SwimSwam",
+      "url": "https://swimswam.com/",
+      "description": "Swimming and diving news and statistics platform providing competition results and performance data. Offers publicly available diving competition information for analyzing scoring discrepancies and judge assessment patterns.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "diving"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Tatra Uphill Run",
+      "url": "www.biegnakasprowy.pl",
+      "description": "Official event results and timing data from a mountain running competition in Poland. Provides real-world GPS and elevation data for analyzing performance in uphill trail running conditions, useful for studying elevation measurement accuracy with GNSS receivers.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Team Resilience Index (TRI)",
+      "url": "https://github.com/rnoremlas/resilience",
+      "description": "GitHub repository containing code and methodology for calculating team resilience metrics in professional basketball based on identified stressors. Enables quantitative assessment of team psychological responses to performance challenges.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Team Resilience Index Dataset",
+      "url": "https://digibug.ugr.es/handle/10481/107272",
+      "description": "Institutional repository dataset containing measured team resilience scores and stressor data for professional basketball teams. Supports empirical analysis of how teams respond to competitive pressures and performance variations.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "The Analyst Match Center",
+      "url": "theanalyst.com",
+      "description": "Commercial football analytics platform providing detailed event-level match data including passes, shots, and expected goals statistics. Enables tactical analysis and performance prediction for soccer/football research.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "The Baseball Cube",
+      "url": "http://www.thebaseballcube.com/",
+      "description": "Comprehensive historical baseball database containing player statistics, transaction records, and career data. Supports network analysis of player movements and organizational structure in Major League Baseball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "The Midfield Sports Reference",
+      "url": "https://themidfield.com/betting-news/different-sports-time-lengths/",
+      "description": "Sports reference website providing standardized information on game formats and match duration across sports. Useful for contextualizing NBA attendance analysis and revenue models.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "American Football Home Advantage Survey",
+      "url": "https://github.com/ThompsonJamesBliss/comprehensive_survey_american_football_home_adv",
+      "description": "GitHub repository containing comprehensive analysis code and research materials examining home advantage effects across American football contexts. Provides reproducible methodology for quantifying location-based performance benefits.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Markov Switching Decision Trees",
+      "url": "https://github.com/timoadam/MarkovSwitchingDecisionTrees",
+      "description": "GitHub repository implementing machine learning models combining Markov chain switching with decision tree classification. Enables regime-dependent predictive modeling for American football play outcomes.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "american_football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Tommy John Surgery Database",
+      "url": "https://mlbreports.com/tj-surgery/",
+      "description": "Public database tracking ulnar collateral ligament (UCL) surgeries in Major League Baseball pitchers with dates and player information. Supports epidemiological analysis of injury trends and relationships to rule changes.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "baseball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "TRACAB Tracking System",
+      "url": "https://tracab.com/products/tracab-technologies/",
+      "description": "Professional spatio-temporal tracking technology capturing player and ball positions in football matches. Provides multi-agent movement data essential for analyzing dribbling effectiveness and attacker-defender interactions.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Trail Valle de Tena",
+      "url": "https://trailvalledetena.com/",
+      "description": "Official event results and course data from a mountain trail running competition in Spain. Provides terrain-specific performance data and environmental factors for developing real-time performance prediction models.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "TrainingPeaks",
+      "url": "https://www.trainingpeaks.com",
+      "description": "Cloud-based training analytics platform collecting detailed performance metrics for cyclists including power, heart rate, and workout data. Supports athlete monitoring and team optimization for professional cycling competition planning.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Transfermarkt",
+      "url": "www.transfermarkt.pl",
+      "description": "Comprehensive football database containing team rosters, managerial records, and performance statistics across European leagues. Enables analysis of coaching changes and their effects on team performance outcomes.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "TreeSHAP",
+      "url": "https://github.com/slundberg/shap",
+      "description": "Open-source Python library implementing SHAP (SHapley Additive exPlanations) values for tree-based model interpretation. Enables feature importance analysis and model explainability for handball match outcome prediction.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "handball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Trinidad Alfonso EDP Valencia Marathon Results",
+      "url": "https://www.facv.es/resultados/es",
+      "description": "Official marathon event results database with participant demographics and split times. Supports analysis of pacing strategies across athlete sex, age categories, and performance levels in endurance running.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "tsai",
+      "url": "https://github.com/timeseriesAI/tsai",
+      "description": "Python deep learning library for time series analysis and forecasting. Used in sports analytics for modeling temporal patterns in athlete health and performance monitoring data.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "U.S. Soccer Official Player Database",
+      "url": "https://www.ussoccer.com/players",
+      "description": "Official U.S. Soccer player roster and biographical data including anthropometric measurements, match participation, and performance statistics for national team analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "UBIMET GmbH Weather Data",
+      "url": "https://www.ubimet.com/en/",
+      "description": "Commercial weather data provider offering real-time and historical environmental conditions including temperature, precipitation, and wind data for sports performance analysis.",
+      "category": "dataset",
+      "access": "paid",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "UCF101 Dataset",
+      "url": "https://www.crcv.ucf.edu/data/UCF101.php",
+      "description": "Large-scale video dataset containing 13,320 video clips across 101 action categories, including gymnastics movements. Used for training computer vision models for movement evaluation and analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "gymnastics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "UCI Track Specifications",
+      "url": "https://www.uci.org/",
+      "description": "Official Union Cycliste Internationale regulations and technical specifications for cycling track facilities and equipment standards used in performance analysis research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "UEFA Club Finance and Investment Report",
+      "url": "https://ecfil.uefa.com/2024",
+      "description": "Annual comprehensive financial analysis of European professional football clubs including investment data, revenue sources, and asset valuations for club economics research.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Ultralytics YOLOv11",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "description": "Python library implementing YOLOv11 object detection model optimized for real-time detection tasks. Widely used for soccer player, ball, and field element detection in video analysis.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "un-xPass Implementation",
+      "url": "https://github.com/ML-KULeuven/un-xPass",
+      "description": "GitHub repository containing baseline implementations for expected pass completion probability models in soccer. Provides code for evaluating pass reception chances against defensive structures.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "USA Diving Official Results",
+      "url": "https://www.usadiving.org/",
+      "description": "Official database of diving competition results including athlete scores, judge evaluations, and performance metrics from USA Diving sanctioned events at all levels.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "diving"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "USportsHoops",
+      "url": "https://www.usportshoops.ca",
+      "description": "Canadian university basketball statistics and results database covering player performance metrics, team records, and game outcomes for NCAA/Canadian college basketball analysis.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "NBA Injury Demographics Analysis",
+      "url": "https://github.com/vsarlis/NBAinjurydemoeconomics",
+      "description": "GitHub repository with code for analyzing NBA player injury data with demographic variables including position, age, and injury type to assess performance impact.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Wanda Diamond League Results",
+      "url": "https://www.diamondleague.com/home/",
+      "description": "Official Diamond League track and field competition results database including athlete performances, times, distances, and rankings across elite international athletics events.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Wattbike Pro Ergometer",
+      "url": "https://cdn.wattbike.com/uploads/uk/docs/Wattbike-Owners-Manual-2015.pdf",
+      "description": "Advanced cycling power meter and ergometer instrument measuring pedal force, cadence, power output, and movement patterns. Used for biomechanical analysis and performance assessment in cycling research.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Weather Underground",
+      "url": "https://www.wunderground.com/",
+      "description": "Weather data aggregation platform providing historical and real-time environmental conditions including temperature, humidity, and precipitation for sports venue analysis.",
+      "category": "dataset",
+      "access": "freemium",
+      "sports": [
+        "american_football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Whippr",
+      "url": "https://exphyslab.com",
+      "description": "Python package for analyzing oxygen uptake kinetics and respiratory physiology data from cardiopulmonary exercise testing. Used for assessing aerobic capacity in combat sports athletes.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "boxing_mma"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "WIN Magazine TPI Rankings",
+      "url": "http://www.win-magazine.com/v2/category/tpi/",
+      "description": "Tournament Power Index rankings dataset for collegiate wrestling compiled by Wrestling Insider Magazine. Provides historical tournament performance data enabling predictive modeling and ranking analysis of wrestling programs and athletes.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "wrestling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Wingate Anaerobic Test Protocol",
+      "url": "https://educationalathletics.weebly.com/uploads/2/9/9/0/29907311/wingate_testing.pdf",
+      "description": "Standardized testing protocol for measuring anaerobic power output and fatigue characteristics in cycling. Provides methodology for assessing sprint cycling performance and recovery, enabling comparative physiological analysis.",
+      "category": "instrument",
+      "access": "free",
+      "sports": [
+        "cycling"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "WINSTEPS",
+      "url": "https://winsteps.com",
+      "description": "Rasch measurement software for analyzing rating scales and latent trait modeling. Applied to sports psychology assessment, enabling validation of constructs like 'creactability' in football performance evaluation.",
+      "category": "tool",
+      "access": "freemium",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Witty Gate Timing Gates",
+      "url": "https://microgate.it/",
+      "description": "Electronic timing gate system for measuring sprint running velocity and acceleration in athletics. Provides precise temporal data for analyzing sprint performance and training adaptations in track and field.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "WNBA Historical Box Score Data",
+      "url": "https://acrossthetimeline.com/wnba/attendance.html",
+      "description": "Historical box score statistics from Women's National Basketball Association games. Contains detailed match-level performance data enabling analysis of crowd effects, home court advantage, and temporal trends in women's basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "WNBA Salary Cap and Wage Data",
+      "url": "https://herhoopstats.com/wnba_cba_salary_cap_explained#min_base_salary",
+      "description": "Comprehensive dataset of WNBA salary structures, minimum wages, and collective bargaining agreement terms. Enables economic analysis of gender wage gaps and compensation models in professional women's basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "WNBA.com Official Data",
+      "url": "WNBA.com",
+      "description": "Official Women's National Basketball Association website providing current season statistics, rosters, schedules, and performance data. Primary data source for contemporary WNBA analysis and economic research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "WCBA Official Website",
+      "url": "https://www.cba.net.cn",
+      "description": "Women's Chinese Basketball Association official website providing match results, team statistics, and player performance data. Enables analysis of team success factors and competitive dynamics in professional Chinese women's basketball.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Women's World Record 1500m Data",
+      "url": "http://wn.com/",
+      "description": "Historical dataset of women's 1500-meter world record performances and split times. Enables analysis of pacing strategies, cognitive regulation of exercise intensity, and performance optimization in middle-distance track racing.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Woodway DESMO Pro XL Treadmill",
+      "url": "https://www.woodway.com/",
+      "description": "High-precision instrumented treadmill system for measuring biomechanical and physiological parameters during running. Enables collection of heart rate variability and exercise prescription data for prolonged running studies.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "World Bank Economic Data",
+      "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups",
+      "description": "World Bank development indicators including GNP per capita and country classification data. Used in sports analytics to contextualize Paralympic participation, athlete demographics, and international fairness in competitive sport.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "athletics"
+      ],
+      "language": null,
+      "paper_count": 2,
+      "curated_by": "ai:haiku",
+      "alt_urls": [
+        "http://data.worldbank.org/indicator/NY.GNP.PCAP.CD"
+      ]
+    },
+    {
+      "name": "World Football Elo Ratings",
+      "url": "eloratings.net",
+      "description": "Historical Elo ratings dataset for international football teams with ratings updated after each match. Provides predictive features for machine learning models forecasting soccer match results and team performance.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Fairness in FPS Games Matchmaking Solution",
+      "url": "https://github.com/WrtTZ/Achieving-Fairness-in-Team-Based-FPS-Games-ASkill-Based-Matchmaking-Solution",
+      "description": "GitHub code repository implementing skill-based matchmaking algorithms for team-based first-person shooter esports. Demonstrates machine learning approaches for fair player assignment and competitive balance in esports environments.",
+      "category": "code",
+      "access": "free",
+      "sports": [
+        "esports"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Wyscout Open Access Dataset",
+      "url": "https://github.com/open-data-archive/Wyscout",
+      "description": "Open-source collection of soccer event data from Wyscout platform including match events, player actions, and spatiotemporal tracking. Enables research in soccer analytics, agent behavior analysis, and player performance evaluation.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "Xsens Inertial Measurement Units",
+      "url": "www.xsens.com",
+      "description": "Wearable inertial measurement unit system for capturing body motion data. Applied to ice hockey to measure skating kinematics, temporal-spatial parameters, and biomechanical performance analysis.",
+      "category": "instrument",
+      "access": "paid",
+      "sports": [
+        "ice_hockey"
+      ],
+      "language": null,
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    },
+    {
+      "name": "YOLOv8n",
+      "url": "https://github.com/ultralytics/",
+      "description": "A lightweight real-time object detection model from the YOLOv8 family, optimized for detecting players, balls, and other objects in football video footage. Enables efficient multi-object tracking and player identification for sports analytics applications.",
+      "category": "library",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": "Python",
+      "paper_count": 1,
+      "curated_by": "ai:haiku"
+    }
+  ]
+}
