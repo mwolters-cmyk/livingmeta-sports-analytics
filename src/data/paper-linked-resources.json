@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-16T17:29:49.905676",
-  "total_papers": 2254,
-  "total_resources": 461,
-  "resources_skipped_no_url": 14015,
+  "generated_at": "2026-02-16T17:41:16.212018",
+  "total_papers": 2261,
+  "total_resources": 463,
+  "resources_skipped_no_url": 14053,
   "resources": [
     {
       "name": "Win Shares (WS)",
@@ -1226,6 +1226,47 @@
       "paper_count": 1
     },
     {
+      "name": "FIFA.com",
+      "url": "https://www.fifa.com/en/match-centre/",
+      "type": "api",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3216925943",
+          "title": "The New Generation of Professional Soccer Talent Is Born under the Bias of the RAE: Relative Age Effect in International Male Youth Soccer Championships",
+          "sport": "football",
+          "year": 2021
+        },
+        {
+          "work_id": "https://openalex.org/W4311379485",
+          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
+          "sport": "football",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W4403876520",
+          "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4406689084",
+          "title": "Analysis of the differences in the technical-tactical performance indicators in The FIFA Women's World Cup 2023 according to the final classification",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4416936099",
+          "title": "Predicting football match outcomes: a multilayer perceptron neural network model based on technical statistics indicators of the FIFA world Cup",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 5
+    },
+    {
       "name": "Candis (R code by Aoki)",
       "url": "http://aoki2.si.gunma-u.ac.jp/R/src/candis.R",
       "type": "library",
@@ -1456,41 +1497,6 @@
         }
       ],
       "paper_count": 5
-    },
-    {
-      "name": "FIFA.com",
-      "url": "https://www.fifa.com/en/match-centre/",
-      "type": "api",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4311379485",
-          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
-          "sport": "football",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4403876520",
-          "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
-          "sport": "football",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4406689084",
-          "title": "Analysis of the differences in the technical-tactical performance indicators in The FIFA Women's World Cup 2023 according to the final classification",
-          "sport": "football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4416936099",
-          "title": "Predicting football match outcomes: a multilayer perceptron neural network model based on technical statistics indicators of the FIFA world Cup",
-          "sport": "football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 4
     },
     {
       "name": "T-Test (T-T)",
@@ -2983,6 +2989,23 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "UEFA European Under-21 Championship",
+      "url": "https://es.uefa.com/under21/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3216925943",
+          "title": "The New Generation of Professional Soccer Talent Is Born under the Bias of the RAE: Relative Age Effect in International Male Youth Soccer Championships",
+          "sport": "football",
+          "year": 2021
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -4901,6 +4924,23 @@
         {
           "work_id": "https://openalex.org/W3213703002",
           "title": "On-Match Impact and Outcomes of Scoring First in Professional European Female Football",
+          "sport": "football",
+          "year": 2021
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "South American Youth Football Championship (Conmebol U-20)",
+      "url": "https://www.livefutbol.com/equipos/ecuador-u-20-h-team/u20-h-campeonato-sudamericano-2019-chile/2/",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3216925943",
+          "title": "The New Generation of Professional Soccer Talent Is Born under the Bias of the RAE: Relative Age Effect in International Male Youth Soccer Championships",
           "sport": "football",
           "year": 2021
         }
