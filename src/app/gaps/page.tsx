@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getStats, getGapAnalyses } from "@/lib/db";
-import type { GapAnalysis, Gap, GapPaperRef, AgendaItem } from "@/lib/db";
+import type { GapAnalysis, Gap, GapPaperRef, AgendaItem, GapPaperIndexEntry } from "@/lib/db";
 
 /** Gap type → visual style */
 const GAP_TYPE_STYLES: Record<string, { label: string; classes: string }> = {
@@ -29,20 +29,136 @@ const DIFFICULTY_LABELS: Record<string, string> = {
   major_initiative: "Major Initiative",
 };
 
-/** Render a clickable paper reference */
+/**
+ * Parse text containing inline W-references (e.g. "W4406017810") and replace
+ * them with clickable APA-style citations: "Author (Year)".
+ *
+ * Falls back to a short work_id label if no metadata is available.
+ */
+const INLINE_WID_RE = /(?:https:\/\/openalex\.org\/)?(W\d{5,})/g;
+
+function formatAuthorSurname(fullName: string): string {
+  // "Jan de Vries" → "De Vries", "John Smith" → "Smith", "Maria García-López" → "García-López"
+  const parts = fullName.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0];
+  // Handle "de", "van", "von", "el", "al" etc — include as part of surname
+  const prefixes = new Set(["de", "van", "von", "el", "al", "del", "da", "di", "le", "la", "dos", "das"]);
+  const firstNames: string[] = [];
+  let surnameStart = -1;
+  for (let i = 0; i < parts.length; i++) {
+    if (i === 0) { firstNames.push(parts[i]); continue; }
+    // If this is a prefix word and NOT the last word, it's part of the surname
+    if (prefixes.has(parts[i].toLowerCase()) && i < parts.length - 1) {
+      surnameStart = i;
+      break;
+    }
+    // If we haven't hit a prefix yet, check if it could be a middle name
+    if (i < parts.length - 1) {
+      firstNames.push(parts[i]);
+    } else {
+      surnameStart = i;
+    }
+  }
+  if (surnameStart === -1) surnameStart = parts.length - 1;
+  return parts.slice(surnameStart).join(" ");
+}
+
+function RichText({
+  text,
+  paperIndex,
+  className = "",
+}: {
+  text: string;
+  paperIndex: Record<string, GapPaperIndexEntry>;
+  className?: string;
+}) {
+  // Split text into segments: plain text and W-references
+  const segments: Array<{ type: "text"; content: string } | { type: "ref"; workId: string; fullWorkId: string }> = [];
+  let lastIndex = 0;
+
+  // Reset regex state
+  INLINE_WID_RE.lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = INLINE_WID_RE.exec(text)) !== null) {
+    // Add preceding text
+    if (match.index > lastIndex) {
+      segments.push({ type: "text", content: text.slice(lastIndex, match.index) });
+    }
+    const wid = match[1]; // W#### part
+    segments.push({ type: "ref", workId: wid, fullWorkId: `https://openalex.org/${wid}` });
+    lastIndex = match.index + match[0].length;
+  }
+
+  // Add trailing text
+  if (lastIndex < text.length) {
+    segments.push({ type: "text", content: text.slice(lastIndex) });
+  }
+
+  // If no references found, return plain text
+  if (segments.length === 1 && segments[0].type === "text") {
+    return <span className={className}>{text}</span>;
+  }
+
+  return (
+    <span className={className}>
+      {segments.map((seg, i) => {
+        if (seg.type === "text") {
+          return <span key={i}>{seg.content}</span>;
+        }
+        // Look up paper info
+        const info = paperIndex[seg.fullWorkId];
+        if (!info) {
+          // Unknown paper — render as plain W-id
+          return <span key={i} className="text-gray-400 text-xs">[{seg.workId}]</span>;
+        }
+        const surname = info.first_author ? formatAuthorSurname(info.first_author) : null;
+        const label = surname && info.year
+          ? `${surname} (${info.year})`
+          : surname
+          ? surname
+          : info.year
+          ? `(${info.year})`
+          : seg.workId;
+        return (
+          <Link
+            key={i}
+            href={`/explore?paper=${encodeURIComponent(seg.fullWorkId)}`}
+            className="text-navy underline decoration-navy/30 hover:text-orange hover:decoration-orange transition-colors"
+            title={info.title}
+          >
+            {label}
+          </Link>
+        );
+      })}
+    </span>
+  );
+}
+
+/** Render a clickable paper reference in APA style: "Author (Year)" with full title as tooltip */
 function PaperLink({ paper }: { paper: GapPaperRef }) {
+  const surname = paper.first_author ? formatAuthorSurname(paper.first_author) : null;
+  const label = surname && paper.year
+    ? `${surname} (${paper.year})`
+    : surname
+    ? surname
+    : paper.year
+    ? `(${paper.year})`
+    : paper.title || paper.work_id;
+
   return (
     <Link
       href={`/explore?paper=${encodeURIComponent(paper.work_id)}`}
       className="text-sm text-navy underline decoration-gray-300 hover:text-orange hover:decoration-orange transition-colors"
+      title={paper.title || undefined}
     >
-      {paper.title || paper.work_id}{paper.year ? ` (${paper.year})` : ""}
+      {label}
     </Link>
   );
 }
 
 /** Render a single gap card */
-function GapCard({ gap }: { gap: Gap }) {
+function GapCard({ gap, paperIndex }: { gap: Gap; paperIndex: Record<string, GapPaperIndexEntry> }) {
   const typeStyle = GAP_TYPE_STYLES[gap.type] || GAP_TYPE_STYLES.topic;
   const confStyle = CONFIDENCE_STYLES[gap.confidence] || CONFIDENCE_STYLES.unknown;
 
@@ -71,11 +187,15 @@ function GapCard({ gap }: { gap: Gap }) {
         </span>
       </div>
       <h4 className="mb-2 text-base font-semibold text-navy">{gap.title}</h4>
-      <p className="mb-3 text-sm text-gray-600 leading-relaxed">{gap.description}</p>
+      <p className="mb-3 text-sm text-gray-600 leading-relaxed">
+        <RichText text={gap.description} paperIndex={paperIndex} />
+      </p>
       {gap.evidence && (
         <div className="mb-3 rounded-lg bg-gray-50 p-3">
           <div className="text-xs font-medium text-gray-500 mb-1">Evidence</div>
-          <p className="text-sm text-gray-600">{gap.evidence}</p>
+          <p className="text-sm text-gray-600">
+            <RichText text={gap.evidence} paperIndex={paperIndex} />
+          </p>
         </div>
       )}
       {gap.supporting_papers && gap.supporting_papers.length > 0 && (
@@ -94,7 +214,7 @@ function GapCard({ gap }: { gap: Gap }) {
 }
 
 /** Render a single research agenda item */
-function AgendaCard({ item }: { item: AgendaItem }) {
+function AgendaCard({ item, paperIndex }: { item: AgendaItem; paperIndex: Record<string, GapPaperIndexEntry> }) {
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
       <div className="mb-3 flex items-center gap-3">
@@ -103,18 +223,20 @@ function AgendaCard({ item }: { item: AgendaItem }) {
         </div>
         <h4 className="text-base font-semibold text-navy">{item.title}</h4>
       </div>
-      <p className="mb-3 text-sm text-gray-600 leading-relaxed">{item.description}</p>
+      <p className="mb-3 text-sm text-gray-600 leading-relaxed">
+        <RichText text={item.description} paperIndex={paperIndex} />
+      </p>
       <div className="grid gap-2 text-sm">
         {item.suggested_methodology && (
           <div>
             <span className="font-medium text-gray-500">Methodology: </span>
-            <span className="text-gray-600">{item.suggested_methodology}</span>
+            <RichText text={item.suggested_methodology} paperIndex={paperIndex} className="text-gray-600" />
           </div>
         )}
         {item.suggested_data && (
           <div>
             <span className="font-medium text-gray-500">Data needed: </span>
-            <span className="text-gray-600">{item.suggested_data}</span>
+            <RichText text={item.suggested_data} paperIndex={paperIndex} className="text-gray-600" />
           </div>
         )}
         <div className="flex flex-wrap gap-2 mt-1">
@@ -133,7 +255,9 @@ function AgendaCard({ item }: { item: AgendaItem }) {
       {item.potential_impact && (
         <div className="mt-3 rounded-lg bg-orange/5 p-3">
           <div className="text-xs font-medium text-orange mb-1">Potential impact</div>
-          <p className="text-sm text-gray-600">{item.potential_impact}</p>
+          <p className="text-sm text-gray-600">
+            <RichText text={item.potential_impact} paperIndex={paperIndex} />
+          </p>
         </div>
       )}
     </div>
@@ -141,7 +265,7 @@ function AgendaCard({ item }: { item: AgendaItem }) {
 }
 
 /** Render a full gap analysis report */
-function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
+function GapAnalysisReport({ analysis, paperIndex }: { analysis: GapAnalysis; paperIndex: Record<string, GapPaperIndexEntry> }) {
   const confStyle = CONFIDENCE_STYLES[analysis.analysis_confidence] || CONFIDENCE_STYLES.unknown;
   const dateStr = analysis.analyzed_at
     ? new Date(analysis.analyzed_at).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })
@@ -183,7 +307,9 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
         {analysis.scope_assessment && (
           <div className="rounded-lg bg-blue-50/50 border border-blue-100 p-4">
             <div className="text-xs font-semibold text-blue-800 mb-1">Scope Assessment</div>
-            <p className="text-sm text-blue-900/80">{analysis.scope_assessment}</p>
+            <p className="text-sm text-blue-900/80">
+              <RichText text={analysis.scope_assessment} paperIndex={paperIndex} />
+            </p>
           </div>
         )}
 
@@ -191,7 +317,9 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
         {analysis.database_coverage && (
           <div className="rounded-lg bg-amber-50/50 border border-amber-100 p-4">
             <div className="text-xs font-semibold text-amber-800 mb-1">Database Coverage</div>
-            <p className="text-sm text-amber-900/80">{analysis.database_coverage}</p>
+            <p className="text-sm text-amber-900/80">
+              <RichText text={analysis.database_coverage} paperIndex={paperIndex} />
+            </p>
           </div>
         )}
 
@@ -202,7 +330,9 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
             {analysis.landscape.summary && (
               <div className="prose prose-sm max-w-none text-gray-600 mb-4">
                 {analysis.landscape.summary.split("\n\n").map((para, i) => (
-                  <p key={i} className="mb-3 leading-relaxed">{para}</p>
+                  <p key={i} className="mb-3 leading-relaxed">
+                    <RichText text={para} paperIndex={paperIndex} />
+                  </p>
                 ))}
               </div>
             )}
@@ -221,7 +351,9 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
                       }`}>
                         {f.evidence_strength}
                       </span>
-                      <p className="text-sm text-gray-700">{f.finding}</p>
+                      <p className="text-sm text-gray-700">
+                        <RichText text={f.finding} paperIndex={paperIndex} />
+                      </p>
                     </div>
                     {f.papers && f.papers.length > 0 && (
                       <div className="mt-2 flex flex-wrap gap-1">
@@ -274,7 +406,7 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
             </p>
             <div className="grid gap-4">
               {analysis.gaps.map((gap, i) => (
-                <GapCard key={gap.id || i} gap={gap} />
+                <GapCard key={gap.id || i} gap={gap} paperIndex={paperIndex} />
               ))}
             </div>
           </section>
@@ -291,7 +423,7 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
             </p>
             <div className="grid gap-4">
               {analysis.research_agenda.map((item, i) => (
-                <AgendaCard key={i} item={item} />
+                <AgendaCard key={i} item={item} paperIndex={paperIndex} />
               ))}
             </div>
           </section>
@@ -310,7 +442,9 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
             {analysis.self_reflection.synthesis_quality && (
               <div className="mb-4">
                 <div className="text-sm font-medium text-gray-500 mb-1">Synthesis Quality</div>
-                <p className="text-sm text-gray-600">{analysis.self_reflection.synthesis_quality}</p>
+                <p className="text-sm text-gray-600">
+                  <RichText text={analysis.self_reflection.synthesis_quality} paperIndex={paperIndex} />
+                </p>
               </div>
             )}
 
@@ -321,7 +455,8 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
                   <ul className="space-y-1">
                     {analysis.self_reflection.strengths.map((s, i) => (
                       <li key={i} className="text-sm text-gray-600 flex gap-1.5">
-                        <span className="text-emerald-500 shrink-0">+</span> {s}
+                        <span className="text-emerald-500 shrink-0">+</span>
+                        <RichText text={s} paperIndex={paperIndex} />
                       </li>
                     ))}
                   </ul>
@@ -333,7 +468,8 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
                   <ul className="space-y-1">
                     {analysis.self_reflection.limitations.map((l, i) => (
                       <li key={i} className="text-sm text-gray-600 flex gap-1.5">
-                        <span className="text-red-400 shrink-0">&minus;</span> {l}
+                        <span className="text-red-400 shrink-0">&minus;</span>
+                        <RichText text={l} paperIndex={paperIndex} />
                       </li>
                     ))}
                   </ul>
@@ -352,7 +488,8 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
                 <ul className="space-y-1">
                   {analysis.self_reflection.database_coverage_gaps.map((g, i) => (
                     <li key={i} className="text-sm text-amber-900/80 flex gap-1.5">
-                      <span className="text-amber-500 shrink-0">!</span> {g}
+                      <span className="text-amber-500 shrink-0">!</span>
+                      <RichText text={g} paperIndex={paperIndex} />
                     </li>
                   ))}
                 </ul>
@@ -362,7 +499,9 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
             {analysis.self_reflection.process_cost_reflection && (
               <div className="mt-4">
                 <div className="text-sm font-medium text-gray-500 mb-1">Process Reflection</div>
-                <p className="text-sm text-gray-600">{analysis.self_reflection.process_cost_reflection}</p>
+                <p className="text-sm text-gray-600">
+                  <RichText text={analysis.self_reflection.process_cost_reflection} paperIndex={paperIndex} />
+                </p>
               </div>
             )}
 
@@ -371,7 +510,9 @@ function GapAnalysisReport({ analysis }: { analysis: GapAnalysis }) {
                 <div className="text-sm font-medium text-gray-500 mb-1">Assumptions</div>
                 <ul className="space-y-1">
                   {analysis.self_reflection.assumptions.map((a, i) => (
-                    <li key={i} className="text-sm text-gray-500 italic">{a}</li>
+                    <li key={i} className="text-sm text-gray-500 italic">
+                      <RichText text={a} paperIndex={paperIndex} />
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -388,6 +529,7 @@ export default function GapsPage() {
   const stats = getStats();
   const gapAnalyses = getGapAnalyses();
   const totalRelevant = stats.classifiedRelevant || 0;
+  const paperIndex = gapAnalyses.paper_index || {};
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
@@ -472,7 +614,7 @@ export default function GapsPage() {
         {gapAnalyses.analyses.length > 0 ? (
           <div className="space-y-8">
             {gapAnalyses.analyses.map((analysis) => (
-              <GapAnalysisReport key={analysis.slug} analysis={analysis} />
+              <GapAnalysisReport key={analysis.slug} analysis={analysis} paperIndex={paperIndex} />
             ))}
           </div>
         ) : (

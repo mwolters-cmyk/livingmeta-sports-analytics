@@ -87,7 +87,15 @@ export interface GapPaperRef {
   year: number | null;
   sport?: string;
   doi?: string | null;
+  first_author?: string | null;
   why_key?: string;
+}
+
+/** Compact paper info for resolving inline W-references in text */
+export interface GapPaperIndexEntry {
+  title: string;
+  year: number | null;
+  first_author: string | null;
 }
 
 export interface GapFinding {
@@ -162,6 +170,7 @@ export interface GapAnalysis {
 export interface GapAnalysesData {
   generated_at: string;
   total_analyses: number;
+  paper_index: Record<string, GapPaperIndexEntry>;
   analyses: GapAnalysis[];
 }
 

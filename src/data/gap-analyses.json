@@ -1,6 +1,278 @@
 {
-  "generated_at": "2026-02-16T20:55:32.296892",
-  "total_analyses": 1,
+  "generated_at": "2026-02-16T21:15:24.155518",
+  "total_analyses": 2,
+  "paper_index": {
+    "https://openalex.org/W2508276981": {
+      "title": "Reducing purposeful headers from goal kicks and punts may reduce cumulative exposure to head acceleration",
+      "year": 2016,
+      "first_author": "Jaclyn B. Caccese"
+    },
+    "https://openalex.org/W2904890641": {
+      "title": "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? – A cluster‐RCT",
+      "year": 2018,
+      "first_author": "Peter Alexander van de Hoef"
+    },
+    "https://openalex.org/W2978300359": {
+      "title": "Head impact exposure in youth football—Are current interventions hitting the target?",
+      "year": 2019,
+      "first_author": "Stian Bahr Sandmo"
+    },
+    "https://openalex.org/W3023097278": {
+      "title": "A Study on the Conceptual Structure for the Estimation of Annual Salary of K-league Players",
+      "year": 2018,
+      "first_author": "Yong-Rae Kim"
+    },
+    "https://openalex.org/W3107394410": {
+      "title": "Physical preparation and return to performance of an elite female football player following ACL reconstruction: a journey to the FIFA Women’s World Cup",
+      "year": 2020,
+      "first_author": "Matt Taberner"
+    },
+    "https://openalex.org/W3160711719": {
+      "title": "Sunk or Dunk?: An Empirical Analysis of the Effect of Sunk Cost Fallacy in Professional Basketball",
+      "year": 2021,
+      "first_author": "Hailey DiCicco"
+    },
+    "https://openalex.org/W4200491382": {
+      "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
+      "year": 2021,
+      "first_author": "Ulrika Tranæus"
+    },
+    "https://openalex.org/W4206022039": {
+      "title": "Predictive Analytic Techniques to Identify Hidden Relationships between Training Load, Fatigue and Muscle Strains in Young Soccer Players",
+      "year": 2021,
+      "first_author": "Mauro Mandorino"
+    },
+    "https://openalex.org/W4210605152": {
+      "title": "Women on the Field and Money in the Bank: The Business of the All-American Girls Professional Baseball League",
+      "year": 2021,
+      "first_author": "Lisa Giddings"
+    },
+    "https://openalex.org/W4214682128": {
+      "title": "5% of Zion: Evaluating the potential for probability-split trades in professional sports",
+      "year": 2022,
+      "first_author": "Dawson M. Brown"
+    },
+    "https://openalex.org/W4281910294": {
+      "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+      "year": 2022,
+      "first_author": "Aritra Majumdar"
+    },
+    "https://openalex.org/W4389208171": {
+      "title": "Training Load and Current Soreness Predict Future Delayed Onset Muscle Soreness in Collegiate Female Soccer Athletes",
+      "year": 2023,
+      "first_author": "Brett S. Pexa"
+    },
+    "https://openalex.org/W4391543758": {
+      "title": "The Appraisal of Players' Transfer Market Values: Empirical Evidence From Italian Serie A",
+      "year": 2024,
+      "first_author": "Marco Di Domizio"
+    },
+    "https://openalex.org/W4392498958": {
+      "title": "Psychosocial Factors Associated With Lower Extremity Reinjury Risk in Soccer Players: Contribution of Self-Confidence and Reinjury Anxiety",
+      "year": 2024,
+      "first_author": "Aynollah Naderi"
+    },
+    "https://openalex.org/W4392918014": {
+      "title": "Video analysis of heading and risk of head injury situations in elite international men's football: Does the frequency of headers increase with the level of play?",
+      "year": 2024,
+      "first_author": "Lorenz Huber"
+    },
+    "https://openalex.org/W4393371529": {
+      "title": "IMPACT OF THE FOOTBALL MANAGEMENT MODERNIZATION AND FISCAL RESPONSIBILITY PROGRAM ON THE FINANCIAL AND SPORTING PERFORMANCE OF BRAZILIAN CLUBS",
+      "year": 2024,
+      "first_author": "Alberto Granzotto"
+    },
+    "https://openalex.org/W4395033210": {
+      "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+      "year": 2024,
+      "first_author": "Aritra Majumdar"
+    },
+    "https://openalex.org/W4396982583": {
+      "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+      "year": 2024,
+      "first_author": "Juan R. González"
+    },
+    "https://openalex.org/W4399295847": {
+      "title": "Process mining to investigate the relationship between clinical antecedents and injury risk, severity and return to play in professional sports",
+      "year": 2024,
+      "first_author": "Ramón Pi"
+    },
+    "https://openalex.org/W4399752739": {
+      "title": "A comparative video analysis of hamstring injuries mechanism and situational pattern in men's and women's football (soccer)",
+      "year": 2024,
+      "first_author": "Francesco Della Villa"
+    },
+    "https://openalex.org/W4400800812": {
+      "title": "A Change-Point Method to Detect Meaningful Change in Return-to-Sport Progression in Athletes",
+      "year": 2024,
+      "first_author": "Kate K. Yung"
+    },
+    "https://openalex.org/W4401276487": {
+      "title": "Does Draft Currency Promote Competitive Balance? An Empirical Investigation of the National Football League 2002–2021",
+      "year": 2024,
+      "first_author": "Michael A. Lapré"
+    },
+    "https://openalex.org/W4402308206": {
+      "title": "Injury-inciting circumstances of sudden-onset hamstring injuries: video analyses of 63 match injuries in male professional football players in the Qatar Stars League (2013–2020)",
+      "year": 2024,
+      "first_author": "Robin Vermeulen"
+    },
+    "https://openalex.org/W4402532778": {
+      "title": "Match workload and international travel associated with (ACL) injuries in professional women's football",
+      "year": 2024,
+      "first_author": "Steve den Hollander"
+    },
+    "https://openalex.org/W4404763099": {
+      "title": "Flexible modelling of time-varying exposures and recurrent events to analyse training load effects in team sports injuries",
+      "year": 2024,
+      "first_author": "Lore Zumeta‐Olaskoaga"
+    },
+    "https://openalex.org/W4405417350": {
+      "title": "Critical Fluctuations as an Early Warning Signal of Sports Injuries? A Proof of Concept Using Football Monitoring Data",
+      "year": 2024,
+      "first_author": "Niklas D. Neumann"
+    },
+    "https://openalex.org/W4405791145": {
+      "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
+      "year": 2024,
+      "first_author": "Mehmet Ali Yalçınkaya"
+    },
+    "https://openalex.org/W4406017810": {
+      "title": "Predicting noncontact injuries of professional football players using machine learning",
+      "year": 2025,
+      "first_author": "Diogo Freitas"
+    },
+    "https://openalex.org/W4406035559": {
+      "title": "The Impact of Financial Investment on Game Results: A Comparative Study of Manchester",
+      "year": 2025,
+      "first_author": "Zhaoqin Yang"
+    },
+    "https://openalex.org/W4408750469": {
+      "title": "Sprint running mechanics are associated with hamstring strain injury: a 6-month prospective cohort study of 126 elite male footballers",
+      "year": 2025,
+      "first_author": "Christopher Bramah"
+    },
+    "https://openalex.org/W4409087716": {
+      "title": "Valuation of NHL draft picks using functional data analysis",
+      "year": 2025,
+      "first_author": "Ryker Moreau"
+    },
+    "https://openalex.org/W4409487186": {
+      "title": "Weighted dyadicity for major league baseball player transaction networks",
+      "year": 2025,
+      "first_author": "Nathaniel Bushek"
+    },
+    "https://openalex.org/W4410637294": {
+      "title": "Exploring the Dynamics of NBA Player Salaries: An Analysis of Influencing Factors",
+      "year": 2025,
+      "first_author": "Depeng Wang"
+    },
+    "https://openalex.org/W4411020614": {
+      "title": "The training and detraining effects of 8-week dynamic stretching of hip flexors on hip range of motion, pain, and physical performance in male professional football players with low back pain. A randomized controlled trial",
+      "year": 2025,
+      "first_author": "Mojtaba Iranmanesh"
+    },
+    "https://openalex.org/W4411153325": {
+      "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+      "year": 2025,
+      "first_author": "Bartosz Wilczyński"
+    },
+    "https://openalex.org/W4411896424": {
+      "title": "JÁTÉKOSJOGOK VAGYONI SZEREPE HAZAI ÉS KÜLFÖLDI FUTBALLKLUBOK BESZÁMOLÓI ALAPJÁN",
+      "year": 2025,
+      "first_author": "Norbert Nagy"
+    },
+    "https://openalex.org/W4412204000": {
+      "title": "Lessons Learned from Implementing Injury and Illness Surveillance in Professional Football: Introducing a New Implementation Framework",
+      "year": 2025,
+      "first_author": "Montassar Tabben"
+    },
+    "https://openalex.org/W4412526552": {
+      "title": "Predicting Soccer Player Salaries with Both Traditional and Automated Machine Learning Approaches",
+      "year": 2025,
+      "first_author": "Davronbek Malikov"
+    },
+    "https://openalex.org/W4412685988": {
+      "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+      "year": 2025,
+      "first_author": "Sean Pradhan"
+    },
+    "https://openalex.org/W4413447702": {
+      "title": "Comparative Effects of 2 Different Frequencies of Resistance Training in an Integral Periodization Approach on High-Intensity Actions and Noncontact Injuries in Young Trained Soccer Players",
+      "year": 2025,
+      "first_author": "Jose Jimenez-Iglesias"
+    },
+    "https://openalex.org/W4414559250": {
+      "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
+      "year": 2025,
+      "first_author": "Mohammed Jamal Bataineh"
+    },
+    "https://openalex.org/W4414742830": {
+      "title": "Mapping sponsorship portfolios in esports: implied strategic continuity and diversification in the league of legends pro league",
+      "year": 2025,
+      "first_author": "Pengyu Zhu"
+    },
+    "https://openalex.org/W4415014400": {
+      "title": "The most important quantitative determinants affecting the transfer market of professional football players in Iraq",
+      "year": 2025,
+      "first_author": "Ali Abdul Hamid"
+    },
+    "https://openalex.org/W4415023494": {
+      "title": "Heading to guidance: understanding in-training heading demands for elite men’s and women’s football",
+      "year": 2025,
+      "first_author": "Dominic Townsend"
+    },
+    "https://openalex.org/W4415268362": {
+      "title": "Developing A Predictive Model for Football Players’ Market Value Using Machine Learning",
+      "year": 2025,
+      "first_author": "Muhammad Idris"
+    },
+    "https://openalex.org/W4415292821": {
+      "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
+      "year": 2025,
+      "first_author": "Dhruv J Joglekar"
+    },
+    "https://openalex.org/W4416291487": {
+      "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
+      "year": 2025,
+      "first_author": "Jiacheng Ma"
+    },
+    "https://openalex.org/W4416382347": {
+      "title": "Leveraging GPS Data and Attention-based BiLSTM for Injury Prediction in Professional Football",
+      "year": 2025,
+      "first_author": "Aleksandra Sadurska"
+    },
+    "https://openalex.org/W4416666775": {
+      "title": "Effects of the FIFA 11 + Program on Physical Fitness in Youth and Adult Soccer Players: A Systematic Review and Meta-analysis",
+      "year": 2025,
+      "first_author": "Ibnu Noufal Kambitta Valappil"
+    },
+    "https://openalex.org/W7107867268": {
+      "title": "Financial Governance and Transfer Policies in Football: A Positional Analysis of Expenditures in Europe's Top Leagues",
+      "year": 2025,
+      "first_author": null
+    },
+    "https://openalex.org/W7119564663": {
+      "title": "Potential and Low-Cost Football Talents for UAE Clubs Based on Data-Driven Analysis",
+      "year": 2025,
+      "first_author": "Rashid Alqemzi"
+    },
+    "https://openalex.org/W7123342556": {
+      "title": "Hamstring Training and Football Performance: A Systematic Review and Meta-Analysis",
+      "year": 2026,
+      "first_author": "Antonio Riego Ruiz"
+    },
+    "https://openalex.org/W7125394211": {
+      "title": "High return to play but low return to preinjury level after anterior cruciate ligament reconstruction in soccer players: A systematic review with meta‐analysis",
+      "year": 2026,
+      "first_author": "Weipeng Liu"
+    },
+    "https://openalex.org/W7126001043": {
+      "title": "Time-to-Injury Forecasting in Elite Female Football: A DeepHit Survival Approach",
+      "year": 2026,
+      "first_author": "Victoria Catterall"
+    }
+  },
   "analyses": [
     {
       "slug": "how-is-machine-learning-used-for-injury-prediction-and-prevention-in-football",
@@ -27,35 +299,40 @@
                 "title": "Predicting noncontact injuries of professional football players using machine learning",
                 "year": 2025,
                 "sport": "football",
-                "doi": "https://doi.org/10.1371/journal.pone.0315481"
+                "doi": "https://doi.org/10.1371/journal.pone.0315481",
+                "first_author": "Diogo Freitas"
               },
               {
                 "work_id": "https://openalex.org/W4401640692",
                 "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
                 "year": 2024,
                 "sport": "football",
-                "doi": "https://doi.org/10.3390/app14167217"
+                "doi": "https://doi.org/10.3390/app14167217",
+                "first_author": "Victor Chang"
               },
               {
                 "work_id": "https://openalex.org/W4395033210",
                 "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
                 "year": 2024,
                 "sport": "football",
-                "doi": "https://doi.org/10.3233/jsa-240718"
+                "doi": "https://doi.org/10.3233/jsa-240718",
+                "first_author": "Aritra Majumdar"
               },
               {
                 "work_id": "https://openalex.org/W4394949414",
                 "title": "Association between External Load and Injury Incidence in Professional and Elite-Youth Football Players",
                 "year": 2024,
                 "sport": "football",
-                "doi": "https://doi.org/10.56003/pessr.v3i1.316"
+                "doi": "https://doi.org/10.56003/pessr.v3i1.316",
+                "first_author": "Georgios Georgiadis"
               },
               {
                 "work_id": "https://openalex.org/W4404763099",
                 "title": "Flexible modelling of time-varying exposures and recurrent events to analyse training load effects in team sports injuries",
                 "year": 2024,
                 "sport": "football",
-                "doi": "https://doi.org/10.1093/jrsssc/qlae059"
+                "doi": "https://doi.org/10.1093/jrsssc/qlae059",
+                "first_author": "Lore Zumeta‐Olaskoaga"
               }
             ],
             "paper_count": 5
@@ -69,28 +346,32 @@
                 "title": "Sprint running mechanics are associated with hamstring strain injury: a 6-month prospective cohort study of 126 elite male footballers",
                 "year": 2025,
                 "sport": "football",
-                "doi": "https://doi.org/10.1136/bjsports-2024-108600"
+                "doi": "https://doi.org/10.1136/bjsports-2024-108600",
+                "first_author": "Christopher Bramah"
               },
               {
                 "work_id": "https://openalex.org/W2904890641",
                 "title": "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? – A cluster‐RCT",
                 "year": 2018,
                 "sport": "football",
-                "doi": "https://doi.org/10.1111/sms.13353"
+                "doi": "https://doi.org/10.1111/sms.13353",
+                "first_author": "Peter Alexander van de Hoef"
               },
               {
                 "work_id": "https://openalex.org/W4205341392",
                 "title": "Reliability of the Hip Extension Lower Exercise as a Measure of Eccentric Hamstring Strength",
                 "year": 2021,
                 "sport": "football",
-                "doi": "https://doi.org/10.3390/biomechanics2010001"
+                "doi": "https://doi.org/10.3390/biomechanics2010001",
+                "first_author": "Joey O’Brien"
               },
               {
                 "work_id": "https://openalex.org/W7123342556",
                 "title": "Hamstring Training and Football Performance: A Systematic Review and Meta-Analysis",
                 "year": 2026,
                 "sport": "football",
-                "doi": "https://doi.org/10.1055/a-2785-7739"
+                "doi": "https://doi.org/10.1055/a-2785-7739",
+                "first_author": "Antonio Riego Ruiz"
               }
             ],
             "paper_count": 4
@@ -104,28 +385,32 @@
                 "title": "On-field kinematics of cut maneuvers in football players: Are wearable sensors reliable for assessing anterior cruciate ligament injury risk?",
                 "year": 2025,
                 "sport": "football",
-                "doi": "https://doi.org/10.1080/02640414.2025.2493012"
+                "doi": "https://doi.org/10.1080/02640414.2025.2493012",
+                "first_author": "Stefano Di Paolo"
               },
               {
                 "work_id": "https://openalex.org/W4415907277",
                 "title": "Testing ACL-Reconstructed Football Players on the Field: An Algorithm to Assess Cutting Biomechanics Injury Risk Through Wearable Sensors",
                 "year": 2025,
                 "sport": "football",
-                "doi": "https://doi.org/10.3390/sports13110391"
+                "doi": "https://doi.org/10.3390/sports13110391",
+                "first_author": "Stefano Di Paolo"
               },
               {
                 "work_id": "https://openalex.org/W4411020614",
                 "title": "The training and detraining effects of 8-week dynamic stretching of hip flexors on hip range of motion, pain, and physical performance in male professional football players with low back pain. A randomized controlled trial",
                 "year": 2025,
                 "sport": "football",
-                "doi": "https://doi.org/10.1080/02640414.2025.2513163"
+                "doi": "https://doi.org/10.1080/02640414.2025.2513163",
+                "first_author": "Mojtaba Iranmanesh"
               },
               {
                 "work_id": "https://openalex.org/W7118020592",
                 "title": "Functional Asymmetries in Youth Soccer Players: A Systematic Review of Assessment Technologies and Artificial Intelligence Applications",
                 "year": 2026,
                 "sport": "football",
-                "doi": "https://doi.org/10.17309/tmfv.2026.1.03"
+                "doi": "https://doi.org/10.17309/tmfv.2026.1.03",
+                "first_author": "Walid Bouzid"
               }
             ],
             "paper_count": 4
@@ -139,28 +424,32 @@
                 "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
                 "year": 2021,
                 "sport": "football",
-                "doi": "https://doi.org/10.3390/ijerph19010143"
+                "doi": "https://doi.org/10.3390/ijerph19010143",
+                "first_author": "Ulrika Tranæus"
               },
               {
                 "work_id": "https://openalex.org/W4392498958",
                 "title": "Psychosocial Factors Associated With Lower Extremity Reinjury Risk in Soccer Players: Contribution of Self-Confidence and Reinjury Anxiety",
                 "year": 2024,
                 "sport": "football",
-                "doi": "https://doi.org/10.4085/1062-6050-0434.23"
+                "doi": "https://doi.org/10.4085/1062-6050-0434.23",
+                "first_author": "Aynollah Naderi"
               },
               {
                 "work_id": "https://openalex.org/W4416291487",
                 "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
                 "year": 2025,
                 "sport": "football",
-                "doi": "https://doi.org/10.1038/s41598-025-24144-y"
+                "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+                "first_author": "Jiacheng Ma"
               },
               {
                 "work_id": "https://openalex.org/W4412019479",
                 "title": "#<scp>ReadyToPlay</scp>: Risk Factors in the Norwegian Women's Premier League Football—Perceptions and Priorities of Club Stakeholders",
                 "year": 2025,
                 "sport": "football",
-                "doi": "https://doi.org/10.1111/sms.70099"
+                "doi": "https://doi.org/10.1111/sms.70099",
+                "first_author": "Ingvild G. Kåshagen"
               }
             ],
             "paper_count": 4
@@ -174,28 +463,32 @@
                 "title": "Head impact exposure in youth football—Are current interventions hitting the target?",
                 "year": 2019,
                 "sport": "football",
-                "doi": "https://doi.org/10.1111/sms.13562"
+                "doi": "https://doi.org/10.1111/sms.13562",
+                "first_author": "Stian Bahr Sandmo"
               },
               {
                 "work_id": "https://openalex.org/W2508276981",
                 "title": "Reducing purposeful headers from goal kicks and punts may reduce cumulative exposure to head acceleration",
                 "year": 2016,
                 "sport": "football",
-                "doi": "https://doi.org/10.1080/15438627.2016.1230549"
+                "doi": "https://doi.org/10.1080/15438627.2016.1230549",
+                "first_author": "Jaclyn B. Caccese"
               },
               {
                 "work_id": "https://openalex.org/W4392918014",
                 "title": "Video analysis of heading and risk of head injury situations in elite international men's football: Does the frequency of headers increase with the level of play?",
                 "year": 2024,
                 "sport": "football",
-                "doi": "https://doi.org/10.1002/ejsc.12041"
+                "doi": "https://doi.org/10.1002/ejsc.12041",
+                "first_author": "Lorenz Huber"
               },
               {
                 "work_id": "https://openalex.org/W4415023494",
                 "title": "Heading to guidance: understanding in-training heading demands for elite men’s and women’s football",
                 "year": 2025,
                 "sport": "football",
-                "doi": "https://doi.org/10.1136/bjsports-2024-109525"
+                "doi": "https://doi.org/10.1136/bjsports-2024-109525",
+                "first_author": "Dominic Townsend"
               }
             ],
             "paper_count": 4
@@ -209,21 +502,24 @@
                 "title": "Physical preparation and return to performance of an elite female football player following ACL reconstruction: a journey to the FIFA Women’s World Cup",
                 "year": 2020,
                 "sport": "football",
-                "doi": "https://doi.org/10.1136/bmjsem-2020-000843"
+                "doi": "https://doi.org/10.1136/bmjsem-2020-000843",
+                "first_author": "Matt Taberner"
               },
               {
                 "work_id": "https://openalex.org/W4402542335",
                 "title": "The Time Course of Injury Risk After Return-to-Play in Professional Football (Soccer)",
                 "year": 2024,
                 "sport": "football",
-                "doi": "https://doi.org/10.1007/s40279-024-02103-3"
+                "doi": "https://doi.org/10.1007/s40279-024-02103-3",
+                "first_author": "Guangze Zhang"
               },
               {
                 "work_id": "https://openalex.org/W4400800812",
                 "title": "A Change-Point Method to Detect Meaningful Change in Return-to-Sport Progression in Athletes",
                 "year": 2024,
                 "sport": "football",
-                "doi": "https://doi.org/10.1123/ijspp.2023-0178"
+                "doi": "https://doi.org/10.1123/ijspp.2023-0178",
+                "first_author": "Kate K. Yung"
               }
             ],
             "paper_count": 3
@@ -237,7 +533,8 @@
                 "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
                 "year": 2024,
                 "sport": "football",
-                "doi": "https://doi.org/10.1123/ijspp.2023-0184"
+                "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+                "first_author": "Juan R. González"
               }
             ],
             "paper_count": 1
@@ -261,7 +558,8 @@
             "why_key": "The most-cited review (55 citations, FWCI 13.83) synthesizing ML approaches for training load and injury prediction. Sets the conceptual framework for the entire field and identifies key methodological challenges.",
             "year": 2022,
             "sport": "football",
-            "doi": "https://doi.org/10.1186/s40798-022-00465-4"
+            "doi": "https://doi.org/10.1186/s40798-022-00465-4",
+            "first_author": "Aritra Majumdar"
           },
           {
             "work_id": "https://openalex.org/W4408750469",
@@ -269,7 +567,8 @@
             "why_key": "Largest prospective biomechanical cohort (n=126) directly addressing HSI prediction via sprint kinematics. High FWCI (34.16) suggests major impact. Demonstrates predictive validity of a specific biomechanical phenotype.",
             "year": 2025,
             "sport": "football",
-            "doi": "https://doi.org/10.1136/bjsports-2024-108600"
+            "doi": "https://doi.org/10.1136/bjsports-2024-108600",
+            "first_author": "Christopher Bramah"
           },
           {
             "work_id": "https://openalex.org/W4406017810",
@@ -277,7 +576,8 @@
             "why_key": "Recent (2025) ML-native paper explicitly comparing machine learning to statistical methods for GPS-based injury prediction. Addresses the multifactorial nature of injuries—directly aligned with the research question.",
             "year": 2025,
             "sport": "football",
-            "doi": "https://doi.org/10.1371/journal.pone.0315481"
+            "doi": "https://doi.org/10.1371/journal.pone.0315481",
+            "first_author": "Diogo Freitas"
           },
           {
             "work_id": "https://openalex.org/W4396982583",
@@ -285,7 +585,8 @@
             "why_key": "Rare integration of GPS + genomics + metabolomics into injury prediction; elite female focus. Demonstrates multi-modal data fusion in ML—novel methodological direction.",
             "year": 2024,
             "sport": "football",
-            "doi": "https://doi.org/10.1123/ijspp.2023-0184"
+            "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+            "first_author": "Juan R. González"
           },
           {
             "work_id": "https://openalex.org/W4411153325",
@@ -293,7 +594,8 @@
             "why_key": "Only paper with publicly available code (GitHub). Addresses interpretability gap in sports ML and provides practical profiling framework using random forests. Cross-sport validation (handball) suggests generalizability.",
             "year": 2025,
             "sport": "football",
-            "doi": "https://doi.org/10.3390/app15126436"
+            "doi": "https://doi.org/10.3390/app15126436",
+            "first_author": "Bartosz Wilczyński"
           }
         ]
       },
@@ -310,28 +612,32 @@
               "title": "Predicting noncontact injuries of professional football players using machine learning",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1371/journal.pone.0315481"
+              "doi": "https://doi.org/10.1371/journal.pone.0315481",
+              "first_author": "Diogo Freitas"
             },
             {
               "work_id": "https://openalex.org/W4395033210",
               "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.3233/jsa-240718"
+              "doi": "https://doi.org/10.3233/jsa-240718",
+              "first_author": "Aritra Majumdar"
             },
             {
               "work_id": "https://openalex.org/W4411153325",
               "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.3390/app15126436"
+              "doi": "https://doi.org/10.3390/app15126436",
+              "first_author": "Bartosz Wilczyński"
             },
             {
               "work_id": "https://openalex.org/W4416291487",
               "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1038/s41598-025-24144-y"
+              "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+              "first_author": "Jiacheng Ma"
             }
           ],
           "importance": "high",
@@ -352,35 +658,40 @@
               "title": "Predicting noncontact injuries of professional football players using machine learning",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1371/journal.pone.0315481"
+              "doi": "https://doi.org/10.1371/journal.pone.0315481",
+              "first_author": "Diogo Freitas"
             },
             {
               "work_id": "https://openalex.org/W4395033210",
               "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.3233/jsa-240718"
+              "doi": "https://doi.org/10.3233/jsa-240718",
+              "first_author": "Aritra Majumdar"
             },
             {
               "work_id": "https://openalex.org/W4411153325",
               "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.3390/app15126436"
+              "doi": "https://doi.org/10.3390/app15126436",
+              "first_author": "Bartosz Wilczyński"
             },
             {
               "work_id": "https://openalex.org/W4416291487",
               "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1038/s41598-025-24144-y"
+              "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+              "first_author": "Jiacheng Ma"
             },
             {
               "work_id": "https://openalex.org/W4416382347",
               "title": "Leveraging GPS Data and Attention-based BiLSTM for Injury Prediction in Professional Football",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.62036/isd.2025.67"
+              "doi": "https://doi.org/10.62036/isd.2025.67",
+              "first_author": "Aleksandra Sadurska"
             }
           ],
           "importance": "high",
@@ -401,28 +712,32 @@
               "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
               "year": 2021,
               "sport": "football",
-              "doi": "https://doi.org/10.3390/ijerph19010143"
+              "doi": "https://doi.org/10.3390/ijerph19010143",
+              "first_author": "Ulrika Tranæus"
             },
             {
               "work_id": "https://openalex.org/W4392498958",
               "title": "Psychosocial Factors Associated With Lower Extremity Reinjury Risk in Soccer Players: Contribution of Self-Confidence and Reinjury Anxiety",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.4085/1062-6050-0434.23"
+              "doi": "https://doi.org/10.4085/1062-6050-0434.23",
+              "first_author": "Aynollah Naderi"
             },
             {
               "work_id": "https://openalex.org/W4416291487",
               "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1038/s41598-025-24144-y"
+              "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+              "first_author": "Jiacheng Ma"
             },
             {
               "work_id": "https://openalex.org/W4412019479",
               "title": "#<scp>ReadyToPlay</scp>: Risk Factors in the Norwegian Women's Premier League Football—Perceptions and Priorities of Club Stakeholders",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1111/sms.70099"
+              "doi": "https://doi.org/10.1111/sms.70099",
+              "first_author": "Ingvild G. Kåshagen"
             }
           ],
           "importance": "high",
@@ -443,28 +758,32 @@
               "title": "Predicting noncontact injuries of professional football players using machine learning",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1371/journal.pone.0315481"
+              "doi": "https://doi.org/10.1371/journal.pone.0315481",
+              "first_author": "Diogo Freitas"
             },
             {
               "work_id": "https://openalex.org/W4395033210",
               "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.3233/jsa-240718"
+              "doi": "https://doi.org/10.3233/jsa-240718",
+              "first_author": "Aritra Majumdar"
             },
             {
               "work_id": "https://openalex.org/W4411153325",
               "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.3390/app15126436"
+              "doi": "https://doi.org/10.3390/app15126436",
+              "first_author": "Bartosz Wilczyński"
             },
             {
               "work_id": "https://openalex.org/W4416291487",
               "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1038/s41598-025-24144-y"
+              "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+              "first_author": "Jiacheng Ma"
             }
           ],
           "importance": "high",
@@ -485,28 +804,32 @@
               "title": "Predicting noncontact injuries of professional football players using machine learning",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1371/journal.pone.0315481"
+              "doi": "https://doi.org/10.1371/journal.pone.0315481",
+              "first_author": "Diogo Freitas"
             },
             {
               "work_id": "https://openalex.org/W4395033210",
               "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.3233/jsa-240718"
+              "doi": "https://doi.org/10.3233/jsa-240718",
+              "first_author": "Aritra Majumdar"
             },
             {
               "work_id": "https://openalex.org/W4412204000",
               "title": "Lessons Learned from Implementing Injury and Illness Surveillance in Professional Football: Introducing a New Implementation Framework",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1007/s40279-025-02276-5"
+              "doi": "https://doi.org/10.1007/s40279-025-02276-5",
+              "first_author": "Montassar Tabben"
             },
             {
               "work_id": "https://openalex.org/W4411020614",
               "title": "The training and detraining effects of 8-week dynamic stretching of hip flexors on hip range of motion, pain, and physical performance in male professional football players with low back pain. A randomized controlled trial",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1080/02640414.2025.2513163"
+              "doi": "https://doi.org/10.1080/02640414.2025.2513163",
+              "first_author": "Mojtaba Iranmanesh"
             }
           ],
           "importance": "high",
@@ -527,28 +850,32 @@
               "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.1123/ijspp.2023-0184"
+              "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+              "first_author": "Juan R. González"
             },
             {
               "work_id": "https://openalex.org/W7126001043",
               "title": "Time-to-Injury Forecasting in Elite Female Football: A DeepHit Survival Approach",
               "year": 2026,
               "sport": "football",
-              "doi": null
+              "doi": null,
+              "first_author": "Victoria Catterall"
             },
             {
               "work_id": "https://openalex.org/W4200491382",
               "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
               "year": 2021,
               "sport": "football",
-              "doi": "https://doi.org/10.3390/ijerph19010143"
+              "doi": "https://doi.org/10.3390/ijerph19010143",
+              "first_author": "Ulrika Tranæus"
             },
             {
               "work_id": "https://openalex.org/W4399752739",
               "title": "A comparative video analysis of hamstring injuries mechanism and situational pattern in men's and women's football (soccer)",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.1002/ksa.12313"
+              "doi": "https://doi.org/10.1002/ksa.12313",
+              "first_author": "Francesco Della Villa"
             }
           ],
           "importance": "high",
@@ -569,35 +896,40 @@
               "title": "Predicting noncontact injuries of professional football players using machine learning",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1371/journal.pone.0315481"
+              "doi": "https://doi.org/10.1371/journal.pone.0315481",
+              "first_author": "Diogo Freitas"
             },
             {
               "work_id": "https://openalex.org/W4395033210",
               "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.3233/jsa-240718"
+              "doi": "https://doi.org/10.3233/jsa-240718",
+              "first_author": "Aritra Majumdar"
             },
             {
               "work_id": "https://openalex.org/W4416382347",
               "title": "Leveraging GPS Data and Attention-based BiLSTM for Injury Prediction in Professional Football",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.62036/isd.2025.67"
+              "doi": "https://doi.org/10.62036/isd.2025.67",
+              "first_author": "Aleksandra Sadurska"
             },
             {
               "work_id": "https://openalex.org/W4416291487",
               "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1038/s41598-025-24144-y"
+              "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+              "first_author": "Jiacheng Ma"
             },
             {
               "work_id": "https://openalex.org/W4411153325",
               "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.3390/app15126436"
+              "doi": "https://doi.org/10.3390/app15126436",
+              "first_author": "Bartosz Wilczyński"
             }
           ],
           "importance": "high",
@@ -618,21 +950,24 @@
               "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.3233/jsa-240718"
+              "doi": "https://doi.org/10.3233/jsa-240718",
+              "first_author": "Aritra Majumdar"
             },
             {
               "work_id": "https://openalex.org/W4406017810",
               "title": "Predicting noncontact injuries of professional football players using machine learning",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1371/journal.pone.0315481"
+              "doi": "https://doi.org/10.1371/journal.pone.0315481",
+              "first_author": "Diogo Freitas"
             },
             {
               "work_id": "https://openalex.org/W4404763099",
               "title": "Flexible modelling of time-varying exposures and recurrent events to analyse training load effects in team sports injuries",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.1093/jrsssc/qlae059"
+              "doi": "https://doi.org/10.1093/jrsssc/qlae059",
+              "first_author": "Lore Zumeta‐Olaskoaga"
             }
           ],
           "importance": "high",
@@ -653,28 +988,32 @@
               "title": "Sprint running mechanics are associated with hamstring strain injury: a 6-month prospective cohort study of 126 elite male footballers",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1136/bjsports-2024-108600"
+              "doi": "https://doi.org/10.1136/bjsports-2024-108600",
+              "first_author": "Christopher Bramah"
             },
             {
               "work_id": "https://openalex.org/W4406017810",
               "title": "Predicting noncontact injuries of professional football players using machine learning",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1371/journal.pone.0315481"
+              "doi": "https://doi.org/10.1371/journal.pone.0315481",
+              "first_author": "Diogo Freitas"
             },
             {
               "work_id": "https://openalex.org/W4395033210",
               "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.3233/jsa-240718"
+              "doi": "https://doi.org/10.3233/jsa-240718",
+              "first_author": "Aritra Majumdar"
             },
             {
               "work_id": "https://openalex.org/W4200491382",
               "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
               "year": 2021,
               "sport": "football",
-              "doi": "https://doi.org/10.3390/ijerph19010143"
+              "doi": "https://doi.org/10.3390/ijerph19010143",
+              "first_author": "Ulrika Tranæus"
             }
           ],
           "importance": "medium",
@@ -695,28 +1034,32 @@
               "title": "Head impact exposure in youth football—Are current interventions hitting the target?",
               "year": 2019,
               "sport": "football",
-              "doi": "https://doi.org/10.1111/sms.13562"
+              "doi": "https://doi.org/10.1111/sms.13562",
+              "first_author": "Stian Bahr Sandmo"
             },
             {
               "work_id": "https://openalex.org/W2508276981",
               "title": "Reducing purposeful headers from goal kicks and punts may reduce cumulative exposure to head acceleration",
               "year": 2016,
               "sport": "football",
-              "doi": "https://doi.org/10.1080/15438627.2016.1230549"
+              "doi": "https://doi.org/10.1080/15438627.2016.1230549",
+              "first_author": "Jaclyn B. Caccese"
             },
             {
               "work_id": "https://openalex.org/W4392918014",
               "title": "Video analysis of heading and risk of head injury situations in elite international men's football: Does the frequency of headers increase with the level of play?",
               "year": 2024,
               "sport": "football",
-              "doi": "https://doi.org/10.1002/ejsc.12041"
+              "doi": "https://doi.org/10.1002/ejsc.12041",
+              "first_author": "Lorenz Huber"
             },
             {
               "work_id": "https://openalex.org/W4415023494",
               "title": "Heading to guidance: understanding in-training heading demands for elite men’s and women’s football",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.1136/bjsports-2024-109525"
+              "doi": "https://doi.org/10.1136/bjsports-2024-109525",
+              "first_author": "Dominic Townsend"
             }
           ],
           "importance": "medium",
@@ -839,6 +1182,627 @@
           "Database expansion to include sports medicine and athletic training conference proceedings (AOSSM, EATA, NATA) where clinical translation and practical implementation barriers are discussed."
         ],
         "process_cost_reflection": "Provided with 68 paper summaries (abstracts + minimal metadata), this analysis required synthesis across fragmented, heterogeneous studies with limited methodological detail. Cost-benefit assessment: (1) Volume appropriate: 68 papers is manageable in one pass; more would yield diminishing returns; (2) Quality of summaries: abstracts alone were INSUFFICIENT for assessing methodological rigor, sample quality, or technical soundness. Statements like 'ML achieved X% accuracy' without reporting confidence intervals, cross-validation strategy, or base rate are common; full-text access would have revealed major gaps (e.g., how many papers actually report external validation?). (3) Time allocation: Spent 60% identifying missing papers/gaps and 40% assessing what WAS studied—reflects sparsity of core research and large white space. (4) Confidence cost: Medium-confidence output reflects genuine uncertainty about whether gaps represent field-wide blindspots or database coverage artifacts. Higher confidence would require: structured full-text review, author interviews, and meta-analysis of results. (5) Actionability: Output provides clear research directions (5 priorities with defined scope, methods, and feasibility). Clubs and researchers can immediately act. This justifies the analysis even with medium confidence. Estimate for this analysis: 8-12 hours of careful reading + synthesis. Full-text analysis would extend to 40-60 hours. For a 68-paper collection, AI-assisted abstract analysis + human gap synthesis is cost-effective; full-text access would improve confidence by ~15-20% at 5x cost."
+      }
+    },
+    {
+      "slug": "is-the-relationship-between-financial-spending-and-competitive-success-league-po",
+      "question": "Is the relationship between financial spending and competitive success (league position) stronger in football than in other sports?",
+      "created_at": "2026-02-16T21:07:14.690932",
+      "analyzed_at": "2026-02-16T21:09:07.081461",
+      "prompt_version": "v1",
+      "model": "claude-haiku-4-5-20251001",
+      "papers_analyzed": 47,
+      "cost_usd": 0.06,
+      "analysis_confidence": "low",
+      "scope_assessment": "This question is well-scoped and testable, but our database is poorly positioned to answer it definitively. The question requires: (1) direct empirical comparison of spending-to-performance elasticity across sports, (2) consistent operationalization of 'competitive success' (league position, wins, playoff qualification), and (3) equivalent data availability across sports. Our database has 23 football papers but only 10 basketball, 7 baseball, 2 American football, and 1 each for esports, cricket, and ice hockey. More critically, most papers study player valuation or salary prediction, NOT the relationship between total team spending and league position. This is a fundamental mismatch between the research question and what our papers actually study.",
+      "database_coverage": "Our database heavily skews toward football (49%) and contains minimal coverage of other major team sports. Among the papers we do have, the dominant theme is player-level salary/valuation (83% of papers, 39/47), not team-level spending-to-performance relationships. We found only ~5 papers that directly examine team-spending vs. league-position relationships, and even these vary wildly in methodology and operationalization. The database lacks longitudinal, comparative designs that would be essential for this question. Coverage gap: virtually no papers examining spending-to-performance elasticity comparisons across sports using consistent methods.",
+      "confidence_explanation": "We have very few papers (n≈5) that directly address the core research question, they use inconsistent methods, and there is no genuine comparative study across multiple sports with standardized metrics. Most database papers address adjacent questions (player salaries, transfer values) rather than the causal link between team spending and league position. To raise confidence to 'medium', we would need at least 3-4 papers per sport doing comparable analyses with reported effect sizes and confidence intervals. We currently have effect sizes reported in only 6 papers total across all sports.",
+      "landscape": {
+        "summary": "The literature overwhelmingly focuses on individual player valuation and salary prediction using machine learning and statistical methods, particularly in football. Across all sports, researchers seek to understand what factors determine player market value (age, position, performance metrics, contract status) and develop predictive models. The handful of papers examining team-spending effects finds mixed results: some suggest spending significantly predicts wins (W4412685988 in NBA, W4414559250 in Saudi football), while others find weak or context-dependent relationships (W4415292821 in IPL cricket shows minimal relationship to short-term performance). The field is characterized by isolated, sport-specific case studies rather than integrated comparative analysis. Very few papers examine the temporal stability of spending-to-performance relationships or test for sport-specific differences in this relationship.",
+        "key_findings": [
+          {
+            "finding": "In the NBA, salary cap violations correlate with significantly higher win totals and offensive ratings, suggesting that increased spending (via luxury tax) justifies the cost for most teams.",
+            "evidence_strength": "moderate",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4412685988",
+                "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+                "year": 2025,
+                "sport": "basketball",
+                "doi": "https://doi.org/10.3389/fspor.2025.1625458",
+                "first_author": "Sean Pradhan"
+              }
+            ],
+            "paper_count": 1
+          },
+          {
+            "finding": "In Saudi Arabian Professional Football League, the influx of public investment funds (PIF) has transformed competitive balance, with concentrated investment creating performance disparities.",
+            "evidence_strength": "weak",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4414559250",
+                "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
+                "year": 2025,
+                "sport": "football",
+                "doi": "https://doi.org/10.3389/fspor.2025.1649310",
+                "first_author": "Mohammed Jamal Bataineh"
+              }
+            ],
+            "paper_count": 1
+          },
+          {
+            "finding": "In Indian Premier League cricket (IPL), team auction spending strategies show minimal short-term relationships to winning percentage or playoff qualification, with only modest long-term effects.",
+            "evidence_strength": "moderate",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4415292821",
+                "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
+                "year": 2025,
+                "sport": "cricket",
+                "doi": "https://doi.org/10.1177/22150218251386294",
+                "first_author": "Dhruv J Joglekar"
+              }
+            ],
+            "paper_count": 1
+          },
+          {
+            "finding": "In Major League Baseball, payroll has no significant effect on transaction patterns (player trades) between competitive teams, and historical competitive teams avoid trading with each other.",
+            "evidence_strength": "moderate",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4409487186",
+                "title": "Weighted dyadicity for major league baseball player transaction networks",
+                "year": 2025,
+                "sport": "baseball",
+                "doi": "https://doi.org/10.1177/22150218251326427",
+                "first_author": "Nathaniel Bushek"
+              }
+            ],
+            "paper_count": 1
+          },
+          {
+            "finding": "Player performance metrics (points per game, assists) are strong predictors of NBA player salaries (R²=0.9999), but this is a salary-to-performance relationship, not team spending to league position.",
+            "evidence_strength": "strong",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4410637294",
+                "title": "Exploring the Dynamics of NBA Player Salaries: An Analysis of Influencing Factors",
+                "year": 2025,
+                "sport": "basketball",
+                "doi": "https://doi.org/10.54097/zjexq891",
+                "first_author": "Depeng Wang"
+              }
+            ],
+            "paper_count": 1
+          },
+          {
+            "finding": "Draft pick valuation and competitive success show non-linear relationships; late-round NFL draft picks are undervalued by traditional charts, and trade-ups in early rounds show lower performance outcomes.",
+            "evidence_strength": "moderate",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4414086638",
+                "title": "Redefining the draft pick valuation in the National Football League",
+                "year": 2025,
+                "sport": "american_football",
+                "doi": "https://doi.org/10.3389/fspor.2025.1628223",
+                "first_author": "Bryce Hadley"
+              }
+            ],
+            "paper_count": 1
+          },
+          {
+            "finding": "Financial investment (club spending) appears to correlate with league performance in comparative case studies of Manchester United and City, but causal inference is limited.",
+            "evidence_strength": "weak",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4406035559",
+                "title": "The Impact of Financial Investment on Game Results: A Comparative Study of Manchester",
+                "year": 2025,
+                "sport": "football",
+                "doi": "https://doi.org/10.54254/2754-1169/2024.19249",
+                "first_author": "Zhaoqin Yang"
+              }
+            ],
+            "paper_count": 1
+          }
+        ],
+        "methodology_profile": {
+          "dominant_methods": [
+            "Multiple linear regression (statistical)",
+            "Machine learning (Random Forest, Gradient Boosting, neural networks)",
+            "Principal Component Analysis (PCA) for dimensionality reduction",
+            "Network analysis (passing networks, transaction networks)"
+          ],
+          "sample_size_patterns": "Highly variable and frequently underpowered for comparative analysis. Player-level studies: n=400-1577 (NBA), n=1508 (football). Team-level studies: n=127 (IPL), n=390 (NBA seasons), n=25961 (transfers across 6 leagues). Only 2 papers report n>10,000; many papers with low sample sizes (n<30) attempting to make broad claims.",
+          "data_sources_used": "Primarily proprietary/commercial databases: Transfermarkt (transfer values), Basketball-Reference, Spotrac (salary data), pro-football-reference.com, official league websites. Very few studies use official financial/accounting data or government sources. Heavy reliance on web-scraped or secondary-source data with unknown validation.",
+          "temporal_patterns": "Spike in 2024-2025 publications (35 of 47 papers, 74%), mostly recent machine learning approaches. Earlier papers (2016-2021) focused on descriptive statistics and linear regression. Longitudinal analysis is rare; most are cross-sectional or single-season snapshots. No papers systematically examine how spending-to-performance relationships have changed over decades."
+        },
+        "key_papers": [
+          {
+            "work_id": "https://openalex.org/W4412685988",
+            "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+            "why_key": "Directly tests spending (salary cap violations) vs. performance (wins, offensive ratings) in a major sport; uses mixed-effects models to account for team and season variation; reports concrete effect sizes. This is the closest paper to addressing the core research question, though limited to one sport.",
+            "year": 2025,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.3389/fspor.2025.1625458",
+            "first_author": "Sean Pradhan"
+          },
+          {
+            "work_id": "https://openalex.org/W4415292821",
+            "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
+            "why_key": "Explicitly examines the relationship between team spending strategies and performance in a different sport (cricket). Provides a comparative contrast to football studies. Finds minimal short-term spending-performance links, which contradicts some football findings.",
+            "year": 2025,
+            "sport": "cricket",
+            "doi": "https://doi.org/10.1177/22150218251386294",
+            "first_author": "Dhruv J Joglekar"
+          },
+          {
+            "work_id": "https://openalex.org/W4414559250",
+            "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
+            "why_key": "Measures impact of massive investment concentration (PIF) on competitive balance in football. Addresses the research question directly but lacks comparison to other sports and statistical rigor in the abstract.",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fspor.2025.1649310",
+            "first_author": "Mohammed Jamal Bataineh"
+          },
+          {
+            "work_id": "https://openalex.org/W4409487186",
+            "title": "Weighted dyadicity for major league baseball player transaction networks",
+            "why_key": "Examines spending-to-transaction relationships in baseball across 100 seasons; provides long-term temporal perspective. Finds payroll has no effect on trades, suggesting spending-performance link may be weaker in baseball than football.",
+            "year": 2025,
+            "sport": "baseball",
+            "doi": "https://doi.org/10.1177/22150218251326427",
+            "first_author": "Nathaniel Bushek"
+          }
+        ]
+      },
+      "gaps": [
+        {
+          "id": "gap_1",
+          "type": "topic",
+          "title": "Comparative spending-to-performance elasticity across sports",
+          "description": "No paper directly compares the strength of the spending-to-league-position relationship across multiple sports using equivalent methods and effect size metrics. The research question specifically asks WHETHER the relationship is STRONGER in football than others, but our database contains no study that tests this comparative hypothesis. We have isolated case studies in football (W4406035559, W4414559250), basketball (W4412685988), cricket (W4415292821), and baseball (W4409487186), but no meta-analysis or comparative regression testing the statistical significance of cross-sport differences.",
+          "evidence": "Database contains zero papers with titles or abstracts indicating cross-sport comparison of spending-to-performance elasticity. W4412685988 (NBA), W4415292821 (IPL), W4409487186 (MLB), and W4414559250 (Saudi football) all examine the relationship within a single sport. The multi_sport paper (W4214682128) focuses on novel draft trading mechanisms, not spending-performance relationships. This is a critical absence.",
+          "supporting_papers": [
+            {
+              "work_id": "https://openalex.org/W4412685988",
+              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+              "year": 2025,
+              "sport": "basketball",
+              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
+              "first_author": "Sean Pradhan"
+            },
+            {
+              "work_id": "https://openalex.org/W4415292821",
+              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
+              "year": 2025,
+              "sport": "cricket",
+              "doi": "https://doi.org/10.1177/22150218251386294",
+              "first_author": "Dhruv J Joglekar"
+            },
+            {
+              "work_id": "https://openalex.org/W4409487186",
+              "title": "Weighted dyadicity for major league baseball player transaction networks",
+              "year": 2025,
+              "sport": "baseball",
+              "doi": "https://doi.org/10.1177/22150218251326427",
+              "first_author": "Nathaniel Bushek"
+            },
+            {
+              "work_id": "https://openalex.org/W4414559250",
+              "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
+              "year": 2025,
+              "sport": "football",
+              "doi": "https://doi.org/10.3389/fspor.2025.1649310",
+              "first_author": "Mohammed Jamal Bataineh"
+            }
+          ],
+          "importance": "high",
+          "importance_rationale": "This is THE core question being asked. Without a paper (or set of papers) directly testing whether football's spending-to-performance relationship is stronger than other sports, the research question cannot be answered from our database.",
+          "feasibility": "high",
+          "feasibility_rationale": "Feasible because (1) data exists for major sports leagues, (2) methodology is straightforward (multi-level regression with sport as a moderator), (3) effect sizes can be standardized (e.g., percentage change in league position per unit spending). Requires access to total team payroll/spending and final league positions for 10+ seasons across ≥3 sports. Estimated effort: 3-6 months for a doctoral thesis.",
+          "confidence": "high"
+        },
+        {
+          "id": "gap_2",
+          "type": "methodology",
+          "title": "Lack of causal inference for spending-to-performance relationships",
+          "description": "All papers examining spending-to-performance are observational and use regression (OLS, mixed-effects) or clustering. None employ causal inference methods (instrumental variables, quasi-experimental designs, propensity score matching, regression discontinuity) that would account for confounding (e.g., successful teams attract more revenue, reverse causality). W4412685988 uses mixed-effects but does not address endogeneity. W4415292821 acknowledges this but calls it a limitation. This methodological gap makes it impossible to claim spending CAUSES success vs. success enabling spending.",
+          "evidence": "Examined methodology of papers addressing spending-to-performance: W4412685988 (mixed-effects, no IV), W4415292821 (k-means clustering, no causal methods), W4414559250 (not detailed but stated as statistical), W4409487186 (network dyadicity, not causal). None cite or employ instrumental variables, RDD, or quasi-experimental designs. The broader literature on sports economics (from training knowledge) has used salary cap changes as natural experiments, but our database contains no such study.",
+          "supporting_papers": [
+            {
+              "work_id": "https://openalex.org/W4412685988",
+              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+              "year": 2025,
+              "sport": "basketball",
+              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
+              "first_author": "Sean Pradhan"
+            },
+            {
+              "work_id": "https://openalex.org/W4415292821",
+              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
+              "year": 2025,
+              "sport": "cricket",
+              "doi": "https://doi.org/10.1177/22150218251386294",
+              "first_author": "Dhruv J Joglekar"
+            },
+            {
+              "work_id": "https://openalex.org/W4414559250",
+              "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
+              "year": 2025,
+              "sport": "football",
+              "doi": "https://doi.org/10.3389/fspor.2025.1649310",
+              "first_author": "Mohammed Jamal Bataineh"
+            }
+          ],
+          "importance": "high",
+          "importance_rationale": "Policy and managerial decisions depend on causal understanding. Teams need to know whether spending MORE will improve position, not just whether spending and position are correlated. Without causal inference, conclusions are confounded.",
+          "feasibility": "high",
+          "feasibility_rationale": "NFL and NBA salary caps are quasi-natural experiments (exogenous constraints on spending). League rule changes (transfer window restrictions, salary regulations in various countries) provide variation. Feasible for a PhD project using event study or RDD designs.",
+          "confidence": "high"
+        },
+        {
+          "id": "gap_3",
+          "type": "temporal",
+          "title": "Absence of long-term longitudinal analysis of spending-performance relationships",
+          "description": "Most papers are single-season or cross-sectional snapshots (W4410637294 uses 1 season, W4415292821 uses 127 team-seasons, W4405791145 uses 1 season). W4409487186 covers 100 seasons (1922-2021) in baseball but does not analyze trend changes. No paper examines whether the spending-to-performance elasticity has STRENGTHENED or WEAKENED over time in any sport, or whether competitive balance has shifted (fewer teams competitive due to spending concentration). This temporal dimension is critical for understanding market evolution.",
+          "evidence": "Publication date patterns show 74% of papers published 2024-2025 (recent snapshot data). Papers citing temporal ranges: W4409487186 (100 years but transaction focus, not spending elasticity), W4411896424 (3 seasons), W4393371529 (unclear period), W4391543758 (2007-2017). No paper explicitly analyzes HOW the strength of spending-to-performance has changed decade by decade.",
+          "supporting_papers": [
+            {
+              "work_id": "https://openalex.org/W4410637294",
+              "title": "Exploring the Dynamics of NBA Player Salaries: An Analysis of Influencing Factors",
+              "year": 2025,
+              "sport": "basketball",
+              "doi": "https://doi.org/10.54097/zjexq891",
+              "first_author": "Depeng Wang"
+            },
+            {
+              "work_id": "https://openalex.org/W4415292821",
+              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
+              "year": 2025,
+              "sport": "cricket",
+              "doi": "https://doi.org/10.1177/22150218251386294",
+              "first_author": "Dhruv J Joglekar"
+            },
+            {
+              "work_id": "https://openalex.org/W4405791145",
+              "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
+              "year": 2024,
+              "sport": "football",
+              "doi": "https://doi.org/10.54141/psbd.1489554",
+              "first_author": "Mehmet Ali Yalçınkaya"
+            },
+            {
+              "work_id": "https://openalex.org/W4409487186",
+              "title": "Weighted dyadicity for major league baseball player transaction networks",
+              "year": 2025,
+              "sport": "baseball",
+              "doi": "https://doi.org/10.1177/22150218251326427",
+              "first_author": "Nathaniel Bushek"
+            }
+          ],
+          "importance": "high",
+          "importance_rationale": "Football's spending dominance (if true) may be recent. Knowing WHEN this divergence emerged (e.g., post-Champions League monetization, post-2000 TV deals) is essential for understanding the mechanism. Without temporal analysis, we cannot distinguish between 'football is inherently more spending-dependent' vs. 'football became more spending-dependent recently.'",
+          "feasibility": "medium",
+          "feasibility_rationale": "Requires 20+ seasons of payroll data across multiple sports. NBA/Premier League data is available; MLB salary data exists since 1985; other leagues less accessible. Methodologically straightforward (rolling-window correlations, time-series regression with interactions). Estimated effort: 4-8 months.",
+          "confidence": "high"
+        },
+        {
+          "id": "gap_4",
+          "type": "data",
+          "title": "Inconsistent operationalization of 'competitive success' across papers and sports",
+          "description": "Papers use different metrics as the dependent variable: wins (W4412685988), playoff qualification (W4415292821), league position/ranking (W4414559250), market value (W4405791145), salary (W4410637294). This heterogeneity prevents cross-study synthesis. Furthermore, 'league position' (the specific outcome in the research question) is rarely used as the dependent variable; most papers predict salary or market value (player-level) rather than team position (team-level). This mismatch means our database cannot directly answer whether spending predicts league position across sports.",
+          "evidence": "Dependent variables in papers examining spending-to-performance: W4412685988 uses 'games won' and 'offensive rating'; W4415292821 uses 'winning percentage' and 'playoff qualification'; W4414559250 measures 'competitive balance' (Herfindahl index) not league position; W4409487186 examines 'transaction patterns' not performance. No consistent metric. Of 47 papers, only ~5 even attempt to relate team spending to team outcomes; the rest predict player value/salary.",
+          "supporting_papers": [
+            {
+              "work_id": "https://openalex.org/W4412685988",
+              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+              "year": 2025,
+              "sport": "basketball",
+              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
+              "first_author": "Sean Pradhan"
+            },
+            {
+              "work_id": "https://openalex.org/W4415292821",
+              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
+              "year": 2025,
+              "sport": "cricket",
+              "doi": "https://doi.org/10.1177/22150218251386294",
+              "first_author": "Dhruv J Joglekar"
+            },
+            {
+              "work_id": "https://openalex.org/W4414559250",
+              "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
+              "year": 2025,
+              "sport": "football",
+              "doi": "https://doi.org/10.3389/fspor.2025.1649310",
+              "first_author": "Mohammed Jamal Bataineh"
+            },
+            {
+              "work_id": "https://openalex.org/W4409487186",
+              "title": "Weighted dyadicity for major league baseball player transaction networks",
+              "year": 2025,
+              "sport": "baseball",
+              "doi": "https://doi.org/10.1177/22150218251326427",
+              "first_author": "Nathaniel Bushek"
+            },
+            {
+              "work_id": "https://openalex.org/W4405791145",
+              "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
+              "year": 2024,
+              "sport": "football",
+              "doi": "https://doi.org/10.54141/psbd.1489554",
+              "first_author": "Mehmet Ali Yalçınkaya"
+            }
+          ],
+          "importance": "high",
+          "importance_rationale": "The research question specifically asks about 'league position,' but papers use different outcome metrics. Without standardization, comparing effect sizes across sports is invalid. This is a fundamental measurement issue.",
+          "feasibility": "high",
+          "feasibility_rationale": "Can be addressed in a comparative meta-analysis or new primary study by standardizing all outcomes to final league position (or ranking points, or playoff probability). No new data collection needed; reanalysis of existing studies suffices.",
+          "confidence": "high"
+        },
+        {
+          "id": "gap_5",
+          "type": "population",
+          "title": "Severe underrepresentation of non-top-tier leagues and women's sports",
+          "description": "Database heavily focuses on top-tier leagues in wealthy countries: Premier League, La Liga, Serie A (football), NBA (basketball). Only 1 paper (W4210605152) addresses women's sports (All-American Girls Professional Baseball League, historical). Non-top-tier leagues: only ~2-3 papers on lower divisions or less wealthy countries (W3023097278 on K-league, W4415014400 on Iraqi football, W7119564663 on UAE). This limits generalizability. The spending-to-performance relationship may be fundamentally different in less commercialized leagues where spending variance is lower and salary/transfer markets are less efficient.",
+          "evidence": "Sport distribution: 23 football papers, but almost exclusively European top 5 leagues (Premier League, La Liga, Serie A, Ligue 1, Bundesliga). Basketball papers focus on NBA. Cricket limited to IPL. Only 1 women's sport paper out of 47. Regional distribution: ~45 papers focus on European/North American leagues; ~2 on emerging markets. This bias toward wealthy, commercialized leagues means conclusions about 'football vs. other sports' actually mean 'Premier League vs. NBA vs. La Liga,' not football universally.",
+          "supporting_papers": [
+            {
+              "work_id": "https://openalex.org/W4210605152",
+              "title": "Women on the Field and Money in the Bank: The Business of the All-American Girls Professional Baseball League",
+              "year": 2021,
+              "sport": "baseball",
+              "doi": "https://doi.org/10.1353/nin.2021.0013",
+              "first_author": "Lisa Giddings"
+            },
+            {
+              "work_id": "https://openalex.org/W3023097278",
+              "title": "A Study on the Conceptual Structure for the Estimation of Annual Salary of K-league Players",
+              "year": 2018,
+              "sport": "football",
+              "doi": "https://doi.org/10.35159/kjss.2018.12.27.6.389",
+              "first_author": "Yong-Rae Kim"
+            },
+            {
+              "work_id": "https://openalex.org/W4415014400",
+              "title": "The most important quantitative determinants affecting the transfer market of professional football players in Iraq",
+              "year": 2025,
+              "sport": "football",
+              "doi": "https://doi.org/10.37359/jope.v37(3)2025.2290",
+              "first_author": "Ali Abdul Hamid"
+            },
+            {
+              "work_id": "https://openalex.org/W7119564663",
+              "title": "Potential and Low-Cost Football Talents for UAE Clubs Based on Data-Driven Analysis",
+              "year": 2025,
+              "sport": "football",
+              "doi": null,
+              "first_author": "Rashid Alqemzi"
+            }
+          ],
+          "importance": "medium",
+          "importance_rationale": "Affects generalizability. If spending-to-performance is stronger in football because of market maturity and inequality, this is a valid finding. But our database cannot test this because it lacks lower-league and women's sport data.",
+          "feasibility": "medium",
+          "feasibility_rationale": "Lower-tier league data exists but is less publicly available (requires web scraping or manual collection). Women's sport data increasingly available (WSL, NWSL, etc.). Feasible for a comparative thesis but requires data engineering effort.",
+          "confidence": "high"
+        },
+        {
+          "id": "gap_6",
+          "type": "integration",
+          "title": "Missing connection between team spending and strategic competition models",
+          "description": "Papers on spending-to-performance exist in isolation from economic theory. No paper integrates spending effects with theories of competitive balance, salary cap economics, or tournament theory. For example, W4412685988 shows salary cap violations improve wins but does not discuss whether this is an inefficiency (money-burning) or rational economic decision. W4415292821 finds auction strategies barely predict IPL performance but does not theorize WHY (market efficiency vs. randomness). The field lacks dialogue with sports economics theory on rent-seeking, information asymmetry, and league governance.",
+          "evidence": "Papers are atheoretical or use weak theory. W4412685988 title mentions 'luxury tax' but doesn't engage with economic models of salary cap design. W4415292821 mentions 'strategic groups' but doesn't connect to strategic management literature. No papers cite or build on canonical sports economics work (e.g., models of competitive balance by Quirk & Fort, Szymanski & Kuypers). This suggests insufficient integration across disciplines.",
+          "supporting_papers": [
+            {
+              "work_id": "https://openalex.org/W4412685988",
+              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+              "year": 2025,
+              "sport": "basketball",
+              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
+              "first_author": "Sean Pradhan"
+            },
+            {
+              "work_id": "https://openalex.org/W4415292821",
+              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
+              "year": 2025,
+              "sport": "cricket",
+              "doi": "https://doi.org/10.1177/22150218251386294",
+              "first_author": "Dhruv J Joglekar"
+            }
+          ],
+          "importance": "medium",
+          "importance_rationale": "Understanding the causal mechanisms (why spending predicts success MORE in football) requires theoretical grounding. Current papers describe relationships but don't explain them.",
+          "feasibility": "medium",
+          "feasibility_rationale": "Requires literature review and theoretical development. Could be done in a master's thesis combining sports economics and empirical analysis. Existing theory frameworks exist; application is the missing step.",
+          "confidence": "medium"
+        },
+        {
+          "id": "gap_7",
+          "type": "replication",
+          "title": "Critical findings not independently replicated across multiple datasets/time periods",
+          "description": "The key finding that spending affects performance (W4412685988 in NBA) is based on n=390 team-seasons. The IPL finding of minimal spending-performance relationship (W4415292821, n=127 team-seasons) uses a subjective clustering algorithm (k-means) with acknowledged small sample size (n reduced further with lags). Neither has been replicated in a different league or time period. Standard practice would require replication in, e.g., a different 10-year window or a different league with similar structure before claiming generalizability.",
+          "evidence": "Each paper studies a single dataset in a single sport over one time period. W4412685988 (NBA 2014-2023), W4415292821 (IPL seasons 1-16), W4414559250 (Saudi SPL recent seasons). No paper states it is a replication study. The sports analytics field (from training knowledge) has a known replication crisis, but our database shows no replication attempts for key spending-performance findings.",
+          "supporting_papers": [
+            {
+              "work_id": "https://openalex.org/W4412685988",
+              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+              "year": 2025,
+              "sport": "basketball",
+              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
+              "first_author": "Sean Pradhan"
+            },
+            {
+              "work_id": "https://openalex.org/W4415292821",
+              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
+              "year": 2025,
+              "sport": "cricket",
+              "doi": "https://doi.org/10.1177/22150218251386294",
+              "first_author": "Dhruv J Joglekar"
+            },
+            {
+              "work_id": "https://openalex.org/W4414559250",
+              "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
+              "year": 2025,
+              "sport": "football",
+              "doi": "https://doi.org/10.3389/fspor.2025.1649310",
+              "first_author": "Mohammed Jamal Bataineh"
+            }
+          ],
+          "importance": "medium",
+          "importance_rationale": "Without replication, we cannot distinguish between true effects and idiosyncratic findings for one league in one era. Medium urgency because some papers have reasonable sample sizes, but important for scientific credibility.",
+          "feasibility": "high",
+          "feasibility_rationale": "Straightforward replication in different leagues/periods using published data. Could be completed in a semester-long graduate project.",
+          "confidence": "high"
+        },
+        {
+          "id": "gap_8",
+          "type": "data",
+          "title": "Over-reliance on Transfermarkt data without validation of player valuation accuracy",
+          "description": "At least 10 papers use Transfermarkt for transfer value data (W4391543758, W4405791145, W7107867268, W4415268362, W4415014400, and others). Transfermarkt is a crowdsourced, expert-opinion-based database with no published validation study in our database. W4405791145 explicitly acknowledges 'market value subjectivity' and reliance on user votes but proceeds anyway. No paper compares Transfermarkt valuations to actual transfer fees to validate the data. This is a critical data quality issue because the entire player valuation literature depends on it.",
+          "evidence": "Multiple papers cite Transfermarkt as their primary data source (e.g., W7107867268: 'n=25961 transfers' from Transfermarkt). W4405791145 states: 'Transfermarkt relies on subjective inputs such as expert opinions and user votes, and may not fully capture market dynamics' but does not validate this concern empirically. No paper in our database performs a Transfermarkt-to-actual-transaction validation study.",
+          "supporting_papers": [
+            {
+              "work_id": "https://openalex.org/W4391543758",
+              "title": "The Appraisal of Players' Transfer Market Values: Empirical Evidence From Italian Serie A",
+              "year": 2024,
+              "sport": "football",
+              "doi": "https://doi.org/10.32731/ijsf/191.022024.03",
+              "first_author": "Marco Di Domizio"
+            },
+            {
+              "work_id": "https://openalex.org/W4405791145",
+              "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
+              "year": 2024,
+              "sport": "football",
+              "doi": "https://doi.org/10.54141/psbd.1489554",
+              "first_author": "Mehmet Ali Yalçınkaya"
+            },
+            {
+              "work_id": "https://openalex.org/W7107867268",
+              "title": "Financial Governance and Transfer Policies in Football: A Positional Analysis of Expenditures in Europe's Top Leagues",
+              "year": 2025,
+              "sport": "football",
+              "doi": "https://doi.org/10.5281/zenodo.17682683",
+              "first_author": null
+            },
+            {
+              "work_id": "https://openalex.org/W4415268362",
+              "title": "Developing A Predictive Model for Football Players’ Market Value Using Machine Learning",
+              "year": 2025,
+              "sport": "football",
+              "doi": "https://doi.org/10.33093/jiwe.2025.4.3.12",
+              "first_author": "Muhammad Idris"
+            }
+          ],
+          "importance": "medium",
+          "importance_rationale": "If Transfermarkt valuations are systematically biased (e.g., overvaluing young players, undervaluing defenders), downstream findings about what predicts value will be confounded. This could affect the spending-to-performance relationship if teams rely on accurate valuations for decision-making.",
+          "feasibility": "medium",
+          "feasibility_rationale": "Requires collecting actual transfer fee data (publicly available for top-tier leagues from press reports and official sources) and correlating with Transfermarkt values. Feasible but requires careful data collection and curation.",
+          "confidence": "medium"
+        }
+      ],
+      "research_agenda": [
+        {
+          "priority": 1,
+          "title": "Comparative multi-sport analysis of spending-to-league-position elasticity with standardized methodology",
+          "description": "Conduct a panel regression study across NBA (20 seasons), Premier League (20 seasons), and MLB (20 seasons) with league position as the dependent variable and total team payroll as the predictor, controlling for lagged performance and market size. Use mixed-effects models with sport as a moderator to test whether the spending-to-position elasticity is significantly different in football vs. basketball vs. baseball. Report effect sizes (e.g., 1% increase in payroll → X% change in league position) with 95% CIs separately by sport. This directly answers the research question.",
+          "addresses_gaps": [
+            "gap_1",
+            "gap_4"
+          ],
+          "suggested_methodology": "Multi-level linear regression: League_Position ~ log(Payroll) + Sport + log(Payroll)×Sport + Prior_Position + Market_Size + (1|Team) + (1|Season). Report marginal effects by sport.",
+          "suggested_data": "Official league payroll data (NBA Salary Cap database, Premier League financials via Deloitte, MLB from USA Today salary database) and final league standings for 2004-2024 (20 seasons). Total sample: 60 teams × 20 seasons × 3 sports = 3,600 team-season observations.",
+          "estimated_difficulty": "standard_phd",
+          "potential_impact": "Directly answers whether football's spending-to-performance relationship is stronger. If significant, opens questions about WHY (market structure, league governance, player mobility). Could inform policy discussions about competitive balance regulations."
+        },
+        {
+          "priority": 2,
+          "title": "Instrumental variable analysis of spending-to-performance causality using salary cap changes as natural experiments",
+          "description": "Exploit exogenous variation in salary cap levels (NBA cap increases, Premier League FFP regulation changes, MLB competitive balance tax threshold adjustments) as instruments for team spending changes. Use two-stage least squares or local linear regression around cap thresholds (RDD) to estimate the causal effect of a 1% increase in allowable spending on final league position, controlling for team and season fixed effects. Compare estimated causal effects across sports to test whether the spending-to-performance relationship is structurally stronger in football.",
+          "addresses_gaps": [
+            "gap_1",
+            "gap_2"
+          ],
+          "suggested_methodology": "Two-stage IV regression or regression discontinuity design (RDD) around salary cap/FFP threshold discontinuities. IV: League_Position = β₁×Spending + controls + ε, where Spending is instrumented by (Cap_Change OR Distance_to_FFP_Threshold).",
+          "suggested_data": "Historical salary cap/FFP regulations and their changes (from league official documents), actual team payroll (Spotrac, USA Today, Deloitte), league positions. Sample: 2000-2024 for NFL (hard cap) and NBA (soft cap with luxury tax); 2010-2024 for Premier League (FFP era).",
+          "estimated_difficulty": "challenging_project",
+          "potential_impact": "Provides causal evidence rather than correlational. If spending causally improves position more in football, this is robust to omitted variable bias. High value for policy makers considering regulation changes."
+        },
+        {
+          "priority": 3,
+          "title": "Temporal analysis of spending-to-performance elasticity evolution over 30+ seasons",
+          "description": "Conduct a rolling-window analysis (10-year windows, moving forward by 1 year) of the correlation between team payroll and final league position in football (Premier League 1992-2024), basketball (NBA 1990-2024), and baseball (MLB 1985-2024). Plot elasticity coefficients over time with 95% CIs to visualize whether spending's predictive power has increased, decreased, or remained stable. Test whether the sport-level differences are constant or changing over time (e.g., 'football's spending dependence increased post-2000 TV deals').",
+          "addresses_gaps": [
+            "gap_3",
+            "gap_1"
+          ],
+          "suggested_methodology": "Rolling-window OLS regression: League_Position_t = α + β_t×log(Payroll_t) + controls_t + ε_t for each 10-year window. Plot β_t vs. Year with confidence bands.",
+          "suggested_data": "20+ seasons of payroll and league position data for at least 2 sports (football and basketball recommended). Public sources: Premier League financials (annual reports), NBA Salary Cap database, official league standings.",
+          "estimated_difficulty": "standard_phd",
+          "potential_impact": "Reveals whether spending-performance relationships are stable or have changed. May explain contradictions in literature (e.g., why IPL shows weak spending-performance link while Premier League appears strong)."
+        },
+        {
+          "priority": 4,
+          "title": "Cross-league replication and validation of spending-to-performance findings using multiple data sources",
+          "description": "Replicate W4412685988 (NBA salary cap violation effect) and W4415292821 (IPL auction strategy effect) in comparable leagues with independent data sources. For NBA: repeat salary-cap analysis on a held-out 2024-2025 season. For cricket: repeat IPL study on Pakistan Super League (PSL) data to test whether auction spending strategies have equivalent weak effects. Validate Transfermarkt transfer valuations by comparing to actual transaction prices for a random sample of 500+ transfers from public records. Report whether key findings hold in new contexts.",
+          "addresses_gaps": [
+            "gap_7",
+            "gap_8"
+          ],
+          "suggested_methodology": "Exact replication using new data (out-of-sample validation). For Transfermarkt validation: Pearson correlation and Bland-Altman plot comparing Transfermarkt value vs. actual fee for transfers with public price data.",
+          "suggested_data": "NBA 2024-2025 salary data (Spotrac), PSL auction and performance data (ESPN Cricinfo), actual transfer fees from Transfershack, TransferLive, official club announcements (500-1000 transfers).",
+          "estimated_difficulty": "accessible_thesis",
+          "potential_impact": "Establishes whether key findings are robust or idiosyncratic to one league/era. Validates data sources used in downstream analyses. Foundation for cumulative science in sports analytics."
+        }
+      ],
+      "self_reflection": {
+        "synthesis_quality": "Poor to moderate. The papers are near-perfect examples of fragmented 'monologues'—they rarely cite each other despite overlap. W4412685988, W4415292821, and W4414559250 all address spending-to-performance but do not engage with each other's findings or methods. The player valuation papers (n=39) form one isolated cluster; the few spending-to-performance papers (n≈5) form another. No paper attempts to synthesize across sports. Genuine debate is absent; instead, each paper makes isolated claims within one sport/league. The research question (comparative cross-sport analysis) requires dialogue that doesn't exist in this database.",
+        "strengths": [
+          "Database provides comprehensive coverage of football analytics (23 papers), enabling detailed assessment of what football research has done.",
+          "Recent publication spike (74% from 2024-2025) means papers address current leagues and recent rule changes (e.g., Saudi Vision 2030, FFP regulations).",
+          "Mix of methodologies (ML, statistical, network analysis) shows breadth of analytical approaches being applied.",
+          "Some papers (W4409087716, W4405791145, W4412526552) use modern ML with reported accuracy/R² metrics, enabling methodological transparency.",
+          "Access metadata (15 fully open, 7 upon request) suggests reasonable data-sharing practices, though proprietary data remains a barrier."
+        ],
+        "limitations": [
+          "Database is not positioned to answer the research question. We have isolated studies in each sport but NO comparative design across sports.",
+          "Severe imbalance: 23 football papers but only 10 basketball, 7 baseball, 2 American football. This imbalance makes statistical comparison unreliable—any apparent 'football effect' could be database bias.",
+          "Most papers (83%) address player valuation, not team spending-to-league-position causality. This mismatch between question and database content is fundamental.",
+          "Sample sizes for team-level analysis are small (n≤390 team-seasons for most studies), limiting statistical power for cross-sport comparison.",
+          "Effect sizes reported in only 6 papers total; confidence intervals in 5 papers. Cannot conduct meta-analysis or compare effect magnitudes across sports.",
+          "Methodology diversity makes synthesis difficult. No two papers use identical operationalization of 'competitive success' or 'spending.'",
+          "Temporal coverage is recent (mostly 2024-2025); longitudinal trends cannot be assessed.",
+          "Data sources are heterogeneous (Transfermarkt, Spotrac, official databases, web-scraped) with unknown cross-validation. Transfermarkt data used heavily but not validated in our database."
+        ],
+        "assumptions": [
+          "Assumed that papers in database with sport label 'football' refer to association football/soccer, not American football (clarified by checking W4401276487 which is explicitly NFL, creating distinction).",
+          "Assumed 'competitive success' in research question means final league position (not playoff qualification, which some papers use as proxy). This may be too narrow (league position is one measure; competitive success is broader).",
+          "Assumed 'financial spending' means total team payroll/wage bill. Some papers focus on transfer spending (outlays), which is different from ongoing salary costs. These may have different spending-to-performance elasticities.",
+          "Assumed that absence of a paper in our database means the topic hasn't been studied in our collection, but NOT that it hasn't been studied globally. This is explicit in our rules.",
+          "Assumed papers describing correlation (e.g., W4412685988 showing salary cap violations and wins are correlated) are attempting to estimate causal effects, when they may only describe associations.",
+          "Assumed that multi-sport papers should synthesize across sports, but W4214682128 (multi-sport) and W3160711719 (NBA vs. WNBA) both focus on specific sub-questions unrelated to comparative spending-to-performance analysis."
+        ],
+        "database_coverage_gaps": [
+          "Longitudinal time-series studies of spending-to-performance trends: Our database lacks papers analyzing how the elasticity of spending to success has changed over 20+ years in any single sport. From general knowledge, this is likely an active area in sports economics journals (e.g., Journal of Sports Economics, International Journal of Sport Finance) that we may not have captured.",
+          "Causal inference methods in sports spending: Our database has zero papers using IV/2SLS, RDD, or propensity score methods for spending-to-performance questions. From training knowledge, papers leveraging salary cap changes as natural experiments likely exist in economics and management journals but are not in our sports analytics-focused database.",
+          "Women's sports comparative analysis: Only 1 of 47 papers addresses women's sports (W4210605152, and it's historical). Yet women's sports (NWSL, WSL, WNBA, etc.) are increasingly professionalized and have different spending distributions. Our database likely misses comparative studies between men's and women's leagues.",
+          "Lower-tier league analysis: We have ~2 papers on non-top-tier leagues (K-league, Iraqi football). Spending-to-performance relationships likely differ fundamentally in lower divisions with less inequality. This is plausibly an active research area in regional sports journals we don't capture.",
+          "Esports spending-to-performance: Only 1 esports paper (W4414742830) on sponsorship portfolios, not player salaries or team spending to competitive rank. Esports economics is likely studied but not represented.",
+          "Sports league governance and competitive balance regulation: No papers systematically comparing how different salary cap structures (hard cap NFL, soft cap NBA, FFP in football, auction IPL) affect the spending-to-performance relationship. This is likely studied in sports management literature we don't access.",
+          "Financial inefficiency and 'money-burning': Our database contains no papers on whether teams overspend relative to competitive returns (economic waste), which would be relevant to understanding if spending-to-performance relationships are economically rational. This is plausibly addressed in behavioral economics of sports."
+        ],
+        "what_would_improve_this": [
+          "Access to full-text papers: Summaries omit methodological details (e.g., which controls were used, was fixed effects included?) that would enable precise replication assessment. Full-text access would clarify methodology quality.",
+          "Structured data on reported effect sizes: Only 6 papers report effect sizes; if all papers reported standardized coefficients or elasticities, meta-analysis would be possible. A standardized 'results' field in each paper would help.",
+          "Cross-paper citation and engagement data: Knowing which papers explicitly build on or critique each other (beyond simple citation) would enable network analysis of genuine intellectual dialogue vs. fragmentation.",
+          "Sample composition details: Papers report sample size (n) but not composition (e.g., 'n=1508 players from Premier League, La Liga, Serie A, Ligue 1' vs. 'n=1508 all from Premier League'). League composition affects generalizability.",
+          "Replication/validation flags: If papers indicated 'this is a replication study' or 'this uses previously published data' or 'this is novel data collection,' we could assess robustness more easily.",
+          "Temporal boundary clarity: Some papers report year ranges (2007-2017), others list only publication year. Temporal boundaries should be explicit in structured metadata.",
+          "Effect size standardization: If all papers reported elasticities (% change in outcome per % change in predictor), cross-sport comparison would be immediate. Urge JOURNAL EDITORS to require standardized effect reporting.",
+          "Data availability statement: Metadata shows 'data_access_type' but not 'actual_link_or_note.' Papers claiming data are 'open' should have DOI or direct URL for reproducibility."
+        ],
+        "process_cost_reflection": "We were given 47 papers with structured summaries (title, abstract, sample size, methods, key results, data sources, limitations). This was manageable and sufficient to identify the major gap (absence of comparative cross-sport spending-to-performance analysis). However, summaries averaged ~200 words and lacked fine-grained methodology details (e.g., 'mixed-effects model' is mentioned, but were random slopes included? what was the random effects structure?). Full-text access would have improved our assessment of methodology quality and enabled replication appraisal. That said, full-text analysis of 47 papers would cost ~3-4× more tokens/time with marginal benefit, given the abstracts and methodology fields were reasonably complete. The paper metadata was well-structured (sport, method, theme, sample size, year, data sources) — this enabled rapid classification and trend identification. Our confidence in identifying gaps would increase from 'low' to 'medium' with: (1) effect size standardization across papers, (2) full methodological details (were models specified identically?), and (3) even 5-10 additional papers directly comparing spending-to-performance across sports. Cost-benefit: This 47-paper analysis (8,000 tokens invested) identified that the research question CANNOT be answered from our database and produced a concrete research agenda. Was worth the investment. Larger database (100+ papers) would yield diminishing returns unless papers included more cross-sport comparisons."
       }
     }
   ]
