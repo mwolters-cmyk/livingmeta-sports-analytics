@@ -631,6 +631,145 @@ export default function GapsPage() {
           </div>
         )}
       </section>
+
+      {/* ================================================================ */}
+      {/* DEVELOPMENT LOG: What we learned & what comes next               */}
+      {/* ================================================================ */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-navy mb-2">Development Log</h2>
+        <p className="text-sm text-gray-400 mb-6 max-w-3xl">
+          This platform is a living system. After each batch of gap analyses, we
+          review the AI&apos;s self-reflections and use them to improve the pipeline.
+          This log tracks what we learned and what we&apos;re building next.
+        </p>
+
+        {/* Entry: 2026-02-16 */}
+        <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+          <div className="border-b border-gray-100 bg-navy/[0.02] px-6 py-4">
+            <div className="flex items-center gap-3">
+              <span className="rounded-full bg-navy/10 px-2.5 py-0.5 text-xs font-medium text-navy">
+                Sprint 1
+              </span>
+              <span className="text-sm font-semibold text-navy">
+                First 5 gap analyses &rarr; self-reflection &rarr; platform improvements
+              </span>
+              <span className="text-xs text-gray-400 ml-auto">16 Feb 2026</span>
+            </div>
+          </div>
+          <div className="px-6 py-5 space-y-5">
+            <div>
+              <div className="text-sm font-medium text-gray-700 mb-2">What we learned from the first 5 analyses</div>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                After running gap analyses on injury prediction, spending vs.
+                success, football tactics, cycling prediction, and multi-sport
+                training, every analysis flagged the same structural limitations. We
+                synthesized the self-reflections into a top&nbsp;5 of improvements:
+              </p>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-emerald-600 text-sm font-bold">1</span>
+                  <span className="text-sm font-medium text-emerald-800">Richer paper context for AI</span>
+                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                </div>
+                <p className="text-xs text-emerald-700/80">
+                  The gap analyzer now reads full PDF extraction data (key results,
+                  effect sizes, statistical methods, validation approach) instead of
+                  just abstracts. Papers with extracted data get ~2x richer summaries.
+                </p>
+              </div>
+              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-emerald-600 text-sm font-bold">2</span>
+                  <span className="text-sm font-medium text-emerald-800">Standardized effect size extraction</span>
+                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                </div>
+                <p className="text-xs text-emerald-700/80">
+                  Added <code className="text-xs">outcome_quantification</code> to the
+                  extraction prompt: primary effect size with CI bounds, outcome measure
+                  direction, validation type, and generalizability scope. Future
+                  extractions will be meta-analysis ready.
+                </p>
+              </div>
+              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-emerald-600 text-sm font-bold">3</span>
+                  <span className="text-sm font-medium text-emerald-800">Broader database coverage</span>
+                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                </div>
+                <p className="text-xs text-emerald-700/80">
+                  Added sports economics journals (Journal of Sports Economics, Sport
+                  Management Review, European Sport Management Quarterly), operations
+                  research keywords, and conference proceedings keywords (Sloan, KDD)
+                  to the literature watcher. Next watcher run will capture papers from
+                  these new sources.
+                </p>
+              </div>
+              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-emerald-600 text-sm font-bold">4</span>
+                  <span className="text-sm font-medium text-emerald-800">Citation network infrastructure</span>
+                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                </div>
+                <p className="text-xs text-emerald-700/80">
+                  Created <code className="text-xs">paper_citations</code> table and
+                  updated the watcher to store OpenAlex referenced_works. Once
+                  populated, the gap analyzer can prove whether research clusters
+                  actually cite each other &mdash; moving from &ldquo;I suspect
+                  fragmentation&rdquo; to &ldquo;cluster A and B share 3 citations.&rdquo;
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div className="text-sm font-medium text-gray-700 mb-2">What comes next</div>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex gap-2">
+                  <span className="text-orange shrink-0">&#9679;</span>
+                  <span>
+                    <strong>Run the watcher</strong> with the new journals and keywords
+                    to pull in sports economics and operations research papers. Then
+                    re-run the spending vs. success analysis to see if coverage improves.
+                  </span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-orange shrink-0">&#9679;</span>
+                  <span>
+                    <strong>Backfill citation data</strong> for existing ~40K papers via
+                    the OpenAlex API. Then build citation cluster visualization for the
+                    gap analyses.
+                  </span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-orange shrink-0">&#9679;</span>
+                  <span>
+                    <strong>Re-extract papers</strong> with the new outcome_quantification
+                    field to build a meta-analysis-ready dataset of effect sizes across
+                    all papers with PDFs.
+                  </span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-orange shrink-0">&#9679;</span>
+                  <span>
+                    <strong>Open science badges</strong> on the explore page: show which
+                    papers have open code, open data, and reproducible methods.
+                  </span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-orange shrink-0">&#9679;</span>
+                  <span>
+                    <strong>More gap analyses</strong> across different sports and
+                    themes, using the enriched pipeline. Re-run existing analyses
+                    periodically to track how the landscape evolves.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
