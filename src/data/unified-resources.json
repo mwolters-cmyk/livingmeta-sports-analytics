@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-02-16T18:01:10.540197",
-  "total_resources": 572,
-  "with_papers": 437,
+  "generated_at": "2026-02-16T18:13:35.792021",
+  "total_resources": 560,
+  "with_papers": 426,
   "with_scraper": 60,
   "with_data": 61,
-  "needs_scraper": 45,
+  "needs_scraper": 44,
   "with_access_method": 29,
   "access_methods": {
     "kaggle_api": 10,
@@ -12,11 +12,11 @@
     "git_clone": 16
   },
   "categories": {
-    "dataset": 350,
+    "dataset": 343,
+    "api": 22,
     "library": 45,
     "scraper": 53,
-    "instrument": 40,
-    "api": 26,
+    "instrument": 39,
     "tool": 21,
     "code": 37
   },
@@ -580,6 +580,138 @@
       "needs_scraper": true
     },
     {
+      "id": "fiba-official-archives",
+      "name": "FIBA Official Archives",
+      "url": "http://www.fiba.com/",
+      "description": "FIBA's official archive of basketball championship records, rules changes, and historical competition data. Supports research on game evolution, rule impacts, and performance trends across continental competitions.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W2176836814",
+          "title": "Efecto de la edad relativa en los mundiales de baloncesto FIBA en categorías inferiores (1979-2011)",
+          "sport": "basketball",
+          "year": 2015
+        },
+        {
+          "work_id": "https://openalex.org/W812113152",
+          "title": "The effects of rule changes on basketball game results in the Men’s European Basketball Championships",
+          "sport": "basketball",
+          "year": 2015
+        },
+        {
+          "work_id": "https://openalex.org/W2769049467",
+          "title": "Basketball without borders? Similarities and differences among Continental Basketball Championships. [¿Baloncesto sin fronteras? Similitudes y diferencias entre los Campeonatos Continentales de baloncesto].",
+          "sport": "basketball",
+          "year": 2017
+        },
+        {
+          "work_id": "https://openalex.org/W2922596106",
+          "title": "INFLUENCE OF GAME-RELATED STATISTICAL ELEMENTS ON FINAL RESULT AT FIBA EUROBASKET WOMEN 2017",
+          "sport": "basketball",
+          "year": 2019
+        },
+        {
+          "work_id": "https://openalex.org/W3048784484",
+          "title": "The Regional Differences in Game-Play Styles Considering Playing Position in the FIBA Female Continental Basketball Competitions",
+          "sport": "basketball",
+          "year": 2020
+        },
+        {
+          "work_id": "https://openalex.org/W3118775482",
+          "title": "Explaining Positional Differences of Performance Profiles for the Elite Female Basketball Players",
+          "sport": "basketball",
+          "year": 2021
+        },
+        {
+          "work_id": "https://openalex.org/W4413521312",
+          "title": "A Comparative Study on the Offensive Ability of the Guard Players of the Top Four Teams in the 28th Men's Basketball Asian Championships",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 7,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false,
+      "alt_urls": [
+        "https://archive.fiba.com",
+        "http://cn.fiba.com/"
+      ]
+    },
+    {
+      "id": "fifa-match-centre",
+      "name": "FIFA Match Centre",
+      "url": "https://www.fifa.com/en/match-centre/",
+      "description": "Official FIFA database providing football match results, player statistics, team formations, and detailed match reports from international tournaments. Supports performance analysis, injury tracking, and competitive strategy research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3216925943",
+          "title": "The New Generation of Professional Soccer Talent Is Born under the Bias of the RAE: Relative Age Effect in International Male Youth Soccer Championships",
+          "sport": "football",
+          "year": 2021
+        },
+        {
+          "work_id": "https://openalex.org/W4311379485",
+          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
+          "sport": "football",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W4403876520",
+          "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4406689084",
+          "title": "Analysis of the differences in the technical-tactical performance indicators in The FIFA Women's World Cup 2023 according to the final classification",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4416936099",
+          "title": "Predicting football match outcomes: a multilayer perceptron neural network model based on technical statistics indicators of the FIFA world Cup",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4406269423",
+          "title": "The Limited Impact of Running Performance on Football Success in the Turkish Super League",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W3210666586",
+          "title": "Injuries in elite‐level women’s football—a two‐year prospective study in the Irish Women’s National League",
+          "sport": "football",
+          "year": 2021
+        }
+      ],
+      "paper_count": 7,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false,
+      "alt_urls": [
+        "https://digitalhub.fifa.com/m/4f40a98140d305e2/original/zijqly4oednqa5gffgaz-pdf.pdf",
+        "https://img.fifa.com/image/upload/zijqly4oednqa5gffgaz.pdf"
+      ]
+    },
+    {
       "id": "iaaf-world-records-database",
       "name": "IAAF World Records Database",
       "url": "http://www.iaaf.org/",
@@ -869,56 +1001,6 @@
       "needs_scraper": false
     },
     {
-      "id": "fifa-match-centre",
-      "name": "FIFA Match Centre",
-      "url": "https://www.fifa.com/en/match-centre/",
-      "description": "Official FIFA database providing football match results, player statistics, team formations, and detailed match reports from international tournaments. Supports performance analysis, injury tracking, and competitive strategy research.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W3216925943",
-          "title": "The New Generation of Professional Soccer Talent Is Born under the Bias of the RAE: Relative Age Effect in International Male Youth Soccer Championships",
-          "sport": "football",
-          "year": 2021
-        },
-        {
-          "work_id": "https://openalex.org/W4311379485",
-          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
-          "sport": "football",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4403876520",
-          "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
-          "sport": "football",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4406689084",
-          "title": "Analysis of the differences in the technical-tactical performance indicators in The FIFA Women's World Cup 2023 according to the final classification",
-          "sport": "football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4416936099",
-          "title": "Predicting football match outcomes: a multilayer perceptron neural network model based on technical statistics indicators of the FIFA world Cup",
-          "sport": "football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 5,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "retrosheet",
       "name": "Retrosheet",
       "url": "https://www.retrosheet.org",
@@ -1166,6 +1248,54 @@
       "needs_scraper": false
     },
     {
+      "id": "instat-scout",
+      "name": "InStat Scout",
+      "url": "https://football.instatscout.com/",
+      "description": "Professional sports analytics platform providing detailed event-level data, player statistics, and performance metrics for basketball and football. Enables advanced performance analysis, tactical insights, and competitive benchmarking across leagues.",
+      "category": "api",
+      "access": "paid",
+      "sports": [
+        "basketball",
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406269423",
+          "title": "The Limited Impact of Running Performance on Football Success in the Turkish Super League",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4415991703",
+          "title": "Uncovering the Latent Components of Physical Performance in Professional Soccer: Evidence from the Turkish First Division",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4414223133",
+          "title": "Rethinking the strongest link: VAL, ratings, and team success in Hungarian basketball",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4414473946",
+          "title": "Offensive efficiency and traditional positional roles in Hungarian basketball: an empirical analysis",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 4,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false,
+      "alt_urls": [
+        "https://basketball.instatscout.com/"
+      ]
+    },
+    {
       "id": "spm1d",
       "name": "spm1d",
       "url": "https://spm1d.org",
@@ -1292,6 +1422,47 @@
       "needs_scraper": true
     },
     {
+      "id": "euroleague-net",
+      "name": "Euroleague.net",
+      "url": "https://www.euroleague.net",
+      "description": "Official Euroleague Basketball API and website providing comprehensive play-by-play game data, match statistics, and season information for European professional basketball competitions. Essential for analyzing team performance, game dynamics, and competitive trends in top-tier European basketball.",
+      "category": "api",
+      "access": "free",
+      "sports": [
+        "basketball"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W3091118591",
+          "title": "Training load, recovery and game performance in semiprofessional male basketball: influence of individual characteristics and contextual factors",
+          "sport": "basketball",
+          "year": 2020
+        },
+        {
+          "work_id": "https://openalex.org/W3107364193",
+          "title": "Home Court Advantage in Basketball – A Case Study of Žalgiris Kaunas Basketball Team",
+          "sport": "basketball",
+          "year": 2020
+        },
+        {
+          "work_id": "https://openalex.org/W4410600350",
+          "title": "Efficient Statistical Computation for K-Player Basketball Lineups Using Semilattice Structures",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 3,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false,
+      "alt_urls": [
+        "https://live.euroleague.net/api/PlaybyPlay?gamecode=333&seasoncode=E2023"
+      ]
+    },
+    {
       "id": "fbref-sports-reference",
       "name": "FBref / Sports Reference",
       "url": "https://fbref.com",
@@ -1339,82 +1510,6 @@
         "file": "scrapers/scrape_fbref.py",
         "status": "blocked"
       },
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "fiba-official-archives",
-      "name": "FIBA Official Archives",
-      "url": "http://www.fiba.com/",
-      "description": "FIBA's official archive of basketball championship records, rules changes, and historical competition data. Supports research on game evolution, rule impacts, and performance trends across continental competitions.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "basketball"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2176836814",
-          "title": "Efecto de la edad relativa en los mundiales de baloncesto FIBA en categorías inferiores (1979-2011)",
-          "sport": "basketball",
-          "year": 2015
-        },
-        {
-          "work_id": "https://openalex.org/W812113152",
-          "title": "The effects of rule changes on basketball game results in the Men’s European Basketball Championships",
-          "sport": "basketball",
-          "year": 2015
-        },
-        {
-          "work_id": "https://openalex.org/W2769049467",
-          "title": "Basketball without borders? Similarities and differences among Continental Basketball Championships. [¿Baloncesto sin fronteras? Similitudes y diferencias entre los Campeonatos Continentales de baloncesto].",
-          "sport": "basketball",
-          "year": 2017
-        }
-      ],
-      "paper_count": 3,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "fiba-official-archives",
-      "name": "FIBA Official Archives",
-      "url": "https://archive.fiba.com",
-      "description": "FIBA's official archive of basketball championship records, rules changes, and historical competition data. Supports research on game evolution, rule impacts, and performance trends across continental competitions.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "basketball"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W2922596106",
-          "title": "INFLUENCE OF GAME-RELATED STATISTICAL ELEMENTS ON FINAL RESULT AT FIBA EUROBASKET WOMEN 2017",
-          "sport": "basketball",
-          "year": 2019
-        },
-        {
-          "work_id": "https://openalex.org/W3048784484",
-          "title": "The Regional Differences in Game-Play Styles Considering Playing Position in the FIBA Female Continental Basketball Competitions",
-          "sport": "basketball",
-          "year": 2020
-        },
-        {
-          "work_id": "https://openalex.org/W3118775482",
-          "title": "Explaining Positional Differences of Performance Profiles for the Elite Female Basketball Players",
-          "sport": "basketball",
-          "year": 2021
-        }
-      ],
-      "paper_count": 3,
-      "on_platform": null,
-      "scraper": null,
       "access_method": null,
       "url_status": null,
       "needs_scraper": false
@@ -1495,7 +1590,10 @@
       "scraper": null,
       "access_method": null,
       "url_status": null,
-      "needs_scraper": false
+      "needs_scraper": false,
+      "alt_urls": [
+        "cloud.hawkindynamics.com"
+      ]
     },
     {
       "id": "nba-api",
@@ -1842,38 +1940,6 @@
       "needs_scraper": true
     },
     {
-      "id": "euroleague-net",
-      "name": "Euroleague.net",
-      "url": "https://www.euroleague.net",
-      "description": "Official Euroleague Basketball API and website providing comprehensive play-by-play game data, match statistics, and season information for European professional basketball competitions. Essential for analyzing team performance, game dynamics, and competitive trends in top-tier European basketball.",
-      "category": "api",
-      "access": "free",
-      "sports": [
-        "basketball"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W3091118591",
-          "title": "Training load, recovery and game performance in semiprofessional male basketball: influence of individual characteristics and contextual factors",
-          "sport": "basketball",
-          "year": 2020
-        },
-        {
-          "work_id": "https://openalex.org/W3107364193",
-          "title": "Home Court Advantage in Basketball – A Case Study of Žalgiris Kaunas Basketball Team",
-          "sport": "basketball",
-          "year": 2020
-        }
-      ],
-      "paper_count": 2,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "experimental-motion-capture-data",
       "name": "Experimental Motion Capture Data",
       "url": "https://figshare.com/s/4c7b4fbfe1668a6d21e3",
@@ -1961,38 +2027,6 @@
           "title": "Difference-based analysis of the impact of observed game parameters on the final score at the FIBA Eurobasket Women 2019",
           "sport": "basketball",
           "year": 2020
-        }
-      ],
-      "paper_count": 2,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "fifa-match-centre",
-      "name": "FIFA Match Centre",
-      "url": "https://digitalhub.fifa.com/m/4f40a98140d305e2/original/zijqly4oednqa5gffgaz-pdf.pdf",
-      "description": "Official FIFA database providing football match results, player statistics, team formations, and detailed match reports from international tournaments. Supports performance analysis, injury tracking, and competitive strategy research.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4311379485",
-          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
-          "sport": "football",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4406269423",
-          "title": "The Limited Impact of Running Performance on Football Success in the Turkish Super League",
-          "sport": "football",
-          "year": 2025
         }
       ],
       "paper_count": 2,
@@ -2227,72 +2261,6 @@
       "needs_scraper": true
     },
     {
-      "id": "instat-scout",
-      "name": "InStat Scout",
-      "url": "https://football.instatscout.com/",
-      "description": "Professional sports analytics platform providing detailed event-level data, player statistics, and performance metrics for basketball and football. Enables advanced performance analysis, tactical insights, and competitive benchmarking across leagues.",
-      "category": "api",
-      "access": "paid",
-      "sports": [
-        "basketball",
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4406269423",
-          "title": "The Limited Impact of Running Performance on Football Success in the Turkish Super League",
-          "sport": "football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4415991703",
-          "title": "Uncovering the Latent Components of Physical Performance in Professional Soccer: Evidence from the Turkish First Division",
-          "sport": "football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 2,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "instat-scout",
-      "name": "InStat Scout",
-      "url": "https://basketball.instatscout.com/",
-      "description": "Professional sports analytics platform providing detailed event-level data, player statistics, and performance metrics for basketball and football. Enables advanced performance analysis, tactical insights, and competitive benchmarking across leagues.",
-      "category": "api",
-      "access": "paid",
-      "sports": [
-        "basketball",
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4414223133",
-          "title": "Rethinking the strongest link: VAL, ratings, and team success in Hungarian basketball",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4414473946",
-          "title": "Offensive efficiency and traditional positional roles in Hungarian basketball: an empirical analysis",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 2,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "lahman-baseball-database",
       "name": "Lahman Baseball Database",
       "url": "http://seanlahaman.com",
@@ -2355,6 +2323,42 @@
       "access_method": null,
       "url_status": null,
       "needs_scraper": false
+    },
+    {
+      "id": "meteostat-api",
+      "name": "Meteostat API",
+      "url": "https://dev.meteostat.net/python/api/timeseries/",
+      "description": "A weather data API providing historical and current meteorological observations. Useful for sports analytics studying environmental factors affecting attendance, performance, and match characteristics in football and American football.",
+      "category": "api",
+      "access": "free",
+      "sports": [
+        "american_football",
+        "football"
+      ],
+      "language": "Python",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4405260642",
+          "title": "Forecasting Stadium Attendance Using Machine Learning Models: A Case of the National Football League",
+          "sport": "american_football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4407595434",
+          "title": "Associations Between Match‐Play Characteristics and Environmental Temperatures in 4 Professional Football Leagues",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 2,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false,
+      "alt_urls": [
+        "https://meteostat.net/en/"
+      ]
     },
     {
       "id": "nbastuffer-com",
@@ -2676,6 +2680,67 @@
       "access_method": null,
       "url_status": null,
       "needs_scraper": false
+    },
+    {
+      "id": "statsbomb-open-data",
+      "name": "StatsBomb Open Data",
+      "url": "https://github.com/statsbomb/open-data",
+      "description": "Event data and 360 tracking data for domestic leagues and international tournaments. Includes men's and women's competitions — the gold standard for open football analytics data.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4392781219",
+          "title": "Machine Learning for Soccer Match Result Prediction",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4391655216",
+          "title": "Automated Discovery of Successful Strategies in Association Football",
+          "sport": "football",
+          "year": 2024
+        }
+      ],
+      "paper_count": 2,
+      "on_platform": {
+        "description": "624 women's matches in our database.",
+        "record_count": 5964,
+        "datasets": [
+          {
+            "description": "Women's matches (WSL, NWSL, WWC, Euros) from StatsBomb Open Data",
+            "record_count": 624,
+            "gender": "F",
+            "date_range": "2018-2024"
+          },
+          {
+            "description": "Women's match lineups from StatsBomb",
+            "record_count": 5160,
+            "gender": "F",
+            "date_range": "2018-2024"
+          },
+          {
+            "description": "Match event summaries (passes, shots, tackles per match)",
+            "record_count": 180,
+            "gender": "F",
+            "date_range": "2018-2024"
+          }
+        ]
+      },
+      "scraper": {
+        "file": "scrapers/scrape_fbref_womens_football.py",
+        "status": "working"
+      },
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false,
+      "alt_urls": [
+        "https://github.com/statsbomb/StatsBomb"
+      ]
     },
     {
       "id": "strava",
@@ -5353,32 +5418,6 @@
       "needs_scraper": false
     },
     {
-      "id": "euroleague-net",
-      "name": "Euroleague.net",
-      "url": "https://live.euroleague.net/api/PlaybyPlay?gamecode=333&seasoncode=E2023",
-      "description": "Official Euroleague Basketball API and website providing comprehensive play-by-play game data, match statistics, and season information for European professional basketball competitions. Essential for analyzing team performance, game dynamics, and competitive trends in top-tier European basketball.",
-      "category": "api",
-      "access": "free",
-      "sports": [
-        "basketball"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4410600350",
-          "title": "Efficient Statistical Computation for K-Player Basketball Lineups Using Semilattice Structures",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "european-athletics",
       "name": "European Athletics",
       "url": "https://www.european-athletics.com/",
@@ -5691,32 +5730,6 @@
       "needs_scraper": false
     },
     {
-      "id": "fiba-official-archives",
-      "name": "FIBA Official Archives",
-      "url": "http://cn.fiba.com/",
-      "description": "FIBA's official archive of basketball championship records, rules changes, and historical competition data. Supports research on game evolution, rule impacts, and performance trends across continental competitions.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "basketball"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4413521312",
-          "title": "A Comparative Study on the Offensive Ability of the Guard Players of the Top Four Teams in the 28th Men's Basketball Asian Championships",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "fifa-index",
       "name": "FIFA Index",
       "url": "fifaindex.com",
@@ -5733,32 +5746,6 @@
           "title": "Machine Learning for Soccer Match Result Prediction",
           "sport": "football",
           "year": 2024
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "fifa-match-centre",
-      "name": "FIFA Match Centre",
-      "url": "https://img.fifa.com/image/upload/zijqly4oednqa5gffgaz.pdf",
-      "description": "Official FIFA database providing football match results, player statistics, team formations, and detailed match reports from international tournaments. Supports performance analysis, injury tracking, and competitive strategy research.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W3210666586",
-          "title": "Injuries in elite‐level women’s football—a two‐year prospective study in the Irish Women’s National League",
-          "sport": "football",
-          "year": 2021
         }
       ],
       "paper_count": 1,
@@ -6639,34 +6626,6 @@
         {
           "work_id": "https://openalex.org/W4410748736",
           "title": "National Basketball Association Players’ Return to Play and Performance After Operative Treatment of Meniscal Tears",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "hawkin-dynamics-cloud",
-      "name": "Hawkin Dynamics Cloud",
-      "url": "cloud.hawkindynamics.com",
-      "description": "Cloud-based force plate data warehousing system capturing lower-body neuromuscular performance metrics (jump, sprint, strength tests). Provides normative reference data and objective benchmarks for athlete assessment across sports.",
-      "category": "dataset",
-      "access": "paid",
-      "sports": [
-        "athletics",
-        "basketball",
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4414817433",
-          "title": "Unlocking Basketball Athletic Performance: Countermovement Jump Rebound (CMJ-RE) Normative Reference Values Derived from Force Plate Data Across Seven NCAA Division-I Power Five Men’s College Basketball Teams",
           "sport": "basketball",
           "year": 2025
         }
@@ -8293,60 +8252,6 @@
       "needs_scraper": false
     },
     {
-      "id": "meteostat-api",
-      "name": "Meteostat API",
-      "url": "https://dev.meteostat.net/python/api/timeseries/",
-      "description": "A weather data API providing historical and current meteorological observations. Useful for sports analytics studying environmental factors affecting attendance, performance, and match characteristics in football and American football.",
-      "category": "api",
-      "access": "free",
-      "sports": [
-        "american_football",
-        "football"
-      ],
-      "language": "Python",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4405260642",
-          "title": "Forecasting Stadium Attendance Using Machine Learning Models: A Case of the National Football League",
-          "sport": "american_football",
-          "year": 2024
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "meteostat-api",
-      "name": "Meteostat API",
-      "url": "https://meteostat.net/en/",
-      "description": "A weather data API providing historical and current meteorological observations. Useful for sports analytics studying environmental factors affecting attendance, performance, and match characteristics in football and American football.",
-      "category": "api",
-      "access": "free",
-      "sports": [
-        "american_football",
-        "football"
-      ],
-      "language": "Python",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4407595434",
-          "title": "Associations Between Match‐Play Characteristics and Environmental Temperatures in 4 Professional Football Leagues",
-          "sport": "football",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
       "id": "metrica-sports-sample-data",
       "name": "Metrica Sports Sample Data",
       "url": "https://github.com/metrica-sports/sample-data",
@@ -9546,33 +9451,10 @@
       "scraper": null,
       "access_method": null,
       "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "polar-api",
-      "name": "Polar API",
-      "url": "https://flow.polar.com/",
-      "description": "Sports wearable data platform providing heart rate, activity, and training data from Polar fitness devices. Enables analysis of cardiovascular metrics and exercise response for training prescription and performance monitoring in running.",
-      "category": "api",
-      "access": "freemium",
-      "sports": [
-        "athletics"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4402693444",
-          "title": "Correlation properties of heart rate variability for exercise prescription during prolonged running at constant speeds: A randomized cross‐over trial",
-          "sport": "athletics",
-          "year": 2024
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
+      "needs_scraper": false,
+      "alt_urls": [
+        "https://flow.polar.com/"
+      ]
     },
     {
       "id": "pololu-minimu-9-v5",
@@ -9783,33 +9665,10 @@
       "scraper": null,
       "access_method": null,
       "url_status": "verified",
-      "needs_scraper": false
-    },
-    {
-      "id": "pupil-labs-neon-software",
-      "name": "Pupil Labs Neon software",
-      "url": "https://docs.pupil-labs.com/neon/data-collection/data-streams/",
-      "description": "Eye-tracking software platform that captures and processes gaze data from wearable eye trackers. Enables collection of eye-tracking data streams for analyzing visual attention patterns and decision-making processes in basketball players during games.",
-      "category": "instrument",
-      "access": "paid",
-      "sports": [
-        "basketball"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4411101983",
-          "title": "AI-Powered Analysis of Eye Tracker Data in Basketball Game",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": "verified",
-      "needs_scraper": false
+      "needs_scraper": false,
+      "alt_urls": [
+        "https://docs.pupil-labs.com/neon/data-collection/data-streams/"
+      ]
     },
     {
       "id": "qu-bec-population-birth-data-1995-onwards",
@@ -10868,84 +10727,6 @@
           "title": "How competitive environments shape career progression in youth football: Context-dependent influence of geographical proximity to U19 Bundesliga teams and professional clubs",
           "sport": "football",
           "year": 2025
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "statsbomb-open-data",
-      "name": "StatsBomb Open Data",
-      "url": "https://github.com/statsbomb/open-data",
-      "description": "Event data and 360 tracking data for domestic leagues and international tournaments. Includes men's and women's competitions — the gold standard for open football analytics data.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4392781219",
-          "title": "Machine Learning for Soccer Match Result Prediction",
-          "sport": "football",
-          "year": 2024
-        }
-      ],
-      "paper_count": 1,
-      "on_platform": {
-        "description": "624 women's matches in our database.",
-        "record_count": 5964,
-        "datasets": [
-          {
-            "description": "Women's matches (WSL, NWSL, WWC, Euros) from StatsBomb Open Data",
-            "record_count": 624,
-            "gender": "F",
-            "date_range": "2018-2024"
-          },
-          {
-            "description": "Women's match lineups from StatsBomb",
-            "record_count": 5160,
-            "gender": "F",
-            "date_range": "2018-2024"
-          },
-          {
-            "description": "Match event summaries (passes, shots, tackles per match)",
-            "record_count": 180,
-            "gender": "F",
-            "date_range": "2018-2024"
-          }
-        ]
-      },
-      "scraper": {
-        "file": "scrapers/scrape_fbref_womens_football.py",
-        "status": "working"
-      },
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "statsbomb-open-data",
-      "name": "StatsBomb Open Data",
-      "url": "https://github.com/statsbomb/StatsBomb",
-      "description": "Open-access repository of detailed football event-level data from major leagues and competitions. Provides structured event sequences enabling automated strategy discovery and tactical analysis.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4391655216",
-          "title": "Automated Discovery of Successful Strategies in Association Football",
-          "sport": "football",
-          "year": 2024
         }
       ],
       "paper_count": 1,
@@ -12419,8 +12200,8 @@
       "category": "dataset",
       "access": "free",
       "sports": [
-        "diving",
         "artistic_swimming",
+        "diving",
         "swimming"
       ],
       "language": null,
@@ -12439,7 +12220,10 @@
       "scraper": null,
       "access_method": null,
       "url_status": null,
-      "needs_scraper": true
+      "needs_scraper": true,
+      "alt_urls": [
+        "https://www.worldaquatics.com/swimming/results"
+      ]
     },
     {
       "id": "world-bank-economic-data",
@@ -15352,25 +15136,6 @@
       "access_method": null,
       "url_status": null,
       "needs_scraper": false
-    },
-    {
-      "id": "world-aquatics-results",
-      "name": "World Aquatics Results",
-      "url": "https://www.worldaquatics.com/swimming/results",
-      "description": "Official World Aquatics competition results database for swimming, diving, water polo, and artistic swimming.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "swimming"
-      ],
-      "language": null,
-      "papers": [],
-      "paper_count": 0,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": true
     },
     {
       "id": "world-athletics",
