@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-16T16:59:37.532849",
-  "total_papers": 2235,
-  "total_resources": 454,
-  "resources_skipped_no_url": 13911,
+  "generated_at": "2026-02-16T17:29:49.905676",
+  "total_papers": 2254,
+  "total_resources": 461,
+  "resources_skipped_no_url": 14015,
   "resources": [
     {
       "name": "Win Shares (WS)",
@@ -355,6 +355,59 @@
       "paper_count": 11
     },
     {
+      "name": "Transfermarkt.com",
+      "url": "www.transfermarkt.com",
+      "type": "proprietary_dataset",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4312108124",
+          "title": "What should clubs monitor to predict future value of football players",
+          "sport": "football",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W4405791145",
+          "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4407105460",
+          "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4415991703",
+          "title": "Uncovering the Latent Components of Physical Performance in Professional Soccer: Evidence from the Turkish First Division",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4417500780",
+          "title": "How competitive environments shape career progression in youth football: Context-dependent influence of geographical proximity to U19 Bundesliga teams and professional clubs",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W6929289632",
+          "title": "SoccerMap: A Deep Learning Architecture for Visually-Interpretable Analysis in Soccer",
+          "sport": "football",
+          "year": 2020
+        },
+        {
+          "work_id": "https://openalex.org/W6966797101",
+          "title": "What Happened Next? Using Deep Learning to Value Defensive Actions in Football Event-Data",
+          "sport": "football",
+          "year": 2021
+        }
+      ],
+      "paper_count": 7
+    },
+    {
       "name": "IAAF World Records",
       "url": "http://www.iaaf.org/",
       "type": "open_dataset",
@@ -447,59 +500,6 @@
         }
       ],
       "paper_count": 5
-    },
-    {
-      "name": "Transfermarkt market value data",
-      "url": "www.transfermarkt.com",
-      "type": "web_scraping",
-      "access": "open_with_registration",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4312108124",
-          "title": "What should clubs monitor to predict future value of football players",
-          "sport": "football",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4405791145",
-          "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
-          "sport": "football",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4407105460",
-          "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
-          "sport": "football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4415991703",
-          "title": "Uncovering the Latent Components of Physical Performance in Professional Soccer: Evidence from the Turkish First Division",
-          "sport": "football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4417500780",
-          "title": "How competitive environments shape career progression in youth football: Context-dependent influence of geographical proximity to U19 Bundesliga teams and professional clubs",
-          "sport": "football",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W6929289632",
-          "title": "SoccerMap: A Deep Learning Architecture for Visually-Interpretable Analysis in Soccer",
-          "sport": "football",
-          "year": 2020
-        },
-        {
-          "work_id": "https://openalex.org/W6966797101",
-          "title": "What Happened Next? Using Deep Learning to Value Defensive Actions in Football Event-Data",
-          "sport": "football",
-          "year": 2021
-        }
-      ],
-      "paper_count": 7
     },
     {
       "name": "FIBA Box Score",
@@ -1117,6 +1117,35 @@
       "paper_count": 3
     },
     {
+      "name": "Statista Sports Market Data",
+      "url": "https://www.statista.com",
+      "type": "open_dataset",
+      "access": "upon_request",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4390815199",
+          "title": "Quantitative analysis of professional basketball: A qualitative discussion",
+          "sport": "basketball",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4412119505",
+          "title": "Exploring the Gender-Wage Gap in a World of Exogenous Revenue: The Case of Professional Basketball",
+          "sport": "basketball",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4414088232",
+          "title": "How Marketing Strategies, Particularly Ticket Prices in the NBA, Affect Attendance and Revenue",
+          "sport": "basketball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 3
+    },
+    {
       "name": "FIG Code of Points 2017-2020",
       "url": "https://www.gymnastics.sport/site/events/results.php?idEvent=17269",
       "type": "video",
@@ -1195,35 +1224,6 @@
         }
       ],
       "paper_count": 1
-    },
-    {
-      "name": "statista.com",
-      "url": "https://www.statista.com",
-      "type": "proprietary_dataset",
-      "access": "restricted",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4390815199",
-          "title": "Quantitative analysis of professional basketball: A qualitative discussion",
-          "sport": "basketball",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4412119505",
-          "title": "Exploring the Gender-Wage Gap in a World of Exogenous Revenue: The Case of Professional Basketball",
-          "sport": "basketball",
-          "year": 2025
-        },
-        {
-          "work_id": "https://openalex.org/W4414088232",
-          "title": "How Marketing Strategies, Particularly Ticket Prices in the NBA, Affect Attendance and Revenue",
-          "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 3
     },
     {
       "name": "Candis (R code by Aoki)",
@@ -1458,10 +1458,45 @@
       "paper_count": 5
     },
     {
+      "name": "FIFA.com",
+      "url": "https://www.fifa.com/en/match-centre/",
+      "type": "api",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4311379485",
+          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
+          "sport": "football",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W4403876520",
+          "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4406689084",
+          "title": "Analysis of the differences in the technical-tactical performance indicators in The FIFA Women's World Cup 2023 according to the final classification",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4416936099",
+          "title": "Predicting football match outcomes: a multilayer perceptron neural network model based on technical statistics indicators of the FIFA world Cup",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 4
+    },
+    {
       "name": "T-Test (T-T)",
       "url": "https://www.brianmac.co.uk/tdrill.htm",
-      "type": "manual_collection",
-      "access": "not_stated",
+      "type": "web_scraping",
+      "access": "fully_open",
       "platform": null,
       "category": "dataset",
       "papers": [
@@ -1711,35 +1746,6 @@
           "work_id": "https://openalex.org/W4413313707",
           "title": "Sports Analytics for Evaluating Injury Impact on NBA Performance",
           "sport": "basketball",
-          "year": 2025
-        }
-      ],
-      "paper_count": 3
-    },
-    {
-      "name": "FIFA.com",
-      "url": "https://www.fifa.com/en/match-centre/",
-      "type": "api",
-      "access": "fully_open",
-      "platform": null,
-      "category": "dataset",
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4311379485",
-          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
-          "sport": "football",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4403876520",
-          "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
-          "sport": "football",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4416936099",
-          "title": "Predicting football match outcomes: a multilayer perceptron neural network model based on technical statistics indicators of the FIFA world Cup",
-          "sport": "football",
           "year": 2025
         }
       ],
@@ -3054,10 +3060,10 @@
       "paper_count": 1
     },
     {
-      "name": "FEB (Federación Española de Baloncesto)",
+      "name": "FEB (Spanish Women's Basketball First Division - Liga Endesa)",
       "url": "www.feb.es",
-      "type": "proprietary_dataset",
-      "access": "open_with_registration",
+      "type": "official_dataset",
+      "access": "fully_open",
       "platform": null,
       "category": "dataset",
       "papers": [
@@ -4851,10 +4857,10 @@
       "paper_count": 1
     },
     {
-      "name": "Spanish Basketball Federation (Federación Española de Baloncesto, FEB)",
+      "name": "Spanish Basketball Federation",
       "url": "www.feb.com",
       "type": "government_data",
-      "access": "fully_open",
+      "access": "not_stated",
       "platform": null,
       "category": "dataset",
       "papers": [
@@ -6376,6 +6382,69 @@
       "paper_count": 1
     },
     {
+      "name": "Friends of Tracking (FoTD) repository",
+      "url": "https://github.com/Friends-of-Tracking-Data-FoTD/Last-Row",
+      "type": "open_dataset",
+      "access": "fully_open",
+      "platform": "GitHub",
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406317775",
+          "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Laurie Shaw's Spearman Pitch Control implementation",
+      "url": "https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking",
+      "type": "custom_tool",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406317775",
+          "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Will Thomson's Fernandez Pitch Control implementation",
+      "url": "https://github.com/anenglishgoat/Metrica-pitch-control",
+      "type": "custom_tool",
+      "category": "tool",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406317775",
+          "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "nvsclub/KNNPitchControl",
+      "url": "https://github.com/nvsclub/KNNPitchControl",
+      "type": "code_repository",
+      "category": "code",
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406317775",
+          "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "qntkhvn/tackle",
       "url": "https://github.com/qntkhvn/tackle",
       "type": "code_repository",
@@ -6423,6 +6492,23 @@
         }
       ],
       "url_status": "verified",
+      "paper_count": 1
+    },
+    {
+      "name": "footballia.com",
+      "url": "www.footballia.com",
+      "type": "open_dataset",
+      "access": "open_with_registration",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4406686329",
+          "title": "Validación del NECoSsGOT. Un instrumento de observación para el análisis de las situaciones de juego reducido durante la competición en fútbol",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
       "paper_count": 1
     },
     {
@@ -8290,6 +8376,40 @@
           "work_id": "https://openalex.org/W4416453386",
           "title": "Key factors and tactical variations in Chinese national women's softball games: a machine learning-based identification",
           "sport": "baseball",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Vietnam Investment Review",
+      "url": "https://vir.com.vn",
+      "type": "government_data",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4416631673",
+          "title": "Evaluating Digital Transformation in Vietnamese Football Clubs Using Deloitte’s Five-Level Digital Maturity Framework - Cultural Industry Perspective",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Bongda.com.vn",
+      "url": "https://bongda.com.vn",
+      "type": "web_scraping",
+      "access": "fully_open",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4416631673",
+          "title": "Evaluating Digital Transformation in Vietnamese Football Clubs Using Deloitte’s Five-Level Digital Maturity Framework - Cultural Industry Perspective",
+          "sport": "football",
           "year": 2025
         }
       ],

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T16:59:28.971729",
+  "generated_at": "2026-02-16T17:29:42.836061",
   "total_resources": 552,
   "with_papers": 417,
   "with_scraper": 60,
@@ -1019,6 +1019,50 @@
       "needs_scraper": true
     },
     {
+      "id": "fifa-match-centre",
+      "name": "FIFA Match Centre",
+      "url": "https://www.fifa.com/en/match-centre/",
+      "description": "Official FIFA database providing football match results, player statistics, team formations, and detailed match reports from international tournaments. Supports performance analysis, injury tracking, and competitive strategy research.",
+      "category": "dataset",
+      "access": "free",
+      "sports": [
+        "football"
+      ],
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4311379485",
+          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
+          "sport": "football",
+          "year": 2022
+        },
+        {
+          "work_id": "https://openalex.org/W4403876520",
+          "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
+          "sport": "football",
+          "year": 2024
+        },
+        {
+          "work_id": "https://openalex.org/W4406689084",
+          "title": "Analysis of the differences in the technical-tactical performance indicators in The FIFA Women's World Cup 2023 according to the final classification",
+          "sport": "football",
+          "year": 2025
+        },
+        {
+          "work_id": "https://openalex.org/W4416936099",
+          "title": "Predicting football match outcomes: a multilayer perceptron neural network model based on technical statistics indicators of the FIFA world Cup",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 4,
+      "on_platform": null,
+      "scraper": null,
+      "access_method": null,
+      "url_status": null,
+      "needs_scraper": false
+    },
+    {
       "id": "hockey-reference",
       "name": "Hockey-Reference",
       "url": "https://www.hockey-reference.com",
@@ -1310,44 +1354,6 @@
           "title": "Explaining Positional Differences of Performance Profiles for the Elite Female Basketball Players",
           "sport": "basketball",
           "year": 2021
-        }
-      ],
-      "paper_count": 3,
-      "on_platform": null,
-      "scraper": null,
-      "access_method": null,
-      "url_status": null,
-      "needs_scraper": false
-    },
-    {
-      "id": "fifa-match-centre",
-      "name": "FIFA Match Centre",
-      "url": "https://www.fifa.com/en/match-centre/",
-      "description": "Official FIFA database providing football match results, player statistics, team formations, and detailed match reports from international tournaments. Supports performance analysis, injury tracking, and competitive strategy research.",
-      "category": "dataset",
-      "access": "free",
-      "sports": [
-        "football"
-      ],
-      "language": null,
-      "papers": [
-        {
-          "work_id": "https://openalex.org/W4311379485",
-          "title": "Deconstructing stereotypes: Stature, match-playing time, and performance in elite Women's World Cup soccer",
-          "sport": "football",
-          "year": 2022
-        },
-        {
-          "work_id": "https://openalex.org/W4403876520",
-          "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
-          "sport": "football",
-          "year": 2024
-        },
-        {
-          "work_id": "https://openalex.org/W4416936099",
-          "title": "Predicting football match outcomes: a multilayer perceptron neural network model based on technical statistics indicators of the FIFA world Cup",
-          "sport": "football",
-          "year": 2025
         }
       ],
       "paper_count": 3,
