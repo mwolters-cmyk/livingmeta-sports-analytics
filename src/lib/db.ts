@@ -165,6 +165,21 @@ export interface GapAnalysis {
     what_would_improve_this: string[];
     process_cost_reflection: string;
   };
+  coverage_calibration?: {
+    calibrations: {
+      label: string;
+      openalex_count: number | null;
+      our_db_count: number | null;
+      coverage_ratio: number | null;
+      assessment: "good" | "moderate" | "sparse" | "minimal" | "no_external_evidence" | "unknown";
+    }[];
+    summary: {
+      good: number;
+      moderate: number;
+      sparse: number;
+      minimal: number;
+    };
+  };
 }
 
 export interface GapAnalysesData {

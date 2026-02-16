@@ -504,6 +504,70 @@ function GapAnalysisReport({ analysis, paperIndex, defaultOpen = false }: { anal
               </div>
             )}
 
+            {/* Coverage Calibration via OpenAlex */}
+            {analysis.coverage_calibration && analysis.coverage_calibration.calibrations.length > 0 && (
+              <div className="mt-4 rounded-lg bg-sky-50 border border-sky-200 p-3">
+                <div className="text-sm font-medium text-sky-800 mb-1">
+                  Coverage Calibration (via OpenAlex)
+                </div>
+                <p className="text-xs text-sky-600 mb-3">
+                  For each suspected gap, we queried OpenAlex to estimate how many papers exist. This shows how complete our database is per topic.
+                </p>
+                <div className="space-y-2">
+                  {analysis.coverage_calibration.calibrations.map((cal, i) => {
+                    const assessColors: Record<string, string> = {
+                      good: "bg-emerald-100 text-emerald-800",
+                      moderate: "bg-yellow-100 text-yellow-800",
+                      sparse: "bg-orange-100 text-orange-800",
+                      minimal: "bg-red-100 text-red-800",
+                      no_external_evidence: "bg-gray-100 text-gray-600",
+                    };
+                    const assessLabels: Record<string, string> = {
+                      good: "Good",
+                      moderate: "Moderate",
+                      sparse: "Sparse",
+                      minimal: "Minimal",
+                      no_external_evidence: "No evidence",
+                    };
+                    const color = assessColors[cal.assessment] || "bg-gray-100 text-gray-500";
+                    const label = assessLabels[cal.assessment] || cal.assessment;
+                    return (
+                      <div key={i} className="flex items-center gap-3 text-sm">
+                        <span className={`shrink-0 rounded px-1.5 py-0.5 text-xs font-medium ${color}`}>
+                          {label}
+                        </span>
+                        <span className="text-sky-900/80 flex-1 min-w-0 truncate" title={cal.label}>
+                          {cal.label}
+                        </span>
+                        <span className="text-xs text-sky-500 shrink-0 tabular-nums">
+                          {cal.our_db_count != null && cal.openalex_count != null
+                            ? `${cal.our_db_count} / ${cal.openalex_count.toLocaleString()} on OpenAlex`
+                            : "—"}
+                          {cal.coverage_ratio != null && (
+                            <span className="ml-1 text-sky-400">({(cal.coverage_ratio * 100).toFixed(1)}%)</span>
+                          )}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+                {/* Summary */}
+                {(() => {
+                  const s = analysis.coverage_calibration.summary;
+                  const total = s.good + s.moderate + s.sparse + s.minimal;
+                  return total > 0 ? (
+                    <div className="mt-2 pt-2 border-t border-sky-200 flex items-center gap-2 text-xs text-sky-600">
+                      <span>Coverage profile:</span>
+                      {s.good > 0 && <span className="bg-emerald-100 text-emerald-700 px-1.5 rounded">Good: {s.good}</span>}
+                      {s.moderate > 0 && <span className="bg-yellow-100 text-yellow-700 px-1.5 rounded">Moderate: {s.moderate}</span>}
+                      {s.sparse > 0 && <span className="bg-orange-100 text-orange-700 px-1.5 rounded">Sparse: {s.sparse}</span>}
+                      {s.minimal > 0 && <span className="bg-red-100 text-red-700 px-1.5 rounded">Minimal: {s.minimal}</span>}
+                    </div>
+                  ) : null;
+                })()}
+              </div>
+            )}
+
             {analysis.self_reflection.process_cost_reflection && (
               <div className="mt-4">
                 <div className="text-sm font-medium text-gray-500 mb-1">Process Reflection</div>
@@ -651,7 +715,140 @@ export default function GapsPage() {
           This log tracks what we learned and what we&apos;re building next.
         </p>
 
-        {/* Entry: 2026-02-16 */}
+        {/* Entry: Sprint 2 — 2026-02-16 */}
+        <Collapsible
+          defaultOpen={true}
+          header={
+            <div className="flex items-center gap-3">
+              <span className="rounded-full bg-orange/10 px-2.5 py-0.5 text-xs font-medium text-orange">
+                Sprint 2
+              </span>
+              <span className="text-sm font-semibold text-navy">
+                6 new analyses + pipeline improvements from self-reflections
+              </span>
+              <span className="text-xs text-gray-400 ml-auto">16 Feb 2026</span>
+            </div>
+          }
+        >
+          <div className="px-6 py-5 space-y-5">
+            <div>
+              <div className="text-sm font-medium text-gray-700 mb-2">What happened</div>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                We generated 6 new gap analyses (pacing strategy, gender-specific rules,
+                player valuation, referee bias, wearable injury prevention, and fan engagement
+                &amp; analytics), bringing the total to 11. We then synthesized the self-reflections
+                from all 6 new analyses into a concrete improvement plan and executed it.
+              </p>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-emerald-600 text-sm font-bold">1</span>
+                  <span className="text-sm font-medium text-emerald-800">Broader relevance scoring</span>
+                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                </div>
+                <p className="text-xs text-emerald-700/80">
+                  Expanded the classifier to score &ldquo;analytics-impact&rdquo; papers
+                  (studies about analytics adoption, organizational impact, coach behavior)
+                  and added a new <code className="text-xs">analytics_adjacent</code> relevance
+                  dimension. Papers about the context of analytics now score high enough to
+                  enter our database.
+                </p>
+              </div>
+              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-emerald-600 text-sm font-bold">2</span>
+                  <span className="text-sm font-medium text-emerald-800">Citation network backfill</span>
+                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                </div>
+                <p className="text-xs text-emerald-700/80">
+                  Backfilled 1.23 million citation links for all 40K papers via the OpenAlex
+                  API (802 batch calls in 9 minutes). The citation network is now fully
+                  populated and ready for cluster analysis in future gap analyses.
+                </p>
+              </div>
+              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-emerald-600 text-sm font-bold">3</span>
+                  <span className="text-sm font-medium text-emerald-800">Multi-label classification + concepts</span>
+                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                </div>
+                <p className="text-xs text-emerald-700/80">
+                  Classifier now assigns up to 2 <code className="text-xs">secondary_themes</code> per
+                  paper. The gap analyzer enriches papers with OpenAlex concepts (topic
+                  fingerprints for 36K papers) and uses both for filtering and context.
+                </p>
+              </div>
+              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-emerald-600 text-sm font-bold">4</span>
+                  <span className="text-sm font-medium text-emerald-800">Qualitative methods awareness</span>
+                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                </div>
+                <p className="text-xs text-emerald-700/80">
+                  Added a &ldquo;qualitative blind spot&rdquo; rule to the gap analyzer prompt:
+                  the AI now explicitly considers whether qualitative or mixed-methods
+                  evidence would be valuable for each question. Classifier keywords for
+                  qualitative methods expanded.
+                </p>
+              </div>
+              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3 sm:col-span-2">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-emerald-600 text-sm font-bold">5</span>
+                  <span className="text-sm font-medium text-emerald-800">Automated coverage calibration</span>
+                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                </div>
+                <p className="text-xs text-emerald-700/80">
+                  Built <code className="text-xs">calibrate_coverage.py</code>: for each suspected
+                  database gap, Haiku generates a search query, which is run against OpenAlex
+                  to count how many papers exist. We now have objective coverage ratios
+                  (our DB / OpenAlex) per topic &mdash; visible in each analysis&apos;s
+                  self-reflection section as color-coded calibration badges.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div className="text-sm font-medium text-gray-700 mb-2">What comes next</div>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex gap-2">
+                  <span className="text-orange shrink-0">&#9679;</span>
+                  <span>
+                    <strong>Re-run the classifier</strong> with the new prompt on all papers to
+                    populate secondary_themes and analytics_adjacent scores across the full database.
+                  </span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-orange shrink-0">&#9679;</span>
+                  <span>
+                    <strong>Citation cluster analysis</strong> &mdash; use the 1.23M citation links
+                    to identify research communities and measure cross-cluster engagement in
+                    gap analyses.
+                  </span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-orange shrink-0">&#9679;</span>
+                  <span>
+                    <strong>Re-run existing analyses</strong> with the v3 prompt (enriched with
+                    concepts, qualitative awareness, and multi-label themes) to see if the
+                    gaps change.
+                  </span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-orange shrink-0">&#9679;</span>
+                  <span>
+                    <strong>Targeted literature expansion</strong> &mdash; use the coverage
+                    calibration results to identify which &ldquo;minimal&rdquo; topics should
+                    be added to the watcher&apos;s keyword list.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </Collapsible>
+
+        {/* Entry: Sprint 1 — 2026-02-16 */}
         <Collapsible
           header={
             <div className="flex items-center gap-3">
