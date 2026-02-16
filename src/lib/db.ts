@@ -11,6 +11,7 @@
 import statsData from "@/data/stats.json";
 import classifiedPapersData from "@/data/classified-papers.json";
 import journalsData from "@/data/journals.json";
+import feedItemsData from "@/data/feed-items.json";
 
 export interface Stats {
   totalPapers: number;
@@ -165,4 +166,40 @@ export const METHODOLOGY_LABELS: Record<string, string> = {
   meta_analysis: "Meta-Analysis",
   descriptive: "Descriptive",
   other: "Other",
+};
+
+// =============================================================================
+// FEED ITEMS (for /sources live feed page)
+// =============================================================================
+
+export interface FeedItem {
+  work_id: string;
+  title: string;
+  pub_date: string | null;
+  created_at: string | null;
+  content_type: string;
+  source_name: string | null;
+  sport: string;
+  theme: string | null;
+  methodology: string | null;
+  summary: string | null;
+  abstract_snippet: string | null;
+  is_womens_sport: number;
+  link: string | null;
+  doi: string | null;
+}
+
+export function getFeedItems(): FeedItem[] {
+  return feedItemsData as FeedItem[];
+}
+
+/** Short label for content type badge */
+export const CONTENT_TYPE_BADGE: Record<string, { letter: string; label: string; color: string }> = {
+  journal_article: { letter: "J", label: "Journal", color: "bg-navy text-white" },
+  blog_post: { letter: "B", label: "Blog", color: "bg-orange text-white" },
+  thesis: { letter: "T", label: "Thesis", color: "bg-purple-600 text-white" },
+  conference_paper: { letter: "C", label: "Conference", color: "bg-teal-600 text-white" },
+  working_paper: { letter: "W", label: "Working Paper", color: "bg-amber-600 text-white" },
+  news_article: { letter: "N", label: "News", color: "bg-rose-600 text-white" },
+  report: { letter: "R", label: "Report", color: "bg-indigo-600 text-white" },
 };

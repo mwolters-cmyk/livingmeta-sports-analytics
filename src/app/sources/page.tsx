@@ -1,210 +1,329 @@
+"use client";
+
+import { useState, useMemo } from "react";
 import Link from "next/link";
-import contentSourcesData from "@/data/content-sources.json";
-import { SPORT_LABELS } from "@/lib/db";
+import feedItemsData from "@/data/feed-items.json";
+import {
+  SPORT_LABELS,
+  CONTENT_TYPE_BADGE,
+  type FeedItem,
+} from "@/lib/db";
 
-interface ContentSource {
-  id: number;
-  name: string;
-  platform: string | null;
-  url: string;
-  feed_url: string | null;
-  feed_type: string | null;
-  sport_focus: string | null;
-  category: string;
-  description: string | null;
-  author_name: string | null;
-  active: number;
-  last_checked: string | null;
-  last_new_item: string | null;
-  check_frequency: string | null;
-  item_count: number;
-}
+const allItems = feedItemsData as FeedItem[];
 
-const allSources = contentSourcesData as ContentSource[];
-
-const CATEGORY_LABELS: Record<string, string> = {
-  blog: "Blogs",
-  corporate_blog: "Corporate Blogs",
-  newsletter: "Newsletters",
-  data_platform: "Data Platforms",
-  thesis_portfolio: "Academic Programs",
-  working_paper_repo: "Working Paper Repositories",
-  conference: "Conferences",
-  news: "News",
-  resource_hub: "Resource Hubs",
-  podcast: "Podcasts",
-};
-
-const CATEGORY_DESCRIPTIONS: Record<string, string> = {
-  blog: "Independent sports analytics blogs by researchers and analysts.",
-  corporate_blog: "Analytics content published by sports data companies.",
-  newsletter: "Regular email newsletters covering sports analytics.",
-  data_platform: "Platforms providing sports data, advanced metrics, and interactive tools.",
-  thesis_portfolio: "University research groups and student programs producing sports analytics work.",
-  working_paper_repo: "Preprint servers and paper archives for sports analytics research.",
-  conference: "Academic and industry conferences featuring sports analytics.",
-  news: "Data-driven sports journalism and news outlets.",
-  resource_hub: "Curated collections of sports analytics tools, datasets, and tutorials.",
-  podcast: "Sports analytics podcasts with interviews and technical discussions.",
-};
-
-const CATEGORY_ORDER = [
-  "blog", "newsletter", "corporate_blog", "data_platform",
-  "thesis_portfolio", "working_paper_repo", "conference",
-  "news", "resource_hub", "podcast",
+// ── Content type filter options ──
+const CONTENT_TYPES = [
+  { key: "all", label: "All" },
+  { key: "journal_article", label: "Journal" },
+  { key: "blog_post", label: "Blog" },
+  { key: "thesis", label: "Thesis" },
+  { key: "conference_paper", label: "Conference" },
+  { key: "working_paper", label: "Preprint" },
+  { key: "news_article", label: "News" },
 ];
 
-export const metadata = {
-  title: "Sources | Living Sports Analytics",
-  description: "Directory of sports analytics blogs, newsletters, thesis portfolios, conferences, and corporate blogs monitored by the platform.",
-};
+// ── Sport options (only sports present in feed) ──
+function buildSportOptions(items: FeedItem[]) {
+  const counts: Record<string, number> = {};
+  for (const item of items) {
+    counts[item.sport] = (counts[item.sport] || 0) + 1;
+  }
+  return Object.entries(counts)
+    .sort((a, b) => b[1] - a[1])
+    .map(([sport, count]) => ({
+      key: sport,
+      label: SPORT_LABELS[sport] || sport,
+      count,
+    }));
+}
 
-export default function SourcesPage() {
-  const groupedSources: Record<string, ContentSource[]> = {};
-  for (const source of allSources) {
-    const cat = source.category || "blog";
-    if (!groupedSources[cat]) groupedSources[cat] = [];
-    groupedSources[cat].push(source);
+// ── Time grouping ──
+function getTimeGroup(dateStr: string | null): string {
+  if (!dateStr) return "Earlier";
+  const now = new Date();
+  const date = new Date(dateStr);
+  const diffMs = now.getTime() - date.getTime();
+  const diffDays = diffMs / (1000 * 60 * 60 * 24);
+
+  if (diffDays < 1) return "Today";
+  if (diffDays < 7) return "This Week";
+  if (diffDays < 30) return "This Month";
+  return "Earlier";
+}
+
+// ── Relative date formatting ──
+function relativeDate(dateStr: string | null): string {
+  if (!dateStr) return "";
+  const now = new Date();
+  const date = new Date(dateStr);
+  const diffMs = now.getTime() - date.getTime();
+  const diffSecs = Math.floor(diffMs / 1000);
+  const diffMins = Math.floor(diffSecs / 60);
+  const diffHours = Math.floor(diffMins / 60);
+  const diffDays = Math.floor(diffHours / 24);
+
+  if (diffDays > 365) return `${Math.floor(diffDays / 365)}y ago`;
+  if (diffDays > 30) return `${Math.floor(diffDays / 30)}mo ago`;
+  if (diffDays > 0) return diffDays === 1 ? "yesterday" : `${diffDays}d ago`;
+  if (diffHours > 0) return `${diffHours}h ago`;
+  if (diffMins > 0) return `${diffMins}m ago`;
+  return "just now";
+}
+
+// ── Unique source count ──
+const uniqueSourceCount = new Set(allItems.map((i) => i.source_name).filter(Boolean)).size;
+
+// ── Badge component ──
+function ContentTypeBadge({ type }: { type: string }) {
+  const badge = CONTENT_TYPE_BADGE[type] || {
+    letter: "?",
+    label: type,
+    color: "bg-gray-500 text-white",
+  };
+  return (
+    <span
+      className={`inline-flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg text-xs font-bold ${badge.color}`}
+      title={badge.label}
+    >
+      {badge.letter}
+    </span>
+  );
+}
+
+export default function SourcesFeedPage() {
+  const [contentFilter, setContentFilter] = useState("all");
+  const [sportFilter, setSportFilter] = useState("all");
+  const [showCount, setShowCount] = useState(30);
+
+  const sportOptions = useMemo(() => buildSportOptions(allItems), []);
+
+  // Filter items
+  const filtered = useMemo(() => {
+    return allItems.filter((item) => {
+      if (contentFilter !== "all" && item.content_type !== contentFilter) return false;
+      if (sportFilter !== "all" && item.sport !== sportFilter) return false;
+      return true;
+    });
+  }, [contentFilter, sportFilter]);
+
+  // Group by time period
+  const visible = filtered.slice(0, showCount);
+  const groups: { label: string; items: FeedItem[] }[] = [];
+  const ORDER = ["Today", "This Week", "This Month", "Earlier"];
+
+  for (const label of ORDER) {
+    const items = visible.filter((i) => getTimeGroup(i.pub_date) === label);
+    if (items.length > 0) groups.push({ label, items });
   }
 
-  const totalSources = allSources.length;
-  const withFeed = allSources.filter((s) => s.feed_url).length;
-
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8">
-      <h1 className="mb-2 text-3xl font-bold text-navy">Sources</h1>
-      <p className="mb-8 text-gray-500">
-        {totalSources} curated sources &middot; {withFeed} with RSS monitoring &middot; The sports analytics blogosphere, mapped and monitored.
-        New items from these sources appear automatically on the{" "}
-        <Link href="/explore" className="text-orange hover:underline">
-          Explore
-        </Link>{" "}
-        page.
+    <div className="mx-auto max-w-4xl px-4 py-8">
+      {/* Header */}
+      <h1 className="mb-2 text-3xl font-bold text-navy">
+        What&apos;s New in Sports Analytics
+      </h1>
+      <p className="mb-6 text-gray-500">
+        Latest from {uniqueSourceCount}+ journals, blogs &amp; preprints &middot; Updated:{" "}
+        {allItems[0]?.created_at
+          ? relativeDate(allItems[0].created_at)
+          : "recently"}{" "}
+        &middot;{" "}
+        <a
+          href="/feed.xml"
+          className="text-orange hover:underline"
+          title="Subscribe via RSS"
+        >
+          RSS Feed
+        </a>
       </p>
 
-      {/* RSS info box */}
-      <div className="mb-8 rounded-xl border border-orange/20 bg-orange/5 p-4">
-        <div className="flex items-start gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="mt-0.5 h-5 w-5 flex-shrink-0 text-orange">
-            <path d="M3.75 3a.75.75 0 0 0-.75.75v.5c0 .414.336.75.75.75H4c6.075 0 11 4.925 11 11v.25c0 .414.336.75.75.75h.5a.75.75 0 0 0 .75-.75V16C17 8.82 11.18 3 4 3h-.25Z" />
-            <path d="M3 8.75A.75.75 0 0 1 3.75 8H4a8 8 0 0 1 8 8v.25a.75.75 0 0 1-.75.75h-.5a.75.75 0 0 1-.75-.75V16a6 6 0 0 0-6-6h-.25A.75.75 0 0 1 3 9.25v-.5ZM7 15a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
-          </svg>
-          <div>
-            <p className="font-medium text-navy">Subscribe via RSS</p>
-            <p className="mt-1 text-sm text-gray-600">
-              Get the latest sports analytics publications, blog posts, and grey literature in your feed reader:{" "}
-              <a href="/feed.xml" className="font-medium text-orange hover:underline">
-                /feed.xml
-              </a>
-            </p>
-          </div>
+      {/* Filters */}
+      <div className="mb-6 space-y-3">
+        {/* Content type pills */}
+        <div className="flex flex-wrap gap-2">
+          {CONTENT_TYPES.map((ct) => {
+            const isActive = contentFilter === ct.key;
+            return (
+              <button
+                key={ct.key}
+                onClick={() => {
+                  setContentFilter(ct.key);
+                  setShowCount(30);
+                }}
+                className={`rounded-full px-3.5 py-1.5 text-sm font-medium transition-colors ${
+                  isActive
+                    ? "bg-navy text-white"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                }`}
+              >
+                {ct.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Sport dropdown */}
+        <div className="flex items-center gap-2">
+          <label htmlFor="sport-filter" className="text-sm font-medium text-gray-500">
+            Sport:
+          </label>
+          <select
+            id="sport-filter"
+            value={sportFilter}
+            onChange={(e) => {
+              setSportFilter(e.target.value);
+              setShowCount(30);
+            }}
+            className="rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-sm text-gray-700 focus:border-navy focus:outline-none focus:ring-1 focus:ring-navy"
+          >
+            <option value="all">All Sports ({allItems.length})</option>
+            {sportOptions.map((s) => (
+              <option key={s.key} value={s.key}>
+                {s.label} ({s.count})
+              </option>
+            ))}
+          </select>
         </div>
       </div>
 
-      {/* Source categories */}
-      <div className="space-y-10">
-        {CATEGORY_ORDER.map((cat) => {
-          const sources = groupedSources[cat];
-          if (!sources || sources.length === 0) return null;
+      {/* Result count */}
+      {filtered.length !== allItems.length && (
+        <p className="mb-4 text-sm text-gray-400">
+          Showing {Math.min(showCount, filtered.length)} of {filtered.length} results
+        </p>
+      )}
 
-          return (
-            <section key={cat}>
-              <h2 className="mb-1 text-xl font-semibold text-navy">
-                {CATEGORY_LABELS[cat] || cat} ({sources.length})
-              </h2>
-              <p className="mb-4 text-sm text-gray-500">
-                {CATEGORY_DESCRIPTIONS[cat] || ""}
-              </p>
-
-              <div className="grid gap-4 md:grid-cols-2">
-                {sources.map((source) => (
-                  <div
-                    key={source.id}
-                    className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
-                  >
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <h3 className="font-semibold text-navy">
-                          <a
-                            href={source.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-orange hover:underline"
-                          >
-                            {source.name}
-                            <span className="ml-1 inline-block text-gray-400">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="inline h-3 w-3">
-                                <path fillRule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clipRule="evenodd" />
-                              </svg>
-                            </span>
-                          </a>
-                        </h3>
-                        {source.author_name && (
-                          <p className="text-sm text-gray-500">by {source.author_name}</p>
-                        )}
-                      </div>
-                      <div className="flex gap-1.5">
-                        {source.feed_url ? (
-                          <span className="rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700" title="RSS feed monitored">
-                            RSS
-                          </span>
-                        ) : (
-                          <span className="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-500" title="No RSS feed">
-                            Manual
-                          </span>
-                        )}
-                        {source.sport_focus && (
-                          <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-700">
-                            {SPORT_LABELS[source.sport_focus] || source.sport_focus}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-
-                    {source.description && (
-                      <p className="mt-2 text-sm text-gray-600">{source.description}</p>
-                    )}
-
-                    <div className="mt-3 flex items-center gap-3 text-xs text-gray-400">
-                      {source.platform && (
-                        <span className="capitalize">{source.platform}</span>
-                      )}
-                      {source.last_checked && (
-                        <span>Last checked: {source.last_checked}</span>
-                      )}
-                      {source.item_count > 0 && (
-                        <span className="font-medium text-gray-500">
-                          {source.item_count} items on platform
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          );
-        })}
+      {/* Feed items grouped by time */}
+      <div className="space-y-6">
+        {groups.map((group) => (
+          <section key={group.label}>
+            <h2 className="mb-3 border-b border-gray-200 pb-1 text-sm font-semibold uppercase tracking-wide text-gray-400">
+              {group.label}
+            </h2>
+            <div className="space-y-1">
+              {group.items.map((item) => (
+                <FeedCard key={item.work_id} item={item} />
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
 
-      {/* Suggest a source */}
-      <div className="mt-12 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center">
-        <h3 className="font-semibold text-navy">Know a sports analytics blog or resource we should track?</h3>
-        <p className="mt-2 text-sm text-gray-500">
-          We&apos;re always looking for high-quality sources. Suggest a blog, newsletter, conference, or thesis portfolio on our{" "}
-          <Link href="/contribute" className="text-orange hover:underline">
-            contribute page
-          </Link>{" "}
-          or open an issue on{" "}
-          <a
-            href="https://github.com/mwolters-cmyk/living-sports-analytics-research/issues"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-orange hover:underline"
+      {/* Empty state */}
+      {filtered.length === 0 && (
+        <div className="py-16 text-center">
+          <p className="text-gray-400">No items match your filters.</p>
+          <button
+            onClick={() => {
+              setContentFilter("all");
+              setSportFilter("all");
+            }}
+            className="mt-2 text-sm text-orange hover:underline"
           >
-            GitHub
+            Clear filters
+          </button>
+        </div>
+      )}
+
+      {/* Show more */}
+      {showCount < filtered.length && (
+        <div className="mt-6 text-center">
+          <button
+            onClick={() => setShowCount((c) => c + 30)}
+            className="rounded-lg bg-gray-100 px-6 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200"
+          >
+            Show more ({filtered.length - showCount} remaining)
+          </button>
+        </div>
+      )}
+
+      {/* Footer CTA */}
+      <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-5 text-center">
+        <p className="text-sm text-gray-500">
+          Browse all 40,000+ indexed papers on the{" "}
+          <Link href="/explore" className="font-medium text-orange hover:underline">
+            Explore page
+          </Link>
+          {" "}&middot;{" "}
+          <a
+            href="/feed.xml"
+            className="font-medium text-orange hover:underline"
+          >
+            Subscribe via RSS
           </a>
-          .
         </p>
+      </div>
+    </div>
+  );
+}
+
+// ── Individual feed card ──
+function FeedCard({ item }: { item: FeedItem }) {
+  const sportLabel = SPORT_LABELS[item.sport] || item.sport;
+  const itemLink =
+    item.link || `/explore?paper=${encodeURIComponent(item.work_id)}`;
+  const isExternal = item.link?.startsWith("http");
+
+  return (
+    <div className="group flex gap-3 rounded-lg px-2 py-2.5 transition-colors hover:bg-gray-50">
+      {/* Content type badge */}
+      <div className="pt-0.5">
+        <ContentTypeBadge type={item.content_type} />
+      </div>
+
+      {/* Content */}
+      <div className="min-w-0 flex-1">
+        {/* Title */}
+        <h3 className="text-[15px] font-semibold leading-snug text-navy group-hover:text-orange">
+          {isExternal ? (
+            <a
+              href={itemLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {item.title}
+              <span className="ml-1 inline-block text-gray-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  className="inline h-3 w-3"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </a>
+          ) : (
+            <Link href={itemLink} className="hover:underline">
+              {item.title}
+            </Link>
+          )}
+        </h3>
+
+        {/* Metadata row */}
+        <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-gray-400">
+          {item.source_name && (
+            <span className="text-gray-500">{item.source_name}</span>
+          )}
+          <span className="rounded-full bg-blue-50 px-1.5 py-0.5 text-blue-700">
+            {sportLabel}
+          </span>
+          {item.pub_date && (
+            <span title={item.pub_date}>{relativeDate(item.pub_date)}</span>
+          )}
+        </div>
+
+        {/* Summary (if available) */}
+        {item.summary && (
+          <p className="mt-1 line-clamp-1 text-xs text-gray-400">
+            {item.summary}
+          </p>
+        )}
       </div>
     </div>
   );

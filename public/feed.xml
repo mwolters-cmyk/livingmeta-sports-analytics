@@ -5,7 +5,7 @@
     <link>https://living-sports-analytics.vercel.app</link>
     <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 16:40:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 18:35:15 GMT</lastBuildDate>
     <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://living-sports-analytics.vercel.app/icon.png</url>
@@ -13,553 +13,508 @@
       <link>https://living-sports-analytics.vercel.app</link>
     </image>
     <item>
-      <title>Who is More Injury‐Prone? Prediction and Assessment of Injury Risk</title>
-      <link>https://doi.org/https://doi.org/10.1111/deci.12333</link>
-      <description>Develops machine learning model using movement efficiency, IoT acceleration data, functional roles, and exposure metrics to predict injury risk in college football players, enabling individualized rather than one-size-fits-all injury prevention interventions.</description>
-      <pubDate>Thu, 09 Aug 2018 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2885866444</guid>
-      <source url="https://living-sports-analytics.vercel.app">Decision Sciences</source>
-      <category>american_football</category>
-      <category>injury_prevention</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Predicting outcome of matches using pressure index: evidence from Twenty20 cricket</title>
-      <link>https://doi.org/https://doi.org/10.1080/03610918.2018.1532003</link>
-      <description>Discriminant analysis applied to pressure index predicts Twenty20 cricket match outcomes with 90.7% accuracy on training data and 78.4% on holdout validation.</description>
-      <pubDate>Sun, 27 Jan 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2913545232</guid>
-      <source url="https://living-sports-analytics.vercel.app">Communications in Statistics - Simulation and Computation</source>
-      <category>cricket</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>A ski injury risk assessment model for ski resorts</title>
-      <link>https://doi.org/https://doi.org/10.1080/13669877.2020.1749113</link>
-      <description>A spatial-temporal ski injury risk assessment model using ski lift transportation data identifies critical regions and injury patterns across ski resort terrain to enable targeted prevention strategies.</description>
-      <pubDate>Wed, 08 Apr 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3016083624</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Risk Research</source>
-      <category>skiing</category>
-      <category>injury_prevention</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>The Relationship Between the National Football League Scouting Combine and Game Performance Over a 5-Year Period</title>
-      <link>https://doi.org/https://doi.org/10.1519/jsc.0000000000003676</link>
-      <description>5-year analysis of 1,537 NFL players shows Scouting Combine physical tests explain only 2.6% of first-year game performance variance with weak correlations (r&lt;0.3), suggesting Combine measures have minimal predictive validity for player selection.</description>
-      <pubDate>Mon, 25 May 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3029664187</guid>
-      <source url="https://living-sports-analytics.vercel.app">The Journal of Strength and Conditioning Research</source>
-      <category>american_football</category>
-      <category>player_development</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Data‐driven exploratory approach on player valuation in football transfer market</title>
-      <link>https://doi.org/https://doi.org/10.1002/cpe.5353</link>
-      <description>Regression, feature selection, and cluster analysis classify football players into four performance-fee groups, revealing position-dependent skill impacts on valuation in the transfer market.</description>
-      <pubDate>Thu, 23 May 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2945495661</guid>
-      <source url="https://living-sports-analytics.vercel.app">Concurrency and Computation Practice and Experience</source>
-      <category>football</category>
-      <category>player_valuation</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Measurement Space Partitioning for Estimation and Prediction</title>
-      <link>https://doi.org/https://doi.org/10.1109/access.2021.3117911</link>
-      <description>Proposes measurement space partitioning method using batted-ball trajectory data to improve prediction accuracy of batter talent, outperforming traditional linear regression and standard machine learning approaches with contextual adjustments.</description>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3184870026</guid>
-      <source url="https://living-sports-analytics.vercel.app">IEEE Access</source>
-      <category>baseball</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>The effects of travel on performance: a 13-year analysis of the National Rugby League (NRL) competition</title>
-      <link>https://doi.org/https://doi.org/10.1080/24733938.2021.1876243</link>
-      <description>Analysis of 2,352 NRL matches (2007-2019) shows that travel reduces winning probability by 2.7% per 1,000 km, with effects diminishing over time, though modern conditions appear to mitigate travel disadvantage.</description>
-      <pubDate>Fri, 15 Jan 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4229038326</guid>
-      <source url="https://living-sports-analytics.vercel.app">Science and Medicine in Football</source>
-      <category>rugby</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Finding Your Feet: A Gaussian Process Model for Estimating the Abilities of Batsmen in Test Cricket</title>
-      <link>https://doi.org/https://doi.org/10.1111/rssc.12470</link>
-      <description>A Bayesian Gaussian process model quantifies and predicts career-long fluctuations in cricket batsmen&apos;s abilities, outperforming traditional batting averages and ICC ratings.</description>
-      <pubDate>Thu, 11 Feb 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2970828838</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of the Royal Statistical Society Series C (Applied Statistics)</source>
-      <category>cricket</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>The Winning Probability of a Game and the Importance of Points in Tennis Matches</title>
-      <link>https://doi.org/https://doi.org/10.1080/02701367.2019.1666203</link>
-      <description>A discrete-time Markov chain analysis of ATP tour matches (2011-2015) demonstrates that server point-winning probabilities vary significantly across game states and depend on previous point outcomes.</description>
-      <pubDate>Tue, 17 Dec 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2994643663</guid>
-      <source url="https://living-sports-analytics.vercel.app">Research Quarterly for Exercise and Sport</source>
-      <category>tennis</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Pursuing sources of heterogeneity in modeling clustered population</title>
-      <link>https://doi.org/https://doi.org/10.1111/biom.13434</link>
-      <description>A regularized finite mixture effects regression identifies heterogeneous relationships between MLB player performance metrics, contract status, and salary levels across player clusters.</description>
-      <pubDate>Thu, 04 Feb 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3126443958</guid>
-      <source url="https://living-sports-analytics.vercel.app">Biometrics</source>
-      <category>baseball</category>
-      <category>player_valuation</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Detecting drivers of basketball successful games: an exploratory study with machine learning algorithms</title>
-      <link>https://doi.org/https://doi.org/10.1285/i20705948v13n2p454</link>
-      <description>CART and Random Forest models identify defensive performance as the key driver of Golden State Warriors&apos; NBA victories using box scores and Dean&apos;s four factors.</description>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3127705661</guid>
-      <source url="https://living-sports-analytics.vercel.app">Università del Salento</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Are “Tech-Savvy” Owners Better for Business? Evidence From Major League Baseball</title>
-      <link>https://doi.org/https://doi.org/10.1123/jsm.2021-0252</link>
-      <description>MLB analysis over 14 years shows owners with business intelligence expertise increase operating margins modestly through labor cost efficiency rather than revenue generation, with effects moderated by tenure.</description>
-      <pubDate>Sat, 26 Mar 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4220894189</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Sport Management</source>
-      <category>baseball</category>
-      <category>player_valuation</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Examining the evolution and classification of player position using performance indicators in the National Rugby League during the 2015–2019 seasons</title>
-      <link>https://doi.org/https://doi.org/10.1016/j.jsams.2020.02.013</link>
-      <description>Cluster analysis and discriminant analysis of National Rugby League performance data (2015-2019) identified six distinct positional groups and revealed significant seasonal changes in positional performance demands.</description>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3006929148</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of science and medicine in sport</source>
-      <category>rugby</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Analysis of styles of play according to season and end of season rank in the National Rugby League</title>
-      <link>https://doi.org/https://doi.org/10.1016/j.jsams.2020.09.006</link>
-      <description>Principal component analysis identified nine distinct styles of play in the National Rugby League (2015-2019), with attacking, defensive, and contested dimensions differing by season and final ladder position.</description>
-      <pubDate>Sat, 12 Sep 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3085766350</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of science and medicine in sport</source>
-      <category>rugby</category>
-      <category>tactical_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Simulation-based decision making in the NFL using NFLSimulatoR</title>
-      <link>https://doi.org/https://doi.org/10.1007/s10479-022-04524-7</link>
-      <description>NFLSimulatoR R package enables simulation-based evaluation of NFL in-game strategies like fourth-down decisions, demonstrating teams should pass more frequently than current standard practice.</description>
-      <pubDate>Tue, 18 Jan 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3128980345</guid>
-      <source url="https://living-sports-analytics.vercel.app">Annals of Operations Research</source>
-      <category>american_football</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>A regularized hidden Markov model for analyzing the ‘hot shoe’ in football</title>
-      <link>https://doi.org/https://doi.org/10.1177/1471082x211008014</link>
-      <description>Penalized hidden Markov models with elastic net regularization detected a &apos;hot shoe&apos; effect in soccer penalty takers, identifying latent performance states affecting success probability.</description>
-      <pubDate>Wed, 19 May 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2991499484</guid>
-      <source url="https://living-sports-analytics.vercel.app">Statistical Modelling</source>
-      <category>football</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Dealing With Statistical Significance in Big Data: The Social Media Value of Game Outcomes in Professional Football</title>
-      <link>https://doi.org/https://doi.org/10.1123/jsm.2020-0275</link>
-      <description>Game outcomes significantly affect professional football clubs&apos; social media follower growth across Facebook, Twitter, and Instagram, with victories yielding the highest follower increases.</description>
-      <pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3157926967</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Sport Management</source>
-      <category>football</category>
-      <category>fan_engagement</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Forecasting binary outcomes in soccer</title>
-      <link>https://doi.org/https://doi.org/10.1007/s10479-021-04224-8</link>
-      <description>Score-driven models forecasted binary soccer outcomes (red cards, Under/Over, Goal/No Goal) in English Premier League and Italian Serie A for profitable betting strategies.</description>
-      <pubDate>Wed, 11 Aug 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3197767830</guid>
-      <source url="https://living-sports-analytics.vercel.app">Annals of Operations Research</source>
-      <category>football</category>
-      <category>betting_markets</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Change the rules, change the game? Offensive tactics in elite men’s water polo from London to Tokyo</title>
-      <link>https://doi.org/https://doi.org/10.1080/24748668.2022.2106109</link>
-      <description>Water polo offensive tactics shifted significantly between 2012 and 2020 Olympics, with increased perimeter shooting and decreased counterattacks; exclusions and counterattack efficiency were key predictors of match outcomes.</description>
-      <pubDate>Mon, 04 Jul 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4288040058</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Performance Analysis in Sport</source>
-      <category>other</category>
-      <category>tactical_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Markov Switching Modelling of Shooting Performance Variability and Teammate Interactions in Basketball</title>
-      <link>https://doi.org/https://doi.org/10.1111/rssc.12442</link>
-      <description>Markov switching models identified positive and negative player interactions affecting team shooting performance, providing a network-based tool for coaching lineup decisions.</description>
-      <pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3082565509</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of the Royal Statistical Society Series C (Applied Statistics)</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Continuous-time state-space modelling of the hot hand in basketball</title>
-      <link>https://doi.org/https://doi.org/10.1007/s10182-021-00410-y</link>
-      <description>Continuous-time state-space modeling of 110,513 NBA free throws confirmed the hot hand effect exists but with small magnitude, elevating success probabilities by only a few percentage points.</description>
-      <pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3105202937</guid>
-      <source url="https://living-sports-analytics.vercel.app">AStA Advances in Statistical Analysis</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Differentiating movement styles in professional tennis: A machine learning and hierarchical clustering approach</title>
-      <link>https://doi.org/https://doi.org/10.1080/17461391.2021.2006800</link>
-      <description>Hierarchical clustering of 150,000 direction changes from 62 male and 77 female professional tennis players identifies five distinct COD styles (Cutters, Gear Changers, Lateral Changers, Balanced Changers, Passive Changers) for athlete profiling.</description>
-      <pubDate>Tue, 16 Nov 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3212701786</guid>
-      <source url="https://living-sports-analytics.vercel.app">European Journal of Sport Science</source>
-      <category>tennis</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Return to performance following severe ankle, knee, and hip injuries in National Basketball Association players</title>
-      <link>https://doi.org/https://doi.org/10.1093/pnasnexus/pgac176</link>
-      <description>NBA players with severe lower extremity injuries showed limited return to performance, with fewer than 45% playing 2 years post-injury and fewer than 42% reaching preinjury performance levels.</description>
-      <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4295353291</guid>
-      <source url="https://living-sports-analytics.vercel.app">PNAS Nexus</source>
-      <category>basketball</category>
-      <category>injury_prevention</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>The relationship between match performance indicators and outcome in Australian Football</title>
-      <link>https://doi.org/https://doi.org/10.1016/j.jsams.2018.09.235</link>
-      <description>Decision tree and GLM models predict Australian Football match outcomes with up to 95.1% accuracy, identifying turnovers forced and inside 50s per shot as most predictive indicators.</description>
-      <pubDate>Wed, 10 Oct 2018 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2897174849</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of science and medicine in sport</source>
-      <category>other</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Constructing Spaces and Times for Tactical Analysis in Football</title>
-      <link>https://doi.org/https://doi.org/10.1109/tvcg.2019.2952129</link>
-      <description>A framework for analyzing football tracking data constructs dynamic spatial-temporal reference systems to detect and visualize general patterns of coordinated team movement in different game situations.</description>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2986447659</guid>
-      <source url="https://living-sports-analytics.vercel.app">IEEE Transactions on Visualization and Computer Graphics</source>
-      <category>football</category>
-      <category>tactical_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>The effect of team formation on defensive performance in Australian football</title>
-      <link>https://doi.org/https://doi.org/10.1016/j.jsams.2021.09.002</link>
-      <description>Logistic regression and decision tree analysis of Australian Football GPS and event data show team formation wider than long associated with positive turnover outcomes, though most formation characteristics lack defensive impact.</description>
-      <pubDate>Mon, 13 Sep 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3201107368</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of science and medicine in sport</source>
-      <category>other</category>
-      <category>tactical_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Reimagining the role of technology in sport officiating: how artificial intelligence (AI) supports the design and delivery of ecologically dynamic development processes</title>
-      <link>https://doi.org/https://doi.org/10.1080/23750472.2022.2126996</link>
-      <description>Conceptual framework proposes using AI/machine learning technologies to support ecologically dynamic development of sport officials&apos; decision-making and judgment across multiple sports contexts.</description>
-      <pubDate>Thu, 06 Oct 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4302362314</guid>
-      <source url="https://living-sports-analytics.vercel.app">Managing Sport and Leisure</source>
+      <title>Ilia Malinin and the Curse of the American Olympic Coronation</title>
+      <link>https://neilpaine.substack.com/p/ilia-malinin-and-the-curse-of-the</link>
+      <description>Anointed as America&apos;s next Olympic icon, Malinin instead joined the long history of U.S. stars undone by the weight of expectation.</description>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">blog:523f815174b8cd2d</guid>
+      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
       <category>multi_sport</category>
-      <category>methodology</category>
-      <category>journal_article</category>
+      <category>blog_post</category>
     </item>
     <item>
-      <title>Bayesian hierarchical modelling of basketball tracking data - a case study of spatial entropy and spatial effectiveness</title>
-      <link>https://doi.org/https://doi.org/10.1080/02640414.2020.1736252</link>
-      <description>A Bayesian hierarchical model was applied to basketball tracking data to analyze spatial autocorrelation and found a generally positive association between ball movement entropy and spatial effectiveness, with strength varying by spatial scale.</description>
-      <pubDate>Mon, 02 Mar 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3009878004</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Sports Sciences</source>
-      <category>basketball</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Exploring the components of brand equity amid declining ticket sales in Major League Baseball</title>
-      <link>https://doi.org/https://doi.org/10.1057/s41270-020-00083-7</link>
-      <description>A PLS-SEM analysis of MLB data found that attendance and local television partially/fully mediate the relationship between marketing assets and financial performance, with Twitter followers moderating several relationships in the brand equity model.</description>
-      <pubDate>Tue, 21 Jul 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3044417319</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Marketing Analytics</source>
-      <category>baseball</category>
-      <category>fan_engagement</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Technological advances in elite marathon performance</title>
-      <link>https://doi.org/https://doi.org/10.1152/japplphysiol.00002.2021</link>
-      <description>Analysis of World Marathon Major races shows elite runners wearing advanced Nike shoes achieved 2.0-2.6% faster marathon times compared to other footwear.</description>
-      <pubDate>Thu, 13 May 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3160304906</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Applied Physiology</source>
-      <category>athletics</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Rating Player Actions in Soccer</title>
-      <link>https://doi.org/https://doi.org/10.3389/fspor.2021.682986</link>
-      <description>A graph recurrent neural network trained on soccer tracking data was used to predict player trajectories and ball possession outcomes, enabling data-driven rating of individual player actions and their contribution to team success.</description>
-      <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3184133131</guid>
-      <source url="https://living-sports-analytics.vercel.app">Frontiers in Sports and Active Living</source>
-      <category>football</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Where to go: Computational and visual what-if analyses in soccer</title>
-      <link>https://doi.org/https://doi.org/10.1080/02640414.2019.1652541</link>
-      <description>An automated system using computer vision was developed to detect faulty region-based player movements in professional soccer matches and suggest improved alternatives, validated by expert coaches with 83% agreement on recommendations.</description>
-      <pubDate>Sun, 11 Aug 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2968005755</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Sports Sciences</source>
-      <category>football</category>
-      <category>tactical_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Toward Automatically Labeling Situations in Soccer</title>
-      <link>https://doi.org/https://doi.org/10.3389/fspor.2021.725431</link>
-      <description>Variational autoencoders learn feature representations from unlabeled soccer video to detect corner kicks, crosses, and counterattacks with &gt;90% AUC using minimal labeled training data.</description>
-      <pubDate>Wed, 03 Nov 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3209025434</guid>
-      <source url="https://living-sports-analytics.vercel.app">Frontiers in Sports and Active Living</source>
-      <category>football</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Scheduling the Valley Baseball League</title>
-      <link>https://doi.org/https://doi.org/10.1287/inte.2021.1076</link>
-      <description>Mathematical programming was used to generate an optimized schedule for the Valley Baseball League that significantly outperformed manually produced schedules while satisfying league mandates and team-specific constraints.</description>
-      <pubDate>Mon, 08 Nov 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3212313686</guid>
-      <source url="https://living-sports-analytics.vercel.app">INFORMS Journal on Applied Analytics</source>
-      <category>baseball</category>
-      <category>methodology</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Clustering algorithms to increase fairness in collegiate wrestling</title>
-      <link>https://doi.org/https://doi.org/10.1515/jqas-2020-0101</link>
-      <description>Custom clustering algorithms based on genetic algorithms were developed to optimally assign NCAA Division III wrestling schools to regions, improving fairness for individual wrestlers competing for national tournament qualification.</description>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4283697826</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Quantitative Analysis in Sports</source>
-      <category>other</category>
-      <category>methodology</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Can Social Media Predict Soccer Clubs’ Stock Prices? The Case of Turkish Teams and Twitter</title>
-      <link>https://doi.org/https://doi.org/10.1177/21582440211004153</link>
-      <description>Twitter sentiment analysis predicts stock prices of Turkish soccer clubs better than traditional betting odds as indicator of pre-match investor expectations.</description>
-      <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3154577610</guid>
-      <source url="https://living-sports-analytics.vercel.app">SAGE Open</source>
-      <category>football</category>
-      <category>betting_markets</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Simulating Defensive Trajectories in American Football for Predicting League Average Defensive Movements</title>
-      <link>https://doi.org/https://doi.org/10.3389/fspor.2021.669845</link>
-      <description>Multi-agent imitation learning with deep neural networks simulates NFL defensive player trajectories from tracking data, achieving 81% accuracy in pass completion probability prediction for evaluating defensive performance.</description>
-      <pubDate>Thu, 22 Jul 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3183523428</guid>
-      <source url="https://living-sports-analytics.vercel.app">Frontiers in Sports and Active Living</source>
-      <category>american_football</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>In-game win probability models for Canadian football</title>
-      <link>https://doi.org/https://doi.org/10.1080/2573234x.2021.2015252</link>
-      <description>Logistic regression and gradient boosting models predict in-game win probability for Canadian Football League using play-by-play data and wagering information to support coaching decisions.</description>
-      <pubDate>Sat, 18 Dec 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4200470363</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Business Analytics</source>
-      <category>other</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Identifying and analysing game styles and factors influencing a team’s strategy in field hockey</title>
-      <link>https://doi.org/https://doi.org/10.1080/02640414.2022.2037839</link>
-      <description>K-means clustering and decision trees identify game styles in international field hockey (74 female, 57 male matches) showing that opponent strategy is more influential than contextual factors in predicting team tactics.</description>
-      <pubDate>Thu, 10 Feb 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4211109871</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Sports Sciences</source>
-      <category>other</category>
-      <category>tactical_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Data Reduction Approaches to Athlete Monitoring in Professional Australian Football</title>
-      <link>https://doi.org/https://doi.org/10.1123/ijspp.2020-0083</link>
-      <description>Principal component analysis of GPS and wellness data from Australian Football League players reduces monitoring data overload by identifying key components: external load, perceived wellness, and chronic speed exposure.</description>
-      <pubDate>Wed, 04 Nov 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3095913219</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physiology and Performance</source>
-      <category>other</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Extraordinary circumstances: Covid-19 – Italian Serie A scenario</title>
-      <link>https://doi.org/https://doi.org/10.1177/17543371211019289</link>
-      <description>Hierarchical cluster analysis methodology proposes reducing remaining Serie A matches from 124 to 14 to conclude interrupted season, validated across 10 past seasons.</description>
-      <pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3164137196</guid>
-      <source url="https://living-sports-analytics.vercel.app">Proceedings of the Institution of Mechanical Engineers Part P Journal of Sports Engineering and Technology</source>
-      <category>football</category>
-      <category>methodology</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>A cluster analysis of basketball players for each of the five traditionally defined positions</title>
-      <link>https://doi.org/https://doi.org/10.1177/17543371211062064</link>
-      <description>Hierarchical clustering of 15 NBA seasons identifies 4-6 position-specific player style clusters per position, using adjusted plus-minus and win differential to guide roster construction.</description>
-      <pubDate>Thu, 30 Dec 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4200615282</guid>
-      <source url="https://living-sports-analytics.vercel.app">Proceedings of the Institution of Mechanical Engineers Part P Journal of Sports Engineering and Technology</source>
-      <category>basketball</category>
-      <category>player_development</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Business Intelligence: How Sport Scientists Can Support Organization Decision Making in Professional Sport</title>
-      <link>https://doi.org/https://doi.org/10.1123/ijspp.2018-0903</link>
-      <description>Commentary proposing a business intelligence framework for sport scientists in professional organizations, integrating data collection, statistical analysis, and decision-support models to enhance organizational performance across multiple sports domains.</description>
-      <pubDate>Thu, 31 Jan 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2913946667</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physiology and Performance</source>
+      <title>Instrumented mouthguards in NCAA American football: Validity and head acceleration event incidence</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251378306?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. A growing body of evidence suggests that repetitive head acceleration events (HAEs), even in the absence of diagnosed concussion, could have implications for long-term neurological function. This study aims to determine the on-field</description>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0059bfe3d45f39f1</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
       <category>multi_sport</category>
-      <category>methodology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Visual recognition and performance prediction of athletes based on target tracking EIA algorithm</title>
-      <link>https://doi.org/https://doi.org/10.3233/jifs-189550</link>
-      <description>Development of multi-feature adaptive fusion algorithm combining EIA and compressed sensing for improved athlete target tracking and visual feature recognition in sports.</description>
-      <pubDate>Tue, 22 Dec 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3114845147</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Intelligent &amp; Fuzzy Systems</source>
-      <category>other</category>
-      <category>methodology</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>A Dimension Reduction Approach to Player Rankings in European Football</title>
-      <link>https://doi.org/https://doi.org/10.1109/access.2021.3107585</link>
-      <description>Dimension reduction framework for evaluating left and right back performance across global football competitions shows that highly-ranked players experience increased transfer values and move to suitable teams.</description>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3195655518</guid>
-      <source url="https://living-sports-analytics.vercel.app">IEEE Access</source>
-      <category>football</category>
-      <category>player_valuation</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Individual role classification for players defending corners in football (soccer)</title>
-      <link>https://doi.org/https://doi.org/10.1515/jqas-2022-0003</link>
-      <description>CNN-LSTM model achieves 89.3% accuracy classifying seven defensive player roles during soccer corners using positional tracking data, enabling fact-based tactical decision-making.</description>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4306398697</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Quantitative Analysis in Sports</source>
-      <category>football</category>
-      <category>tactical_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Major league baseball’s&lt;i&gt;Moneyball&lt;/i&gt;at age 15: a re-appraisal</title>
-      <link>https://doi.org/https://doi.org/10.1080/00036846.2019.1617399</link>
-      <description>Re-appraisal of Moneyball&apos;s central premise using 45 seasons of MLB data validates the importance of on-base percentage for team success, though payroll efficiency gains following the book&apos;s publication appear to have dissipated over time.</description>
-      <pubDate>Mon, 20 May 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2945785742</guid>
-      <source url="https://living-sports-analytics.vercel.app">Applied Economics</source>
-      <category>baseball</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>High-Performance Practice Processes</title>
-      <link>https://doi.org/https://doi.org/10.1287/mnsc.2019.3286</link>
-      <description>Mathematical modeling of optimal practice strategies for both motor and cognitive skill acquisition shows that performance is maximized through U-shaped effort profiles with alternating cycles of stress and rest, consistent across multiple sports.</description>
-      <pubDate>Fri, 13 Sep 2019 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W2972484715</guid>
-      <source url="https://living-sports-analytics.vercel.app">Management Science</source>
+      <title>Competition-day priming practices of South-East Asian track-and–field coaches: Results from a cross sectional survey</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251415287?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This survey study investigated the priming strategies used by track-and-field coaches in South-East Asia. The anonymous online survey fielded questions across themes of: 1) demographic information, 2) prevalence and nature of primin</description>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:019c974584f8550f</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
       <category>multi_sport</category>
-      <category>player_development</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>A Variance Gamma model for Rugby Union matches</title>
-      <link>https://doi.org/https://doi.org/10.1515/jqas-2019-0088</link>
-      <description>A Variance Gamma statistical model for Rugby Union matches provides analytical solutions for predicting match outcomes, total scores, and bonus points using bookmakers&apos; data and historical results.</description>
-      <pubDate>Tue, 05 May 2020 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3033272870</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Quantitative Analysis in Sports</source>
-      <category>rugby</category>
-      <category>performance_analysis</category>
+      <title>Using transformer-based models for Vietnamese language detection</title>
+      <link>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342898</link>
+      <description>by Son Tran, Phuoc Tran This paper introduces a solution to the problem of detecting whether a sequence of text is Vietnamese based on its orthography and contextual features. For those unfamiliar with the language, it is known that understanding the meaning of certain texts can be challenging, sinc</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:029ed96fc7c25baa</guid>
+      <source url="https://living-sports-analytics.vercel.app">PLoS ONE</source>
+      <category>multi_sport</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>How the COVID-19 Pandemic has Changed the Game of Soccer</title>
-      <link>https://doi.org/https://doi.org/10.1055/a-1518-7778</link>
-      <description>Analysis of Bundesliga matches during COVID-19 lockdown found that empty stadiums reduced home advantage by 44.2% in away wins, decreased referee bias in yellow card distribution, and increased player running intensity and tactical adaptations.</description>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W3187582337</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Medicine</source>
-      <category>football</category>
-      <category>performance_analysis</category>
+      <title>Postural stability in trail 
+and cross-country runners: 
+Time-to-boundary metrics and training insights</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251370356?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 437-443, February 2026. Trail and cross-country runners frequently train on uneven and unpredictable terrain, elevating their risk of ankle injury. Time to Boundary (TtB) is a measure of postural stability that has emerged </description>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:042d71747d3c3236</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>The football throw-in: A scoping review</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251407859?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Despite the publication of articles about set pieces in football, research has not provided much focus on throw-in actions. The aim of this review is to offer an overview of the current literature concerning football throw-ins and i</description>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0608deedd8d36322</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>International female rugby union players’ perceptions of how the menstrual cycle affects players on and off the field</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251378464?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 275-283, February 2026. There is limited research on female rugby players, particularly concerning how the menstrual cycle affects performance. This study explored international female rugby players perceptions and experien</description>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:070dc4762ad0ef6f</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>NBA all-time scoring champion vs. 10-time season scoring champion: Which record is more unlikely?</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251408011?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Given its popularity and large market value, professional basketball has attracted increased academic attention over the past few decades. We employ the Extreme Value Theory (EVT) to compare two almost unreachable records in NBA: al</description>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0730a9df155b3978</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Predictors of community pharmacists’ readiness to implement deprescribing of inappropriate medications for older adults in Qatar</title>
+      <link>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342795</link>
+      <description>by Marwa Elshazly, Sondus Jawad, Ayesha Ahmed, Hager ElGeed, Kazeem Babatunde Yusuff There is a paucity of studies focused on the predictors of community pharmacists’ readiness to deprescribe inappropriate medications for older adults especially in developing settings. The study aimed to use the sit</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:08526adbd635bfcc</guid>
+      <source url="https://living-sports-analytics.vercel.app">PLoS ONE</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Criteria for the selection and development of academy soccer goalkeepers: Experts opinion</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251370186?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. ObjectiveThe main aim of this study was to provide a comprehensive view of effective strategies, offering the soccer community informed tools that will optimize the process of developing the next generation of goalkeepers through th</description>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:08682771b9e814bb</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Exploring the current landscape and aspirations of Australian strength and conditioning coaches</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251377197?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Strength and conditioning (S&amp;amp;C) coaches are invaluable in exercise and sport, with numbers rising globally. This exploratory study sought to better understand who these coaches are, their career aspirations, and to identify pote</description>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:08d7e332e3baf5ca</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Comparison of the load-velocity relationship between bilateral and unilateral variants of the prone bench pull and leg press exercises</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251391246?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study aimed to compare the load-velocity profiles (LVP) derived from bilateral and unilateral variations of the prone bench pull (PBP) and leg press (LP) exercises, considering the self-reported preferred (SP) and non-preferred</description>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0aac2eff21c48ee2</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Club pressure, burnout and perceived motivational climate created by grassroots soccer coaches</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251393813?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study examines whether the pressure perceived by coaches in their clubs as well as their burnout experiences are antecedents of the perceived motivational climate (empowering and disempowering) that they create in their teams. </description>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0c1e3af2bba78ac8</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Effects of subjective effort on ball speed and spin in table tennis forehand 
+topspin strokes</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251380169?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated how modulating subjective effort influences ball speed and spin rate in table tennis forehand topspin strokes, and examined discrepancies between perceived and actual output. Ten skilled male collegiate playe</description>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0c70a6382f184d76</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Are small-sided games an efficient re-warm-up strategy in women football? A randomised crossover study</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251414956?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the acute effects of three re-warm-up conditions (small-sided games (SSG), jogging, and inactivity) on physical performance in youth female footballers. Sixteen under-15 players (14.06 ± 0.66 years) participa</description>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0d227f7df81ff3bf</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Relationship between movement time and ground reaction force in the intermediate phase of baseball hitting to base running</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251379183?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Offensive play in baseball consists of batting and base running; however, the transitional phase that links these two actions, termed Situation Integration, has not been adequately studied. Furthermore, the importance of a rapid shi</description>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0e449497c9aa8465</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>The efficacy of complex training for enhancing change of direction ability: A systematic review and meta-analysis</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251386936?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 592-610, February 2026. While Complex Training (CT) is widely used to improve Change of Direction (COD) ability, its comparative efficacy against its constituent components—resistance training (RT) and plyometric training (</description>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0f380be0b14acbcb</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Does experience mitigate the deleterious effect of mental fatigue on tactical performance? A study in youth soccer academies</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251365949?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 154-169, February 2026. The present study compared the effects of mental fatigue on the tactical performance of soccer players in the under-13, under-15, and under-17 categories. The sample of the present study comprised 70</description>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:0f98ff0f8454dffa</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>The relationship between coaches’ interpersonal behaviors, basic psychological needs, behavioral regulation, and intentions towards sport persistence</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251378385?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 30-38, February 2026. This study investigates the relationships between coaches’ need-supportive and need-thwarting behaviors, satisfaction of basic psychological needs, motivation, intentions to continue, and athletes spor</description>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:1011d2f3f30a7ea5</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Erratum to “Playing style identification in team sports: A systematic review from statistical dimensionality reduction to unsupervised machine learning”</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251386160?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print.</description>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:10c3e8962cc0f2c2</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Online education and its relation to hearing status among higher-secondary students in Bangladesh: A cross-sectional survey</title>
+      <link>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342668</link>
+      <description>by Syeda Tasnim Tabassum Hridi, Mohammad Azmain Iktidar, Kazi Sudipta Kabir, Punam Ghosh, Arrafi Tamjid, Abdullah Al Zaber, Rifat Tasnim Babu, Maliha Mehzabeen, Aysharja Das Gupta, Sreshtha Chowdhury, Simanta Roy Background Online education gained its popularity in the education system during the CO</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:114f975bc5024115</guid>
+      <source url="https://living-sports-analytics.vercel.app">PLoS ONE</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Longitudinal changes in strength, power, speed, and body mass in American football players: Diminishing returns as training age increases</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251367154?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. The aims of this study were to: 1) detail the strength, power, speed, and body mass (i.e. physical qualities) of National Collegiate Athletic Association (NCAA) Division 1 American football players by playing position across a four-</description>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:12f91aad46720896</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Team strength and penalty shootouts in soccer: Market value predicts the winner</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541261416771?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the relationship between team strength and winning the penalty shootout in men&apos;s soccer. It used publicly available market values to estimate team strength and the outcomes of 409 shootouts from club and nati</description>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:17dc12c24770070a</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Formula for success: Using an accreditation to excel data literacy in early-career sport performance analysts</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251368751?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Whilst frameworks for the applied practice of Sport Performance Analysis (SPA) are established, a framework for the development of competencies in early-career analysts remains unexplored. Student perceptions on integrating the Micr</description>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:17efcd4f5dfdf992</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Exploring putting launch monitor data using the fsQCA method: A straight twelve-foot putt</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251388814?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. As technology advances, golf technologies, such as Quintic, are increasingly used to help golfers enhance their skills and build strength. However, despite the growing use of Quintic, studies related to Quintic in golf are still lim</description>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:1ed045e9ffbe26b3</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>What are you thinking when you coach? An exploration of tennis coaches&apos; cognitions using stimulated recall</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251391779?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. To date, much sports coaching research has tended to focus on components such as decision-making, knowledge structures, and mental models. However, limited attention has been given to the “types of thinking” coaches engage in when c</description>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:1fe8e7f4abf217c2</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>“It is like an endless guilt trip”: Greco-Roman wrestlers’ willingness to train and compete with pain and/or injuries</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251350672?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 428-436, February 2026. The aim of this study was to examine factors that impact wrestlers’ decision-making related to their willingness to train and compete with pain and/or injuries. Five Greco-Roman male wrestlers from N</description>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:20aa4029eff5ca17</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Comparing plyometric training methods on speed, change of direction, and jump performance in young soccer players: A controlled study</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251398657?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Background:The methodological approach to plyometric training can influence the magnitude of adaptations by accumulating acute responses that result in long-term adaptations. However, there is a lack of studies comparing cluster met</description>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:22aa544fb7433612</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Change-points in cricket run-scoring with permuted trends: Applications through functional alignment and outlier detection in excitement quantification and bolstering advocacy</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251372708?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Supervised statistical techniques - such as predicting runs or wickets or outcomes of specific deliveries, or optimal field placements, players’ worth and contribution - have been deployed to explore a cricket match with a regularit</description>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:23cbaff5330459aa</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>The role of sport norms and organizational pressure on coaches’ use of interpersonal violence: The mediating role of perceived instrumental effects 
+of violence</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251395228?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Interpersonal violence (IV) in sport is a pervasive issue that threatens athletes’ physical, social, and psychological well-being. Sociological theories suggest that organisational pressure and adherence to sport norms, such as trad</description>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:23e39c8c6624ca6a</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Biological sex minimally affects the free-weight back squat load-velocity profile when accounting for relative strength: An exploratory study</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251371308?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Research suggests that biological sex and strength level influence the load-velocity profile. However, existing research have not appropriately statistically accounted for the interdependencies between sex and relative strength. Thi</description>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:25c6a0d0981ca7ed</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Factors differentiating change of direction performance in NCAA power 4 male basketball athletes</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251360509?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 321-328, February 2026. The aim of this study was to investigate COD performance in an elite basketball cohort to determine which phase specific qualities are most strongly associated with COD performance. One hundred and t</description>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:26778427a467e2dd</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>The effect of ladder training on performance and kinematic parameters of sprinting in prepubertal track and field athletes</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251384101?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study examined the effects of a 6-week ladder training program on sprint performance and selected kinematic parameters in prepubescent male and female track and field athletes. Twenty-four children (7.2 ± 1.0 years) were random</description>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:26b1ebdc92079491</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Born early, perform better: The impact of relative age on performance in Turkish youth basketball</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251406425?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the relative age effect (RAE) and its impact on performance in male basketball players participating in Turkish youth championships across U14, U16, and U18 age categories between 2017 and 2023 except 2020-20</description>
+      <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:26cfaae73c5eff6b</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Ranking matters: Does the new format select the best teams for the knockout phase in the UEFA Champions League?</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251405330?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Starting in the 2024/25 season, the Union of European Football Associations (UEFA) has fundamentally changed the format of its club competitions: the group stage has been replaced by a league phase played by 36 teams in an incomplet</description>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:27c119087f083810</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Correction: Birth prevalence and determinants of neural tube defects among newborns in Ethiopia: A systematic review and meta-analysis</title>
+      <link>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342989</link>
+      <description>by Beminet Moges Gebremariam, Dejene Hailu, Barbara J. Stoecker, Afework Mulugeta</description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:2828754f63ee57de</guid>
+      <source url="https://living-sports-analytics.vercel.app">PLoS ONE</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Deep learning and sentiment analysis framework for classifying YouTube home-fitness videos</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251380027?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study introduces a deep learning (DL) framework designed to classify YouTube videos into five exercise categories: TABATA, cardiorespiratory endurance, free weight muscular endurance, training aid muscular endurance, and flexib</description>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:295f51d72e106deb</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Applying collective tactical metrics in rugby union: A case study of spatial-temporal team-behaviour during scoring sequences</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251407998?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. We introduced objective spatial-temporal metrics including centroid, stretch index, convex hull, and approximate entropy (ApEn) to analyse team behaviours during try-scoring events in rugby union. Data collected via 10 Hz global pos</description>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:29ded1fa917e3e6c</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>The effects of peer-initiated motivational climate perceived by youth soccer players on fear of failure and flow state</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251357285?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the structural relationships among the peer-initiated motivational climate, the fear of failure (FF), and the flow state as perceived by youth soccer players. A total of 347 youth soccer players aged 12–18, r</description>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:2afe02cf948f68ba</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>A survey exploring the programming practices of cycling coaches: How are intensity zones and intensity distribution models used?</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251362199?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 64-74, February 2026. Models of training intensity distribution, such as polarised, pyramidal, and threshold, often have varying interpretations in the literature. Despite observational research into the practices of elite </description>
+      <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:2b70a388e1adc40b</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>An evaluation of the hot-hand hypothesis in the NBA when accounting for shot difficulty</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251374788?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. The hot-hand hypothesis suggests that athletes can experience periods of exceptional performance where the success of their next action is influenced by previous successes. This study examines the hot-hand phenomenon in the context </description>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:2ef8dd09e6f83adf</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>What got me here, won’t get me 
+there – how the world&apos;s best sports coaches successfully adapt their expertise in different environments</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251395888?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. In high-performance sport, sustained success increasingly hinges on a coach&apos;s ability to adapt across varied, complex, and dynamic environments. This study explores how world-class coaches develop and apply adaptive expertise (AE) a</description>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:2f014a470010b963</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Discrepancies between maturity offset predictions and menarche in young female athletes</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251394263?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Growth and maturation are critical for interpreting the development and performance of young athletes. Selection pressures in youth sport vary by discipline: team sports often favor early maturers, while aesthetic and weight-sensiti</description>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:302dc028a6b6ff0d</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Exploring the relationship between physical capacities and match running performance in elite U17 football players</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251403492?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated positional differences in physical capacities and match running performance, and explored how physical capacities influence match running metrics in elite U17 football players. Data were collected from 212 pl</description>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:30531ac1c5edae50</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>External and internal load responses based on court size and opponent presence in elite-level basketball: An observational study with implications for training design</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251389520?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Basketball training design requires systematic manipulation of task constraints to optimize performance adaptations. This study investigated how court size and opponent presence influence external and internal load responses in prof</description>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:314e55f08e6f8bce</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Menstrual cycle phases affect recovery more than performance in trained cyclists</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251407281?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the influence of menstrual cycle (MC) phases on psychophysiological responses and recovery following high-intensity interval training (HIIT) in trained female cyclists. Ten eumenorrheic cyclists visited the l</description>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:31830d315d509614</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Incidence, magnitude &amp; sport-specific factors of rugby tackles from different directions in youth rugby</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251394457?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Rugby tackles can cause head acceleration events (HAEs) which may acutely and chronically affect brain health. This study aimed to investigate the varying proportions, impact forces and rugby-specific factors of tackles from differe</description>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:3245648da5ada5e5</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>How to compare physical fitness when different tests are performed. A cross-sectional study on conversion formulas of common test items for young children</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251407995?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. BackgroundPhysical fitness tests are crucial for evaluating athletic development and health in children. However, methodological variations in standardized test batteries (e.g., different strength test durations) hinder comparisons </description>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:340aed6fefbd5774</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Athlete and staff perceptions of the attributes athletes require to be ready for team selection in Australian football</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251380747?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. A notable amount of research in Australian Football describes what separates drafted from non-drafted athletes, however there is limited understanding of how Australian Football League (AFL) listed athletes, progress into the weekly</description>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:3484d78eb886786e</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Kinematic differences in smash techniques between elite singles and doubles badminton players: Upper/lower trunk and upper limb analysis</title>
+      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251395168?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
+      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. The study aims to compare elite singles and doubles badminton players’ smash technique. This study recruited a total of 7 elite singles players and 9 elite doubles badminton players. A motion analysis system with 11 infrared cameras</description>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">journal:356b38e9fc9e4397</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <category>multi_sport</category>
       <category>journal_article</category>
     </item>
   </channel>

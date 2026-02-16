@@ -1,10 +1,10 @@
 {
-  "totalPapers": 40710,
+  "totalPapers": 41050,
   "totalAuthors": 126773,
   "authorsWithGender": 94438,
   "genderPercentage": 74.5,
-  "papersWithAbstract": 36228,
-  "abstractPercentage": 89,
+  "papersWithAbstract": 36564,
+  "abstractPercentage": 89.1,
   "journalCount": 12599,
   "oldestPaper": "2013-10-16",
   "newestPaper": "2026-12-19",
@@ -15,15 +15,15 @@
     },
     {
       "journal": "Frontiers in Sports and Active Living",
-      "count": 607
-    },
-    {
-      "journal": "Journal of Sports Sciences",
-      "count": 531
+      "count": 627
     },
     {
       "journal": "PLoS ONE",
-      "count": 526
+      "count": 556
+    },
+    {
+      "journal": "Journal of Sports Sciences",
+      "count": 536
     },
     {
       "journal": "Journal of science and medicine in sport",
@@ -34,16 +34,16 @@
       "count": 509
     },
     {
+      "journal": "British Journal of Sports Medicine",
+      "count": 456
+    },
+    {
       "journal": "International Journal of Sports Physiology and Performance",
       "count": 446
     },
     {
-      "journal": "British Journal of Sports Medicine",
-      "count": 441
-    },
-    {
       "journal": "European Journal of Sport Science",
-      "count": 409
+      "count": 426
     },
     {
       "journal": "Scientific Reports",
@@ -51,7 +51,11 @@
     },
     {
       "journal": "Frontiers in Psychology",
-      "count": 304
+      "count": 324
+    },
+    {
+      "journal": "International Journal of Sports Science & Coaching",
+      "count": 296
     },
     {
       "journal": "International Journal of Environmental Research and Public Health",
@@ -64,10 +68,6 @@
     {
       "journal": "K-State Research Exchange (Kansas State University)",
       "count": 225
-    },
-    {
-      "journal": "Applied Sciences",
-      "count": 200
     }
   ],
   "genderBreakdown": [
@@ -131,7 +131,7 @@
     },
     {
       "year": 2023,
-      "count": 2446
+      "count": 2463
     },
     {
       "year": 2024,
@@ -139,15 +139,15 @@
     },
     {
       "year": 2025,
-      "count": 10223
+      "count": 10390
     },
     {
       "year": 2026,
-      "count": 3083
+      "count": 3239
     }
   ],
-  "totalClassified": 5156,
-  "classifiedRelevant": 5112,
+  "totalClassified": 5496,
+  "classifiedRelevant": 5452,
   "classifiedNotApplicable": 44,
   "womensSportCount": 636,
   "sportDistribution": [
@@ -157,7 +157,7 @@
     },
     {
       "sport": "multi_sport",
-      "count": 803
+      "count": 1138
     },
     {
       "sport": "basketball",
@@ -189,7 +189,7 @@
     },
     {
       "sport": "baseball",
-      "count": 108
+      "count": 113
     },
     {
       "sport": "american_football",
@@ -270,6 +270,10 @@
       "count": 353
     },
     {
+      "methodology": null,
+      "count": 344
+    },
+    {
       "methodology": "review",
       "count": 325
     },
@@ -310,10 +314,6 @@
       "count": 25
     },
     {
-      "methodology": null,
-      "count": 4
-    },
-    {
       "methodology": "data_engineering",
       "count": 2
     }
@@ -330,6 +330,10 @@
     {
       "theme": "player_development",
       "count": 394
+    },
+    {
+      "theme": null,
+      "count": 344
     },
     {
       "theme": "tactical_analysis",
@@ -394,10 +398,6 @@
     {
       "theme": "other",
       "count": 6
-    },
-    {
-      "theme": null,
-      "count": 4
     }
   ],
   "dataTypeDistribution": [
@@ -418,12 +418,12 @@
       "count": 758
     },
     {
-      "data_type": "video",
-      "count": 587
+      "data_type": "not_specified",
+      "count": 692
     },
     {
-      "data_type": "not_specified",
-      "count": 352
+      "data_type": "video",
+      "count": 587
     },
     {
       "data_type": "survey",
@@ -559,11 +559,11 @@
   "contentTypeDistribution": [
     {
       "content_type": "journal_article",
-      "count": 4804
+      "count": 5135
     },
     {
       "content_type": "blog_post",
-      "count": 230
+      "count": 239
     },
     {
       "content_type": "news_article",
@@ -1391,7 +1391,7 @@
     {
       "year": 2023,
       "sport": "multi_sport",
-      "count": 35
+      "count": 52
     },
     {
       "year": 2023,
@@ -1601,7 +1601,7 @@
     {
       "year": 2025,
       "sport": "multi_sport",
-      "count": 320
+      "count": 487
     },
     {
       "year": 2025,
@@ -1721,7 +1721,7 @@
     {
       "year": 2026,
       "sport": "multi_sport",
-      "count": 118
+      "count": 269
     },
     {
       "year": 2026,
@@ -1745,13 +1745,13 @@
     },
     {
       "year": 2026,
-      "sport": "tennis",
-      "count": 15
+      "sport": "baseball",
+      "count": 18
     },
     {
       "year": 2026,
-      "sport": "baseball",
-      "count": 13
+      "sport": "tennis",
+      "count": 15
     },
     {
       "year": 2026,
@@ -2377,6 +2377,11 @@
     },
     {
       "year": 2023,
+      "methodology": null,
+      "count": 19
+    },
+    {
+      "year": 2023,
       "methodology": "review",
       "count": 11
     },
@@ -2418,11 +2423,6 @@
     {
       "year": 2023,
       "methodology": "simulation",
-      "count": 2
-    },
-    {
-      "year": 2023,
-      "methodology": null,
       "count": 2
     },
     {
@@ -2522,6 +2522,11 @@
     },
     {
       "year": 2025,
+      "methodology": null,
+      "count": 168
+    },
+    {
+      "year": 2025,
       "methodology": "review",
       "count": 140
     },
@@ -2571,14 +2576,14 @@
       "count": 8
     },
     {
-      "year": 2025,
-      "methodology": null,
-      "count": 1
-    },
-    {
       "year": 2026,
       "methodology": "statistical",
       "count": 200
+    },
+    {
+      "year": 2026,
+      "methodology": null,
+      "count": 156
     },
     {
       "year": 2026,
@@ -3309,6 +3314,11 @@
     },
     {
       "year": 2023,
+      "theme": null,
+      "count": 19
+    },
+    {
+      "year": 2023,
       "theme": "data_engineering",
       "count": 13
     },
@@ -3360,11 +3370,6 @@
     {
       "year": 2023,
       "theme": "betting_markets",
-      "count": 2
-    },
-    {
-      "year": 2023,
-      "theme": null,
       "count": 2
     },
     {
@@ -3479,6 +3484,11 @@
     },
     {
       "year": 2025,
+      "theme": null,
+      "count": 168
+    },
+    {
+      "year": 2025,
       "theme": "player_development",
       "count": 140
     },
@@ -3563,14 +3573,14 @@
       "count": 1
     },
     {
-      "year": 2025,
-      "theme": null,
-      "count": 1
-    },
-    {
       "year": 2026,
       "theme": "performance_analysis",
       "count": 203
+    },
+    {
+      "year": 2026,
+      "theme": null,
+      "count": 156
     },
     {
       "year": 2026,
@@ -3648,5 +3658,5 @@
       "count": 1
     }
   ],
-  "exportedAt": "2026-02-16T16:40:08.386Z"
+  "exportedAt": "2026-02-16T18:34:49.892Z"
 }
