@@ -1,6 +1,6 @@
 {
   "description": "Summary statistics for the Living Sports Analytics platform",
-  "exported_at": "2026-02-17T08:23:58.177Z",
+  "exported_at": "2026-02-17T13:52:37.889Z",
   "papers": {
     "total": 58795,
     "with_abstract": 51714,
@@ -8,7 +8,7 @@
     "relevant": 13822
   },
   "authors": {
-    "total": 174641,
+    "total": 174643,
     "with_gender": 94438
   },
   "distributions": {

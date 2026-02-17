@@ -443,8 +443,9 @@ try {
   const contentSources = db
     .prepare(
       `SELECT cs.id, cs.name, cs.platform, cs.url, cs.feed_url, cs.feed_type,
-              cs.sport_focus, cs.category, cs.description, cs.author_name,
-              cs.active, cs.last_checked, cs.last_new_item, cs.check_frequency,
+              cs.sitemap_url, cs.sport_focus, cs.category, cs.description,
+              cs.author_name, cs.active, cs.last_checked, cs.last_new_item,
+              cs.check_frequency,
               (SELECT COUNT(*) FROM papers p
                WHERE p.journal_name = cs.name
                  AND p.content_type != 'journal_article') as item_count,
@@ -457,11 +458,62 @@ try {
     )
     .all();
 
+  // Thesis repos with working scrapers in scrape_theses.py
+  const thesisRepoNames = new Set([
+    "EUR Thesis Repository (Erasmus University)",
+    "Utrecht University Student Theses",
+    "UvA Scripties (University of Amsterdam)",
+    "Radboud University Thesis Repository",
+    "TU Eindhoven Research Portal",
+    "Leiden University Student Repository",
+    "University of Twente Essay Repository",
+    "TU Delft Repository",
+  ]);
+
+  // SSAC scraper sources
+  const ssacNames = new Set([
+    "MIT SSAC Research Paper Competition",
+  ]);
+
+  // Compute collection_method for each source
+  for (const src of contentSources) {
+    if (src.feed_url) {
+      src.collection_method = "rss";
+    } else if (src.sitemap_url) {
+      src.collection_method = "sitemap";
+    } else if (thesisRepoNames.has(src.name)) {
+      src.collection_method = "thesis_scraper";
+    } else if (ssacNames.has(src.name)) {
+      src.collection_method = "ssac_scraper";
+    } else {
+      src.collection_method = null;
+    }
+  }
+
+  // Exclude categories that are NOT non-OA collection targets
+  // Corporate blogs are tracked for awareness but collected via OpenAlex
+  // Journals are monitored via OpenAlex watcher, not via RSS
+  // Data platforms, podcasts, conferences have no automated collectors
+  const EXCLUDED_CATEGORIES = new Set([
+    "corporate_blog",
+    "journal",
+    "data_platform",
+    "podcast",
+    "conference",
+  ]);
+
+  // Only export sources that have a working collection method AND are non-OA sources
+  const collectableSources = contentSources.filter(
+    (s) => s.collection_method !== null && !EXCLUDED_CATEGORIES.has(s.category)
+  );
+
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "content-sources.json"),
-    JSON.stringify(contentSources)
+    JSON.stringify(collectableSources)
   );
-  console.log(`Exported ${contentSources.length} content sources`);
+  console.log(
+    `Exported ${collectableSources.length} content sources with collectors (${contentSources.length - collectableSources.length} without collector excluded)`
+  );
 } catch (e) {
   console.log(`No content_sources table found: ${e.message}`);
 }
