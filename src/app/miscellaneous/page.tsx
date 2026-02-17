@@ -252,7 +252,7 @@ export default function MiscellaneousPage() {
             Books, learning resources, career advice, annual reviews, and
             conferences. For datasets, scrapers, and libraries, see{" "}
             <Link
-              href="/resources"
+              href="/data"
               className="font-medium text-white hover:underline"
             >
               Resources
@@ -436,7 +436,7 @@ export default function MiscellaneousPage() {
         {/* Back to Resources */}
         <div className="text-center">
           <Link
-            href="/resources"
+            href="/data"
             className="inline-block rounded-lg bg-navy px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-navy/90"
           >
             &larr; Back to Resources (Datasets, Scrapers, Libraries, APIs)

@@ -676,17 +676,6 @@
     "access": "free"
   },
   {
-    "name": "OpenAlex",
-    "url": "https://openalex.org",
-    "desc": "Open catalog of scholarly research. We use it to discover and index sports analytics publications. REST API with generous rate limits.",
-    "sports": [
-      "multi_sport"
-    ],
-    "category": "dataset",
-    "access": "free",
-    "onPlatform": "39,480 papers indexed from OpenAlex."
-  },
-  {
     "name": "Sports Reference",
     "url": "https://www.sports-reference.com",
     "desc": "Family of sports statistics sites: Baseball-Reference, Basketball-Reference, Hockey-Reference, Pro-Football-Reference, and FBref.",

@@ -1050,13 +1050,13 @@ export default function MethodologyPage() {
             </div>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               <Link
-                href="/explore"
+                href="/papers"
                 className="rounded-lg bg-navy/10 px-4 py-2 text-sm font-medium text-navy hover:bg-navy/20 transition-colors"
               >
                 Explore Extracted Papers &rarr;
               </Link>
               <Link
-                href="/resources"
+                href="/data"
                 className="rounded-lg bg-orange/10 px-4 py-2 text-sm font-medium text-orange hover:bg-orange/20 transition-colors"
               >
                 Browse Resource Directory &rarr;
@@ -1336,10 +1336,10 @@ export default function MethodologyPage() {
                       </div>
                       <div className="mt-1">
                         <Link
-                          href="/resources"
+                          href="/data"
                           className="font-medium text-navy hover:text-orange hover:underline"
                         >
-                          Resource Directory
+                          Data Directory
                         </Link>{" "}
                         &mdash; searchable, filterable, with paper links
                       </div>
@@ -1385,14 +1385,14 @@ export default function MethodologyPage() {
                       </div>
                       <div className="mt-1">
                         <Link
-                          href="/explore"
+                          href="/papers"
                           className="font-medium text-navy hover:text-orange hover:underline"
                         >
                           Explore Papers
                         </Link>
                         ,{" "}
                         <Link
-                          href="/resources"
+                          href="/data"
                           className="font-medium text-navy hover:text-orange hover:underline"
                         >
                           Resources

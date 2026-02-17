@@ -869,7 +869,7 @@ function ExploreContent() {
                             <span key={i} className="inline-flex items-center gap-0.5">
                               {ds.is_curated ? (
                                 /* Curated resource → clickable link to Resources page */
-                                <Link href={`/resources?search=${encodeURIComponent(String(ds.curated_name || ds.name))}`}
+                                <Link href={`/data?search=${encodeURIComponent(String(ds.curated_name || ds.name))}`}
                                    className="inline-flex items-center gap-0.5 rounded-full border border-teal-200 bg-white px-2 py-0.5 text-[10px] text-teal-800 hover:bg-teal-100 transition-colors">
                                   {String(ds.name)}
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor" className="h-2.5 w-2.5 opacity-50"><path d="M3.5 3a.5.5 0 0 0 0 1h2.793L2.146 8.146a.5.5 0 1 0 .708.708L7 4.707V7.5a.5.5 0 0 0 1 0V3H3.5z"/></svg>

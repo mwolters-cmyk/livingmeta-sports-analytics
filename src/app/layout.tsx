@@ -29,13 +29,13 @@ export const metadata: Metadata = {
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/explore", label: "Explore" },
-  { href: "/resources", label: "Resources" },
+  { href: "/papers", label: "Papers" },
+  { href: "/data", label: "Data" },
+  { href: "/feeds", label: "Feeds" },
   { href: "/gaps", label: "Find the Gap" },
   // Soft-hidden tabs — pages still exist at their URLs, just not in nav.
   // Re-enable by uncommenting when ready:
   // { href: "/trends", label: "Trends" },
-  // { href: "/sources", label: "Sources" },
   // { href: "/analyses", label: "Analyses" },
   // { href: "/methodology", label: "Methodology" },
   // { href: "/contribute", label: "Contribute" },

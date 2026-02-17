@@ -467,7 +467,7 @@ export default function ContributePage() {
             </p>
             <div className="rounded-lg border border-green-200 bg-green-50 p-4 text-sm text-green-800">
               AI classification is active! Browse classified papers on the{" "}
-              <Link href="/explore" className="font-medium underline hover:text-green-900">Explore page</Link>.
+              <Link href="/papers" className="font-medium underline hover:text-green-900">Papers page</Link>.
               Manual validation interface coming soon.
             </div>
           </div>

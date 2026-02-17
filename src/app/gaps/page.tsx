@@ -124,7 +124,7 @@ function RichText({
         return (
           <Link
             key={i}
-            href={`/explore?paper=${encodeURIComponent(seg.fullWorkId)}`}
+            href={`/papers?paper=${encodeURIComponent(seg.fullWorkId)}`}
             className="text-navy underline decoration-navy/30 hover:text-orange hover:decoration-orange transition-colors"
             title={info.title}
           >
@@ -149,7 +149,7 @@ function PaperLink({ paper }: { paper: GapPaperRef }) {
 
   return (
     <Link
-      href={`/explore?paper=${encodeURIComponent(paper.work_id)}`}
+      href={`/papers?paper=${encodeURIComponent(paper.work_id)}`}
       className="text-sm text-navy underline decoration-gray-300 hover:text-orange hover:decoration-orange transition-colors"
       title={paper.title || undefined}
     >

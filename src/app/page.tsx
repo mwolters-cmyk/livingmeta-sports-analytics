@@ -37,7 +37,7 @@ export default function Home() {
               How It Works
             </Link>
             <Link
-              href="/explore"
+              href="/papers"
               className="rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10"
             >
               Explore Papers
@@ -429,13 +429,13 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <Link
-            href="/explore"
+            href="/papers"
             className="rounded-lg bg-navy px-6 py-3 font-semibold text-white transition-colors hover:bg-navy-light"
           >
             Explore Papers
           </Link>
           <Link
-            href="/resources"
+            href="/data"
             className="rounded-lg border border-navy/20 px-6 py-3 font-semibold text-navy transition-colors hover:bg-navy/5"
           >
             Browse Resources
