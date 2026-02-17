@@ -285,6 +285,243 @@ export default function FeedsPage() {
       </section>
 
       {/* ================================================================== */}
+      {/* AI PIPELINE — Classification, Extraction & Ingestion */}
+      {/* ================================================================== */}
+      <section className="mb-10">
+        <div className="mb-4 flex items-center gap-2">
+          <span className="text-indigo-600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
+              <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
+              <path fillRule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 0 1.5h-.01a.75.75 0 0 1-.75-.75Zm-2.5 0a.75.75 0 0 1 .75-.75H13.5a.75.75 0 0 1 0 1.5h-.01a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
+            </svg>
+          </span>
+          <div>
+            <h2 className="text-xl font-semibold text-navy">
+              AI Pipeline &mdash; Classification &amp; Ingestion
+            </h2>
+            <p className="text-sm text-gray-500">
+              How papers are classified, what gets extracted, and how to contribute new sources.
+              Machine-readable version:{" "}
+              <a href="/api/pipeline.json" className="font-medium text-indigo-600 hover:underline">
+                /api/pipeline.json
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div className="rounded-xl border border-indigo-200 bg-indigo-50/50 p-5">
+          {/* Classification Taxonomy */}
+          <div className="mb-5">
+            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-indigo-800">
+              Classification taxonomy
+            </h3>
+            <p className="mb-3 text-xs text-gray-600">
+              Every paper is classified by Claude Haiku into one sport, one methodology, and one or more themes.
+              Papers must score &ge;5 on our 10-point sports analytics relevance scale to appear on the platform.
+            </p>
+
+            {/* Sports */}
+            <div className="mb-3">
+              <p className="mb-1.5 text-xs font-medium text-navy">Sports (33)</p>
+              <div className="flex flex-wrap gap-1">
+                {[
+                  "football", "american_football", "tennis", "basketball", "baseball",
+                  "ice_hockey", "cricket", "cycling", "speed_skating", "athletics",
+                  "swimming", "rugby", "volleyball", "handball", "esports", "golf",
+                  "boxing_mma", "motorsport", "skiing", "figure_skating", "gymnastics",
+                  "diving", "rowing", "darts", "snooker", "badminton", "table_tennis",
+                  "water_polo", "aussie_rules", "futsal", "floorball", "other", "multi_sport",
+                ].map((s) => (
+                  <span key={s} className="rounded-full bg-indigo-100 px-2 py-0.5 text-[10px] text-indigo-700">
+                    {s.replace(/_/g, " ")}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Methodologies */}
+            <div className="mb-3">
+              <p className="mb-1.5 text-xs font-medium text-navy">Methodologies (13)</p>
+              <div className="flex flex-wrap gap-1">
+                {[
+                  "statistical", "machine_learning", "deep_learning", "NLP",
+                  "computer_vision", "simulation", "optimization", "network_analysis",
+                  "qualitative", "mixed_methods", "review", "meta_analysis", "other",
+                ].map((m) => (
+                  <span key={m} className="rounded-full bg-violet-100 px-2 py-0.5 text-[10px] text-violet-700">
+                    {m.replace(/_/g, " ")}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Themes */}
+            <div>
+              <p className="mb-1.5 text-xs font-medium text-navy">Themes (17)</p>
+              <div className="flex flex-wrap gap-1">
+                {[
+                  "performance_analysis", "injury_prevention", "tactical_analysis",
+                  "betting_markets", "player_development", "player_valuation",
+                  "transfer_market", "gender_equity", "bias_detection",
+                  "data_engineering", "fan_engagement", "coaching",
+                  "nutrition_recovery", "psychology", "biomechanics", "methodology", "other",
+                ].map((t) => (
+                  <span key={t} className="rounded-full bg-purple-100 px-2 py-0.5 text-[10px] text-purple-700">
+                    {t.replace(/_/g, " ")}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <p className="mt-2 text-xs text-gray-400">
+              Canonical taxonomy:{" "}
+              <code className="rounded bg-gray-100 px-1 text-[10px]">SPORT_CATEGORIES</code>,{" "}
+              <code className="rounded bg-gray-100 px-1 text-[10px]">METHODOLOGY_CATEGORIES</code>,{" "}
+              <code className="rounded bg-gray-100 px-1 text-[10px]">THEME_CATEGORIES</code>{" "}
+              in <code className="rounded bg-gray-100 px-1 text-[10px]">living_meta/config.py</code>
+            </p>
+          </div>
+
+          {/* Extraction Schema */}
+          <div className="mb-5 rounded-lg border border-indigo-100 bg-white p-4">
+            <h4 className="mb-2 text-sm font-semibold text-navy">Extraction schema</h4>
+            <p className="mb-2 text-xs text-gray-500">
+              After classification, Claude Haiku extracts structured data from each paper&apos;s PDF or abstract:
+            </p>
+            <div className="grid gap-2 sm:grid-cols-2">
+              <div>
+                <p className="text-xs font-medium text-navy">Methodology fields</p>
+                <p className="text-[10px] text-gray-500">
+                  study_design, sample_size, data_sources, key_techniques, validation_approach, limitations
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-medium text-navy">Resource fields</p>
+                <p className="text-[10px] text-gray-500">
+                  data_sources (name, URL, type, access), instruments, code_availability, data_availability
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-medium text-navy">Other fields</p>
+                <p className="text-[10px] text-gray-500">
+                  future_research (author-identified research directions)
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-medium text-navy">Cost</p>
+                <p className="text-[10px] text-gray-500">
+                  ~$0.04/paper (PDF), ~$0.005/paper (abstract-only)
+                </p>
+              </div>
+            </div>
+            <p className="mt-2 text-xs text-gray-400">
+              Full prompts:{" "}
+              <code className="rounded bg-gray-100 px-1 text-[10px]">SYSTEM_PROMPT</code>,{" "}
+              <code className="rounded bg-gray-100 px-1 text-[10px]">ABSTRACT_SYSTEM_PROMPT</code>,{" "}
+              <code className="rounded bg-gray-100 px-1 text-[10px]">UNIFIED_NONOA_PROMPT</code>{" "}
+              in <code className="rounded bg-gray-100 px-1 text-[10px]">living_meta/paper_extractor.py</code>
+            </p>
+          </div>
+
+          {/* How to Contribute Sources */}
+          <div className="mb-5 rounded-lg border border-indigo-100 bg-white p-4">
+            <h4 className="mb-2 text-sm font-semibold text-navy">How to contribute sources</h4>
+            <p className="mb-3 text-xs text-gray-500">
+              AI agents and human contributors can add new sources via{" "}
+              <code className="rounded bg-gray-100 px-1 text-[10px]">scripts/ingest_source.py</code>.
+              Clone the{" "}
+              <a
+                href="https://github.com/mwolters-cmyk/living-sports-analytics-research"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 hover:underline"
+              >
+                GitHub repo
+              </a>{" "}
+              and run locally.
+            </p>
+
+            <div className="grid gap-3 sm:grid-cols-2">
+              {/* Type A */}
+              <div className="rounded-lg border border-green-100 bg-green-50/50 p-3">
+                <p className="text-xs font-semibold text-green-800">Type A: With abstract</p>
+                <p className="mt-1 text-[10px] text-green-700">
+                  Free insert &mdash; no API key needed. Suitable for theses, preprints, conference papers with available abstracts.
+                </p>
+                <div className="mt-2 rounded bg-green-100/50 p-2">
+                  <code className="block text-[10px] text-green-900">
+                    python scripts/ingest_source.py \<br />
+                    &nbsp;&nbsp;--url &quot;https://...&quot; \<br />
+                    &nbsp;&nbsp;--type thesis \<br />
+                    &nbsp;&nbsp;--title &quot;My Thesis&quot; \<br />
+                    &nbsp;&nbsp;--abstract &quot;This thesis...&quot;
+                  </code>
+                </div>
+                <p className="mt-1.5 text-[10px] text-green-600">
+                  Valid types: thesis, working_paper, conference_paper
+                </p>
+              </div>
+
+              {/* Type B */}
+              <div className="rounded-lg border border-amber-100 bg-amber-50/50 p-3">
+                <p className="text-xs font-semibold text-amber-800">Type B: Without abstract</p>
+                <p className="mt-1 text-[10px] text-amber-700">
+                  ~$0.03/source &mdash; requires YOUR Anthropic API key. Fetches HTML, runs Claude Haiku for classification + extraction.
+                </p>
+                <div className="mt-2 rounded bg-amber-100/50 p-2">
+                  <code className="block text-[10px] text-amber-900">
+                    ANTHROPIC_API_KEY=sk-... \<br />
+                    python scripts/ingest_source.py \<br />
+                    &nbsp;&nbsp;--url &quot;https://...&quot; \<br />
+                    &nbsp;&nbsp;--type blog_post
+                  </code>
+                </div>
+                <p className="mt-1.5 text-[10px] text-amber-600">
+                  Valid types: blog_post, news_article, report
+                </p>
+              </div>
+            </div>
+
+            {/* Batch format */}
+            <div className="mt-3 rounded-lg border border-gray-100 bg-gray-50 p-3">
+              <p className="text-xs font-medium text-gray-700">Batch ingestion (JSONL format)</p>
+              <div className="mt-1.5 rounded bg-gray-100/50 p-2">
+                <code className="block text-[10px] text-gray-700">
+                  {`{"url": "https://...", "type": "blog_post"}`}<br />
+                  {`{"url": "https://...", "type": "thesis", "abstract": "...", "title": "..."}`}<br />
+                  <br />
+                  python scripts/ingest_source.py --batch sources.jsonl
+                </code>
+              </div>
+            </div>
+
+            <p className="mt-3 text-xs text-gray-500">
+              <strong>Quality gate:</strong> All sources are classified by AI. Only sources scoring &ge;5 on the
+              sports analytics relevance scale appear on the website. Dry run with{" "}
+              <code className="rounded bg-gray-100 px-1 text-[10px]">--dry-run</code> to preview without ingesting.
+            </p>
+          </div>
+
+          {/* API Key Policy */}
+          <div className="rounded-lg border border-red-200 bg-red-50 p-4">
+            <h4 className="mb-1 flex items-center gap-1.5 text-sm font-semibold text-red-800">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-4 w-4">
+                <path fillRule="evenodd" d="M8 1a3.5 3.5 0 0 0-3.5 3.5V7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7V4.5A3.5 3.5 0 0 0 8 1Zm2 6V4.5a2 2 0 1 0-4 0V7h4Z" clipRule="evenodd" />
+              </svg>
+              API key policy
+            </h4>
+            <p className="text-xs text-red-700">
+              External contributors (including AI agents) must use their <strong>own</strong>{" "}
+              <code className="rounded bg-red-100 px-1 text-[10px]">ANTHROPIC_API_KEY</code>.
+              The platform does not provide API keys for third-party use.
+              Type A ingestion (with abstract) is free and requires no API key.
+              Type B ingestion requires a key for the Claude Haiku call.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ================================================================== */}
       {/* NON-OPENALEX SOURCES */}
       {/* ================================================================== */}
 

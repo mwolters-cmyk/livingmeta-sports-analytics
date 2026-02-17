@@ -555,6 +555,175 @@ try {
 }
 
 // =============================================================================
+// PIPELINE.JSON — Machine-readable pipeline config for AI agents
+// =============================================================================
+
+try {
+  // Get whitelisted domains from active content sources
+  const whitelistedSources = db
+    .prepare(
+      `SELECT DISTINCT url, name, category
+       FROM content_sources
+       WHERE active = 1
+       ORDER BY name`
+    )
+    .all();
+
+  const pipelineConfig = {
+    description:
+      "Machine-readable pipeline configuration for the Living Sports Analytics platform. Use this to understand how to contribute sources, what classification taxonomy is used, and how papers are processed.",
+    exported_at: new Date().toISOString(),
+    version: "1.0",
+    platform_url: "https://living-sports-analytics.vercel.app",
+
+    classification_taxonomy: {
+      sports: [
+        "football", "american_football", "tennis", "basketball", "baseball",
+        "ice_hockey", "cricket", "cycling", "speed_skating", "athletics",
+        "swimming", "rugby", "volleyball", "handball", "esports", "golf",
+        "boxing_mma", "motorsport", "skiing", "figure_skating", "gymnastics",
+        "diving", "rowing", "darts", "snooker", "badminton", "table_tennis",
+        "water_polo", "aussie_rules", "futsal", "floorball", "other", "multi_sport",
+      ],
+      methodologies: [
+        "statistical", "machine_learning", "deep_learning", "NLP",
+        "computer_vision", "simulation", "optimization", "network_analysis",
+        "qualitative", "mixed_methods", "review", "meta_analysis", "other",
+      ],
+      themes: [
+        "performance_analysis", "injury_prevention", "tactical_analysis",
+        "betting_markets", "player_development", "player_valuation",
+        "transfer_market", "gender_equity", "bias_detection",
+        "data_engineering", "fan_engagement", "coaching",
+        "nutrition_recovery", "psychology", "biomechanics", "methodology", "other",
+      ],
+      relevance_scale: {
+        min: 1,
+        max: 10,
+        threshold_for_inclusion: 5,
+        description:
+          "1-4: not sports analytics. 5-6: tangentially related. 7-8: clearly relevant. 9-10: core sports analytics.",
+      },
+    },
+
+    ingestion: {
+      description:
+        "How to add new sources to the platform. Clone the GitHub repo and run scripts locally.",
+      script: "scripts/ingest_source.py",
+      repository: "https://github.com/mwolters-cmyk/living-sports-analytics-research",
+      types: {
+        type_a: {
+          description:
+            "Source WITH abstract (thesis, preprint, conference paper). Free insert into DB — no API key needed. Classification and extraction run later via the standard pipeline.",
+          valid_content_types: ["thesis", "working_paper", "conference_paper"],
+          required_fields: ["url", "type", "abstract", "title"],
+          optional_fields: ["author", "source", "pub_date"],
+          cost: "$0 (no Haiku call)",
+        },
+        type_b: {
+          description:
+            "Source WITHOUT abstract (blog post, news article, report). Fetches HTML and runs a single Claude Haiku call for classification + abstract generation + author extraction + methodology/resource extraction.",
+          valid_content_types: ["blog_post", "news_article", "report"],
+          required_fields: ["url", "type"],
+          optional_fields: ["title", "author", "source", "pub_date"],
+          cost: "~$0.03/source (Claude Haiku)",
+        },
+      },
+      batch_format: {
+        description: "JSONL file with one JSON object per line",
+        example_type_a: {
+          url: "https://repository.tudelft.nl/record/uuid:abc123",
+          type: "thesis",
+          title: "Machine Learning for Football Analytics",
+          abstract: "This thesis examines...",
+          author: "Jan de Vries",
+          source: "TU Delft",
+        },
+        example_type_b: {
+          url: "https://statsbomb.com/articles/soccer/new-xg-model",
+          type: "blog_post",
+        },
+      },
+      commands: {
+        single_type_a:
+          'python scripts/ingest_source.py --url "<URL>" --type thesis --title "<TITLE>" --abstract "<ABSTRACT>"',
+        single_type_b:
+          'python scripts/ingest_source.py --url "<URL>" --type blog_post',
+        batch: "python scripts/ingest_source.py --batch sources.jsonl",
+        dry_run:
+          'python scripts/ingest_source.py --url "<URL>" --type blog_post --dry-run',
+      },
+      quality_gate:
+        "All sources are classified by AI (Claude Haiku). Only sources with sports_analytics relevance >= 5 appear on the website. Sources scoring < 5 are stored but hidden.",
+      api_key_policy:
+        "External contributors MUST use their own ANTHROPIC_API_KEY environment variable. The platform does not provide API keys. Type A ingestion (with abstract) is free and requires no API key. Type B ingestion requires a key for the Haiku classification call.",
+    },
+
+    collection_methods: {
+      openalex: {
+        description:
+          "Primary source for peer-reviewed academic publications. Polls the OpenAlex API weekly for new papers from 28 target journals and ~100 keyword queries.",
+        script: "living_meta/watcher.py",
+        frequency: "weekly",
+        coverage: "Peer-reviewed journal articles across all sports analytics domains",
+      },
+      feeds: {
+        description:
+          "RSS/Atom feeds, sitemaps, thesis repository scrapers, and conference paper scrapers for grey literature.",
+        script: "scripts/collect_sources.py",
+        modes: ["--feeds", "--sitemaps", "--ssac", "--theses", "--all"],
+      },
+    },
+
+    whitelisted_sources: whitelistedSources.map((s) => ({
+      name: s.name,
+      url: s.url,
+      category: s.category,
+    })),
+
+    extraction_schema: {
+      description:
+        "After ingestion, each paper is analyzed by Claude Haiku to extract structured methodology and resource information.",
+      methodology_fields: [
+        "study_design",
+        "sample_size",
+        "data_sources",
+        "key_techniques",
+        "validation_approach",
+        "limitations",
+      ],
+      resource_fields: [
+        "data_sources",
+        "instruments",
+        "code_availability",
+        "data_availability",
+      ],
+      other_fields: ["future_research"],
+      prompt_reference:
+        "Full extraction schemas are defined in living_meta/paper_extractor.py (SYSTEM_PROMPT for PDFs, ABSTRACT_SYSTEM_PROMPT for abstracts, UNIFIED_NONOA_PROMPT for grey literature)",
+    },
+
+    api_endpoints: {
+      summary: "/api/summary.json",
+      classifications: "/api/classifications.json",
+      paper_pdfs: "/api/paper-pdfs.json",
+      pipeline: "/api/pipeline.json",
+      feed_xml: "/feed.xml",
+    },
+  };
+
+  fs.writeFileSync(
+    path.join(PUBLIC_DIR, "pipeline.json"),
+    JSON.stringify(pipelineConfig, null, 2)
+  );
+  console.log(
+    `Exported pipeline config: ${pipelineConfig.classification_taxonomy.sports.length} sports, ${pipelineConfig.classification_taxonomy.methodologies.length} methodologies, ${pipelineConfig.classification_taxonomy.themes.length} themes, ${pipelineConfig.whitelisted_sources.length} whitelisted sources`
+  );
+} catch (e) {
+  console.log(`pipeline.json export failed: ${e.message}`);
+}
+
+// =============================================================================
 // RSS FEED (static, regenerated on each export)
 // =============================================================================
 

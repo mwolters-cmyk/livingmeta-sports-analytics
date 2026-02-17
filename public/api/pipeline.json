@@ -1,0 +1,551 @@
+{
+  "description": "Machine-readable pipeline configuration for the Living Sports Analytics platform. Use this to understand how to contribute sources, what classification taxonomy is used, and how papers are processed.",
+  "exported_at": "2026-02-17T15:16:03.365Z",
+  "version": "1.0",
+  "platform_url": "https://living-sports-analytics.vercel.app",
+  "classification_taxonomy": {
+    "sports": [
+      "football",
+      "american_football",
+      "tennis",
+      "basketball",
+      "baseball",
+      "ice_hockey",
+      "cricket",
+      "cycling",
+      "speed_skating",
+      "athletics",
+      "swimming",
+      "rugby",
+      "volleyball",
+      "handball",
+      "esports",
+      "golf",
+      "boxing_mma",
+      "motorsport",
+      "skiing",
+      "figure_skating",
+      "gymnastics",
+      "diving",
+      "rowing",
+      "darts",
+      "snooker",
+      "badminton",
+      "table_tennis",
+      "water_polo",
+      "aussie_rules",
+      "futsal",
+      "floorball",
+      "other",
+      "multi_sport"
+    ],
+    "methodologies": [
+      "statistical",
+      "machine_learning",
+      "deep_learning",
+      "NLP",
+      "computer_vision",
+      "simulation",
+      "optimization",
+      "network_analysis",
+      "qualitative",
+      "mixed_methods",
+      "review",
+      "meta_analysis",
+      "other"
+    ],
+    "themes": [
+      "performance_analysis",
+      "injury_prevention",
+      "tactical_analysis",
+      "betting_markets",
+      "player_development",
+      "player_valuation",
+      "transfer_market",
+      "gender_equity",
+      "bias_detection",
+      "data_engineering",
+      "fan_engagement",
+      "coaching",
+      "nutrition_recovery",
+      "psychology",
+      "biomechanics",
+      "methodology",
+      "other"
+    ],
+    "relevance_scale": {
+      "min": 1,
+      "max": 10,
+      "threshold_for_inclusion": 5,
+      "description": "1-4: not sports analytics. 5-6: tangentially related. 7-8: clearly relevant. 9-10: core sports analytics."
+    }
+  },
+  "ingestion": {
+    "description": "How to add new sources to the platform. Clone the GitHub repo and run scripts locally.",
+    "script": "scripts/ingest_source.py",
+    "repository": "https://github.com/mwolters-cmyk/living-sports-analytics-research",
+    "types": {
+      "type_a": {
+        "description": "Source WITH abstract (thesis, preprint, conference paper). Free insert into DB — no API key needed. Classification and extraction run later via the standard pipeline.",
+        "valid_content_types": [
+          "thesis",
+          "working_paper",
+          "conference_paper"
+        ],
+        "required_fields": [
+          "url",
+          "type",
+          "abstract",
+          "title"
+        ],
+        "optional_fields": [
+          "author",
+          "source",
+          "pub_date"
+        ],
+        "cost": "$0 (no Haiku call)"
+      },
+      "type_b": {
+        "description": "Source WITHOUT abstract (blog post, news article, report). Fetches HTML and runs a single Claude Haiku call for classification + abstract generation + author extraction + methodology/resource extraction.",
+        "valid_content_types": [
+          "blog_post",
+          "news_article",
+          "report"
+        ],
+        "required_fields": [
+          "url",
+          "type"
+        ],
+        "optional_fields": [
+          "title",
+          "author",
+          "source",
+          "pub_date"
+        ],
+        "cost": "~$0.03/source (Claude Haiku)"
+      }
+    },
+    "batch_format": {
+      "description": "JSONL file with one JSON object per line",
+      "example_type_a": {
+        "url": "https://repository.tudelft.nl/record/uuid:abc123",
+        "type": "thesis",
+        "title": "Machine Learning for Football Analytics",
+        "abstract": "This thesis examines...",
+        "author": "Jan de Vries",
+        "source": "TU Delft"
+      },
+      "example_type_b": {
+        "url": "https://statsbomb.com/articles/soccer/new-xg-model",
+        "type": "blog_post"
+      }
+    },
+    "commands": {
+      "single_type_a": "python scripts/ingest_source.py --url \"<URL>\" --type thesis --title \"<TITLE>\" --abstract \"<ABSTRACT>\"",
+      "single_type_b": "python scripts/ingest_source.py --url \"<URL>\" --type blog_post",
+      "batch": "python scripts/ingest_source.py --batch sources.jsonl",
+      "dry_run": "python scripts/ingest_source.py --url \"<URL>\" --type blog_post --dry-run"
+    },
+    "quality_gate": "All sources are classified by AI (Claude Haiku). Only sources with sports_analytics relevance >= 5 appear on the website. Sources scoring < 5 are stored but hidden.",
+    "api_key_policy": "External contributors MUST use their own ANTHROPIC_API_KEY environment variable. The platform does not provide API keys. Type A ingestion (with abstract) is free and requires no API key. Type B ingestion requires a key for the Haiku classification call."
+  },
+  "collection_methods": {
+    "openalex": {
+      "description": "Primary source for peer-reviewed academic publications. Polls the OpenAlex API weekly for new papers from 28 target journals and ~100 keyword queries.",
+      "script": "living_meta/watcher.py",
+      "frequency": "weekly",
+      "coverage": "Peer-reviewed journal articles across all sports analytics domains"
+    },
+    "feeds": {
+      "description": "RSS/Atom feeds, sitemaps, thesis repository scrapers, and conference paper scrapers for grey literature.",
+      "script": "scripts/collect_sources.py",
+      "modes": [
+        "--feeds",
+        "--sitemaps",
+        "--ssac",
+        "--theses",
+        "--all"
+      ]
+    }
+  },
+  "whitelisted_sources": [
+    {
+      "name": "American Soccer Analysis",
+      "url": "https://www.americansocceranalysis.com",
+      "category": "blog"
+    },
+    {
+      "name": "Analytics FC",
+      "url": "https://analyticsfc.co.uk",
+      "category": "corporate_blog"
+    },
+    {
+      "name": "Analytics FC Podcast",
+      "url": "https://analyticsfc.co.uk/podcast/",
+      "category": "podcast"
+    },
+    {
+      "name": "Baseball Prospectus",
+      "url": "https://www.baseballprospectus.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Baseball Savant",
+      "url": "https://baseballsavant.mlb.com/",
+      "category": "data_platform"
+    },
+    {
+      "name": "Basketball Intelligence Newsletter",
+      "url": "https://www.basketballintelligence.net/",
+      "category": "newsletter"
+    },
+    {
+      "name": "Between The Posts",
+      "url": "https://betweentheposts.net",
+      "category": "blog"
+    },
+    {
+      "name": "Breaking The Lines",
+      "url": "https://breakingthelines.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Bruin Sports Analytics (UCLA)",
+      "url": "https://www.bruinsportsanalytics.com/blog",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "CFBD Blog (College Football Data)",
+      "url": "https://blog.collegefootballdata.com/",
+      "category": "blog"
+    },
+    {
+      "name": "CFBNumbers",
+      "url": "https://cfbnumbers.substack.com/",
+      "category": "newsletter"
+    },
+    {
+      "name": "CMSAC Research Lab (Carnegie Mellon)",
+      "url": "https://cmsac-research-lab.github.io/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "Catapult Blog",
+      "url": "https://www.catapult.com/blog",
+      "category": "corporate_blog"
+    },
+    {
+      "name": "Central Winger",
+      "url": "https://www.centralwinger.com",
+      "category": "blog"
+    },
+    {
+      "name": "Cleaning the Glass",
+      "url": "https://cleaningtheglass.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Counterpoints (MIT Sloan)",
+      "url": "https://sloanreview.mit.edu/audio-series/counterpoints/",
+      "category": "podcast"
+    },
+    {
+      "name": "DTAI Sports Analytics Blog (KU Leuven)",
+      "url": "https://dtai.cs.kuleuven.be/static/sports/blog/",
+      "category": "blog"
+    },
+    {
+      "name": "Data Golf",
+      "url": "https://datagolf.com/",
+      "category": "data_platform"
+    },
+    {
+      "name": "Data-Driven Hockey",
+      "url": "https://www.data-driven-hockey.com/",
+      "category": "blog"
+    },
+    {
+      "name": "DataPunk Hockey",
+      "url": "https://www.datapunkhockey.com/",
+      "category": "blog"
+    },
+    {
+      "name": "ESPNcricinfo Statsguru",
+      "url": "https://stats.espncricinfo.com/ci/engine/stats/index.html",
+      "category": "data_platform"
+    },
+    {
+      "name": "EUR Thesis Repository (Erasmus University)",
+      "url": "https://thesis.eur.nl/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "Evolving Hockey",
+      "url": "https://evolving-hockey.com/",
+      "category": "data_platform"
+    },
+    {
+      "name": "Expected Value Podcast",
+      "url": "https://www.trumedianetworks.com/expected-value-podcast",
+      "category": "podcast"
+    },
+    {
+      "name": "Experimental 361",
+      "url": "https://www.experimental361.com",
+      "category": "newsletter"
+    },
+    {
+      "name": "FanGraphs",
+      "url": "https://blogs.fangraphs.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Harvard Sports Analysis Collective",
+      "url": "https://harvardsportsanalysis.org/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "Hockey Graphs",
+      "url": "https://hockey-graphs.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Hudl Blog",
+      "url": "https://www.hudl.com/blog",
+      "category": "corporate_blog"
+    },
+    {
+      "name": "Jan Van Haaren",
+      "url": "https://janvanhaaren.be",
+      "category": "blog"
+    },
+    {
+      "name": "John Muller (space space space)",
+      "url": "https://johnspacemuller.substack.com",
+      "category": "newsletter"
+    },
+    {
+      "name": "Leiden University Student Repository",
+      "url": "https://studenttheses.universiteitleiden.nl/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "MIT SSAC Research Paper Competition",
+      "url": "https://www.sloansportsconference.com/research-paper-competition",
+      "category": "working_paper_repo"
+    },
+    {
+      "name": "MIT Sloan Sports Analytics Conference",
+      "url": "https://www.sloansportsconference.com/",
+      "category": "conference"
+    },
+    {
+      "name": "Michigan Sports Analytics Society",
+      "url": "https://msportsanalytics.com/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "MoneyPuck",
+      "url": "https://moneypuck.com/",
+      "category": "data_platform"
+    },
+    {
+      "name": "Neil Paine's Substack",
+      "url": "https://neilpaine.substack.com/",
+      "category": "newsletter"
+    },
+    {
+      "name": "No Ceilings NBA",
+      "url": "https://www.noceilingsnba.com/",
+      "category": "newsletter"
+    },
+    {
+      "name": "Northwestern Sports Analytics Group",
+      "url": "https://sites.northwestern.edu/nusportsanalytics/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "Oracle's Elixir",
+      "url": "https://oracleselixir.com/",
+      "category": "data_platform"
+    },
+    {
+      "name": "PFF (Pro Football Focus)",
+      "url": "https://www.pff.com/news",
+      "category": "corporate_blog"
+    },
+    {
+      "name": "Positive Residual",
+      "url": "https://www.positiveresidual.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Radboud University Thesis Repository",
+      "url": "https://theses.ubn.ru.nl/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "Seth Partnow",
+      "url": "https://sethpartnow.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Soccer Analytics Newsletter",
+      "url": "https://socceranalytics.substack.com",
+      "category": "newsletter"
+    },
+    {
+      "name": "Soccermatics (David Sumpter)",
+      "url": "https://soccermatics.medium.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Soccerment Blog",
+      "url": "https://soccerment.com/blog/",
+      "category": "corporate_blog"
+    },
+    {
+      "name": "Spielverlagerung",
+      "url": "https://spielverlagerung.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Squared Statistics (Justin Jacobs)",
+      "url": "https://squared2020.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Statistical Thinking in Sports Analytics",
+      "url": "https://statthinksportsanalytics.substack.com/",
+      "category": "newsletter"
+    },
+    {
+      "name": "Stats100 Blog",
+      "url": "https://stats100blog.wordpress.com",
+      "category": "blog"
+    },
+    {
+      "name": "StatsBomb",
+      "url": "https://statsbomb.com/articles",
+      "category": "corporate_blog"
+    },
+    {
+      "name": "StatsBomb Articles",
+      "url": "https://statsbomb.com/articles/",
+      "category": "corporate_blog"
+    },
+    {
+      "name": "TU Delft Repository",
+      "url": "https://repository.tudelft.nl/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "TU Eindhoven Research Portal",
+      "url": "https://research.tue.nl/en/studentTheses/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "Talking Tactics (Daryl Dao)",
+      "url": "https://www.talking-tactics.com/",
+      "category": "newsletter"
+    },
+    {
+      "name": "Tennis Abstract (Heavy Topspin)",
+      "url": "https://www.tennisabstract.com/blog/",
+      "category": "blog"
+    },
+    {
+      "name": "Tennis Abstract Podcast",
+      "url": "https://podcasts.apple.com/us/podcast/the-tennis-abstract-podcast/id1223937610",
+      "category": "podcast"
+    },
+    {
+      "name": "The Analyst (Opta / Stats Perform)",
+      "url": "https://theanalyst.com/",
+      "category": "corporate_blog"
+    },
+    {
+      "name": "The Athletic",
+      "url": "https://theathletic.com",
+      "category": "news"
+    },
+    {
+      "name": "The Data Jocks",
+      "url": "https://thedatajocks.substack.com/",
+      "category": "blog"
+    },
+    {
+      "name": "The Hardball Times",
+      "url": "https://tht.fangraphs.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Total Football Analysis",
+      "url": "https://totalfootballanalysis.com/",
+      "category": "blog"
+    },
+    {
+      "name": "Training Ground Guru",
+      "url": "https://trainingground.guru",
+      "category": "news"
+    },
+    {
+      "name": "University of Twente Essay Repository",
+      "url": "https://essay.utwente.nl/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "Utrecht University Student Theses",
+      "url": "https://studenttheses.uu.nl/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "UvA Scripties (University of Amsterdam)",
+      "url": "https://scripties.uba.uva.nl/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "Wharton Sports Analytics Journal",
+      "url": "https://wsb.wharton.upenn.edu/wharton-sports-analytics-journal-2/",
+      "category": "thesis_portfolio"
+    },
+    {
+      "name": "White Ball Analytics",
+      "url": "https://www.whiteballanalytics.com/",
+      "category": "blog"
+    },
+    {
+      "name": "f1metrics",
+      "url": "https://f1metrics.wordpress.com/",
+      "category": "blog"
+    }
+  ],
+  "extraction_schema": {
+    "description": "After ingestion, each paper is analyzed by Claude Haiku to extract structured methodology and resource information.",
+    "methodology_fields": [
+      "study_design",
+      "sample_size",
+      "data_sources",
+      "key_techniques",
+      "validation_approach",
+      "limitations"
+    ],
+    "resource_fields": [
+      "data_sources",
+      "instruments",
+      "code_availability",
+      "data_availability"
+    ],
+    "other_fields": [
+      "future_research"
+    ],
+    "prompt_reference": "Full extraction schemas are defined in living_meta/paper_extractor.py (SYSTEM_PROMPT for PDFs, ABSTRACT_SYSTEM_PROMPT for abstracts, UNIFIED_NONOA_PROMPT for grey literature)"
+  },
+  "api_endpoints": {
+    "summary": "/api/summary.json",
+    "classifications": "/api/classifications.json",
+    "paper_pdfs": "/api/paper-pdfs.json",
+    "pipeline": "/api/pipeline.json",
+    "feed_xml": "/feed.xml"
+  }
+}
