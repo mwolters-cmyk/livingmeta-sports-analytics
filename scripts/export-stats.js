@@ -334,10 +334,13 @@ console.log(`Exported ${journals.length} journals`);
 // PUBLIC API FILES (downloadable by AI agents, researchers, students)
 // =============================================================================
 
-// Full classification export with all fields (including impact metrics)
+// Full classification export — only relevant papers (sport != not_applicable)
+// Uses BEST_CTE to pick best classification per paper (avoids duplicates)
+// Excludes not_applicable papers to keep file size manageable for Git (~25 MB vs ~56 MB)
 const fullClassifications = db
   .prepare(
-    `SELECT p.work_id, p.doi, p.title, p.pub_date, p.pub_year,
+    `${BEST_CTE}
+     SELECT p.work_id, p.doi, p.title, p.pub_date, p.pub_year,
             p.journal_name as journal, p.cited_by_count, p.open_access,
             COALESCE(p.content_type, 'journal_article') as content_type,
             p.source_url, p.source_platform,
@@ -348,9 +351,10 @@ const fullClassifications = db
             c.sport, c.methodology, c.theme, c.sub_theme,
             c.is_womens_sport, c.data_type, c.summary,
             c.relevance_json, c.classified_by, c.classified_at
-     FROM classifications c
+     FROM best_class c
      JOIN papers p ON c.paper_id = p.work_id
      LEFT JOIN sources s ON p.source_id = s.source_id
+     WHERE c.sport != 'not_applicable'
      ORDER BY p.pub_date DESC`
   )
   .all()
@@ -364,19 +368,16 @@ fs.writeFileSync(
   path.join(PUBLIC_DIR, "classifications.json"),
   JSON.stringify({
     description:
-      "AI-classified sports analytics research papers from the Living Sports Analytics platform",
+      "AI-classified sports analytics research papers from the Living Sports Analytics platform. Only includes relevant papers (sport != not_applicable).",
     source: "https://living-sports-analytics.vercel.app",
     github:
       "https://github.com/mwolters-cmyk/living-sports-analytics-research",
     license: "CC-BY-4.0",
     exported_at: new Date().toISOString(),
     total: fullClassifications.length,
-    relevant: fullClassifications.filter(
-      (r) => r.sport !== "not_applicable"
-    ).length,
     schema: {
       sport:
-        "Primary sport (football, basketball, tennis, etc. or not_applicable for non-sport papers)",
+        "Primary sport (football, basketball, tennis, etc.)",
       methodology:
         "Research methodology (statistical, machine_learning, deep_learning, review, etc.)",
       theme:
@@ -397,7 +398,7 @@ fs.writeFileSync(
   })
 );
 console.log(
-  `Exported public API: ${fullClassifications.length} classifications`
+  `Exported public API: ${fullClassifications.length} relevant classifications`
 );
 
 // Compact summary for quick consumption
@@ -462,7 +463,7 @@ try {
   );
   console.log(`Exported ${contentSources.length} content sources`);
 } catch (e) {
-  console.log(`No content_sources table found (run seed_sources first): ${e.message}`);
+  console.log(`No content_sources table found: ${e.message}`);
 }
 
 // =============================================================================
