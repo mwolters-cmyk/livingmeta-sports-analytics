@@ -75,6 +75,8 @@ export interface ClassifiedPaper {
   // Author metrics (first author)
   first_author_name: string | null;
   first_author_h_index: number | null;
+  // Reference count
+  referenced_works_count: number | null;
 }
 
 // =============================================================================

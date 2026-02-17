@@ -24,7 +24,7 @@ for (const p of (pdfManifest as { papers: { work_id: string; pdf_url: string }[]
 }
 const pdfCount = pdfMap.size;
 
-// Methodology extraction data (deep AI analysis from full-text PDFs)
+// Methodology extraction data (deep AI analysis from full-text PDFs or abstracts)
 interface MethodologyExtraction {
   study_design?: string;
   sample_size?: number | string;
@@ -36,11 +36,16 @@ interface MethodologyExtraction {
   has_effect_sizes?: boolean;
   has_confidence_intervals?: boolean;
   temporal_scope?: string;
-  level_of_analysis?: string;
+  competition_level?: string;
+  sex_of_participants?: string;
+  age_range?: string;
+  sport_context?: string;
   main_result?: string;
   limitations?: string[];
+  future_research?: string[];
   data_availability?: string;
   code_availability?: string;
+  extraction_source?: string;
 }
 const methodExtractions = methodologyData as unknown as Record<string, MethodologyExtraction>;
 const methodExtractionCount = Object.keys(methodExtractions).length;
@@ -105,6 +110,55 @@ function ImpactBadge({ label, value, title }: { label: string; value: number | n
       {label}: {typeof value === "number" && value % 1 !== 0 ? value.toFixed(1) : value}
     </span>
   );
+}
+
+/** Expandable abstract — shows first 4 lines with "Read full abstract" toggle */
+function AbstractToggle({ text, isAiSummary = false }: { text: string; isAiSummary?: boolean }) {
+  const [expanded, setExpanded] = useState(false);
+  const isLong = text.length > 300;
+  return (
+    <div className="mt-2">
+      <p className={`text-sm ${isAiSummary ? "italic text-gray-500" : "text-gray-600"} ${
+        !expanded && isLong ? "line-clamp-4" : ""
+      }`}>
+        {text}
+      </p>
+      {isLong && (
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="mt-0.5 text-xs text-indigo-600 hover:text-indigo-800 cursor-pointer"
+        >
+          {expanded ? "Show less \u25B2" : "Read full abstract \u25BC"}
+        </button>
+      )}
+    </div>
+  );
+}
+
+/** Format author name in AP Stylebook style: "De Vries, J." */
+function formatAuthorAP(fullName: string): string {
+  const parts = fullName.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0];
+  const prefixes = new Set(["de", "van", "von", "el", "al", "del", "da", "di", "le", "la", "dos", "das"]);
+  const firstNames: string[] = [];
+  let surnameStart = -1;
+  for (let i = 0; i < parts.length; i++) {
+    if (i === 0) { firstNames.push(parts[i]); continue; }
+    if (prefixes.has(parts[i].toLowerCase()) && i < parts.length - 1) {
+      surnameStart = i;
+      break;
+    }
+    if (i < parts.length - 1) {
+      firstNames.push(parts[i]);
+    } else {
+      surnameStart = i;
+    }
+  }
+  if (surnameStart === -1) surnameStart = parts.length - 1;
+  const surname = parts.slice(surnameStart).join(" ");
+  const capSurname = surname.charAt(0).toUpperCase() + surname.slice(1);
+  const initials = firstNames.map(n => n.charAt(0).toUpperCase() + ".").join("");
+  return initials ? `${capSurname}, ${initials}` : capSurname;
 }
 
 // Color maps for badges
@@ -623,40 +677,39 @@ function ExploreContent() {
               <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-gray-400">
                 {p.first_author_name && (
                   <span className="font-medium text-gray-500">
-                    {p.first_author_name}
-                    {p.first_author_h_index != null && (
-                      <span className="ml-0.5 text-gray-400" title={`First author h-index: ${p.first_author_h_index}`}>
-                        (h={p.first_author_h_index})
-                      </span>
-                    )}
+                    {formatAuthorAP(p.first_author_name)}
                   </span>
                 )}
-                {p.first_author_name && p.journal && <span className="text-gray-300">·</span>}
+                {p.first_author_name && p.journal && <span className="text-gray-300">&middot;</span>}
                 {p.journal && (
-                  <span className="rounded bg-gray-100 px-2 py-0.5" title={p.journal_if_proxy ? `Journal IF proxy: ${p.journal_if_proxy.toFixed(1)}` : p.journal}>
+                  <span className="rounded bg-gray-100 px-2 py-0.5" title={p.journal}>
                     {p.journal}
                     {p.journal_if_proxy != null && (
-                      <span className="ml-1 text-gray-400">
-                        (IF≈{p.journal_if_proxy.toFixed(1)})
+                      <span className={`ml-1 rounded px-1 py-0.5 text-xs font-semibold ${
+                        p.journal_if_proxy >= 5 ? "bg-emerald-100 text-emerald-700" :
+                        p.journal_if_proxy >= 2 ? "bg-blue-100 text-blue-700" :
+                        "bg-gray-200 text-gray-500"
+                      }`} title={`Journal Impact Factor proxy: ${p.journal_if_proxy.toFixed(1)}`}>
+                        IF {p.journal_if_proxy.toFixed(1)}
                       </span>
                     )}
                   </span>
                 )}
                 {p.pub_date && <span>{p.pub_date}</span>}
                 {p.cited_by_count > 0 && (
-                  <span title={p.citations_per_year ? `${p.citations_per_year.toFixed(1)} citations/year` : undefined}>
-                    {p.cited_by_count} citations
+                  <span className="font-medium text-gray-500" title={p.citations_per_year ? `${p.citations_per_year.toFixed(1)} citations/year` : undefined}>
+                    {p.cited_by_count} cited
                     {p.citations_per_year != null && p.citations_per_year > 0 && (
-                      <span className="text-gray-300"> ({p.citations_per_year.toFixed(1)}/yr)</span>
+                      <span className="font-normal text-gray-400"> ({p.citations_per_year.toFixed(1)}/yr)</span>
                     )}
                   </span>
                 )}
-                <FwciTag value={p.fwci ?? null} />
-                {p.is_top_10_percent === 1 && (
-                  <span className="rounded bg-amber-100 px-1.5 py-0.5 text-xs font-semibold text-amber-800" title="In the top 10% of cited works in its field">
-                    Top 10%
+                {p.referenced_works_count != null && p.referenced_works_count > 0 && (
+                  <span title={`References ${p.referenced_works_count} works`}>
+                    {p.referenced_works_count} refs
                   </span>
                 )}
+                <FwciTag value={p.fwci ?? null} />
                 {p.open_access === 1 && (
                   <span className="rounded bg-green-100 px-2 py-0.5 text-green-700">
                     Open Access
@@ -721,22 +774,19 @@ function ExploreContent() {
 
               {/* Abstract (preferred) or AI summary (fallback for older papers) */}
               {p.abstract ? (
-                <p className="mt-2 text-sm text-gray-600 line-clamp-4">
-                  {p.abstract}
-                </p>
+                <AbstractToggle text={p.abstract} />
               ) : p.ai_summary ? (
-                <p className="mt-2 text-sm italic text-gray-500 line-clamp-4">
-                  {p.ai_summary}
-                </p>
+                <AbstractToggle text={p.ai_summary} isAiSummary />
               ) : null}
 
-              {/* Methodology extraction details (from full-text AI analysis) */}
+              {/* Methodology extraction details (from AI analysis) */}
               {methodExtractions[p.work_id] && (() => {
                 const m = methodExtractions[p.work_id];
+                const sourceLabel = m.extraction_source === 'abstract' ? 'abstract' : 'full text';
                 return (
                   <div className="mt-2 rounded-lg border border-indigo-100 bg-indigo-50/50 p-3">
                     <div className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-indigo-500">
-                      Deep methodology extraction (AI from full text)
+                      Deep methodology extraction (AI from {sourceLabel})
                     </div>
                     <div className="grid gap-x-6 gap-y-1 text-xs text-gray-600 md:grid-cols-2">
                       {m.study_design && (
@@ -748,18 +798,35 @@ function ExploreContent() {
                       {m.primary_method && (
                         <div><span className="font-medium text-gray-700">Primary method:</span> {m.primary_method}</div>
                       )}
-                      {/* Software removed — not useful for users */}
                       {m.temporal_scope && (
                         <div><span className="font-medium text-gray-700">Temporal scope:</span> {m.temporal_scope}</div>
                       )}
-                      {m.level_of_analysis && (
-                        <div><span className="font-medium text-gray-700">Level:</span> {m.level_of_analysis}</div>
+                      {m.competition_level && (
+                        <div><span className="font-medium text-gray-700">Competition level:</span> {m.competition_level}</div>
+                      )}
+                      {m.sex_of_participants && (
+                        <div><span className="font-medium text-gray-700">Participants:</span> {m.sex_of_participants}</div>
+                      )}
+                      {m.age_range && (
+                        <div><span className="font-medium text-gray-700">Age range:</span> {m.age_range}</div>
+                      )}
+                      {m.sport_context && (
+                        <div><span className="font-medium text-gray-700">Sport context:</span> {m.sport_context}</div>
                       )}
                       {m.data_availability && m.data_availability !== "not_stated" && (
                         <div><span className="font-medium text-gray-700">Data:</span> {m.data_availability}</div>
                       )}
                       {m.code_availability && m.code_availability !== "not_stated" && (
                         <div><span className="font-medium text-gray-700">Code:</span> {m.code_availability}</div>
+                      )}
+                      {m.main_result && (
+                        <div className="col-span-full"><span className="font-medium text-gray-700">Main result:</span> {m.main_result}</div>
+                      )}
+                      {m.limitations && m.limitations.length > 0 && (
+                        <div className="col-span-full"><span className="font-medium text-gray-700">Limitations:</span> {m.limitations.join("; ")}</div>
+                      )}
+                      {m.future_research && m.future_research.length > 0 && (
+                        <div className="col-span-full"><span className="font-medium text-gray-700">Future research:</span> {m.future_research.join("; ")}</div>
                       )}
                     </div>
                     {m.all_methods && m.all_methods.length > 1 && (
@@ -786,10 +853,11 @@ function ExploreContent() {
               {/* Resource extraction details (data sources, code, tools) */}
               {paperResources[p.work_id] && (() => {
                 const r = paperResources[p.work_id];
+                const resSourceLabel = methodExtractions[p.work_id]?.extraction_source === 'abstract' ? 'abstract' : 'full text';
                 return (
                   <div className="mt-2 rounded-lg border border-teal-100 bg-teal-50/50 p-3">
                     <div className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-teal-600">
-                      Data &amp; Code Resources (AI from full text)
+                      Data &amp; Code Resources (AI from {resSourceLabel})
                     </div>
 
                     {/* Data sources — curated resources are clickable, others are plain text */}

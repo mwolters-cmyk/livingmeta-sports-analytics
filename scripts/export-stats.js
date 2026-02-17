@@ -270,7 +270,7 @@ const classifiedPapers = db
             p.source_url, p.source_platform,
             -- Impact metrics
             p.fwci, p.citation_percentile, p.is_top_10_percent,
-            p.citations_per_year, p.primary_topic,
+            p.citations_per_year, p.primary_topic, p.referenced_works_count,
             -- Journal metrics (from sources table)
             s.h_index as journal_h_index,
             s.two_yr_mean_citedness as journal_if_proxy,
@@ -345,7 +345,7 @@ const fullClassifications = db
             COALESCE(p.content_type, 'journal_article') as content_type,
             p.source_url, p.source_platform,
             p.fwci, p.citation_percentile, p.is_top_10_percent,
-            p.citations_per_year, p.primary_topic,
+            p.citations_per_year, p.primary_topic, p.referenced_works_count,
             s.h_index as journal_h_index,
             s.two_yr_mean_citedness as journal_if_proxy,
             c.sport, c.methodology, c.theme, c.sub_theme,
