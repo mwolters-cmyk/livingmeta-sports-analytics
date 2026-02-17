@@ -504,70 +504,6 @@ function GapAnalysisReport({ analysis, paperIndex, defaultOpen = false }: { anal
               </div>
             )}
 
-            {/* Coverage Calibration via OpenAlex */}
-            {analysis.coverage_calibration && analysis.coverage_calibration.calibrations.length > 0 && (
-              <div className="mt-4 rounded-lg bg-sky-50 border border-sky-200 p-3">
-                <div className="text-sm font-medium text-sky-800 mb-1">
-                  Coverage Calibration (via OpenAlex)
-                </div>
-                <p className="text-xs text-sky-600 mb-3">
-                  For each suspected gap, we queried OpenAlex to estimate how many papers exist. This shows how complete our database is per topic.
-                </p>
-                <div className="space-y-2">
-                  {analysis.coverage_calibration.calibrations.map((cal, i) => {
-                    const assessColors: Record<string, string> = {
-                      good: "bg-emerald-100 text-emerald-800",
-                      moderate: "bg-yellow-100 text-yellow-800",
-                      sparse: "bg-orange-100 text-orange-800",
-                      minimal: "bg-red-100 text-red-800",
-                      no_external_evidence: "bg-gray-100 text-gray-600",
-                    };
-                    const assessLabels: Record<string, string> = {
-                      good: "Good",
-                      moderate: "Moderate",
-                      sparse: "Sparse",
-                      minimal: "Minimal",
-                      no_external_evidence: "No evidence",
-                    };
-                    const color = assessColors[cal.assessment] || "bg-gray-100 text-gray-500";
-                    const label = assessLabels[cal.assessment] || cal.assessment;
-                    return (
-                      <div key={i} className="flex items-center gap-3 text-sm">
-                        <span className={`shrink-0 rounded px-1.5 py-0.5 text-xs font-medium ${color}`}>
-                          {label}
-                        </span>
-                        <span className="text-sky-900/80 flex-1 min-w-0 truncate" title={cal.label}>
-                          {cal.label}
-                        </span>
-                        <span className="text-xs text-sky-500 shrink-0 tabular-nums">
-                          {cal.our_db_count != null && cal.openalex_count != null
-                            ? `${cal.our_db_count} / ${cal.openalex_count.toLocaleString()} on OpenAlex`
-                            : "—"}
-                          {cal.coverage_ratio != null && (
-                            <span className="ml-1 text-sky-400">({(cal.coverage_ratio * 100).toFixed(1)}%)</span>
-                          )}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-                {/* Summary */}
-                {(() => {
-                  const s = analysis.coverage_calibration.summary;
-                  const total = s.good + s.moderate + s.sparse + s.minimal;
-                  return total > 0 ? (
-                    <div className="mt-2 pt-2 border-t border-sky-200 flex items-center gap-2 text-xs text-sky-600">
-                      <span>Coverage profile:</span>
-                      {s.good > 0 && <span className="bg-emerald-100 text-emerald-700 px-1.5 rounded">Good: {s.good}</span>}
-                      {s.moderate > 0 && <span className="bg-yellow-100 text-yellow-700 px-1.5 rounded">Moderate: {s.moderate}</span>}
-                      {s.sparse > 0 && <span className="bg-orange-100 text-orange-700 px-1.5 rounded">Sparse: {s.sparse}</span>}
-                      {s.minimal > 0 && <span className="bg-red-100 text-red-700 px-1.5 rounded">Minimal: {s.minimal}</span>}
-                    </div>
-                  ) : null;
-                })()}
-              </div>
-            )}
-
             {analysis.self_reflection.process_cost_reflection && (
               <div className="mt-4">
                 <div className="text-sm font-medium text-gray-500 mb-1">Process Reflection</div>
@@ -742,18 +678,17 @@ export default function GapsPage() {
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2">
-              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
+              <div className="rounded-lg border border-gray-200 bg-gray-50/50 p-3">
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-emerald-600 text-sm font-bold">1</span>
-                  <span className="text-sm font-medium text-emerald-800">Broader relevance scoring</span>
-                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                  <span className="text-gray-500 text-sm font-bold">1</span>
+                  <span className="text-sm font-medium text-gray-700">Broader relevance scoring</span>
+                  <span className="ml-auto rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600">Reverted</span>
                 </div>
-                <p className="text-xs text-emerald-700/80">
-                  Expanded the classifier to score &ldquo;analytics-impact&rdquo; papers
-                  (studies about analytics adoption, organizational impact, coach behavior)
-                  and added a new <code className="text-xs">analytics_adjacent</code> relevance
-                  dimension. Papers about the context of analytics now score high enough to
-                  enter our database.
+                <p className="text-xs text-gray-600">
+                  Classifier prompt extensions (analytics_adjacent dimension, secondary_themes
+                  multi-label, broadened sports_analytics scoring) were reverted to keep the
+                  classifier stable. The threshold &ge;5 change is kept as a simpler way to
+                  include borderline papers.
                 </p>
               </div>
               <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
@@ -771,13 +706,14 @@ export default function GapsPage() {
               <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-emerald-600 text-sm font-bold">3</span>
-                  <span className="text-sm font-medium text-emerald-800">Multi-label classification + concepts</span>
+                  <span className="text-sm font-medium text-emerald-800">Broadened relevance threshold</span>
                   <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
                 </div>
                 <p className="text-xs text-emerald-700/80">
-                  Classifier now assigns up to 2 <code className="text-xs">secondary_themes</code> per
-                  paper. The gap analyzer enriches papers with OpenAlex concepts (topic
-                  fingerprints for 36K papers) and uses both for filtering and context.
+                  Lowered the relevance threshold from &ge;7 to &ge;5, adding ~3,500 papers
+                  (score 5&ndash;6) to the database. The gap analyzer now has a broader evidence
+                  base including borderline-relevant papers that may contain useful methodology
+                  or cross-disciplinary insights.
                 </p>
               </div>
               <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
@@ -793,18 +729,18 @@ export default function GapsPage() {
                   qualitative methods expanded.
                 </p>
               </div>
-              <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3 sm:col-span-2">
+              <div className="rounded-lg border border-gray-200 bg-gray-50/50 p-3 sm:col-span-2">
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-emerald-600 text-sm font-bold">5</span>
-                  <span className="text-sm font-medium text-emerald-800">Automated coverage calibration</span>
-                  <span className="ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">Done</span>
+                  <span className="text-gray-500 text-sm font-bold">5</span>
+                  <span className="text-sm font-medium text-gray-700">Gap analyzer kept as pure database consumer</span>
+                  <span className="ml-auto rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600">Refactored</span>
                 </div>
-                <p className="text-xs text-emerald-700/80">
-                  Built <code className="text-xs">calibrate_coverage.py</code>: for each suspected
-                  database gap, Haiku generates a search query, which is run against OpenAlex
-                  to count how many papers exist. We now have objective coverage ratios
-                  (our DB / OpenAlex) per topic &mdash; visible in each analysis&apos;s
-                  self-reflection section as color-coded calibration badges.
+                <p className="text-xs text-gray-600">
+                  Removed direct database queries from the gap analyzer. It now
+                  reads exclusively from <code className="text-xs">classified-papers.json</code> and
+                  the exported JSON pipeline &mdash; no backdoor enrichment. Coverage
+                  calibration via raw OpenAlex counts was removed as misleading (unfiltered
+                  counts vs. our curated database is apples-to-oranges).
                 </p>
               </div>
             </div>
@@ -815,8 +751,9 @@ export default function GapsPage() {
                 <li className="flex gap-2">
                   <span className="text-orange shrink-0">&#9679;</span>
                   <span>
-                    <strong>Re-run the classifier</strong> with the new prompt on all papers to
-                    populate secondary_themes and analytics_adjacent scores across the full database.
+                    <strong>Targeted OpenAlex queries</strong> to fill coverage gaps identified by
+                    gap analysis self-reflections (speed skating, figure skating, sports economics
+                    journals, causal inference methods).
                   </span>
                 </li>
                 <li className="flex gap-2">
@@ -830,17 +767,9 @@ export default function GapsPage() {
                 <li className="flex gap-2">
                   <span className="text-orange shrink-0">&#9679;</span>
                   <span>
-                    <strong>Re-run existing analyses</strong> with the v3 prompt (enriched with
-                    concepts, qualitative awareness, and multi-label themes) to see if the
-                    gaps change.
-                  </span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-orange shrink-0">&#9679;</span>
-                  <span>
-                    <strong>Targeted literature expansion</strong> &mdash; use the coverage
-                    calibration results to identify which &ldquo;minimal&rdquo; topics should
-                    be added to the watcher&apos;s keyword list.
+                    <strong>Re-run existing analyses</strong> with the broadened database (~9K papers,
+                    threshold &ge;5) and qualitative awareness prompt to see how the gap
+                    landscape changes.
                   </span>
                 </li>
               </ul>

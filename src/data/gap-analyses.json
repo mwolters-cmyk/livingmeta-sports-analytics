@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T22:52:57.628622",
+  "generated_at": "2026-02-16T23:17:41.765726",
   "total_analyses": 11,
   "paper_index": {
     "https://openalex.org/W2205219292": {
@@ -1815,58 +1815,6 @@
           "Longitudinal follow-up: A repeat gap analysis in 12 months would show whether priorities shifted or gaps were addressed. This would calibrate the predictive validity of our gap assessment."
         ],
         "process_cost_reflection": "Given: 86 papers with abstracts/structured summaries. Synthesis required: (1) reading/organizing papers into clusters; (2) identifying recurring themes and absences; (3) cross-referencing evidence to support claims; (4) writing detailed gap descriptions; (5) proposing actionable research directions. Cost-benefit: At 86 papers, the database is manageable. 5-10 gaps is sufficient to avoid redundancy. The structured summaries (theme, sub-theme, results, limitations) enabled rapid pattern extraction; full-text access would likely add 30-40% more nuance (e.g., discovering reproducibility issues or code availability) without fundamentally changing gap identification. Bottleneck: most recent papers (2024-2025, 54/86) lack citations to each other, making it hard to assess whether current research is cohesive or fragmented. Abstract-level analysis was probably sufficient; full-text would confirm fragmentation but not change the conclusion. Calibration: This analysis is 'landscape assessment' quality (high-level patterns, low-resolution details). For a funded research agenda (e.g., a center of excellence in cycling analytics), full-text review + expert consultation would be cost-justified. For this initial gap analysis, 86 papers with abstracts is near-optimal: sufficient detail, manageable scale, reasonable cost (~12-16 hours of focused reading and synthesis)."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Sports analytics operations research",
-            "openalex_count": 121544,
-            "our_db_count": 11,
-            "coverage_ratio": 0.0001,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Cycling race outcome datasets",
-            "openalex_count": 2116,
-            "our_db_count": 51,
-            "coverage_ratio": 0.0241,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Causal inference sports performance",
-            "openalex_count": 2615,
-            "our_db_count": 97,
-            "coverage_ratio": 0.0371,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Women's cycling physiology performance",
-            "openalex_count": 28063,
-            "our_db_count": 175,
-            "coverage_ratio": 0.0062,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Tactical biomechanics race outcomes",
-            "openalex_count": 10,
-            "our_db_count": 365,
-            "coverage_ratio": 36.5,
-            "assessment": "good"
-          },
-          {
-            "label": "Time series longitudinal sports modeling",
-            "openalex_count": 7,
-            "our_db_count": 11,
-            "coverage_ratio": 1.5714,
-            "assessment": "good"
-          }
-        ],
-        "summary": {
-          "good": 2,
-          "moderate": 0,
-          "sparse": 2,
-          "minimal": 2
-        }
       }
     },
     {
@@ -2773,58 +2721,6 @@
           "Algorithmic reproducibility check: Attempt to reproduce one published prediction model's results using original data or synthetic data. This would concretely test generalizability and identify practical barriers to adoption."
         ],
         "process_cost_reflection": "This analysis synthesized 1749 papers using 200 summaries + aggregate statistics. The token cost was high (~200k tokens), but the approach was efficient for the problem: reading all 1749 full texts would be unfeasible (estimated 500k+ tokens, 40+ hours manual review). The summary-based approach traded depth for breadth and speed. **What worked well**: Summaries included effect sizes, study design, sample sizes, primary findings—sufficient to assess evidence quality and identify absences. Aggregate statistics (study design distribution, data source types, methodology profile) were especially valuable for pattern recognition. **What was lost**: Risk of bias assessment, qualitative nuance, and deep methodological critique. For instance, the claim 'we found ≤5 RCTs testing wearable interventions' is strong but relies on absence from summaries—a paper titled 'Prediction Model' might be embedded in an RCT evaluation study that was not clearly flagged. **Recommendation for future analyses**: If answer hinges on precise counts (e.g., 'how many RCTs exist?') or high-confidence risk of bias assessment (e.g., 'are these studies high-quality?'), full-text access or manual screening of 50–100 papers is justified. For gap discovery and theme mapping, summary-based analysis is cost-effective. The 200-paper subset appears reasonably representative (top papers by citation count, recent papers, diverse sports), though the temporal skew (405 in 2024, 653 in 2025) introduces recency bias—new papers may not be fully peer-reviewed or may represent early reports."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Sports injury epidemiology prevention medical",
-            "openalex_count": 7842,
-            "our_db_count": 95,
-            "coverage_ratio": 0.0121,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Implementation science behavior change sports",
-            "openalex_count": 6277,
-            "our_db_count": 50,
-            "coverage_ratio": 0.008,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Cost-effectiveness economic analysis injury prevention",
-            "openalex_count": 1114,
-            "our_db_count": 0,
-            "coverage_ratio": 0.0,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Biomedical sensor wearable device innovation",
-            "openalex_count": 665,
-            "our_db_count": 128,
-            "coverage_ratio": 0.1925,
-            "assessment": "moderate"
-          },
-          {
-            "label": "Qualitative athlete perception usability wearables",
-            "openalex_count": 30,
-            "our_db_count": 78,
-            "coverage_ratio": 2.6,
-            "assessment": "good"
-          },
-          {
-            "label": "Long-term longitudinal adolescent injury outcomes",
-            "openalex_count": 6740,
-            "our_db_count": 31,
-            "coverage_ratio": 0.0046,
-            "assessment": "minimal"
-          }
-        ],
-        "summary": {
-          "good": 1,
-          "moderate": 1,
-          "sparse": 1,
-          "minimal": 3
-        }
       }
     },
     {
@@ -3489,65 +3385,6 @@
           "Engagement with sports economics journals: database appears sports-analytics-focused and may miss economics literature on athlete labor markets, salary determination, and market efficiency."
         ],
         "process_cost_reflection": "ANALYSIS COST-EFFECTIVENESS ASSESSMENT: Given 200 paper summaries + 30 curated resources and 1009 total papers, this gap analysis was feasible at reasonable cost. KEY INSIGHTS: (1) 200 summaries were sufficient to identify dominant research themes (ML for football, physiology for cycling), major gaps (cyclist valuation, longitudinal validation), and 5-10 primary gaps. (2) Abstract-level summaries constrained depth—could not assess methodological quality (confounding, overfitting, generalization) without full text. Accessing full text for ~20 key papers would improve confidence from MEDIUM to HIGH. (3) Database distribution (750 football, 61 cycling, 198 multi-sport) enabled football-focused analysis but made cycling comparison difficult. A balanced database (equal sport representation) would have detected gaps faster. (4) Aggregate statistics (methodology, study design, sample size distribution) were minimally informative—binary classification (ML vs. statistical) hides nuance. Full-text extraction of model specifications would be higher-value. VERDICT: 200-paper summaries were sufficient to identify EXISTENCE of gaps (cyclist valuation absent, longitudinal validation missing) but insufficient to characterize IMPORTANCE of gaps precisely (e.g., is lack of deep RL validation a serious problem or pedantic?). For gap identification, 200 papers + metadata aggregation is cost-effective. For gap prioritization and solution design, full-text access to 30-50 key papers would be justified investment. The 4 papers with code available (out of 1009) suggests code availability does not scale—open science culture in sports analytics is weak."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Cyclist valuation and transfer economics",
-            "openalex_count": 23094,
-            "our_db_count": 15,
-            "coverage_ratio": 0.0006,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Women's football player valuation",
-            "openalex_count": 681,
-            "our_db_count": 50,
-            "coverage_ratio": 0.0734,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Transfer market microeconomics",
-            "openalex_count": 2550,
-            "our_db_count": 0,
-            "coverage_ratio": 0.0,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Sports betting and finance industry research",
-            "openalex_count": 363,
-            "our_db_count": 1,
-            "coverage_ratio": 0.0028,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Coach and scout expertise validation",
-            "openalex_count": 301,
-            "our_db_count": 84,
-            "coverage_ratio": 0.2791,
-            "assessment": "moderate"
-          },
-          {
-            "label": "Causal inference in sports valuation",
-            "openalex_count": 329,
-            "our_db_count": 25,
-            "coverage_ratio": 0.076,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Longitudinal career trajectory studies",
-            "openalex_count": 171,
-            "our_db_count": 30,
-            "coverage_ratio": 0.1754,
-            "assessment": "moderate"
-          }
-        ],
-        "summary": {
-          "good": 0,
-          "moderate": 2,
-          "sparse": 2,
-          "minimal": 3
-        }
       }
     },
     {
@@ -4160,58 +3997,6 @@
           "Specification of what TYPES of papers would close the gap: e.g., 'we need X experiments, Y surveys of Z population' would focus gap analysis more than current 'more research is needed' framing"
         ],
         "process_cost_reflection": "This analysis examined 200 paper summaries (with full data for aggregate of 1000 papers). TIME: High (10+ hours synthesizing, identifying gaps, writing output). VALUE: Moderate-to-High. The key value is NOT what I found (a rich literature on analytics supply) but what I found is MISSING (demand side). This is a legitimate and important finding for a meta-analysis platform. COST-EFFECTIVENESS: Medium. AI-synthesized gap analysis on a curated database is cheaper than human review but still meaningful. However, the absence of full-text access and inability to search for papers by more granular keywords (e.g., 'fan perception', 'broadcast design', 'viewer response') limited precision. A targeted human librarian search for 'fan experience + analytics' in sports management journals might have been faster and more direct. CALIBRATION: For future analyses, recommending (1) full-text indexing of key papers, (2) domain expert input on which journals/databases to prioritize, (3) explicit queries for papers addressing DEMAND SIDE of analytics (consumer experience, fan behavior) rather than SUPPLY SIDE (metric development). This platform excels at identifying what is studied but struggles with identifying what is studied WHERE (if a topic is researched in media/psychology journals but not sports analytics journals, it will be invisible here)."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Fan psychology and analytics perception",
-            "openalex_count": 16137,
-            "our_db_count": 4,
-            "coverage_ratio": 0.0002,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Broadcast design and viewing behavior",
-            "openalex_count": 377,
-            "our_db_count": 2,
-            "coverage_ratio": 0.0053,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Fan surveys and qualitative attitudes",
-            "openalex_count": 6098,
-            "our_db_count": 0,
-            "coverage_ratio": 0.0,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Behavioral economics and fan decisions",
-            "openalex_count": 239,
-            "our_db_count": 36,
-            "coverage_ratio": 0.1506,
-            "assessment": "moderate"
-          },
-          {
-            "label": "Women's sports analytics engagement",
-            "openalex_count": 1193,
-            "our_db_count": 119,
-            "coverage_ratio": 0.0997,
-            "assessment": "sparse"
-          },
-          {
-            "label": "International non-English fan research",
-            "openalex_count": 315,
-            "our_db_count": 46,
-            "coverage_ratio": 0.146,
-            "assessment": "moderate"
-          }
-        ],
-        "summary": {
-          "good": 0,
-          "moderate": 2,
-          "sparse": 1,
-          "minimal": 3
-        }
       }
     },
     {
@@ -5122,65 +4907,6 @@
           "Database expansion to include sports medicine and athletic training conference proceedings (AOSSM, EATA, NATA) where clinical translation and practical implementation barriers are discussed."
         ],
         "process_cost_reflection": "Provided with 68 paper summaries (abstracts + minimal metadata), this analysis required synthesis across fragmented, heterogeneous studies with limited methodological detail. Cost-benefit assessment: (1) Volume appropriate: 68 papers is manageable in one pass; more would yield diminishing returns; (2) Quality of summaries: abstracts alone were INSUFFICIENT for assessing methodological rigor, sample quality, or technical soundness. Statements like 'ML achieved X% accuracy' without reporting confidence intervals, cross-validation strategy, or base rate are common; full-text access would have revealed major gaps (e.g., how many papers actually report external validation?). (3) Time allocation: Spent 60% identifying missing papers/gaps and 40% assessing what WAS studied—reflects sparsity of core research and large white space. (4) Confidence cost: Medium-confidence output reflects genuine uncertainty about whether gaps represent field-wide blindspots or database coverage artifacts. Higher confidence would require: structured full-text review, author interviews, and meta-analysis of results. (5) Actionability: Output provides clear research directions (5 priorities with defined scope, methods, and feasibility). Clubs and researchers can immediately act. This justifies the analysis even with medium confidence. Estimate for this analysis: 8-12 hours of careful reading + synthesis. Full-text analysis would extend to 40-60 hours. For a 68-paper collection, AI-assisted abstract analysis + human gap synthesis is cost-effective; full-text access would improve confidence by ~15-20% at 5x cost."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Clinical prediction rules injury risk",
-            "openalex_count": 25494,
-            "our_db_count": 39,
-            "coverage_ratio": 0.0015,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Computer vision pose estimation injury",
-            "openalex_count": 3139,
-            "our_db_count": 147,
-            "coverage_ratio": 0.0468,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Sports technology proprietary ML models",
-            "openalex_count": 0,
-            "our_db_count": 80,
-            "coverage_ratio": null,
-            "assessment": "no_external_evidence"
-          },
-          {
-            "label": "Natural language processing injury surveillance",
-            "openalex_count": 1007,
-            "our_db_count": 4,
-            "coverage_ratio": 0.004,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Transfer learning domain adaptation sports",
-            "openalex_count": 138,
-            "our_db_count": 12,
-            "coverage_ratio": 0.087,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Long-term model validation drift injury",
-            "openalex_count": 1148,
-            "our_db_count": 0,
-            "coverage_ratio": 0.0,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Health economics cost-effectiveness injury prevention",
-            "openalex_count": 917,
-            "our_db_count": 5,
-            "coverage_ratio": 0.0055,
-            "assessment": "minimal"
-          }
-        ],
-        "summary": {
-          "good": 0,
-          "moderate": 0,
-          "sparse": 2,
-          "minimal": 4
-        }
       }
     },
     {
@@ -5655,58 +5381,6 @@
           "Interdisciplinary indexing: sports analytics database filtered for 'relevance >= 7' likely excludes highly relevant papers on philosophy/ethics/policy that score low on 'analytics relevance' but high on 'rule design relevance.'"
         ],
         "process_cost_reflection": "COST-EFFECTIVENESS ASSESSMENT: This analysis consumed ~200k tokens for 1,246 papers (162 papers summarized in detail). Was it worth it? MIXED. The breadth of papers examined was valuable for identifying what IS and IS NOT studied—the null finding (zero rule-adaptation papers) is itself important. However, marginal returns diminished sharply after ~300 papers: subsequent papers added performance data but no new conceptual frameworks or gap identification. KEY INSIGHT: For future gap analyses, the platform should prioritize PURPOSIVE sampling over exhaustive review when the question is exploratory. For this question, sampling 100 papers across gender-equity, women-specific, and rule-related categories would have yielded 90% of the insight in 20% of the cost. The 1,200-paper exhaustive review confirmed that rule-adaptation research simply does not exist in analytics databases—a finding that could have been detected with targeted sampling. RECOMMENDATION: Develop a heuristic for assigning 'conceptual relevance' independently of 'AI-assessed relevance' to pre-filter papers for exploratory gap analysis. For policy-oriented questions, this would dramatically improve cost-efficiency and identify interdisciplinary gaps more clearly."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Gender equity and rule design",
-            "openalex_count": 8170,
-            "our_db_count": 66,
-            "coverage_ratio": 0.0081,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Implementation science sport policy",
-            "openalex_count": 36341,
-            "our_db_count": 141,
-            "coverage_ratio": 0.0039,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Transgender athlete performance rules",
-            "openalex_count": 246,
-            "our_db_count": 387,
-            "coverage_ratio": 1.5732,
-            "assessment": "good"
-          },
-          {
-            "label": "Rule design sports engineering biomechanics",
-            "openalex_count": 1582,
-            "our_db_count": 288,
-            "coverage_ratio": 0.182,
-            "assessment": "moderate"
-          },
-          {
-            "label": "Women's sports economy spectator appeal",
-            "openalex_count": 413,
-            "our_db_count": 72,
-            "coverage_ratio": 0.1743,
-            "assessment": "moderate"
-          },
-          {
-            "label": "Youth sports equity development pathways",
-            "openalex_count": 636,
-            "our_db_count": 127,
-            "coverage_ratio": 0.1997,
-            "assessment": "moderate"
-          }
-        ],
-        "summary": {
-          "good": 1,
-          "moderate": 3,
-          "sparse": 0,
-          "minimal": 2
-        }
       }
     },
     {
@@ -6205,58 +5879,6 @@
           "MISSING SPORTS: explicit search for papers on figure skating, tennis, boxing/MMA, ice hockey, cycling, American football officiating. These seem underrepresented relative to football/basketball."
         ],
         "process_cost_reflection": "COST-BENEFIT ANALYSIS: Given 1,410 papers with detailed summaries for top 200, this analysis required: (1) reading 200 summaries + scan-reading 57 'bias' papers in detail, (2) synthesizing across two research silos with minimal connection, (3) identifying gaps based partly on absence of data (risky). WHAT WORKED WELL: the structured summaries with methods + context + findings enabled quick pattern-spotting. WHAT WAS INEFFICIENT: (a) Had to infer from sparse summaries whether papers addressed bias or just performance — full abstracts or methods sections would accelerate this. (b) Many papers were reviewed that were NOT bias-related (performance analytics papers, though methodologically interesting, wasted tokens on non-core question). RECOMMENDATION FOR FUTURE USE: If focusing on bias, pre-filter database to 'bias_detection' theme only (~57 papers), add cross-disciplinary sources (sports management, psychology journals), and request full abstracts (not 2-sentence summaries) for topic relevance confirmation. Would have reduced analysis time 40% while improving accuracy. OVERALL: This gap analysis is CREDIBLE but INCOMPLETE due to database limitations. Strong on identifying WHAT IS MISSING, less certain about WHETHER it exists elsewhere. Cost was reasonable (~40K tokens for systematic analysis), output is actionable (clear research priorities), but confidence is MEDIUM due to coverage gaps."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Figure skating bias research",
-            "openalex_count": 756,
-            "our_db_count": 0,
-            "coverage_ratio": 0.0,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Tennis umpiring and electronic officiating",
-            "openalex_count": 33,
-            "our_db_count": 10,
-            "coverage_ratio": 0.303,
-            "assessment": "good"
-          },
-          {
-            "label": "Boxing and MMA judge bias",
-            "openalex_count": 8,
-            "our_db_count": 0,
-            "coverage_ratio": 0.0,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Referee decision accuracy real matches",
-            "openalex_count": 935,
-            "our_db_count": 4,
-            "coverage_ratio": 0.0043,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Implicit bias in sports officiating",
-            "openalex_count": 52,
-            "our_db_count": 1,
-            "coverage_ratio": 0.0192,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Gender demographic officiating bias",
-            "openalex_count": 16,
-            "our_db_count": 0,
-            "coverage_ratio": 0.0,
-            "assessment": "minimal"
-          }
-        ],
-        "summary": {
-          "good": 1,
-          "moderate": 0,
-          "sparse": 1,
-          "minimal": 4
-        }
       }
     },
     {
@@ -6878,65 +6500,6 @@
           "Data availability statement: Metadata shows 'data_access_type' but not 'actual_link_or_note.' Papers claiming data are 'open' should have DOI or direct URL for reproducibility."
         ],
         "process_cost_reflection": "We were given 47 papers with structured summaries (title, abstract, sample size, methods, key results, data sources, limitations). This was manageable and sufficient to identify the major gap (absence of comparative cross-sport spending-to-performance analysis). However, summaries averaged ~200 words and lacked fine-grained methodology details (e.g., 'mixed-effects model' is mentioned, but were random slopes included? what was the random effects structure?). Full-text access would have improved our assessment of methodology quality and enabled replication appraisal. That said, full-text analysis of 47 papers would cost ~3-4× more tokens/time with marginal benefit, given the abstracts and methodology fields were reasonably complete. The paper metadata was well-structured (sport, method, theme, sample size, year, data sources) — this enabled rapid classification and trend identification. Our confidence in identifying gaps would increase from 'low' to 'medium' with: (1) effect size standardization across papers, (2) full methodological details (were models specified identically?), and (3) even 5-10 additional papers directly comparing spending-to-performance across sports. Cost-benefit: This 47-paper analysis (8,000 tokens invested) identified that the research question CANNOT be answered from our database and produced a concrete research agenda. Was worth the investment. Larger database (100+ papers) would yield diminishing returns unless papers included more cross-sport comparisons."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Longitudinal spending-performance elasticity trends",
-            "openalex_count": 707,
-            "our_db_count": 266,
-            "coverage_ratio": 0.3762,
-            "assessment": "good"
-          },
-          {
-            "label": "Causal inference spending-to-performance methods",
-            "openalex_count": 75,
-            "our_db_count": 143,
-            "coverage_ratio": 1.9067,
-            "assessment": "good"
-          },
-          {
-            "label": "Women's sports spending comparative analysis",
-            "openalex_count": 1,
-            "our_db_count": 338,
-            "coverage_ratio": 338.0,
-            "assessment": "good"
-          },
-          {
-            "label": "Lower-tier league spending-performance relationships",
-            "openalex_count": 258,
-            "our_db_count": 59,
-            "coverage_ratio": 0.2287,
-            "assessment": "moderate"
-          },
-          {
-            "label": "Esports team spending competitive outcomes",
-            "openalex_count": 25,
-            "our_db_count": 65,
-            "coverage_ratio": 2.6,
-            "assessment": "good"
-          },
-          {
-            "label": "Salary cap structures competitive balance effects",
-            "openalex_count": 15,
-            "our_db_count": 25,
-            "coverage_ratio": 1.6667,
-            "assessment": "good"
-          },
-          {
-            "label": "Financial inefficiency overspending sports teams",
-            "openalex_count": 13,
-            "our_db_count": 3,
-            "coverage_ratio": 0.2308,
-            "assessment": "moderate"
-          }
-        ],
-        "summary": {
-          "good": 5,
-          "moderate": 2,
-          "sparse": 0,
-          "minimal": 0
-        }
       }
     },
     {
@@ -7768,65 +7331,6 @@
           "Cost-effectiveness analysis: estimate cost per paper (labor hours for AI assessment, retrieval, summarization) and compare to value (gaps identified, insights generated). Helpful for calibrating future AI gap analyses."
         ],
         "process_cost_reflection": "This analysis processed N=494 papers (200 with detailed summaries, 294 with metadata only) over ~20 hours of human-AI interaction. Cost-effectiveness considerations: (1) Detailed summaries of 200 papers provided high-quality evidence for gap identification; metadata-only approach for papers 201-494 was efficient but likely missed nuances. Recommendation: if commissioning similar analyses, target 300-400 detailed summaries for comprehensive coverage. (2) AI-assessed relevance scores (≥7/10) ensured focus on relevant papers, but this introduced curation bias—speed skating and winter sports likely exist but fell below relevance threshold. (3) Structured output (JSON schema, predefined gap types) enabled consistent analysis and synthesis, but constrained discovery of unexpected patterns. (4) Confidence marking (high/medium/low) was valuable for transparency; users can weight conclusions accordingly. (5) Time investment justified for comprehensive field overview; would not be cost-effective for narrow sub-question (e.g., 'pacing in 5K running only'—would require <50 papers and <5 hours). (6) Full-text access would likely improve quality by ~15-20% but at 3-4x cost. Recommended calibration for future work: use metadata-only triage for initial scoping, then detailed review of top 50-100 papers identified as highest-priority gaps."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Speed skating winter endurance pacing",
-            "openalex_count": 351,
-            "our_db_count": 29,
-            "coverage_ratio": 0.0826,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Youth pacing strategy development",
-            "openalex_count": 15931,
-            "our_db_count": 41,
-            "coverage_ratio": 0.0026,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Paralympic adaptive athlete pacing",
-            "openalex_count": 163,
-            "our_db_count": 37,
-            "coverage_ratio": 0.227,
-            "assessment": "moderate"
-          },
-          {
-            "label": "Female menstrual cycle pacing",
-            "openalex_count": 1454,
-            "our_db_count": 104,
-            "coverage_ratio": 0.0715,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Psychological cognitive pacing mechanisms",
-            "openalex_count": 290,
-            "our_db_count": 246,
-            "coverage_ratio": 0.8483,
-            "assessment": "good"
-          },
-          {
-            "label": "Computational optimization pacing simulation",
-            "openalex_count": 16536,
-            "our_db_count": 59,
-            "coverage_ratio": 0.0036,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Multi-stage multi-lap event pacing",
-            "openalex_count": 3,
-            "our_db_count": 12,
-            "coverage_ratio": 4.0,
-            "assessment": "good"
-          }
-        ],
-        "summary": {
-          "good": 2,
-          "moderate": 1,
-          "sparse": 2,
-          "minimal": 2
-        }
       }
     },
     {
@@ -8510,65 +8014,6 @@
           "**Qualitative coach and athlete interviews**: Systematic interviews with elite coaches and multi-discipline athletes on perceived optimal periodization, decision-making processes, and constraints (time, injury risk tolerance) would contextualize quantitative findings and identify practical barriers to evidence-based periodization."
         ],
         "process_cost_reflection": "This analysis synthesized 73 papers into a structured gap analysis. Cost-benefit assessment: (1) **Feasibility**: Paper summaries (title, abstract, key data points) provided sufficient information to identify gaps, though full-text access would have increased precision (e.g., methodological rigor assessment, effect size extraction for quantitative synthesis). (2) **Comprehensiveness**: 73 papers is a reasonable sample for 'multi-discipline sports' subset of sports analytics, but likely represents only 30–40% of relevant literature (many papers not indexed in sports analytics databases, especially non-English or applied coaching literature). (3) **Efficiency**: The corpus is concentrated in 2024–2025 (31% of papers), with sparse earlier work, suggesting either recent surge in research or database indexing bias. Cost-benefit: Processing 73 papers at 10–15 minutes per paper for synthesis was ~15 hours of analysis time. Marginal value of 100+ papers would have declined (diminishing returns as themes repeat). Output (9 gaps, 5 research priorities) is actionable for a research team. Recommendation: This database size (73 papers) is adequate for gap analysis of a specific sub-field (multi-discipline sports), but coverage gaps (noted above) mean missing ~40% of relevant work. To improve: (a) expand search to non-English databases; (b) partner with national federations for proprietary coaching data; (c) add qualitative literature (coach interviews, case studies from technical manuals). Current output confidence is **medium** due to limited RCT evidence and small sample dominance; confidence would increase substantially with access to federation data and full-text assessment."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Coach expertise and periodization frameworks",
-            "openalex_count": 2,
-            "our_db_count": 13,
-            "coverage_ratio": 6.5,
-            "assessment": "good"
-          },
-          {
-            "label": "Genetic predictors multi-discipline sports aptitude",
-            "openalex_count": 18,
-            "our_db_count": 4,
-            "coverage_ratio": 0.2222,
-            "assessment": "moderate"
-          },
-          {
-            "label": "Wearable technology ML periodization optimization",
-            "openalex_count": 1,
-            "our_db_count": 247,
-            "coverage_ratio": 247.0,
-            "assessment": "good"
-          },
-          {
-            "label": "Scandinavian biathlon periodization non-English",
-            "openalex_count": 41,
-            "our_db_count": 0,
-            "coverage_ratio": 0.0,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Ironman ultra-distance training optimization",
-            "openalex_count": 242,
-            "our_db_count": 5,
-            "coverage_ratio": 0.0207,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Periodized nutrition recovery integration training",
-            "openalex_count": 4849,
-            "our_db_count": 2,
-            "coverage_ratio": 0.0004,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Injury epidemiology multi-discipline overuse causation",
-            "openalex_count": 0,
-            "our_db_count": 3,
-            "coverage_ratio": null,
-            "assessment": "no_external_evidence"
-          }
-        ],
-        "summary": {
-          "good": 2,
-          "moderate": 1,
-          "sparse": 1,
-          "minimal": 2
-        }
       }
     },
     {
@@ -9349,58 +8794,6 @@
           "Domain expert review: sports scientists/coaches review findings for realism and practical importance, not just statistical significance."
         ],
         "process_cost_reflection": "Given N=146 papers, this analysis required synthesizing across high-dimensional data (10+ methodologies, 30+ tactical concepts, multiple leagues/populations, temporal span 2013-2026). The brief summaries (1-3 sentences per paper) were informationally sufficient to extract methodology, sample, and population; however, full-text access would have dramatically improved confidence in assessing: (1) actual effect sizes and CIs (only summary statistics available), (2) limitations and author caveats (summaries omit nuance), (3) novel findings not captured in title/abstract. Cost-benefit: at ~5-10 minutes per paper to read summaries, taxonomy, and metadata, total effort ~15-20 hours. This is economical for gap identification but insufficient for a systematic review (which would require full-text, quality appraisal, risk-of-bias assessment, adding 10-20× effort). The analysis confidently identified major structural gaps (causality, replication, standardization, population coverage) but missed finer-grained debates within narrow topics due to fragmentation. To improve cost-effectiveness: (1) full-text abstracts (200-500 words) instead of 1-3 sentences, (2) standardized extraction forms (methods, N, effect size, outcome) for all papers would enable automated meta-analysis, (3) flagging of preprints vs. peer-reviewed would reduce publication bias. Overall: brief summary analysis is cost-effective for broad landscape/gap identification but low-confidence for fine-grained evidence synthesis."
-      },
-      "coverage_calibration": {
-        "calibrations": [
-          {
-            "label": "Biomechanics physiology tactical execution",
-            "openalex_count": 37,
-            "our_db_count": 38,
-            "coverage_ratio": 1.027,
-            "assessment": "good"
-          },
-          {
-            "label": "Qualitative coaching decision-making research",
-            "openalex_count": 144,
-            "our_db_count": 11,
-            "coverage_ratio": 0.0764,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Comparative football systems talent development",
-            "openalex_count": 1126,
-            "our_db_count": 43,
-            "coverage_ratio": 0.0382,
-            "assessment": "sparse"
-          },
-          {
-            "label": "Grassroots semi-professional lower division",
-            "openalex_count": 28,
-            "our_db_count": 16,
-            "coverage_ratio": 0.5714,
-            "assessment": "good"
-          },
-          {
-            "label": "Economic organizational budget constraints tactics",
-            "openalex_count": 1016,
-            "our_db_count": 4,
-            "coverage_ratio": 0.0039,
-            "assessment": "minimal"
-          },
-          {
-            "label": "Rule changes law-of-the-game evolution",
-            "openalex_count": 2106,
-            "our_db_count": 6,
-            "coverage_ratio": 0.0028,
-            "assessment": "minimal"
-          }
-        ],
-        "summary": {
-          "good": 2,
-          "moderate": 0,
-          "sparse": 2,
-          "minimal": 2
-        }
       }
     }
   ]

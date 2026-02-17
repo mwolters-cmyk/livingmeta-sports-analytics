@@ -165,21 +165,6 @@ export interface GapAnalysis {
     what_would_improve_this: string[];
     process_cost_reflection: string;
   };
-  coverage_calibration?: {
-    calibrations: {
-      label: string;
-      openalex_count: number | null;
-      our_db_count: number | null;
-      coverage_ratio: number | null;
-      assessment: "good" | "moderate" | "sparse" | "minimal" | "no_external_evidence" | "unknown";
-    }[];
-    summary: {
-      good: number;
-      moderate: number;
-      sparse: number;
-      minimal: number;
-    };
-  };
 }
 
 export interface GapAnalysesData {
@@ -230,6 +215,14 @@ export const SPORT_LABELS: Record<string, string> = {
   gymnastics: "Gymnastics",
   diving: "Diving",
   rowing: "Rowing/Canoeing",
+  darts: "Darts",
+  snooker: "Snooker/Billiards",
+  badminton: "Badminton",
+  table_tennis: "Table Tennis",
+  water_polo: "Water Polo",
+  aussie_rules: "Australian Rules Football",
+  futsal: "Futsal",
+  floorball: "Floorball",
   other: "Other Sport",
   multi_sport: "Multi-Sport",
 };
