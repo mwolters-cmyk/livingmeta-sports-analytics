@@ -1,15 +1,16 @@
 {
-  "generated_at": "2026-02-17T16:36:42.190043",
+  "generated_at": "2026-02-17T16:52:36.532484",
   "total_resources": 733,
   "with_papers": 601,
   "with_scraper": 60,
   "with_data": 60,
-  "needs_scraper": 43,
-  "with_access_method": 29,
+  "needs_scraper": 39,
+  "with_access_method": 52,
   "access_methods": {
     "kaggle_api": 10,
-    "direct_download": 3,
-    "git_clone": 16
+    "direct_download": 5,
+    "git_clone": 34,
+    "api": 3
   },
   "categories": {
     "dataset": 451,
@@ -1842,9 +1843,9 @@
       "paper_count": 3,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "direct_download",
       "url_status": null,
-      "needs_scraper": true
+      "needs_scraper": false
     },
     {
       "id": "forcedecks-max-force-plate-system",
@@ -3460,7 +3461,7 @@
         "file": "scrapers/scrape_fbref_womens_football.py",
         "status": "working"
       },
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false,
       "alt_urls": [
@@ -3753,9 +3754,9 @@
       "paper_count": 2,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "api",
       "url_status": null,
-      "needs_scraper": true
+      "needs_scraper": false
     },
     {
       "id": "vicon-nexus",
@@ -4298,7 +4299,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -4610,7 +4611,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -6734,7 +6735,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -7410,7 +7411,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -8092,7 +8093,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -10056,7 +10057,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "direct_download",
       "url_status": null,
       "needs_scraper": false
     },
@@ -11258,7 +11259,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -11521,7 +11522,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -12877,7 +12878,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -14315,7 +14316,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -14990,7 +14991,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -15224,7 +15225,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -15796,7 +15797,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -16368,7 +16369,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -17207,7 +17208,7 @@
       "paper_count": 1,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -18047,7 +18048,7 @@
         "file": "scrapers/scrape_ironman.py",
         "status": "blocked"
       },
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -18107,7 +18108,7 @@
         "file": "scrapers/scrape_wta_tennis.py",
         "status": "working"
       },
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },
@@ -18292,9 +18293,9 @@
       "paper_count": 0,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "api",
       "url_status": null,
-      "needs_scraper": true
+      "needs_scraper": false
     },
     {
       "id": "ncaa-lacrosse-data-octonion-lacrosse",
@@ -18408,9 +18409,9 @@
       "paper_count": 0,
       "on_platform": null,
       "scraper": null,
-      "access_method": null,
+      "access_method": "api",
       "url_status": null,
-      "needs_scraper": true
+      "needs_scraper": false
     },
     {
       "id": "octonion-sports-analytics-collection",
@@ -19907,7 +19908,7 @@
         "file": "scrapers/scrape_transfermarkt.py",
         "status": "working"
       },
-      "access_method": null,
+      "access_method": "git_clone",
       "url_status": null,
       "needs_scraper": false
     },

@@ -555,6 +555,118 @@ try {
 }
 
 // =============================================================================
+// DATA-SOURCES.JSON — Machine-readable data source catalog for AI agents
+// Reads unified-resources.json and creates a compact public API version
+// =============================================================================
+
+try {
+  const unifiedPath = path.join(OUTPUT_DIR, "unified-resources.json");
+  const unified = JSON.parse(fs.readFileSync(unifiedPath, "utf-8"));
+
+  // Transform into compact, AI-agent-friendly format
+  const dataSources = unified.resources.map((r) => {
+    const entry = {
+      id: r.id,
+      name: r.name,
+      url: r.url,
+      category: r.category,
+      access: r.access,
+      sports: r.sports,
+      paper_count: r.paper_count || 0,
+    };
+
+    // Access method: how an AI agent can get this data
+    if (r.scraper) {
+      entry.access_via = {
+        method: "scraper",
+        file: r.scraper.file,
+        status: r.scraper.status,
+        instructions: `Clone the repo and run: python ${r.scraper.file}`,
+      };
+    } else if (r.access_method === "git_clone") {
+      entry.access_via = {
+        method: "git_clone",
+        instructions: `git clone ${r.url}`,
+      };
+    } else if (r.access_method === "kaggle_api") {
+      // Extract dataset slug from Kaggle URL
+      const kaggleMatch = r.url.match(/kaggle\.com\/(datasets|competitions)\/([\w-]+\/[\w-]+)/);
+      entry.access_via = {
+        method: "kaggle_api",
+        instructions: kaggleMatch
+          ? `kaggle datasets download -d ${kaggleMatch[2]}`
+          : `Download from ${r.url} using Kaggle CLI`,
+      };
+    } else if (r.access_method === "direct_download") {
+      entry.access_via = {
+        method: "direct_download",
+        instructions: `Download directly from ${r.url}`,
+      };
+    } else if (r.access_method === "api") {
+      entry.access_via = {
+        method: "api",
+        instructions: `Public REST API at ${r.url} — fetch JSON endpoints directly`,
+      };
+    } else if (r.on_platform) {
+      entry.access_via = {
+        method: "on_platform",
+        record_count: r.on_platform.record_count || null,
+        instructions: "Data available on the platform. Contact maintainers for access.",
+      };
+    } else {
+      entry.access_via = null;
+    }
+
+    // Include description for datasets only (saves space)
+    if (r.category === "dataset" && r.description) {
+      entry.description = r.description;
+    }
+
+    return entry;
+  });
+
+  // Summary stats for the header
+  const withAccess = dataSources.filter((d) => d.access_via !== null);
+  const accessBreakdown = {};
+  for (const d of withAccess) {
+    const method = d.access_via.method;
+    accessBreakdown[method] = (accessBreakdown[method] || 0) + 1;
+  }
+
+  const dataSourcesOutput = {
+    description:
+      "Machine-readable catalog of all data sources, tools, and libraries in the Living Sports Analytics platform. Each entry includes access instructions for AI agents where available.",
+    exported_at: new Date().toISOString(),
+    total: dataSources.length,
+    with_programmatic_access: withAccess.length,
+    without_access: dataSources.length - withAccess.length,
+    access_breakdown: accessBreakdown,
+    schema: {
+      id: "Unique identifier (slug)",
+      name: "Human-readable name",
+      url: "Primary URL",
+      category: "dataset | library | api | tool | instrument | code | scraper",
+      access: "free | freemium | paid",
+      sports: "Array of sport tags from classification taxonomy",
+      paper_count: "Number of research papers citing this resource",
+      description: "Description (datasets only)",
+      access_via: "How to access this data programmatically (null = manual only)",
+    },
+    resources: dataSources,
+  };
+
+  fs.writeFileSync(
+    path.join(PUBLIC_DIR, "data-sources.json"),
+    JSON.stringify(dataSourcesOutput, null, 2)
+  );
+  console.log(
+    `Exported data sources API: ${dataSources.length} resources, ${withAccess.length} with programmatic access (${JSON.stringify(accessBreakdown)})`
+  );
+} catch (e) {
+  console.log(`data-sources.json export failed: ${e.message}`);
+}
+
+// =============================================================================
 // PIPELINE.JSON — Machine-readable pipeline config for AI agents
 // =============================================================================
 
@@ -708,6 +820,7 @@ try {
       classifications: "/api/classifications.json",
       paper_pdfs: "/api/paper-pdfs.json",
       pipeline: "/api/pipeline.json",
+      data_sources: "/api/data-sources.json",
       feed_xml: "/feed.xml",
     },
   };
