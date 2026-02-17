@@ -5,7 +5,7 @@
     <link>https://living-sports-analytics.vercel.app</link>
     <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2026 18:35:15 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 23:48:11 GMT</lastBuildDate>
     <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://living-sports-analytics.vercel.app/icon.png</url>
@@ -13,508 +13,553 @@
       <link>https://living-sports-analytics.vercel.app</link>
     </image>
     <item>
-      <title>Ilia Malinin and the Curse of the American Olympic Coronation</title>
-      <link>https://neilpaine.substack.com/p/ilia-malinin-and-the-curse-of-the</link>
-      <description>Anointed as America&apos;s next Olympic icon, Malinin instead joined the long history of U.S. stars undone by the weight of expectation.</description>
-      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">blog:523f815174b8cd2d</guid>
-      <source url="https://living-sports-analytics.vercel.app">Neil Paine&apos;s Substack</source>
-      <category>multi_sport</category>
-      <category>blog_post</category>
-    </item>
-    <item>
-      <title>Instrumented mouthguards in NCAA American football: Validity and head acceleration event incidence</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251378306?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. A growing body of evidence suggests that repetitive head acceleration events (HAEs), even in the absence of diagnosed concussion, could have implications for long-term neurological function. This study aims to determine the on-field</description>
-      <pubDate>Fri, 03 Oct 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0059bfe3d45f39f1</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>040 Injuries are negatively associated with team performance in professional cricket</title>
+      <link>https://doi.org/10.1136/bjsports-2021-ioc.38</link>
+      <description>A retrospective analysis of 18 First-Class County Cricket teams over 9 seasons found a moderate negative correlation between injury burden and team performance (r = -0.36), with reductions in match injury burden of 74 days per 1,000 days of play associated with +13 County Championship points.</description>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3004160027</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>cricket</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Competition-day priming practices of South-East Asian track-and–field coaches: Results from a cross sectional survey</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251415287?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This survey study investigated the priming strategies used by track-and-field coaches in South-East Asia. The anonymous online survey fielded questions across themes of: 1) demographic information, 2) prevalence and nature of primin</description>
-      <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:019c974584f8550f</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>The associations between adolescents’ sports club participation and dietary habits</title>
+      <link>https://doi.org/10.1002/tsm2.249</link>
+      <description>A cross-sectional study of 1,917 adolescents aged 14-16 found that sports club participants reported healthier dietary habits (breakfast, vegetables, milk consumption) than non-participants, though both groups had inadequate fruit and vegetable intake.</description>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3152616212</guid>
+      <source url="https://living-sports-analytics.vercel.app">Translational Sports Medicine</source>
       <category>multi_sport</category>
+      <category>nutrition_recovery</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Using transformer-based models for Vietnamese language detection</title>
-      <link>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342898</link>
-      <description>by Son Tran, Phuoc Tran This paper introduces a solution to the problem of detecting whether a sequence of text is Vietnamese based on its orthography and contextual features. For those unfamiliar with the language, it is known that understanding the meaning of certain texts can be challenging, sinc</description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:029ed96fc7c25baa</guid>
-      <source url="https://living-sports-analytics.vercel.app">PLoS ONE</source>
+      <title>Biomechanical Symmetry during Drop Jump Landing and Takeoff in Adolescent Athletes Following Recent Anterior Cruciate Ligament Reconstruction</title>
+      <link>https://doi.org/10.3390/sym13040639</link>
+      <description>A 3D biomechanical analysis of 33 adolescent athletes (16 female) post-ACL reconstruction revealed persistent lower extremity asymmetries in landing and takeoff phases during vertical drop jumps, indicating the need for rehabilitation addressing both phases.</description>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3153949823</guid>
+      <source url="https://living-sports-analytics.vercel.app">Symmetry</source>
       <category>multi_sport</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Postural stability in trail 
-and cross-country runners: 
-Time-to-boundary metrics and training insights</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251370356?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 437-443, February 2026. Trail and cross-country runners frequently train on uneven and unpredictable terrain, elevating their risk of ankle injury. Time to Boundary (TtB) is a measure of postural stability that has emerged </description>
-      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:042d71747d3c3236</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Effects of an Injury Prevention Program on Anterior Cruciate Ligament Injury Risk Factors in Adolescent Females at Different Stages of Maturation</title>
+      <link>https://doi.org/10.52082/jssm.2021.365</link>
+      <description>A randomized controlled trial of 178 female basketball players across three maturation stages found that a 6-month injury prevention program limited high-risk movement patterns in early puberty and improved knee mechanics in post-pubertal athletes.</description>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3154976275</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Sports Science and Medicine</source>
+      <category>basketball</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>The football throw-in: A scoping review</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251407859?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Despite the publication of articles about set pieces in football, research has not provided much focus on throw-in actions. The aim of this review is to offer an overview of the current literature concerning football throw-ins and i</description>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0608deedd8d36322</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Prevalence and Burden of Physical Problems in Female College Basketball Athletes: A 135-Day Prospective Cohort Study</title>
+      <link>https://doi.org/10.2147/oajsm.s300493</link>
+      <description>A 135-day prospective cohort study of female college basketball athletes documented the prevalence and burden of common injuries including ankle sprains, ACL injuries, knee pain, and low-back pain.</description>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3157148381</guid>
+      <source url="https://living-sports-analytics.vercel.app">Open Access Journal of Sports Medicine</source>
+      <category>basketball</category>
+      <category>epidemiology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>International female rugby union players’ perceptions of how the menstrual cycle affects players on and off the field</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251378464?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 275-283, February 2026. There is limited research on female rugby players, particularly concerning how the menstrual cycle affects performance. This study explored international female rugby players perceptions and experien</description>
-      <pubDate>Fri, 19 Sep 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:070dc4762ad0ef6f</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Frequency and Characteristics of Injuries and Rehabilitation Procedures in Rugby Players in Poland and France</title>
+      <link>https://doi.org/10.3390/ijerph18094835</link>
+      <description>A survey of 60 professional rugby players from Poland and France found higher injury incidence in Poland but different injury types and rehabilitation approaches between countries, with sprain as the most common injury.</description>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3158201357</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Environmental Research and Public Health</source>
+      <category>rugby</category>
+      <category>epidemiology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>NBA all-time scoring champion vs. 10-time season scoring champion: Which record is more unlikely?</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251408011?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Given its popularity and large market value, professional basketball has attracted increased academic attention over the past few decades. We employ the Extreme Value Theory (EVT) to compare two almost unreachable records in NBA: al</description>
-      <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0730a9df155b3978</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>A 2D video‐analysis scoring system of 90° change of direction technique identifies football players with high knee abduction moment</title>
+      <link>https://doi.org/10.1007/s00167-021-06571-2</link>
+      <description>A study of 34 competitive soccer players (18 male, 16 female) developed a 2D video-analysis scoring system for 90° change of direction technique that reliably identified players with elevated knee abduction moment, an ACL injury risk factor.</description>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3159691252</guid>
+      <source url="https://living-sports-analytics.vercel.app">Knee Surgery Sports Traumatology Arthroscopy</source>
+      <category>football</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Predictors of community pharmacists’ readiness to implement deprescribing of inappropriate medications for older adults in Qatar</title>
-      <link>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342795</link>
-      <description>by Marwa Elshazly, Sondus Jawad, Ayesha Ahmed, Hager ElGeed, Kazeem Babatunde Yusuff There is a paucity of studies focused on the predictors of community pharmacists’ readiness to deprescribe inappropriate medications for older adults especially in developing settings. The study aimed to use the sit</description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:08526adbd635bfcc</guid>
-      <source url="https://living-sports-analytics.vercel.app">PLoS ONE</source>
-      <category>multi_sport</category>
+      <title>Profil Kondisi Fisik dan Motif Berprestasi Pada Siswa Ekstrakurikuler Sepakbola</title>
+      <link>https://doi.org/10.20884/1.paju.2021.2.2.3798</link>
+      <description>A descriptive qualitative study of 25 high school soccer players found that physical conditioning was at a medium level while achievement motivation was high (80% rated as good), indicating the need for improved conditioning training.</description>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3160374955</guid>
+      <source url="https://living-sports-analytics.vercel.app">Physical Activity Journal</source>
+      <category>football</category>
+      <category>performance_analysis</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Criteria for the selection and development of academy soccer goalkeepers: Experts opinion</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251370186?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. ObjectiveThe main aim of this study was to provide a comprehensive view of effective strategies, offering the soccer community informed tools that will optimize the process of developing the next generation of goalkeepers through th</description>
-      <pubDate>Wed, 03 Sep 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:08682771b9e814bb</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Assessment of Personality Traits Influencing the Performance of Men in Team Sports in Terms of the Big Five</title>
+      <link>https://doi.org/10.3389/fpsyg.2021.679724</link>
+      <description>A study of 300 Polish team sport athletes using the NEO Five-Factor Inventory found that champions exhibited lower neuroticism, higher extraversion, and greater openness than non-champions, with personality trait distributions varying by sport.</description>
+      <pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3164883064</guid>
+      <source url="https://living-sports-analytics.vercel.app">Frontiers in Psychology</source>
       <category>multi_sport</category>
+      <category>psychology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Exploring the current landscape and aspirations of Australian strength and conditioning coaches</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251377197?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Strength and conditioning (S&amp;amp;C) coaches are invaluable in exercise and sport, with numbers rising globally. This exploratory study sought to better understand who these coaches are, their career aspirations, and to identify pote</description>
-      <pubDate>Fri, 03 Oct 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:08d7e332e3baf5ca</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>The Peculiarities of Heart Rate Variability in Student Athletes</title>
+      <link>https://doi.org/10.21103/article11(2)_oa9</link>
+      <description>Athletics students showed significantly better heart rate variability and cardiac adaptive capacity compared to floorball players, indicating sport-specific physiological adaptations.</description>
+      <pubDate>Fri, 04 Jun 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3166681047</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Biomedicine</source>
       <category>multi_sport</category>
+      <category>physiology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Comparison of the load-velocity relationship between bilateral and unilateral variants of the prone bench pull and leg press exercises</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251391246?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study aimed to compare the load-velocity profiles (LVP) derived from bilateral and unilateral variations of the prone bench pull (PBP) and leg press (LP) exercises, considering the self-reported preferred (SP) and non-preferred</description>
-      <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0aac2eff21c48ee2</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>“I am going out!” – lifestyle sports and physical activity in adolescents</title>
+      <link>https://doi.org/10.1186/s12889-021-11066-3</link>
+      <description>Participation in lifestyle sports (parkour, skateboarding) was significantly associated with higher moderate-to-vigorous physical activity levels in adolescents aged 10-15 years.</description>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3166703229</guid>
+      <source url="https://living-sports-analytics.vercel.app">BMC Public Health</source>
+      <category>other</category>
+      <category>player_development</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Club pressure, burnout and perceived motivational climate created by grassroots soccer coaches</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251393813?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study examines whether the pressure perceived by coaches in their clubs as well as their burnout experiences are antecedents of the perceived motivational climate (empowering and disempowering) that they create in their teams. </description>
-      <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0c1e3af2bba78ac8</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Noncontact Knee Ligament Injury Prevention Screening in Netball: A Clinical Commentary with Clinical Practice Suggestions for Community-Level Players</title>
+      <link>https://doi.org/10.26603/001c.23553</link>
+      <description>A clinical commentary on netball injury prevention reviewed theoretical frameworks, evidence types, and screening procedures to develop evidence-informed noncontact knee ligament injury prevention strategies for community-level female players.</description>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3171201093</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physical Therapy</source>
+      <category>volleyball</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Effects of subjective effort on ball speed and spin in table tennis forehand 
-topspin strokes</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251380169?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated how modulating subjective effort influences ball speed and spin rate in table tennis forehand topspin strokes, and examined discrepancies between perceived and actual output. Ten skilled male collegiate playe</description>
-      <pubDate>Fri, 03 Oct 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0c70a6382f184d76</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Poor Motor Coordination Elicits Altered Lower Limb Biomechanics in Young Football (Soccer) Players: Implications for Injury Prevention through Wearable Sensors</title>
+      <link>https://doi.org/10.3390/s21134371</link>
+      <description>Young football players with poor motor coordination showed significantly altered hip and knee biomechanics (40% lower hip flexion, increased valgus) and limb asymmetries, indicating elevated ACL injury risk.</description>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3174737737</guid>
+      <source url="https://living-sports-analytics.vercel.app">Sensors</source>
+      <category>football</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Are small-sided games an efficient re-warm-up strategy in women football? A randomised crossover study</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251414956?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the acute effects of three re-warm-up conditions (small-sided games (SSG), jogging, and inactivity) on physical performance in youth female footballers. Sixteen under-15 players (14.06 ± 0.66 years) participa</description>
-      <pubDate>Wed, 28 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0d227f7df81ff3bf</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Effects of a psychological and physiotherapeutic intervention on the occurrence of injuries (Efectos de una intervención psicológica y fisioterapeútica sobre la ocurrencia de lesiones)</title>
+      <link>https://doi.org/10.12800/ccd.v16i48.1715</link>
+      <description>Combined psychological intervention (motivation/anxiety) plus physiotherapy significantly reduced injury occurrence in male soccer players compared to physiotherapy alone or control at 6-month follow-up.</description>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3176662015</guid>
+      <source url="https://living-sports-analytics.vercel.app">Cultura Ciencia y Deporte</source>
+      <category>football</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Relationship between movement time and ground reaction force in the intermediate phase of baseball hitting to base running</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251379183?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Offensive play in baseball consists of batting and base running; however, the transitional phase that links these two actions, termed Situation Integration, has not been adequately studied. Furthermore, the importance of a rapid shi</description>
-      <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0e449497c9aa8465</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Differences in strength and landing biomechanics between female jumpers and swimmers</title>
+      <link>https://doi.org/10.3233/ies-210149</link>
+      <description>Female long jumpers and high jumpers with 5 years of plyometric training showed greater leg strength but no improvement in landing biomechanics compared to swimmers, suggesting plyometrics alone may not reduce ACL injury risk.</description>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3183022356</guid>
+      <source url="https://living-sports-analytics.vercel.app">Isokinetics and Exercise Science</source>
+      <category>athletics</category>
+      <category>biomechanics</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>The efficacy of complex training for enhancing change of direction ability: A systematic review and meta-analysis</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251386936?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 592-610, February 2026. While Complex Training (CT) is widely used to improve Change of Direction (COD) ability, its comparative efficacy against its constituent components—resistance training (RT) and plyometric training (</description>
-      <pubDate>Mon, 27 Oct 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0f380be0b14acbcb</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Maturity alters drop vertical jump landing force‐time profiles but not performance outcomes in adolescent females</title>
+      <link>https://doi.org/10.1111/sms.14025</link>
+      <description>Maturity increased absolute landing and take-off forces in adolescent female athletes but did not improve relative force or spring-like behavior, with 65-80% displaying poor stretch-shortening cycle function across all maturational stages.</description>
+      <pubDate>Sun, 18 Jul 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3183567693</guid>
+      <source url="https://living-sports-analytics.vercel.app">Scandinavian Journal of Medicine and Science in Sports</source>
+      <category>athletics</category>
+      <category>biomechanics</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Does experience mitigate the deleterious effect of mental fatigue on tactical performance? A study in youth soccer academies</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251365949?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 154-169, February 2026. The present study compared the effects of mental fatigue on the tactical performance of soccer players in the under-13, under-15, and under-17 categories. The sample of the present study comprised 70</description>
-      <pubDate>Thu, 14 Aug 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:0f98ff0f8454dffa</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Analisis Indeks Massa Tubuh dan Kondisi Fisik Atlet Floorball Kota Surabaya</title>
+      <link>https://doi.org/10.26740/jossae.v6n2.p125-133</link>
+      <description>Descriptive analysis of 20 male floorball athletes in Surabaya found deficient agility and speed (65% and 55% below standard), adequate endurance and power (55%), indicating need for targeted training program improvements.</description>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3184336796</guid>
+      <source url="https://living-sports-analytics.vercel.app">JOSSAE (Journal of Sport Science and Education)</source>
+      <category>floorball</category>
+      <category>physiology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>The relationship between coaches’ interpersonal behaviors, basic psychological needs, behavioral regulation, and intentions towards sport persistence</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251378385?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 30-38, February 2026. This study investigates the relationships between coaches’ need-supportive and need-thwarting behaviors, satisfaction of basic psychological needs, motivation, intentions to continue, and athletes spor</description>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:1011d2f3f30a7ea5</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Postural orientation, what to expect in youth athletes? A cohort study on data from the Malmö Youth Sport Study</title>
+      <link>https://doi.org/10.1186/s13102-021-00307-y</link>
+      <description>Postural orientation errors improved from early to middle adolescence in youth athletes across team, individual, and aesthetic sports, with female athletes showing fewer errors than males at mid-adolescence.</description>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3184350745</guid>
+      <source url="https://living-sports-analytics.vercel.app">BMC Sports Science Medicine and Rehabilitation</source>
       <category>multi_sport</category>
+      <category>performance_analysis</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Erratum to “Playing style identification in team sports: A systematic review from statistical dimensionality reduction to unsupervised machine learning”</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251386160?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print.</description>
-      <pubDate>Wed, 08 Oct 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:10c3e8962cc0f2c2</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Randomised controlled trial comparing two group-based exercise programmes (team sport vs circuit training) on men’s health: study protocol</title>
+      <link>https://doi.org/10.1136/bmjsem-2021-001140</link>
+      <description>Randomized controlled trial protocol comparing team sport and circuit training in 128 insufficiently active middle-aged men, measuring physical activity, quality of life, motivation, sleep, and metabolic health over 12 weeks.</description>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3187730454</guid>
+      <source url="https://living-sports-analytics.vercel.app">BMJ Open Sport &amp; Exercise Medicine</source>
       <category>multi_sport</category>
+      <category>performance_analysis</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Online education and its relation to hearing status among higher-secondary students in Bangladesh: A cross-sectional survey</title>
-      <link>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342668</link>
-      <description>by Syeda Tasnim Tabassum Hridi, Mohammad Azmain Iktidar, Kazi Sudipta Kabir, Punam Ghosh, Arrafi Tamjid, Abdullah Al Zaber, Rifat Tasnim Babu, Maliha Mehzabeen, Aysharja Das Gupta, Sreshtha Chowdhury, Simanta Roy Background Online education gained its popularity in the education system during the CO</description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:114f975bc5024115</guid>
-      <source url="https://living-sports-analytics.vercel.app">PLoS ONE</source>
+      <title>Establishing Normative Values for Inter-Limb Kinetic Symmetry During Landing in Uninjured Adolescent Athletes</title>
+      <link>https://doi.org/10.26603/001c.25366</link>
+      <description>Normative values for inter-limb kinetic symmetry during landing were established in 136 uninjured adolescent athletes, revealing that 55% of ACL-reconstructed athletes exhibited atypically high asymmetry.</description>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3190439105</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physical Therapy</source>
       <category>multi_sport</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Longitudinal changes in strength, power, speed, and body mass in American football players: Diminishing returns as training age increases</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251367154?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. The aims of this study were to: 1) detail the strength, power, speed, and body mass (i.e. physical qualities) of National Collegiate Athletic Association (NCAA) Division 1 American football players by playing position across a four-</description>
-      <pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:12f91aad46720896</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Commercialization processes within Swedish child and youth sport – a Deleuzioguttarian perspective</title>
+      <link>https://doi.org/10.1080/17430437.2021.1944114</link>
+      <description>High compliance with the Knee Control injury prevention program reduced injury prevalence by 35-60% in male youth floorball players but showed no effect in female players.</description>
+      <pubDate>Fri, 02 Jul 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3194239045</guid>
+      <source url="https://living-sports-analytics.vercel.app">Sport in Society</source>
+      <category>floorball</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Team strength and penalty shootouts in soccer: Market value predicts the winner</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541261416771?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the relationship between team strength and winning the penalty shootout in men&apos;s soccer. It used publicly available market values to estimate team strength and the outcomes of 409 shootouts from club and nati</description>
-      <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:17dc12c24770070a</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Volleyball Fundamental Movement Learning Model in Primary School</title>
+      <link>https://doi.org/10.17309/tmfv.2021.3.02</link>
+      <description>Game-centered volleyball learning model significantly improves fundamental movement outcomes in elementary school students compared to traditional instruction, with large effect sizes on skill acquisition.</description>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3204267194</guid>
+      <source url="https://living-sports-analytics.vercel.app">Physical Education Theory and Methodology</source>
+      <category>volleyball</category>
+      <category>coaching</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Formula for success: Using an accreditation to excel data literacy in early-career sport performance analysts</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251368751?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Whilst frameworks for the applied practice of Sport Performance Analysis (SPA) are established, a framework for the development of competencies in early-career analysts remains unexplored. Student perceptions on integrating the Micr</description>
-      <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:17efcd4f5dfdf992</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Is walking netball an effective, acceptable and feasible method to increase physical activity and improve health in middle- to older age women?: A RE-AIM evaluation</title>
+      <link>https://doi.org/10.1186/s12966-021-01204-w</link>
+      <description>Walking Netball program successfully increased physical activity and improved physical function, mental health, and quality of life in middle-to-older age women, with 87.7% of groups sustaining participation beyond initial delivery through peer mentorship and tailored adaptation.</description>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3206251692</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Behavioral Nutrition and Physical Activity</source>
+      <category>volleyball</category>
+      <category>fan_engagement</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Exploring putting launch monitor data using the fsQCA method: A straight twelve-foot putt</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251388814?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. As technology advances, golf technologies, such as Quintic, are increasingly used to help golfers enhance their skills and build strength. However, despite the growing use of Quintic, studies related to Quintic in golf are still lim</description>
-      <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:1ed045e9ffbe26b3</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>The Effects of Elastic Band Exercises with PNF on Shooting Speed and Accuracy in Ball Hockey Players during the COVID-19 Pandemic</title>
+      <link>https://doi.org/10.3390/ijerph182111391</link>
+      <description>Elastic band exercises with PNF maintained shooting speed and minimized accuracy deterioration in ball hockey players over 8 weeks during COVID-19 lockdown, compared to a control group that showed significant declines.</description>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3208581750</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Environmental Research and Public Health</source>
+      <category>floorball</category>
+      <category>performance_analysis</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>What are you thinking when you coach? An exploration of tennis coaches&apos; cognitions using stimulated recall</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251391779?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. To date, much sports coaching research has tended to focus on components such as decision-making, knowledge structures, and mental models. However, limited attention has been given to the “types of thinking” coaches engage in when c</description>
-      <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:1fe8e7f4abf217c2</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Social Support, Self-Regulation, and Psychological Skill Use in E-Athletes</title>
+      <link>https://doi.org/10.3389/fpsyg.2021.722030</link>
+      <description>An international survey of 1,444 esports athletes found they reported significantly less social support, self-regulation, and psychological skill use than traditional athletes, and higher scores on these measures were associated with better in-game rank.</description>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3209818008</guid>
+      <source url="https://living-sports-analytics.vercel.app">Frontiers in Psychology</source>
+      <category>esports</category>
+      <category>psychology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>“It is like an endless guilt trip”: Greco-Roman wrestlers’ willingness to train and compete with pain and/or injuries</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251350672?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 428-436, February 2026. The aim of this study was to examine factors that impact wrestlers’ decision-making related to their willingness to train and compete with pain and/or injuries. Five Greco-Roman male wrestlers from N</description>
-      <pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:20aa4029eff5ca17</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>041 Risk factors for dominant shoulder injury in elite female Australian cricket players: a prospective study</title>
+      <link>https://doi.org/10.1136/bjsports-2021-ioc.39</link>
+      <description>A prospective study of 115 elite female Australian cricketers identified shoulder internal-to-external rotation strength ratio as a significant predictor of dominant shoulder injury, with a 79% increased risk for every 0.1 ratio increase.</description>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3214940931</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>cricket</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Comparing plyometric training methods on speed, change of direction, and jump performance in young soccer players: A controlled study</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251398657?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Background:The methodological approach to plyometric training can influence the magnitude of adaptations by accumulating acute responses that result in long-term adaptations. However, there is a lack of studies comparing cluster met</description>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:22aa544fb7433612</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>042 Change of direction biomechanics and the risk for non-contact knee injuries in youth basketball and floorball players</title>
+      <link>https://doi.org/10.1136/bjsports-2021-ioc.40</link>
+      <description>A prospective cohort study of 258 youth basketball and floorball players found female players had 6.2 times higher non-contact knee injury rates than males, with larger peak knee valgus angles, though biomechanical variables were not significantly associated with injury risk.</description>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3217656479</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
       <category>multi_sport</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Change-points in cricket run-scoring with permuted trends: Applications through functional alignment and outlier detection in excitement quantification and bolstering advocacy</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251372708?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Supervised statistical techniques - such as predicting runs or wickets or outcomes of specific deliveries, or optimal field placements, players’ worth and contribution - have been deployed to explore a cricket match with a regularit</description>
-      <pubDate>Wed, 03 Sep 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:23cbaff5330459aa</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Illness prevalence and symptoms in youth floorball players: a one-season prospective cohort study involving 471 players</title>
+      <link>https://doi.org/10.1136/bmjopen-2021-051902</link>
+      <description>A prospective cohort study of 471 youth floorball players over 26 weeks found 61% reported at least one illness week with 12% average weekly prevalence, higher in females, peaking in winter months (15-18%), with fever, sore throat, and cough as most common symptoms.</description>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4200172054</guid>
+      <source url="https://living-sports-analytics.vercel.app">BMJ Open</source>
+      <category>floorball</category>
+      <category>epidemiology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>The role of sport norms and organizational pressure on coaches’ use of interpersonal violence: The mediating role of perceived instrumental effects 
-of violence</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251395228?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Interpersonal violence (IV) in sport is a pervasive issue that threatens athletes’ physical, social, and psychological well-being. Sociological theories suggest that organisational pressure and adherence to sport norms, such as trad</description>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:23e39c8c6624ca6a</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Impacto de Dos Unidades Didácticas de Educación Deportiva sobre Objetivos de Aprendizaje en Educación Primaria</title>
+      <link>https://doi.org/10.6018/cpd.462641</link>
+      <description>Mixed-methods comparison of basketball and floorball education units in primary school found that sport type and student skill level significantly affected game performance and tactical knowledge acquisition, with floorball requiring more concrete instruction.</description>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4205297310</guid>
+      <source url="https://living-sports-analytics.vercel.app">Cuadernos de Psicología del Deporte</source>
       <category>multi_sport</category>
+      <category>player_development</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Biological sex minimally affects the free-weight back squat load-velocity profile when accounting for relative strength: An exploratory study</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251371308?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Research suggests that biological sex and strength level influence the load-velocity profile. However, existing research have not appropriately statistically accounted for the interdependencies between sex and relative strength. Thi</description>
-      <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:25c6a0d0981ca7ed</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Sports Injury and Illness Epidemiology: Thailand Team Surveillance During the 30th Southeast Asian Games</title>
+      <link>https://doi.org/10.5812/asjsm.116382</link>
+      <description>Prospective surveillance of 980 Thai athletes at the 30th SEA Games found 86 injuries and 21 illnesses per 1000 athletes, with lower leg injury (14%) and ligament sprains (25%) most common, identifying priorities for injury prevention in multi-sport events.</description>
+      <pubDate>Thu, 13 Jan 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4206063662</guid>
+      <source url="https://living-sports-analytics.vercel.app">Asian Journal of Sports Medicine</source>
       <category>multi_sport</category>
+      <category>epidemiology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Factors differentiating change of direction performance in NCAA power 4 male basketball athletes</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251360509?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 321-328, February 2026. The aim of this study was to investigate COD performance in an elite basketball cohort to determine which phase specific qualities are most strongly associated with COD performance. One hundred and t</description>
-      <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:26778427a467e2dd</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Comparative Study on Biomechanics of Two Legs in the Action of Single-Leg Landing in Men’s Badminton</title>
+      <link>https://doi.org/10.32604/mcb.2022.017044</link>
+      <description>Motion capture analysis of single-leg landing in male badminton players revealed significant biomechanical differences between legs in center of gravity position, with implications for injury prevention.</description>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4206180290</guid>
+      <source url="https://living-sports-analytics.vercel.app">Molecular &amp; cellular biomechanics</source>
+      <category>badminton</category>
+      <category>biomechanics</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>The effect of ladder training on performance and kinematic parameters of sprinting in prepubertal track and field athletes</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251384101?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study examined the effects of a 6-week ladder training program on sprint performance and selected kinematic parameters in prepubescent male and female track and field athletes. Twenty-four children (7.2 ± 1.0 years) were random</description>
-      <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:26b1ebdc92079491</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Utility of 2D Video Analysis for Assessing Frontal Plane Trunk and Pelvis Motion during Stepping, Landing, and Change in Direction Tasks: A Validity Study</title>
+      <link>https://doi.org/10.26603/001c.30994</link>
+      <description>Concurrent validity study of 39 healthy participants found 2D video analysis appropriately correlated with 3D kinematics for assessing frontal plane trunk and pelvis motion during athletic landing tasks, though absolute agreement limits were wide.</description>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4210814442</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physical Therapy</source>
+      <category>other</category>
+      <category>methodology</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Born early, perform better: The impact of relative age on performance in Turkish youth basketball</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251406425?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the relative age effect (RAE) and its impact on performance in male basketball players participating in Turkish youth championships across U14, U16, and U18 age categories between 2017 and 2023 except 2020-20</description>
-      <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:26cfaae73c5eff6b</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Effects of Dual Task Interference on Biomechanics of the Entire Lower Extremity During the Drop Vertical Jump</title>
+      <link>https://doi.org/10.2478/hukin-2022-0001</link>
+      <description>Kinematic analysis of 20 female collegiate athletes found concurrent cognitive task during drop vertical jump significantly increased peak external knee abduction moment and joint moments at hip and ankle with reduced knee flexion at initial contact.</description>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4211097303</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Human Kinetics</source>
+      <category>other</category>
+      <category>biomechanics</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Ranking matters: Does the new format select the best teams for the knockout phase in the UEFA Champions League?</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251405330?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Starting in the 2024/25 season, the Union of European Football Associations (UEFA) has fundamentally changed the format of its club competitions: the group stage has been replaced by a league phase played by 36 teams in an incomplet</description>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:27c119087f083810</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Análisis del clima motivacional en Educación Física a partir del empleo del modelo Teaching Games for Understanding (Analysis of the motivational climate in Physical Education from the use of the Teaching Games for Understanding model)</title>
+      <link>https://doi.org/10.47197/retos.v44i0.92689</link>
+      <description>Quasi-experimental study of 73 secondary students (39 experimental, 34 control) found that Teaching Games for Understanding pedagogy significantly improved perceived motivational climate in basketball units compared to traditional instruction.</description>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4212976600</guid>
+      <source url="https://living-sports-analytics.vercel.app">Retos</source>
+      <category>basketball</category>
+      <category>player_development</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Correction: Birth prevalence and determinants of neural tube defects among newborns in Ethiopia: A systematic review and meta-analysis</title>
-      <link>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342989</link>
-      <description>by Beminet Moges Gebremariam, Dejene Hailu, Barbara J. Stoecker, Afework Mulugeta</description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:2828754f63ee57de</guid>
-      <source url="https://living-sports-analytics.vercel.app">PLoS ONE</source>
-      <category>multi_sport</category>
+      <title>The Effect of Learning Approach and Gender on Understanding, Fun, and Skills in Playing Soccer in Junior High School Students</title>
+      <link>https://doi.org/10.5614/jskk.2021.6.2.1</link>
+      <description>An experimental factorial study with 60 junior high school students (30 boys, 30 girls) found that a tactical learning approach significantly improved understanding, enjoyment, and soccer playing skills, with differential effects by gender.</description>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4213275793</guid>
+      <source url="https://living-sports-analytics.vercel.app">Jurnal Sains Keolahragaan dan Kesehatan</source>
+      <category>football</category>
+      <category>player_development</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Deep learning and sentiment analysis framework for classifying YouTube home-fitness videos</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251380027?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study introduces a deep learning (DL) framework designed to classify YouTube videos into five exercise categories: TABATA, cardiorespiratory endurance, free weight muscular endurance, training aid muscular endurance, and flexib</description>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:295f51d72e106deb</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Screening Tests for Assessing Athletes at Risk of ACL Injury or Reinjury—A Scoping Review</title>
+      <link>https://doi.org/10.3390/ijerph19052864</link>
+      <description>Scoping review identifies six categories of ACL injury screening tests (balance, gait, joint laxity, morphology, jump, strength) and recommends multitest approaches for injury risk assessment despite controversies in predictive validity.</description>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4214506122</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Environmental Research and Public Health</source>
       <category>multi_sport</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Applying collective tactical metrics in rugby union: A case study of spatial-temporal team-behaviour during scoring sequences</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251407998?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. We introduced objective spatial-temporal metrics including centroid, stretch index, convex hull, and approximate entropy (ApEn) to analyse team behaviours during try-scoring events in rugby union. Data collected via 10 Hz global pos</description>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:29ded1fa917e3e6c</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Validity of Velocity Measurements of a Motorized Resistance Device During Change of Direction</title>
+      <link>https://doi.org/10.3389/fphys.2022.824606</link>
+      <description>Motorized resistance device velocity measurements during change of direction tasks show excellent validity (r=0.93-1.00) with low bias when compared to center of mass kinematics in male and female participants.</description>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4214744226</guid>
+      <source url="https://living-sports-analytics.vercel.app">Frontiers in Physiology</source>
+      <category>other</category>
+      <category>biomechanics</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>The effects of peer-initiated motivational climate perceived by youth soccer players on fear of failure and flow state</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251357285?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the structural relationships among the peer-initiated motivational climate, the fear of failure (FF), and the flow state as perceived by youth soccer players. A total of 347 youth soccer players aged 12–18, r</description>
-      <pubDate>Tue, 15 Jul 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:2afe02cf948f68ba</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Descriptive trunk kinematics in healthy collegiate women&apos;s soccer players indicate trunk center of mass is laterally positioned prior to decelerating and cutting</title>
+      <link>https://doi.org/10.1016/j.jisako.2022.03.002</link>
+      <description>Kinematic analysis of collegiate women&apos;s soccer players shows trunk center of mass is laterally positioned prior to deceleration and cutting maneuvers, relevant to ACL injury mechanisms.</description>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4223905976</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of ISAKOS Joint Disorders &amp; Orthopaedic Sports Medicine</source>
+      <category>football</category>
+      <category>biomechanics</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>A survey exploring the programming practices of cycling coaches: How are intensity zones and intensity distribution models used?</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251362199?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Volume 21, Issue 1, Page 64-74, February 2026. Models of training intensity distribution, such as polarised, pyramidal, and threshold, often have varying interpretations in the literature. Despite observational research into the practices of elite </description>
-      <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:2b70a388e1adc40b</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Early Warning of Basketball Injury Risk Based on Attribute Reduction Algorithm</title>
+      <link>https://doi.org/10.1155/2022/6981246</link>
+      <description>Machine learning approach using attribute reduction algorithm for early warning of basketball injury risk aims to identify preventable training-related injury causes in college athletes.</description>
+      <pubDate>Wed, 13 Apr 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4224113774</guid>
+      <source url="https://living-sports-analytics.vercel.app">Computational Intelligence and Neuroscience</source>
+      <category>basketball</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>An evaluation of the hot-hand hypothesis in the NBA when accounting for shot difficulty</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251374788?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. The hot-hand hypothesis suggests that athletes can experience periods of exceptional performance where the success of their next action is influenced by previous successes. This study examines the hot-hand phenomenon in the context </description>
-      <pubDate>Tue, 09 Sep 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:2ef8dd09e6f83adf</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Cocreating injury prevention training for youth team handball: bridging theory and practice</title>
+      <link>https://doi.org/10.1136/bmjsem-2021-001263</link>
+      <description>Participatory action research with youth handball coaches, players, and researchers co-creates evidence-based injury prevention training combining physical principles (technique, strength) and psychological aspects (motivation, body awareness).</description>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4225774518</guid>
+      <source url="https://living-sports-analytics.vercel.app">BMJ Open Sport &amp; Exercise Medicine</source>
+      <category>handball</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>What got me here, won’t get me 
-there – how the world&apos;s best sports coaches successfully adapt their expertise in different environments</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251395888?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. In high-performance sport, sustained success increasingly hinges on a coach&apos;s ability to adapt across varied, complex, and dynamic environments. This study explores how world-class coaches develop and apply adaptive expertise (AE) a</description>
-      <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:2f014a470010b963</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Comparing the Effects of Long-Term vs. Periodic Inclusion of Isometric Strength Training on Strength and Dynamic Performances</title>
+      <link>https://doi.org/10.1519/jsc.0000000000004276</link>
+      <description>Twenty-four floorball athletes showed greater improvements in 5-m, 10-m, and 20-m sprint times with 24 consecutive weeks of isometric strength training compared to control, with no significant difference versus periodic inclusion.</description>
+      <pubDate>Mon, 09 May 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4280511583</guid>
+      <source url="https://living-sports-analytics.vercel.app">The Journal of Strength and Conditioning Research</source>
+      <category>floorball</category>
+      <category>performance_analysis</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Discrepancies between maturity offset predictions and menarche in young female athletes</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251394263?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Growth and maturation are critical for interpreting the development and performance of young athletes. Selection pressures in youth sport vary by discipline: team sports often favor early maturers, while aesthetic and weight-sensiti</description>
-      <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:302dc028a6b6ff0d</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Design and Implementation of Athlete’s Knee Health Monitoring System Based on Cloud Computing</title>
+      <link>https://doi.org/10.1155/2022/4778376</link>
+      <description>Cloud-based system using depth cameras and deep learning to monitor athlete knee joint health in real-time achieved 6% overall error rate and strong correlation with clinical KSS scoring.</description>
+      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4280633068</guid>
+      <source url="https://living-sports-analytics.vercel.app">Journal of Sensors</source>
       <category>multi_sport</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Exploring the relationship between physical capacities and match running performance in elite U17 football players</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251403492?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated positional differences in physical capacities and match running performance, and explored how physical capacities influence match running metrics in elite U17 football players. Data were collected from 212 pl</description>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:30531ac1c5edae50</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Organized Sport Activities of 11 to 15-Year-Old Adolescents: Trends from 2010–2018 and Socioeconomic Context</title>
+      <link>https://doi.org/10.3390/ijerph19106074</link>
+      <description>Czech adolescents from high-SES families were 3.01 times more likely to participate in organized individual sports than low-SES peers, with gaps widening with age from 2010–2018.</description>
+      <pubDate>Tue, 17 May 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4280635401</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Environmental Research and Public Health</source>
       <category>multi_sport</category>
+      <category>player_development</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>External and internal load responses based on court size and opponent presence in elite-level basketball: An observational study with implications for training design</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251389520?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Basketball training design requires systematic manipulation of task constraints to optimize performance adaptations. This study investigated how court size and opponent presence influence external and internal load responses in prof</description>
-      <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:314e55f08e6f8bce</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>International comparison of motor abilities and floorball skills in U-11 to U-14 teams from the Czech Republic and Australia</title>
+      <link>https://doi.org/10.34256/ijpefs2226</link>
+      <description>Comparison of U-11 to U-14 floorball players from Czech Republic (n=18) and Australia (n=18) revealed statistically significant differences in all floorball skills but only one motor ability (Illinois agility test).</description>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4282824326</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Physical Education Fitness and Sports</source>
+      <category>floorball</category>
+      <category>player_development</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Menstrual cycle phases affect recovery more than performance in trained cyclists</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251407281?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. This study investigated the influence of menstrual cycle (MC) phases on psychophysiological responses and recovery following high-intensity interval training (HIIT) in trained female cyclists. Ten eumenorrheic cyclists visited the l</description>
-      <pubDate>Thu, 08 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:31830d315d509614</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Influence of fitball aerobics on the development of individual coordinating abilities of girls 14–15 years old</title>
+      <link>https://doi.org/10.15391/snsv.2022-2.001</link>
+      <description>Fitball aerobics intervention with 46 girls aged 14–15 significantly improved coordination abilities, with jump with turn increasing from 23.1% to 62.4% and Bondarevsky test from 18.6% to 30.6%.</description>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4283034809</guid>
+      <source url="https://living-sports-analytics.vercel.app">Слобожанський науково-спортивний вісник</source>
       <category>multi_sport</category>
+      <category>performance_analysis</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Incidence, magnitude &amp; sport-specific factors of rugby tackles from different directions in youth rugby</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251394457?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. Rugby tackles can cause head acceleration events (HAEs) which may acutely and chronically affect brain health. This study aimed to investigate the varying proportions, impact forces and rugby-specific factors of tackles from differe</description>
-      <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:3245648da5ada5e5</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Function of Perceived Corporate Social Responsibility in Safety of Sports Activities and Home Aerobic Equipment in the Late Period of COVID-19</title>
+      <link>https://doi.org/10.3389/fpsyg.2022.919254</link>
+      <description>Structural equation modeling of 259 athletes revealed that perceived corporate social responsibility mediates the relationship between safety measures and injury prevention expectations, risk perception, and health outcomes in local sports bodies.</description>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4283205223</guid>
+      <source url="https://living-sports-analytics.vercel.app">Frontiers in Psychology</source>
       <category>multi_sport</category>
+      <category>injury_prevention</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>How to compare physical fitness when different tests are performed. A cross-sectional study on conversion formulas of common test items for young children</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251407995?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. BackgroundPhysical fitness tests are crucial for evaluating athletic development and health in children. However, methodological variations in standardized test batteries (e.g., different strength test durations) hinder comparisons </description>
-      <pubDate>Wed, 21 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:340aed6fefbd5774</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>Teaching Game for Understanding (TGfU) Learning Design for Basketball Games in Physical Education</title>
+      <link>https://doi.org/10.13189/saj.2022.100331</link>
+      <description>Quasi-experimental study of 43 students showed Teaching Games for Understanding approach significantly improved decision-making (t=28.06 girls, t=18.56 boys), technical execution, game performance, and enjoyment in basketball.</description>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4284694755</guid>
+      <source url="https://living-sports-analytics.vercel.app">International journal of human movement and sports sciences</source>
+      <category>basketball</category>
+      <category>coaching</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Athlete and staff perceptions of the attributes athletes require to be ready for team selection in Australian football</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251380747?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. A notable amount of research in Australian Football describes what separates drafted from non-drafted athletes, however there is limited understanding of how Australian Football League (AFL) listed athletes, progress into the weekly</description>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:3484d78eb886786e</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
-      <category>multi_sport</category>
+      <title>External focus facilitates cognitive stability and promotes motor performance of an interceptive task in children</title>
+      <link>https://doi.org/10.1080/1612197x.2022.2098356</link>
+      <description>A study of 24 children performing a forehand drag shot in floorball found that external attentional focus improved task accuracy and reduced eye blinks compared to internal focus, suggesting external focus facilitates cognitive stability during interceptive tasks.</description>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4284899860</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sport and Exercise Psychology</source>
+      <category>floorball</category>
+      <category>performance_analysis</category>
       <category>journal_article</category>
     </item>
     <item>
-      <title>Kinematic differences in smash techniques between elite singles and doubles badminton players: Upper/lower trunk and upper limb analysis</title>
-      <link>https://journals.sagepub.com/doi/abs/10.1177/17479541251395168?ai=2b4&amp;mi=ehikzz&amp;af=R</link>
-      <description>International Journal of Sports Science &amp; Coaching, Ahead of Print. The study aims to compare elite singles and doubles badminton players’ smash technique. This study recruited a total of 7 elite singles players and 9 elite doubles badminton players. A motion analysis system with 11 infrared cameras</description>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">journal:356b38e9fc9e4397</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Science &amp; Coaching</source>
+      <title>Don’t Peak Too Early: Evidence for an ACL Injury Prevention Mechanism of the 11+ Program</title>
+      <link>https://doi.org/10.26603/001c.36524</link>
+      <description>A study of 69 collegiate female soccer players found that The 11+ intervention performed three times weekly reduced early-peak knee valgus moments during athletic tasks in one intervention team, suggesting a potential biomechanical mechanism for ACL injury prevention.</description>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4289108993</guid>
+      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physical Therapy</source>
+      <category>football</category>
+      <category>injury_prevention</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Epidemiology and aetiology of sport‐related nasal fractures: Analysis of 599 Finnish patients</title>
+      <link>https://doi.org/10.1111/coa.13976</link>
+      <description>Analysis of 599 Finnish patients with nasal fractures from 2013-2018 found that sports cause 15% of all nasal fractures, with highest prevalence in team sports (basketball, soccer, American football, rugby, baseball), martial arts, and equine sports, predominantly affecting young males.</description>
+      <pubDate>Fri, 26 Aug 2022 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4293199782</guid>
+      <source url="https://living-sports-analytics.vercel.app">Clinical Otolaryngology</source>
       <category>multi_sport</category>
+      <category>epidemiology</category>
       <category>journal_article</category>
     </item>
   </channel>

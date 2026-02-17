@@ -1,76 +1,80 @@
 {
-  "totalPapers": 41050,
-  "totalAuthors": 126773,
+  "totalPapers": 58795,
+  "totalAuthors": 174641,
   "authorsWithGender": 94438,
-  "genderPercentage": 74.5,
-  "papersWithAbstract": 36564,
-  "abstractPercentage": 89.1,
-  "journalCount": 12599,
+  "genderPercentage": 54.1,
+  "papersWithAbstract": 51714,
+  "abstractPercentage": 88,
+  "journalCount": 14700,
   "oldestPaper": "2013-10-16",
   "newestPaper": "2026-12-19",
   "topJournals": [
     {
       "journal": "Zenodo (CERN European Organization for Nuclear Research)",
-      "count": 718
+      "count": 814
     },
     {
       "journal": "Frontiers in Sports and Active Living",
-      "count": 627
+      "count": 719
     },
     {
       "journal": "PLoS ONE",
-      "count": 556
-    },
-    {
-      "journal": "Journal of Sports Sciences",
-      "count": 536
-    },
-    {
-      "journal": "Journal of science and medicine in sport",
-      "count": 516
-    },
-    {
-      "journal": "Medicine & Science in Sports & Exercise",
-      "count": 509
+      "count": 668
     },
     {
       "journal": "British Journal of Sports Medicine",
-      "count": 456
+      "count": 563
+    },
+    {
+      "journal": "Journal of Sports Sciences",
+      "count": 546
     },
     {
       "journal": "International Journal of Sports Physiology and Performance",
-      "count": 446
+      "count": 533
     },
     {
       "journal": "European Journal of Sport Science",
-      "count": 426
+      "count": 528
     },
     {
-      "journal": "Scientific Reports",
-      "count": 372
+      "journal": "Medicine & Science in Sports & Exercise",
+      "count": 527
     },
     {
-      "journal": "Frontiers in Psychology",
-      "count": 324
+      "journal": "Scandinavian Journal of Medicine and Science in Sports",
+      "count": 526
     },
     {
-      "journal": "International Journal of Sports Science & Coaching",
-      "count": 296
+      "journal": "Journal of science and medicine in sport",
+      "count": 524
     },
     {
-      "journal": "International Journal of Environmental Research and Public Health",
-      "count": 275
+      "journal": "Physical Therapy in Sport",
+      "count": 507
     },
     {
-      "journal": "Sustainability",
-      "count": 228
+      "journal": "The American Journal of Sports Medicine",
+      "count": 506
     },
     {
-      "journal": "K-State Research Exchange (Kansas State University)",
-      "count": 225
+      "journal": "International Journal of Sports Medicine",
+      "count": 505
+    },
+    {
+      "journal": "Journal of Sport Management",
+      "count": 503
+    },
+    {
+      "journal": "International Journal of Performance Analysis in Sport",
+      "count": 503
     }
   ],
   "genderBreakdown": [
+    {
+      "gender": "unknown",
+      "count": 49432
+    },
     {
       "gender": "male",
       "count": 48380
@@ -86,10 +90,6 @@
     {
       "gender": "andy",
       "count": 10736
-    },
-    {
-      "gender": "unknown",
-      "count": 1564
     }
   ],
   "yearlyPapers": [
@@ -98,220 +98,256 @@
       "count": 2
     },
     {
+      "year": 2014,
+      "count": 174
+    },
+    {
       "year": 2015,
-      "count": 2444
+      "count": 2686
     },
     {
       "year": 2016,
-      "count": 2445
+      "count": 2840
     },
     {
       "year": 2017,
-      "count": 2434
+      "count": 2860
     },
     {
       "year": 2018,
-      "count": 2441
+      "count": 2989
     },
     {
       "year": 2019,
-      "count": 2529
+      "count": 3163
     },
     {
       "year": 2020,
-      "count": 2501
+      "count": 3332
     },
     {
       "year": 2021,
-      "count": 2489
+      "count": 3864
     },
     {
       "year": 2022,
-      "count": 2511
+      "count": 4136
     },
     {
       "year": 2023,
-      "count": 2463
+      "count": 5979
     },
     {
       "year": 2024,
-      "count": 5162
+      "count": 8322
     },
     {
       "year": 2025,
-      "count": 10390
+      "count": 14566
     },
     {
       "year": 2026,
-      "count": 3239
+      "count": 3882
     }
   ],
-  "totalClassified": 5496,
-  "classifiedRelevant": 5452,
-  "classifiedNotApplicable": 44,
-  "womensSportCount": 636,
+  "totalClassified": 14452,
+  "classifiedRelevant": 13970,
+  "classifiedNotApplicable": 482,
+  "womensSportCount": 1650,
   "sportDistribution": [
     {
-      "sport": "football",
-      "count": 1527
-    },
-    {
       "sport": "multi_sport",
-      "count": 1138
+      "count": 3393
     },
     {
-      "sport": "basketball",
-      "count": 494
+      "sport": "football",
+      "count": 2971
     },
     {
       "sport": "other",
-      "count": 413
+      "count": 1247
     },
     {
       "sport": "athletics",
-      "count": 335
+      "count": 965
+    },
+    {
+      "sport": "basketball",
+      "count": 899
     },
     {
       "sport": "tennis",
-      "count": 194
+      "count": 447
     },
     {
       "sport": "volleyball",
-      "count": 173
-    },
-    {
-      "sport": "rugby",
-      "count": 125
-    },
-    {
-      "sport": "cycling",
-      "count": 117
-    },
-    {
-      "sport": "baseball",
-      "count": 113
+      "count": 352
     },
     {
       "sport": "american_football",
-      "count": 104
+      "count": 339
     },
     {
-      "sport": "cricket",
-      "count": 89
+      "sport": "baseball",
+      "count": 328
     },
     {
-      "sport": "handball",
-      "count": 87
+      "sport": "cycling",
+      "count": 320
+    },
+    {
+      "sport": "rugby",
+      "count": 301
     },
     {
       "sport": "boxing_mma",
-      "count": 87
+      "count": 294
     },
     {
       "sport": "swimming",
-      "count": 85
-    },
-    {
-      "sport": "ice_hockey",
-      "count": 73
-    },
-    {
-      "sport": "esports",
-      "count": 59
+      "count": 228
     },
     {
       "sport": "skiing",
-      "count": 58
+      "count": 213
     },
     {
-      "sport": "rowing",
-      "count": 51
+      "sport": "handball",
+      "count": 207
+    },
+    {
+      "sport": "esports",
+      "count": 198
+    },
+    {
+      "sport": "ice_hockey",
+      "count": 177
+    },
+    {
+      "sport": "cricket",
+      "count": 168
     },
     {
       "sport": "gymnastics",
-      "count": 48
+      "count": 131
     },
     {
-      "sport": "speed_skating",
-      "count": 28
+      "sport": "badminton",
+      "count": 130
+    },
+    {
+      "sport": "futsal",
+      "count": 121
+    },
+    {
+      "sport": "rowing",
+      "count": 114
     },
     {
       "sport": "golf",
-      "count": 24
+      "count": 82
+    },
+    {
+      "sport": "speed_skating",
+      "count": 75
+    },
+    {
+      "sport": "table_tennis",
+      "count": 72
     },
     {
       "sport": "motorsport",
-      "count": 19
+      "count": 47
+    },
+    {
+      "sport": "aussie_rules",
+      "count": 30
     },
     {
       "sport": "figure_skating",
-      "count": 8
+      "count": 29
+    },
+    {
+      "sport": "water_polo",
+      "count": 27
+    },
+    {
+      "sport": "floorball",
+      "count": 25
+    },
+    {
+      "sport": "darts",
+      "count": 16
+    },
+    {
+      "sport": "snooker",
+      "count": 13
     },
     {
       "sport": "diving",
-      "count": 3
+      "count": 11
     }
   ],
   "methodologyDistribution": [
     {
       "methodology": "statistical",
-      "count": 2675
-    },
-    {
-      "methodology": "machine_learning",
-      "count": 593
+      "count": 8022
     },
     {
       "methodology": "descriptive",
-      "count": 514
+      "count": 1459
+    },
+    {
+      "methodology": "review",
+      "count": 837
+    },
+    {
+      "methodology": "machine_learning",
+      "count": 775
+    },
+    {
+      "methodology": "qualitative",
+      "count": 547
+    },
+    {
+      "methodology": "mixed_methods",
+      "count": 511
     },
     {
       "methodology": "deep_learning",
-      "count": 353
+      "count": 465
     },
     {
       "methodology": null,
       "count": 344
     },
     {
-      "methodology": "review",
-      "count": 325
-    },
-    {
-      "methodology": "computer_vision",
-      "count": 123
-    },
-    {
-      "methodology": "mixed_methods",
-      "count": 110
-    },
-    {
       "methodology": "simulation",
-      "count": 82
-    },
-    {
-      "methodology": "qualitative",
-      "count": 75
-    },
-    {
-      "methodology": "optimization",
-      "count": 75
+      "count": 219
     },
     {
       "methodology": "other",
-      "count": 69
+      "count": 213
+    },
+    {
+      "methodology": "computer_vision",
+      "count": 171
+    },
+    {
+      "methodology": "optimization",
+      "count": 149
     },
     {
       "methodology": "meta_analysis",
-      "count": 49
+      "count": 127
     },
     {
       "methodology": "network_analysis",
-      "count": 38
+      "count": 75
     },
     {
       "methodology": "NLP",
-      "count": 25
+      "count": 54
     },
     {
       "methodology": "data_engineering",
@@ -321,123 +357,123 @@
   "themeDistribution": [
     {
       "theme": "performance_analysis",
-      "count": 2466
+      "count": 4429
     },
     {
-      "theme": "methodology",
-      "count": 465
+      "theme": "injury_prevention",
+      "count": 1322
     },
     {
       "theme": "player_development",
-      "count": 394
+      "count": 1206
+    },
+    {
+      "theme": "methodology",
+      "count": 1000
+    },
+    {
+      "theme": "psychology",
+      "count": 812
+    },
+    {
+      "theme": "fan_engagement",
+      "count": 771
+    },
+    {
+      "theme": "physiology",
+      "count": 654
+    },
+    {
+      "theme": "biomechanics",
+      "count": 621
+    },
+    {
+      "theme": "tactical_analysis",
+      "count": 472
+    },
+    {
+      "theme": "coaching",
+      "count": 434
+    },
+    {
+      "theme": "data_engineering",
+      "count": 378
     },
     {
       "theme": null,
       "count": 344
     },
     {
-      "theme": "tactical_analysis",
-      "count": 327
-    },
-    {
-      "theme": "injury_prevention",
-      "count": 289
-    },
-    {
-      "theme": "data_engineering",
-      "count": 252
-    },
-    {
-      "theme": "biomechanics",
-      "count": 217
+      "theme": "bias_detection",
+      "count": 273
     },
     {
       "theme": "player_valuation",
-      "count": 124
-    },
-    {
-      "theme": "coaching",
-      "count": 96
-    },
-    {
-      "theme": "fan_engagement",
-      "count": 94
-    },
-    {
-      "theme": "bias_detection",
-      "count": 86
-    },
-    {
-      "theme": "physiology",
-      "count": 85
-    },
-    {
-      "theme": "psychology",
-      "count": 75
-    },
-    {
-      "theme": "gender_equity",
-      "count": 45
-    },
-    {
-      "theme": "betting_markets",
-      "count": 38
-    },
-    {
-      "theme": "epidemiology",
-      "count": 24
-    },
-    {
-      "theme": "transfer_market",
-      "count": 15
+      "count": 267
     },
     {
       "theme": "nutrition_recovery",
-      "count": 10
+      "count": 219
+    },
+    {
+      "theme": "epidemiology",
+      "count": 212
+    },
+    {
+      "theme": "gender_equity",
+      "count": 208
     },
     {
       "theme": "other",
-      "count": 6
+      "count": 180
+    },
+    {
+      "theme": "betting_markets",
+      "count": 125
+    },
+    {
+      "theme": "transfer_market",
+      "count": 43
     }
   ],
   "dataTypeDistribution": [
     {
       "data_type": "event",
-      "count": 1445
-    },
-    {
-      "data_type": "tracking",
-      "count": 814
+      "count": 2873
     },
     {
       "data_type": "physiological",
-      "count": 778
-    },
-    {
-      "data_type": "mixed",
-      "count": 758
-    },
-    {
-      "data_type": "not_specified",
-      "count": 692
-    },
-    {
-      "data_type": "video",
-      "count": 587
+      "count": 2710
     },
     {
       "data_type": "survey",
-      "count": 248
+      "count": 2147
+    },
+    {
+      "data_type": "mixed",
+      "count": 2015
+    },
+    {
+      "data_type": "not_specified",
+      "count": 1435
+    },
+    {
+      "data_type": "tracking",
+      "count": 1263
+    },
+    {
+      "data_type": "video",
+      "count": 1064
     },
     {
       "data_type": "text",
-      "count": 130
+      "count": 463
     }
   ],
   "topSubThemes": [
     {
       "sub_theme": "match outcome prediction",
-      "count": 22
+      "count": 25
     },
     {
       "sub_theme": "Olympic medal prediction",
@@ -445,23 +481,51 @@
     },
     {
       "sub_theme": "relative age effect, talent identification",
-      "count": 6
+      "count": 7
     },
     {
       "sub_theme": "AI adoption in e-sports management platforms, TAM extension",
       "count": 6
     },
     {
-      "sub_theme": "player profiling, systematic scoping review, Delphi consensus, talent identification",
-      "count": 4
+      "sub_theme": "match result prediction",
+      "count": 5
     },
     {
       "sub_theme": "game outcome prediction",
+      "count": 5
+    },
+    {
+      "sub_theme": "technology acceptance model for AI adoption in esports management",
+      "count": 4
+    },
+    {
+      "sub_theme": "player profiling, systematic scoping review, Delphi consensus, talent identification",
       "count": 4
     },
     {
       "sub_theme": "attacking and defensive performance comparison, scatter graphics",
       "count": 4
+    },
+    {
+      "sub_theme": "youth physical activity levels and sedentary behavior",
+      "count": 3
+    },
+    {
+      "sub_theme": "self-confidence and peak performance",
+      "count": 3
+    },
+    {
+      "sub_theme": "psychological skills training effects on performance",
+      "count": 3
+    },
+    {
+      "sub_theme": "match statistics",
+      "count": 3
+    },
+    {
+      "sub_theme": "match prediction",
+      "count": 3
     },
     {
       "sub_theme": "historical driver counterfactuals",
@@ -476,7 +540,27 @@
       "count": 3
     },
     {
+      "sub_theme": "analytics partnership announcement",
+      "count": 3
+    },
+    {
+      "sub_theme": "women's football attendance, spectator disinterest, media visibility",
+      "count": 2
+    },
+    {
+      "sub_theme": "willingness to pay, contingent valuation",
+      "count": 2
+    },
+    {
       "sub_theme": "wearable technology, AI, biomechanical diagnostics, injury prevention",
+      "count": 2
+    },
+    {
+      "sub_theme": "wearable technology and AI in athletic training",
+      "count": 2
+    },
+    {
+      "sub_theme": "wearable sensors, triboelectric nanogenerator",
       "count": 2
     },
     {
@@ -488,6 +572,10 @@
       "count": 2
     },
     {
+      "sub_theme": "wage discrimination, pay-performance analysis, MLS vs NWSL",
+      "count": 2
+    },
+    {
       "sub_theme": "video-based tactical and physical metrics extraction",
       "count": 2
     },
@@ -496,78 +584,26 @@
       "count": 2
     },
     {
-      "sub_theme": "talent identification in table tennis",
+      "sub_theme": "training surface types, biomechanical adaptation",
       "count": 2
     },
     {
-      "sub_theme": "talent identification",
-      "count": 2
-    },
-    {
-      "sub_theme": "squad retention, player minutes lost",
-      "count": 2
-    },
-    {
-      "sub_theme": "speed abilities, female rugby sevens, physical preparedness",
-      "count": 2
-    },
-    {
-      "sub_theme": "situational efficiency parameters",
-      "count": 2
-    },
-    {
-      "sub_theme": "self-confidence and performance anxiety in youth athletes",
-      "count": 2
-    },
-    {
-      "sub_theme": "robotized training dummy, sensor technology, performance feedback",
-      "count": 2
-    },
-    {
-      "sub_theme": "resistance training effects on female softball player fitness",
-      "count": 2
-    },
-    {
-      "sub_theme": "relative age effect, talent selection",
-      "count": 2
-    },
-    {
-      "sub_theme": "recovery dynamics, heart rate variability, lactate clearance",
-      "count": 2
-    },
-    {
-      "sub_theme": "psychology, group dynamics, leadership in team sports using AI",
-      "count": 2
-    },
-    {
-      "sub_theme": "pressing intensity measurement",
-      "count": 2
-    },
-    {
-      "sub_theme": "positional spending analysis",
-      "count": 2
-    },
-    {
-      "sub_theme": "plyometric training, muscle power, explosive strength",
-      "count": 2
-    },
-    {
-      "sub_theme": "player localization, movement analysis, injury risk prediction",
+      "sub_theme": "technology adoption, AI platform integration, TAM model extension",
       "count": 2
     }
   ],
   "contentTypeDistribution": [
     {
       "content_type": "journal_article",
-      "count": 5135
+      "count": 13557
     },
     {
       "content_type": "blog_post",
-      "count": 239
+      "count": 323
     },
     {
       "content_type": "news_article",
-      "count": 32
+      "count": 41
     },
     {
       "content_type": "conference_paper",
@@ -575,187 +611,362 @@
     },
     {
       "content_type": "working_paper",
-      "count": 15
+      "count": 16
     },
     {
       "content_type": "thesis",
-      "count": 13
+      "count": 15
     }
   ],
   "sportByYear": [
     {
-      "year": 2015,
+      "year": 2014,
       "sport": "football",
-      "count": 27
+      "count": 23
     },
     {
-      "year": 2015,
+      "year": 2014,
       "sport": "multi_sport",
       "count": 18
     },
     {
-      "year": 2015,
+      "year": 2014,
+      "sport": "american_football",
+      "count": 15
+    },
+    {
+      "year": 2014,
+      "sport": "basketball",
+      "count": 10
+    },
+    {
+      "year": 2014,
+      "sport": "baseball",
+      "count": 8
+    },
+    {
+      "year": 2014,
+      "sport": "tennis",
+      "count": 6
+    },
+    {
+      "year": 2014,
+      "sport": "ice_hockey",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "sport": "cricket",
+      "count": 5
+    },
+    {
+      "year": 2014,
+      "sport": "skiing",
+      "count": 4
+    },
+    {
+      "year": 2014,
+      "sport": "other",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "sport": "golf",
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "sport": "cycling",
+      "count": 3
+    },
+    {
+      "year": 2014,
       "sport": "athletics",
-      "count": 13
+      "count": 3
+    },
+    {
+      "year": 2014,
+      "sport": "handball",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "sport": "boxing_mma",
+      "count": 2
+    },
+    {
+      "year": 2014,
+      "sport": "water_polo",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "sport": "volleyball",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "sport": "swimming",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "sport": "rugby",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "sport": "motorsport",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "sport": "floorball",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "sport": "badminton",
+      "count": 1
+    },
+    {
+      "year": 2015,
+      "sport": "multi_sport",
+      "count": 99
+    },
+    {
+      "year": 2015,
+      "sport": "football",
+      "count": 63
     },
     {
       "year": 2015,
       "sport": "basketball",
-      "count": 11
-    },
-    {
-      "year": 2015,
-      "sport": "tennis",
-      "count": 9
-    },
-    {
-      "year": 2015,
-      "sport": "skiing",
-      "count": 7
-    },
-    {
-      "year": 2015,
-      "sport": "cycling",
-      "count": 6
-    },
-    {
-      "year": 2015,
-      "sport": "baseball",
-      "count": 6
+      "count": 33
     },
     {
       "year": 2015,
       "sport": "american_football",
-      "count": 6
+      "count": 29
+    },
+    {
+      "year": 2015,
+      "sport": "athletics",
+      "count": 23
+    },
+    {
+      "year": 2015,
+      "sport": "baseball",
+      "count": 21
     },
     {
       "year": 2015,
       "sport": "other",
-      "count": 5
+      "count": 17
+    },
+    {
+      "year": 2015,
+      "sport": "tennis",
+      "count": 14
+    },
+    {
+      "year": 2015,
+      "sport": "skiing",
+      "count": 11
+    },
+    {
+      "year": 2015,
+      "sport": "cycling",
+      "count": 11
     },
     {
       "year": 2015,
       "sport": "gymnastics",
-      "count": 5
+      "count": 10
     },
     {
       "year": 2015,
       "sport": "volleyball",
-      "count": 4
-    },
-    {
-      "year": 2015,
-      "sport": "rugby",
-      "count": 4
-    },
-    {
-      "year": 2015,
-      "sport": "handball",
-      "count": 4
-    },
-    {
-      "year": 2015,
-      "sport": "swimming",
-      "count": 3
+      "count": 8
     },
     {
       "year": 2015,
       "sport": "golf",
-      "count": 2
+      "count": 8
     },
     {
       "year": 2015,
-      "sport": "speed_skating",
-      "count": 1
+      "sport": "rugby",
+      "count": 6
     },
     {
       "year": 2015,
-      "sport": "rowing",
-      "count": 1
+      "sport": "swimming",
+      "count": 5
     },
     {
       "year": 2015,
       "sport": "ice_hockey",
-      "count": 1
+      "count": 5
+    },
+    {
+      "year": 2015,
+      "sport": "handball",
+      "count": 5
+    },
+    {
+      "year": 2015,
+      "sport": "motorsport",
+      "count": 3
+    },
+    {
+      "year": 2015,
+      "sport": "rowing",
+      "count": 2
     },
     {
       "year": 2015,
       "sport": "cricket",
+      "count": 2
+    },
+    {
+      "year": 2015,
+      "sport": "aussie_rules",
+      "count": 2
+    },
+    {
+      "year": 2015,
+      "sport": "speed_skating",
+      "count": 1
+    },
+    {
+      "year": 2015,
+      "sport": "floorball",
+      "count": 1
+    },
+    {
+      "year": 2015,
+      "sport": "figure_skating",
+      "count": 1
+    },
+    {
+      "year": 2015,
+      "sport": "darts",
+      "count": 1
+    },
+    {
+      "year": 2015,
+      "sport": "boxing_mma",
       "count": 1
     },
     {
       "year": 2016,
-      "sport": "football",
-      "count": 29
+      "sport": "multi_sport",
+      "count": 117
     },
     {
       "year": 2016,
-      "sport": "multi_sport",
-      "count": 23
+      "sport": "football",
+      "count": 83
     },
     {
       "year": 2016,
       "sport": "other",
-      "count": 12
+      "count": 37
     },
     {
       "year": 2016,
       "sport": "basketball",
-      "count": 11
+      "count": 31
     },
     {
       "year": 2016,
       "sport": "athletics",
-      "count": 10
-    },
-    {
-      "year": 2016,
-      "sport": "volleyball",
-      "count": 9
+      "count": 26
     },
     {
       "year": 2016,
       "sport": "american_football",
-      "count": 5
+      "count": 22
     },
     {
       "year": 2016,
       "sport": "tennis",
-      "count": 4
+      "count": 21
     },
     {
       "year": 2016,
-      "sport": "handball",
-      "count": 4
+      "sport": "volleyball",
+      "count": 17
+    },
+    {
+      "year": 2016,
+      "sport": "baseball",
+      "count": 13
     },
     {
       "year": 2016,
       "sport": "cycling",
-      "count": 4
-    },
-    {
-      "year": 2016,
-      "sport": "rugby",
-      "count": 3
-    },
-    {
-      "year": 2016,
-      "sport": "cricket",
-      "count": 3
-    },
-    {
-      "year": 2016,
-      "sport": "skiing",
-      "count": 2
+      "count": 9
     },
     {
       "year": 2016,
       "sport": "boxing_mma",
-      "count": 2
+      "count": 9
+    },
+    {
+      "year": 2016,
+      "sport": "handball",
+      "count": 8
+    },
+    {
+      "year": 2016,
+      "sport": "skiing",
+      "count": 6
+    },
+    {
+      "year": 2016,
+      "sport": "ice_hockey",
+      "count": 6
+    },
+    {
+      "year": 2016,
+      "sport": "rugby",
+      "count": 5
+    },
+    {
+      "year": 2016,
+      "sport": "motorsport",
+      "count": 5
+    },
+    {
+      "year": 2016,
+      "sport": "golf",
+      "count": 5
+    },
+    {
+      "year": 2016,
+      "sport": "gymnastics",
+      "count": 4
+    },
+    {
+      "year": 2016,
+      "sport": "cricket",
+      "count": 4
+    },
+    {
+      "year": 2016,
+      "sport": "rowing",
+      "count": 3
     },
     {
       "year": 2016,
       "sport": "swimming",
+      "count": 2
+    },
+    {
+      "year": 2016,
+      "sport": "table_tennis",
       "count": 1
     },
     {
@@ -765,72 +976,92 @@
     },
     {
       "year": 2016,
-      "sport": "gymnastics",
+      "sport": "darts",
       "count": 1
     },
     {
       "year": 2016,
-      "sport": "baseball",
+      "sport": "badminton",
       "count": 1
     },
     {
       "year": 2017,
-      "sport": "football",
-      "count": 47
+      "sport": "multi_sport",
+      "count": 112
     },
     {
       "year": 2017,
-      "sport": "multi_sport",
-      "count": 28
+      "sport": "football",
+      "count": 100
+    },
+    {
+      "year": 2017,
+      "sport": "other",
+      "count": 39
     },
     {
       "year": 2017,
       "sport": "basketball",
+      "count": 33
+    },
+    {
+      "year": 2017,
+      "sport": "athletics",
+      "count": 31
+    },
+    {
+      "year": 2017,
+      "sport": "american_football",
+      "count": 22
+    },
+    {
+      "year": 2017,
+      "sport": "tennis",
+      "count": 21
+    },
+    {
+      "year": 2017,
+      "sport": "boxing_mma",
+      "count": 15
+    },
+    {
+      "year": 2017,
+      "sport": "baseball",
       "count": 15
     },
     {
       "year": 2017,
       "sport": "volleyball",
-      "count": 11
-    },
-    {
-      "year": 2017,
-      "sport": "athletics",
-      "count": 11
-    },
-    {
-      "year": 2017,
-      "sport": "other",
-      "count": 10
-    },
-    {
-      "year": 2017,
-      "sport": "tennis",
-      "count": 7
+      "count": 14
     },
     {
       "year": 2017,
       "sport": "handball",
-      "count": 7
-    },
-    {
-      "year": 2017,
-      "sport": "boxing_mma",
-      "count": 7
+      "count": 14
     },
     {
       "year": 2017,
       "sport": "swimming",
-      "count": 4
+      "count": 9
+    },
+    {
+      "year": 2017,
+      "sport": "rugby",
+      "count": 9
     },
     {
       "year": 2017,
       "sport": "gymnastics",
-      "count": 4
+      "count": 9
     },
     {
       "year": 2017,
-      "sport": "american_football",
+      "sport": "ice_hockey",
+      "count": 8
+    },
+    {
+      "year": 2017,
+      "sport": "cycling",
       "count": 4
     },
     {
@@ -840,12 +1071,12 @@
     },
     {
       "year": 2017,
-      "sport": "ice_hockey",
+      "sport": "esports",
       "count": 3
     },
     {
       "year": 2017,
-      "sport": "cycling",
+      "sport": "cricket",
       "count": 3
     },
     {
@@ -855,12 +1086,7 @@
     },
     {
       "year": 2017,
-      "sport": "baseball",
-      "count": 2
-    },
-    {
-      "year": 2017,
-      "sport": "rugby",
+      "sport": "table_tennis",
       "count": 1
     },
     {
@@ -869,49 +1095,104 @@
       "count": 1
     },
     {
-      "year": 2018,
-      "sport": "football",
-      "count": 41
+      "year": 2017,
+      "sport": "golf",
+      "count": 1
     },
     {
-      "year": 2018,
-      "sport": "basketball",
-      "count": 25
+      "year": 2017,
+      "sport": "figure_skating",
+      "count": 1
+    },
+    {
+      "year": 2017,
+      "sport": "badminton",
+      "count": 1
+    },
+    {
+      "year": 2017,
+      "sport": "aussie_rules",
+      "count": 1
     },
     {
       "year": 2018,
       "sport": "multi_sport",
-      "count": 22
+      "count": 111
+    },
+    {
+      "year": 2018,
+      "sport": "football",
+      "count": 106
     },
     {
       "year": 2018,
       "sport": "other",
-      "count": 13
+      "count": 54
+    },
+    {
+      "year": 2018,
+      "sport": "basketball",
+      "count": 50
     },
     {
       "year": 2018,
       "sport": "athletics",
-      "count": 13
+      "count": 34
     },
     {
       "year": 2018,
       "sport": "tennis",
+      "count": 21
+    },
+    {
+      "year": 2018,
+      "sport": "boxing_mma",
+      "count": 17
+    },
+    {
+      "year": 2018,
+      "sport": "baseball",
+      "count": 16
+    },
+    {
+      "year": 2018,
+      "sport": "american_football",
+      "count": 16
+    },
+    {
+      "year": 2018,
+      "sport": "volleyball",
+      "count": 13
+    },
+    {
+      "year": 2018,
+      "sport": "handball",
+      "count": 11
+    },
+    {
+      "year": 2018,
+      "sport": "cycling",
+      "count": 9
+    },
+    {
+      "year": 2018,
+      "sport": "swimming",
       "count": 8
     },
     {
       "year": 2018,
-      "sport": "volleyball",
+      "sport": "golf",
+      "count": 8
+    },
+    {
+      "year": 2018,
+      "sport": "skiing",
       "count": 6
     },
     {
       "year": 2018,
-      "sport": "handball",
+      "sport": "cricket",
       "count": 6
-    },
-    {
-      "year": 2018,
-      "sport": "boxing_mma",
-      "count": 5
     },
     {
       "year": 2018,
@@ -920,82 +1201,122 @@
     },
     {
       "year": 2018,
-      "sport": "cycling",
-      "count": 4
-    },
-    {
-      "year": 2018,
-      "sport": "baseball",
-      "count": 4
-    },
-    {
-      "year": 2018,
       "sport": "motorsport",
-      "count": 3
-    },
-    {
-      "year": 2018,
-      "sport": "swimming",
-      "count": 2
-    },
-    {
-      "year": 2018,
-      "sport": "skiing",
-      "count": 2
-    },
-    {
-      "year": 2018,
-      "sport": "american_football",
-      "count": 2
-    },
-    {
-      "year": 2018,
-      "sport": "rugby",
-      "count": 1
-    },
-    {
-      "year": 2018,
-      "sport": "ice_hockey",
-      "count": 1
+      "count": 4
     },
     {
       "year": 2018,
       "sport": "gymnastics",
+      "count": 4
+    },
+    {
+      "year": 2018,
+      "sport": "rugby",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "sport": "snooker",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "sport": "ice_hockey",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "sport": "esports",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "sport": "aussie_rules",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "sport": "table_tennis",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "sport": "futsal",
       "count": 1
     },
     {
       "year": 2019,
       "sport": "football",
-      "count": 44
+      "count": 145
     },
     {
       "year": 2019,
       "sport": "multi_sport",
-      "count": 28
-    },
-    {
-      "year": 2019,
-      "sport": "athletics",
-      "count": 15
-    },
-    {
-      "year": 2019,
-      "sport": "basketball",
-      "count": 13
+      "count": 136
     },
     {
       "year": 2019,
       "sport": "other",
-      "count": 12
+      "count": 57
+    },
+    {
+      "year": 2019,
+      "sport": "athletics",
+      "count": 41
+    },
+    {
+      "year": 2019,
+      "sport": "basketball",
+      "count": 32
     },
     {
       "year": 2019,
       "sport": "tennis",
-      "count": 9
+      "count": 29
     },
     {
       "year": 2019,
       "sport": "volleyball",
+      "count": 21
+    },
+    {
+      "year": 2019,
+      "sport": "american_football",
+      "count": 16
+    },
+    {
+      "year": 2019,
+      "sport": "boxing_mma",
+      "count": 13
+    },
+    {
+      "year": 2019,
+      "sport": "handball",
+      "count": 12
+    },
+    {
+      "year": 2019,
+      "sport": "swimming",
+      "count": 11
+    },
+    {
+      "year": 2019,
+      "sport": "baseball",
+      "count": 11
+    },
+    {
+      "year": 2019,
+      "sport": "cricket",
+      "count": 8
+    },
+    {
+      "year": 2019,
+      "sport": "rugby",
+      "count": 7
+    },
+    {
+      "year": 2019,
+      "sport": "cycling",
       "count": 7
     },
     {
@@ -1005,152 +1326,192 @@
     },
     {
       "year": 2019,
-      "sport": "cricket",
+      "sport": "skiing",
       "count": 5
     },
     {
       "year": 2019,
-      "sport": "swimming",
-      "count": 4
-    },
-    {
-      "year": 2019,
-      "sport": "handball",
-      "count": 3
-    },
-    {
-      "year": 2019,
-      "sport": "boxing_mma",
-      "count": 3
-    },
-    {
-      "year": 2019,
-      "sport": "baseball",
-      "count": 3
-    },
-    {
-      "year": 2019,
-      "sport": "american_football",
-      "count": 3
-    },
-    {
-      "year": 2019,
-      "sport": "ice_hockey",
-      "count": 2
-    },
-    {
-      "year": 2019,
       "sport": "gymnastics",
-      "count": 2
+      "count": 5
+    },
+    {
+      "year": 2019,
+      "sport": "golf",
+      "count": 5
     },
     {
       "year": 2019,
       "sport": "esports",
+      "count": 5
+    },
+    {
+      "year": 2019,
+      "sport": "ice_hockey",
+      "count": 4
+    },
+    {
+      "year": 2019,
+      "sport": "aussie_rules",
+      "count": 4
+    },
+    {
+      "year": 2019,
+      "sport": "table_tennis",
       "count": 2
     },
     {
       "year": 2019,
-      "sport": "cycling",
+      "sport": "rowing",
       "count": 2
     },
     {
       "year": 2019,
-      "sport": "skiing",
-      "count": 1
+      "sport": "futsal",
+      "count": 2
     },
     {
       "year": 2019,
-      "sport": "rugby",
+      "sport": "water_polo",
       "count": 1
     },
     {
       "year": 2020,
       "sport": "football",
-      "count": 52
-    },
-    {
-      "year": 2020,
-      "sport": "basketball",
-      "count": 29
+      "count": 163
     },
     {
       "year": 2020,
       "sport": "multi_sport",
-      "count": 25
+      "count": 148
+    },
+    {
+      "year": 2020,
+      "sport": "basketball",
+      "count": 61
     },
     {
       "year": 2020,
       "sport": "other",
-      "count": 18
+      "count": 55
     },
     {
       "year": 2020,
       "sport": "athletics",
+      "count": 39
+    },
+    {
+      "year": 2020,
+      "sport": "tennis",
+      "count": 36
+    },
+    {
+      "year": 2020,
+      "sport": "american_football",
+      "count": 32
+    },
+    {
+      "year": 2020,
+      "sport": "baseball",
+      "count": 24
+    },
+    {
+      "year": 2020,
+      "sport": "boxing_mma",
+      "count": 21
+    },
+    {
+      "year": 2020,
+      "sport": "handball",
+      "count": 17
+    },
+    {
+      "year": 2020,
+      "sport": "rugby",
+      "count": 15
+    },
+    {
+      "year": 2020,
+      "sport": "cycling",
+      "count": 15
+    },
+    {
+      "year": 2020,
+      "sport": "volleyball",
       "count": 14
     },
     {
       "year": 2020,
-      "sport": "tennis",
+      "sport": "ice_hockey",
       "count": 12
     },
     {
       "year": 2020,
-      "sport": "cycling",
-      "count": 8
-    },
-    {
-      "year": 2020,
-      "sport": "ice_hockey",
-      "count": 6
-    },
-    {
-      "year": 2020,
-      "sport": "handball",
-      "count": 6
-    },
-    {
-      "year": 2020,
-      "sport": "baseball",
-      "count": 5
-    },
-    {
-      "year": 2020,
-      "sport": "rugby",
-      "count": 4
-    },
-    {
-      "year": 2020,
-      "sport": "boxing_mma",
-      "count": 4
-    },
-    {
-      "year": 2020,
-      "sport": "american_football",
-      "count": 4
-    },
-    {
-      "year": 2020,
-      "sport": "volleyball",
-      "count": 3
-    },
-    {
-      "year": 2020,
-      "sport": "skiing",
-      "count": 3
-    },
-    {
-      "year": 2020,
-      "sport": "gymnastics",
-      "count": 3
+      "sport": "esports",
+      "count": 10
     },
     {
       "year": 2020,
       "sport": "swimming",
-      "count": 2
+      "count": 8
+    },
+    {
+      "year": 2020,
+      "sport": "cricket",
+      "count": 8
+    },
+    {
+      "year": 2020,
+      "sport": "golf",
+      "count": 7
+    },
+    {
+      "year": 2020,
+      "sport": "gymnastics",
+      "count": 6
+    },
+    {
+      "year": 2020,
+      "sport": "skiing",
+      "count": 5
     },
     {
       "year": 2020,
       "sport": "rowing",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "sport": "aussie_rules",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "sport": "table_tennis",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "sport": "futsal",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "sport": "badminton",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "sport": "water_polo",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "sport": "speed_skating",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "sport": "snooker",
       "count": 2
     },
     {
@@ -1160,117 +1521,152 @@
     },
     {
       "year": 2020,
-      "sport": "esports",
+      "sport": "darts",
       "count": 2
     },
     {
-      "year": 2020,
-      "sport": "cricket",
-      "count": 2
-    },
-    {
-      "year": 2020,
-      "sport": "speed_skating",
-      "count": 1
+      "year": 2021,
+      "sport": "multi_sport",
+      "count": 220
     },
     {
       "year": 2021,
       "sport": "football",
-      "count": 69
+      "count": 191
+    },
+    {
+      "year": 2021,
+      "sport": "other",
+      "count": 91
     },
     {
       "year": 2021,
       "sport": "basketball",
+      "count": 77
+    },
+    {
+      "year": 2021,
+      "sport": "athletics",
+      "count": 56
+    },
+    {
+      "year": 2021,
+      "sport": "tennis",
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "sport": "volleyball",
       "count": 35
     },
     {
       "year": 2021,
-      "sport": "other",
-      "count": 24
-    },
-    {
-      "year": 2021,
-      "sport": "multi_sport",
-      "count": 23
-    },
-    {
-      "year": 2021,
-      "sport": "tennis",
-      "count": 15
-    },
-    {
-      "year": 2021,
-      "sport": "volleyball",
-      "count": 14
-    },
-    {
-      "year": 2021,
-      "sport": "athletics",
-      "count": 12
-    },
-    {
-      "year": 2021,
       "sport": "american_football",
-      "count": 9
-    },
-    {
-      "year": 2021,
-      "sport": "handball",
-      "count": 8
+      "count": 26
     },
     {
       "year": 2021,
       "sport": "rugby",
-      "count": 6
-    },
-    {
-      "year": 2021,
-      "sport": "ice_hockey",
-      "count": 6
-    },
-    {
-      "year": 2021,
-      "sport": "boxing_mma",
-      "count": 5
-    },
-    {
-      "year": 2021,
-      "sport": "gymnastics",
-      "count": 4
+      "count": 25
     },
     {
       "year": 2021,
       "sport": "cricket",
-      "count": 4
+      "count": 22
+    },
+    {
+      "year": 2021,
+      "sport": "boxing_mma",
+      "count": 21
     },
     {
       "year": 2021,
       "sport": "baseball",
-      "count": 4
+      "count": 20
     },
     {
       "year": 2021,
-      "sport": "skiing",
-      "count": 3
+      "sport": "handball",
+      "count": 17
     },
     {
       "year": 2021,
       "sport": "swimming",
-      "count": 2
+      "count": 16
+    },
+    {
+      "year": 2021,
+      "sport": "ice_hockey",
+      "count": 16
+    },
+    {
+      "year": 2021,
+      "sport": "cycling",
+      "count": 14
+    },
+    {
+      "year": 2021,
+      "sport": "gymnastics",
+      "count": 11
+    },
+    {
+      "year": 2021,
+      "sport": "skiing",
+      "count": 10
+    },
+    {
+      "year": 2021,
+      "sport": "esports",
+      "count": 9
     },
     {
       "year": 2021,
       "sport": "rowing",
-      "count": 2
-    },
-    {
-      "year": 2021,
-      "sport": "speed_skating",
-      "count": 1
+      "count": 6
     },
     {
       "year": 2021,
       "sport": "golf",
+      "count": 5
+    },
+    {
+      "year": 2021,
+      "sport": "floorball",
+      "count": 5
+    },
+    {
+      "year": 2021,
+      "sport": "aussie_rules",
+      "count": 4
+    },
+    {
+      "year": 2021,
+      "sport": "motorsport",
+      "count": 3
+    },
+    {
+      "year": 2021,
+      "sport": "snooker",
+      "count": 2
+    },
+    {
+      "year": 2021,
+      "sport": "futsal",
+      "count": 2
+    },
+    {
+      "year": 2021,
+      "sport": "water_polo",
+      "count": 1
+    },
+    {
+      "year": 2021,
+      "sport": "table_tennis",
+      "count": 1
+    },
+    {
+      "year": 2021,
+      "sport": "speed_skating",
       "count": 1
     },
     {
@@ -1280,552 +1676,777 @@
     },
     {
       "year": 2021,
-      "sport": "esports",
+      "sport": "badminton",
       "count": 1
-    },
-    {
-      "year": 2021,
-      "sport": "cycling",
-      "count": 1
-    },
-    {
-      "year": 2022,
-      "sport": "football",
-      "count": 66
-    },
-    {
-      "year": 2022,
-      "sport": "basketball",
-      "count": 40
     },
     {
       "year": 2022,
       "sport": "multi_sport",
-      "count": 31
+      "count": 226
+    },
+    {
+      "year": 2022,
+      "sport": "football",
+      "count": 182
     },
     {
       "year": 2022,
       "sport": "other",
-      "count": 22
+      "count": 113
     },
     {
       "year": 2022,
-      "sport": "tennis",
-      "count": 12
+      "sport": "basketball",
+      "count": 79
     },
     {
       "year": 2022,
       "sport": "athletics",
-      "count": 11
+      "count": 58
     },
     {
       "year": 2022,
-      "sport": "rugby",
-      "count": 8
-    },
-    {
-      "year": 2022,
-      "sport": "volleyball",
-      "count": 7
+      "sport": "tennis",
+      "count": 49
     },
     {
       "year": 2022,
       "sport": "cycling",
-      "count": 7
-    },
-    {
-      "year": 2022,
-      "sport": "rowing",
-      "count": 5
-    },
-    {
-      "year": 2022,
-      "sport": "ice_hockey",
-      "count": 5
-    },
-    {
-      "year": 2022,
-      "sport": "esports",
-      "count": 5
-    },
-    {
-      "year": 2022,
-      "sport": "boxing_mma",
-      "count": 5
-    },
-    {
-      "year": 2022,
-      "sport": "baseball",
-      "count": 5
-    },
-    {
-      "year": 2022,
-      "sport": "american_football",
-      "count": 5
-    },
-    {
-      "year": 2022,
-      "sport": "handball",
-      "count": 4
-    },
-    {
-      "year": 2022,
-      "sport": "swimming",
-      "count": 2
+      "count": 33
     },
     {
       "year": 2022,
       "sport": "skiing",
-      "count": 2
+      "count": 29
+    },
+    {
+      "year": 2022,
+      "sport": "boxing_mma",
+      "count": 24
+    },
+    {
+      "year": 2022,
+      "sport": "volleyball",
+      "count": 23
+    },
+    {
+      "year": 2022,
+      "sport": "rugby",
+      "count": 20
+    },
+    {
+      "year": 2022,
+      "sport": "baseball",
+      "count": 20
+    },
+    {
+      "year": 2022,
+      "sport": "ice_hockey",
+      "count": 18
+    },
+    {
+      "year": 2022,
+      "sport": "american_football",
+      "count": 18
+    },
+    {
+      "year": 2022,
+      "sport": "rowing",
+      "count": 15
+    },
+    {
+      "year": 2022,
+      "sport": "handball",
+      "count": 15
+    },
+    {
+      "year": 2022,
+      "sport": "esports",
+      "count": 15
+    },
+    {
+      "year": 2022,
+      "sport": "swimming",
+      "count": 14
+    },
+    {
+      "year": 2022,
+      "sport": "speed_skating",
+      "count": 10
+    },
+    {
+      "year": 2022,
+      "sport": "gymnastics",
+      "count": 10
     },
     {
       "year": 2022,
       "sport": "cricket",
+      "count": 9
+    },
+    {
+      "year": 2022,
+      "sport": "table_tennis",
+      "count": 7
+    },
+    {
+      "year": 2022,
+      "sport": "floorball",
+      "count": 7
+    },
+    {
+      "year": 2022,
+      "sport": "aussie_rules",
+      "count": 7
+    },
+    {
+      "year": 2022,
+      "sport": "badminton",
+      "count": 6
+    },
+    {
+      "year": 2022,
+      "sport": "water_polo",
       "count": 2
     },
     {
-      "year": 2023,
-      "sport": "football",
-      "count": 88
+      "year": 2022,
+      "sport": "snooker",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "sport": "motorsport",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "sport": "golf",
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "sport": "futsal",
+      "count": 1
     },
     {
       "year": 2023,
       "sport": "multi_sport",
-      "count": 52
+      "count": 343
     },
     {
       "year": 2023,
-      "sport": "basketball",
-      "count": 32
+      "sport": "football",
+      "count": 295
     },
     {
       "year": 2023,
       "sport": "other",
+      "count": 123
+    },
+    {
+      "year": 2023,
+      "sport": "athletics",
+      "count": 86
+    },
+    {
+      "year": 2023,
+      "sport": "basketball",
+      "count": 78
+    },
+    {
+      "year": 2023,
+      "sport": "skiing",
+      "count": 49
+    },
+    {
+      "year": 2023,
+      "sport": "rugby",
+      "count": 48
+    },
+    {
+      "year": 2023,
+      "sport": "tennis",
+      "count": 45
+    },
+    {
+      "year": 2023,
+      "sport": "volleyball",
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "sport": "cycling",
+      "count": 37
+    },
+    {
+      "year": 2023,
+      "sport": "boxing_mma",
+      "count": 35
+    },
+    {
+      "year": 2023,
+      "sport": "esports",
+      "count": 31
+    },
+    {
+      "year": 2023,
+      "sport": "swimming",
       "count": 30
     },
     {
       "year": 2023,
-      "sport": "volleyball",
+      "sport": "handball",
+      "count": 29
+    },
+    {
+      "year": 2023,
+      "sport": "american_football",
+      "count": 27
+    },
+    {
+      "year": 2023,
+      "sport": "ice_hockey",
+      "count": 25
+    },
+    {
+      "year": 2023,
+      "sport": "baseball",
+      "count": 24
+    },
+    {
+      "year": 2023,
+      "sport": "futsal",
+      "count": 19
+    },
+    {
+      "year": 2023,
+      "sport": "cricket",
+      "count": 16
+    },
+    {
+      "year": 2023,
+      "sport": "gymnastics",
       "count": 15
     },
     {
       "year": 2023,
-      "sport": "tennis",
+      "sport": "rowing",
+      "count": 14
+    },
+    {
+      "year": 2023,
+      "sport": "speed_skating",
       "count": 11
     },
     {
       "year": 2023,
-      "sport": "athletics",
-      "count": 11
-    },
-    {
-      "year": 2023,
-      "sport": "handball",
-      "count": 10
-    },
-    {
-      "year": 2023,
-      "sport": "boxing_mma",
+      "sport": "figure_skating",
       "count": 8
     },
     {
       "year": 2023,
-      "sport": "baseball",
+      "sport": "badminton",
+      "count": 8
+    },
+    {
+      "year": 2023,
+      "sport": "darts",
       "count": 5
     },
     {
       "year": 2023,
-      "sport": "swimming",
+      "sport": "table_tennis",
       "count": 4
     },
     {
       "year": 2023,
-      "sport": "rugby",
+      "sport": "golf",
       "count": 4
-    },
-    {
-      "year": 2023,
-      "sport": "ice_hockey",
-      "count": 3
-    },
-    {
-      "year": 2023,
-      "sport": "esports",
-      "count": 3
-    },
-    {
-      "year": 2023,
-      "sport": "cricket",
-      "count": 3
-    },
-    {
-      "year": 2023,
-      "sport": "american_football",
-      "count": 3
-    },
-    {
-      "year": 2023,
-      "sport": "skiing",
-      "count": 2
     },
     {
       "year": 2023,
       "sport": "diving",
+      "count": 4
+    },
+    {
+      "year": 2023,
+      "sport": "aussie_rules",
+      "count": 4
+    },
+    {
+      "year": 2023,
+      "sport": "snooker",
+      "count": 3
+    },
+    {
+      "year": 2023,
+      "sport": "motorsport",
+      "count": 3
+    },
+    {
+      "year": 2023,
+      "sport": "water_polo",
+      "count": 1
+    },
+    {
+      "year": 2023,
+      "sport": "floorball",
       "count": 1
     },
     {
       "year": 2024,
       "sport": "football",
-      "count": 369
+      "count": 557
     },
     {
       "year": 2024,
       "sport": "multi_sport",
-      "count": 132
+      "count": 419
     },
     {
       "year": 2024,
       "sport": "other",
-      "count": 97
-    },
-    {
-      "year": 2024,
-      "sport": "basketball",
-      "count": 86
+      "count": 233
     },
     {
       "year": 2024,
       "sport": "athletics",
-      "count": 57
+      "count": 181
+    },
+    {
+      "year": 2024,
+      "sport": "basketball",
+      "count": 130
     },
     {
       "year": 2024,
       "sport": "cycling",
-      "count": 44
+      "count": 90
     },
     {
       "year": 2024,
       "sport": "rugby",
-      "count": 41
-    },
-    {
-      "year": 2024,
-      "sport": "tennis",
-      "count": 35
+      "count": 64
     },
     {
       "year": 2024,
       "sport": "volleyball",
-      "count": 33
-    },
-    {
-      "year": 2024,
-      "sport": "ice_hockey",
-      "count": 24
-    },
-    {
-      "year": 2024,
-      "sport": "baseball",
-      "count": 22
-    },
-    {
-      "year": 2024,
-      "sport": "swimming",
-      "count": 21
-    },
-    {
-      "year": 2024,
-      "sport": "american_football",
-      "count": 20
-    },
-    {
-      "year": 2024,
-      "sport": "cricket",
-      "count": 18
+      "count": 55
     },
     {
       "year": 2024,
       "sport": "esports",
-      "count": 17
+      "count": 55
+    },
+    {
+      "year": 2024,
+      "sport": "tennis",
+      "count": 50
+    },
+    {
+      "year": 2024,
+      "sport": "swimming",
+      "count": 47
     },
     {
       "year": 2024,
       "sport": "boxing_mma",
-      "count": 13
+      "count": 42
     },
     {
       "year": 2024,
-      "sport": "speed_skating",
-      "count": 10
+      "sport": "baseball",
+      "count": 42
     },
     {
       "year": 2024,
-      "sport": "handball",
-      "count": 9
+      "sport": "ice_hockey",
+      "count": 37
+    },
+    {
+      "year": 2024,
+      "sport": "american_football",
+      "count": 34
+    },
+    {
+      "year": 2024,
+      "sport": "futsal",
+      "count": 31
     },
     {
       "year": 2024,
       "sport": "skiing",
-      "count": 7
+      "count": 29
+    },
+    {
+      "year": 2024,
+      "sport": "speed_skating",
+      "count": 22
+    },
+    {
+      "year": 2024,
+      "sport": "handball",
+      "count": 21
+    },
+    {
+      "year": 2024,
+      "sport": "cricket",
+      "count": 21
+    },
+    {
+      "year": 2024,
+      "sport": "badminton",
+      "count": 19
+    },
+    {
+      "year": 2024,
+      "sport": "gymnastics",
+      "count": 12
     },
     {
       "year": 2024,
       "sport": "golf",
-      "count": 7
+      "count": 12
     },
     {
       "year": 2024,
       "sport": "rowing",
+      "count": 10
+    },
+    {
+      "year": 2024,
+      "sport": "floorball",
       "count": 6
     },
     {
       "year": 2024,
-      "sport": "gymnastics",
-      "count": 5
+      "sport": "table_tennis",
+      "count": 4
     },
     {
       "year": 2024,
       "sport": "motorsport",
-      "count": 1
+      "count": 4
     },
     {
       "year": 2024,
       "sport": "figure_skating",
-      "count": 1
+      "count": 4
     },
     {
-      "year": 2025,
-      "sport": "football",
-      "count": 605
+      "year": 2024,
+      "sport": "darts",
+      "count": 4
     },
     {
-      "year": 2025,
-      "sport": "multi_sport",
-      "count": 487
-    },
-    {
-      "year": 2025,
-      "sport": "basketball",
-      "count": 160
-    },
-    {
-      "year": 2025,
-      "sport": "athletics",
-      "count": 141
-    },
-    {
-      "year": 2025,
-      "sport": "other",
-      "count": 140
-    },
-    {
-      "year": 2025,
-      "sport": "tennis",
-      "count": 57
-    },
-    {
-      "year": 2025,
-      "sport": "volleyball",
-      "count": 53
-    },
-    {
-      "year": 2025,
-      "sport": "cricket",
-      "count": 48
-    },
-    {
-      "year": 2025,
-      "sport": "rugby",
-      "count": 44
-    },
-    {
-      "year": 2025,
-      "sport": "baseball",
-      "count": 38
-    },
-    {
-      "year": 2025,
-      "sport": "american_football",
-      "count": 33
-    },
-    {
-      "year": 2025,
-      "sport": "cycling",
-      "count": 32
-    },
-    {
-      "year": 2025,
-      "sport": "boxing_mma",
-      "count": 29
-    },
-    {
-      "year": 2025,
-      "sport": "swimming",
-      "count": 28
-    },
-    {
-      "year": 2025,
-      "sport": "rowing",
-      "count": 23
-    },
-    {
-      "year": 2025,
-      "sport": "skiing",
-      "count": 22
-    },
-    {
-      "year": 2025,
-      "sport": "esports",
-      "count": 21
-    },
-    {
-      "year": 2025,
-      "sport": "gymnastics",
-      "count": 20
-    },
-    {
-      "year": 2025,
-      "sport": "ice_hockey",
-      "count": 19
-    },
-    {
-      "year": 2025,
-      "sport": "handball",
-      "count": 18
-    },
-    {
-      "year": 2025,
-      "sport": "speed_skating",
-      "count": 10
-    },
-    {
-      "year": 2025,
-      "sport": "golf",
-      "count": 10
-    },
-    {
-      "year": 2025,
-      "sport": "motorsport",
-      "count": 5
-    },
-    {
-      "year": 2025,
-      "sport": "figure_skating",
-      "count": 5
-    },
-    {
-      "year": 2025,
+      "year": 2024,
       "sport": "diving",
       "count": 2
     },
     {
+      "year": 2024,
+      "sport": "snooker",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "sport": "aussie_rules",
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "sport": "multi_sport",
+      "count": 976
+    },
+    {
+      "year": 2025,
+      "sport": "football",
+      "count": 886
+    },
+    {
+      "year": 2025,
+      "sport": "other",
+      "count": 354
+    },
+    {
+      "year": 2025,
+      "sport": "athletics",
+      "count": 311
+    },
+    {
+      "year": 2025,
+      "sport": "basketball",
+      "count": 229
+    },
+    {
+      "year": 2025,
+      "sport": "volleyball",
+      "count": 91
+    },
+    {
+      "year": 2025,
+      "sport": "tennis",
+      "count": 88
+    },
+    {
+      "year": 2025,
+      "sport": "rugby",
+      "count": 85
+    },
+    {
+      "year": 2025,
+      "sport": "baseball",
+      "count": 77
+    },
+    {
+      "year": 2025,
+      "sport": "badminton",
+      "count": 77
+    },
+    {
+      "year": 2025,
+      "sport": "cycling",
+      "count": 75
+    },
+    {
+      "year": 2025,
+      "sport": "boxing_mma",
+      "count": 71
+    },
+    {
+      "year": 2025,
+      "sport": "american_football",
+      "count": 64
+    },
+    {
+      "year": 2025,
+      "sport": "cricket",
+      "count": 60
+    },
+    {
+      "year": 2025,
+      "sport": "swimming",
+      "count": 58
+    },
+    {
+      "year": 2025,
+      "sport": "futsal",
+      "count": 58
+    },
+    {
+      "year": 2025,
+      "sport": "esports",
+      "count": 54
+    },
+    {
+      "year": 2025,
+      "sport": "skiing",
+      "count": 41
+    },
+    {
+      "year": 2025,
+      "sport": "rowing",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "sport": "handball",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "sport": "gymnastics",
+      "count": 35
+    },
+    {
+      "year": 2025,
+      "sport": "table_tennis",
+      "count": 34
+    },
+    {
+      "year": 2025,
+      "sport": "ice_hockey",
+      "count": 33
+    },
+    {
+      "year": 2025,
+      "sport": "speed_skating",
+      "count": 20
+    },
+    {
+      "year": 2025,
+      "sport": "water_polo",
+      "count": 17
+    },
+    {
+      "year": 2025,
+      "sport": "golf",
+      "count": 16
+    },
+    {
+      "year": 2025,
+      "sport": "motorsport",
+      "count": 12
+    },
+    {
+      "year": 2025,
+      "sport": "figure_skating",
+      "count": 10
+    },
+    {
+      "year": 2025,
+      "sport": "diving",
+      "count": 4
+    },
+    {
+      "year": 2025,
+      "sport": "floorball",
+      "count": 3
+    },
+    {
+      "year": 2025,
+      "sport": "darts",
+      "count": 3
+    },
+    {
+      "year": 2025,
+      "sport": "snooker",
+      "count": 1
+    },
+    {
       "year": 2026,
       "sport": "multi_sport",
-      "count": 269
+      "count": 468
     },
     {
       "year": 2026,
       "sport": "football",
-      "count": 88
+      "count": 175
+    },
+    {
+      "year": 2026,
+      "sport": "athletics",
+      "count": 76
+    },
+    {
+      "year": 2026,
+      "sport": "other",
+      "count": 71
     },
     {
       "year": 2026,
       "sport": "basketball",
+      "count": 56
+    },
+    {
+      "year": 2026,
+      "sport": "baseball",
       "count": 37
     },
     {
       "year": 2026,
-      "sport": "other",
-      "count": 30
-    },
-    {
-      "year": 2026,
-      "sport": "athletics",
+      "sport": "tennis",
       "count": 27
     },
     {
       "year": 2026,
-      "sport": "baseball",
-      "count": 18
-    },
-    {
-      "year": 2026,
-      "sport": "tennis",
-      "count": 15
-    },
-    {
-      "year": 2026,
-      "sport": "swimming",
-      "count": 12
+      "sport": "boxing_mma",
+      "count": 23
     },
     {
       "year": 2026,
       "sport": "volleyball",
-      "count": 11
+      "count": 20
+    },
+    {
+      "year": 2026,
+      "sport": "swimming",
+      "count": 19
     },
     {
       "year": 2026,
       "sport": "american_football",
-      "count": 10
-    },
-    {
-      "year": 2026,
-      "sport": "rugby",
-      "count": 8
+      "count": 18
     },
     {
       "year": 2026,
       "sport": "handball",
-      "count": 8
-    },
-    {
-      "year": 2026,
-      "sport": "esports",
-      "count": 8
-    },
-    {
-      "year": 2026,
-      "sport": "rowing",
-      "count": 7
-    },
-    {
-      "year": 2026,
-      "sport": "cycling",
-      "count": 6
-    },
-    {
-      "year": 2026,
-      "sport": "boxing_mma",
-      "count": 6
+      "count": 16
     },
     {
       "year": 2026,
       "sport": "skiing",
-      "count": 4
+      "count": 15
     },
     {
       "year": 2026,
-      "sport": "golf",
-      "count": 4
+      "sport": "table_tennis",
+      "count": 14
     },
     {
       "year": 2026,
-      "sport": "ice_hockey",
-      "count": 3
+      "sport": "esports",
+      "count": 14
+    },
+    {
+      "year": 2026,
+      "sport": "rugby",
+      "count": 13
+    },
+    {
+      "year": 2026,
+      "sport": "rowing",
+      "count": 13
+    },
+    {
+      "year": 2026,
+      "sport": "cycling",
+      "count": 13
+    },
+    {
+      "year": 2026,
+      "sport": "badminton",
+      "count": 13
     },
     {
       "year": 2026,
       "sport": "gymnastics",
-      "count": 3
+      "count": 10
     },
     {
       "year": 2026,
-      "sport": "cricket",
-      "count": 3
+      "sport": "ice_hockey",
+      "count": 6
+    },
+    {
+      "year": 2026,
+      "sport": "golf",
+      "count": 6
     },
     {
       "year": 2026,
       "sport": "speed_skating",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "sport": "futsal",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "sport": "figure_skating",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "sport": "cricket",
+      "count": 4
+    },
+    {
+      "year": 2026,
+      "sport": "water_polo",
       "count": 2
     },
     {
@@ -1835,1652 +2456,2002 @@
     },
     {
       "year": 2026,
-      "sport": "figure_skating",
+      "sport": "floorball",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "sport": "diving",
+      "count": 1
+    },
+    {
+      "year": 2026,
+      "sport": "aussie_rules",
       "count": 1
     }
   ],
   "methodologyByYear": [
     {
-      "year": 2015,
+      "year": 2014,
       "methodology": "statistical",
-      "count": 91
+      "count": 88
     },
     {
-      "year": 2015,
-      "methodology": "descriptive",
-      "count": 16
-    },
-    {
-      "year": 2015,
-      "methodology": "computer_vision",
-      "count": 6
-    },
-    {
-      "year": 2015,
-      "methodology": "review",
-      "count": 5
-    },
-    {
-      "year": 2015,
-      "methodology": "other",
-      "count": 4
-    },
-    {
-      "year": 2015,
+      "year": 2014,
       "methodology": "simulation",
-      "count": 3
-    },
-    {
-      "year": 2015,
-      "methodology": "machine_learning",
-      "count": 3
-    },
-    {
-      "year": 2015,
-      "methodology": "optimization",
-      "count": 2
-    },
-    {
-      "year": 2015,
-      "methodology": "qualitative",
-      "count": 1
-    },
-    {
-      "year": 2015,
-      "methodology": "network_analysis",
-      "count": 1
-    },
-    {
-      "year": 2015,
-      "methodology": "mixed_methods",
-      "count": 1
-    },
-    {
-      "year": 2015,
-      "methodology": "deep_learning",
-      "count": 1
-    },
-    {
-      "year": 2016,
-      "methodology": "statistical",
-      "count": 83
-    },
-    {
-      "year": 2016,
-      "methodology": "descriptive",
-      "count": 13
-    },
-    {
-      "year": 2016,
-      "methodology": "machine_learning",
       "count": 7
     },
     {
-      "year": 2016,
+      "year": 2014,
       "methodology": "review",
       "count": 5
     },
     {
-      "year": 2016,
-      "methodology": "mixed_methods",
-      "count": 4
-    },
-    {
-      "year": 2016,
-      "methodology": "simulation",
-      "count": 3
-    },
-    {
-      "year": 2016,
-      "methodology": "qualitative",
-      "count": 3
-    },
-    {
-      "year": 2016,
-      "methodology": "computer_vision",
-      "count": 3
-    },
-    {
-      "year": 2016,
-      "methodology": "other",
-      "count": 2
-    },
-    {
-      "year": 2016,
-      "methodology": "meta_analysis",
-      "count": 1
-    },
-    {
-      "year": 2016,
-      "methodology": "NLP",
-      "count": 1
-    },
-    {
-      "year": 2017,
-      "methodology": "statistical",
-      "count": 118
-    },
-    {
-      "year": 2017,
-      "methodology": "descriptive",
-      "count": 14
-    },
-    {
-      "year": 2017,
-      "methodology": "review",
-      "count": 12
-    },
-    {
-      "year": 2017,
-      "methodology": "machine_learning",
-      "count": 10
-    },
-    {
-      "year": 2017,
-      "methodology": "mixed_methods",
-      "count": 4
-    },
-    {
-      "year": 2017,
-      "methodology": "simulation",
-      "count": 3
-    },
-    {
-      "year": 2017,
-      "methodology": "computer_vision",
-      "count": 3
-    },
-    {
-      "year": 2017,
-      "methodology": "deep_learning",
-      "count": 2
-    },
-    {
-      "year": 2017,
-      "methodology": "qualitative",
-      "count": 1
-    },
-    {
-      "year": 2017,
-      "methodology": "other",
-      "count": 1
-    },
-    {
-      "year": 2017,
+      "year": 2014,
       "methodology": "optimization",
-      "count": 1
-    },
-    {
-      "year": 2017,
-      "methodology": "network_analysis",
-      "count": 1
-    },
-    {
-      "year": 2018,
-      "methodology": "statistical",
-      "count": 108
-    },
-    {
-      "year": 2018,
-      "methodology": "descriptive",
-      "count": 20
-    },
-    {
-      "year": 2018,
-      "methodology": "review",
-      "count": 10
-    },
-    {
-      "year": 2018,
-      "methodology": "machine_learning",
-      "count": 7
-    },
-    {
-      "year": 2018,
-      "methodology": "computer_vision",
-      "count": 4
-    },
-    {
-      "year": 2018,
-      "methodology": "simulation",
-      "count": 3
-    },
-    {
-      "year": 2018,
-      "methodology": "optimization",
-      "count": 3
-    },
-    {
-      "year": 2018,
-      "methodology": "mixed_methods",
-      "count": 3
-    },
-    {
-      "year": 2018,
-      "methodology": "qualitative",
-      "count": 2
-    },
-    {
-      "year": 2018,
-      "methodology": "deep_learning",
-      "count": 2
-    },
-    {
-      "year": 2018,
-      "methodology": "network_analysis",
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "methodology": "statistical",
-      "count": 100
-    },
-    {
-      "year": 2019,
-      "methodology": "descriptive",
-      "count": 28
-    },
-    {
-      "year": 2019,
-      "methodology": "machine_learning",
-      "count": 11
-    },
-    {
-      "year": 2019,
-      "methodology": "review",
       "count": 5
     },
     {
-      "year": 2019,
-      "methodology": "simulation",
+      "year": 2014,
+      "methodology": "qualitative",
       "count": 4
     },
     {
-      "year": 2019,
-      "methodology": "optimization",
-      "count": 3
-    },
-    {
-      "year": 2019,
-      "methodology": "deep_learning",
-      "count": 3
-    },
-    {
-      "year": 2019,
-      "methodology": "other",
-      "count": 2
-    },
-    {
-      "year": 2019,
-      "methodology": "computer_vision",
-      "count": 2
-    },
-    {
-      "year": 2019,
-      "methodology": "NLP",
-      "count": 2
-    },
-    {
-      "year": 2019,
-      "methodology": "qualitative",
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "methodology": "network_analysis",
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "methodology": "mixed_methods",
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "methodology": "meta_analysis",
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "methodology": "data_engineering",
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "methodology": "statistical",
-      "count": 110
-    },
-    {
-      "year": 2020,
+      "year": 2014,
       "methodology": "descriptive",
-      "count": 25
+      "count": 3
     },
     {
-      "year": 2020,
+      "year": 2014,
       "methodology": "machine_learning",
-      "count": 22
+      "count": 2
     },
     {
-      "year": 2020,
-      "methodology": "review",
-      "count": 11
-    },
-    {
-      "year": 2020,
-      "methodology": "deep_learning",
-      "count": 9
-    },
-    {
-      "year": 2020,
+      "year": 2014,
       "methodology": "computer_vision",
-      "count": 9
-    },
-    {
-      "year": 2020,
-      "methodology": "qualitative",
-      "count": 4
-    },
-    {
-      "year": 2020,
-      "methodology": "mixed_methods",
-      "count": 4
-    },
-    {
-      "year": 2020,
-      "methodology": "simulation",
-      "count": 3
-    },
-    {
-      "year": 2020,
-      "methodology": "optimization",
-      "count": 3
-    },
-    {
-      "year": 2020,
-      "methodology": "network_analysis",
-      "count": 3
-    },
-    {
-      "year": 2020,
-      "methodology": "other",
       "count": 2
     },
     {
-      "year": 2020,
-      "methodology": "NLP",
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "methodology": null,
-      "count": 1
-    },
-    {
-      "year": 2021,
-      "methodology": "statistical",
-      "count": 135
-    },
-    {
-      "year": 2021,
-      "methodology": "machine_learning",
-      "count": 33
-    },
-    {
-      "year": 2021,
-      "methodology": "descriptive",
-      "count": 30
-    },
-    {
-      "year": 2021,
-      "methodology": "deep_learning",
-      "count": 17
-    },
-    {
-      "year": 2021,
-      "methodology": "computer_vision",
-      "count": 11
-    },
-    {
-      "year": 2021,
-      "methodology": "optimization",
-      "count": 6
-    },
-    {
-      "year": 2021,
-      "methodology": "review",
-      "count": 4
-    },
-    {
-      "year": 2021,
-      "methodology": "qualitative",
-      "count": 3
-    },
-    {
-      "year": 2021,
-      "methodology": "simulation",
-      "count": 2
-    },
-    {
-      "year": 2021,
-      "methodology": "other",
-      "count": 2
-    },
-    {
-      "year": 2021,
-      "methodology": "meta_analysis",
-      "count": 2
-    },
-    {
-      "year": 2021,
-      "methodology": "NLP",
-      "count": 2
-    },
-    {
-      "year": 2021,
-      "methodology": "network_analysis",
-      "count": 1
-    },
-    {
-      "year": 2021,
+      "year": 2014,
       "methodology": "mixed_methods",
       "count": 1
     },
     {
-      "year": 2021,
-      "methodology": "data_engineering",
-      "count": 1
-    },
-    {
-      "year": 2022,
+      "year": 2015,
       "methodology": "statistical",
-      "count": 121
-    },
-    {
-      "year": 2022,
-      "methodology": "machine_learning",
-      "count": 28
-    },
-    {
-      "year": 2022,
-      "methodology": "descriptive",
-      "count": 24
-    },
-    {
-      "year": 2022,
-      "methodology": "deep_learning",
-      "count": 21
-    },
-    {
-      "year": 2022,
-      "methodology": "review",
-      "count": 14
-    },
-    {
-      "year": 2022,
-      "methodology": "optimization",
-      "count": 8
-    },
-    {
-      "year": 2022,
-      "methodology": "computer_vision",
-      "count": 7
-    },
-    {
-      "year": 2022,
-      "methodology": "qualitative",
-      "count": 5
-    },
-    {
-      "year": 2022,
-      "methodology": "network_analysis",
-      "count": 5
-    },
-    {
-      "year": 2022,
-      "methodology": "other",
-      "count": 4
-    },
-    {
-      "year": 2022,
-      "methodology": "simulation",
-      "count": 3
-    },
-    {
-      "year": 2022,
-      "methodology": "mixed_methods",
-      "count": 2
-    },
-    {
-      "year": 2022,
-      "methodology": "meta_analysis",
-      "count": 2
-    },
-    {
-      "year": 2023,
-      "methodology": "statistical",
-      "count": 140
-    },
-    {
-      "year": 2023,
-      "methodology": "machine_learning",
-      "count": 28
-    },
-    {
-      "year": 2023,
-      "methodology": "descriptive",
-      "count": 26
-    },
-    {
-      "year": 2023,
-      "methodology": "deep_learning",
-      "count": 24
-    },
-    {
-      "year": 2023,
-      "methodology": null,
-      "count": 19
-    },
-    {
-      "year": 2023,
-      "methodology": "review",
-      "count": 11
-    },
-    {
-      "year": 2023,
-      "methodology": "computer_vision",
-      "count": 7
-    },
-    {
-      "year": 2023,
-      "methodology": "optimization",
-      "count": 6
-    },
-    {
-      "year": 2023,
-      "methodology": "qualitative",
-      "count": 5
-    },
-    {
-      "year": 2023,
-      "methodology": "mixed_methods",
-      "count": 5
-    },
-    {
-      "year": 2023,
-      "methodology": "other",
-      "count": 4
-    },
-    {
-      "year": 2023,
-      "methodology": "network_analysis",
-      "count": 4
-    },
-    {
-      "year": 2023,
-      "methodology": "NLP",
-      "count": 3
-    },
-    {
-      "year": 2023,
-      "methodology": "simulation",
-      "count": 2
-    },
-    {
-      "year": 2023,
-      "methodology": "meta_analysis",
-      "count": 1
-    },
-    {
-      "year": 2024,
-      "methodology": "statistical",
-      "count": 599
-    },
-    {
-      "year": 2024,
-      "methodology": "machine_learning",
-      "count": 140
-    },
-    {
-      "year": 2024,
-      "methodology": "descriptive",
-      "count": 101
-    },
-    {
-      "year": 2024,
-      "methodology": "deep_learning",
-      "count": 58
-    },
-    {
-      "year": 2024,
-      "methodology": "review",
-      "count": 39
-    },
-    {
-      "year": 2024,
-      "methodology": "mixed_methods",
-      "count": 25
-    },
-    {
-      "year": 2024,
-      "methodology": "computer_vision",
-      "count": 25
-    },
-    {
-      "year": 2024,
-      "methodology": "simulation",
-      "count": 18
-    },
-    {
-      "year": 2024,
-      "methodology": "qualitative",
-      "count": 18
-    },
-    {
-      "year": 2024,
-      "methodology": "other",
-      "count": 17
-    },
-    {
-      "year": 2024,
-      "methodology": "optimization",
-      "count": 14
-    },
-    {
-      "year": 2024,
-      "methodology": "network_analysis",
-      "count": 8
-    },
-    {
-      "year": 2024,
-      "methodology": "NLP",
-      "count": 8
-    },
-    {
-      "year": 2024,
-      "methodology": "meta_analysis",
-      "count": 5
-    },
-    {
-      "year": 2025,
-      "methodology": "statistical",
-      "count": 870
-    },
-    {
-      "year": 2025,
-      "methodology": "machine_learning",
       "count": 263
     },
     {
-      "year": 2025,
-      "methodology": "deep_learning",
-      "count": 194
-    },
-    {
-      "year": 2025,
+      "year": 2015,
       "methodology": "descriptive",
-      "count": 180
-    },
-    {
-      "year": 2025,
-      "methodology": null,
-      "count": 168
-    },
-    {
-      "year": 2025,
-      "methodology": "review",
-      "count": 140
-    },
-    {
-      "year": 2025,
-      "methodology": "mixed_methods",
-      "count": 50
-    },
-    {
-      "year": 2025,
-      "methodology": "computer_vision",
-      "count": 39
-    },
-    {
-      "year": 2025,
-      "methodology": "simulation",
-      "count": 31
-    },
-    {
-      "year": 2025,
-      "methodology": "other",
-      "count": 28
-    },
-    {
-      "year": 2025,
-      "methodology": "optimization",
-      "count": 26
-    },
-    {
-      "year": 2025,
-      "methodology": "qualitative",
-      "count": 25
-    },
-    {
-      "year": 2025,
-      "methodology": "meta_analysis",
-      "count": 18
-    },
-    {
-      "year": 2025,
-      "methodology": "network_analysis",
-      "count": 10
-    },
-    {
-      "year": 2025,
-      "methodology": "NLP",
-      "count": 8
-    },
-    {
-      "year": 2026,
-      "methodology": "statistical",
-      "count": 200
-    },
-    {
-      "year": 2026,
-      "methodology": null,
-      "count": 156
-    },
-    {
-      "year": 2026,
-      "methodology": "review",
-      "count": 69
-    },
-    {
-      "year": 2026,
-      "methodology": "machine_learning",
       "count": 41
     },
     {
-      "year": 2026,
-      "methodology": "descriptive",
-      "count": 37
-    },
-    {
-      "year": 2026,
-      "methodology": "deep_learning",
-      "count": 22
-    },
-    {
-      "year": 2026,
-      "methodology": "meta_analysis",
-      "count": 19
-    },
-    {
-      "year": 2026,
-      "methodology": "mixed_methods",
-      "count": 10
-    },
-    {
-      "year": 2026,
-      "methodology": "simulation",
-      "count": 7
-    },
-    {
-      "year": 2026,
-      "methodology": "computer_vision",
-      "count": 7
-    },
-    {
-      "year": 2026,
+      "year": 2015,
       "methodology": "qualitative",
-      "count": 6
-    },
-    {
-      "year": 2026,
-      "methodology": "other",
-      "count": 3
-    },
-    {
-      "year": 2026,
-      "methodology": "network_analysis",
-      "count": 3
-    },
-    {
-      "year": 2026,
-      "methodology": "optimization",
-      "count": 2
-    }
-  ],
-  "themeByYear": [
-    {
-      "year": 2015,
-      "theme": "performance_analysis",
-      "count": 63
+      "count": 17
     },
     {
       "year": 2015,
-      "theme": "player_development",
-      "count": 14
+      "methodology": "mixed_methods",
+      "count": 13
     },
     {
       "year": 2015,
-      "theme": "biomechanics",
-      "count": 10
-    },
-    {
-      "year": 2015,
-      "theme": "tactical_analysis",
-      "count": 9
-    },
-    {
-      "year": 2015,
-      "theme": "injury_prevention",
+      "methodology": "simulation",
       "count": 8
     },
     {
       "year": 2015,
-      "theme": "methodology",
+      "methodology": "review",
+      "count": 8
+    },
+    {
+      "year": 2015,
+      "methodology": "other",
+      "count": 8
+    },
+    {
+      "year": 2015,
+      "methodology": "machine_learning",
+      "count": 7
+    },
+    {
+      "year": 2015,
+      "methodology": "computer_vision",
       "count": 6
     },
     {
       "year": 2015,
-      "theme": "data_engineering",
-      "count": 4
+      "methodology": "optimization",
+      "count": 5
     },
     {
       "year": 2015,
-      "theme": "player_valuation",
+      "methodology": "deep_learning",
       "count": 3
     },
     {
       "year": 2015,
-      "theme": "physiology",
-      "count": 3
-    },
-    {
-      "year": 2015,
-      "theme": "gender_equity",
-      "count": 3
-    },
-    {
-      "year": 2015,
-      "theme": "fan_engagement",
-      "count": 3
-    },
-    {
-      "year": 2015,
-      "theme": "bias_detection",
-      "count": 3
-    },
-    {
-      "year": 2015,
-      "theme": "psychology",
+      "methodology": "network_analysis",
       "count": 2
     },
     {
       "year": 2015,
-      "theme": "epidemiology",
-      "count": 1
-    },
-    {
-      "year": 2015,
-      "theme": "coaching",
-      "count": 1
-    },
-    {
-      "year": 2015,
-      "theme": "betting_markets",
+      "methodology": "meta_analysis",
       "count": 1
     },
     {
       "year": 2016,
-      "theme": "performance_analysis",
+      "methodology": "statistical",
+      "count": 282
+    },
+    {
+      "year": 2016,
+      "methodology": "descriptive",
       "count": 51
     },
     {
       "year": 2016,
-      "theme": "methodology",
-      "count": 10
+      "methodology": "qualitative",
+      "count": 32
     },
     {
       "year": 2016,
-      "theme": "player_development",
-      "count": 9
-    },
-    {
-      "year": 2016,
-      "theme": "biomechanics",
-      "count": 9
-    },
-    {
-      "year": 2016,
-      "theme": "injury_prevention",
-      "count": 8
-    },
-    {
-      "year": 2016,
-      "theme": "data_engineering",
-      "count": 8
-    },
-    {
-      "year": 2016,
-      "theme": "psychology",
-      "count": 7
-    },
-    {
-      "year": 2016,
-      "theme": "bias_detection",
-      "count": 6
-    },
-    {
-      "year": 2016,
-      "theme": "tactical_analysis",
-      "count": 5
-    },
-    {
-      "year": 2016,
-      "theme": "coaching",
-      "count": 4
-    },
-    {
-      "year": 2016,
-      "theme": "epidemiology",
-      "count": 3
-    },
-    {
-      "year": 2016,
-      "theme": "gender_equity",
-      "count": 2
-    },
-    {
-      "year": 2016,
-      "theme": "player_valuation",
-      "count": 1
-    },
-    {
-      "year": 2016,
-      "theme": "fan_engagement",
-      "count": 1
-    },
-    {
-      "year": 2016,
-      "theme": "betting_markets",
-      "count": 1
-    },
-    {
-      "year": 2017,
-      "theme": "performance_analysis",
-      "count": 82
-    },
-    {
-      "year": 2017,
-      "theme": "player_development",
-      "count": 21
-    },
-    {
-      "year": 2017,
-      "theme": "tactical_analysis",
-      "count": 11
-    },
-    {
-      "year": 2017,
-      "theme": "methodology",
-      "count": 10
-    },
-    {
-      "year": 2017,
-      "theme": "biomechanics",
-      "count": 10
-    },
-    {
-      "year": 2017,
-      "theme": "injury_prevention",
-      "count": 7
-    },
-    {
-      "year": 2017,
-      "theme": "player_valuation",
-      "count": 5
-    },
-    {
-      "year": 2017,
-      "theme": "data_engineering",
-      "count": 5
-    },
-    {
-      "year": 2017,
-      "theme": "coaching",
-      "count": 5
-    },
-    {
-      "year": 2017,
-      "theme": "physiology",
-      "count": 4
-    },
-    {
-      "year": 2017,
-      "theme": "bias_detection",
-      "count": 3
-    },
-    {
-      "year": 2017,
-      "theme": "psychology",
-      "count": 2
-    },
-    {
-      "year": 2017,
-      "theme": "betting_markets",
-      "count": 2
-    },
-    {
-      "year": 2017,
-      "theme": "gender_equity",
-      "count": 1
-    },
-    {
-      "year": 2017,
-      "theme": "fan_engagement",
-      "count": 1
-    },
-    {
-      "year": 2017,
-      "theme": "epidemiology",
-      "count": 1
-    },
-    {
-      "year": 2018,
-      "theme": "performance_analysis",
-      "count": 87
-    },
-    {
-      "year": 2018,
-      "theme": "player_development",
-      "count": 19
-    },
-    {
-      "year": 2018,
-      "theme": "tactical_analysis",
-      "count": 14
-    },
-    {
-      "year": 2018,
-      "theme": "methodology",
-      "count": 12
-    },
-    {
-      "year": 2018,
-      "theme": "biomechanics",
-      "count": 7
-    },
-    {
-      "year": 2018,
-      "theme": "injury_prevention",
-      "count": 6
-    },
-    {
-      "year": 2018,
-      "theme": "psychology",
-      "count": 4
-    },
-    {
-      "year": 2018,
-      "theme": "player_valuation",
-      "count": 3
-    },
-    {
-      "year": 2018,
-      "theme": "fan_engagement",
-      "count": 3
-    },
-    {
-      "year": 2018,
-      "theme": "data_engineering",
-      "count": 3
-    },
-    {
-      "year": 2018,
-      "theme": "coaching",
-      "count": 3
-    },
-    {
-      "year": 2018,
-      "theme": "bias_detection",
-      "count": 2
-    },
-    {
-      "year": 2019,
-      "theme": "performance_analysis",
-      "count": 78
-    },
-    {
-      "year": 2019,
-      "theme": "player_development",
+      "methodology": "mixed_methods",
       "count": 16
     },
     {
-      "year": 2019,
-      "theme": "tactical_analysis",
-      "count": 12
-    },
-    {
-      "year": 2019,
-      "theme": "methodology",
-      "count": 10
-    },
-    {
-      "year": 2019,
-      "theme": "biomechanics",
-      "count": 10
-    },
-    {
-      "year": 2019,
-      "theme": "data_engineering",
-      "count": 8
-    },
-    {
-      "year": 2019,
-      "theme": "physiology",
-      "count": 5
-    },
-    {
-      "year": 2019,
-      "theme": "injury_prevention",
-      "count": 5
-    },
-    {
-      "year": 2019,
-      "theme": "coaching",
-      "count": 4
-    },
-    {
-      "year": 2019,
-      "theme": "psychology",
-      "count": 3
-    },
-    {
-      "year": 2019,
-      "theme": "bias_detection",
-      "count": 3
-    },
-    {
-      "year": 2019,
-      "theme": "player_valuation",
-      "count": 2
-    },
-    {
-      "year": 2019,
-      "theme": "gender_equity",
-      "count": 2
-    },
-    {
-      "year": 2019,
-      "theme": "fan_engagement",
-      "count": 2
-    },
-    {
-      "year": 2019,
-      "theme": "epidemiology",
-      "count": 2
-    },
-    {
-      "year": 2019,
-      "theme": "transfer_market",
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "theme": "other",
-      "count": 1
-    },
-    {
-      "year": 2019,
-      "theme": "betting_markets",
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "theme": "performance_analysis",
-      "count": 119
-    },
-    {
-      "year": 2020,
-      "theme": "tactical_analysis",
-      "count": 18
-    },
-    {
-      "year": 2020,
-      "theme": "methodology",
+      "year": 2016,
+      "methodology": "review",
       "count": 15
     },
     {
-      "year": 2020,
-      "theme": "data_engineering",
+      "year": 2016,
+      "methodology": "other",
       "count": 10
     },
     {
-      "year": 2020,
-      "theme": "player_development",
+      "year": 2016,
+      "methodology": "machine_learning",
       "count": 9
     },
     {
-      "year": 2020,
-      "theme": "biomechanics",
-      "count": 8
-    },
-    {
-      "year": 2020,
-      "theme": "physiology",
-      "count": 5
-    },
-    {
-      "year": 2020,
-      "theme": "injury_prevention",
-      "count": 5
-    },
-    {
-      "year": 2020,
-      "theme": "player_valuation",
-      "count": 4
-    },
-    {
-      "year": 2020,
-      "theme": "psychology",
-      "count": 3
-    },
-    {
-      "year": 2020,
-      "theme": "gender_equity",
-      "count": 3
-    },
-    {
-      "year": 2020,
-      "theme": "fan_engagement",
-      "count": 2
-    },
-    {
-      "year": 2020,
-      "theme": "coaching",
-      "count": 2
-    },
-    {
-      "year": 2020,
-      "theme": "bias_detection",
-      "count": 2
-    },
-    {
-      "year": 2020,
-      "theme": "epidemiology",
-      "count": 1
-    },
-    {
-      "year": 2020,
-      "theme": null,
-      "count": 1
-    },
-    {
-      "year": 2021,
-      "theme": "performance_analysis",
-      "count": 124
-    },
-    {
-      "year": 2021,
-      "theme": "player_development",
-      "count": 23
-    },
-    {
-      "year": 2021,
-      "theme": "tactical_analysis",
-      "count": 19
-    },
-    {
-      "year": 2021,
-      "theme": "methodology",
-      "count": 14
-    },
-    {
-      "year": 2021,
-      "theme": "injury_prevention",
-      "count": 11
-    },
-    {
-      "year": 2021,
-      "theme": "data_engineering",
-      "count": 10
-    },
-    {
-      "year": 2021,
-      "theme": "player_valuation",
-      "count": 8
-    },
-    {
-      "year": 2021,
-      "theme": "fan_engagement",
-      "count": 8
-    },
-    {
-      "year": 2021,
-      "theme": "bias_detection",
-      "count": 8
-    },
-    {
-      "year": 2021,
-      "theme": "coaching",
-      "count": 4
-    },
-    {
-      "year": 2021,
-      "theme": "biomechanics",
-      "count": 4
-    },
-    {
-      "year": 2021,
-      "theme": "betting_markets",
-      "count": 4
-    },
-    {
-      "year": 2021,
-      "theme": "psychology",
-      "count": 3
-    },
-    {
-      "year": 2021,
-      "theme": "gender_equity",
-      "count": 3
-    },
-    {
-      "year": 2021,
-      "theme": "transfer_market",
-      "count": 2
-    },
-    {
-      "year": 2021,
-      "theme": "epidemiology",
-      "count": 2
-    },
-    {
-      "year": 2021,
-      "theme": "physiology",
-      "count": 1
-    },
-    {
-      "year": 2021,
-      "theme": "other",
-      "count": 1
-    },
-    {
-      "year": 2021,
-      "theme": "nutrition_recovery",
-      "count": 1
-    },
-    {
-      "year": 2022,
-      "theme": "performance_analysis",
-      "count": 113
-    },
-    {
-      "year": 2022,
-      "theme": "player_development",
-      "count": 21
-    },
-    {
-      "year": 2022,
-      "theme": "methodology",
-      "count": 21
-    },
-    {
-      "year": 2022,
-      "theme": "tactical_analysis",
-      "count": 16
-    },
-    {
-      "year": 2022,
-      "theme": "data_engineering",
-      "count": 14
-    },
-    {
-      "year": 2022,
-      "theme": "injury_prevention",
-      "count": 12
-    },
-    {
-      "year": 2022,
-      "theme": "fan_engagement",
-      "count": 11
-    },
-    {
-      "year": 2022,
-      "theme": "player_valuation",
+      "year": 2016,
+      "methodology": "simulation",
       "count": 7
     },
     {
-      "year": 2022,
-      "theme": "biomechanics",
-      "count": 7
-    },
-    {
-      "year": 2022,
-      "theme": "coaching",
+      "year": 2016,
+      "methodology": "computer_vision",
       "count": 6
     },
     {
-      "year": 2022,
-      "theme": "psychology",
+      "year": 2016,
+      "methodology": "optimization",
       "count": 5
     },
     {
-      "year": 2022,
-      "theme": "physiology",
+      "year": 2016,
+      "methodology": "network_analysis",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "methodology": "meta_analysis",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "methodology": "deep_learning",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "methodology": "NLP",
+      "count": 1
+    },
+    {
+      "year": 2017,
+      "methodology": "statistical",
+      "count": 310
+    },
+    {
+      "year": 2017,
+      "methodology": "descriptive",
+      "count": 45
+    },
+    {
+      "year": 2017,
+      "methodology": "review",
+      "count": 28
+    },
+    {
+      "year": 2017,
+      "methodology": "qualitative",
+      "count": 21
+    },
+    {
+      "year": 2017,
+      "methodology": "machine_learning",
+      "count": 18
+    },
+    {
+      "year": 2017,
+      "methodology": "mixed_methods",
+      "count": 14
+    },
+    {
+      "year": 2017,
+      "methodology": "simulation",
+      "count": 12
+    },
+    {
+      "year": 2017,
+      "methodology": "other",
+      "count": 10
+    },
+    {
+      "year": 2017,
+      "methodology": "deep_learning",
+      "count": 4
+    },
+    {
+      "year": 2017,
+      "methodology": "optimization",
       "count": 3
     },
     {
-      "year": 2022,
-      "theme": "transfer_market",
+      "year": 2017,
+      "methodology": "computer_vision",
+      "count": 3
+    },
+    {
+      "year": 2017,
+      "methodology": "network_analysis",
       "count": 2
     },
     {
-      "year": 2022,
-      "theme": "bias_detection",
-      "count": 2
-    },
-    {
-      "year": 2022,
-      "theme": "betting_markets",
-      "count": 2
-    },
-    {
-      "year": 2022,
-      "theme": "nutrition_recovery",
+      "year": 2017,
+      "methodology": "meta_analysis",
       "count": 1
     },
     {
-      "year": 2022,
-      "theme": "epidemiology",
+      "year": 2017,
+      "methodology": "NLP",
       "count": 1
     },
     {
-      "year": 2023,
-      "theme": "performance_analysis",
-      "count": 131
+      "year": 2018,
+      "methodology": "statistical",
+      "count": 338
     },
     {
-      "year": 2023,
-      "theme": "methodology",
+      "year": 2018,
+      "methodology": "descriptive",
+      "count": 43
+    },
+    {
+      "year": 2018,
+      "methodology": "qualitative",
+      "count": 27
+    },
+    {
+      "year": 2018,
+      "methodology": "review",
       "count": 26
     },
     {
-      "year": 2023,
-      "theme": "tactical_analysis",
-      "count": 23
+      "year": 2018,
+      "methodology": "mixed_methods",
+      "count": 18
     },
     {
-      "year": 2023,
-      "theme": "player_development",
+      "year": 2018,
+      "methodology": "simulation",
+      "count": 13
+    },
+    {
+      "year": 2018,
+      "methodology": "machine_learning",
+      "count": 12
+    },
+    {
+      "year": 2018,
+      "methodology": "other",
+      "count": 11
+    },
+    {
+      "year": 2018,
+      "methodology": "computer_vision",
+      "count": 7
+    },
+    {
+      "year": 2018,
+      "methodology": "optimization",
+      "count": 6
+    },
+    {
+      "year": 2018,
+      "methodology": "network_analysis",
+      "count": 5
+    },
+    {
+      "year": 2018,
+      "methodology": "deep_learning",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "methodology": "meta_analysis",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "methodology": "NLP",
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "methodology": "statistical",
+      "count": 378
+    },
+    {
+      "year": 2019,
+      "methodology": "descriptive",
+      "count": 57
+    },
+    {
+      "year": 2019,
+      "methodology": "qualitative",
+      "count": 22
+    },
+    {
+      "year": 2019,
+      "methodology": "review",
+      "count": 21
+    },
+    {
+      "year": 2019,
+      "methodology": "machine_learning",
       "count": 20
     },
     {
+      "year": 2019,
+      "methodology": "mixed_methods",
+      "count": 19
+    },
+    {
+      "year": 2019,
+      "methodology": "other",
+      "count": 17
+    },
+    {
+      "year": 2019,
+      "methodology": "simulation",
+      "count": 16
+    },
+    {
+      "year": 2019,
+      "methodology": "optimization",
+      "count": 12
+    },
+    {
+      "year": 2019,
+      "methodology": "network_analysis",
+      "count": 11
+    },
+    {
+      "year": 2019,
+      "methodology": "deep_learning",
+      "count": 6
+    },
+    {
+      "year": 2019,
+      "methodology": "NLP",
+      "count": 4
+    },
+    {
+      "year": 2019,
+      "methodology": "computer_vision",
+      "count": 2
+    },
+    {
+      "year": 2019,
+      "methodology": "meta_analysis",
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "methodology": "data_engineering",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "methodology": "statistical",
+      "count": 452
+    },
+    {
+      "year": 2020,
+      "methodology": "descriptive",
+      "count": 76
+    },
+    {
+      "year": 2020,
+      "methodology": "machine_learning",
+      "count": 35
+    },
+    {
+      "year": 2020,
+      "methodology": "mixed_methods",
+      "count": 32
+    },
+    {
+      "year": 2020,
+      "methodology": "qualitative",
+      "count": 30
+    },
+    {
+      "year": 2020,
+      "methodology": "review",
+      "count": 28
+    },
+    {
+      "year": 2020,
+      "methodology": "computer_vision",
+      "count": 14
+    },
+    {
+      "year": 2020,
+      "methodology": "simulation",
+      "count": 13
+    },
+    {
+      "year": 2020,
+      "methodology": "optimization",
+      "count": 13
+    },
+    {
+      "year": 2020,
+      "methodology": "deep_learning",
+      "count": 11
+    },
+    {
+      "year": 2020,
+      "methodology": "network_analysis",
+      "count": 6
+    },
+    {
+      "year": 2020,
+      "methodology": "other",
+      "count": 5
+    },
+    {
+      "year": 2020,
+      "methodology": "NLP",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "methodology": "meta_analysis",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "methodology": null,
+      "count": 1
+    },
+    {
+      "year": 2021,
+      "methodology": "statistical",
+      "count": 603
+    },
+    {
+      "year": 2021,
+      "methodology": "descriptive",
+      "count": 113
+    },
+    {
+      "year": 2021,
+      "methodology": "machine_learning",
+      "count": 47
+    },
+    {
+      "year": 2021,
+      "methodology": "review",
+      "count": 34
+    },
+    {
+      "year": 2021,
+      "methodology": "qualitative",
+      "count": 32
+    },
+    {
+      "year": 2021,
+      "methodology": "mixed_methods",
+      "count": 30
+    },
+    {
+      "year": 2021,
+      "methodology": "deep_learning",
+      "count": 21
+    },
+    {
+      "year": 2021,
+      "methodology": "computer_vision",
+      "count": 16
+    },
+    {
+      "year": 2021,
+      "methodology": "other",
+      "count": 13
+    },
+    {
+      "year": 2021,
+      "methodology": "simulation",
+      "count": 12
+    },
+    {
+      "year": 2021,
+      "methodology": "optimization",
+      "count": 9
+    },
+    {
+      "year": 2021,
+      "methodology": "network_analysis",
+      "count": 9
+    },
+    {
+      "year": 2021,
+      "methodology": "NLP",
+      "count": 5
+    },
+    {
+      "year": 2021,
+      "methodology": "meta_analysis",
+      "count": 4
+    },
+    {
+      "year": 2021,
+      "methodology": "data_engineering",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "methodology": "statistical",
+      "count": 628
+    },
+    {
+      "year": 2022,
+      "methodology": "descriptive",
+      "count": 118
+    },
+    {
+      "year": 2022,
+      "methodology": "review",
+      "count": 51
+    },
+    {
+      "year": 2022,
+      "methodology": "machine_learning",
+      "count": 49
+    },
+    {
+      "year": 2022,
+      "methodology": "qualitative",
+      "count": 31
+    },
+    {
+      "year": 2022,
+      "methodology": "mixed_methods",
+      "count": 31
+    },
+    {
+      "year": 2022,
+      "methodology": "deep_learning",
+      "count": 29
+    },
+    {
+      "year": 2022,
+      "methodology": "simulation",
+      "count": 18
+    },
+    {
+      "year": 2022,
+      "methodology": "other",
+      "count": 17
+    },
+    {
+      "year": 2022,
+      "methodology": "optimization",
+      "count": 15
+    },
+    {
+      "year": 2022,
+      "methodology": "computer_vision",
+      "count": 13
+    },
+    {
+      "year": 2022,
+      "methodology": "network_analysis",
+      "count": 7
+    },
+    {
+      "year": 2022,
+      "methodology": "meta_analysis",
+      "count": 7
+    },
+    {
+      "year": 2022,
+      "methodology": "NLP",
+      "count": 2
+    },
+    {
       "year": 2023,
-      "theme": null,
+      "methodology": "statistical",
+      "count": 908
+    },
+    {
+      "year": 2023,
+      "methodology": "descriptive",
+      "count": 142
+    },
+    {
+      "year": 2023,
+      "methodology": "review",
+      "count": 73
+    },
+    {
+      "year": 2023,
+      "methodology": "machine_learning",
+      "count": 69
+    },
+    {
+      "year": 2023,
+      "methodology": "qualitative",
+      "count": 68
+    },
+    {
+      "year": 2023,
+      "methodology": "mixed_methods",
+      "count": 56
+    },
+    {
+      "year": 2023,
+      "methodology": "deep_learning",
+      "count": 47
+    },
+    {
+      "year": 2023,
+      "methodology": null,
       "count": 19
     },
     {
       "year": 2023,
-      "theme": "data_engineering",
+      "methodology": "other",
+      "count": 18
+    },
+    {
+      "year": 2023,
+      "methodology": "simulation",
+      "count": 17
+    },
+    {
+      "year": 2023,
+      "methodology": "optimization",
       "count": 13
     },
     {
       "year": 2023,
-      "theme": "player_valuation",
+      "methodology": "computer_vision",
+      "count": 13
+    },
+    {
+      "year": 2023,
+      "methodology": "network_analysis",
       "count": 8
     },
     {
       "year": 2023,
-      "theme": "fan_engagement",
-      "count": 8
-    },
-    {
-      "year": 2023,
-      "theme": "physiology",
+      "methodology": "meta_analysis",
       "count": 7
     },
     {
       "year": 2023,
-      "theme": "biomechanics",
+      "methodology": "NLP",
       "count": 7
     },
     {
-      "year": 2023,
-      "theme": "psychology",
-      "count": 5
-    },
-    {
-      "year": 2023,
-      "theme": "injury_prevention",
-      "count": 5
-    },
-    {
-      "year": 2023,
-      "theme": "bias_detection",
-      "count": 5
-    },
-    {
-      "year": 2023,
-      "theme": "gender_equity",
-      "count": 3
-    },
-    {
-      "year": 2023,
-      "theme": "coaching",
-      "count": 2
-    },
-    {
-      "year": 2023,
-      "theme": "betting_markets",
-      "count": 2
-    },
-    {
-      "year": 2023,
-      "theme": "other",
-      "count": 1
+      "year": 2024,
+      "methodology": "statistical",
+      "count": 1366
     },
     {
       "year": 2024,
-      "theme": "performance_analysis",
-      "count": 556
+      "methodology": "descriptive",
+      "count": 226
     },
     {
       "year": 2024,
-      "theme": "methodology",
-      "count": 89
+      "methodology": "machine_learning",
+      "count": 162
     },
     {
       "year": 2024,
-      "theme": "tactical_analysis",
-      "count": 65
+      "methodology": "review",
+      "count": 94
     },
     {
       "year": 2024,
-      "theme": "player_development",
-      "count": 65
+      "methodology": "qualitative",
+      "count": 91
     },
     {
       "year": 2024,
-      "theme": "data_engineering",
-      "count": 63
+      "methodology": "deep_learning",
+      "count": 82
     },
     {
       "year": 2024,
-      "theme": "injury_prevention",
+      "methodology": "mixed_methods",
+      "count": 73
+    },
+    {
+      "year": 2024,
+      "methodology": "other",
+      "count": 32
+    },
+    {
+      "year": 2024,
+      "methodology": "computer_vision",
+      "count": 31
+    },
+    {
+      "year": 2024,
+      "methodology": "simulation",
+      "count": 29
+    },
+    {
+      "year": 2024,
+      "methodology": "optimization",
+      "count": 19
+    },
+    {
+      "year": 2024,
+      "methodology": "NLP",
+      "count": 13
+    },
+    {
+      "year": 2024,
+      "methodology": "meta_analysis",
+      "count": 11
+    },
+    {
+      "year": 2024,
+      "methodology": "network_analysis",
+      "count": 10
+    },
+    {
+      "year": 2025,
+      "methodology": "statistical",
+      "count": 1948
+    },
+    {
+      "year": 2025,
+      "methodology": "descriptive",
+      "count": 407
+    },
+    {
+      "year": 2025,
+      "methodology": "review",
+      "count": 296
+    },
+    {
+      "year": 2025,
+      "methodology": "machine_learning",
+      "count": 293
+    },
+    {
+      "year": 2025,
+      "methodology": "deep_learning",
+      "count": 232
+    },
+    {
+      "year": 2025,
+      "methodology": "mixed_methods",
+      "count": 168
+    },
+    {
+      "year": 2025,
+      "methodology": null,
+      "count": 168
+    },
+    {
+      "year": 2025,
+      "methodology": "qualitative",
+      "count": 141
+    },
+    {
+      "year": 2025,
+      "methodology": "other",
       "count": 61
     },
     {
-      "year": 2024,
-      "theme": "biomechanics",
+      "year": 2025,
+      "methodology": "simulation",
+      "count": 51
+    },
+    {
+      "year": 2025,
+      "methodology": "computer_vision",
+      "count": 50
+    },
+    {
+      "year": 2025,
+      "methodology": "meta_analysis",
+      "count": 43
+    },
+    {
+      "year": 2025,
+      "methodology": "optimization",
+      "count": 38
+    },
+    {
+      "year": 2025,
+      "methodology": "NLP",
+      "count": 16
+    },
+    {
+      "year": 2025,
+      "methodology": "network_analysis",
+      "count": 11
+    },
+    {
+      "year": 2026,
+      "methodology": "statistical",
+      "count": 458
+    },
+    {
+      "year": 2026,
+      "methodology": "review",
+      "count": 158
+    },
+    {
+      "year": 2026,
+      "methodology": null,
+      "count": 156
+    },
+    {
+      "year": 2026,
+      "methodology": "descriptive",
+      "count": 137
+    },
+    {
+      "year": 2026,
+      "methodology": "machine_learning",
+      "count": 52
+    },
+    {
+      "year": 2026,
+      "methodology": "meta_analysis",
+      "count": 47
+    },
+    {
+      "year": 2026,
+      "methodology": "mixed_methods",
+      "count": 40
+    },
+    {
+      "year": 2026,
+      "methodology": "qualitative",
+      "count": 30
+    },
+    {
+      "year": 2026,
+      "methodology": "deep_learning",
+      "count": 26
+    },
+    {
+      "year": 2026,
+      "methodology": "simulation",
+      "count": 16
+    },
+    {
+      "year": 2026,
+      "methodology": "other",
+      "count": 11
+    },
+    {
+      "year": 2026,
+      "methodology": "computer_vision",
+      "count": 8
+    },
+    {
+      "year": 2026,
+      "methodology": "optimization",
+      "count": 5
+    },
+    {
+      "year": 2026,
+      "methodology": "network_analysis",
+      "count": 3
+    }
+  ],
+  "themeByYear": [
+    {
+      "year": 2014,
+      "theme": "performance_analysis",
       "count": 39
     },
     {
-      "year": 2024,
-      "theme": "player_valuation",
-      "count": 28
-    },
-    {
-      "year": 2024,
+      "year": 2014,
       "theme": "fan_engagement",
-      "count": 20
+      "count": 14
     },
     {
-      "year": 2024,
-      "theme": "coaching",
-      "count": 17
+      "year": 2014,
+      "theme": "methodology",
+      "count": 11
     },
     {
-      "year": 2024,
-      "theme": "physiology",
-      "count": 16
+      "year": 2014,
+      "theme": "player_valuation",
+      "count": 10
     },
     {
-      "year": 2024,
+      "year": 2014,
       "theme": "bias_detection",
-      "count": 16
+      "count": 8
     },
     {
-      "year": 2024,
-      "theme": "psychology",
-      "count": 10
+      "year": 2014,
+      "theme": "player_development",
+      "count": 6
     },
     {
-      "year": 2024,
-      "theme": "gender_equity",
-      "count": 10
+      "year": 2014,
+      "theme": "other",
+      "count": 6
     },
     {
-      "year": 2024,
+      "year": 2014,
+      "theme": "tactical_analysis",
+      "count": 5
+    },
+    {
+      "year": 2014,
       "theme": "betting_markets",
-      "count": 10
+      "count": 5
     },
     {
-      "year": 2024,
-      "theme": "epidemiology",
-      "count": 4
-    },
-    {
-      "year": 2024,
-      "theme": "nutrition_recovery",
+      "year": 2014,
+      "theme": "psychology",
       "count": 3
     },
     {
-      "year": 2024,
-      "theme": "other",
-      "count": 2
+      "year": 2014,
+      "theme": "physiology",
+      "count": 3
     },
     {
-      "year": 2024,
+      "year": 2014,
+      "theme": "gender_equity",
+      "count": 3
+    },
+    {
+      "year": 2014,
       "theme": "transfer_market",
       "count": 1
     },
     {
+      "year": 2014,
+      "theme": "epidemiology",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "theme": "data_engineering",
+      "count": 1
+    },
+    {
+      "year": 2014,
+      "theme": "coaching",
+      "count": 1
+    },
+    {
+      "year": 2015,
+      "theme": "performance_analysis",
+      "count": 110
+    },
+    {
+      "year": 2015,
+      "theme": "player_development",
+      "count": 36
+    },
+    {
+      "year": 2015,
+      "theme": "psychology",
+      "count": 35
+    },
+    {
+      "year": 2015,
+      "theme": "fan_engagement",
+      "count": 32
+    },
+    {
+      "year": 2015,
+      "theme": "injury_prevention",
+      "count": 27
+    },
+    {
+      "year": 2015,
+      "theme": "biomechanics",
+      "count": 21
+    },
+    {
+      "year": 2015,
+      "theme": "methodology",
+      "count": 16
+    },
+    {
+      "year": 2015,
+      "theme": "physiology",
+      "count": 15
+    },
+    {
+      "year": 2015,
+      "theme": "player_valuation",
+      "count": 14
+    },
+    {
+      "year": 2015,
+      "theme": "bias_detection",
+      "count": 13
+    },
+    {
+      "year": 2015,
+      "theme": "coaching",
+      "count": 11
+    },
+    {
+      "year": 2015,
+      "theme": "tactical_analysis",
+      "count": 10
+    },
+    {
+      "year": 2015,
+      "theme": "gender_equity",
+      "count": 10
+    },
+    {
+      "year": 2015,
+      "theme": "other",
+      "count": 8
+    },
+    {
+      "year": 2015,
+      "theme": "betting_markets",
+      "count": 7
+    },
+    {
+      "year": 2015,
+      "theme": "data_engineering",
+      "count": 6
+    },
+    {
+      "year": 2015,
+      "theme": "nutrition_recovery",
+      "count": 5
+    },
+    {
+      "year": 2015,
+      "theme": "epidemiology",
+      "count": 5
+    },
+    {
+      "year": 2015,
+      "theme": "transfer_market",
+      "count": 1
+    },
+    {
+      "year": 2016,
+      "theme": "performance_analysis",
+      "count": 109
+    },
+    {
+      "year": 2016,
+      "theme": "fan_engagement",
+      "count": 52
+    },
+    {
+      "year": 2016,
+      "theme": "psychology",
+      "count": 37
+    },
+    {
+      "year": 2016,
+      "theme": "player_development",
+      "count": 35
+    },
+    {
+      "year": 2016,
+      "theme": "methodology",
+      "count": 32
+    },
+    {
+      "year": 2016,
+      "theme": "injury_prevention",
+      "count": 27
+    },
+    {
+      "year": 2016,
+      "theme": "coaching",
+      "count": 21
+    },
+    {
+      "year": 2016,
+      "theme": "biomechanics",
+      "count": 21
+    },
+    {
+      "year": 2016,
+      "theme": "physiology",
+      "count": 18
+    },
+    {
+      "year": 2016,
+      "theme": "bias_detection",
+      "count": 17
+    },
+    {
+      "year": 2016,
+      "theme": "other",
+      "count": 12
+    },
+    {
+      "year": 2016,
+      "theme": "data_engineering",
+      "count": 12
+    },
+    {
+      "year": 2016,
+      "theme": "epidemiology",
+      "count": 9
+    },
+    {
+      "year": 2016,
+      "theme": "tactical_analysis",
+      "count": 8
+    },
+    {
+      "year": 2016,
+      "theme": "gender_equity",
+      "count": 8
+    },
+    {
+      "year": 2016,
+      "theme": "player_valuation",
+      "count": 7
+    },
+    {
+      "year": 2016,
+      "theme": "betting_markets",
+      "count": 7
+    },
+    {
+      "year": 2016,
+      "theme": "nutrition_recovery",
+      "count": 4
+    },
+    {
+      "year": 2016,
+      "theme": "transfer_market",
+      "count": 1
+    },
+    {
+      "year": 2017,
+      "theme": "performance_analysis",
+      "count": 138
+    },
+    {
+      "year": 2017,
+      "theme": "player_development",
+      "count": 54
+    },
+    {
+      "year": 2017,
+      "theme": "fan_engagement",
+      "count": 54
+    },
+    {
+      "year": 2017,
+      "theme": "methodology",
+      "count": 30
+    },
+    {
+      "year": 2017,
+      "theme": "injury_prevention",
+      "count": 28
+    },
+    {
+      "year": 2017,
+      "theme": "psychology",
+      "count": 27
+    },
+    {
+      "year": 2017,
+      "theme": "physiology",
+      "count": 22
+    },
+    {
+      "year": 2017,
+      "theme": "coaching",
+      "count": 21
+    },
+    {
+      "year": 2017,
+      "theme": "biomechanics",
+      "count": 21
+    },
+    {
+      "year": 2017,
+      "theme": "tactical_analysis",
+      "count": 15
+    },
+    {
+      "year": 2017,
+      "theme": "player_valuation",
+      "count": 13
+    },
+    {
+      "year": 2017,
+      "theme": "bias_detection",
+      "count": 11
+    },
+    {
+      "year": 2017,
+      "theme": "gender_equity",
+      "count": 9
+    },
+    {
+      "year": 2017,
+      "theme": "data_engineering",
+      "count": 7
+    },
+    {
+      "year": 2017,
+      "theme": "epidemiology",
+      "count": 6
+    },
+    {
+      "year": 2017,
+      "theme": "betting_markets",
+      "count": 6
+    },
+    {
+      "year": 2017,
+      "theme": "other",
+      "count": 5
+    },
+    {
+      "year": 2017,
+      "theme": "nutrition_recovery",
+      "count": 4
+    },
+    {
+      "year": 2017,
+      "theme": "transfer_market",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "theme": "performance_analysis",
+      "count": 168
+    },
+    {
+      "year": 2018,
+      "theme": "fan_engagement",
+      "count": 58
+    },
+    {
+      "year": 2018,
+      "theme": "player_development",
+      "count": 41
+    },
+    {
+      "year": 2018,
+      "theme": "psychology",
+      "count": 39
+    },
+    {
+      "year": 2018,
+      "theme": "methodology",
+      "count": 30
+    },
+    {
+      "year": 2018,
+      "theme": "injury_prevention",
+      "count": 29
+    },
+    {
+      "year": 2018,
+      "theme": "physiology",
+      "count": 21
+    },
+    {
+      "year": 2018,
+      "theme": "coaching",
+      "count": 21
+    },
+    {
+      "year": 2018,
+      "theme": "tactical_analysis",
+      "count": 19
+    },
+    {
+      "year": 2018,
+      "theme": "player_valuation",
+      "count": 16
+    },
+    {
+      "year": 2018,
+      "theme": "biomechanics",
+      "count": 13
+    },
+    {
+      "year": 2018,
+      "theme": "bias_detection",
+      "count": 12
+    },
+    {
+      "year": 2018,
+      "theme": "other",
+      "count": 10
+    },
+    {
+      "year": 2018,
+      "theme": "data_engineering",
+      "count": 9
+    },
+    {
+      "year": 2018,
+      "theme": "nutrition_recovery",
+      "count": 8
+    },
+    {
+      "year": 2018,
+      "theme": "betting_markets",
+      "count": 8
+    },
+    {
+      "year": 2018,
+      "theme": "gender_equity",
+      "count": 6
+    },
+    {
+      "year": 2018,
+      "theme": "transfer_market",
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "theme": "epidemiology",
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "theme": "performance_analysis",
+      "count": 165
+    },
+    {
+      "year": 2019,
+      "theme": "fan_engagement",
+      "count": 66
+    },
+    {
+      "year": 2019,
+      "theme": "player_development",
+      "count": 46
+    },
+    {
+      "year": 2019,
+      "theme": "methodology",
+      "count": 43
+    },
+    {
+      "year": 2019,
+      "theme": "psychology",
+      "count": 40
+    },
+    {
+      "year": 2019,
+      "theme": "physiology",
+      "count": 33
+    },
+    {
+      "year": 2019,
+      "theme": "tactical_analysis",
+      "count": 28
+    },
+    {
+      "year": 2019,
+      "theme": "other",
+      "count": 23
+    },
+    {
+      "year": 2019,
+      "theme": "injury_prevention",
+      "count": 23
+    },
+    {
+      "year": 2019,
+      "theme": "coaching",
+      "count": 23
+    },
+    {
+      "year": 2019,
+      "theme": "biomechanics",
+      "count": 23
+    },
+    {
+      "year": 2019,
+      "theme": "player_valuation",
+      "count": 14
+    },
+    {
+      "year": 2019,
+      "theme": "gender_equity",
+      "count": 14
+    },
+    {
+      "year": 2019,
+      "theme": "data_engineering",
+      "count": 13
+    },
+    {
+      "year": 2019,
+      "theme": "bias_detection",
+      "count": 12
+    },
+    {
+      "year": 2019,
+      "theme": "epidemiology",
+      "count": 8
+    },
+    {
+      "year": 2019,
+      "theme": "betting_markets",
+      "count": 6
+    },
+    {
+      "year": 2019,
+      "theme": "nutrition_recovery",
+      "count": 5
+    },
+    {
+      "year": 2019,
+      "theme": "transfer_market",
+      "count": 2
+    },
+    {
+      "year": 2020,
+      "theme": "performance_analysis",
+      "count": 270
+    },
+    {
+      "year": 2020,
+      "theme": "fan_engagement",
+      "count": 65
+    },
+    {
+      "year": 2020,
+      "theme": "player_development",
+      "count": 53
+    },
+    {
+      "year": 2020,
+      "theme": "methodology",
+      "count": 47
+    },
+    {
+      "year": 2020,
+      "theme": "psychology",
+      "count": 42
+    },
+    {
+      "year": 2020,
+      "theme": "injury_prevention",
+      "count": 41
+    },
+    {
+      "year": 2020,
+      "theme": "tactical_analysis",
+      "count": 31
+    },
+    {
+      "year": 2020,
+      "theme": "physiology",
+      "count": 31
+    },
+    {
+      "year": 2020,
+      "theme": "biomechanics",
+      "count": 27
+    },
+    {
+      "year": 2020,
+      "theme": "coaching",
+      "count": 23
+    },
+    {
+      "year": 2020,
+      "theme": "bias_detection",
+      "count": 19
+    },
+    {
+      "year": 2020,
+      "theme": "player_valuation",
+      "count": 13
+    },
+    {
+      "year": 2020,
+      "theme": "other",
+      "count": 13
+    },
+    {
+      "year": 2020,
+      "theme": "data_engineering",
+      "count": 13
+    },
+    {
+      "year": 2020,
+      "theme": "gender_equity",
+      "count": 12
+    },
+    {
+      "year": 2020,
+      "theme": "epidemiology",
+      "count": 8
+    },
+    {
+      "year": 2020,
+      "theme": "betting_markets",
+      "count": 7
+    },
+    {
+      "year": 2020,
+      "theme": "nutrition_recovery",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "theme": "transfer_market",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "theme": null,
+      "count": 1
+    },
+    {
+      "year": 2021,
+      "theme": "performance_analysis",
+      "count": 284
+    },
+    {
+      "year": 2021,
+      "theme": "injury_prevention",
+      "count": 103
+    },
+    {
+      "year": 2021,
+      "theme": "fan_engagement",
+      "count": 89
+    },
+    {
+      "year": 2021,
+      "theme": "player_development",
+      "count": 73
+    },
+    {
+      "year": 2021,
+      "theme": "methodology",
+      "count": 61
+    },
+    {
+      "year": 2021,
+      "theme": "psychology",
+      "count": 41
+    },
+    {
+      "year": 2021,
+      "theme": "physiology",
+      "count": 35
+    },
+    {
+      "year": 2021,
+      "theme": "tactical_analysis",
+      "count": 33
+    },
+    {
+      "year": 2021,
+      "theme": "biomechanics",
+      "count": 33
+    },
+    {
+      "year": 2021,
+      "theme": "coaching",
+      "count": 30
+    },
+    {
+      "year": 2021,
+      "theme": "bias_detection",
+      "count": 30
+    },
+    {
+      "year": 2021,
+      "theme": "epidemiology",
+      "count": 28
+    },
+    {
+      "year": 2021,
+      "theme": "player_valuation",
+      "count": 23
+    },
+    {
+      "year": 2021,
+      "theme": "gender_equity",
+      "count": 22
+    },
+    {
+      "year": 2021,
+      "theme": "data_engineering",
+      "count": 22
+    },
+    {
+      "year": 2021,
+      "theme": "betting_markets",
+      "count": 17
+    },
+    {
+      "year": 2021,
+      "theme": "other",
+      "count": 12
+    },
+    {
+      "year": 2021,
+      "theme": "nutrition_recovery",
+      "count": 8
+    },
+    {
+      "year": 2021,
+      "theme": "transfer_market",
+      "count": 5
+    },
+    {
+      "year": 2022,
+      "theme": "performance_analysis",
+      "count": 327
+    },
+    {
+      "year": 2022,
+      "theme": "injury_prevention",
+      "count": 117
+    },
+    {
+      "year": 2022,
+      "theme": "player_development",
+      "count": 92
+    },
+    {
+      "year": 2022,
+      "theme": "methodology",
+      "count": 72
+    },
+    {
+      "year": 2022,
+      "theme": "psychology",
+      "count": 60
+    },
+    {
+      "year": 2022,
+      "theme": "fan_engagement",
+      "count": 58
+    },
+    {
+      "year": 2022,
+      "theme": "physiology",
+      "count": 46
+    },
+    {
+      "year": 2022,
+      "theme": "biomechanics",
+      "count": 42
+    },
+    {
+      "year": 2022,
+      "theme": "tactical_analysis",
+      "count": 35
+    },
+    {
+      "year": 2022,
+      "theme": "coaching",
+      "count": 28
+    },
+    {
+      "year": 2022,
+      "theme": "data_engineering",
+      "count": 24
+    },
+    {
+      "year": 2022,
+      "theme": "epidemiology",
+      "count": 23
+    },
+    {
+      "year": 2022,
+      "theme": "player_valuation",
+      "count": 21
+    },
+    {
+      "year": 2022,
+      "theme": "bias_detection",
+      "count": 21
+    },
+    {
+      "year": 2022,
+      "theme": "nutrition_recovery",
+      "count": 20
+    },
+    {
+      "year": 2022,
+      "theme": "other",
+      "count": 12
+    },
+    {
+      "year": 2022,
+      "theme": "gender_equity",
+      "count": 9
+    },
+    {
+      "year": 2022,
+      "theme": "betting_markets",
+      "count": 5
+    },
+    {
+      "year": 2022,
+      "theme": "transfer_market",
+      "count": 4
+    },
+    {
+      "year": 2023,
+      "theme": "performance_analysis",
+      "count": 436
+    },
+    {
+      "year": 2023,
+      "theme": "injury_prevention",
+      "count": 147
+    },
+    {
+      "year": 2023,
+      "theme": "player_development",
+      "count": 134
+    },
+    {
+      "year": 2023,
+      "theme": "methodology",
+      "count": 100
+    },
+    {
+      "year": 2023,
+      "theme": "psychology",
+      "count": 87
+    },
+    {
+      "year": 2023,
+      "theme": "fan_engagement",
+      "count": 80
+    },
+    {
+      "year": 2023,
+      "theme": "physiology",
+      "count": 79
+    },
+    {
+      "year": 2023,
+      "theme": "biomechanics",
+      "count": 60
+    },
+    {
+      "year": 2023,
+      "theme": "tactical_analysis",
+      "count": 47
+    },
+    {
+      "year": 2023,
+      "theme": "data_engineering",
+      "count": 39
+    },
+    {
+      "year": 2023,
+      "theme": "coaching",
+      "count": 37
+    },
+    {
+      "year": 2023,
+      "theme": "bias_detection",
+      "count": 37
+    },
+    {
+      "year": 2023,
+      "theme": "player_valuation",
+      "count": 35
+    },
+    {
+      "year": 2023,
+      "theme": "nutrition_recovery",
+      "count": 33
+    },
+    {
+      "year": 2023,
+      "theme": "epidemiology",
+      "count": 30
+    },
+    {
+      "year": 2023,
+      "theme": "gender_equity",
+      "count": 26
+    },
+    {
+      "year": 2023,
+      "theme": "other",
+      "count": 23
+    },
+    {
+      "year": 2023,
+      "theme": null,
+      "count": 19
+    },
+    {
+      "year": 2023,
+      "theme": "betting_markets",
+      "count": 14
+    },
+    {
+      "year": 2023,
+      "theme": "transfer_market",
+      "count": 2
+    },
+    {
+      "year": 2024,
+      "theme": "performance_analysis",
+      "count": 841
+    },
+    {
+      "year": 2024,
+      "theme": "injury_prevention",
+      "count": 218
+    },
+    {
+      "year": 2024,
+      "theme": "player_development",
+      "count": 173
+    },
+    {
+      "year": 2024,
+      "theme": "methodology",
+      "count": 159
+    },
+    {
+      "year": 2024,
+      "theme": "physiology",
+      "count": 120
+    },
+    {
+      "year": 2024,
+      "theme": "psychology",
+      "count": 110
+    },
+    {
+      "year": 2024,
+      "theme": "biomechanics",
+      "count": 103
+    },
+    {
+      "year": 2024,
+      "theme": "tactical_analysis",
+      "count": 80
+    },
+    {
+      "year": 2024,
+      "theme": "data_engineering",
+      "count": 80
+    },
+    {
+      "year": 2024,
+      "theme": "fan_engagement",
+      "count": 73
+    },
+    {
+      "year": 2024,
+      "theme": "coaching",
+      "count": 64
+    },
+    {
+      "year": 2024,
+      "theme": "nutrition_recovery",
+      "count": 43
+    },
+    {
+      "year": 2024,
+      "theme": "player_valuation",
+      "count": 36
+    },
+    {
+      "year": 2024,
+      "theme": "epidemiology",
+      "count": 34
+    },
+    {
+      "year": 2024,
+      "theme": "bias_detection",
+      "count": 34
+    },
+    {
+      "year": 2024,
+      "theme": "gender_equity",
+      "count": 32
+    },
+    {
+      "year": 2024,
+      "theme": "betting_markets",
+      "count": 18
+    },
+    {
+      "year": 2024,
+      "theme": "other",
+      "count": 15
+    },
+    {
+      "year": 2024,
+      "theme": "transfer_market",
+      "count": 6
+    },
+    {
       "year": 2025,
       "theme": "performance_analysis",
-      "count": 858
+      "count": 1229
+    },
+    {
+      "year": 2025,
+      "theme": "injury_prevention",
+      "count": 414
+    },
+    {
+      "year": 2025,
+      "theme": "player_development",
+      "count": 366
     },
     {
       "year": 2025,
       "theme": "methodology",
-      "count": 204
+      "count": 321
+    },
+    {
+      "year": 2025,
+      "theme": "psychology",
+      "count": 213
+    },
+    {
+      "year": 2025,
+      "theme": "biomechanics",
+      "count": 208
+    },
+    {
+      "year": 2025,
+      "theme": "physiology",
+      "count": 183
     },
     {
       "year": 2025,
@@ -3489,93 +4460,68 @@
     },
     {
       "year": 2025,
-      "theme": "player_development",
-      "count": 140
-    },
-    {
-      "year": 2025,
-      "theme": "injury_prevention",
-      "count": 121
-    },
-    {
-      "year": 2025,
       "theme": "tactical_analysis",
-      "count": 119
-    },
-    {
-      "year": 2025,
-      "theme": "data_engineering",
-      "count": 94
-    },
-    {
-      "year": 2025,
-      "theme": "biomechanics",
-      "count": 85
-    },
-    {
-      "year": 2025,
-      "theme": "player_valuation",
-      "count": 52
+      "count": 129
     },
     {
       "year": 2025,
       "theme": "coaching",
-      "count": 42
+      "count": 128
     },
     {
       "year": 2025,
-      "theme": "physiology",
-      "count": 33
-    },
-    {
-      "year": 2025,
-      "theme": "bias_detection",
-      "count": 33
+      "theme": "data_engineering",
+      "count": 123
     },
     {
       "year": 2025,
       "theme": "fan_engagement",
-      "count": 30
+      "count": 112
     },
     {
       "year": 2025,
-      "theme": "psychology",
-      "count": 21
-    },
-    {
-      "year": 2025,
-      "theme": "gender_equity",
-      "count": 15
-    },
-    {
-      "year": 2025,
-      "theme": "betting_markets",
-      "count": 12
-    },
-    {
-      "year": 2025,
-      "theme": "transfer_market",
-      "count": 9
-    },
-    {
-      "year": 2025,
-      "theme": "epidemiology",
-      "count": 9
+      "theme": "player_valuation",
+      "count": 61
     },
     {
       "year": 2025,
       "theme": "nutrition_recovery",
-      "count": 4
+      "count": 60
+    },
+    {
+      "year": 2025,
+      "theme": "bias_detection",
+      "count": 54
+    },
+    {
+      "year": 2025,
+      "theme": "gender_equity",
+      "count": 44
+    },
+    {
+      "year": 2025,
+      "theme": "epidemiology",
+      "count": 42
     },
     {
       "year": 2025,
       "theme": "other",
-      "count": 1
+      "count": 34
+    },
+    {
+      "year": 2025,
+      "theme": "betting_markets",
+      "count": 22
+    },
+    {
+      "year": 2025,
+      "theme": "transfer_market",
+      "count": 12
     },
     {
       "year": 2026,
       "theme": "performance_analysis",
-      "count": 203
+      "count": 312
     },
     {
       "year": 2026,
@@ -3584,79 +4530,94 @@
     },
     {
       "year": 2026,
-      "theme": "methodology",
-      "count": 48
-    },
-    {
-      "year": 2026,
       "theme": "injury_prevention",
-      "count": 40
+      "count": 148
     },
     {
       "year": 2026,
       "theme": "player_development",
-      "count": 37
-    },
-    {
-      "year": 2026,
-      "theme": "biomechanics",
-      "count": 21
-    },
-    {
-      "year": 2026,
-      "theme": "data_engineering",
-      "count": 20
-    },
-    {
-      "year": 2026,
-      "theme": "tactical_analysis",
-      "count": 15
+      "count": 97
     },
     {
       "year": 2026,
       "theme": "psychology",
-      "count": 10
+      "count": 78
+    },
+    {
+      "year": 2026,
+      "theme": "methodology",
+      "count": 78
+    },
+    {
+      "year": 2026,
+      "theme": "biomechanics",
+      "count": 49
     },
     {
       "year": 2026,
       "theme": "physiology",
-      "count": 8
+      "count": 48
+    },
+    {
+      "year": 2026,
+      "theme": "tactical_analysis",
+      "count": 31
+    },
+    {
+      "year": 2026,
+      "theme": "data_engineering",
+      "count": 29
     },
     {
       "year": 2026,
       "theme": "coaching",
-      "count": 6
+      "count": 26
+    },
+    {
+      "year": 2026,
+      "theme": "nutrition_recovery",
+      "count": 25
     },
     {
       "year": 2026,
       "theme": "fan_engagement",
+      "count": 18
+    },
+    {
+      "year": 2026,
+      "theme": "epidemiology",
+      "count": 17
+    },
+    {
+      "year": 2026,
+      "theme": "gender_equity",
+      "count": 13
+    },
+    {
+      "year": 2026,
+      "theme": "other",
+      "count": 7
+    },
+    {
+      "year": 2026,
+      "theme": "bias_detection",
       "count": 5
     },
     {
       "year": 2026,
       "theme": "player_valuation",
-      "count": 3
+      "count": 4
     },
     {
       "year": 2026,
-      "theme": "gender_equity",
-      "count": 3
-    },
-    {
-      "year": 2026,
-      "theme": "bias_detection",
+      "theme": "transfer_market",
       "count": 3
     },
     {
       "year": 2026,
       "theme": "betting_markets",
       "count": 3
-    },
-    {
-      "year": 2026,
-      "theme": "nutrition_recovery",
-      "count": 1
     }
   ],
-  "exportedAt": "2026-02-16T18:34:49.892Z"
+  "exportedAt": "2026-02-16T23:47:27.388Z"
 }
