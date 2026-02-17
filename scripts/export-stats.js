@@ -261,7 +261,7 @@ const classifiedPapers = db
   .prepare(
     `${BEST_CTE}
      SELECT p.work_id, p.title, p.pub_date, p.journal_name as journal,
-            p.cited_by_count, SUBSTR(p.abstract, 1, 300) as abstract,
+            p.cited_by_count, p.abstract,
             p.open_access, p.doi, p.pub_year,
             c.sport, c.methodology, c.theme, c.sub_theme,
             c.is_womens_sport, c.data_type, c.summary as ai_summary,
@@ -511,7 +511,7 @@ const recentItems = db
     `${BEST_CTE}
      SELECT p.work_id, p.title, p.pub_date, p.doi, p.source_url,
             COALESCE(p.content_type, 'journal_article') as content_type,
-            p.journal_name, SUBSTR(p.abstract, 1, 300) as abstract,
+            p.journal_name, p.abstract,
             c.sport, c.theme, c.summary
      FROM best_class c
      JOIN papers p ON c.paper_id = p.work_id

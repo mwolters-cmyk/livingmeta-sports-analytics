@@ -719,19 +719,16 @@ function ExploreContent() {
                 )}
               </div>
 
-              {/* AI Summary */}
-              {p.ai_summary && (
-                <p className="mt-2 text-sm italic text-gray-600">
-                  {p.ai_summary}
-                </p>
-              )}
-
-              {/* Abstract preview (fallback if no summary) */}
-              {p.abstract && !p.ai_summary && (
-                <p className="mt-2 text-sm text-gray-500 line-clamp-2">
+              {/* Abstract (preferred) or AI summary (fallback for older papers) */}
+              {p.abstract ? (
+                <p className="mt-2 text-sm text-gray-600 line-clamp-4">
                   {p.abstract}
                 </p>
-              )}
+              ) : p.ai_summary ? (
+                <p className="mt-2 text-sm italic text-gray-500 line-clamp-4">
+                  {p.ai_summary}
+                </p>
+              ) : null}
 
               {/* Methodology extraction details (from full-text AI analysis) */}
               {methodExtractions[p.work_id] && (() => {
