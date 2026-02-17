@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-17T09:12:15.497640",
-  "total_papers": 3334,
-  "total_resources": 662,
-  "resources_skipped_no_url": 15953,
+  "generated_at": "2026-02-17T09:24:53.355653",
+  "total_papers": 4579,
+  "total_resources": 666,
+  "resources_skipped_no_url": 18084,
   "resources": [
     {
       "name": "Win Shares (WS)",
@@ -4927,6 +4927,22 @@
       "paper_count": 1
     },
     {
+      "name": "SMA EHP v2 (2024) web tool",
+      "url": "https://sma-heat-policy.sydney.edu.au",
+      "type": "code_repository",
+      "category": "code",
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4408462179",
+          "title": "The Sports Medicine Australia extreme heat risk and response guidelines and web tool",
+          "sport": "multi_sport",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Pro Sports Transactions",
       "url": "www.ProSportsTransactions.com",
       "type": "proprietary_dataset",
@@ -5270,6 +5286,23 @@
           "work_id": "https://openalex.org/W4414742830",
           "title": "Mapping sponsorship portfolios in esports: implied strategic continuity and diversification in the league of legends pro league",
           "sport": "esports",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "TrackID3x3 dataset",
+      "url": "https://github.com/open-starlab/TrackID3x3",
+      "type": "video",
+      "access": "public",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4414938721",
+          "title": "TrackID3x3: A Dataset and Algorithm for Multi-Player Tracking with Identification and Pose Estimation in 3x3 Basketball Full-court Videos",
+          "sport": "basketball",
           "year": 2025
         }
       ],
@@ -10148,6 +10181,23 @@
       "paper_count": 1
     },
     {
+      "name": "Published studies in SCImago quartile 1 journals",
+      "url": "www.scimagojr.com",
+      "type": "open_dataset",
+      "access": "not_stated",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4411351188",
+          "title": "Estimating the Replicability of Sports and Exercise Science Research",
+          "sport": "multi_sport",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Wyscout Open Access Dataset",
       "url": "https://github.com/open-data-archive/Wyscout",
       "type": "open_dataset",
@@ -12278,6 +12328,23 @@
           "work_id": "https://openalex.org/W7117455142",
           "title": "OPSTA: An Online Analysis Platform for Chinese Sports Science Thesis Data Based on the Shiny Framework",
           "sport": "multi_sport",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "swimrankings.net database",
+      "url": "https://www.swimrankings.net",
+      "type": "open_dataset",
+      "access": "not_stated",
+      "platform": null,
+      "category": "dataset",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7117565727",
+          "title": "Training loads of 12-year-old players of the student club «Żabianka Gdańsk»",
+          "sport": "swimming",
           "year": 2025
         }
       ],
