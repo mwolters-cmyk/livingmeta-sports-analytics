@@ -1,6 +1,6 @@
 {
   "description": "Machine-readable pipeline configuration for the Living Sports Analytics platform. Use this to understand how to contribute sources, what classification taxonomy is used, and how papers are processed.",
-  "exported_at": "2026-02-17T15:54:51.745Z",
+  "exported_at": "2026-02-17T16:06:19.851Z",
   "version": "1.0",
   "platform_url": "https://living-sports-analytics.vercel.app",
   "classification_taxonomy": {
@@ -540,6 +540,399 @@
       "future_research"
     ],
     "prompt_reference": "Full extraction schemas are defined in living_meta/paper_extractor.py (SYSTEM_PROMPT for PDFs, ABSTRACT_SYSTEM_PROMPT for abstracts, UNIFIED_NONOA_PROMPT for grey literature)"
+  },
+  "scraper_contribution": {
+    "description": "How to contribute a new data scraper for a sports dataset that currently lacks programmatic access.",
+    "repository": "https://github.com/mwolters-cmyk/living-sports-analytics-research",
+    "workflow": "Pull Request — fork the repo, add your scraper, open a PR for review.",
+    "directory": "scrapers/",
+    "file_naming": "scrapers/scrape_<source_name>.py (e.g., scrape_basketball_reference.py)",
+    "required_contract": {
+      "imports": "Must use base.py utilities: from base import RateLimitedSession, save_to_csv, get_logger, DATA_DIR",
+      "rate_limiting": "Must use RateLimitedSession with delay >= 1.0 second between requests",
+      "output": "CSV files saved via save_to_csv() to DATA_DIR",
+      "docstring": "Module docstring with DATASOURCES (what sites), PARAMETERS (configurable), Ethics note (rate limits, ToS compliance)",
+      "encoding": "All file I/O must use encoding='utf-8' (Windows compatibility)",
+      "no_auth_secrets": "Never hardcode API keys — use os.environ.get('KEY_NAME') for any authentication"
+    },
+    "banned_patterns": [
+      "subprocess",
+      "os.system",
+      "eval(",
+      "exec(",
+      "__import__",
+      "shutil.rmtree",
+      "os.remove",
+      "open('/etc"
+    ],
+    "template": [
+      "\"\"\"",
+      "<Sport> scraper using <Source>.",
+      "",
+      "DATASOURCES:",
+      "- <Source Name> (<URL>) → resources page: \"<Resource Name>\"",
+      "",
+      "PARAMETERS:",
+      "- seasons: list of seasons to scrape",
+      "- delay: seconds between requests (minimum 1.0)",
+      "",
+      "Ethics: <note about ToS compliance, rate limits, robots.txt>",
+      "No pip dependencies beyond requests/csv.",
+      "\"\"\"",
+      "",
+      "import sys",
+      "from pathlib import Path",
+      "sys.path.insert(0, str(Path(__file__).parent))",
+      "from base import RateLimitedSession, save_to_csv, get_logger, DATA_DIR",
+      "",
+      "log = get_logger(\"<source>\")",
+      "http = RateLimitedSession(delay=1.0)",
+      "",
+      "# --- PARAMETERS ---",
+      "SEASONS = [2024, 2025]",
+      "",
+      "def scrape(seasons=None):",
+      "    seasons = seasons or SEASONS",
+      "    # ... scraping logic ...",
+      "    save_to_csv(rows, DATA_DIR / \"<source>_data.csv\")",
+      "",
+      "if __name__ == \"__main__\":",
+      "    scrape()"
+    ],
+    "registration": {
+      "description": "After adding the scraper file, register it in SCRAPER_SOURCE_MAP in scripts/export_unified_resources.py",
+      "format": "\"<scraper_name>\": (\"<sport>\", \"<source_keyword>\")",
+      "example": "\"basketball_reference\": (\"basketball\", \"basketball-reference\")"
+    },
+    "pr_checklist": [
+      "Scraper file follows naming convention: scrapers/scrape_<name>.py",
+      "Uses RateLimitedSession from base.py with delay >= 1.0s",
+      "Has complete docstring with DATASOURCES, PARAMETERS, Ethics",
+      "Output saved as CSV via save_to_csv()",
+      "No hardcoded API keys (use os.environ)",
+      "No banned imports (subprocess, eval, exec, etc.)",
+      "Dry-run tested successfully",
+      "SCRAPER_SOURCE_MAP entry added in export_unified_resources.py"
+    ],
+    "needs_scraper": [
+      {
+        "name": "Basketball Reference",
+        "url": "https://www.basketball-reference.com",
+        "sports": [
+          "basketball"
+        ],
+        "paper_count": 25
+      },
+      {
+        "name": "FanGraphs",
+        "url": "https://www.fangraphs.com",
+        "sports": [
+          "baseball"
+        ],
+        "paper_count": 7
+      },
+      {
+        "name": "Pro Football Reference",
+        "url": "https://www.pro-football-reference.com",
+        "sports": [
+          "american_football"
+        ],
+        "paper_count": 7
+      },
+      {
+        "name": "Spotrac",
+        "url": "https://www.spotrac.com",
+        "sports": [
+          "american_football",
+          "basketball",
+          "baseball",
+          "ice_hockey"
+        ],
+        "paper_count": 7
+      },
+      {
+        "name": "ACB Basketball League",
+        "url": "https://www.acb.com",
+        "sports": [
+          "basketball"
+        ],
+        "paper_count": 4
+      },
+      {
+        "name": "EliteProspects",
+        "url": "https://www.eliteprospects.com",
+        "sports": [
+          "ice_hockey"
+        ],
+        "paper_count": 3
+      },
+      {
+        "name": "Stryd Running Power",
+        "url": "https://www.stryd.com",
+        "sports": [
+          "athletics"
+        ],
+        "paper_count": 3
+      },
+      {
+        "name": "Athletic.net",
+        "url": "https://www.athletic.net",
+        "sports": [
+          "athletics"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "ESPNcricinfo Statsguru",
+        "url": "https://stats.espncricinfo.com/ci/engine/stats/index.html",
+        "sports": [
+          "cricket"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "EuroLeague Basketball",
+        "url": "https://www.euroleaguebasketball.net/euroleague/",
+        "sports": [
+          "basketball"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "FIG Gymnastics Results",
+        "url": "https://www.gymnastics.sport/site/events/results.php",
+        "sports": [
+          "gymnastics"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "Football Outsiders",
+        "url": "https://www.footballoutsiders.com",
+        "sports": [
+          "american_football"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "IHF Competition Results",
+        "url": "https://www.ihf.info/competitions",
+        "sports": [
+          "handball"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "Indian Premier League (IPL)",
+        "url": "https://www.iplt20.com",
+        "sports": [
+          "cricket"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "NBAStuffer.com",
+        "url": "https://www.nbastuffer.com",
+        "sports": [
+          "basketball"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "NCAA Statistics",
+        "url": "https://stats.ncaa.org",
+        "sports": [
+          "multi_sport"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "NPB Official Statistics",
+        "url": "https://npb.jp",
+        "sports": [
+          "baseball"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "Omega Timing / Diamond League",
+        "url": "https://www.omegatiming.com/sports-timing-live-results",
+        "sports": [
+          "athletics"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "Paris 2024 Olympics Results",
+        "url": "https://olympics.com/en/paris-2024",
+        "sports": [
+          "multi_sport"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "Pro Sports Transactions",
+        "url": "https://www.prosportstransactions.com",
+        "sports": [
+          "multi_sport"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "Riot Games Developer API",
+        "url": "https://developer.riotgames.com",
+        "sports": [
+          "esports"
+        ],
+        "paper_count": 2
+      },
+      {
+        "name": "Club Elo",
+        "url": "http://clubelo.com",
+        "sports": [
+          "football"
+        ],
+        "paper_count": 1
+      },
+      {
+        "name": "HLTV.org",
+        "url": "https://www.hltv.org",
+        "sports": [
+          "esports"
+        ],
+        "paper_count": 1
+      },
+      {
+        "name": "Liquipedia",
+        "url": "https://liquipedia.net",
+        "sports": [
+          "esports"
+        ],
+        "paper_count": 1
+      },
+      {
+        "name": "Sports Reference",
+        "url": "https://www.sports-reference.com",
+        "sports": [
+          "multi_sport"
+        ],
+        "paper_count": 1
+      },
+      {
+        "name": "World Aquatics Results",
+        "url": "https://www.worldaquatics.com/results",
+        "sports": [
+          "artistic_swimming",
+          "diving",
+          "swimming"
+        ],
+        "paper_count": 1
+      },
+      {
+        "name": "DataGolf",
+        "url": "https://datagolf.com",
+        "sports": [
+          "golf"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "ESPN Scrum",
+        "url": "https://www.espn.co.uk/rugby/",
+        "sports": [
+          "rugby"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "Howstat",
+        "url": "http://www.howstat.com",
+        "sports": [
+          "cricket"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "ISU Results & Protocols",
+        "url": "https://www.isuresults.com/results",
+        "sports": [
+          "figure_skating"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "Natural Stattrick",
+        "url": "https://www.naturalstattrick.com",
+        "sports": [
+          "ice_hockey"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "octonion Sports Analytics Collection",
+        "url": "https://github.com/octonion?tab=repositories",
+        "sports": [
+          "multi_sport"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "Open Science Framework (OSF)",
+        "url": "https://osf.io",
+        "sports": [
+          "multi_sport"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "Oracle's Elixir",
+        "url": "https://oracleselixir.com",
+        "sports": [
+          "esports"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "SkatingScores.com",
+        "url": "https://skatingscores.com",
+        "sports": [
+          "figure_skating"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "SpeedSkatingResults.com",
+        "url": "https://speedskatingresults.com",
+        "sports": [
+          "speed_skating"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "Tennis Abstract / Match Charting Project",
+        "url": "http://tennisabstract.com",
+        "sports": [
+          "tennis"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "Tilastopaja",
+        "url": "https://www.tilastopaja.eu",
+        "sports": [
+          "athletics"
+        ],
+        "paper_count": 0
+      },
+      {
+        "name": "Yale Diving 2000 (Sydney Olympics)",
+        "url": "https://doi.org/10.1016/j.econedurev.2004.06.001",
+        "sports": [
+          "diving"
+        ],
+        "paper_count": 0
+      }
+    ]
   },
   "api_endpoints": {
     "summary": "/api/summary.json",

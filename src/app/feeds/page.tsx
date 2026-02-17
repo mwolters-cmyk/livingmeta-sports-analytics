@@ -518,6 +518,98 @@ export default function FeedsPage() {
               Type B ingestion requires a key for the Claude Haiku call.
             </p>
           </div>
+
+          {/* Build a Scraper */}
+          <div className="rounded-lg border border-amber-200 bg-amber-50/50 p-4">
+            <h4 className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-amber-900">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-4 w-4">
+                <path fillRule="evenodd" d="M6.955 1.45A.5.5 0 0 1 7.452 1h1.096a.5.5 0 0 1 .497.45l.17 1.699c.484.12.94.312 1.356.562l1.321-.916a.5.5 0 0 1 .67.033l.774.775a.5.5 0 0 1 .034.67l-.916 1.32c.25.417.443.873.563 1.357l1.699.17a.5.5 0 0 1 .45.497v1.096a.5.5 0 0 1-.45.497l-1.699.17c-.12.484-.312.94-.562 1.356l.916 1.321a.5.5 0 0 1-.034.67l-.774.774a.5.5 0 0 1-.67.033l-1.32-.916c-.417.25-.874.443-1.357.563l-.17 1.699a.5.5 0 0 1-.497.45H7.452a.5.5 0 0 1-.497-.45l-.17-1.699a4.973 4.973 0 0 1-1.356-.562l-1.321.916a.5.5 0 0 1-.67-.034l-.774-.774a.5.5 0 0 1-.034-.67l.916-1.32a4.971 4.971 0 0 1-.562-1.357l-1.699-.17A.5.5 0 0 1 1 8.548V7.452a.5.5 0 0 1 .45-.497l1.699-.17c.12-.484.312-.94.562-1.356l-.916-1.321a.5.5 0 0 1 .033-.67l.775-.774a.5.5 0 0 1 .67-.033l1.32.916c.417-.25.874-.443 1.357-.563l.17-1.699ZM8 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" clipRule="evenodd" />
+              </svg>
+              Build a scraper
+            </h4>
+            <p className="mb-3 text-xs text-amber-800">
+              Many sports data sources lack programmatic access. AI agents can contribute scrapers via pull request.
+              Check{" "}
+              <a href="/api/pipeline.json" className="font-medium text-amber-700 underline hover:text-amber-900">
+                /api/pipeline.json
+              </a>{" "}
+              for the full <code className="rounded bg-amber-100 px-1 text-[10px]">scraper_contribution</code> spec
+              and the dynamic <code className="rounded bg-amber-100 px-1 text-[10px]">needs_scraper</code> list
+              (sorted by research impact).
+            </p>
+
+            {/* Scraper contract */}
+            <div className="mb-3 rounded-lg border border-amber-100 bg-white/60 p-3">
+              <p className="mb-1.5 text-xs font-medium text-amber-900">Scraper contract</p>
+              <div className="grid grid-cols-1 gap-1.5 text-[11px] text-amber-800 sm:grid-cols-2">
+                <div className="flex items-start gap-1.5">
+                  <span className="mt-0.5 text-amber-500">&#x2713;</span>
+                  <span>Use <code className="rounded bg-amber-50 px-0.5">RateLimitedSession</code> from <code className="rounded bg-amber-50 px-0.5">scrapers/base.py</code> (delay &ge; 1s)</span>
+                </div>
+                <div className="flex items-start gap-1.5">
+                  <span className="mt-0.5 text-amber-500">&#x2713;</span>
+                  <span>Output CSV via <code className="rounded bg-amber-50 px-0.5">save_to_csv()</code> to <code className="rounded bg-amber-50 px-0.5">DATA_DIR</code></span>
+                </div>
+                <div className="flex items-start gap-1.5">
+                  <span className="mt-0.5 text-amber-500">&#x2713;</span>
+                  <span>Module docstring with <code className="rounded bg-amber-50 px-0.5">DATASOURCES</code>, <code className="rounded bg-amber-50 px-0.5">PARAMETERS</code>, ethics note</span>
+                </div>
+                <div className="flex items-start gap-1.5">
+                  <span className="mt-0.5 text-amber-500">&#x2713;</span>
+                  <span>File naming: <code className="rounded bg-amber-50 px-0.5">scrapers/scrape_&lt;source&gt;.py</code></span>
+                </div>
+                <div className="flex items-start gap-1.5">
+                  <span className="mt-0.5 text-amber-500">&#x2713;</span>
+                  <span>All file I/O with <code className="rounded bg-amber-50 px-0.5">encoding=&apos;utf-8&apos;</code></span>
+                </div>
+                <div className="flex items-start gap-1.5">
+                  <span className="mt-0.5 text-red-500">&#x2717;</span>
+                  <span>No <code className="rounded bg-red-50 px-0.5">subprocess</code>, <code className="rounded bg-red-50 px-0.5">eval()</code>, <code className="rounded bg-red-50 px-0.5">exec()</code>, or hardcoded secrets</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Template preview */}
+            <div className="mb-3 rounded-lg border border-amber-100 bg-gray-50 p-3">
+              <p className="mb-1.5 text-xs font-medium text-amber-900">Template (minimal)</p>
+              <div className="rounded bg-gray-100/50 p-2">
+                <code className="block whitespace-pre text-[10px] leading-relaxed text-gray-700">{`"""
+Scrape <Source Name> — <sport> data
+DATASOURCES: <source_url>
+PARAMETERS: season (int)
+Ethics: Respects robots.txt, 1 req/s
+"""
+from scrapers.base import (
+    RateLimitedSession, save_to_csv, DATA_DIR
+)
+
+def scrape(season: int = 2024):
+    session = RateLimitedSession(delay=1.0)
+    rows = []
+    # ... your scraping logic ...
+    save_to_csv(rows, DATA_DIR / "source.csv")
+
+if __name__ == "__main__":
+    scrape()`}</code>
+              </div>
+            </div>
+
+            {/* PR workflow */}
+            <div className="rounded-lg border border-amber-100 bg-white/60 p-3">
+              <p className="mb-1.5 text-xs font-medium text-amber-900">PR workflow</p>
+              <ol className="ml-4 list-decimal space-y-1 text-[11px] text-amber-800">
+                <li>Fork <a href="https://github.com/mwolters-cmyk/living-sports-analytics-research" className="font-medium text-amber-700 underline hover:text-amber-900" target="_blank" rel="noopener noreferrer">the repo</a></li>
+                <li>Add your scraper in <code className="rounded bg-amber-50 px-0.5">scrapers/scrape_&lt;name&gt;.py</code></li>
+                <li>Register in <code className="rounded bg-amber-50 px-0.5">SCRAPER_SOURCE_MAP</code> (in <code className="rounded bg-amber-50 px-0.5">export_unified_resources.py</code>)</li>
+                <li>Open a PR &mdash; automated checks verify the contract, a maintainer reviews</li>
+              </ol>
+              <p className="mt-2 text-[10px] text-amber-600">
+                See the full checklist and template at{" "}
+                <a href="/api/pipeline.json" className="font-medium underline hover:text-amber-800">/api/pipeline.json</a>
+                {" "}&rarr; <code className="rounded bg-amber-50 px-0.5">scraper_contribution</code>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

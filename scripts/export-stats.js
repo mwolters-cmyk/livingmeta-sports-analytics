@@ -815,6 +815,100 @@ try {
         "Full extraction schemas are defined in living_meta/paper_extractor.py (SYSTEM_PROMPT for PDFs, ABSTRACT_SYSTEM_PROMPT for abstracts, UNIFIED_NONOA_PROMPT for grey literature)",
     },
 
+    scraper_contribution: {
+      description:
+        "How to contribute a new data scraper for a sports dataset that currently lacks programmatic access.",
+      repository: "https://github.com/mwolters-cmyk/living-sports-analytics-research",
+      workflow: "Pull Request — fork the repo, add your scraper, open a PR for review.",
+      directory: "scrapers/",
+      file_naming: "scrapers/scrape_<source_name>.py (e.g., scrape_basketball_reference.py)",
+
+      required_contract: {
+        imports: "Must use base.py utilities: from base import RateLimitedSession, save_to_csv, get_logger, DATA_DIR",
+        rate_limiting: "Must use RateLimitedSession with delay >= 1.0 second between requests",
+        output: "CSV files saved via save_to_csv() to DATA_DIR",
+        docstring: "Module docstring with DATASOURCES (what sites), PARAMETERS (configurable), Ethics note (rate limits, ToS compliance)",
+        encoding: "All file I/O must use encoding='utf-8' (Windows compatibility)",
+        no_auth_secrets: "Never hardcode API keys — use os.environ.get('KEY_NAME') for any authentication",
+      },
+
+      banned_patterns: [
+        "subprocess", "os.system", "eval(", "exec(", "__import__",
+        "shutil.rmtree", "os.remove", "open('/etc",
+      ],
+
+      template: [
+        '"""',
+        "<Sport> scraper using <Source>.",
+        "",
+        "DATASOURCES:",
+        "- <Source Name> (<URL>) → resources page: \"<Resource Name>\"",
+        "",
+        "PARAMETERS:",
+        "- seasons: list of seasons to scrape",
+        "- delay: seconds between requests (minimum 1.0)",
+        "",
+        "Ethics: <note about ToS compliance, rate limits, robots.txt>",
+        "No pip dependencies beyond requests/csv.",
+        '"""',
+        "",
+        "import sys",
+        "from pathlib import Path",
+        "sys.path.insert(0, str(Path(__file__).parent))",
+        "from base import RateLimitedSession, save_to_csv, get_logger, DATA_DIR",
+        "",
+        "log = get_logger(\"<source>\")",
+        "http = RateLimitedSession(delay=1.0)",
+        "",
+        "# --- PARAMETERS ---",
+        "SEASONS = [2024, 2025]",
+        "",
+        "def scrape(seasons=None):",
+        "    seasons = seasons or SEASONS",
+        "    # ... scraping logic ...",
+        "    save_to_csv(rows, DATA_DIR / \"<source>_data.csv\")",
+        "",
+        "if __name__ == \"__main__\":",
+        "    scrape()",
+      ],
+
+      registration: {
+        description: "After adding the scraper file, register it in SCRAPER_SOURCE_MAP in scripts/export_unified_resources.py",
+        format: '"<scraper_name>": ("<sport>", "<source_keyword>")',
+        example: '"basketball_reference": ("basketball", "basketball-reference")',
+      },
+
+      pr_checklist: [
+        "Scraper file follows naming convention: scrapers/scrape_<name>.py",
+        "Uses RateLimitedSession from base.py with delay >= 1.0s",
+        "Has complete docstring with DATASOURCES, PARAMETERS, Ethics",
+        "Output saved as CSV via save_to_csv()",
+        "No hardcoded API keys (use os.environ)",
+        "No banned imports (subprocess, eval, exec, etc.)",
+        "Dry-run tested successfully",
+        "SCRAPER_SOURCE_MAP entry added in export_unified_resources.py",
+      ],
+
+      // Dynamic: datasets that need scrapers, sorted by paper_count
+      needs_scraper: (() => {
+        try {
+          const uPath = path.join(OUTPUT_DIR, "unified-resources.json");
+          const u = JSON.parse(fs.readFileSync(uPath, "utf-8"));
+          return u.resources
+            .filter((r) => r.needs_scraper)
+            .sort((a, b) => (b.paper_count || 0) - (a.paper_count || 0))
+            .map((r) => ({
+              name: r.name,
+              url: r.url,
+              sports: r.sports,
+              paper_count: r.paper_count || 0,
+            }));
+        } catch (e) {
+          return [];
+        }
+      })(),
+    },
+
     api_endpoints: {
       summary: "/api/summary.json",
       classifications: "/api/classifications.json",
