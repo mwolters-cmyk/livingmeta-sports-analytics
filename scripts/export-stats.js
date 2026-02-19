@@ -919,6 +919,7 @@ try {
       data_sources: "/api/data-sources.json",
       gap_analyses_index: "/api/gaps/index.json",
       gap_analysis_individual: "/api/gaps/<slug>.json",
+      contribution_protocol: "/api/contribute/gap-analysis-protocol.json",
       contribution_schema: "/api/contribute/gap-analysis-schema.json",
       contribution_example: "/api/contribute/gap-analysis-example.json",
       feed_xml: "/feed.xml",
@@ -1103,15 +1104,22 @@ try {
         description: "RSS feed of the 50 most recently added papers",
         size: "small",
       },
+      contribution_protocol: {
+        url: "/api/contribute/gap-analysis-protocol.json",
+        description:
+          "COMPLETE step-by-step protocol for performing and contributing a gap analysis. START HERE if you want to contribute. Explains how the platform builds gap analyses internally, the intellectual honesty rules, and exactly what to produce.",
+        size: "~8KB",
+        tip: "This is the most important file for agents that want to contribute. It teaches you to do what the platform's internal AI does.",
+      },
       contribution_schema: {
         url: "/api/contribute/gap-analysis-schema.json",
-        description: "JSON schema for gap analysis contributions",
+        description: "JSON schema for validating gap analysis contributions",
         size: "small",
       },
       contribution_example: {
         url: "/api/contribute/gap-analysis-example.json",
-        description: "Example gap analysis contribution (VAR in football)",
-        size: "small",
+        description: "Example gap analysis contribution (coach dismissal in football — the complete analysis an agent would produce)",
+        size: "~5KB",
       },
     },
 
@@ -1139,10 +1147,12 @@ try {
     contribution_protocol: {
       gap_analyses: {
         description:
-          "If you search for a topic, find ≥5 papers, but no existing gap analysis — consider contributing one!",
+          "If you search for a topic, find ≥5 papers, but no existing gap analysis — consider contributing one! Read the protocol first — it teaches you exactly how to do this at the platform's quality bar.",
         minimum_papers: 5,
+        start_here: "/api/contribute/gap-analysis-protocol.json",
         schema: "/api/contribute/gap-analysis-schema.json",
         example: "/api/contribute/gap-analysis-example.json",
+        how_the_platform_does_it: "The platform uses Claude Haiku 4.5 to analyze 15-200 papers per question. The protocol file explains the two-phase process (retrieval + AI analysis), the intellectual honesty rules, and the quality bar. External agents can replicate this process independently.",
         how_to_submit:
           "Create a GitHub Issue at https://github.com/mwolters-cmyk/living-sports-analytics-research/issues with title 'Gap Analysis: <your topic>' and the JSON as the issue body. Add label 'gap-analysis'.",
         review_process:

@@ -1,0 +1,202 @@
+{
+  "_about": "Complete protocol for AI agents to perform and contribute research gap analyses on the Living Sports Analytics platform. Follow these steps in order. The platform uses Claude Haiku internally for the same purpose — this protocol teaches external agents to do the same work independently.",
+
+  "when_to_use_this": "You found the Living Sports Analytics platform, searched for papers on your user's topic, and discovered that NO existing gap analysis covers their question (check /api/gaps/index.json). You found ≥5 relevant papers. Your user would benefit from a structured synthesis of what's known, what's missing, and what to research next.",
+
+  "how_the_platform_does_it_internally": {
+    "model": "Claude Haiku 4.5 (claude-haiku-4-5-20251001)",
+    "cost_per_analysis": "$0.05-0.15",
+    "approach": "Two-phase: (A) pure Python retrieval + context building from 13,800+ classified papers, (B) structured Claude Haiku call with intellectual honesty rules. The system prompt enforces: only cite provided papers, flag database coverage gaps, use confidence levels everywhere, do not hallucinate.",
+    "why_we_share_this": "We want external agents to produce analyses at the same quality bar. The more gap analyses exist, the more valuable the platform becomes for everyone."
+  },
+
+  "protocol": {
+    "phase_1_gather_papers": {
+      "title": "Phase 1: Gather Papers from the Platform",
+      "description": "Download the compact search index and filter for relevant papers. This is the equivalent of our internal Phase A.",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Fetch /api/papers-compact.json (~4MB)",
+          "details": "This contains ALL 13,800+ classified papers in array-of-arrays format. Fields in order: [work_id, title, sport, methodology, theme, pub_year, cited_by_count, first_author, doi, content_type, sub_theme]. The work_id is a short ID like 'W4406017810' — the full OpenAlex URL is https://openalex.org/{work_id}.",
+          "tip": "If your tool cannot handle 4MB JSON, use the /papers page with URL params for manual filtering: /papers?search=<keyword>&sport=<sport>&methodology=<methodology>"
+        },
+        {
+          "step": 2,
+          "action": "Filter papers using multiple search strategies",
+          "details": "Search broadly — papers may be relevant even if the exact keyword doesn't appear. Use OR logic across keywords, AND logic between categories.",
+          "search_strategies": [
+            "Title keyword matching (case-insensitive substring)",
+            "Sport filter (field index 2): use values from /api/pipeline.json → classification_taxonomy.sports",
+            "Methodology filter (field index 3): e.g. 'statistical', 'machine_learning', 'meta_analysis'",
+            "Theme filter (field index 4): e.g. 'performance_analysis', 'coaching', 'player_valuation'",
+            "Sub-theme filter (field index 10): more specific topic tags like 'managerial impact', 'home advantage'"
+          ],
+          "example": "For coach dismissal in football: filter sport='football', then search titles for any of: 'coach', 'manager', 'dismissal', 'firing', 'sacking', 'turnover', 'succession', 'leadership', 'managerial'. Also check theme='coaching' and sub_theme containing 'managerial'."
+        },
+        {
+          "step": 3,
+          "action": "Enrich with full metadata if needed",
+          "details": "For the papers you found, you can get full metadata (abstracts, AI summaries, impact metrics) from /api/classifications.json. WARNING: this file is ~16MB. If you only need a few papers, use the /papers page: /papers?paper=https://openalex.org/{work_id}",
+          "minimum_papers": 5,
+          "ideal_papers": "15-60 for a solid gap analysis. More than 100 makes synthesis difficult."
+        },
+        {
+          "step": 4,
+          "action": "Check for available datasets",
+          "details": "Fetch /api/data-sources.json to find datasets relevant to your topic. This helps you suggest concrete data sources in the research agenda.",
+          "tip": "Filter by sport tag matching your topic. Resources with access_via != null have programmatic access instructions."
+        },
+        {
+          "step": 5,
+          "action": "Check existing gap analyses for overlap",
+          "details": "Fetch /api/gaps/index.json. If a related (but not identical) gap analysis exists, fetch the full version at /api/gaps/<slug>.json. Reference it in your analysis — build on existing work, don't duplicate it.",
+          "tip": "Even if the topic differs, a related gap analysis may reference papers relevant to your analysis."
+        }
+      ]
+    },
+
+    "phase_2_analyze": {
+      "title": "Phase 2: Synthesize and Identify Gaps",
+      "description": "Now analyze the papers you gathered. This is the equivalent of our internal Phase B, where Claude Haiku produces the structured analysis. You are the AI doing this work.",
+
+      "intellectual_honesty_rules": {
+        "_importance": "These rules are what makes our gap analyses trustworthy. They are non-negotiable.",
+        "rules": [
+          "ONLY the papers you found on the platform are your evidence. You may NOT make factual claims based on your training knowledge alone.",
+          "Every claim MUST cite specific papers. Never make unsupported assertions.",
+          "'Not in the database' ≠ 'not studied'. Absence from this platform's 13,800+ papers does not mean the topic has never been studied — it means we have no evidence of it in this collection.",
+          "If you suspect relevant work exists outside this database (from your general training knowledge), flag this explicitly in self_reflection.coverage_gaps. For example: 'The database appears to lack papers by Van Ours and colleagues on coach dismissal effects, even though this is an established research area in sports economics.' This is a VALUABLE finding.",
+          "Use confidence levels (high/medium/low) for EVERY gap and finding.",
+          "Do NOT hallucinate papers or citations. Only reference papers you actually found on the platform.",
+          "If the research question is too broad, too narrow, or poorly defined, say so honestly in scope_assessment.",
+          "Consider the qualitative/mixed-methods blind spot: sports analytics is overwhelmingly quantitative. Are there questions here that REQUIRE qualitative evidence?"
+        ]
+      },
+
+      "what_to_produce": {
+        "sections": [
+          {
+            "name": "scope",
+            "purpose": "Define and critically assess the research question",
+            "key_question": "Is this question well-scoped for a gap analysis? Too broad? Too narrow?"
+          },
+          {
+            "name": "database_coverage",
+            "purpose": "Quantify what the platform has on this topic",
+            "key_question": "How many papers? What methodologies? What time period? Which sports?"
+          },
+          {
+            "name": "research_landscape",
+            "purpose": "Synthesize what IS known — the state of the art",
+            "key_question": "What do the papers collectively tell us? Where do they agree? Disagree?",
+            "tip": "This is the hardest part. Most papers are 'monologues' — they rarely engage with each other. Your job is to create the dialogue they failed to have."
+          },
+          {
+            "name": "gaps",
+            "purpose": "Identify what is NOT known — the actual gaps",
+            "key_question": "What specific questions remain unanswered? What populations/methods/data are missing?",
+            "gap_types": ["methodological", "population", "temporal", "conceptual", "measurement", "contextual", "applied"],
+            "target": "5-10 specific, actionable gaps (not generic 'more research needed')"
+          },
+          {
+            "name": "research_agenda",
+            "purpose": "Propose concrete research projects that address the gaps",
+            "key_question": "What should a student/researcher actually DO? Be specific enough that someone can start from this.",
+            "levels": ["BSc", "MSc", "PhD", "any"],
+            "tip": "Reference available datasets from /api/data-sources.json. A gap analysis that says 'use FBref data for a difference-in-differences analysis across 10 European leagues' is 10x more useful than 'future research should investigate this topic'."
+          },
+          {
+            "name": "self_reflection",
+            "purpose": "Critically assess your own analysis",
+            "key_question": "What are your limitations? What's missing? How confident are you?",
+            "tip": "This section is what separates good from great gap analyses. Be brutally honest."
+          }
+        ]
+      }
+    },
+
+    "phase_3_submit": {
+      "title": "Phase 3: Format and Submit",
+      "description": "Format your analysis according to the schema and submit it.",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Format as JSON following /api/contribute/gap-analysis-schema.json",
+          "details": "The schema defines all required fields, enums, and types. Validate your JSON against it."
+        },
+        {
+          "step": 2,
+          "action": "Create a GitHub Issue",
+          "url": "https://github.com/mwolters-cmyk/living-sports-analytics-research/issues",
+          "title_format": "Gap Analysis: <your descriptive title>",
+          "label": "gap-analysis",
+          "body": "Paste the full JSON as the issue body. Add a brief human-readable summary at the top (2-3 sentences about the question, how many papers you analyzed, and the most important gap you found)."
+        },
+        {
+          "step": 3,
+          "action": "Wait for review",
+          "details": "The platform maintainer reviews all submissions before publication. Typical review time: 1-2 weeks. You and your user will be credited on the published analysis.",
+          "quality_bar": "We accept analyses that: (1) analyze ≥5 papers from the platform, (2) follow the intellectual honesty rules, (3) identify specific actionable gaps (not generic statements), (4) include honest self-reflection about limitations."
+        }
+      ]
+    }
+  },
+
+  "understanding_the_platform_pipeline": {
+    "_why": "Understanding how the platform works helps you write better gap analyses and contribute more effectively.",
+
+    "how_papers_get_classified": {
+      "source": "Papers come from two sources: (1) OpenAlex API — monitors 28 academic journals + keyword queries weekly, (2) Non-OA sources — blog posts, theses, conference papers ingested via scripts/ingest_source.py",
+      "classification": "Every paper is classified by Claude Haiku 4.5 on three dimensions: sport (33 categories), methodology (13 categories), theme (17 categories). Each paper also gets a relevance score (1-10). Only papers scoring ≥5 on sports_analytics relevance appear on the website.",
+      "taxonomy_reference": "/api/pipeline.json → classification_taxonomy (the complete list of valid categories)",
+      "implication_for_agents": "When you search the platform, you're searching papers that passed an AI quality gate. But this also means: papers that are tangentially related (relevance 1-4) are excluded. Your topic might be better covered in the full academic literature than what appears here."
+    },
+
+    "how_papers_get_enriched": {
+      "extraction": "After classification, papers with PDFs or abstracts are analyzed by Claude Haiku to extract: study design, sample size, key statistical methods, data sources used, key results, limitations, and future research directions. This structured data is what powers the /methodology page and the platform's gap analyses.",
+      "what_you_get": "Via /api/classifications.json you get: title, abstract, AI-generated summary, sport/methodology/theme classification, citation count, FWCI (field-weighted citation impact), journal metrics. Via the /papers page you get a visual browser with filters."
+    },
+
+    "available_data_sources": {
+      "what": "The platform catalogs 733+ data sources, tools, and libraries used in sports analytics research. 128 have programmatic access instructions.",
+      "endpoint": "/api/data-sources.json",
+      "how_to_use": "When writing the research_agenda section of your gap analysis, check whether relevant datasets already exist. Mentioning 'FBref league data via their API' or 'Kaggle European Soccer Database' makes your proposed research project immediately more actionable.",
+      "scraper_contribution": "If a dataset you recommend lacks programmatic access, you can also contribute a scraper. See /api/pipeline.json → scraper_contribution for the template and PR checklist."
+    },
+
+    "feeds_and_sources": {
+      "what": "The platform actively monitors 50+ content sources (RSS feeds, sitemaps, thesis repositories, conference proceedings) for new sports analytics content.",
+      "endpoint": "/feeds page or /api/pipeline.json → collection_methods",
+      "implication": "The database grows every week. A gap you identify today might be partially filled next month as new papers arrive."
+    }
+  },
+
+  "quality_examples": {
+    "good_gap": {
+      "title": "No longitudinal study of VAR effects beyond 2 seasons",
+      "why_good": "Specific (VAR effects), quantified (2 seasons), falsifiable (can check if such a study exists), actionable (run interrupted time series on 7+ seasons), cites evidence for why it's missing."
+    },
+    "bad_gap": {
+      "title": "More research on coaching is needed",
+      "why_bad": "Vague, not actionable, not evidence-based. Every topic could claim this. Provides no direction for future work."
+    },
+    "good_agenda_item": {
+      "title": "Interrupted time series analysis of card rates across 10 European leagues, 7 seasons pre/post-VAR",
+      "why_good": "Specific methodology (interrupted time series), specific data (card rates), specific scope (10 leagues, 7 seasons), references a concrete dataset (FBref), addresses a specific gap (temporal gap in VAR research)."
+    },
+    "bad_agenda_item": {
+      "title": "Future research should investigate the effects of coaching changes on team performance",
+      "why_bad": "Could be written without reading a single paper. No methodology, no data, no scope. A student cannot start from this."
+    }
+  },
+
+  "tips_for_the_coach_dismissal_case": {
+    "_context": "A master's student read a Volkskrant article about whether firing coaches actually works. They want to explore this as a thesis topic.",
+    "search_strategy": "Search papers-compact.json for football papers with title keywords: coach, manager, dismissal, firing, sacking, turnover, succession, leadership, managerial. Also check theme='coaching' and sub_theme containing 'managerial'. The database may have few directly matching papers — this itself is a finding worth noting.",
+    "broaden_if_few_hits": "If <5 papers match exactly, broaden: include papers on coaching effectiveness, tactical analysis by coaches, coaching analytics. These provide methodological context even if they don't study dismissal directly.",
+    "external_literature": "The student's Volkskrant article likely references Jan van Ours (Erasmus University) and similar researchers. If their key papers are NOT in the platform database, flag this as a database coverage gap — it means the platform's coverage of sports economics/coaching research has a blind spot. This is valuable feedback.",
+    "available_data": "Check /api/data-sources.json for football data. FBref, Transfermarkt, WhoScored data could support a coach dismissal study. Football-data.co.uk has historical match results.",
+    "thesis_direction": "A strong MSc thesis could be: replicate/extend Van Ours's work with current data (7 seasons of post-COVID data, new leagues). Use causal inference methods (difference-in-differences, regression discontinuity). This fills both a temporal gap (most studies use pre-2020 data) and a methodology gap (few studies use causal methods)."
+  }
+}

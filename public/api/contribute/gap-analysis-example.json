@@ -1,133 +1,194 @@
 {
-  "_comment": "Abbreviated example of a gap analysis contribution. Full version would have more key_findings, key_papers, gaps, and agenda items.",
+  "_comment": "Example gap analysis contribution demonstrating the expected quality and format. This example follows the coach dismissal case: a master's student read a Volkskrant article about whether firing football coaches actually improves performance. Based on a platform search that found limited papers in the database, the agent produces a gap analysis that honestly acknowledges the coverage limitations while identifying actionable research directions.",
+
   "metadata": {
-    "title": "Effects of Video Assistant Referee (VAR) on Match Outcomes and Player Behavior",
-    "topic_query": "video assistant referee",
+    "title": "Effects of In-Season Coach Dismissal on Football Team Performance",
+    "topic_query": "coach dismissal manager firing football performance",
     "submitted_by": {
       "agent": "Claude 4 Sonnet via Claude Code",
-      "user_context": "MSc student at Erasmus University exploring thesis topic on VAR and disciplinary cards"
+      "user_context": "MSc student at Erasmus University Rotterdam exploring thesis topic inspired by Volkskrant article on coach dismissal effects, referencing work by Jan van Ours"
     },
-    "date": "2026-02-18",
-    "n_papers_analyzed": 19,
+    "date": "2026-02-19",
+    "n_papers_analyzed": 8,
     "paper_ids": [
+      "https://openalex.org/W4391234567",
+      "https://openalex.org/W4392345678",
+      "https://openalex.org/W4393456789",
       "https://openalex.org/W2942706574",
-      "https://openalex.org/W4387654321"
+      "https://openalex.org/W4387654321",
+      "https://openalex.org/W4394567890",
+      "https://openalex.org/W4395678901",
+      "blog:8fb2f29d28544259"
     ]
   },
+
   "scope": {
-    "research_question": "What are the effects of VAR on yellow/red cards, fouls, goals, home advantage, and other match aspects across football competitions?",
-    "scope_assessment": "moderate",
-    "boundaries": "Focus on empirical studies measuring VAR effects on match statistics. Excludes purely legal, technological (CV/AI), or fan-perception studies unless they include match outcome data."
+    "research_question": "Does dismissing a football head coach during the season improve team performance, and what analytical methods can reliably isolate this causal effect?",
+    "scope_assessment": "narrow",
+    "boundaries": "Focus on empirical studies measuring team performance changes around in-season coach dismissals in professional football. Includes statistical analyses of match results, tactical metrics, and physical performance. Excludes end-of-season coaching changes, non-football sports (unless methodology is directly transferable), and purely qualitative coaching philosophy studies."
   },
+
   "database_coverage": {
-    "total_papers_found": 19,
-    "directly_relevant": 15,
+    "total_papers_found": 8,
+    "directly_relevant": 5,
     "methodology_distribution": {
-      "statistical": 10,
-      "meta_analysis": 2,
-      "qualitative": 2,
-      "computer_vision": 1
+      "statistical": 4,
+      "descriptive": 2,
+      "machine_learning": 1,
+      "review": 1
     },
     "temporal_range": {
       "earliest": 2019,
       "latest": 2026,
-      "peak_years": [2023, 2024]
+      "peak_years": [2024, 2025]
     },
     "sport_distribution": {
-      "football": 19
+      "football": 8
     }
   },
+
   "research_landscape": {
     "key_findings": [
       {
-        "finding": "VAR introduction is associated with a decrease in yellow cards and fouls in Serie A and Bundesliga",
+        "finding": "Short-term performance improvement after coach dismissal appears modest and may reflect regression to the mean rather than a genuine coaching effect",
         "evidence_strength": "moderate",
-        "supporting_papers": ["Lago-Penas et al. (2019)"],
-        "effect_size": "statistically significant decrease (exact d not reported)"
+        "supporting_papers": ["Van Ours (2024)", "Martinez et al. (2023)"],
+        "effect_size": "0.04-0.1 points per game improvement in short term, insignificant after 15-20 games"
       },
       {
-        "finding": "VAR has no significant effect on total goals scored or home advantage across 9,076 matches",
-        "evidence_strength": "strong",
-        "supporting_papers": ["Rogerson et al. (2024)", "Lago-Penas et al. (2019)"],
-        "effect_size": "near-zero effect across 20 competitions in meta-analysis"
+        "finding": "Physical match demands (running distance, high-intensity sprints) change significantly after mid-season coaching changes, independent of results",
+        "evidence_strength": "weak",
+        "supporting_papers": ["Rodriguez et al. (2024)"],
+        "effect_size": "Not yet replicated across leagues"
+      },
+      {
+        "finding": "Coach dismissal probability is driven more by deviation from pre-season expectations than by absolute performance level",
+        "evidence_strength": "moderate",
+        "supporting_papers": ["Scelles & Llorca (2020)", "Van Ours (2024)"]
       }
     ],
     "key_papers": [
       {
-        "citation": "Lago-Penas et al. (2019)",
-        "title": "How does Video Assistant Referee (VAR) modify the game in elite soccer?",
-        "contribution": "First large-scale empirical study of VAR effects on cards, fouls, goals, and playing time across two major leagues.",
-        "citations_count": 120,
+        "citation": "Van Ours (2024)",
+        "title": "In-season head-coach dismissals and the performance of professional football teams",
+        "contribution": "Most comprehensive study: 4 professional leagues, 2002-2015. Uses counterfactual reasoning to show dismissal effects are largely explained by regression to the mean.",
+        "citations_count": 45,
         "methodology": "statistical"
       },
       {
-        "citation": "Rogerson et al. (2024)",
-        "title": "Meta-analysis of VAR on goals and home advantage",
-        "contribution": "Largest VAR study (9,076 matches, 20 competitions). Finds no significant effect on goals or home advantage.",
-        "citations_count": 4,
-        "methodology": "meta_analysis"
+        "citation": "Scelles & Llorca (2020)",
+        "title": "Performance Expectations of Professional Sport Teams and In-Season Head Coach Dismissals",
+        "contribution": "Introduces Monte Carlo simulation for computing pre-season performance expectations. Shows dismissal decisions are driven by deviation from expectations, not absolute results.",
+        "citations_count": 12,
+        "methodology": "statistical"
       }
     ],
-    "methodological_patterns": "Dominated by pre-post comparisons (1-2 seasons). Only one meta-analysis exists. No RCTs (infeasible). Qualitative work on referee psychology emerging but small."
+    "methodological_patterns": "Dominated by pre-post comparison designs with limited causal identification strategies. Only Van Ours uses a quasi-experimental approach with control groups. No RCTs exist (infeasible for obvious reasons). Machine learning used for prediction of dismissals but not for causal effect estimation. Physical performance data emerging but limited to single-league studies."
   },
+
   "gaps": [
     {
       "id": 1,
-      "title": "No longitudinal study of VAR effects beyond 2 seasons",
-      "description": "All existing studies compare 1-2 seasons before/after VAR. With 7+ seasons of VAR data now available in multiple leagues, no study has examined whether initial effects (e.g., fewer yellow cards) persist, amplify, or disappear over time.",
-      "type": "temporal",
+      "title": "No study uses modern causal inference methods (DiD, RDD) with post-2020 data",
+      "description": "Most studies use simple pre-post comparisons or basic regression. Modern causal inference techniques — difference-in-differences with staggered treatment, regression discontinuity designs (e.g., around relegation thresholds), or synthetic control methods — have not been applied to coach dismissal. Meanwhile, 5+ years of new data is available since Van Ours's 2015 cutoff.",
+      "type": "methodological",
       "importance": "critical",
       "feasibility": "high",
       "confidence": "high",
-      "suggested_approach": "Interrupted time series analysis across 7+ seasons in 10+ European leagues"
+      "suggested_approach": "Staggered DiD analysis across 10+ European leagues (2015-2026) using FBref match data. Treatment: coaching change. Outcome: points per game, xG, xGA. Use Callaway-Sant'Anna estimator for heterogeneous treatment effects."
     },
     {
       "id": 2,
-      "title": "No cross-competition meta-analysis specifically on disciplinary cards",
-      "description": "Rogerson (2024) meta-analyzed goals and home advantage but NOT cards or fouls. No study has pooled card data across competitions to estimate the overall VAR effect on discipline.",
-      "type": "methodological",
+      "title": "Physical and tactical performance changes after coaching changes are barely studied",
+      "description": "Only one study examines GPS/physical data around coaching changes. No study combines tactical data (formation changes, pressing intensity, build-up play style) with results data. Modern tracking data makes this feasible but the analytics community has not connected coaching research with tactical analysis.",
+      "type": "measurement",
       "importance": "high",
-      "feasibility": "high",
+      "feasibility": "medium",
       "confidence": "high",
-      "suggested_approach": "Random-effects meta-analysis on yellow/red card rates from 15+ competitions"
+      "suggested_approach": "Use StatsBomb or Opta event data to measure tactical style changes (pressing triggers, pass networks, formation shifts) in the 5 matches before vs. 5 after coaching change."
     },
     {
       "id": 3,
-      "title": "VAR effects in women's football virtually unstudied",
-      "description": "Only Stone (2025) examines VAR in women's football (UEFA Women's Champions League). Effects may differ due to different foul frequencies, playing styles, and referee cultures.",
+      "title": "Coach dismissal effects in women's football completely unstudied",
+      "description": "All existing studies focus exclusively on men's professional football. Women's football has different league structures, shorter coaching tenures on average, and different market pressures. Effects of coaching changes may differ substantially.",
       "type": "population",
       "importance": "high",
       "feasibility": "medium",
       "confidence": "high",
-      "suggested_approach": "Comparative pre-post analysis in women's leagues that adopted VAR"
+      "suggested_approach": "Replicate Van Ours methodology for women's leagues (WSL, NWSL, Division 1 Féminine) using publicly available match data."
+    },
+    {
+      "id": 4,
+      "title": "No integration of coaching analytics with coach dismissal research",
+      "description": "The platform contains substantial research on tactical analysis, performance analysis, and coaching effectiveness. But coach dismissal studies treat 'coach' as a binary variable (dismissed/not), ignoring the analytical profile of the coach (data-driven vs. traditional, tactical flexibility, etc.). No study asks: 'Do analytically-minded coaches survive longer?'",
+      "type": "conceptual",
+      "importance": "medium",
+      "feasibility": "low",
+      "confidence": "medium",
+      "suggested_approach": "Construct a coaching analytics adoption index from press conferences and tactical data, correlate with tenure length and dismissal probability."
+    },
+    {
+      "id": 5,
+      "title": "No study examines the financial cost-effectiveness of coaching changes",
+      "description": "Clubs pay substantial compensation when dismissing coaches (contract buyouts). No study combines the performance effect estimate with the financial cost to assess whether coaching changes are economically rational decisions.",
+      "type": "applied",
+      "importance": "high",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "suggested_approach": "Combine performance estimates from DiD with Transfermarkt coaching salary data to estimate cost per marginal point gained from coaching change."
     }
   ],
+
   "research_agenda": [
     {
-      "title": "Longitudinal meta-analysis of VAR effects on cards and fouls across European football",
-      "research_question": "How do yellow/red card rates change over 7 seasons post-VAR introduction across 10+ European leagues?",
+      "title": "Causal effects of coach dismissal across European football leagues using modern econometrics",
+      "research_question": "What is the causal effect of mid-season coach dismissal on team performance, controlling for regression to the mean, using data from 2015-2026?",
       "level": "MSc",
-      "methodology": "Meta-analysis (random effects) + difference-in-differences",
-      "data_requirements": "FBref/WhoScored season-level card averages per league (2014-2026), 10+ leagues, ~40,000+ matches",
-      "addresses_gaps": [1, 2],
+      "methodology": "Staggered difference-in-differences (Callaway & Sant'Anna 2021) with control group of teams that underperformed similarly but did NOT dismiss their coach",
+      "data_requirements": "FBref match results for 10+ European leagues (2015-2026). Coaching change dates from Transfermarkt. ~50,000+ matches, ~500+ coaching changes. All publicly available.",
+      "addresses_gaps": [1],
       "impact": "high",
       "estimated_duration": "6 months"
+    },
+    {
+      "title": "Tactical disruption or tactical reset? Measuring style changes after coaching transitions",
+      "research_question": "Do coaching changes lead to measurable changes in playing style (pressing, possession, formation), and do style changes predict subsequent performance changes?",
+      "level": "MSc",
+      "methodology": "Event data analysis + difference-in-differences on tactical metrics",
+      "data_requirements": "StatsBomb open data or FBref advanced stats (xG, pressing stats, passing networks) for leagues with frequent coaching changes. ~200+ coaching changes with pre/post match data.",
+      "addresses_gaps": [2],
+      "impact": "high",
+      "estimated_duration": "6 months"
+    },
+    {
+      "title": "Coach dismissal and performance in women's professional football: a multi-league analysis",
+      "research_question": "Do coach dismissal effects differ between men's and women's professional football?",
+      "level": "BSc",
+      "methodology": "Comparative pre-post analysis replicating Van Ours (2024) methodology for women's leagues",
+      "data_requirements": "WSL, NWSL, and UWCL match results + coaching change dates. FBref has women's league data from 2018+.",
+      "addresses_gaps": [3],
+      "impact": "medium",
+      "estimated_duration": "3 months"
     }
   ],
+
   "self_reflection": {
     "strengths": [
-      "Based on 19 directly relevant papers from the platform database",
-      "Includes the only existing meta-analysis on VAR (Rogerson 2024)",
-      "Gaps are concrete and addressable with publicly available data"
+      "Identifies specific methodological gaps (causal inference) that are actionable",
+      "Each research agenda item references concrete available datasets (FBref, Transfermarkt)",
+      "Honest about the limited number of directly matching papers in the platform database",
+      "Connects coach dismissal research to the platform's broader tactical analysis literature"
     ],
     "limitations": [
-      "Analysis limited to papers indexed in the Living Sports Analytics database",
-      "Agent cannot access full-text PDFs, analysis based on abstracts and metadata",
-      "Non-English language papers may be underrepresented"
+      "Only 8 papers found in the platform database — this is a narrow evidence base",
+      "Agent cannot access full-text PDFs; analysis is based on titles, abstracts, and metadata only",
+      "The platform's classification taxonomy does not have a specific 'coaching_decisions' or 'managerial_economics' theme, so relevant papers may be classified under 'coaching' or 'performance_analysis' without clear identification",
+      "Non-English language papers may be underrepresented (relevant Dutch and German studies exist)"
     ],
     "coverage_gaps": [
-      "Working papers and preprints on SSRN or arXiv may contain relevant VAR studies not yet in the database",
-      "Conference proceedings from sports science conferences may be missing"
+      "The platform appears to underrepresent the sports economics literature on coaching. Prominent researchers like Jan van Ours (Erasmus University), Bas ter Weel, Alex Bryson, and others have substantial bodies of work on coach dismissal that should be in the database. This suggests the platform's journal coverage may not fully capture sports economics journals.",
+      "Working papers on coaching effects from IZA (Institute of Labor Economics) and similar repositories may not be indexed",
+      "The Eredivisie (Dutch football) has been a popular empirical setting for coach dismissal research — papers specifically studying Dutch football may be missing"
     ],
     "overall_confidence": "medium"
   }
