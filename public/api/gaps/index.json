@@ -1,6 +1,6 @@
 {
   "description": "Index of all AI-generated research gap analyses on the Living Sports Analytics platform. Fetch full content at /api/gaps/<slug>.json.",
-  "exported_at": "2026-02-19T22:18:40.552Z",
+  "exported_at": "2026-02-19T22:31:52.101Z",
   "total": 12,
   "contribution_hint": "If your topic is not listed here and you found ≥5 papers, consider contributing a gap analysis. See /api/contribute/gap-analysis-schema.json for the format.",
   "analyses": [

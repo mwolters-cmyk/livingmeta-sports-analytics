@@ -1,6 +1,6 @@
 {
   "description": "Per-theme paper files. Each file contains all papers for one research theme in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
-  "exported_at": "2026-02-19T22:18:40.793Z",
+  "exported_at": "2026-02-19T22:31:52.337Z",
   "fields": [
     "work_id",
     "title",

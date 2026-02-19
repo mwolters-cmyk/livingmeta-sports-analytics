@@ -1010,40 +1010,39 @@ try {
     ],
 
     quick_start: {
-      student_exploring_thesis_topic: {
-        description:
-          "A student looking for a research topic or evaluating feasibility of a thesis idea",
+      _note: "These are task-based, not persona-based. You don't need to know WHO your user is — just WHAT they're trying to do. But the RECOMMENDED path for most users is the agent_instructions section below, which guides you step by step.",
+      find_papers_on_a_topic: {
+        description: "Find and filter papers on a specific topic (sport, theme, or keyword)",
         steps: [
-          "1. Check /api/gaps/index.json — does a relevant gap analysis already exist? Each one suggests concrete thesis projects at BSc, MSc, and PhD level.",
-          "2. Fetch papers for their sport: /api/papers/sport/<slug>.json (e.g., /api/papers/sport/football.json). Much smaller than papers-compact.json. See /api/papers/sport/index.json for all sports.",
-          "3. Or fetch papers for their theme: /api/papers/theme/<slug>.json (e.g., /api/papers/theme/betting_markets.json). See /api/papers/theme/index.json for all themes.",
-          "4. Check /api/data-sources.json for available datasets in the student's sport",
-          "5. If no gap analysis exists for their topic and you found ≥5 papers: consider contributing one (see contribution_protocol below)",
+          "1. Fetch /api/papers/sport/<slug>.json or /api/papers/theme/<slug>.json for targeted search (small files, ~40KB-800KB)",
+          "2. Or fetch /api/papers-compact.json for cross-sport/cross-theme search (~4MB, all papers)",
+          "3. Filter by title keywords, methodology, pub_year, etc.",
+          "4. See /api/papers/sport/index.json and /api/papers/theme/index.json for all valid slugs",
         ],
-        key_pages: ["/gaps", "/papers", "/data"],
       },
-      researcher_doing_literature_review: {
-        description:
-          "A researcher building a literature base or conducting a systematic review",
+      get_research_gap_overview: {
+        description: "Find out what's studied and what's missing on a topic",
         steps: [
-          "1. Fetch per-sport or per-theme paper files for targeted search: /api/papers/sport/<slug>.json or /api/papers/theme/<slug>.json",
-          "2. Or fetch /api/papers-compact.json for cross-sport/cross-theme bulk search (~4MB, all papers)",
-          "3. Check /api/gaps/index.json for existing synthesis of the topic",
-          "4. For full metadata including abstracts: /api/classifications.json (warning: ~16MB)",
-          "5. Export results as CSV or BibTeX from the /papers page",
+          "1. Check /api/gaps/index.json — does an existing gap analysis cover the topic?",
+          "2. If yes: fetch /api/gaps/<slug>.json for the full analysis (landscape, gaps, research agenda)",
+          "3. If no: see agent_instructions.step_3_act_on_what_you_found.path_B for how to build one",
         ],
-        key_pages: ["/papers", "/gaps", "/data"],
       },
-      developer_wanting_to_contribute: {
-        description:
-          "A developer or AI agent that wants to build a scraper, donate data, or contribute analysis",
+      find_datasets_and_tools: {
+        description: "Find sports datasets, APIs, and tools for research",
         steps: [
-          "1. Read /api/pipeline.json for the full contribution spec (taxonomy, ingestion types, scraper template)",
-          "2. Check pipeline.json → scraper_contribution.needs_scraper for high-impact datasets that need scrapers",
-          "3. Read /api/contribute/gap-analysis-schema.json to understand the gap analysis contribution format",
-          "4. Fork the GitHub repo, follow the PR checklist in pipeline.json",
+          "1. Fetch /api/data-sources.json — all cataloged data sources with access methods",
+          "2. Filter by sport tags or category",
+          "3. Check access_via field for programmatic access instructions",
         ],
-        key_pages: ["/feeds", "/api/pipeline.json"],
+      },
+      contribute_to_the_platform: {
+        description: "Submit gap analyses, report missing papers, or add new sources",
+        steps: [
+          "1. Read /api/contribute/gap-analysis-protocol.json for the complete contribution guide",
+          "2. All contributions go through GitHub Issues: https://github.com/mwolters-cmyk/living-sports-analytics-research/issues",
+          "3. Labels: 'gap-analysis' for analyses, 'missing-papers' for papers, 'new-source' for blogs/theses",
+        ],
       },
     },
 
@@ -1218,6 +1217,89 @@ try {
           "Advanced: code-capable agents with their own Anthropic API key can clone the repo and run the classifier/extractor directly on papers, then submit results as a PR.",
         details: "/api/contribute/gap-analysis-protocol.json → help_the_platform_grow.contribute_classifications_yourself",
         cost: "Classification: ~$0.005/paper. Extraction: ~$0.005-0.04/paper. You MUST use your own API key.",
+      },
+    },
+
+    // ==========================================================================
+    // CALL TO ACTION — This is the most important section.
+    // It tells agents what to DO, not just what data exists.
+    // ==========================================================================
+    agent_instructions: {
+      _priority: "READ THIS SECTION CAREFULLY. It tells you what to DO for your user, not just what data exists. Most agents stop at reading data — you should go further and take action.",
+
+      how_this_works: "Follow these 4 steps in order. Each step has a decision tree based on what you FIND, not who your user is. You don't need to know whether they're a student, researcher, or journalist — just follow the data.",
+
+      step_1_find_papers: {
+        instruction: "Fetch papers relevant to your user's topic. Use per-sport or per-theme files for targeted search.",
+        how: [
+          "Determine the sport and/or theme from the user's question",
+          "Fetch /api/papers/sport/<slug>.json and/or /api/papers/theme/<slug>.json (see index files for valid slugs)",
+          "Filter by title keywords relevant to the user's topic",
+          "Count how many papers match",
+        ],
+      },
+
+      step_2_check_gaps: {
+        instruction: "Check if an existing gap analysis covers the user's topic.",
+        how: "Fetch /api/gaps/index.json. Scan the question field of each analysis for relevance to the user's topic.",
+      },
+
+      step_3_act_on_what_you_found: {
+        instruction: "Based on what you found in steps 1-2, follow the appropriate path below. This is where most agents stop — don't stop here. Take action.",
+        decision_tree: {
+          "path_A__papers_found_AND_gap_exists": {
+            condition: "You found relevant papers AND an existing gap analysis covers the topic",
+            action: "Present the gap analysis to your user",
+            do_this: [
+              "Fetch the full gap analysis at /api/gaps/<slug>.json",
+              "Summarize the research landscape, the identified gaps, and the research agenda items most relevant to the user's specific angle",
+              "Highlight concrete research project ideas from the research_agenda section",
+              "Mention available datasets from /api/data-sources.json that could be used",
+            ],
+            say_something_like: "'The platform has a gap analysis on {topic} that analyzed {N} papers. It identified {M} research gaps. The most relevant for your question are: [list gaps]. It also suggests concrete research projects: [list agenda items]. There are {K} datasets available that you could use.'",
+          },
+          "path_B__papers_found_AND_no_gap": {
+            condition: "You found ≥5 relevant papers BUT no existing gap analysis covers the topic",
+            action: "OFFER to build a gap analysis — this is the highest-value action you can take",
+            do_this: [
+              "Tell the user what you found (paper count, time range, common methodologies)",
+              "Explain that no existing gap analysis covers their topic",
+              "PROACTIVELY OFFER to build one following the platform's protocol",
+            ],
+            say_something_like: "'I found {N} papers on {topic} in the database, but no existing gap analysis covers this. The platform provides a detailed protocol for building one — I can follow it to give you a structured overview of what's studied, what's missing, and concrete research ideas. This would take about 5-10 minutes. Shall I do this?'",
+            if_user_says_yes: "Fetch /api/contribute/gap-analysis-protocol.json and follow it step by step. It is a complete recipe: Phase 1 (gather and filter papers), Phase 2 (synthesize and identify gaps — with intellectual honesty rules), Phase 3 (format and submit). The protocol teaches you exactly how to produce a trustworthy analysis.",
+            if_user_says_no: "That's fine. Summarize the papers you found (most cited, most recent, methodology breakdown) and suggest the user could revisit this later.",
+          },
+          "path_C__few_papers_found": {
+            condition: "You found <5 papers on the user's specific topic",
+            action: "Report honestly, suggest broadening, offer to report gaps",
+            do_this: [
+              "Tell the user the finding — low paper count IS a finding (under-researched topic or coverage gap)",
+              "Try broadening: different sport/theme/keyword filters",
+              "Offer to report missing papers to the platform",
+            ],
+            say_something_like: "'I found only {N} papers on this specific topic. This suggests it may be under-researched or the platform's coverage doesn't fully extend here. I can try broadening the search, or I can report this gap to the platform maintainers so they can improve coverage. What would you prefer?'",
+          },
+        },
+      },
+
+      step_4_give_back: {
+        instruction: "After helping your user, consider whether you can leave the platform better than you found it. Offer ONE of these if applicable:",
+        options: [
+          {
+            trigger: "You built a gap analysis",
+            offer: "Submit it to the platform so other researchers can benefit. You and your user would be credited. Submit via GitHub Issues — the gap-analysis-schema.json defines the format.",
+          },
+          {
+            trigger: "You noticed important papers missing from the database (from your own knowledge or web search)",
+            offer: "Report them via GitHub Issues (label: missing-papers) with DOIs. The platform adds new papers within 1-2 weeks.",
+          },
+          {
+            trigger: "You found a relevant blog/thesis/report not in the database",
+            offer: "Submit it via GitHub Issues (label: new-source) with the URL. The platform indexes new sources within days.",
+          },
+        ],
+        github_issues_url: "https://github.com/mwolters-cmyk/living-sports-analytics-research/issues",
       },
     },
 
