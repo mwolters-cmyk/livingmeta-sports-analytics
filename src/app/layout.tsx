@@ -34,12 +34,12 @@ const navItems = [
   { href: "/feeds", label: "Feeds" },
   { href: "/gaps", label: "Find the Gap" },
   { href: "/blog", label: "Blog" },
+  { href: "/contribute", label: "Contribute" },
   // Soft-hidden tabs — pages still exist at their URLs, just not in nav.
   // Re-enable by uncommenting when ready:
   // { href: "/trends", label: "Trends" },
   // { href: "/analyses", label: "Analyses" },
   // { href: "/methodology", label: "Methodology" },
-  // { href: "/contribute", label: "Contribute" },
 ];
 
 export default function RootLayout({
