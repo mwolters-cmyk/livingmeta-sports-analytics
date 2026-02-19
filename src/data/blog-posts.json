@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "does-firing-your-coach-actually-work",
+    "title": "Does Firing Your Coach Actually Work? What 449 Studies Tell Us",
+    "subtitle": "We let AI loose on our database after reading a Volkskrant article about coach dismissals. The answer is more nuanced than you'd think.",
+    "date": "2026-02-19",
+    "author": "Matthijs Wolters",
+    "tags": ["football", "coaching", "gap-analysis", "methodology"],
+    "related_gap_slug": "does-dismissing-a-football-head-coach-during-the-season-actually-improve-team-pe",
+    "image_emoji": "\u26bd",
+    "reading_time_min": 6,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Last week, de Volkskrant published an article about an age-old question in football: does sacking your manager actually make things better? The piece referenced work by Jan van Ours, an economist at Erasmus University Rotterdam, who has spent years studying exactly this. As a sports analytics research platform based at the same university, we couldn't resist: we pointed our AI at our database of nearly 14,000 sports analytics papers and asked it the same question."
+      },
+      {
+        "type": "paragraph",
+        "text": "The result? A gap analysis covering 449 papers across football, basketball, American football, and ice hockey. Five studies directly examine what happens after a coach gets fired mid-season. And the findings are \u2014 let's say \u2014 uncomfortable for anyone who thinks a new manager is a magic bullet."
+      },
+      {
+        "type": "heading",
+        "text": "The short answer: probably not (much)"
+      },
+      {
+        "type": "paragraph",
+        "text": "The most rigorous study in our database comes from Poland. Researchers analyzed 115 coach dismissals in the Ekstraklasa between 2006 and 2024 and built counterfactual scenarios: what would have happened if the club had kept their manager? Their conclusion was sobering. The modest performance bump you see after a sacking is almost entirely explained by regression to the mean. Teams were performing below their expected level, so they bounced back \u2014 with or without a new face in the dugout."
+      },
+      {
+        "type": "paragraph",
+        "text": "But before you write off all managerial changes as theater, a Danish study throws a curveball. In the Danish Premier League, they did find a genuine improvement after sackings \u2014 but only in home games. Which raises a fascinating question: is the 'new manager bounce' actually about tactics, or about the crowd reacting to the drama of a sacking?"
+      },
+      {
+        "type": "heading",
+        "text": "It's not just about results"
+      },
+      {
+        "type": "paragraph",
+        "text": "A 2025 study that caught our eye went beyond goals and points and looked at GPS data. Turns out, players literally run differently under different coaches. High-speed running distance, sprint profiles, pressing intensity \u2014 all of these shifted significantly across three coaching regimes at the same club. So coaches do change how teams play. Whether that translates into better results is a separate question."
+      },
+      {
+        "type": "paragraph",
+        "text": "Meanwhile, from Spain: short-term improvements (games 1\u20135) were real, but faded quickly. And a Brazilian study using betting markets found that bookmakers only adjusted their odds 5\u20138 games after a coaching change, suggesting markets also detect a real but temporary signal."
+      },
+      {
+        "type": "heading",
+        "text": "The nine things nobody has studied yet"
+      },
+      {
+        "type": "paragraph",
+        "text": "This is where it gets interesting for us as a research platform. Our AI identified nine genuine gaps in the literature \u2014 questions that researchers could answer with available data but haven't yet. A few highlights:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Nobody has compared different statistical methods on the same coaching-change dataset. The Polish study and Danish study used different approaches and got opposite results \u2014 but nobody has asked whether it's the method or the league causing the difference.",
+          "Not a single study asks HOW or WHY performance changes after a sacking. Do players try harder out of guilt? Fear? Does the new coach actually change tactics? We have GPS data and tactical models, but nobody has connected them to coaching transitions.",
+          "Women's football? Completely unstudied. Same goes for lower divisions, amateur football, and most non-European leagues.",
+          "Nobody has factored in the quality of the replacement coach. Sacking your manager and hiring Arne Slot is presumably different from sacking your manager and hiring someone's nephew."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What Van Ours taught us (and what we're missing)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's an honest admission. Jan van Ours's most-cited paper on this topic \u2014 the one the Volkskrant article is about, covering four leagues from 2002 to 2015 \u2014 isn't actually in our database yet. Our platform monitors sports analytics journals and conferences, but Van Ours publishes in economics journals like the Economic Journal and the Journal of Sports Economics. This is a known blind spot: our coverage of the sports economics literature is thinner than we'd like."
+      },
+      {
+        "type": "paragraph",
+        "text": "We're working on it. Agents and users can now report missing papers directly via our GitHub repository, and we've built a protocol that lets AI agents contribute gap analyses autonomously. The coach dismissal case was actually our test case for this new workflow."
+      },
+      {
+        "type": "heading",
+        "text": "So, should Feyenoord sack Priske?"
+      },
+      {
+        "type": "paragraph",
+        "text": "That's not really our call \u2014 and it's not what the data tells you either. What the research does suggest is that boards should think harder about why they're making the change. If your team is in a bad run and the underlying performance (expected goals, physical output, tactical structure) is still solid, there's a good chance things will improve on their own. The new-manager bounce is real, but it might have happened anyway."
+      },
+      {
+        "type": "paragraph",
+        "text": "The smarter question isn't 'should we fire the coach?' but 'if we do, will the replacement actually change something that matters?' And right now, almost no research helps answer that second question."
+      },
+      {
+        "type": "heading",
+        "text": "Dive deeper"
+      },
+      {
+        "type": "paragraph",
+        "text": "The full gap analysis \u2014 with all 9 identified gaps, 4 proposed research projects, and references to 41 papers \u2014 is available on our Find the Gap page. If you're a student looking for a thesis topic, this might be your starting point. The data is there, the methods exist, and the questions are wide open."
+      }
+    ]
+  }
+]

@@ -33,6 +33,7 @@ const navItems = [
   { href: "/data", label: "Data" },
   { href: "/feeds", label: "Feeds" },
   { href: "/gaps", label: "Find the Gap" },
+  { href: "/blog", label: "Blog" },
   // Soft-hidden tabs — pages still exist at their URLs, just not in nav.
   // Re-enable by uncommenting when ready:
   // { href: "/trends", label: "Trends" },
