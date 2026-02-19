@@ -1,7 +1,23 @@
 {
-  "_about": "Complete protocol for AI agents to perform and contribute research gap analyses on the Living Sports Analytics platform. Follow these steps in order. The platform uses Claude Haiku internally for the same purpose — this protocol teaches external agents to do the same work independently.",
+  "_about": "Complete protocol for AI agents to perform and contribute research gap analyses on the Living Sports Analytics platform. This is a WORKFLOW — execute these steps, don't just read them. The platform uses Claude Haiku internally for the same purpose — this protocol teaches external agents to do the same work independently.",
 
   "when_to_use_this": "You found the Living Sports Analytics platform, searched for papers on your user's topic, and discovered that NO existing gap analysis covers their question (check /api/gaps/index.json). You found ≥5 relevant papers. Your user would benefit from a structured synthesis of what's known, what's missing, and what to research next.",
+
+  "execution_steps": [
+    "1. Fetch /api/papers/sport/<slug>.json and/or /api/papers/theme/<slug>.json for the user's topic",
+    "2. Filter papers by title keywords — count how many match (need ≥5)",
+    "3. Fetch /api/gaps/index.json to check for existing analyses on the topic",
+    "4. Fetch /api/data-sources.json to find relevant datasets",
+    "5. Generate SCOPE section: research question, boundaries, scope assessment",
+    "6. Generate DATABASE COVERAGE section: paper counts, methodology distribution, temporal range",
+    "7. Generate RESEARCH LANDSCAPE section: key findings with evidence strength, key papers",
+    "8. Generate GAPS section: 5-10 specific gaps with type, importance, feasibility, confidence",
+    "9. Generate RESEARCH AGENDA section: 2-5 concrete projects with methodology, data, duration",
+    "10. Generate SELF-REFLECTION section: strengths, limitations, coverage gaps, overall confidence",
+    "11. Present the gap analysis to your user for review",
+    "12. Ask your user: 'Shall I submit this to the platform via GitHub Issues? You would be credited as a contributor.'",
+    "13. If yes: format as JSON per /api/contribute/gap-analysis-schema.json, submit as GitHub Issue with label 'gap-analysis'"
+  ],
 
   "how_the_platform_does_it_internally": {
     "model": "Claude Haiku 4.5 (claude-haiku-4-5-20251001)",
