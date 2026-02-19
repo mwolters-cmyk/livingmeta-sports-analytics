@@ -261,6 +261,21 @@
       "what_happens": "The maintainer reviews the blog post for accuracy, tone, and current-event correctness, then publishes it on the /blog page."
     },
 
+    "improve_coverage_after_analysis": {
+      "when": "Your gap analysis has confidence of medium, low, or unknown. The self_reflection.database_coverage_gaps field identifies missing literature.",
+      "how": "Create GitHub Issues to address coverage gaps. This is how the platform improves over time.",
+      "issue_types": [
+        "missing-papers: Specific papers, authors, or DOIs that the analysis identified as likely relevant but absent. Include DOIs or search queries. The maintainer can download PDFs via university subscriptions.",
+        "new-source: Journals or data sources to add to the monitored list (e.g., 'Add Journal of Sports Economics to config.py'). These will be automatically ingested on the next watcher run."
+      ],
+      "example_issue": {
+        "title": "Missing papers: Szymanski et al. on wages and competitive success in football",
+        "label": "missing-papers",
+        "body_includes": "Gap analysis slug, specific DOIs or author names, why these papers are relevant, how to resolve (download + extraction pipeline)"
+      },
+      "why": "Low-confidence analyses are valuable — they identify exactly WHAT is missing. Filing issues creates a virtuous cycle: low confidence → targeted issues → papers added → re-run → higher confidence."
+    },
+
     "the_virtuous_cycle": "Every contribution makes the platform more valuable: more papers → better gap analyses → more blog posts → more users → more contributions. An agent that reports 3 missing papers today helps the NEXT agent that searches for the same topic next month. This is the 'living' in Living Sports Analytics."
   },
 
