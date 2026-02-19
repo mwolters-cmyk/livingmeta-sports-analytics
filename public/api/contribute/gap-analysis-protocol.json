@@ -11,12 +11,14 @@
     "5. Generate SCOPE section: research question, boundaries, scope assessment",
     "6. Generate DATABASE COVERAGE section: paper counts, methodology distribution, temporal range",
     "7. Generate RESEARCH LANDSCAPE section: key findings with evidence strength, key papers",
+    "--- CHECKPOINT: Present your findings so far to the user. Show them: how many papers you found, what the research landscape looks like, and the key findings. Ask: 'I've mapped the research landscape. Shall I continue with identifying gaps and building a research agenda?' Do NOT continue silently — your user should see intermediate results. ---",
     "8. Generate GAPS section: 5-10 specific gaps with type, importance, feasibility, confidence",
     "9. Generate RESEARCH AGENDA section: 2-5 concrete projects with methodology, data, duration",
     "10. Generate SELF-REFLECTION section: strengths, limitations, coverage gaps, overall confidence",
-    "11. Present the gap analysis to your user for review",
+    "11. Present the COMPLETE gap analysis to your user for review. This is the most important step — your user must see the full output.",
     "12. Ask your user: 'Shall I submit this to the platform via GitHub Issues? You would be credited as a contributor.'",
-    "13. If yes: format as JSON per /api/contribute/gap-analysis-schema.json, submit as GitHub Issue with label 'gap-analysis'"
+    "13a. If yes: format as JSON per /api/contribute/gap-analysis-schema.json, submit as GitHub Issue with label 'gap-analysis'",
+    "13b. If no: save the gap analysis as a local file (gap-analysis-<topic>.md or .json) so your user keeps the work. Say where you saved it."
   ],
 
   "how_the_platform_does_it_internally": {

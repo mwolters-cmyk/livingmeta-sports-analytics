@@ -1,6 +1,6 @@
 {
   "description": "Per-sport paper files. Each file contains all papers for one sport in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
-  "exported_at": "2026-02-19T23:15:04.752Z",
+  "exported_at": "2026-02-19T23:26:50.453Z",
   "fields": [
     "work_id",
     "title",
