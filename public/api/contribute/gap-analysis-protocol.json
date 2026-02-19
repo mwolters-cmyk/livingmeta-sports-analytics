@@ -264,14 +264,29 @@
     "improve_coverage_after_analysis": {
       "when": "Your gap analysis has confidence of medium, low, or unknown. The self_reflection.database_coverage_gaps field identifies missing literature.",
       "how": "Create GitHub Issues to address coverage gaps. This is how the platform improves over time.",
+      "before_filing_issues": {
+        "step": "Check OpenAlex first for each referenced DOI",
+        "how": "Query https://api.openalex.org/works/<doi> — many papers are freely available with abstracts and sometimes PDF URLs. If found, the paper can be ingested via ingest_source.py Type A (with abstract) without user intervention.",
+        "why": "Saves the maintainer from manually downloading papers that are already freely available."
+      },
       "issue_types": [
-        "missing-papers: Specific papers, authors, or DOIs that the analysis identified as likely relevant but absent. Include DOIs or search queries. The maintainer can download PDFs via university subscriptions.",
-        "new-source: Journals or data sources to add to the monitored list (e.g., 'Add Journal of Sports Economics to config.py'). These will be automatically ingested on the next watcher run."
+        {
+          "label": "new-source",
+          "description": "Journals or data sources to add to the monitored list (e.g., 'Add Journal of Sports Economics to config.py').",
+          "resolution": "AUTO-RESOLVED by Claude sessions. The maintainer's Claude will add journals to config.py and run the watcher automatically. The Haiku classifier filters out irrelevant papers, so there is no risk of polluting the database."
+        },
+        {
+          "label": "missing-papers",
+          "description": "Specific papers, authors, or DOIs that the analysis identified as likely relevant but absent.",
+          "format_dois_as_links": true,
+          "example_doi_format": "https://doi.org/10.1177/1527002503260064",
+          "resolution": "Claude sessions first check OpenAlex availability. Papers found in OpenAlex can be auto-ingested. Papers NOT in OpenAlex require the maintainer to download PDFs via university subscription."
+        }
       ],
       "example_issue": {
         "title": "Missing papers: Szymanski et al. on wages and competitive success in football",
         "label": "missing-papers",
-        "body_includes": "Gap analysis slug, specific DOIs or author names, why these papers are relevant, how to resolve (download + extraction pipeline)"
+        "body_includes": "Gap analysis slug, specific DOIs as clickable links (https://doi.org/...), which are available via OpenAlex and which need manual download, why these papers are relevant"
       },
       "why": "Low-confidence analyses are valuable — they identify exactly WHAT is missing. Filing issues creates a virtuous cycle: low confidence → targeted issues → papers added → re-run → higher confidence."
     },
