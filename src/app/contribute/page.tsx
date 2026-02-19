@@ -157,12 +157,10 @@ export default function ContributePage() {
 
           <div className="mt-4 space-y-3">
             <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 text-sm text-gray-600">
-              <strong className="text-navy">Cost:</strong> Your agent uses its
-              own tokens to read our API and build the analysis &mdash; no
-              separate API key or credits needed from us. With a Claude Code
-              subscription (Max or Pro), it&apos;s included. On API-basis, a gap
-              analysis costs roughly <strong>$0.05&ndash;0.15</strong> in
-              tokens (reading the paper index + generating the analysis).
+              <strong className="text-navy">Cost:</strong> No separate API key
+              or credits needed from us. Your agent uses its own tokens to read
+              our API and build the analysis. A gap analysis typically costs a
+              few cents in agent tokens.
             </div>
             <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
               <strong>Note:</strong> Claude Code works best because it can
