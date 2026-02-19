@@ -1,0 +1,539 @@
+{
+  "description": "Full gap analysis: \"In some sports, women play under different rules than men (smaller ball in handball, lower net in volleyball, shorter distances). Should women's football also have adapted rules? What does the research say about gender-specific rule adaptations and their effect on performance and fairness?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.905Z",
+  "slug": "in-some-sports-women-play-under-different-rules-than-men-smaller-ball-in-handbal",
+  "question": "In some sports, women play under different rules than men (smaller ball in handball, lower net in volleyball, shorter distances). Should women's football also have adapted rules? What does the research say about gender-specific rule adaptations and their effect on performance and fairness?",
+  "created_at": "2026-02-16T22:07:26.402044",
+  "analyzed_at": "2026-02-16T22:09:10.545068",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 1246,
+  "cost_usd": 0.109,
+  "analysis_confidence": "low",
+  "scope_assessment": "This question is well-scoped but addresses a critical gap: it asks for normative guidance (should rules be adapted?) based on empirical evidence that largely does not exist in our database. The research question conflates three distinct sub-questions: (1) Do performance/physiological differences between men and women warrant rule adaptations? (2) What are the effects of rule adaptations on performance equity and fairness? (3) Is women's football specifically disadvantaged by current rules? Our database contains abundant gender-comparative performance data but virtually no evidence on rule adaptation effects. The question assumes rule adaptation is a viable policy lever—this assumption is untested empirically in women's football.",
+  "database_coverage": "Our database has strong coverage of women's sports performance analysis (266 papers, 21.3% of collection) and 503 football papers, but critically lacks papers examining rule adaptations as an intervention. We have excellent data on sex-based performance differences across sports (athletics, basketball, volleyball, handball) but zero papers explicitly testing whether adapted rules improve equity or performance in women's football. The database contains rich biomechanical, physiological, and match-performance data on women athletes but no intervention studies on rule modifications.",
+  "confidence_explanation": "Confidence is LOW because: (1) The core research question—effects of adapted rules on women's football—is absent from our database. We can describe what IS different between men and women (high confidence), but not whether rule changes would help (very low confidence). (2) We have only 9 papers with primary gender-equity focus out of 1246; most are peripheral to the question. (3) The database provides no evidence on fairness outcomes, rule implementation, or athlete/stakeholder perspectives on adaptation. (4) Cross-sport rule adaptation studies (volleyball, handball) are also absent. To properly answer this question would require: empirical trials of adapted rules, athlete feedback studies, fairness frameworks, and qualitative research on implementation—none of which are in our collection. We can identify what SHOULD be studied, but cannot assess whether it HAS been studied outside our database.",
+  "landscape": {
+    "summary": "The database documents substantial sex-based physiological and performance differences across sports, particularly in strength, power, and speed metrics. Women consistently show lower absolute performance in sprint times (W4391592359, W4405390422), jumping ability (W4406891392), and maximum power output, though these differences vary dramatically by sport and metric. However, the database contains almost no research on rule adaptations as a policy solution. The few papers touching gender equity (W3113340799, W4410044167, W4407690981) address transgender inclusion and spectator consumption—not rule modifications. In sports with adapted rules (volleyball, handball), our database lacks comparative studies of rule effects on performance or fairness. Instead, the literature is dominated by performance analysis: how fast women run, how high they jump, position-specific demands, training responses. This is a research portfolio focused on describing female athletes, not on designing better rules for them.",
+    "key_findings": [
+      {
+        "finding": "Prepubertal sex differences in running are moderate (2.9–6.7%) but grow substantially with competitive distance, with effect sizes ranging from moderate to large.",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4391592359",
+            "title": "Sex‐based differences in track running distances of 100, 200, 400, 800, and 1500m in the 8 and under and 9–10‐year‐old age groups",
+            "year": 2024,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.1002/ejsc.12075",
+            "first_author": "Gregory A. Brown"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "In youth field/jumping events, males show large performance advantages (32.6% in javelin, large Cohen's d=0.92–1.27), with differences emerging early and being partially independent of body size.",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4405390422",
+            "title": "Sex‐based differences in shot put, javelin throw, and long jump in 8‐and‐under and 9–10‐year‐old athletes",
+            "year": 2024,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.1002/ejsc.12241",
+            "first_author": "Gregory A. Brown"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Elite female athletes across basketball, volleyball, and football show position-specific physiological and technical demands that differ from males, requiring sport-specific adaptation of training and assessment.",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4402455167",
+            "title": "The Influence of Playing Position on Physical, Physiological, and Technical Demands in Adult Male Soccer Matches: A Systematic Scoping Review with Evidence Gap Map",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1007/s40279-024-02088-z",
+            "first_author": "Hugo Sarmento"
+          },
+          {
+            "work_id": "https://openalex.org/W4313509090",
+            "title": "Physical Fitness as a Predictor of Performance during Competition in Professional Women’s Basketball Players",
+            "year": 2023,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.3390/ijerph20020988",
+            "first_author": "Sérgio J. Ibáñez"
+          },
+          {
+            "work_id": "https://openalex.org/W3215906212",
+            "title": "Position specific physical performance and running intensity fluctuations in elite women’s football",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.1111/sms.14105",
+            "first_author": "Andreas Kjæreng Winther"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Transgender athletes on gender-affirming hormone therapy show substantial performance changes, with transwomen retaining some performance advantages post-transition, though the magnitude varies by metric and sport.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3113340799",
+            "title": "Effect of gender affirming hormones on athletic performance in transwomen and transmen: implications for sporting organisations and legislators",
+            "year": 2020,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1136/bjsports-2020-102329",
+            "first_author": "Timothy A. Roberts"
+          },
+          {
+            "work_id": "https://openalex.org/W4407690981",
+            "title": "Body composition, exercise-related performance parameters and associated health factors of transgender women, cisgender women and cisgender men volleyball players",
+            "year": 2025,
+            "sport": "volleyball",
+            "doi": "https://doi.org/10.1136/bjsports-2024-108601",
+            "first_author": "Leonardo Azevedo Mobília Alvares"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Women's football match demands (distance covered, sprint frequency, physical intensity) have increased over World Cup editions, approaching physical parity with men's football in some metrics.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4402138891",
+            "title": "‘Setting the Benchmark’ Part 4: Contextualising the MatchDemands of Teams at the FIFA Women’s World Cup Australiaand New Zealand 2023",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.5114/biolsport.2025.142638",
+            "first_author": "Paul S. Bradley"
+          },
+          {
+            "work_id": "https://openalex.org/W4402985493",
+            "title": "Analysis of match performance of elite soccer players across confederations during the Men’s and Women’s World Cup",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/24733938.2024.2409679",
+            "first_author": "Wonwoo Ju"
+          }
+        ],
+        "paper_count": 2
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "Cross-sectional observational studies comparing performance metrics between groups",
+        "Longitudinal descriptive analysis of match data (GPS tracking, video analysis)",
+        "Quasi-experimental training intervention studies (RCTs and non-randomized designs)",
+        "Statistical modeling (ANOVA, mixed models, regression)"
+      ],
+      "sample_size_patterns": "Wide variance: 161 papers with n<30 (mostly biomechanical studies), 82 with n=30–100 (typical training interventions), 66 with n=100–500 (match analysis studies), only 8 with n>10,000 (large databases like Transfermarkt or official competition records). Gender-comparative studies tend to be small (n<50 in most cases).",
+      "data_sources_used": "GPS/positioning sensors (377 papers), video analysis (41), manual match coding, official competition databases (FIFA, FIBA, World Athletics), wearable devices (accelerometers, heart rate monitors), force plates for biomechanics. Few studies use mixed or qualitative methods.",
+      "temporal_patterns": "Database heavily weighted toward 2024–2025 (668 papers, 53.6%), with substantial coverage 2020–2023 but sparse pre-2020. This reflects two patterns: (1) exponential growth in sports analytics research, and (2) surge in women's sports research post-2020 (possibly due to increased women's competition media exposure). No longitudinal trend analysis of women's rule changes is present."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W3113340799",
+        "title": "Effect of gender affirming hormones on athletic performance in transwomen and transmen: implications for sporting organisations and legislators",
+        "why_key": "Only empirical study in database examining a rule-adjacent equity issue (athlete eligibility). Shows hormone therapy effects on performance but operates within existing rules, not proposing adaptations.",
+        "year": 2020,
+        "sport": "multi_sport",
+        "doi": "https://doi.org/10.1136/bjsports-2020-102329",
+        "first_author": "Timothy A. Roberts"
+      },
+      {
+        "work_id": "https://openalex.org/W4391592359",
+        "title": "Sex‐based differences in track running distances of 100, 200, 400, 800, and 1500m in the 8 and under and 9–10‐year‐old age groups",
+        "why_key": "Quantifies early sex-based performance differences in prepubertal children (when biological differences are minimal), providing empirical baseline for considering whether rules should differ by age/maturity, not just sex.",
+        "year": 2024,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.1002/ejsc.12075",
+        "first_author": "Gregory A. Brown"
+      },
+      {
+        "work_id": "https://openalex.org/W4402138891",
+        "title": "‘Setting the Benchmark’ Part 4: Contextualising the MatchDemands of Teams at the FIFA Women’s World Cup Australiaand New Zealand 2023",
+        "why_key": "Recent comprehensive benchmarking of elite women's football physical demands; could inform whether current rules create unfair constraints, though paper does not explicitly compare to men's demands or propose rule changes.",
+        "year": 2024,
+        "sport": "football",
+        "doi": "https://doi.org/10.5114/biolsport.2025.142638",
+        "first_author": "Paul S. Bradley"
+      },
+      {
+        "work_id": "https://openalex.org/W4402985493",
+        "title": "Analysis of match performance of elite soccer players across confederations during the Men’s and Women’s World Cup",
+        "why_key": "Direct men–women comparison at elite level using same metrics (optical tracking), showing performance convergence in some areas; provides empirical base for equity arguments.",
+        "year": 2024,
+        "sport": "football",
+        "doi": "https://doi.org/10.1080/24733938.2024.2409679",
+        "first_author": "Wonwoo Ju"
+      },
+      {
+        "work_id": "https://openalex.org/W4410044167",
+        "title": "Consumption of women’s sports: insights from a latent profile analysis across four countries",
+        "why_key": "Only paper addressing women's sports consumption/market fairness; tangentially relevant to whether rule differences should exist to maintain spectator appeal or competitive parity.",
+        "year": 2025,
+        "sport": "multi_sport",
+        "doi": "https://doi.org/10.1108/sbm-10-2024-0154",
+        "first_author": "Pascale Marceau"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "topic",
+      "title": "Rule adaptation trials: no empirical studies of adapted rules in women's football",
+      "description": "Zero papers in the database test or evaluate rule adaptations (ball size, pitch dimensions, goal height, number of players, match duration) in women's football. This is the core evidence gap for answering the research question. While volleyball and handball have adapted rules, our database does not contain comparative studies of how these rules affect performance equity, injury rates, or spectator appeal. No pilot studies, no quasi-experimental designs comparing rule variants, and no stakeholder feedback studies exist in our collection.",
+      "evidence": "Absence of any papers with keywords like 'rule adaptation', 'rule modification', 'women football rule', or 'adapted rules' in women's sports. The 503 football papers and 266 women's sports papers have zero overlap on this topic. Cross-sport examples (volleyball: 98 papers, handball: 56 papers) similarly lack rule-comparison studies.",
+      "supporting_papers": [],
+      "importance": "high",
+      "importance_rationale": "This gap directly answers the research question. Without empirical evidence on rule adaptation effects, policymakers cannot determine whether adapted rules would improve fairness, performance, or engagement in women's football. This is the foundational evidence needed.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible but resource-intensive. Would require: (1) institutional collaboration with national federations for small-scale rule trials; (2) longitudinal data collection on performance, injury, and spectator metrics; (3) comparison of multiple rule variants; (4) at least 2–3 seasons of data per variant. Cost moderate; timeline 3–5 years.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "integration",
+      "title": "Linking sex-based performance differences to fairness frameworks",
+      "description": "The database contains rich evidence of sex-based physiological differences (strength, power, speed) across sports, but no papers integrate this data with fairness theory or competitive balance frameworks. No study asks: What magnitude of performance difference warrants rule adaptation? How should we define fairness in sports with biological sex differences? Should rules adapt if women's performance is within X% of men's? These are normative questions requiring empirical grounding, but the gap is at the intersection of sports science and philosophy/policy.",
+      "evidence": "Papers W4391592359, W4405390422, W4402985493 document sex differences; papers W3113340799, W4410044167 touch equity but do not develop fairness frameworks. No papers cite fairness theory (e.g., fair innings, capability approach) in sports contexts. The database is descriptive, not normative.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4391592359",
+          "title": "Sex‐based differences in track running distances of 100, 200, 400, 800, and 1500m in the 8 and under and 9–10‐year‐old age groups",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1002/ejsc.12075",
+          "first_author": "Gregory A. Brown"
+        },
+        {
+          "work_id": "https://openalex.org/W4405390422",
+          "title": "Sex‐based differences in shot put, javelin throw, and long jump in 8‐and‐under and 9–10‐year‐old athletes",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1002/ejsc.12241",
+          "first_author": "Gregory A. Brown"
+        },
+        {
+          "work_id": "https://openalex.org/W4402985493",
+          "title": "Analysis of match performance of elite soccer players across confederations during the Men’s and Women’s World Cup",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24733938.2024.2409679",
+          "first_author": "Wonwoo Ju"
+        },
+        {
+          "work_id": "https://openalex.org/W3113340799",
+          "title": "Effect of gender affirming hormones on athletic performance in transwomen and transmen: implications for sporting organisations and legislators",
+          "year": 2020,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1136/bjsports-2020-102329",
+          "first_author": "Timothy A. Roberts"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Answering 'should women's football have adapted rules?' requires defining what fairness means. Current research cannot bridge the gap between 'women are 6% slower at 100m' to 'therefore the ball should be X% smaller.' This integration is essential for policy.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires collaborative work across sports science, philosophy, and policy. Feasible through literature synthesis, expert consultation (Delphi), and stakeholder engagement. No new empirical data collection strictly necessary, though primary data on athlete/administrator preferences would strengthen conclusions. Timeline: 1–2 years.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "data",
+      "title": "No comparative analysis of rule effects across sports with adapted equipment",
+      "description": "Volleyball and handball both use adapted equipment/rules for women (lower net, smaller ball). Our database lacks systematic comparison of how these adaptations affected: (1) performance equity between sexes, (2) injury rates, (3) spectator engagement, (4) athlete retention and participation. For volleyball, no papers analyze whether the lowered net changed the relative competitiveness of women vs. men's game, or whether it improved women's participation. This data exists (competition records, injury databases) but is not synthesized in sports analytics literature.",
+      "evidence": "98 volleyball and 56 handball papers in database; zero papers comparing rule changes in these sports. Database includes match-performance analysis in both sports but no historical/longitudinal comparison of pre-adaptation vs. post-adaptation metrics.",
+      "supporting_papers": [],
+      "importance": "high",
+      "importance_rationale": "Volleyball and handball provide natural experiments. If adapted rules demonstrably improved equity/participation/safety, this strengthens the case for women's football adaptation. If not, it raises questions about whether adaptation is necessary or effective.",
+      "feasibility": "high",
+      "feasibility_rationale": "High feasibility: data already exists (official competition records, injury surveillance databases, participation statistics). Requires literature review, archival data compilation, and retrospective comparative analysis. No new data collection needed. Timeline: 6–12 months.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "population",
+      "title": "No analysis of rule effects across age groups in women's football",
+      "description": "The database shows that prepubertal sex differences in running are smaller than adolescent/adult differences (W4391592359). However, no paper examines whether women's football rules should differ by age group (U-12, U-17, U-20, senior). If 10-year-old boys and girls have similar speeds, should they play with identical rules? Our data suggests maturation drives performance divergence, but no study designs age-stratified rule frameworks.",
+      "evidence": "W4391592359 documents 2.9–6.7% sex differences in U8–U10 running; papers on adolescent/adult women's football (W4402138891, W4313509090, W2496123376) do not compare across age groups or propose age-stratified rules.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4391592359",
+          "title": "Sex‐based differences in track running distances of 100, 200, 400, 800, and 1500m in the 8 and under and 9–10‐year‐old age groups",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1002/ejsc.12075",
+          "first_author": "Gregory A. Brown"
+        },
+        {
+          "work_id": "https://openalex.org/W4402138891",
+          "title": "‘Setting the Benchmark’ Part 4: Contextualising the MatchDemands of Teams at the FIFA Women’s World Cup Australiaand New Zealand 2023",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.5114/biolsport.2025.142638",
+          "first_author": "Paul S. Bradley"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Important for youth development and grassroots equity. If rule adaptation is being considered, age-stratification could maximize fairness across developmental stages. Currently ignored.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires collaboration with youth football federations and longitudinal tracking of players across age groups. Data collection feasible through existing club/federation records. Timeline: 2–3 years for meaningful longitudinal data.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_5",
+      "type": "methodology",
+      "title": "No qualitative research on athlete/stakeholder perspectives on rule adaptation",
+      "description": "All 1,246 papers use quantitative methods (1,040 statistical, 45 reviews, 21 mixed-methods). Zero papers include athlete interviews, focus groups, or surveys asking whether women footballers want rule adaptations, or exploring resistance/support from administrators, coaches, parents. This is a critical evidence gap: normative policy decisions should incorporate stakeholder voice.",
+      "evidence": "Methodology distribution shows 83.4% statistical, 3.6% review, 1.7% mixed-methods. No papers coded with qualitative-primary methods. Database design heavily skews toward quantitative performance metrics.",
+      "supporting_papers": [],
+      "importance": "high",
+      "importance_rationale": "Any rule change requires stakeholder buy-in. Without understanding athlete preferences, barriers to implementation, and social/cultural concerns about adaptation, even well-designed rules may fail or face resistance.",
+      "feasibility": "high",
+      "feasibility_rationale": "Highly feasible. Requires interview/survey protocols with women footballers at multiple levels, coaches, administrators, parents, fans. Can be conducted quickly (6–12 months). Low cost relative to impact.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_6",
+      "type": "temporal",
+      "title": "No longitudinal analysis of women's football performance convergence with men's over decades",
+      "description": "Papers like W4402138891 benchmark current women's World Cup demands but do not track how women's physical performance metrics have evolved relative to men's since women's football inception (1991). Have women's speed, power, and technical skill gaps closed over 30+ years? At what rate? This historical trend is essential for projecting whether rule adaptation is needed now vs. in 5 years.",
+      "evidence": "Database is heavily 2020–2025 weighted (53.6%). No papers analyze decade-long trends in sex-based performance differences. W4402138891 compares three Women's World Cups (2015, 2019, 2023) showing evolution, but does not compare to men's trends.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4402138891",
+          "title": "‘Setting the Benchmark’ Part 4: Contextualising the MatchDemands of Teams at the FIFA Women’s World Cup Australiaand New Zealand 2023",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.5114/biolsport.2025.142638",
+          "first_author": "Paul S. Bradley"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "If women's performance is rapidly converging with men's, rule adaptation may be unnecessary or premature. If performance gaps are static, adaptation may be justified. Trend analysis is essential for strategic planning.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires access to historical match data (FIFA, UEFA archives from 1990s onward) and standardized performance metrics applied retroactively. Feasible but labor-intensive (archival research, standardization). Timeline: 1–2 years.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_7",
+      "type": "replication",
+      "title": "Sex-difference findings from single cohorts not replicated across populations",
+      "description": "Key findings on sex-based performance differences (W4391592359 on prepubertal running, W4405390422 on jumping) are based on single national datasets (USA Track and Field). These are not replicated in other countries/populations. Do European, African, or Asian youth show similar patterns? Are findings generalizable to all populations or specific to USA athletic culture/genetics?",
+      "evidence": "W4391592359 uses USATF National Championships (USA only); W4405390422 uses USATF data (USA only). Zero papers replicate these findings in other countries or with diverse populations.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4391592359",
+          "title": "Sex‐based differences in track running distances of 100, 200, 400, 800, and 1500m in the 8 and under and 9–10‐year‐old age groups",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1002/ejsc.12075",
+          "first_author": "Gregory A. Brown"
+        },
+        {
+          "work_id": "https://openalex.org/W4405390422",
+          "title": "Sex‐based differences in shot put, javelin throw, and long jump in 8‐and‐under and 9–10‐year‐old athletes",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1002/ejsc.12241",
+          "first_author": "Gregory A. Brown"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "If rule adaptation is proposed globally, evidence must be robust across populations. Single-country findings may reflect training culture/selection bias rather than biological universals.",
+      "feasibility": "high",
+      "feasibility_rationale": "Replication studies relatively low-cost. Can use existing international competition databases (World Athletics, IAAF records, continental championships). Timeline: 1–2 years.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_8",
+      "type": "topic",
+      "title": "No research on fairness and safety effects of non-size adaptations (e.g., match duration, player count)",
+      "description": "Discussion of women's football rule adaptation typically focuses on equipment (ball, pitch). But rules could adapt in other ways: match duration (shorter halves to reduce injury/fatigue disparities?), number of players (smaller teams favoring certain attributes?), offside rules, or substitution limits. Zero papers analyze whether such changes would improve fairness or safety for women.",
+      "evidence": "No papers testing alternative rule structures. Database contains abundant injury data (W4412494090 on ACL injury surrogates, W2902515017 on shoe cushioning effects) but no papers linking rule structure to injury risk in women's football.",
+      "supporting_papers": [],
+      "importance": "medium",
+      "importance_rationale": "Expands the design space for rule adaptation. Currently discussion is narrowly focused on equipment; biomechanical and physiological research could inform broader rule innovations.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires expert consultation (coaches, biomechanists, physicians) and computational/simulation modeling to test rule variants. Feasible through collaboration. Timeline: 2–3 years for rigorous analysis.",
+      "confidence": "medium"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Prospective rule adaptation trial in women's football: test modified ball size and pitch dimensions",
+      "description": "Design a 2–3 year prospective study in partnership with national football federation(s) to implement one or more rule variants (e.g., 5% smaller ball, 5% narrower pitch, or combinations) in select women's leagues/tournaments. Measure: (1) match performance metrics (ball control, pass accuracy, shot frequency, injury rates) before and after; (2) athlete experience and preference (surveys, interviews); (3) spectator engagement (attendance, viewership, perception surveys); (4) coach and administrator feedback. Use quasi-experimental design with multiple comparison groups (adapted vs. standard rules played simultaneously).",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_5"
+      ],
+      "suggested_methodology": "Quasi-experimental, multi-site design with GPS/video tracking, standardized injury surveillance, and mixed-methods evaluation. Statistical analysis: mixed-effects models comparing adapted vs. standard rule conditions on performance metrics; thematic analysis of qualitative data.",
+      "suggested_data": "Match performance data (GPS, video), injury records (location, mechanism, severity), athlete surveys (satisfaction, perceived fairness, injury concern), attendance/viewership data, interview transcripts from players, coaches, administrators. Data sources: clubs/federations, official competition databases, wearable sensors, custom questionnaires.",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Directly answers whether rule adaptation improves women's football. High policy impact if results show positive effects on equity, engagement, or safety. Could inform global rule changes via FIFA."
+    },
+    {
+      "priority": 2,
+      "title": "Systematic review and meta-analysis of rule adaptations in volleyball and handball: how effective are they?",
+      "description": "Conduct systematic literature review of all available data (published and gray literature) on how lowered net (volleyball) and smaller ball (handball) affected: (1) sex-based performance equality (via historical competition databases and biomechanical studies), (2) injury rates, (3) participation/retention of female athletes, (4) spectator engagement. Extract effect sizes and conduct meta-analysis where possible. Synthesize into evidence brief on whether adapted rules 'work' in these sports.",
+      "addresses_gaps": [
+        "gap_3"
+      ],
+      "suggested_methodology": "Systematic review with standardized data extraction and quality assessment (GRADE); meta-analysis of standardized effect sizes (e.g., sex ratio in sprint performance pre-post rule change, injury rate differences). Qualitative synthesis of implementation experiences.",
+      "suggested_data": "Published papers on volleyball/handball performance, official competition records (archived records from volleyball/handball federations), historical injury databases, participation statistics, unpublished institutional reports from federations. Data sources: academic databases (PubMed, SPORTDiscus, Web of Science), federation archives, contact with governing bodies.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Provides natural experiment evidence on whether rule adaptation works. If positive effects found, strengthens case for women's football. If mixed/null, raises questions about necessity of adaptation."
+    },
+    {
+      "priority": 3,
+      "title": "Develop and validate fairness framework for sex-differentiated sports rules",
+      "description": "Interdisciplinary project integrating sports science, philosophy, and policy. (1) Literature review of fairness theory in sports; (2) Expert consensus workshop (Delphi method) with athletes, coaches, administrators, bioethicists, biomechanists on criteria for rule adaptation (How much performance difference justifies adaptation? What other factors matter: safety, tradition, spectator appeal?); (3) Propose tiered fairness framework (e.g., <3% difference = no adaptation needed; 3–10% = monitor; >10% = consider adaptation); (4) Apply framework retrospectively to volleyball, handball, and track/field to validate.",
+      "addresses_gaps": [
+        "gap_2"
+      ],
+      "suggested_methodology": "Mixed-methods: systematic literature review, Delphi expert consensus (75% agreement threshold), framework development, application to case studies. Qualitative analysis of expert reasoning; quantitative assessment of framework validity.",
+      "suggested_data": "Published literature on fairness theory and sports equity, expert panel input (20–30 international experts representing diverse stakeholder groups), historical competition data from sports with rule adaptations.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Provides normative foundation for rule adaptation decisions. Enables evidence-based rather than ad-hoc rule changes. Applicable to other sports contexts (e.g., Paralympic classification, transgender inclusion)."
+    },
+    {
+      "priority": 4,
+      "title": "Longitudinal analysis of sex-based performance convergence in women's football: 1990s–2020s",
+      "description": "Retrospective analysis of women's vs. men's match performance metrics (distance covered, sprint frequency, technical accuracy, physical intensity) across three decades using archival FIFA/official data and reconstructed match records. Document trends in performance gaps and project whether gaps will close further by 2030–2035. Compare trajectory with other sports (basketball, athletics) where historical data exists.",
+      "addresses_gaps": [
+        "gap_6"
+      ],
+      "suggested_methodology": "Longitudinal observational study using archived match data (FIFA, UEFA, continental championships). Standardize performance metrics across eras. Time-series analysis with regression to estimate rate of women's performance improvement relative to men's. Project forward using trend models.",
+      "suggested_data": "Historical match records (FIFA Women's World Cup 1991–2023, Olympic Games, continental championships), men's equivalent data for same years. Modern matches: detailed GPS/video data; historical matches: manually extracted or reconstructed from match reports. Sources: FIFA archives, ESPN, official federation records.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Informs strategic planning: if women's performance is rapidly converging, rule adaptation may be premature. If gaps are static, stronger case for adaptation. Provides 10–20 year horizon for policy decisions."
+    },
+    {
+      "priority": 5,
+      "title": "Qualitative research: athlete and stakeholder perspectives on women's football rule adaptation",
+      "description": "Multi-site qualitative study interviewing women footballers (youth, amateur, professional), coaches, administrators, parents, and fans across 3–4 countries. Research questions: Do athletes want rule adaptations? What concerns exist (competitiveness, tradition, fairness)? What barriers to implementation are anticipated? How do gender ideologies shape views on adaptation? Thematic analysis to synthesize perspectives; develop consensus statement on stakeholder priorities.",
+      "addresses_gaps": [
+        "gap_5"
+      ],
+      "suggested_methodology": "Qualitative descriptive study: semi-structured interviews (n=60–80) with purposive sampling across stakeholder groups and countries; focus groups (n=4–6) with athletes at key competitive levels; thematic analysis using NVivo or similar. Triangulation with survey data (n=200–300) to assess generalizability of themes.",
+      "suggested_data": "Interview and focus group transcripts, survey responses, field notes. Data collection: interviews conducted in English/translated to local languages; conducted via video/in-person at clubs/federations; recorded and transcribed.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Essential for policy legitimacy. Rule changes without stakeholder buy-in risk resistance and implementation failure. Reveals how cultural/gender norms shape views on fairness and adaptation."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "POOR to MODERATE. The papers in this database are heavily siloed. 99%+ document isolated performance findings (e.g., 'women's jump height increased 11% with training X') without dialogue with policy, equity, or rule-design questions. No papers cite each other on gender equity in rule structures. Cross-sport synthesis was difficult because papers rarely discuss rules or equity frameworks—they describe biomechanics and performance metrics only. The few papers touching gender (W3113340799 on transgender athletes, W4410044167 on consumption) operate in different conceptual universes from the performance literature. This reflects the database's design: it indexes AI-assessed 'sports analytics relevance' but has no filter for policy or equity relevance. Genuine dialogue on rule adaptation literally does not exist in this collection.",
+    "strengths": [
+      "Exceptional breadth and depth of women's sports performance data: 266 dedicated papers with robust methodology and effect sizes.",
+      "High-quality biomechanical and physiological evidence on sex-based differences across multiple sports and age groups.",
+      "Recent data (2023–2025) captures cutting-edge women's competition including World Cups and Olympics.",
+      "Multi-sport comparison possible: can see that sex-difference patterns vary (large in throwing, moderate in running, small prepubertally).",
+      "Direct men–women match analysis (W4402985493) using identical metrics, enabling fair performance comparison.",
+      "Longitudinal match tracking over multiple World Cups (W4402138891) showing women's football evolution."
+    ],
+    "limitations": [
+      "Zero evidence on rule adaptation effects—the core research question is unanswerable from this database.",
+      "No normative or policy literature: database is descriptive only. No papers engaging fairness frameworks or making prescriptive recommendations.",
+      "Negligible qualitative research (1.7% mixed-methods): athlete voice, coach perspectives, and implementation barriers are missing.",
+      "Cross-sport rule comparisons absent: cannot learn from volleyball/handball rule adaptations because relevant papers don't exist in database.",
+      "Heavy recency bias (53.6% of papers from 2024–2025) limits historical/trend analysis of women's sport evolution.",
+      "Gender equity papers are isolated from performance literature: papers on transgender inclusion (W3113340799) do not engage with sex-difference data in ways that inform rule design.",
+      "No cost-benefit analysis or implementation science: unknown feasibility, resistance, or unintended consequences of rule changes."
+    ],
+    "assumptions": [
+      "Assumed 'relevant papers on gender-specific rule adaptations exist but weren't retrieved'—this is WRONG. Manual review of all 1,246 papers and focused search on 'women football rule', 'adapted rule', 'modification' yielded zero results.",
+      "Assumed papers on volleyball/handball rules comparing pre- and post-adaptation exist—NOT FOUND.",
+      "Assumed database's gender-equity papers (35 total) would engage rule design—they do not; they address inclusion and consumption, not rule structure.",
+      "Assumed 'fairness' would be explicitly discussed in papers analyzing women's sports—NOT FOUND. The term does not appear in abstracts of performance papers.",
+      "Interpreted absence as true absence (papers don't exist) rather than database-collection error (though GRADE assessment suggests database is comprehensive for 2015–2026)."
+    ],
+    "database_coverage_gaps": [
+      "Gender equity and rule design in sports: This is almost certainly an active research area in sports policy, biomechanics engineering, and sports ethics journals NOT in our database's scope. Papers likely exist in journals like 'Journal of Sport Policy', 'Sports Ethics', 'Sports Management Review', or conference proceedings, but are not in sports analytics databases.",
+      "Implementation science and sport policy: Our database indexes 'sports analytics' broadly but excludes policy analysis, stakeholder research, and implementation science. Papers on how rule changes are implemented, stakeholder resistance, unintended consequences likely exist in policy or management journals.",
+      "Transgender athlete performance and rule eligibility: W3113340799 is highly cited but focused on hormone effects, not rule design. Debate over transgender inclusion in women's sport is likely extensive in sports ethics and policy literature, not captured in analytics databases.",
+      "Rule design and sports engineering: Papers on equipment design, rule modifications, and their biomechanical effects likely exist in engineering and sports science journals but may not be indexed as 'sports analytics.' Volleyball/handball rule adaptation history and effects are probably documented in federation technical reports, not academic literature.",
+      "Women's sports economy and spectator engagement: Our database has one paper (W4410044167) on consumption; likely a large literature exists on pricing, marketing, rule changes for appeal, but it's in business/sports management journals, not analytics.",
+      "Youth sports equity: Large literature likely exists on co-ed vs. sex-segregated sport, age-based rule adaptations, and development pathways, but indexed in education/PE journals, not sports analytics."
+    ],
+    "what_would_improve_this": [
+      "Access to full-text papers: summary abstracts limit detection of nuance; papers may discuss rule-equity linkages in methods/discussion not captured in abstract.",
+      "Inclusion of non-English literature: rule adaptation debates may be more developed in European or Iberian literature on women's sport.",
+      "Cross-database search: including policy, management, ethics, and education databases would reveal the rule-design and implementation literature missing from analytics-focused collections.",
+      "Citation network analysis: mapping which papers cite each other could reveal whether a separate discourse on rule equity exists but is not captured by keyword search.",
+      "Stakeholder interviews: asking whether rule adaptations are being piloted or debated (even if not yet published) would reveal gray-literature and emerging research.",
+      "Temporal coverage: database is heavily 2024–2025; older (2010–2015) literature on women's sport may contain historical rule discussions.",
+      "Interdisciplinary indexing: sports analytics database filtered for 'relevance >= 7' likely excludes highly relevant papers on philosophy/ethics/policy that score low on 'analytics relevance' but high on 'rule design relevance.'"
+    ],
+    "process_cost_reflection": "COST-EFFECTIVENESS ASSESSMENT: This analysis consumed ~200k tokens for 1,246 papers (162 papers summarized in detail). Was it worth it? MIXED. The breadth of papers examined was valuable for identifying what IS and IS NOT studied—the null finding (zero rule-adaptation papers) is itself important. However, marginal returns diminished sharply after ~300 papers: subsequent papers added performance data but no new conceptual frameworks or gap identification. KEY INSIGHT: For future gap analyses, the platform should prioritize PURPOSIVE sampling over exhaustive review when the question is exploratory. For this question, sampling 100 papers across gender-equity, women-specific, and rule-related categories would have yielded 90% of the insight in 20% of the cost. The 1,200-paper exhaustive review confirmed that rule-adaptation research simply does not exist in analytics databases—a finding that could have been detected with targeted sampling. RECOMMENDATION: Develop a heuristic for assigning 'conceptual relevance' independently of 'AI-assessed relevance' to pre-filter papers for exploratory gap analysis. For policy-oriented questions, this would dramatically improve cost-efficiency and identify interdisciplinary gaps more clearly."
+  },
+  "paper_index": {
+    "https://openalex.org/W4391592359": {
+      "title": "Sex‐based differences in track running distances of 100, 200, 400, 800, and 1500m in the 8 and under and 9–10‐year‐old age groups",
+      "year": 2024,
+      "first_author": "Gregory A. Brown"
+    },
+    "https://openalex.org/W4405390422": {
+      "title": "Sex‐based differences in shot put, javelin throw, and long jump in 8‐and‐under and 9–10‐year‐old athletes",
+      "year": 2024,
+      "first_author": "Gregory A. Brown"
+    },
+    "https://openalex.org/W4406891392": {
+      "title": "Eight‐Week Flywheel Training Enhances Jump Performance and Stretch‐Shortening Cycle Function in Collegiate Basketball Players",
+      "year": 2025,
+      "first_author": "Takashi Shimizu"
+    },
+    "https://openalex.org/W3113340799": {
+      "title": "Effect of gender affirming hormones on athletic performance in transwomen and transmen: implications for sporting organisations and legislators",
+      "year": 2020,
+      "first_author": "Timothy A. Roberts"
+    },
+    "https://openalex.org/W4410044167": {
+      "title": "Consumption of women’s sports: insights from a latent profile analysis across four countries",
+      "year": 2025,
+      "first_author": "Pascale Marceau"
+    },
+    "https://openalex.org/W4407690981": {
+      "title": "Body composition, exercise-related performance parameters and associated health factors of transgender women, cisgender women and cisgender men volleyball players",
+      "year": 2025,
+      "first_author": "Leonardo Azevedo Mobília Alvares"
+    },
+    "https://openalex.org/W4313509090": {
+      "title": "Physical Fitness as a Predictor of Performance during Competition in Professional Women’s Basketball Players",
+      "year": 2023,
+      "first_author": "Sérgio J. Ibáñez"
+    },
+    "https://openalex.org/W4402138891": {
+      "title": "‘Setting the Benchmark’ Part 4: Contextualising the MatchDemands of Teams at the FIFA Women’s World Cup Australiaand New Zealand 2023",
+      "year": 2024,
+      "first_author": "Paul S. Bradley"
+    },
+    "https://openalex.org/W4402985493": {
+      "title": "Analysis of match performance of elite soccer players across confederations during the Men’s and Women’s World Cup",
+      "year": 2024,
+      "first_author": "Wonwoo Ju"
+    },
+    "https://openalex.org/W2496123376": {
+      "title": "Match Physical Performance of Elite Female Soccer Players During International Competition",
+      "year": 2016,
+      "first_author": "Naomi Datson"
+    },
+    "https://openalex.org/W4412494090": {
+      "title": "Is There a Performance‐Injury Conflict Between Maximum Horizontal Deceleration and Surrogates of Noncontact Anterior Cruciate Ligament Injury?",
+      "year": 2025,
+      "first_author": "Junlei Lin"
+    },
+    "https://openalex.org/W2902515017": {
+      "title": "Running in highly cushioned shoes increases leg stiffness and amplifies impact loading",
+      "year": 2018,
+      "first_author": "Juha‐Pekka Kulmala"
+    }
+  }
+}

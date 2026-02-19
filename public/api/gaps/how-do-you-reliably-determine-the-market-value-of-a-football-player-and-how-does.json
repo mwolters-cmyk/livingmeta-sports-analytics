@@ -1,0 +1,774 @@
+{
+  "description": "Full gap analysis: \"How do you reliably determine the market value of a football player? And how does player valuation work in cycling, where individual performance is harder to isolate from team dynamics? What methods actually work for predicting transfer fees and career trajectories?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.902Z",
+  "slug": "how-do-you-reliably-determine-the-market-value-of-a-football-player-and-how-does",
+  "question": "How do you reliably determine the market value of a football player? And how does player valuation work in cycling, where individual performance is harder to isolate from team dynamics? What methods actually work for predicting transfer fees and career trajectories?",
+  "created_at": "2026-02-16T22:09:27.873991",
+  "analyzed_at": "2026-02-16T22:11:25.543785",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 1009,
+  "cost_usd": 0.0973,
+  "analysis_confidence": "medium",
+  "scope_assessment": "This question is reasonably well-scoped but contains three distinct sub-questions with very different answers: (1) football player market valuation (well-studied), (2) cycling player valuation (severely understudied), and (3) transfer fee and career trajectory prediction (mixed coverage). The question assumes cycling has analogous 'player valuation' problems to football, which is partly true but not equivalent—cycling is predominantly individual performance within team tactics, while football is mixed. The research question is ambitious but answerable with our database, though cycling analysis will be severely limited.",
+  "database_coverage": "Football player valuation is well-covered (66 papers on player_valuation theme, 750 football papers). Transfer fee prediction and market value models are documented in 5-10 key papers. Cycling papers (61 total) focus heavily on performance analysis and physiology, NOT valuation or market dynamics. Our database appears to lack papers on cyclist market valuation, transfer economics, or career trajectory prediction in cycling—this is a significant gap. The database also lacks deep engagement with transfer market microeconomics (salary prediction, team financial constraints, contract structures).",
+  "confidence_explanation": "High confidence on football valuation (strong paper coverage, multiple methodological approaches). LOW confidence on cycling valuation (virtually no papers found in our database on cyclist market value, transfer fees, or career economics—the assumption that cycling has equivalent valuation problems to football is unvalidated). The temporal scope (2015–2026, heavily skewed 2024–2025) may miss foundational work. Transfer fee prediction has decent coverage but lacks longitudinal validation across multiple transfer windows.",
+  "landscape": {
+    "summary": "Football player valuation research spans multiple approaches: (1) machine learning models predicting transfer fees from performance metrics and contextual factors; (2) action-value frameworks quantifying individual player impact using deep reinforcement learning; (3) player rating systems comparing commercial platforms (WhoScored, FotMob, Sofascore); and (4) market-based estimation using financial and historical data. The field has shifted from simple statistical models toward AI-driven methods incorporating positional data, event sequences, and player context. Cycling research, by contrast, focuses almost exclusively on performance physiology (power profiles, durability, training load) with no identified papers on valuation or career economics. Expected Goals (xG) and action-value metrics dominate football analytics, but their predictive validity for market value remains contested. Career trajectory prediction in football is emerging but lacks longitudinal designs tracking players across multiple seasons and transfers.",
+    "key_findings": [
+      {
+        "finding": "Machine learning models can estimate transfer fees with reasonable accuracy by combining advanced performance metrics (xG, pass completion, positioning) with contextual factors (age, contract status, league tier), with studies reporting R² = 0.40-0.70 depending on feature engineering.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4283159414",
+            "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+            "year": 2022,
+            "sport": "football",
+            "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+            "first_author": "Ian G. McHale"
+          },
+          {
+            "work_id": "https://openalex.org/W2612396739",
+            "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+            "year": 2017,
+            "sport": "football",
+            "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+            "first_author": "Oliver Müller"
+          },
+          {
+            "work_id": "https://openalex.org/W4412526552",
+            "title": "Predicting Soccer Player Salaries with Both Traditional and Automated Machine Learning Approaches",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/app15148108",
+            "first_author": "Davronbek Malikov"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Player action-value metrics derived from deep reinforcement learning show promise for ranking players across positions, but struggle with defensive/midfield players (models show negative correlation with season goals, suggesting over-weighting of pass volume).",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3043874967",
+            "title": "Deep soccer analytics: learning an action-value function for evaluating soccer players",
+            "year": 2020,
+            "sport": "football",
+            "doi": "https://doi.org/10.1007/s10618-020-00705-9",
+            "first_author": "Guiliang Liu"
+          },
+          {
+            "work_id": "https://openalex.org/W4388936656",
+            "title": "Action Valuation of On- and Off-Ball Soccer Players Based on Multi-Agent Deep Reinforcement Learning",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.1109/access.2023.3336425",
+            "first_author": "Hiroshi Nakahara"
+          },
+          {
+            "work_id": "https://openalex.org/W3035679825",
+            "title": "Inverse Reinforcement Learning for Team Sports: Valuing Actions and Players",
+            "year": 2020,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.24963/ijcai.2020/464",
+            "first_author": "Yudong Luo"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Commercial player rating systems (WhoScored, FotMob, Sofascore) show variable correlation with actual performance metrics; no consensus on which system best predicts market value or career success.",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4407955883",
+            "title": "Comparing player rating systems as a metric for assessing individual performance in soccer",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/02640414.2025.2471208",
+            "first_author": "James Moores Ball"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Player market value depreciation begins around age 27 across European leagues, with league-specific variation (Bundesliga: −0.43/year, Premier League: −0.28/year, La Liga: −0.20/year), but no study controls for inflation or career stage quality.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4407105460",
+            "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/ijfs13010017",
+            "first_author": "James H. Liu"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Relative age effect (RAE) and biological maturation significantly bias youth talent selection; early-born players are systematically overrepresented in academies across multiple countries, but RAE does NOT predict long-term professional success.",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4398150092",
+            "title": "Relative age effect across the talent identification processof youth female soccer players in the United States: Influenceof birth year, position, biological maturation, and skill level",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.5114/biolsport.2024.136085",
+            "first_author": "Laura Finnegan"
+          },
+          {
+            "work_id": "https://openalex.org/W2300920900",
+            "title": "Relative Age Effect in UEFA Championship Soccer Players",
+            "year": 2015,
+            "sport": "football",
+            "doi": "https://doi.org/10.1515/hukin-2015-0079",
+            "first_author": "Sixto González‐Víllora"
+          },
+          {
+            "work_id": "https://openalex.org/W3106604258",
+            "title": "Origins of Relative Age Effects in Youth Football—A Nationwide Analysis",
+            "year": 2020,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fspor.2020.591072",
+            "first_author": "Michael Romann"
+          },
+          {
+            "work_id": "https://openalex.org/W3216925943",
+            "title": "The New Generation of Professional Soccer Talent Is Born under the Bias of the RAE: Relative Age Effect in International Male Youth Soccer Championships",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/children8121117",
+            "first_author": "Benito Pérez-González"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "Expected Threat (xT) and Expected Goals (xG) metrics are becoming standard for action valuation but struggle with shot selection quality and individual player skill variation; Bayesian hierarchical approaches show persistent player-level effects beyond shot context.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3147122783",
+            "title": "A Goal Scoring Probability Model for Shots Based on Synchronized Positional and Event Data in Football (Soccer)",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fspor.2021.624475",
+            "first_author": "Gabriel Anzer"
+          },
+          {
+            "work_id": "https://openalex.org/W2567728646",
+            "title": "Real Time Quantification of Dangerousity in Football Using Spatiotemporal Tracking Data",
+            "year": 2016,
+            "sport": "football",
+            "doi": "https://doi.org/10.1371/journal.pone.0168768",
+            "first_author": "Daniel Link"
+          },
+          {
+            "work_id": "https://openalex.org/W4399689857",
+            "title": "Bayes-xG: player and position correction on expected goals (xG) using Bayesian hierarchical approach",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fspor.2024.1348983",
+            "first_author": "Alexander Scholtes"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "No identified papers on cyclist market valuation, transfer fees, or career economics. Cycling research focuses entirely on performance physiology and training load, not career trajectory or financial valuation.",
+        "evidence_strength": "strong (evidence of absence)",
+        "papers": [],
+        "paper_count": 0
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "machine_learning (gradient boosting, random forests, neural networks)",
+        "statistical regression (linear, logistic, hierarchical Bayesian)",
+        "deep_learning (reinforcement learning, graph neural networks, transformers)",
+        "observational cross-sectional studies"
+      ],
+      "sample_size_patterns": "Highly variable. Transfer fee prediction studies use 500–3000+ players. Action-value models typically trained on 50–500 matches. Youth talent studies: 50–3000 players. Cycling studies: 5–50 athletes (very small samples). Performance analysis: 36–1600+ match observations.",
+      "data_sources_used": "Transfermarkt (market values), StatsBomb/Opta event data, tracking data (Tracab, Vicon), Kaggle datasets (European Soccer Database), proprietary club data, Strava (cycling), power meters (cycling). Heavy reliance on freely available Transfermarkt data for valuation studies.",
+      "temporal_patterns": "Research accelerated 2020–2026 (>50% of papers). Transfer fee models published 2017 onward. Reinforcement learning approaches for player valuation emerged 2018–2020. Cycling research shows consistent small papers throughout but no valuation papers. Longitudinal studies rare; most cross-sectional. Few papers track players across multiple transfer windows or seasons."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W2612396739",
+        "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+        "why_key": "Foundational work on transfer fee estimation using multilevel regression; 166 citations; demonstrates that statistical models can predict market value from performance and contextual data. Establishes baseline methodology.",
+        "year": 2017,
+        "sport": "football",
+        "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+        "first_author": "Oliver Müller"
+      },
+      {
+        "work_id": "https://openalex.org/W4283159414",
+        "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+        "why_key": "Modern machine learning approach to transfer fee prediction; compares multiple algorithms; shows R² = 0.40–0.70 depending on features. Directly addresses the research question.",
+        "year": 2022,
+        "sport": "football",
+        "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+        "first_author": "Ian G. McHale"
+      },
+      {
+        "work_id": "https://openalex.org/W3043874967",
+        "title": "Deep soccer analytics: learning an action-value function for evaluating soccer players",
+        "why_key": "Deep learning framework for player action valuation; 97 citations; demonstrates both promise and limitations of reinforcement learning for cross-position player ranking.",
+        "year": 2020,
+        "sport": "football",
+        "doi": "https://doi.org/10.1007/s10618-020-00705-9",
+        "first_author": "Guiliang Liu"
+      },
+      {
+        "work_id": "https://openalex.org/W4407105460",
+        "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+        "why_key": "Only paper directly quantifying age-related depreciation across leagues; reveals league-specific pricing anomalies. Addresses career trajectory valuation gap.",
+        "year": 2025,
+        "sport": "football",
+        "doi": "https://doi.org/10.3390/ijfs13010017",
+        "first_author": "James H. Liu"
+      },
+      {
+        "work_id": "https://openalex.org/W4407955883",
+        "title": "Comparing player rating systems as a metric for assessing individual performance in soccer",
+        "why_key": "Only paper comparing commercial rating systems (WhoScored, FotMob, Sofascore) to performance metrics; identifies disagreement among platforms; relevant to understanding market signals.",
+        "year": 2025,
+        "sport": "football",
+        "doi": "https://doi.org/10.1080/02640414.2025.2471208",
+        "first_author": "James Moores Ball"
+      },
+      {
+        "work_id": "https://openalex.org/W4392368282",
+        "title": "Pro-cycling team cyclist assignment for an upcoming race",
+        "why_key": "Only identified paper addressing cyclist selection/valuation using machine learning; predicts race assignment with 80% precision; demonstrates that cyclist performance CAN be quantified for selection decisions (though not market valuation).",
+        "year": 2024,
+        "sport": "cycling",
+        "doi": "https://doi.org/10.1371/journal.pone.0297270",
+        "first_author": "Maor Sagi"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "topic",
+      "title": "Cyclist market valuation and transfer economics",
+      "description": "No papers in our database address how cyclist market value is determined, what factors influence salary/contract negotiations, or how career trajectory pricing works in cycling. The assumption that cycling has equivalent valuation problems to football is unvalidated. Cycling is fundamentally different (individual performance within team tactics, salary determined by team budget and performance rankings, no direct 'transfer market'). Our 61 cycling papers focus entirely on performance physiology and training load, not economics or career valuation.",
+      "evidence": "Zero papers found on cyclist market valuation, salary prediction, or transfer/contract economics. Cycling papers (W4408498257, W4392754626, W4399601334, W4392289688, W4401062890, W4400153931, etc.) focus exclusively on power profiles, durability, menstrual cycle effects, and training load. No engagement with financial or career management aspects of professional cycling.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4392368282",
+          "title": "Pro-cycling team cyclist assignment for an upcoming race",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1371/journal.pone.0297270",
+          "first_author": "Maor Sagi"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Cycling is a multi-billion-dollar sport with complex team dynamics, performance-based salary structures, and selection mechanisms that differ fundamentally from football. Understanding cyclist valuation is scientifically distinct from football valuation and practically important for team managers, sponsors, and athletes. The absence of any research suggests a genuine research gap, not a settled question.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Cyclist performance data is increasingly available (Strava, Training Peaks, power meters, GPS). Market data (salaries, team budgets) is partially public via PCS (Pro Cycling Stats) and team announcements. Challenge: cycling lacks a centralized 'transfer market' database like Transfermarkt for football. Requires manual data collection or partnership with professional teams.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "methodology",
+      "title": "Lack of longitudinal validation of transfer fee models across multiple transfer windows",
+      "description": "Transfer fee prediction models are evaluated on cross-sectional data (single season or window) or trained on historical data without prospective validation. No paper prospectively predicts a future transfer window's fees and measures actual accuracy in the market. Models report R² = 0.40–0.70 but it is unknown whether these correlations are stable across time, whether model predictions influence actual transfers, or whether models degrade during market disruptions (injuries, scandals, geopolitical events).",
+      "evidence": "W4283159414 and W2612396739 report R² but do not perform out-of-sample temporal validation (predicting future windows). W4407105460 is cross-sectional (2023/24 season only). No paper tracks whether predicted high-value players actually transfer at predicted prices, or whether models would have successfully predicted 2024–2025 transfers if trained on 2023 data. Machine learning papers (W4392233791, W4401805975) use validation splits but rarely temporal splits respecting chronological order.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4283159414",
+          "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+          "first_author": "Ian G. McHale"
+        },
+        {
+          "work_id": "https://openalex.org/W2612396739",
+          "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+          "year": 2017,
+          "sport": "football",
+          "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+          "first_author": "Oliver Müller"
+        },
+        {
+          "work_id": "https://openalex.org/W4407105460",
+          "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/ijfs13010017",
+          "first_author": "James H. Liu"
+        },
+        {
+          "work_id": "https://openalex.org/W4401805975",
+          "title": "Evaluating soccer match prediction models: a deep learning approach and feature optimization for gradient-boosted trees",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1007/s10994-024-06608-w",
+          "first_author": "Calvin Yeung"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Transfer fee predictions are only useful if they generalize to future transfers. Without prospective validation, claims about 'reliable' valuation are unsubstantiated. Market value is a causal target (clubs will act on predictions), so overfitting and distribution shift are severe risks. Longitudinal validation is methodologically essential for any predictive claim.",
+      "feasibility": "high",
+      "feasibility_rationale": "Straightforward to implement: train model on transfers 2015–2023, predict 2024 transfers prospectively, measure prediction error against actual market transfers documented in Transfermarkt. Requires patience (must wait for transfer window to complete) but no additional data collection.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "data",
+      "title": "Absence of causal mechanisms explaining transfer fee variation",
+      "description": "Published models predict transfer fees using features (age, xG, contract length, league tier) but do not isolate causal mechanisms. It is unknown whether high xG CAUSES higher transfer value or whether both high xG and high transfer value reflect underlying talent that is causally generative. No instrumental variable studies, quasi-experiments (e.g., regression discontinuity around contract expiry), or controlled comparisons isolating causal effects. Confounding by unobserved talent, team environment, or contract leverage is rampant.",
+      "evidence": "W4283159414, W2612396739, and W4407105460 are observational regression studies with no causal identification strategy. No paper uses instrumental variables (e.g., injury as exogenous shock to market value), quasi-experimental designs, or causal inference methods. The literature treats correlation as evidence for predictive importance without addressing reverse causality or confounding.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4283159414",
+          "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+          "first_author": "Ian G. McHale"
+        },
+        {
+          "work_id": "https://openalex.org/W2612396739",
+          "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+          "year": 2017,
+          "sport": "football",
+          "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+          "first_author": "Oliver Müller"
+        },
+        {
+          "work_id": "https://openalex.org/W4407105460",
+          "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/ijfs13010017",
+          "first_author": "James H. Liu"
+        },
+        {
+          "work_id": "https://openalex.org/W4412526552",
+          "title": "Predicting Soccer Player Salaries with Both Traditional and Automated Machine Learning Approaches",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app15148108",
+          "first_author": "Davronbek Malikov"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "For practitioners predicting future market value, identifying true causal drivers (not mere correlates) is essential. For theory, understanding *why* certain attributes determine value informs talent identification and development strategies. Causal mechanisms also reveal whether models are exploiting stable relationships or spurious correlations that may break down in new data.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Causal identification strategies are methodologically demanding. Instrumental variables require finding exogenous shocks (injuries, contract events, rule changes). Regression discontinuity requires threshold-based selection (e.g., players exactly at contract expiry boundary). Feasibility depends on data richness; our sources (Transfermarkt, event data) do not always include injury dates or exact contract terms. Quasi-experimental designs are possible but require careful data cleaning.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "integration",
+      "title": "No integration between player valuation and team success prediction",
+      "description": "Football papers on player valuation (W4283159414, W2612396739) and papers on match/season outcome prediction (W4392200067, W4401805975) are separate research streams. No paper predicts team success from player market value composition, tests whether expensive teams win more, or evaluates whether transfer value predicts actual on-field contribution. Inverse question: do players with high predicted value actually contribute proportionally to match outcomes?",
+      "evidence": "Transfer fee prediction papers focus entirely on individual player features. Match outcome prediction papers (W4392200067, W4401805975) use event-level performance metrics (xG, passes, press intensity) but never incorporate player market value or transfer fee as a variable. W3099384570 examines financial performance vs. ranking but not individual player value composition.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4283159414",
+          "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+          "first_author": "Ian G. McHale"
+        },
+        {
+          "work_id": "https://openalex.org/W2612396739",
+          "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+          "year": 2017,
+          "sport": "football",
+          "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+          "first_author": "Oliver Müller"
+        },
+        {
+          "work_id": "https://openalex.org/W4392200067",
+          "title": "Factors associated with match outcomes in elite European football – insights from machine learning models",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3233/jsa-240745",
+          "first_author": "Maxime Settembre"
+        },
+        {
+          "work_id": "https://openalex.org/W4401805975",
+          "title": "Evaluating soccer match prediction models: a deep learning approach and feature optimization for gradient-boosted trees",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1007/s10994-024-06608-w",
+          "first_author": "Calvin Yeung"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Linking player valuation to team outcomes would validate whether market valuations reflect actual performance contribution. If expensive players do not contribute proportionally, either the market is inefficient or valuation captures intangibles not reflected in performance metrics. This is economically important (detecting market anomalies) and scientifically important (understanding what 'value' means).",
+      "feasibility": "high",
+      "feasibility_rationale": "Direct data integration: merge player market value from Transfermarkt with team composition and match outcomes from event data sources. Analyze whether team with highest summed player value wins more often, or whether individual xG contribution predicts salary. Requires careful alignment (player IDs, dates, contract terms) but no novel data collection.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_5",
+      "type": "population",
+      "title": "Severe under-representation of women's football in valuation research",
+      "description": "Of 66 papers on player_valuation theme, only 2–3 explicitly address women's football (W4390701063 examines menstrual cycle in World Cup; others are indirect). No papers on women's player market valuation, salary prediction, or transfer fee estimation despite women's football having distinct economic structures (lower salary caps, fewer transfers, different career trajectories, maternity considerations).",
+      "evidence": "Database contains 120 papers on women's sport (11.9%), but player_valuation papers are almost entirely on men. Search of player_valuation + women's sport returns no dedicated valuation studies. W4402378377 analyzes women's World Cup match performance, not valuation.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4390701063",
+          "title": "The Dose–Response in Elite Soccer: Preliminary Insights From Menstrual-Cycle Tracking During the FIFA Women’s World Cup 2019",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1123/ijspp.2022-0282",
+          "first_author": "Dawn M. Scott"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Women's football is a rapidly growing professional sport with distinct economics. Ignoring it perpetuates scientific bias and misses opportunity to develop gender-sensitive valuation models (e.g., accounting for maternity leave, smaller talent pools, different injury patterns).",
+      "feasibility": "high",
+      "feasibility_rationale": "Women's player data exists (Transfermarkt, FBref, StatsBomb now cover women's leagues). Salaries less publicly available but increasingly documented. Main challenge: smaller transfer volumes and salary ranges may reduce model precision, but this is scientifically interesting, not a reason to avoid the research.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_6",
+      "type": "methodology",
+      "title": "Limited validation of deep reinforcement learning for cross-position player ranking",
+      "description": "Deep RL methods (W3043874967, W4388936656) show promise for action valuation but have acknowledged limitations: models struggle to value defensive/midfield players, show negative correlation with season goals, and are trained on small match samples (50–500 games). No paper validates these rankings against independent benchmarks (coach rankings, scout evaluations, actual player transfers), or tests whether RL rankings predict career success better than simpler metrics.",
+      "evidence": "W3043874967 trains on 55 games (small sample). W4388936656 acknowledges negative correlation with goals (ρ = −0.665) indicating defensive bias. No cross-validation against independent player rankings (e.g., do top RL-ranked players transfer to better clubs?). No paper compares RL rankings to coach assessments or market transfers to validate that RL captures true performance value.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3043874967",
+          "title": "Deep soccer analytics: learning an action-value function for evaluating soccer players",
+          "year": 2020,
+          "sport": "football",
+          "doi": "https://doi.org/10.1007/s10618-020-00705-9",
+          "first_author": "Guiliang Liu"
+        },
+        {
+          "work_id": "https://openalex.org/W4388936656",
+          "title": "Action Valuation of On- and Off-Ball Soccer Players Based on Multi-Agent Deep Reinforcement Learning",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1109/access.2023.3336425",
+          "first_author": "Hiroshi Nakahara"
+        },
+        {
+          "work_id": "https://openalex.org/W3035679825",
+          "title": "Inverse Reinforcement Learning for Team Sports: Valuing Actions and Players",
+          "year": 2020,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.24963/ijcai.2020/464",
+          "first_author": "Yudong Luo"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "If RL rankings are to replace expert judgment, they must be validated against ground truth. The acknowledged biases (defensive undervaluation) are scientifically interesting but practically limiting. Validation studies would clarify whether RL adds value over simpler metrics.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires access to coach/scout rankings (proprietary, difficult to obtain) or large historical transfer dataset to test predictive validity. Alternatively, can compare RL rankings to published player ratings (WhoScored, FotMob) and test predictive power for match outcomes or transfers.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_7",
+      "type": "topic",
+      "title": "Individual performance isolation in cycling within team tactics",
+      "description": "The original research question assumes cycling has the same valuation challenge as football (isolating individual from team performance). The literature confirms cycling is team-dependent (domestiques support leaders, team tactics affect pacing, breakaway success depends on team positioning). However, no paper explicitly addresses how to isolate individual cyclist contribution to team success, how to value a cyclist's tactical role (leader vs. domestique), or how to adjust performance metrics for team context.",
+      "evidence": "Cycling papers (W4408498257, W4392754626, W4399601334) measure individual power output, durability, and training load but do not address team context or tactical roles. No paper models cyclist performance as a function of team composition, breakaway composition, or tactical positioning. This is implied as a challenge but not systematically addressed.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4408498257",
+          "title": "Mechanistic influence of the torque cadence relationship on power output during exhaustive all-out field tests in professional cyclists",
+          "year": 2025,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1080/02640414.2025.2478354",
+          "first_author": "Peter Leo"
+        },
+        {
+          "work_id": "https://openalex.org/W4392754626",
+          "title": "The intensity rather than the quantity of prior work determines the subsequent downward shift in the power duration relationship in professional cyclists",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1002/ejsc.12077",
+          "first_author": "James Spragg"
+        },
+        {
+          "work_id": "https://openalex.org/W4399601334",
+          "title": "Durability and Underlying Physiological Factors: How Do They Change Throughout a Cycling Season in Semiprofessional Cyclists?",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0543",
+          "first_author": "Jens G. Voet"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Cycling's team dynamics are distinct from football. A cyclist's value depends partly on their support role, team loyalty, and tactical intelligence—aspects not captured by power meters. Understanding how to isolate individual contribution within team tactics is essential for valuation and talent identification in cycling.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires detailed race tracking data (team composition, positioning, pacing decisions) and outcome data (stage results, GC standing, team goals). Some of this is public (race broadcasts, timing data) but detailed tactical reconstruction is difficult. Multi-agent modeling approaches from football (W4414060913) could be adapted to cycling.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_8",
+      "type": "replication",
+      "title": "Lack of independent replication of transfer fee prediction models",
+      "description": "Only 3–4 papers on transfer fee prediction (W4283159414, W2612396739, W4412526552). No independent replication using different datasets, time periods, or leagues. No meta-analysis or systematic review synthesizing findings. Unknown whether results generalize from European leagues to other markets (MLS, Asian leagues) or whether model rankings are robust across different feature engineering approaches.",
+      "evidence": "W4283159414 and W2612396739 report results on European leagues but do not compare. W4412526552 predicts salaries (different from transfer fees). No paper replicates prior findings or compares models head-to-head. No replication across leagues or time periods.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4283159414",
+          "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+          "first_author": "Ian G. McHale"
+        },
+        {
+          "work_id": "https://openalex.org/W2612396739",
+          "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+          "year": 2017,
+          "sport": "football",
+          "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+          "first_author": "Oliver Müller"
+        },
+        {
+          "work_id": "https://openalex.org/W4412526552",
+          "title": "Predicting Soccer Player Salaries with Both Traditional and Automated Machine Learning Approaches",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app15148108",
+          "first_author": "Davronbek Malikov"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Replication is foundational to scientific credibility. Without independent verification, claims about 'reliable' valuation rest on single studies that may contain design flaws, overfitting, or dataset-specific artifacts.",
+      "feasibility": "high",
+      "feasibility_rationale": "Straightforward to replicate: apply published methods to held-out test sets, or implement models on different league data. Transfermarkt data is freely available and sufficient for replication.",
+      "confidence": "high"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Prospective validation of transfer fee prediction models across multiple transfer windows (2024–2026)",
+      "description": "Implement a prospective forecasting study: train transfer fee models on 2015–2023 data, generate point predictions for all major European transfers in summer 2024 and winter 2025, measure prediction error and calibration against actual market transfers. Test whether predictions generalize temporally, whether model confidence intervals contain true values, and whether predictions degrade during market shocks (injuries, scandal). This directly answers whether methods 'actually work' for predicting transfer fees.",
+      "addresses_gaps": [
+        "gap_2",
+        "gap_8"
+      ],
+      "suggested_methodology": "Time-series cross-validation (train on 2015–2023, validate on 2024, test on 2025); compute RMSE, MAE, prediction interval coverage; stratify by age, position, league tier; test for distribution shift using Kolmogorov-Smirnov test.",
+      "suggested_data": "Transfermarkt (transfer fees, player attributes, contract dates), StatsBomb/FBref (performance metrics xG, assists, minutes), injury databases if available. Focus on major European leagues plus MLS for external generalization.",
+      "estimated_difficulty": "accessible_thesis",
+      "potential_impact": "Validates whether existing models are predictively useful in practice. Identifies which features are temporally stable vs. which overfit. Informs whether practitioners should rely on statistical models vs. expert judgment. If models fail, reveals what additional information is needed."
+    },
+    {
+      "priority": 2,
+      "title": "Causal identification of transfer fee drivers using quasi-experimental design and instrumental variables",
+      "description": "Design study exploiting exogenous shocks (e.g., contract expiry, injury, rule changes) to isolate causal effects of player attributes on market value. Use regression discontinuity around contract expiry dates (players with 1 year remaining vs. 2 years), injury shock events, or age threshold rules to identify causal effects separate from confounding. Compare estimates from causal methods to observational correlations to quantify omitted variable bias.",
+      "addresses_gaps": [
+        "gap_3"
+      ],
+      "suggested_methodology": "Regression discontinuity design (contract expiry as running variable); instrumental variable approach (natural experiments); difference-in-differences if rule changes occur; robustness checks with multiple identification strategies.",
+      "suggested_data": "Transfermarkt (contract dates, transfer history), injury databases (IF available), event data for performance tracking. Requires detailed contract term data (not always public—may need manual scraping or team data access).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Reveals true causal mechanisms behind transfer fees. Separates 'performance is correlated with value' from 'performance causes value.' Identifies whether market overpays or underpays certain attributes. Enables truly predictive models (not just correlative)."
+    },
+    {
+      "priority": 3,
+      "title": "Cyclist market valuation framework: salary prediction, contract economics, and career trajectory modeling",
+      "description": "Develop the first comprehensive framework for cyclist valuation. (1) Collect data on pro cyclist salaries (via PCS, team announcements, interviews), team budgets, sponsor deals, and race earnings. (2) Model salary as a function of performance (UCI points, stage wins, GC placements, team role), age, and market factors. (3) Quantify age-related depreciation in cycling (parallel to W4407105460 for football). (4) Develop role-adjusted metrics (leader vs. domestique value). (5) Predict career trajectory (identify career inflection points, optimal transfer timing).",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_7"
+      ],
+      "suggested_methodology": "Multilevel regression (salary ~ performance + age + team + year); causal forest for heterogeneous treatment effects by role; survival analysis for career length prediction; qualitative interviews with team managers to validate model assumptions.",
+      "suggested_data": "Pro Cycling Stats (PCS) UCI rankings and race results, Strava/Training Peaks power data, team budgets (via financial disclosures or PCS estimates), salary data (publicly announced + interviews), race earnings (UCI official records).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Fills absence of cyclist valuation research. Enables cyclist selection and contract negotiation. Reveals whether cycling market is efficient or has exploitable anomalies. Provides framework for other individual/team hybrid sports (triathlon, rowing)."
+    },
+    {
+      "priority": 4,
+      "title": "Integration study: do high-transfer-value players actually contribute to team success?",
+      "description": "Merge player market value data with match-level outcomes and performance metrics. Test whether teams with higher average player value win more matches, whether player xG contribution is proportional to salary, and whether 'value-for-money' transfers (underpriced players) outperform market expectations. Identify market inefficiencies where player contributions do not match valuations.",
+      "addresses_gaps": [
+        "gap_4"
+      ],
+      "suggested_methodology": "Multi-level regression (match outcome ~ team average player value + position-weighted value); Bayesian hierarchical model for player-specific value effects; anomaly detection for over/underpriced players.",
+      "suggested_data": "Transfermarkt (player values by season), event data (xG, pass completion, defensive actions), match outcomes, FBref/WhoScored player stats.",
+      "estimated_difficulty": "accessible_thesis",
+      "potential_impact": "Validates whether market valuations reflect true performance value. Detects market anomalies (inefficient pricing). Informs whether club spending strategies are evidence-based."
+    },
+    {
+      "priority": 5,
+      "title": "Women's football player valuation: salary prediction and market anomaly detection",
+      "description": "Apply transfer fee and salary prediction methods to women's football, accounting for distinct structural features (smaller salary cap, fewer transfers, maternity considerations, gender pay gap). Identify whether women's player market is efficient (compare model predictions to actual transfers and salaries) and reveal gender-specific pricing anomalies (e.g., underpayment relative to performance).",
+      "addresses_gaps": [
+        "gap_5"
+      ],
+      "suggested_methodology": "Parallel models for women and men's football; test for equal coefficients (e.g., does xG impact salary equally?); anomaly detection for gender-based pricing discrepancies.",
+      "suggested_data": "Transfermarkt (women's transfers and market values, growing coverage 2020+), FBref/StatsBomb women's data, publicly available salary information (growing availability).",
+      "estimated_difficulty": "accessible_thesis",
+      "potential_impact": "Addresses research bias against women's football. Reveals whether market undervalues women's players and quantifies gender pay gap in sports. Supports equity advocacy with data."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "PARTIAL SYNTHESIS ACHIEVED WITH NOTABLE GAPS. Football player valuation research exists as a coherent literature stream with identifiable methods (machine learning, statistical regression, deep RL) and recurring datasets (Transfermarkt, event data). Cross-paper synthesis reveals: (1) shift from statistical to ML approaches, (2) persistent tension between predictive accuracy and interpretability, (3) unvalidated assumptions about what 'value' means. However, most papers are intellectual monologues—they rarely engage with competing frameworks. No genuine debate exists between action-value RL proponents and statistical regression advocates about which approach better predicts actual market transfers. CYCLING RESEARCH IS ISOLATED: 61 papers on cycling performance physiology show zero engagement with football valuation literature, despite the research question implying comparison. This is not disagreement; it is absence of dialogue. The literature has developed separate answers to 'what determines athlete value' in football vs. cycling without recognizing they are answering the same question.",
+    "strengths": [
+      "Comprehensive identification of dominant methodologies in football valuation (machine learning, statistical regression, deep RL).",
+      "Explicit recognition of evidence gaps (zero papers on cyclist valuation) rather than claiming absence means non-existence.",
+      "Identification of key unresolved tensions (predictive accuracy vs. interpretability, action-value metrics vs. actual market transfers).",
+      "Proper distinction between papers with strong evidence (transfer fee prediction) and weak evidence (deep RL validation).",
+      "Recognition that papers are largely isolated studies, not integrated research program."
+    ],
+    "limitations": [
+      "Limited full-text review: summaries are brief (1-2 sentences each for most papers). Depth of methodological critique is constrained by abstract-level knowledge. Transfer fee model performance may be better/worse than reported R² suggests if papers differ in train-test split design.",
+      "Temporal bias: database heavily weighted to 2024–2026 (>60% of papers). Foundational work may be in pre-2015 literature not in our database. Paper counts for themes (player_valuation: 66) may be undercounts if earlier papers used different keyword indexing.",
+      "Cycling gap is both a genuine research gap AND a database coverage gap. Unable to distinguish: (a) cycling valuation research does not exist, vs. (b) it exists but uses different terminology ('cyclist selection,' 'team assignment') and was not tagged as player_valuation.",
+      "Women's football under-representation may partly reflect our database's coverage (120/1009 = 11.9% women's papers) rather than true research gap. If literature has more women's football papers using different terminology, this is a database tagging problem.",
+      "Transfer fee prediction validation is inferred as missing based on paper abstracts; may be present in full text of some papers but not disclosed in summaries.",
+      "No access to paper implementations or code (only 4/1009 papers have code available). Cannot verify whether reported model performance is replicable.",
+      "Integration of commercial player rating systems (WhoScored, etc.) is based on single paper (W4407955883). May be more comparison work in industry publications not indexed in academic database."
+    ],
+    "assumptions": [
+      "Assumption 1: 'Player valuation' in football is economically meaningful—i.e., market transfers reflect genuine beliefs about player value. If transfers are driven by non-performance factors (agent influence, sponsorship ties, nepotism), valuation models predict a corrupted target.",
+      "Assumption 2: Transfermarkt market valuations represent true 'market value' (equilibrium price). Transfermarkt is crowd-sourced estimation, not actual transaction prices. Models trained on Transfermarkt may be predicting crowd judgment, not market value.",
+      "Assumption 3: Cycling has a 'valuation problem' analogous to football. In reality, cycling salary is partly determined by team budget and race calendar, not individual performance alone. The question may be based on false equivalence.",
+      "Assumption 4: Transfer fees and salaries are causally related to performance metrics (xG, assists, etc.). Reverse causality exists: high salaries may enable better training, which improves metrics. No paper addresses this.",
+      "Assumption 5: Papers in 2024–2025 represent current research frontier. In reality, these may be preprints or rapid-turnaround papers that have not undergone peer review. Database does not distinguish between preprint and published status.",
+      "Assumption 6: English-language papers in academic databases represent entire research literature. Industry research (team analytics, betting companies) may exist but not be indexed. Cycling research may exist in non-English journals or non-academic publications."
+    ],
+    "database_coverage_gaps": [
+      "CYCLIST VALUATION / TRANSFER ECONOMICS: Despite 61 cycling papers in database, zero address market value, salary determination, or career economics. Either: (a) this research does not exist in academic literature (unlikely—professional cycling has economic interests), or (b) research exists in industry publications, non-English journals, or is tagged differently ('team assignment,' 'selection prediction'). Recommend: expand search to professional cycling publications, grey literature, and check whether papers use terminology like 'race assignment' (W4392368282) that might not trigger 'valuation' search.",
+      "WOMEN'S FOOTBALL VALUATION: Database has 120 women's sport papers (11.9%) but minimal overlap with player_valuation theme. Either women's football valuation is genuinely unstudied (possible given recent professionalization), or papers use different terminology ('salary prediction,' 'career trajectories'). Recommend: explicit search for women's football salary, earnings, and market value papers.",
+      "TRANSFER MARKET MICROECONOMICS: Database has papers on transfer fee prediction (statistical) and match outcome prediction, but lacks engagement with sports economics literature on labor markets, salary caps, and financial fair play rules. Recommend: search for papers citing SLOAN Sports Analytics Conference, Journal of Sports Economics, or sports finance conferences.",
+      "SPORTS BETTING / SPORTS FINANCE INDUSTRY RESEARCH: Transfer fee models may be developed by betting companies, investment firms, or analytics startups but not published in academic venues. Database may miss proprietary research. Recommend: review blogs, technical reports, and working papers from analytics firms.",
+      "COACH / SCOUT EXPERTISE VALIDATION: No papers validate valuation models against independent expert judgment (coaches, scouts). This research may exist in sports management journals or coaching publications not fully indexed. Recommend: search sports management databases and coaching literature.",
+      "CAUSAL INFERENCE IN SPORTS: Causal identification methods (instrumental variables, regression discontinuity) are rare in our database. These techniques may be in economics or econometrics literature not cross-indexed with sports. Recommend: search econometrics journals for sports applications.",
+      "LONGITUDINAL CAREER TRAJECTORY STUDIES: Few longitudinal studies track players across multiple seasons/transfers. Relevant work may be in sports psychology, talent development, or longitudinal cohort study literature not explicitly tagged as 'valuation.' Recommend: search for 'career trajectory,' 'athlete development,' 'talent progression' in non-performance-analysis journals."
+    ],
+    "what_would_improve_this": [
+      "Full-text access to top papers (W4283159414, W2612396739, W3043874967) would enable deeper methodological critique: verify exact train-test splits, check for confounding variables, assess sensitivity to feature engineering.",
+      "Code and data access for transfer fee models would enable replication and comparison across methods—currently cannot verify whether reported R² reflects genuine predictive power or overfitting.",
+      "Metadata on paper publication status (peer-reviewed vs. preprint vs. industry report) would clarify which papers represent consensus vs. preliminary findings. Current database does not distinguish.",
+      "Structured coding of model features (which performance metrics, contextual variables, team data) would enable systematic meta-analysis of what predicts transfer fees.",
+      "Interview data from practitioners (club scouts, analytics directors) would validate whether statistical models match real decision-making or capture latent factors models miss.",
+      "Larger sample of cycling papers with explicit search strategy (using 'cyclist,' 'cycling,' 'tour de france,' 'road cycling,' 'track cycling') might uncover valuation work missed by current search.",
+      "Temporal metadata (publication date vs. arxiv date vs. journal acceptance) would show lag between research and practice—transfer fee models published 2022 may reflect 2018–2020 data, making 'current' validation difficult.",
+      "Geographic/league breakdown: database skews European football. Replication in MLS, Asian leagues, or emerging markets would test generalization.",
+      "Engagement with sports economics journals: database appears sports-analytics-focused and may miss economics literature on athlete labor markets, salary determination, and market efficiency."
+    ],
+    "process_cost_reflection": "ANALYSIS COST-EFFECTIVENESS ASSESSMENT: Given 200 paper summaries + 30 curated resources and 1009 total papers, this gap analysis was feasible at reasonable cost. KEY INSIGHTS: (1) 200 summaries were sufficient to identify dominant research themes (ML for football, physiology for cycling), major gaps (cyclist valuation, longitudinal validation), and 5-10 primary gaps. (2) Abstract-level summaries constrained depth—could not assess methodological quality (confounding, overfitting, generalization) without full text. Accessing full text for ~20 key papers would improve confidence from MEDIUM to HIGH. (3) Database distribution (750 football, 61 cycling, 198 multi-sport) enabled football-focused analysis but made cycling comparison difficult. A balanced database (equal sport representation) would have detected gaps faster. (4) Aggregate statistics (methodology, study design, sample size distribution) were minimally informative—binary classification (ML vs. statistical) hides nuance. Full-text extraction of model specifications would be higher-value. VERDICT: 200-paper summaries were sufficient to identify EXISTENCE of gaps (cyclist valuation absent, longitudinal validation missing) but insufficient to characterize IMPORTANCE of gaps precisely (e.g., is lack of deep RL validation a serious problem or pedantic?). For gap identification, 200 papers + metadata aggregation is cost-effective. For gap prioritization and solution design, full-text access to 30-50 key papers would be justified investment. The 4 papers with code available (out of 1009) suggests code availability does not scale—open science culture in sports analytics is weak."
+  },
+  "paper_index": {
+    "https://openalex.org/W4283159414": {
+      "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+      "year": 2022,
+      "first_author": "Ian G. McHale"
+    },
+    "https://openalex.org/W2612396739": {
+      "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+      "year": 2017,
+      "first_author": "Oliver Müller"
+    },
+    "https://openalex.org/W4412526552": {
+      "title": "Predicting Soccer Player Salaries with Both Traditional and Automated Machine Learning Approaches",
+      "year": 2025,
+      "first_author": "Davronbek Malikov"
+    },
+    "https://openalex.org/W3043874967": {
+      "title": "Deep soccer analytics: learning an action-value function for evaluating soccer players",
+      "year": 2020,
+      "first_author": "Guiliang Liu"
+    },
+    "https://openalex.org/W4388936656": {
+      "title": "Action Valuation of On- and Off-Ball Soccer Players Based on Multi-Agent Deep Reinforcement Learning",
+      "year": 2023,
+      "first_author": "Hiroshi Nakahara"
+    },
+    "https://openalex.org/W4407955883": {
+      "title": "Comparing player rating systems as a metric for assessing individual performance in soccer",
+      "year": 2025,
+      "first_author": "James Moores Ball"
+    },
+    "https://openalex.org/W4407105460": {
+      "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+      "year": 2025,
+      "first_author": "James H. Liu"
+    },
+    "https://openalex.org/W4392368282": {
+      "title": "Pro-cycling team cyclist assignment for an upcoming race",
+      "year": 2024,
+      "first_author": "Maor Sagi"
+    },
+    "https://openalex.org/W4408498257": {
+      "title": "Mechanistic influence of the torque cadence relationship on power output during exhaustive all-out field tests in professional cyclists",
+      "year": 2025,
+      "first_author": "Peter Leo"
+    },
+    "https://openalex.org/W4392754626": {
+      "title": "The intensity rather than the quantity of prior work determines the subsequent downward shift in the power duration relationship in professional cyclists",
+      "year": 2024,
+      "first_author": "James Spragg"
+    },
+    "https://openalex.org/W4399601334": {
+      "title": "Durability and Underlying Physiological Factors: How Do They Change Throughout a Cycling Season in Semiprofessional Cyclists?",
+      "year": 2024,
+      "first_author": "Jens G. Voet"
+    },
+    "https://openalex.org/W4392289688": {
+      "title": "Impact of menstrual cycle or combined oral contraception on elite female cyclists' training responses through a clustering analysis of training sessions",
+      "year": 2024,
+      "first_author": "Hugo Carlin"
+    },
+    "https://openalex.org/W4401062890": {
+      "title": "Intensity Matters: Effect of Different Work-Matched Efforts on Subsequent Performance in Cyclists",
+      "year": 2024,
+      "first_author": "David Barranco‐Gil"
+    },
+    "https://openalex.org/W4400153931": {
+      "title": "Performance analysis and mechanical determinants of the opening lap of the team sprint in elite‐level track cycling",
+      "year": 2024,
+      "first_author": "Mehdi Kordi"
+    },
+    "https://openalex.org/W4392233791": {
+      "title": "Developing cognitive and motor decision-making skills through tactical principles and small-sided games in youth soccer",
+      "year": 2024,
+      "first_author": "Guilherme Machado"
+    },
+    "https://openalex.org/W4401805975": {
+      "title": "Evaluating soccer match prediction models: a deep learning approach and feature optimization for gradient-boosted trees",
+      "year": 2024,
+      "first_author": "Calvin Yeung"
+    },
+    "https://openalex.org/W4392200067": {
+      "title": "Factors associated with match outcomes in elite European football – insights from machine learning models",
+      "year": 2024,
+      "first_author": "Maxime Settembre"
+    },
+    "https://openalex.org/W3099384570": {
+      "title": "On the relationship between sport and financial performances: an empirical investigation",
+      "year": 2020,
+      "first_author": "Luca Di Simone"
+    },
+    "https://openalex.org/W4390701063": {
+      "title": "The Dose–Response in Elite Soccer: Preliminary Insights From Menstrual-Cycle Tracking During the FIFA Women’s World Cup 2019",
+      "year": 2024,
+      "first_author": "Dawn M. Scott"
+    },
+    "https://openalex.org/W4402378377": {
+      "title": "Analysis of FIFA 2023 Women’s World Cup match performanceaccording to match outcome and phase of the tournament",
+      "year": 2024,
+      "first_author": "José M. Oliva‐Lozano"
+    },
+    "https://openalex.org/W4414060913": {
+      "title": "Dynamic graph neural networks for UAV-based group activity recognition in structured team sports",
+      "year": 2025,
+      "first_author": "Ishrat Zahra"
+    }
+  }
+}

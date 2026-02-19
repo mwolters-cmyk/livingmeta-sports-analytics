@@ -59,6 +59,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="alternate" type="application/rss+xml" title="Living Sports Analytics" href="/feed.xml" />
+        {/* AI agent discovery — agents check these to find structured instructions */}
+        <meta name="ai-resource" content="/api/agent.json" />
+        <link rel="ai-instructions" href="/api/agent.json" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}

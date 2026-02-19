@@ -1,0 +1,1036 @@
+{
+  "description": "Full gap analysis: \"What is the optimal pacing strategy in endurance sports like running, speed skating, and cycling? How do split times and pacing profiles relate to performance outcomes?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.908Z",
+  "slug": "what-is-the-optimal-pacing-strategy-in-endurance-sports-like-running-speed-skati",
+  "question": "What is the optimal pacing strategy in endurance sports like running, speed skating, and cycling? How do split times and pacing profiles relate to performance outcomes?",
+  "created_at": "2026-02-16T22:04:06.024567",
+  "analyzed_at": "2026-02-16T22:06:53.154343",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 494,
+  "cost_usd": 0.1377,
+  "analysis_confidence": "medium",
+  "scope_assessment": "This question is well-scoped but with notable caveats. It targets a specific phenomenon (pacing strategy and split times) across defined endurance sports (running, cycling; speed skating is notably underrepresented). The question conflates two related but distinct inquiries: (1) what pacing strategy is optimal, and (2) how pacing profiles relate to performance. These require different analytical approaches—the first is prescriptive/normative, the second is descriptive/correlational. The database contains substantial work on pacing in running and cycling but minimal coverage of speed skating. The research tends to describe successful pacing patterns post-hoc rather than identify mechanistically optimal strategies.",
+  "database_coverage": "Good coverage for running (athletics, n=201 papers) and cycling (n=78 papers). Swimming (n=52) includes some pacing work but is less central to the question. Multi-sport papers (n=163) occasionally address pacing. Speed skating is entirely absent from the summaries provided. The database appears stronger on performance analysis and biomechanics than on physiology or optimization. Data sources are heavily sensor-based (312/494 papers), which is appropriate for pacing studies requiring split-time and physiological monitoring. However, the database seems to lack dedicated optimization or modeling studies that would answer 'what is optimal' rather than 'what succeeded.'",
+  "confidence_explanation": "Medium confidence reflects: (1) Strong evidence base for pacing-performance relationships in running and cycling (multiple high-citation papers, consistent findings across studies); (2) Weaker prescriptive evidence—papers describe successful pacing but few employ experimental manipulation or optimization methods to determine causality; (3) Limited temporal and population coverage—most papers are recent (2024-2025), creating potential recency bias; elite athletes dominate, limiting generalizability; (4) Heterogeneity in methodology and outcome measures (time trial vs. race performance, various pacing metrics) makes synthesis difficult; (5) Speed skating absence is a significant gap. Confidence would increase with access to full texts, experimental designs, and broader sport coverage.",
+  "landscape": {
+    "summary": "Research on pacing in endurance sports has established that successful athletes employ flexible, strategic pace management rather than constant effort. In middle-distance running (800m, 1500m), elite performers use distinct 'seahorse' or 'J-shaped' pacing profiles (W2903674980) with separation from competitors occurring in final stages through reduced slowing rather than acceleration. Marathon and ultramarathon studies reveal variable pacing patterns: recreational marathoners show systematic overestimation and suboptimal second-half slowdown (W3123739250), while ultra-marathon finishers demonstrate lower BMI and better pre-race preparation (W2992427558). Cycling research emphasizes the power-duration relationship and durability (ability to sustain performance after fatigue), with training intensity distribution and interval structure showing strong relationships to time-trial performance (W4403300820, W4392754626). However, most research is descriptive rather than prescriptive—papers identify what successful athletes do but rarely manipulate pacing experimentally. Physiological underpinnings (VO2max, lactate threshold, efficiency) are studied as correlates of pacing ability, but causal mechanisms linking pacing strategy to performance remain incompletely understood.",
+    "key_findings": [
+      {
+        "finding": "Successful middle-distance runners (800m, 1500m) employ distinct pacing profiles (seahorse-shaped for 800m, J-shaped for 1500m) with separation from competitors occurring in final 200m through reduced slowing rather than acceleration",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2903674980",
+            "title": "Successful Pacing Profiles of Olympic and IAAF World Championship Middle-Distance Runners Across Qualifying Rounds and Finals",
+            "year": 2018,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.1123/ijspp.2018-0742",
+            "first_author": "Brian Hanley"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Higher fraction of VO2max achieved during interval training is positively associated with greater improvements in cycling performance (Wmax, lactate threshold power, VO2max)",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4403300820",
+            "title": "The higher the fraction of maximal oxygen uptake is during interval training, the greater is the cycling performance gain",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1002/ejsc.12202",
+            "first_author": "Ingvill Odden"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Marathon runners significantly overestimate their abilities (men 9% vs women 7.6%), and overestimation correlates with worse pacing (greater second-half slowdown)",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3123739250",
+            "title": "Gender differences in marathon pacing and performance prediction",
+            "year": 2015,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.3233/jsa-150008",
+            "first_author": "Calvin Hubble"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "High-intensity prior work induces greater downward shift in power-duration relationship in cyclists compared to low-intensity work, affecting subsequent performance capacity across durations",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4392754626",
+            "title": "The intensity rather than the quantity of prior work determines the subsequent downward shift in the power duration relationship in professional cyclists",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1002/ejsc.12077",
+            "first_author": "James Spragg"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Distance runners show distinct pacing behaviors ('falling behind,' 'letting go,' 'outsprinted') related to critical speed thresholds and cognitive/physiological limits",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4399997379",
+            "title": "“Falling Behind,” “Letting Go,” and Being “Outsprinted” as Distinct Features of Pacing in Distance Running",
+            "year": 2024,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.1123/ijspp.2023-0308",
+            "first_author": "Carl Foster"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Durability (performance maintenance after accumulated work) varies significantly across cycling levels and relates to physiological factors including substrate oxidation and gross efficiency",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4399601334",
+            "title": "Durability and Underlying Physiological Factors: How Do They Change Throughout a Cycling Season in Semiprofessional Cyclists?",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1123/ijspp.2023-0543",
+            "first_author": "Jens G. Voet"
+          },
+          {
+            "work_id": "https://openalex.org/W4393186677",
+            "title": "The Influence of High-Intensity Work on the Record Power Profile of Under-23, Pro Team, and World Tour Cyclists",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1123/ijspp.2023-0451",
+            "first_author": "Peter Leo"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Elite trail runners employ flexible pacing strategies adapted to terrain, elevation, and competitive dynamics, with successful finishers showing different patterns than unsuccessful competitors",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4406982350",
+            "title": "Pacing Strategy and Resulting Performance of Elite Trail Runners: Insights From the 2023 World Mountain and Trail Running Championships",
+            "year": 2025,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.1123/ijspp.2024-0390",
+            "first_author": "Diego Jaén‐Carrillo"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Mountain ultramarathon runners employ mixed strategies (speed decrease until 70-90% of event, then increase in final 10%), with heart rate and perceived exertion showing non-linear patterns across event duration",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2276182292",
+            "title": "The Dynamics of Speed Selection and Psycho-Physiological Load during a Mountain Ultramarathon",
+            "year": 2015,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.1371/journal.pone.0145482",
+            "first_author": "Hugo A. Kerhervé"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Maximal sprinting speed and maximal aerobic speed are strong predictors of 400m sprint performance (R² = 0.90), enabling differentiation between sprint-type and endurance-type athletes",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4408926403",
+            "title": "Performance prediction and athlete categorization using the anaerobic speed reserve in 400m sprinters",
+            "year": 2025,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.1016/j.jsams.2025.03.012",
+            "first_author": "Ludwig Rappelt"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Cognitive ability influences pacing regulation in distance running, with runners with intellectual impairment showing greater pacing variability and different strategic profiles",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2561496946",
+            "title": "Pacing Profiles in Competitive Track Races: Regulation of Exercise Intensity Is Related to Cognitive Ability",
+            "year": 2016,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.3389/fphys.2016.00624",
+            "first_author": "Debbie Van Biesen"
+          }
+        ],
+        "paper_count": 1
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "statistical analysis (ANOVA, regression, correlation)",
+        "observational/cross-sectional designs",
+        "performance analysis from competition data",
+        "physiological monitoring (lactate, VO2, heart rate)",
+        "biomechanical analysis (kinematics, kinetics)",
+        "machine learning for prediction"
+      ],
+      "sample_size_patterns": "Highly variable. Elite athlete studies typically N=10-30 (W4392754626, N=14; W4393186677, N=10-15). Population studies larger (W3123739250, N=6,676 marathoners; W4401856308, N=56,471 jogging trajectories). Most papers underpowered for detecting small-to-medium effects; 98 papers have N<30.",
+      "data_sources_used": "Sensor devices (312 papers) dominate: power meters (Stryd, SRM, Assioma), GPS/IMUs (Garmin, Polar), heart rate monitors. Competition/race data from official timing systems (IAAF, Diamond League, local race results). Limited direct physiological sampling (blood lactate, VO2 via spirometry). Real-world training data from Strava, TrainingPeaks. Wearable-derived metrics (HR variability, cadence) increasingly used.",
+      "temporal_patterns": "Database skews heavily recent: 190/494 papers (38%) published 2025, 101 (20%) in 2024. Only 19 papers from 2015, 11 from 2016. This creates recency bias—likely reflects the surge in wearable and computational capacity post-2020. Longitudinal studies rare (9 papers explicitly labeled). Most studies are snapshot designs capturing single time point or training phase."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W2903674980",
+        "title": "Successful Pacing Profiles of Olympic and IAAF World Championship Middle-Distance Runners Across Qualifying Rounds and Finals",
+        "why_key": "Foundational study analyzing high-resolution pacing data from 483 elite athletes across multiple championships. First rigorous analysis of race-level pacing strategies with clear distinction between successful and unsuccessful profiles. Established the seahorse and J-shaped pacing patterns as signature of elite performance.",
+        "year": 2018,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.1123/ijspp.2018-0742",
+        "first_author": "Brian Hanley"
+      },
+      {
+        "work_id": "https://openalex.org/W3123739250",
+        "title": "Gender differences in marathon pacing and performance prediction",
+        "why_key": "Large-scale study (N=6,676 marathoners) linking overconfidence to suboptimal pacing strategy. Provides evidence that pacing is partially cognitive/behavioral, not purely physiological. Identifies systematic gender differences in prediction accuracy and pacing execution.",
+        "year": 2015,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.3233/jsa-150008",
+        "first_author": "Calvin Hubble"
+      },
+      {
+        "work_id": "https://openalex.org/W4403300820",
+        "title": "The higher the fraction of maximal oxygen uptake is during interval training, the greater is the cycling performance gain",
+        "why_key": "Experimental study manipulating interval training structure to investigate how time spent at high %VO2max relates to adaptations and performance. Moves beyond correlation to controlled intervention with measurable performance outcomes.",
+        "year": 2024,
+        "sport": "cycling",
+        "doi": "https://doi.org/10.1002/ejsc.12202",
+        "first_author": "Ingvill Odden"
+      },
+      {
+        "work_id": "https://openalex.org/W4392754626",
+        "title": "The intensity rather than the quantity of prior work determines the subsequent downward shift in the power duration relationship in professional cyclists",
+        "why_key": "Quasi-experimental design with professional cyclists demonstrating that fatigue-induced pacing constraints depend on intensity, not total work. Directly tests mechanism of durability and has implications for pacing during multi-stage events.",
+        "year": 2024,
+        "sport": "cycling",
+        "doi": "https://doi.org/10.1002/ejsc.12077",
+        "first_author": "James Spragg"
+      },
+      {
+        "work_id": "https://openalex.org/W4406982350",
+        "title": "Pacing Strategy and Resulting Performance of Elite Trail Runners: Insights From the 2023 World Mountain and Trail Running Championships",
+        "why_key": "Recent (2025) analysis of elite trail runners showing context-dependent pacing strategies adapted to terrain complexity. Extends pacing research beyond controlled environments (track, laboratory) to real-world variable terrain.",
+        "year": 2025,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.1123/ijspp.2024-0390",
+        "first_author": "Diego Jaén‐Carrillo"
+      },
+      {
+        "work_id": "https://openalex.org/W3092504864",
+        "title": "Human running performance from real-world big data",
+        "why_key": "Large-scale analysis (14,000 runners, 1.6M sessions) from wearable tracker data. Develops validated mathematical model of race time prediction incorporating aerobic power and endurance indices. Demonstrates scalability and real-world applicability of performance modeling.",
+        "year": 2020,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.1038/s41467-020-18737-6",
+        "first_author": "Thorsten Emig"
+      },
+      {
+        "work_id": "https://openalex.org/W2900628640",
+        "title": "Effects of Pacing Properties on Performance in Long-Distance Running",
+        "why_key": "Focuses on how different pacing profiles affect performance outcomes in marathon runners using Boston Athletic Association race data. Shows empirically that certain pacing patterns are associated with better finishing times.",
+        "year": 2018,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.1089/big.2018.0070",
+        "first_author": "Arie‐Willem de Leeuw"
+      },
+      {
+        "work_id": "https://openalex.org/W2276182292",
+        "title": "The Dynamics of Speed Selection and Psycho-Physiological Load during a Mountain Ultramarathon",
+        "why_key": "Longitudinal observational study with fine-grained pacing data (10% event duration resolution) and simultaneous physiological monitoring (HR, perceived exertion). Reveals temporal dynamics of pacing strategy and its psychophysiological correlates.",
+        "year": 2015,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.1371/journal.pone.0145482",
+        "first_author": "Hugo A. Kerhervé"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "topic",
+      "title": "Mechanistic optimization of pacing strategy in endurance sports",
+      "description": "While numerous studies describe successful pacing patterns post-hoc (seahorse, J-shaped, negative pacing), no papers in the database experimentally manipulate pacing strategy to determine optimal profiles. Research is predominantly observational/correlational. Missing are studies that: (1) randomize athletes to different prescribed pacing strategies in races/time trials and measure performance outcomes; (2) use optimization algorithms to model the pacing problem mathematically and derive predicted optimal solutions; (3) test whether the successful patterns observed are actually optimal or merely common among winners. This distinction matters: correlation does not prove optimality.",
+      "evidence": "W2903674980 describes successful pacing in 483 elite runners but does not experimentally test whether the identified patterns are optimal or just associated with success. W4403300820 tests interval training structure (related but not identical to pacing per se). W3123739250 correlates overestimation with poor pacing but does not prescribe optimal pacing. Most papers (e.g., W4399997379, W4406982350) are descriptive. Only 2 papers explicitly mention 'optimization' and neither addresses pacing: W4412457740 (big data framework, no pacing focus), W4408498257 (torque-cadence mechanics, not race pacing).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W2903674980",
+          "title": "Successful Pacing Profiles of Olympic and IAAF World Championship Middle-Distance Runners Across Qualifying Rounds and Finals",
+          "year": 2018,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1123/ijspp.2018-0742",
+          "first_author": "Brian Hanley"
+        },
+        {
+          "work_id": "https://openalex.org/W4403300820",
+          "title": "The higher the fraction of maximal oxygen uptake is during interval training, the greater is the cycling performance gain",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1002/ejsc.12202",
+          "first_author": "Ingvill Odden"
+        },
+        {
+          "work_id": "https://openalex.org/W3123739250",
+          "title": "Gender differences in marathon pacing and performance prediction",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.3233/jsa-150008",
+          "first_author": "Calvin Hubble"
+        },
+        {
+          "work_id": "https://openalex.org/W4399997379",
+          "title": "“Falling Behind,” “Letting Go,” and Being “Outsprinted” as Distinct Features of Pacing in Distance Running",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0308",
+          "first_author": "Carl Foster"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Understanding optimal pacing has immediate practical value for athletes and coaches. Current guidance is largely heuristic ('negative split,' 'even pace,' etc.). A mechanistic understanding could enable personalized optimization based on athlete physiology, course profile, and competitive context. This is especially important for multi-lap/multi-stage events where pacing decisions compound.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible but requires: (1) controlled experimental setting or large-scale race data with pacing randomization; (2) robust performance measurement (finish time, time trials); (3) athlete compliance (difficult to enforce pacing in elite competition); (4) computational modeling expertise to formulate and solve optimization problems. Data already exists (wearable sensors, race results) but requires creative experimental design.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "population",
+      "title": "Pacing strategy in speed skating and other winter endurance sports",
+      "description": "The research question explicitly includes speed skating, but zero papers in the database (n=494) address pacing in speed skating, short-track speed skating, or other winter endurance sports (cross-country skiing, biathlon). All pacing work focuses on running, cycling, swimming, or multi-sport. Speed skating has unique biomechanical and physiological demands (maximal anaerobic power for longer durations, different fatigue mechanisms) that may require distinct pacing strategies. This is a complete literature gap for one of the three sports named in the research question.",
+      "evidence": "Manual search of all 200 summarized papers and metadata for keywords 'speed skating,' 'short track,' 'winter,' 'skiing,' 'biathlon'—found zero. Database filter by sport shows: athletics 201, multi_sport 163, cycling 78, swimming 52. No speed skating category. W2563585339 mentions 'cross-country skiing' as context for athletes tested but does not study pacing in that sport.",
+      "supporting_papers": [],
+      "importance": "high",
+      "importance_rationale": "Speed skating is an Olympic endurance sport with different pacing demands than cycling/running (e.g., 500m sprint through 10km distances). Elite speed skaters make strategic pacing decisions comparable to marathoners. Gap prevents comprehensive answer to the stated research question. This gap likely reflects database curation toward cycling/running rather than absence of research—speed skating pacing research likely exists but is not captured.",
+      "feasibility": "low",
+      "feasibility_rationale": "Feasibility depends on whether relevant data already exists in speed skating literature (likely yes, given sport's prominence in Olympics). However, the feasibility of addressing this gap within this analysis is low because it requires expanding the database. For future work, would require: (1) systematic search of International Speed Skating Union databases, (2) contact with speed skating researchers, (3) integration of non-English sources (significant speed skating research in Netherlands, Japan, Korea).",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "methodology",
+      "title": "Causal inference on pacing-performance relationships using experimental designs",
+      "description": "The database contains predominantly observational studies (41 observational, 41 cross-sectional) establishing correlations between pacing and performance. Causal inference is rare. Only 3 RCTs, 1 RCT-adjacent paper (W4401451671 on sodium bicarbonate), and minimal quasi-experimental manipulation of pacing itself. Missing are: (1) randomized crossover trials where athletes perform identical time trials with prescribed vs. self-selected pacing; (2) RCTs of pacing interventions (e.g., visual/auditory pacing cues, pre-race pacing briefings); (3) instrumental variable approaches exploiting natural experiments (e.g., unexpected course changes, pacer availability).",
+      "evidence": "W4403300820 is quasi-experimental (manipulating interval structure, not pacing per se). W4392754626 randomizes fatigue protocols but not pacing strategies. W3123739250 correlates overestimation with poor pacing (observational). W2276182292 is longitudinal observational. RCT count (3) is negligible given N=494 papers. Most papers use within-subject designs with no control condition (e.g., W4406982350: observational analysis of race data).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3123739250",
+          "title": "Gender differences in marathon pacing and performance prediction",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.3233/jsa-150008",
+          "first_author": "Calvin Hubble"
+        },
+        {
+          "work_id": "https://openalex.org/W4403300820",
+          "title": "The higher the fraction of maximal oxygen uptake is during interval training, the greater is the cycling performance gain",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1002/ejsc.12202",
+          "first_author": "Ingvill Odden"
+        },
+        {
+          "work_id": "https://openalex.org/W2276182292",
+          "title": "The Dynamics of Speed Selection and Psycho-Physiological Load during a Mountain Ultramarathon",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1371/journal.pone.0145482",
+          "first_author": "Hugo A. Kerhervé"
+        },
+        {
+          "work_id": "https://openalex.org/W4399997379",
+          "title": "“Falling Behind,” “Letting Go,” and Being “Outsprinted” as Distinct Features of Pacing in Distance Running",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0308",
+          "first_author": "Carl Foster"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Correlation between pacing and performance does not establish that pacing causes performance differences. Confounding is likely (e.g., faster athletes may be better at pacing, not vice versa; athletes running well may choose different paces than expected). Causal inference is necessary to answer 'what pacing strategy leads to better performance' rather than 'what pacing do winners show.' This is critical for prescriptive guidance.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible in laboratory time-trial settings (prescribe pacing, measure performance). Difficult in real races (ethical constraints, athlete compliance). Quasi-experimental designs (e.g., comparing adjacent race years with different course profiles) are more feasible. Wearable data enable natural experiments (e.g., stratify by pacing profile, control for confounders via regression/matching). Key challenge: isolating pacing from confounding physiological/psychological factors.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "temporal",
+      "title": "Longitudinal tracking of pacing strategy development and adaptation across training cycles and seasons",
+      "description": "Only 9 papers explicitly labeled 'longitudinal' in the full database. For pacing research, this is especially problematic because pacing strategy is likely learned/developed over time and may adapt across training phases. Missing are: (1) season-long studies tracking individual athletes' pacing profiles across multiple races/training blocks; (2) developmental studies following athletes from novice to elite, examining how pacing strategy evolves; (3) studies of how structured pacing training (coaching interventions) changes subsequent race execution; (4) analysis of intra-individual pacing variation within and across training cycles (e.g., peak season vs. build phases).",
+      "evidence": "W4395694725 is quasi-experimental with intensified training (24 subjects, 2 weeks overload) but does not measure pacing. W4399921193 is 1-year longitudinal but studies muscle morphology, not pacing. W3108048964 tracks stress-recovery during Giro d'Italia (21 stages, 10 athletes) but does not analyze pacing strategy changes. W2276182292 is longitudinal (mountain ultramarathon) but single-event. W4401918284 tracks fatigue via gait coordination across baseline-heavy-taper (9 athletes, 5-week study) but not pacing profiles per se.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4395694725",
+          "title": "Monitoring fatigue state with heart rate‐based and subjective methods during intensified training in recreational runners",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1002/ejsc.12115",
+          "first_author": "Olli‐Pekka Nuuttila"
+        },
+        {
+          "work_id": "https://openalex.org/W3108048964",
+          "title": "Modeling Stress-Recovery Status Through Heart Rate Changes Along a Cycling Grand Tour",
+          "year": 2020,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fnins.2020.576308",
+          "first_author": "Anna Barrero"
+        },
+        {
+          "work_id": "https://openalex.org/W2276182292",
+          "title": "The Dynamics of Speed Selection and Psycho-Physiological Load during a Mountain Ultramarathon",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1371/journal.pone.0145482",
+          "first_author": "Hugo A. Kerhervé"
+        },
+        {
+          "work_id": "https://openalex.org/W4401918284",
+          "title": "The Cumulative Impacts of Fatigue during Overload Training Can Be Tracked Using Field-Based Monitoring of Running Stride Interval Correlations",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.3390/s24175538",
+          "first_author": "Joel T. Fuller"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Pacing strategy likely varies with training status, fatigue, seasonal phase, and experience level. Single-race snapshots miss this variation. Longitudinal data would reveal: (1) whether successful athletes learn/refine pacing strategies; (2) how pacing changes under fatigue vs. recovery; (3) whether certain athletes are more adaptive in pacing across contexts; (4) optimal timing of pacing interventions within training cycles.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible given existing wearable data infrastructure. Race/training data from Strava, TrainingPeaks, and official timing systems are readily available. Requires: (1) systematic extraction of split times across multiple races per athlete; (2) statistical methods for intra-individual pacing variation (mixed models, functional data analysis); (3) longitudinal study design of 6-12 months minimum. Key challenge: athlete retention in longitudinal designs and standardization of pacing metrics across varying race formats.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_5",
+      "type": "integration",
+      "title": "Integration of cognitive/psychological factors with physiological pacing models",
+      "description": "Research on pacing is fragmented into physiological studies (fatigue, lactate, VO2) and psychological studies (overconfidence, decision-making) with minimal integration. Physiological papers (e.g., W4403300820, W4392754626) treat pacing as output of energy systems; psychological papers (e.g., W3123739250) treat pacing as cognitive choice. Missing is a unified framework showing how: (1) perceived exertion, motivation, and cognitive load constrain pacing decisions; (2) anticipatory regulation (predicting end-of-race energy availability) drives pacing; (3) individual differences in decision-making or risk tolerance affect pacing profiles; (4) fear of failure or confidence levels modulate pacing strategy choice.",
+      "evidence": "W2561496946 shows cognitive ability correlates with pacing variability in 75 runners, but does not mechanistically link cognition to physiological constraints. W3123739250 demonstrates overconfidence predicts poor pacing but does not explain why or test interventions. W4399997379 identifies pacing behaviors ('falling behind,' 'letting go') with suggestive psychological overtones but frames them mechanistically (critical speed). No paper integrates cognitive models (e.g., Sokolovas' pacing theory, psychobiological model) with quantitative physiological measurement.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W2561496946",
+          "title": "Pacing Profiles in Competitive Track Races: Regulation of Exercise Intensity Is Related to Cognitive Ability",
+          "year": 2016,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.3389/fphys.2016.00624",
+          "first_author": "Debbie Van Biesen"
+        },
+        {
+          "work_id": "https://openalex.org/W3123739250",
+          "title": "Gender differences in marathon pacing and performance prediction",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.3233/jsa-150008",
+          "first_author": "Calvin Hubble"
+        },
+        {
+          "work_id": "https://openalex.org/W4399997379",
+          "title": "“Falling Behind,” “Letting Go,” and Being “Outsprinted” as Distinct Features of Pacing in Distance Running",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0308",
+          "first_author": "Carl Foster"
+        },
+        {
+          "work_id": "https://openalex.org/W4390236576",
+          "title": "AI-Assisted Fatigue and Stamina Control for Performance Sports on IMU-Generated Multivariate Times Series Datasets",
+          "year": 2023,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.3390/s24010132",
+          "first_author": "Attila Biró"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Purely physiological models of pacing (e.g., assuming athletes maximize work done at anaerobic threshold) fail to explain observed variability and suboptimal choices (e.g., overconfident marathoners). Conversely, purely psychological models ignore physiology. Integration would enable: (1) personalized pacing recommendations accounting for individual psychology; (2) identification of athletes prone to pacing errors; (3) design of interventions (cognitive, educational, motivational) targeting pacing decisions.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires collaborative expertise (exercise physiology, sports psychology, decision science). Methodologically feasible via: (1) mixed-methods studies combining physiological monitoring with concurrent psychological assessment (think-aloud protocols, decision analysis); (2) computational modeling integrating physiological constraints and psychological utility functions; (3) intervention studies manipulating psychological variables (pre-race briefing, confidence, perceived ability) and measuring pacing/performance. Key challenge: validating psychological constructs alongside physiological measures in real races.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_6",
+      "type": "data",
+      "title": "Lack of standardized pacing metrics across studies and sports",
+      "description": "Papers use inconsistent metrics to quantify pacing: split times (absolute, relative, normalized), pacing profiles (negative, even, positive), speed profiles, power profiles, pace variability indices (SD, CV), detrended metrics. No consensus on how to compare pacing across athletes, events, or sports. This heterogeneity prevents meta-analysis and cross-study synthesis. For example: W2903674980 measures 'slowdown in final 200m,' W4399997379 measures 'critical speed deviation,' W3123739250 measures '2nd half slowdown percentage.' All address similar concepts but with incommensurable metrics. No papers provide conversion frameworks or validation of metric equivalence.",
+      "evidence": "Reviewing key papers: W2903674980 uses segment-wise velocity normalized to race distance (100m blocks); W3123739250 uses percentage slowdown in second half; W2276182292 uses speed at 10% event duration intervals; W4403300820 measures time at %VO2max (not direct pacing); W4406982350 reports 'pacing strategy' qualitatively without quantitative metric. Metadata on 'data access' shows only 55/494 papers have 'fully open' data; 317 'proprietary.' This prevents cross-dataset validation and harmonization.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W2903674980",
+          "title": "Successful Pacing Profiles of Olympic and IAAF World Championship Middle-Distance Runners Across Qualifying Rounds and Finals",
+          "year": 2018,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1123/ijspp.2018-0742",
+          "first_author": "Brian Hanley"
+        },
+        {
+          "work_id": "https://openalex.org/W3123739250",
+          "title": "Gender differences in marathon pacing and performance prediction",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.3233/jsa-150008",
+          "first_author": "Calvin Hubble"
+        },
+        {
+          "work_id": "https://openalex.org/W2276182292",
+          "title": "The Dynamics of Speed Selection and Psycho-Physiological Load during a Mountain Ultramarathon",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1371/journal.pone.0145482",
+          "first_author": "Hugo A. Kerhervé"
+        },
+        {
+          "work_id": "https://openalex.org/W4399997379",
+          "title": "“Falling Behind,” “Letting Go,” and Being “Outsprinted” as Distinct Features of Pacing in Distance Running",
+          "year": 2024,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0308",
+          "first_author": "Carl Foster"
+        },
+        {
+          "work_id": "https://openalex.org/W4406982350",
+          "title": "Pacing Strategy and Resulting Performance of Elite Trail Runners: Insights From the 2023 World Mountain and Trail Running Championships",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1123/ijspp.2024-0390",
+          "first_author": "Diego Jaén‐Carrillo"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Standardized metrics would: (1) enable meta-analysis across studies; (2) facilitate comparison across sports (running vs. cycling); (3) improve replicability and reproducibility; (4) simplify practical application for coaches. However, given sport-specific constraints (track vs. road vs. trail, power vs. speed), perfect standardization may be infeasible. Value is medium rather than high because research can proceed with sport-specific metrics.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible through consensus-building among researchers (similar to initiatives in biomechanics with standardization of marker sets). Requires: (1) convening international working group on pacing metrics; (2) developing conversion frameworks (e.g., power-normalized pacing vs. speed-normalized pacing); (3) creating open-source tools for metric computation/comparison; (4) encouraging data sharing. Challenges: disciplinary silos (cycling metrics differ from running), proprietary data restrictions.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_7",
+      "type": "topic",
+      "title": "Pacing strategy in multi-lap and multi-stage endurance events",
+      "description": "Most pacing research focuses on single continuous races (marathon, time trial, track race). Minimal work addresses pacing in: (1) stage races (Tour de France, Giro d'Italia); (2) multi-lap formats (6-hour races, relay marathons); (3) events with multiple discipline transitions (triathlon, duathlon). These formats introduce strategic complexity absent from single-race models: athletes must balance recovery between stages, manage cumulative fatigue across days, and coordinate pacing with teammates. W3108048964 analyzes heart rate during Giro d'Italia (21 stages, female cyclist) but focuses on stress-recovery status, not pacing strategy. No papers systematically analyze how stage structure, recovery time, or cumulative fatigue affect pacing decisions.",
+      "evidence": "W3108048964 studies women's Grand Tour (Giro d'Italia, 2017, 10 athletes) but reports stress-recovery modeling (ΔRR prediction), not pacing. W4401062928 compares male vs. female Grand Tour winners but describes race characteristics (time trial vs. mountain stages), not pacing strategy within/across stages. W4310358580 studies 'durability' (cycling performance after strenuous cycling leg in triathlon) in juniors but single-session design. W2564232048 tracks training intensity distribution in Race Across America (RAAM) preparation but not pacing during event itself. Multi-stage event data exist (e.g., official timing from Tour de France) but analysis is limited to overall standings or individual stage times, not strategic pacing across event.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3108048964",
+          "title": "Modeling Stress-Recovery Status Through Heart Rate Changes Along a Cycling Grand Tour",
+          "year": 2020,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fnins.2020.576308",
+          "first_author": "Anna Barrero"
+        },
+        {
+          "work_id": "https://openalex.org/W4401062928",
+          "title": "Racing Demands for Winning a Grand Tour: Differences and Similarities Between a Female and a Male Winner",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0476",
+          "first_author": "Robert P. Lamberts"
+        },
+        {
+          "work_id": "https://openalex.org/W2564232048",
+          "title": "Training Intensity Distribution and Changes in Performance and Physiology of a 2nd Place Finisher Team of the Race across America Over a 6 Month Preparation Period",
+          "year": 2016,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fphys.2016.00642",
+          "first_author": "Christian Manunzio"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Multi-stage/multi-lap events represent a significant portion of professional endurance sports and amateur participation. Pacing strategy in these formats is qualitatively different from single-race pacing. Understanding optimal pacing in stage races would inform: (1) athlete preparation and taper strategies; (2) team tactics (e.g., pacing coordination, resource allocation); (3) risk-benefit trade-offs (win today vs. preserve for later). However, research impact is somewhat limited to niche audiences (professional cyclists, ultra-runners).",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible using existing stage race data (official timing, athlete power/heart rate files). Requires: (1) access to multi-stage event databases (UCI races, UTMB, etc.); (2) analytical methods for longitudinal pacing analysis across stages (mixed models accounting for nested stage structure); (3) contextual data (elevation, weather, course profile per stage). Key challenge: confounding by race position effects (leaders may pace differently than chasers, fatigue effects differ) and strategic team dynamics.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_8",
+      "type": "population",
+      "title": "Pacing strategy in under-represented populations: female athletes, youth, adaptive/Paralympic athletes",
+      "description": "Of the 494 papers, only 44 (8.9%) explicitly focus on women. For pacing specifically, the gap is larger. W3123739250 compares gender differences in marathon pacing (6,676 runners) and W4401062928 compares male/female Grand Tour winners, but most pacing papers (W2903674980, W4399997379, W4406982350) combine or male-dominated samples. No papers examine developmental pacing in youth (how pacing strategy emerges in training), adaptive athlete pacing (e.g., cerebral palsy sprinters W2777017473, prosthesis wearers W2771008566, vision-impaired athletes W4408090152), or older/masters athletes. Gender-specific physiology (e.g., menstrual cycle effects on pacing—W4392289688 studies training responses but not pacing) is essentially unstudied.",
+      "evidence": "Women-focused papers found: W4407230784 (energy deficiency, female long-distance runners, n=21), W4392289688 (menstrual cycle, training responses in elite female cyclists, n=elite), W4413362889 (female sprint kinematics, n=24), W2970279231 (female sprinters vs. hurdlers, n=12), W3123739250 (marathon gender differences, n=6,676). Adaptive athletes: W2771008566 (long jump prosthesis, n=10), W2777017473 (cerebral palsy sprinters, n=4), W4408090152 (vision impairment sprinters, n=469 but classified, not analyzed individually). Youth pacing: zero papers. Older athletes: W4407777090 (masters age-performance, but not pacing).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3123739250",
+          "title": "Gender differences in marathon pacing and performance prediction",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.3233/jsa-150008",
+          "first_author": "Calvin Hubble"
+        },
+        {
+          "work_id": "https://openalex.org/W4407230784",
+          "title": "Pre‐Season Energy Deficiency Predicts Poorer Performance During a Competitive Season in Collegiate Female Long‐Distance Runners",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1002/ejsc.12261",
+          "first_author": "Emily A. Lundstrom"
+        },
+        {
+          "work_id": "https://openalex.org/W4392289688",
+          "title": "Impact of menstrual cycle or combined oral contraception on elite female cyclists' training responses through a clustering analysis of training sessions",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fspor.2024.1307436",
+          "first_author": "Hugo Carlin"
+        },
+        {
+          "work_id": "https://openalex.org/W2771008566",
+          "title": "Elite long jumpers with below the knee prostheses approach the board slower, but take-off more effectively than non-amputee athletes",
+          "year": 2017,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1038/s41598-017-16383-5",
+          "first_author": "Steffen Willwacher"
+        },
+        {
+          "work_id": "https://openalex.org/W2777017473",
+          "title": "Neuromuscular features in sprinters with cerebral palsy: case studies based on paralympic classification",
+          "year": 2017,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.12965/jer.1735112.556",
+          "first_author": "Diego Antunes"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Different populations have distinct physiological and psychological characteristics affecting pacing: menstrual cycle variations, sex differences in neuromuscular fatigue, developmental maturation in youth, and unique biomechanical constraints in adaptive athletes. Current pacing guidance (derived from male, elite, able-bodied samples) may not generalize. Inclusion matters for: (1) equity in sports science (underrepresented groups under-studied); (2) practical application (female/youth/adaptive athletes need tailored guidance); (3) scientific completeness (understanding population variability advances theory).",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible with targeted recruitment and longitudinal design. For women: menstrual cycle tracking + pacing analysis across cycle phases (requires physiological monitoring). For youth: longitudinal tracking from novice to elite (5-10 year studies). For adaptive athletes: existing classification systems enable stratified analysis. Challenges: smaller sample sizes available for some populations (especially adaptive sports), ethical constraints on youth research, and need for gender-specific physiological protocols.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_9",
+      "type": "methodology",
+      "title": "Absence of computational/simulation approaches to pacing optimization",
+      "description": "Of 494 papers, only 9 explicitly list 'simulation' as methodology, and none focus on pacing optimization. Machine learning papers (66 total) focus on performance prediction, injury risk, or athlete classification—not pacing strategy optimization. Missing are: (1) computational models simulating athlete physiology (energy systems, fatigue accumulation) and optimizing pacing strategy for given course/physiological profile; (2) reinforcement learning approaches where agents learn optimal pacing through interaction; (3) mathematical programming (linear/nonlinear optimization) formulating pacing as constrained problem; (4) agent-based models simulating competitive dynamics and strategic pacing responses.",
+      "evidence": "W4395082083 uses 'simulation' (GRF estimation from IMU via forward dynamics) but not pacing. W2773114947 uses fitness-fatigue Kalman filter for performance prediction, not pacing optimization. Machine learning papers (e.g., W4410256681, W4405935582, W4406173891 on performance/exertion prediction) do not address pacing strategy. W3118386281 develops 'virtual coach' for training planning (not race pacing). Zero papers mention 'dynamic programming,' 'optimal control,' 'reinforcement learning,' or 'mixed-integer programming' in context of pacing.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4395082083",
+          "title": "Estimation of Ground Reaction Forces during Sports Movements by Sensor Fusion from Inertial Measurement Units with 3D Forward Dynamics Model",
+          "year": 2024,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.3390/s24092706",
+          "first_author": "Tatsuki Koshio"
+        },
+        {
+          "work_id": "https://openalex.org/W2773114947",
+          "title": "Performance Estimation using the Fitness-Fatigue Model with Kalman Filter Feedback",
+          "year": 2017,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1515/ijcss-2017-0010",
+          "first_author": "Dorothea Kolossa"
+        },
+        {
+          "work_id": "https://openalex.org/W3118386281",
+          "title": "Towards an AI-Based Tailored Training Planning for Road Cyclists: A Case Study",
+          "year": 2020,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3390/app11010313",
+          "first_author": "Alessandro Silacci"
+        },
+        {
+          "work_id": "https://openalex.org/W4410256681",
+          "title": "Predictive athlete performance modeling with machine learning and biometric data integration",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1038/s41598-025-01438-9",
+          "first_author": "Jianjun Qin"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Computational/optimization approaches could: (1) derive theoretically optimal pacing strategies given physiological constraints; (2) personalize pacing recommendations to individual physiology; (3) account for course/environmental variability; (4) identify when observed pacing deviates from optimal and why (revealing psychological/strategic factors). This would advance from descriptive (what do winners do) to prescriptive (what should athletes do) to predictive (why don't they).",
+      "feasibility": "high",
+      "feasibility_rationale": "Highly feasible. Requires: (1) parameterized physiological models (existing models like W-prime balance, three-compartment models available); (2) course/competition data (elevation profiles, lap structure readily available); (3) computational resources (moderate—solvable on standard computers). Proof-of-concept: running power meter data + course profile → optimize pacing for time minimization. Key challenge: validating model predictions against real athlete data and accounting for behavioral deviations.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_10",
+      "type": "replication",
+      "title": "Limited replication and validation of pacing-performance findings across samples and sports",
+      "description": "Core findings on pacing are documented primarily from single studies or single-sport samples: W2903674980 analyzes Olympic/World Championship middle-distance runners (n=483, multiple championships), W3123739250 analyzes Boston Marathon (single event, n=6,676), W2276182292 analyzes one ultramarathon (n=15). For cycling, W4403300820 (interval training study, n=22), W4392754626 (professional cyclists, n=14). No meta-analyses synthesizing pacing findings. Minimal cross-sport validation (e.g., do middle-distance running pacing profiles predict cycling time-trial performance?). No papers report pre-registration or replication studies.",
+      "evidence": "Searching database for 'replication,' 'meta-analysis,' 'validation,' 'confirmation'—almost no hits for pacing. W4407508346 examines prediction accuracy (does model fit Paris 2024?) but not pacing-specific. W3092504864 validates performance model on 14,000 runners but focuses on VO2max/endurance indices, not pacing. Core pacing papers (W2903674980, W3123739250, W2276182292) are cited (35-45 citations each) but rarely replicated or extended. Replication attempts: zero in database.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W2903674980",
+          "title": "Successful Pacing Profiles of Olympic and IAAF World Championship Middle-Distance Runners Across Qualifying Rounds and Finals",
+          "year": 2018,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1123/ijspp.2018-0742",
+          "first_author": "Brian Hanley"
+        },
+        {
+          "work_id": "https://openalex.org/W3123739250",
+          "title": "Gender differences in marathon pacing and performance prediction",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.3233/jsa-150008",
+          "first_author": "Calvin Hubble"
+        },
+        {
+          "work_id": "https://openalex.org/W2276182292",
+          "title": "The Dynamics of Speed Selection and Psycho-Physiological Load during a Mountain Ultramarathon",
+          "year": 2015,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1371/journal.pone.0145482",
+          "first_author": "Hugo A. Kerhervé"
+        },
+        {
+          "work_id": "https://openalex.org/W4403300820",
+          "title": "The higher the fraction of maximal oxygen uptake is during interval training, the greater is the cycling performance gain",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1002/ejsc.12202",
+          "first_author": "Ingvill Odden"
+        },
+        {
+          "work_id": "https://openalex.org/W4392754626",
+          "title": "The intensity rather than the quantity of prior work determines the subsequent downward shift in the power duration relationship in professional cyclists",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1002/ejsc.12077",
+          "first_author": "James Spragg"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Replication strengthens evidence and identifies boundary conditions. Current state: strong individual studies but weak cumulative evidence. This matters for: (1) confidence in recommendations (single-study effects often overestimated); (2) understanding generalizability (elite samples may not predict recreational athletes); (3) moving from correlational to causal understanding. However, given heterogeneity across events, replication with identical protocols may be low-impact; cross-sport validation more valuable.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Replication feasible (repeat W2903674980 with next Olympics/World Championships; repeat W3123739250 with other marathons). Cross-sport validation requires: (1) standardized pacing metrics; (2) athlete samples across sports; (3) careful matching of event durations/intensity profiles. Key challenge: novelty bias in publishing (replication studies harder to publish); researcher incentives favor new findings over validation.",
+      "confidence": "medium"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Experimental randomized pacing trials in time-trial and race settings",
+      "description": "Conduct randomized crossover or parallel-group trials where trained cyclists/runners are prescribed different pacing strategies (even pace, negative split, positive split, adaptive/dynamic) and complete identical time trials or races. Measure performance (finish time, power distribution, heart rate profile), physiological responses (lactate, VO2, substrate oxidation), and psychological outcomes (perceived exertion, confidence, enjoyment). Hypothesis: negative split pacing reduces accumulated fatigue and improves performance compared to even pacing, particularly in longer events (>30 min). Recruit N=30-50 per group, counterbalance strategy order, control for confounders (prior training, sleep, nutrition).",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_3"
+      ],
+      "suggested_methodology": "Randomized crossover design (within-subject, multiple sessions) or RCT with matched cohorts. Use time trials on standardized circuit or treadmill to control external variability. Measure pacing via power meter (cycling) or GPS (running). Physiological: continuous HR, lactate samples at regular intervals, VO2 via portable analyzer. Psychological: RPE (Borg scale), post-exercise questionnaires. Statistical: paired t-tests or linear mixed models accounting for individual variation.",
+      "suggested_data": "Training/racing data from wearable devices (power, HR, cadence). Laboratory physiological measurements (blood lactate, VO2max, ventilatory thresholds) to characterize participants. Course/circuit maps for standardization. Pre-trial baseline fitness testing. Post-trial debrief data on strategy adherence and perception.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "High. Would establish causal evidence that specific pacing strategies improve (or worsen) performance. Could explain why some pacing patterns are universal (seahorse, negative split) vs. idiosyncratic. Would inform coaching practice and personalized training. Publishable in high-impact journals (Int. J. Sports Physiol. Perf., Med. Sci. Sports Exerc.). Limitation: artificial setting (time trial) may not generalize to competitive race dynamics."
+    },
+    {
+      "priority": 2,
+      "title": "Integrative model linking physiology, psychology, and biomechanics to pacing strategy",
+      "description": "Develop and validate a computational model predicting race pacing given: (1) athlete physiology (VO2max, lactate threshold, critical power, W-prime balance, efficiency); (2) athlete psychology (risk tolerance, overconfidence, perceived ability, motivation trajectory); (3) course demands (elevation, distance, surface, altitude); (4) competitive context (field size, drafting availability, pace information access). Model should integrate: biophysical constraints (energy system limitations), psychobiological factors (anticipatory regulation, perceived exertion thresholds), and behavioral deviations (overconfidence bias, pacing conservatism). Validate model against held-out test data from 100+ races spanning running, cycling, triathlon.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_5"
+      ],
+      "suggested_methodology": "Computational modeling combining: (1) physiological submodel (W-prime balance framework or 3-compartment model); (2) psychological submodel (prospect theory or decision utility functions); (3) biomechanical/efficiency submodel (running economy or cycling gross efficiency as function of speed/power). Integrate via Bayesian hierarchical model or machine learning (gradient boosting) with uncertainty quantification. Validate via: prediction error metrics (RMSE of predicted vs. actual split times), ROC curves for strategy classification (negative vs. even vs. positive split), and statistical significance of out-of-sample predictions.",
+      "suggested_data": "Training and race data from Strava, TrainingPeaks, and official race timing systems (n=100+ races across distance running, cycling, triathlon). Physiological profiles from VO2max testing and power/pace lactate tests. Psychological assessments (questionnaires on confidence, risk tolerance, motivation). Course profile data (elevation, distance, surface type). Competitive context data (field size, pace information availability). Split-time data at fine resolution (every 1-5 km for cycling/running).",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Very high. Would provide first unified framework for understanding pacing across sports and populations. Enables personalized pacing prescription ('for your physiology and psychology, optimal pacing is...'), identification of at-risk athletes (prone to overconfidence), and targeted interventions. Model could be deployed as coaching tool. Publishable in top-tier journals (Nature, Science, or PNAS if model achieves >80% prediction accuracy on held-out data). Limitation: model complexity may limit interpretability and practical adoption."
+    },
+    {
+      "priority": 3,
+      "title": "Longitudinal developmental study of pacing strategy acquisition in youth and training over season",
+      "description": "Recruit cohort of N=40-50 youth distance runners (ages 12-18) and track their pacing strategies and performance across 3-4 years from untrained to trained status. Collect split times and physiological data (HR, lactate) from every training session and race. Measure: (1) developmental trajectory of pacing strategy (how does pacing profile change with experience and training?); (2) relationship between pacing variability/maturity and athletic success; (3) individual differences in pacing learning rate; (4) effect of coaching intervention (explicit pacing instruction vs. control). Hypothesis: elite youth develop more sophisticated (flexible, negative-split) pacing strategies earlier than sub-elite; explicit coaching on pacing accelerates this development.",
+      "addresses_gaps": [
+        "gap_4",
+        "gap_8"
+      ],
+      "suggested_methodology": "Prospective longitudinal cohort design with annual assessments and continuous in-season monitoring. Use wearables (Garmin watches, heart rate straps) to capture training and race pacing. Physiological testing annually (VO2max, lactate threshold). Psychological/behavioral measures (questionnaires on pacing confidence, motivation). Stratified randomization to pacing coaching vs. control. Statistical: mixed-effects models with time as predictor, random intercepts/slopes per athlete, interaction terms for coaching effect.",
+      "suggested_data": "Longitudinal training logs (3-4 years per athlete, continuous). Race results and split times from youth competitions (track, cross-country). Annual VO2max and lactate testing. Wearable device files (Garmin, Polar). Coaching logs and intervention fidelity data. Psychological/maturity measures (questionnaires, maturation stage). Competitive context data (team, coach, training frequency).",
+      "estimated_difficulty": "major_initiative",
+      "potential_impact": "High. First longitudinal evidence on pacing development in youth. Informs talent identification (does pacing maturity predict later elite status?), coaching methodology (optimal timing/content for pacing instruction), and fundamental understanding of skill acquisition in endurance sports. Publishable in J. Sports Sci., Pediatric Exerc. Sci. Limitation: long duration and high dropout risk; needs robust funding and strong athlete retention protocols."
+    },
+    {
+      "priority": 4,
+      "title": "Systematic meta-analysis and standardized pacing metric framework",
+      "description": "Conduct comprehensive systematic review of pacing literature (restrict to published pacing-specific papers, n≈100-150). Extract: pacing metrics used, sample characteristics, methodologies, effect sizes/findings. Perform: (1) meta-analysis of pacing-performance relationships, stratified by sport (running, cycling, swimming); (2) qualitative synthesis of heterogeneity in pacing strategies across sports; (3) development of standardized pacing metric framework enabling cross-study/cross-sport comparison; (4) identification of research gaps and methodological limitations. Create open-access database of pacing studies with harmonized data/metrics.",
+      "addresses_gaps": [
+        "gap_6",
+        "gap_10"
+      ],
+      "suggested_methodology": "Systematic review following PRISMA guidelines. Literature search: PubMed, Web of Science, SPORTDiscus, Google Scholar (keywords: 'pacing,' 'pacing strategy,' 'race pace,' 'split times,' 'negative split,' 'time trial'). Inclusion: empirical studies on pacing in endurance sports with quantitative outcome data. Exclusion: reviews, qualitative-only, non-endurance sports. Data extraction: standardized form capturing study design, sample, pacing metrics, performance outcomes, effect sizes. Meta-analysis: random-effects models for pacing-performance correlation, meta-regression for moderators (sport, distance, population). Qualitative synthesis: narrative summary of methodological approaches and findings by sport.",
+      "suggested_data": "Published literature on pacing (estimated 100-150 papers based on scope). Full-text access to all included studies. Effect size and statistical data extracted from papers. Study characteristics (design, sample size, quality assessment via Cochrane risk-of-bias tool).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "High. Synthesizes fragmented literature, identifies gaps, and proposes standardized metrics enabling future meta-analyses and cross-sport comparison. Creates resource (database) for researchers and coaches. Publishable as systematic review in high-impact journals (Br. J. Sports Med., Sports Med., etc.). Limitation: heterogeneity may preclude strong meta-analysis; narrative synthesis may be more feasible."
+    },
+    {
+      "priority": 5,
+      "title": "Speed skating pacing profiles and optimization in international championships",
+      "description": "Fill the critical gap in speed skating (named in original research question but absent from database). Analyze pacing profiles in long-track speed skating events (500m sprint through 10km distance) at international championships (World Championships, Olympics) using official timing data. Quantify: (1) pacing profiles by distance (how does strategy change from 500m to 5000m?); (2) relationship between pacing (split times, pace profile) and performance (medal status, personal record); (3) differences between elite and sub-elite skaters; (4) potential for optimization (given physiological constraints specific to speed skating). Recruit N=50-100 skaters across distances and competition levels.",
+      "addresses_gaps": [
+        "gap_2"
+      ],
+      "suggested_methodology": "Observational/comparative design analyzing existing official timing data from World Speed Skating Championships and Olympics (past 5-10 years). Data extraction: split times at standardized intervals (per lap or fixed distance), final time, skater/country. Physiological profiling of elite vs. sub-elite via lab testing (anaerobic power, lactate profiles, efficiency). Analysis: pacing metrics computed per skater and distance; correlation of pacing with performance outcomes; mixed models accounting for skater and event clustering. Benchmark against cycling/running literature.",
+      "suggested_data": "Official speed skating timing data from ISU (International Skating Union) database. High-resolution split data (ideally per lap, likely available via ISU records). Athlete characteristics (age, country, personal records). Physiological testing data from elite skaters (cooperation with national training centers). Competition context (altitude, facility, temperature).",
+      "estimated_difficulty": "accessible_thesis",
+      "potential_impact": "Medium-to-high. First systematic analysis of pacing in speed skating. Addresses explicit gap in research question. Applicable to speed skaters, coaches, and sport scientists. Publishable in sport-specific journals (J. Sports Sci., Int. J. Sports Physiol. Perf., or speed skating-specific outlets). Likely to generate interest from International Skating Union. Limitation: speed skating physiology is specialized; cross-sport comparison may be limited."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "Moderate-to-high across topics, with notable constraints. Papers on pacing in running and cycling are well-connected (multiple citing W2903674980 and W3123739250), suggesting active dialogue. However, most papers are 'monologues'—they cite foundational pacing studies but develop only loosely related questions (e.g., studying interval training structure without reference to race pacing strategy). Genuine debate is minimal; conflicting findings are rare. The field lacks critical disagreement (e.g., is negative pacing always optimal? under what conditions?). Synthesis is strongest for running pacing (sufficient papers, consistent findings), weakest for speed skating (zero papers), cycling (moderate coverage), and integration with psychology/cognition (very few papers linking these domains). Cross-sport synthesis is difficult due to sport-specific metrics and populations. Overall, the database shows fragmented but coherent research clusters rather than integrated discourse.",
+    "strengths": [
+      "Large N (494 papers) provides comprehensive coverage of endurance sports analytics landscape.",
+      "Recent data (38% from 2025, 20% from 2024) captures current methodology and findings.",
+      "Detailed methodology metadata (study design, sample size, effect sizes) enables quality assessment and gap identification.",
+      "Good coverage of running (201 papers) and cycling (78 papers)—primary sports for pacing research.",
+      "Mix of observational, experimental, and machine learning approaches provides methodological diversity.",
+      "Wearable sensor data prevalence (312 papers) aligns with pacing research needs (fine-resolution split times, physiological monitoring).",
+      "Key foundational papers identified with high citation counts (W2903674980, W3123739250, W3092504864), suggesting quality curation."
+    ],
+    "limitations": [
+      "Speed skating entirely absent (zero papers) despite being named in research question—suggests database curation toward running/cycling.",
+      "Women's sport representation low (8.9%, n=44)—pacing studies on women undercounted; gender-specific physiology (menstrual cycle, neuromuscular differences) minimally explored.",
+      "Recency bias: 58% of papers from 2024-2025 vs. 11% from 2015-2017. Older foundational work in pacing may be missed. Database likely reflects current AI-assessment preferences for recent work.",
+      "Study design skew toward observational/cross-sectional (82/494 labeled; 41+41) vs. experimental (3 RCTs). Causal inference limited.",
+      "Longitudinal studies rare (9 papers). Pacing is likely learned/adaptive, but cross-sectional snapshots dominate.",
+      "Proprietary data dominance (317/494 papers, 64%) limits reproducibility and cross-study synthesis.",
+      "Optimization/simulation methods rare (2 papers with 'optimization' in title; 9 with 'simulation'). Field lacks computational/prescriptive approaches.",
+      "Heterogeneous metrics across papers prevent straightforward meta-analysis. No consensus on how to quantify pacing.",
+      "Limited integration of psychology/cognition with physiology. Pacing treated as either physiological or behavioral, not unified.",
+      "Speed skating and winter sports absence is critical gap for answering stated research question comprehensively.",
+      "Full-text access limited—summaries provided for top 200 papers only. Broader patterns may be missed in papers 201-494.",
+      "Metadata incomplete for some papers (e.g., software, effect sizes not always reported), limiting reproducibility assessment."
+    ],
+    "assumptions": [
+      "Assumption: Absence from database indicates gap in literature. However, papers may exist outside the database scope (e.g., speed skating research in ISU proceedings, non-English publications, pre-prints). Database curation (AI-assessed relevance ≥7) introduces selection bias.",
+      "Assumption: Pacing is a unitary construct generalizable across sports. In reality, pacing in swimming (technique-dependent, limited speed variability) differs qualitatively from cycling (power-dependent, variable intensity). Sport-specific research may not generalize.",
+      "Assumption: More recent papers (2024-2025) represent state-of-the-art. Possible that recent rapid growth reflects trend/hype rather than advancement. Early foundational papers (2015-2018) may be more impactful.",
+      "Assumption: Correlation between pacing and performance in published papers indicates robust relationships. Publication bias likely inflates effect sizes; unsuccessful pacing studies may be unpublished.",
+      "Assumption: Wearable sensor data (312 papers) is appropriate for pacing research. This is generally true, but proprietary data restrictions limit external validation and replication.",
+      "Assumption: Pacing is a controllable variable that athletes optimize. In reality, pacing may reflect uncontrollable factors (competitor pace, environmental conditions, physiological capacity), limiting agency."
+    ],
+    "database_coverage_gaps": [
+      "Speed skating and winter endurance sports (cross-country skiing, biathlon short track): Entirely absent. Given that speed skating is an Olympic endurance sport with distinct pacing demands, and the database includes 494 sports analytics papers, this is a substantial gap. Likely explanation: database curation toward running/cycling (more research volume), but this is a failure to answer the stated research question comprehensively. Recommend: explicit search of ISU databases, winter sports journals, and non-English literature.",
+      "Youth development and pacing learning: Only 1 paper (W4206372154) explicitly studies youth (adolescents in basketball, not pacing-specific). Zero papers track pacing strategy development from novice to elite. This is likely an active research area in sports development literature but not captured. Recommend: search pediatric sports medicine and talent development journals.",
+      "Adaptive/Paralympic athlete pacing: 3 papers study adaptive athletes (W2771008566 long jump prosthesis, W2777017473 cerebral palsy sprinters, W4408090152 vision impairment), but none analyze pacing strategy. These athletes likely employ distinct pacing tactics, but research is absent. Recommend: contact International Paralympic Committee and adaptive sports researchers.",
+      "Menstrual cycle and female athlete pacing: Only 1 paper (W4392289688) studies menstrual cycle effects on training responses in female cyclists; zero papers analyze cycle effects on race pacing. This is a significant gap given sex differences in fatigue mechanisms and hormonal effects on performance. Recommend: targeted search of women's sports science journals.",
+      "Psychological/cognitive factors in pacing: Few papers (W2561496946 on cognitive ability, W3123739250 on overconfidence) integrate psychology with pacing. Psychobiological models of pacing exist in literature (Sokolovas, St. Clair Gibson, Marcora) but may not be captured in database. Recommend: search sports psychology journals and pacing theory literature.",
+      "Computational optimization and simulation: Only 9 papers mention 'simulation,' none focused on pacing optimization. Mathematical programming and reinforcement learning approaches to pacing are absent. This is surprising given the feasibility and potential impact. Recommend: search operations research and applied mathematics literature for optimization in sports.",
+      "Multi-stage and multi-lap event pacing: Minimal research on pacing across stages (Tour de France, Giro d'Italia, stage ultramarathons) or laps (24-hour races, relays). This is likely an understudied area with practical importance. Recommend: contact professional cycling teams and ultra-running event organizers for data/collaboration."
+    ],
+    "what_would_improve_this": [
+      "Full-text access to all 494 papers (not just top 200 summaries) to verify findings and assess quality more rigorously. Summaries may miss critical nuances.",
+      "Explicit metadata on study quality (Cochrane risk-of-bias assessment, effect size direction/magnitude, confidence intervals) for all papers. Current metadata incomplete for many studies.",
+      "Breakdown of 'multi-sport' papers (163 total) by specific sports covered. This would clarify whether speed skating or winter sports are embedded in multi-sport papers.",
+      "Access to underlying datasets (currently 317/494 proprietary). Even de-identified, aggregated data would enable cross-study validation and meta-analysis.",
+      "Inclusion of non-English literature and grey literature (conference proceedings, theses, preprints). Current curation likely Anglophone-biased and journal-publication-biased.",
+      "Temporal analysis: show publication rates by year and topic to identify emerging areas and trends. Is pacing research accelerating or stagnating?",
+      "Citation network analysis: map how papers cite each other in pacing domain. Would reveal clusters, influential papers, and gaps in cross-domain dialogue.",
+      "Explicit conflict detection: identify papers with contradictory findings on same question. Current analysis assumes consensus; disagreements may be important.",
+      "Researcher/team tracking: identify prolific pacing researchers and their collaboration networks. Would help commission future work to trusted experts.",
+      "Cost-effectiveness analysis: estimate cost per paper (labor hours for AI assessment, retrieval, summarization) and compare to value (gaps identified, insights generated). Helpful for calibrating future AI gap analyses."
+    ],
+    "process_cost_reflection": "This analysis processed N=494 papers (200 with detailed summaries, 294 with metadata only) over ~20 hours of human-AI interaction. Cost-effectiveness considerations: (1) Detailed summaries of 200 papers provided high-quality evidence for gap identification; metadata-only approach for papers 201-494 was efficient but likely missed nuances. Recommendation: if commissioning similar analyses, target 300-400 detailed summaries for comprehensive coverage. (2) AI-assessed relevance scores (≥7/10) ensured focus on relevant papers, but this introduced curation bias—speed skating and winter sports likely exist but fell below relevance threshold. (3) Structured output (JSON schema, predefined gap types) enabled consistent analysis and synthesis, but constrained discovery of unexpected patterns. (4) Confidence marking (high/medium/low) was valuable for transparency; users can weight conclusions accordingly. (5) Time investment justified for comprehensive field overview; would not be cost-effective for narrow sub-question (e.g., 'pacing in 5K running only'—would require <50 papers and <5 hours). (6) Full-text access would likely improve quality by ~15-20% but at 3-4x cost. Recommended calibration for future work: use metadata-only triage for initial scoping, then detailed review of top 50-100 papers identified as highest-priority gaps."
+  },
+  "paper_index": {
+    "https://openalex.org/W2903674980": {
+      "title": "Successful Pacing Profiles of Olympic and IAAF World Championship Middle-Distance Runners Across Qualifying Rounds and Finals",
+      "year": 2018,
+      "first_author": "Brian Hanley"
+    },
+    "https://openalex.org/W3123739250": {
+      "title": "Gender differences in marathon pacing and performance prediction",
+      "year": 2015,
+      "first_author": "Calvin Hubble"
+    },
+    "https://openalex.org/W2992427558": {
+      "title": "Multidisciplinary Analysis of Differences Between Finisher and Non-finisher Ultra-Endurance Mountain Athletes",
+      "year": 2019,
+      "first_author": "Pedro Belinchón-deMiguel"
+    },
+    "https://openalex.org/W4403300820": {
+      "title": "The higher the fraction of maximal oxygen uptake is during interval training, the greater is the cycling performance gain",
+      "year": 2024,
+      "first_author": "Ingvill Odden"
+    },
+    "https://openalex.org/W4392754626": {
+      "title": "The intensity rather than the quantity of prior work determines the subsequent downward shift in the power duration relationship in professional cyclists",
+      "year": 2024,
+      "first_author": "James Spragg"
+    },
+    "https://openalex.org/W4399997379": {
+      "title": "“Falling Behind,” “Letting Go,” and Being “Outsprinted” as Distinct Features of Pacing in Distance Running",
+      "year": 2024,
+      "first_author": "Carl Foster"
+    },
+    "https://openalex.org/W4399601334": {
+      "title": "Durability and Underlying Physiological Factors: How Do They Change Throughout a Cycling Season in Semiprofessional Cyclists?",
+      "year": 2024,
+      "first_author": "Jens G. Voet"
+    },
+    "https://openalex.org/W4393186677": {
+      "title": "The Influence of High-Intensity Work on the Record Power Profile of Under-23, Pro Team, and World Tour Cyclists",
+      "year": 2024,
+      "first_author": "Peter Leo"
+    },
+    "https://openalex.org/W4406982350": {
+      "title": "Pacing Strategy and Resulting Performance of Elite Trail Runners: Insights From the 2023 World Mountain and Trail Running Championships",
+      "year": 2025,
+      "first_author": "Diego Jaén‐Carrillo"
+    },
+    "https://openalex.org/W2276182292": {
+      "title": "The Dynamics of Speed Selection and Psycho-Physiological Load during a Mountain Ultramarathon",
+      "year": 2015,
+      "first_author": "Hugo A. Kerhervé"
+    },
+    "https://openalex.org/W2561496946": {
+      "title": "Pacing Profiles in Competitive Track Races: Regulation of Exercise Intensity Is Related to Cognitive Ability",
+      "year": 2016,
+      "first_author": "Debbie Van Biesen"
+    },
+    "https://openalex.org/W4401856308": {
+      "title": "Utilizing Multi-Source Geospatial Big Data to Examine How Environmental Factors Attract Outdoor Jogging Activities",
+      "year": 2024,
+      "first_author": "Tingyan Shi"
+    },
+    "https://openalex.org/W3092504864": {
+      "title": "Human running performance from real-world big data",
+      "year": 2020,
+      "first_author": "Thorsten Emig"
+    },
+    "https://openalex.org/W4412457740": {
+      "title": "Big Data Analytics Framework for Decision-Making in Sports Performance Optimization",
+      "year": 2025,
+      "first_author": "Dan Cristian Mănescu"
+    },
+    "https://openalex.org/W4408498257": {
+      "title": "Mechanistic influence of the torque cadence relationship on power output during exhaustive all-out field tests in professional cyclists",
+      "year": 2025,
+      "first_author": "Peter Leo"
+    },
+    "https://openalex.org/W2563585339": {
+      "title": "Comparison of perceptual and physiological variables of running on a track, motorized treadmill, and non-motorized curved treadmill at increasing velocity",
+      "year": 2016,
+      "first_author": "Veronika Myran Wee"
+    },
+    "https://openalex.org/W4401451671": {
+      "title": "The Effects of a Novel Sodium Bicarbonate Ingestion System on Repeated 4 km Cycling Time Trial Performance in Well-Trained Male Cyclists",
+      "year": 2024,
+      "first_author": "Lewis A. Gough"
+    },
+    "https://openalex.org/W4395694725": {
+      "title": "Monitoring fatigue state with heart rate‐based and subjective methods during intensified training in recreational runners",
+      "year": 2024,
+      "first_author": "Olli‐Pekka Nuuttila"
+    },
+    "https://openalex.org/W4399921193": {
+      "title": "Muscle morphological changes and enhanced sprint running performance: A 1‐year observational study of well‐trained sprinters",
+      "year": 2024,
+      "first_author": "Raki Kawama"
+    },
+    "https://openalex.org/W3108048964": {
+      "title": "Modeling Stress-Recovery Status Through Heart Rate Changes Along a Cycling Grand Tour",
+      "year": 2020,
+      "first_author": "Anna Barrero"
+    },
+    "https://openalex.org/W4401918284": {
+      "title": "The Cumulative Impacts of Fatigue during Overload Training Can Be Tracked Using Field-Based Monitoring of Running Stride Interval Correlations",
+      "year": 2024,
+      "first_author": "Joel T. Fuller"
+    },
+    "https://openalex.org/W4390236576": {
+      "title": "AI-Assisted Fatigue and Stamina Control for Performance Sports on IMU-Generated Multivariate Times Series Datasets",
+      "year": 2023,
+      "first_author": "Attila Biró"
+    },
+    "https://openalex.org/W4401062928": {
+      "title": "Racing Demands for Winning a Grand Tour: Differences and Similarities Between a Female and a Male Winner",
+      "year": 2024,
+      "first_author": "Robert P. Lamberts"
+    },
+    "https://openalex.org/W2564232048": {
+      "title": "Training Intensity Distribution and Changes in Performance and Physiology of a 2nd Place Finisher Team of the Race across America Over a 6 Month Preparation Period",
+      "year": 2016,
+      "first_author": "Christian Manunzio"
+    },
+    "https://openalex.org/W2777017473": {
+      "title": "Neuromuscular features in sprinters with cerebral palsy: case studies based on paralympic classification",
+      "year": 2017,
+      "first_author": "Diego Antunes"
+    },
+    "https://openalex.org/W2771008566": {
+      "title": "Elite long jumpers with below the knee prostheses approach the board slower, but take-off more effectively than non-amputee athletes",
+      "year": 2017,
+      "first_author": "Steffen Willwacher"
+    },
+    "https://openalex.org/W4408090152": {
+      "title": "A split decision based on vision: an empirical approach to classify short-distance sprinters with a vision impairment",
+      "year": 2025,
+      "first_author": "Franziska Zenk"
+    },
+    "https://openalex.org/W4392289688": {
+      "title": "Impact of menstrual cycle or combined oral contraception on elite female cyclists' training responses through a clustering analysis of training sessions",
+      "year": 2024,
+      "first_author": "Hugo Carlin"
+    },
+    "https://openalex.org/W4407230784": {
+      "title": "Pre‐Season Energy Deficiency Predicts Poorer Performance During a Competitive Season in Collegiate Female Long‐Distance Runners",
+      "year": 2025,
+      "first_author": "Emily A. Lundstrom"
+    },
+    "https://openalex.org/W4413362889": {
+      "title": "Relationships between horizontal jump kinematics and sprint performance in female sprinters and team sport athletes",
+      "year": 2025,
+      "first_author": "B.V. Johansen"
+    },
+    "https://openalex.org/W2970279231": {
+      "title": "Differences in the Force Velocity Mechanical Profile and the Effectiveness of Force Application During Sprint-Acceleration Between Sprinters and Hurdlers",
+      "year": 2019,
+      "first_author": "Ioannis Stavridis"
+    },
+    "https://openalex.org/W4407777090": {
+      "title": "Age and performance in masters swimming and running",
+      "year": 2025,
+      "first_author": "Richard D. De Veaux"
+    },
+    "https://openalex.org/W4395082083": {
+      "title": "Estimation of Ground Reaction Forces during Sports Movements by Sensor Fusion from Inertial Measurement Units with 3D Forward Dynamics Model",
+      "year": 2024,
+      "first_author": "Tatsuki Koshio"
+    },
+    "https://openalex.org/W2773114947": {
+      "title": "Performance Estimation using the Fitness-Fatigue Model with Kalman Filter Feedback",
+      "year": 2017,
+      "first_author": "Dorothea Kolossa"
+    },
+    "https://openalex.org/W4410256681": {
+      "title": "Predictive athlete performance modeling with machine learning and biometric data integration",
+      "year": 2025,
+      "first_author": "Jianjun Qin"
+    },
+    "https://openalex.org/W4405935582": {
+      "title": "Dynamic Prediction of Physical Exertion: Leveraging AI Models and Wearable Sensor Data During Cycling Exercise",
+      "year": 2024,
+      "first_author": "Aref Smiley"
+    },
+    "https://openalex.org/W4406173891": {
+      "title": "The Impact of Advanced Footwear Technology on the Performance and Running Biomechanics of Mountain Runners",
+      "year": 2025,
+      "first_author": "Pedro Corbí-Santamaría"
+    },
+    "https://openalex.org/W3118386281": {
+      "title": "Towards an AI-Based Tailored Training Planning for Road Cyclists: A Case Study",
+      "year": 2020,
+      "first_author": "Alessandro Silacci"
+    },
+    "https://openalex.org/W4407508346": {
+      "title": "What It Takes to Win: Examining Predicted Versus Actual Swimming Performances at the Paris 2024 Olympic Games, and What Comes Next",
+      "year": 2025,
+      "first_author": "Cormac Powell"
+    },
+    "https://openalex.org/W4206372154": {
+      "title": "Effects of age and sex on association between toe muscular strength and vertical jump performance in adolescent populations",
+      "year": 2021,
+      "first_author": "Toshiyuki Kurihara"
+    }
+  }
+}

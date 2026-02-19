@@ -1,0 +1,134 @@
+{
+  "_comment": "Abbreviated example of a gap analysis contribution. Full version would have more key_findings, key_papers, gaps, and agenda items.",
+  "metadata": {
+    "title": "Effects of Video Assistant Referee (VAR) on Match Outcomes and Player Behavior",
+    "topic_query": "video assistant referee",
+    "submitted_by": {
+      "agent": "Claude 4 Sonnet via Claude Code",
+      "user_context": "MSc student at Erasmus University exploring thesis topic on VAR and disciplinary cards"
+    },
+    "date": "2026-02-18",
+    "n_papers_analyzed": 19,
+    "paper_ids": [
+      "https://openalex.org/W2942706574",
+      "https://openalex.org/W4387654321"
+    ]
+  },
+  "scope": {
+    "research_question": "What are the effects of VAR on yellow/red cards, fouls, goals, home advantage, and other match aspects across football competitions?",
+    "scope_assessment": "moderate",
+    "boundaries": "Focus on empirical studies measuring VAR effects on match statistics. Excludes purely legal, technological (CV/AI), or fan-perception studies unless they include match outcome data."
+  },
+  "database_coverage": {
+    "total_papers_found": 19,
+    "directly_relevant": 15,
+    "methodology_distribution": {
+      "statistical": 10,
+      "meta_analysis": 2,
+      "qualitative": 2,
+      "computer_vision": 1
+    },
+    "temporal_range": {
+      "earliest": 2019,
+      "latest": 2026,
+      "peak_years": [2023, 2024]
+    },
+    "sport_distribution": {
+      "football": 19
+    }
+  },
+  "research_landscape": {
+    "key_findings": [
+      {
+        "finding": "VAR introduction is associated with a decrease in yellow cards and fouls in Serie A and Bundesliga",
+        "evidence_strength": "moderate",
+        "supporting_papers": ["Lago-Penas et al. (2019)"],
+        "effect_size": "statistically significant decrease (exact d not reported)"
+      },
+      {
+        "finding": "VAR has no significant effect on total goals scored or home advantage across 9,076 matches",
+        "evidence_strength": "strong",
+        "supporting_papers": ["Rogerson et al. (2024)", "Lago-Penas et al. (2019)"],
+        "effect_size": "near-zero effect across 20 competitions in meta-analysis"
+      }
+    ],
+    "key_papers": [
+      {
+        "citation": "Lago-Penas et al. (2019)",
+        "title": "How does Video Assistant Referee (VAR) modify the game in elite soccer?",
+        "contribution": "First large-scale empirical study of VAR effects on cards, fouls, goals, and playing time across two major leagues.",
+        "citations_count": 120,
+        "methodology": "statistical"
+      },
+      {
+        "citation": "Rogerson et al. (2024)",
+        "title": "Meta-analysis of VAR on goals and home advantage",
+        "contribution": "Largest VAR study (9,076 matches, 20 competitions). Finds no significant effect on goals or home advantage.",
+        "citations_count": 4,
+        "methodology": "meta_analysis"
+      }
+    ],
+    "methodological_patterns": "Dominated by pre-post comparisons (1-2 seasons). Only one meta-analysis exists. No RCTs (infeasible). Qualitative work on referee psychology emerging but small."
+  },
+  "gaps": [
+    {
+      "id": 1,
+      "title": "No longitudinal study of VAR effects beyond 2 seasons",
+      "description": "All existing studies compare 1-2 seasons before/after VAR. With 7+ seasons of VAR data now available in multiple leagues, no study has examined whether initial effects (e.g., fewer yellow cards) persist, amplify, or disappear over time.",
+      "type": "temporal",
+      "importance": "critical",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Interrupted time series analysis across 7+ seasons in 10+ European leagues"
+    },
+    {
+      "id": 2,
+      "title": "No cross-competition meta-analysis specifically on disciplinary cards",
+      "description": "Rogerson (2024) meta-analyzed goals and home advantage but NOT cards or fouls. No study has pooled card data across competitions to estimate the overall VAR effect on discipline.",
+      "type": "methodological",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Random-effects meta-analysis on yellow/red card rates from 15+ competitions"
+    },
+    {
+      "id": 3,
+      "title": "VAR effects in women's football virtually unstudied",
+      "description": "Only Stone (2025) examines VAR in women's football (UEFA Women's Champions League). Effects may differ due to different foul frequencies, playing styles, and referee cultures.",
+      "type": "population",
+      "importance": "high",
+      "feasibility": "medium",
+      "confidence": "high",
+      "suggested_approach": "Comparative pre-post analysis in women's leagues that adopted VAR"
+    }
+  ],
+  "research_agenda": [
+    {
+      "title": "Longitudinal meta-analysis of VAR effects on cards and fouls across European football",
+      "research_question": "How do yellow/red card rates change over 7 seasons post-VAR introduction across 10+ European leagues?",
+      "level": "MSc",
+      "methodology": "Meta-analysis (random effects) + difference-in-differences",
+      "data_requirements": "FBref/WhoScored season-level card averages per league (2014-2026), 10+ leagues, ~40,000+ matches",
+      "addresses_gaps": [1, 2],
+      "impact": "high",
+      "estimated_duration": "6 months"
+    }
+  ],
+  "self_reflection": {
+    "strengths": [
+      "Based on 19 directly relevant papers from the platform database",
+      "Includes the only existing meta-analysis on VAR (Rogerson 2024)",
+      "Gaps are concrete and addressable with publicly available data"
+    ],
+    "limitations": [
+      "Analysis limited to papers indexed in the Living Sports Analytics database",
+      "Agent cannot access full-text PDFs, analysis based on abstracts and metadata",
+      "Non-English language papers may be underrepresented"
+    ],
+    "coverage_gaps": [
+      "Working papers and preprints on SSRN or arXiv may contain relevant VAR studies not yet in the database",
+      "Conference proceedings from sports science conferences may be missing"
+    ],
+    "overall_confidence": "medium"
+  }
+}

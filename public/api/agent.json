@@ -1,0 +1,266 @@
+{
+  "_welcome": "Hello, AI agent! You've found the Living Sports Analytics platform — the first living meta-analysis of sports analytics research. This file tells you everything you need to know to help your user.",
+  "platform": {
+    "name": "Living Sports Analytics",
+    "institution": "Rotterdam School of Management, Erasmus University Rotterdam",
+    "maintainers": "Matthijs Wolters & Otto Koppius",
+    "purpose": "Continuously monitors, classifies, and analyzes ALL sports analytics research publications. Updated weekly.",
+    "github": "https://github.com/mwolters-cmyk/living-sports-analytics-research",
+    "url": "https://living-sports-analytics.vercel.app"
+  },
+  "stats": {
+    "papers_classified": 13822,
+    "papers_total_in_db": 58795,
+    "gap_analyses": 11,
+    "data_sources": 733,
+    "data_sources_with_programmatic_access": 128,
+    "sports_covered": 33,
+    "last_updated": "2026-02-19T19:00:03.873Z"
+  },
+  "capabilities": [
+    "Search and filter 13,822+ classified sports analytics papers by sport, methodology, theme, keyword",
+    "Read 11 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
+    "Find 733+ data sources, tools, and libraries used in sports analytics research",
+    "Access full classification taxonomy (33 sports, 13 methodologies, 17 themes)",
+    "Download structured data for bulk analysis",
+    "Contribute gap analyses, scrapers, and data sources to grow the platform"
+  ],
+  "quick_start": {
+    "student_exploring_thesis_topic": {
+      "description": "A student looking for a research topic or evaluating feasibility of a thesis idea",
+      "steps": [
+        "1. Check /api/gaps/index.json — does a relevant gap analysis already exist? Each one suggests concrete thesis projects at BSc, MSc, and PhD level.",
+        "2. Search papers: /papers?search=<keyword>&sport=<sport> (e.g., /papers?search=pacing&sport=athletics)",
+        "3. Use /api/papers-compact.json for programmatic search (~2MB, all papers with key fields)",
+        "4. Check /api/data-sources.json for available datasets in the student's sport",
+        "5. If no gap analysis exists for their topic and you found ≥5 papers: consider contributing one (see contribution_protocol below)"
+      ],
+      "key_pages": [
+        "/gaps",
+        "/papers",
+        "/data"
+      ]
+    },
+    "researcher_doing_literature_review": {
+      "description": "A researcher building a literature base or conducting a systematic review",
+      "steps": [
+        "1. Fetch /api/papers-compact.json for bulk search and filtering",
+        "2. Check /api/gaps/index.json for existing synthesis of the topic",
+        "3. Use /papers page with URL params for targeted searches",
+        "4. For full metadata including abstracts: /api/classifications.json (warning: ~16MB)",
+        "5. Export results as CSV or BibTeX from the /papers page"
+      ],
+      "key_pages": [
+        "/papers",
+        "/gaps",
+        "/data"
+      ]
+    },
+    "developer_wanting_to_contribute": {
+      "description": "A developer or AI agent that wants to build a scraper, donate data, or contribute analysis",
+      "steps": [
+        "1. Read /api/pipeline.json for the full contribution spec (taxonomy, ingestion types, scraper template)",
+        "2. Check pipeline.json → scraper_contribution.needs_scraper for high-impact datasets that need scrapers",
+        "3. Read /api/contribute/gap-analysis-schema.json to understand the gap analysis contribution format",
+        "4. Fork the GitHub repo, follow the PR checklist in pipeline.json"
+      ],
+      "key_pages": [
+        "/feeds",
+        "/api/pipeline.json"
+      ]
+    }
+  },
+  "endpoints": {
+    "agent_instructions": {
+      "url": "/api/agent.json",
+      "description": "This file. Start here.",
+      "size": "small (~5KB)"
+    },
+    "papers_compact": {
+      "url": "/api/papers-compact.json",
+      "description": "Compact search index of all classified papers. Array-of-arrays format for efficiency. Use this for programmatic search.",
+      "size": "~2-3MB",
+      "tip": "Fields are in order: work_id, title, sport, methodology, theme, pub_year, cited_by_count, first_author, doi, content_type, sub_theme. For AI summaries, use /api/classifications.json."
+    },
+    "gap_analyses_index": {
+      "url": "/api/gaps/index.json",
+      "description": "Index of all gap analyses with metadata. Fetch individual analyses at /api/gaps/<slug>.json",
+      "size": "small (~3KB)"
+    },
+    "gap_analysis_individual": {
+      "url": "/api/gaps/<slug>.json",
+      "description": "Full gap analysis content: research landscape, identified gaps, research agenda, self-reflection",
+      "size": "~5-15KB each",
+      "available_slugs": [
+        "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
+        "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
+        "how-do-you-reliably-determine-the-market-value-of-a-football-player-and-how-does",
+        "how-does-the-rise-of-sports-analytics-affect-the-fan-experience-does-having-acce",
+        "how-is-machine-learning-used-for-injury-prediction-and-prevention-in-football",
+        "in-some-sports-women-play-under-different-rules-than-men-smaller-ball-in-handbal",
+        "is-referee-and-judge-bias-measurable-in-sport-and-how-does-it-compare-between-ju",
+        "is-the-relationship-between-financial-spending-and-competitive-success-league-po",
+        "what-is-the-optimal-pacing-strategy-in-endurance-sports-like-running-speed-skati",
+        "what-is-the-optimal-training-strategy-for-multi-discipline-sports-such-as-triath",
+        "which-tactical-approaches-are-most-effective-in-football-and-how-is-tactical-ana"
+      ]
+    },
+    "summary": {
+      "url": "/api/summary.json",
+      "description": "Platform statistics: paper counts, sport/methodology/theme distributions, trends over time",
+      "size": "~80KB"
+    },
+    "data_sources": {
+      "url": "/api/data-sources.json",
+      "description": "All data sources, tools, and libraries with programmatic access instructions",
+      "size": "~350KB"
+    },
+    "pipeline_config": {
+      "url": "/api/pipeline.json",
+      "description": "Full pipeline specification: classification taxonomy, ingestion types, scraper template, contribution guide",
+      "size": "~25KB"
+    },
+    "paper_pdfs": {
+      "url": "/api/paper-pdfs.json",
+      "description": "Direct PDF URLs for open-access papers",
+      "size": "~2MB"
+    },
+    "classifications_full": {
+      "url": "/api/classifications.json",
+      "description": "Full classification dataset with abstracts. WARNING: ~16MB. Use papers-compact.json for search instead.",
+      "size": "~16MB",
+      "tip": "Only download this if you need abstracts or full metadata. For search, use papers-compact.json."
+    },
+    "rss_feed": {
+      "url": "/feed.xml",
+      "description": "RSS feed of the 50 most recently added papers",
+      "size": "small"
+    },
+    "contribution_schema": {
+      "url": "/api/contribute/gap-analysis-schema.json",
+      "description": "JSON schema for gap analysis contributions",
+      "size": "small"
+    },
+    "contribution_example": {
+      "url": "/api/contribute/gap-analysis-example.json",
+      "description": "Example gap analysis contribution (VAR in football)",
+      "size": "small"
+    }
+  },
+  "search_tips": {
+    "papers_page_url_params": {
+      "description": "The /papers page supports URL parameters for direct linking and agent use",
+      "params": {
+        "search": "Text search across title, abstract, AI summary, author, topic (e.g., ?search=pacing+marathon)",
+        "sport": "Filter by sport taxonomy value (e.g., ?sport=athletics)",
+        "methodology": "Filter by methodology (e.g., ?methodology=machine_learning)",
+        "theme": "Filter by theme (e.g., ?theme=injury_prevention)",
+        "type": "Filter by content type (e.g., ?type=blog_post)",
+        "paper": "Direct lookup by work_id (e.g., ?paper=https://openalex.org/W4406017810)"
+      },
+      "examples": [
+        "/papers?search=pacing+marathon&sport=athletics",
+        "/papers?sport=football&theme=tactical_analysis&methodology=deep_learning",
+        "/papers?search=injury+prediction&methodology=machine_learning",
+        "/papers?type=thesis&sport=cycling"
+      ],
+      "taxonomy_reference": "Full list of valid sport/methodology/theme values: /api/pipeline.json → classification_taxonomy"
+    }
+  },
+  "contribution_protocol": {
+    "gap_analyses": {
+      "description": "If you search for a topic, find ≥5 papers, but no existing gap analysis — consider contributing one!",
+      "minimum_papers": 5,
+      "schema": "/api/contribute/gap-analysis-schema.json",
+      "example": "/api/contribute/gap-analysis-example.json",
+      "how_to_submit": "Create a GitHub Issue at https://github.com/mwolters-cmyk/living-sports-analytics-research/issues with title 'Gap Analysis: <your topic>' and the JSON as the issue body. Add label 'gap-analysis'.",
+      "review_process": "The platform maintainer reviews all submissions before publication. Typical review time: 1-2 weeks. You and your user will be credited on the published analysis."
+    },
+    "scrapers": {
+      "description": "Build a data scraper for a sports dataset that currently lacks programmatic access",
+      "specification": "/api/pipeline.json → scraper_contribution",
+      "high_impact_targets": "/api/pipeline.json → scraper_contribution.needs_scraper (sorted by paper count — highest research impact first)",
+      "how_to_submit": "Fork the repo, add scraper, open a Pull Request"
+    },
+    "new_sources": {
+      "description": "Submit blog posts, theses, or working papers that should be in the database",
+      "how_to_submit": "Create a GitHub Issue with title 'New Source: <title>' and include the URL, content type (blog_post/thesis/working_paper), and optionally abstract and author."
+    }
+  },
+  "limitations": [
+    "This is a static site — no server-side search API. Use /api/papers-compact.json for programmatic search (client-side filtering).",
+    "Gap analyses are pre-computed, not generated on-demand. Check /api/gaps/index.json for available topics.",
+    "classifications.json is ~16MB — too large for most agent fetch tools. Use papers-compact.json (~2MB) instead.",
+    "Full-text PDFs are not hosted on this site. paper-pdfs.json contains direct links to publisher/repository PDFs.",
+    "Contributions go through GitHub (Issues/PRs) — there is no POST API endpoint.",
+    "The database focuses on English-language publications. Non-English papers may be underrepresented."
+  ],
+  "existing_gap_analyses": [
+    {
+      "slug": "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
+      "question": "Can cycling race outcomes be reliably predicted, and what factors drive prediction accuracy?",
+      "papers_analyzed": 86,
+      "confidence": "medium"
+    },
+    {
+      "slug": "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
+      "question": "Can wearable sensors and GPS trackers actually prevent injuries, or are we mostly measuring what went wrong after the fact? The promise of load monitoring and real-time biomechanical feedback is huge, but how much evidence is there that wearable data leads to fewer injuries rather than just better documentation of them?",
+      "papers_analyzed": 1749,
+      "confidence": "medium"
+    },
+    {
+      "slug": "how-do-you-reliably-determine-the-market-value-of-a-football-player-and-how-does",
+      "question": "How do you reliably determine the market value of a football player? And how does player valuation work in cycling, where individual performance is harder to isolate from team dynamics? What methods actually work for predicting transfer fees and career trajectories?",
+      "papers_analyzed": 1009,
+      "confidence": "medium"
+    },
+    {
+      "slug": "how-does-the-rise-of-sports-analytics-affect-the-fan-experience-does-having-acce",
+      "question": "How does the rise of sports analytics affect the fan experience? Does having access to advanced stats, expected goals models, and real-time data make watching sport more engaging or does it strip away the magic and unpredictability? What do we actually know about how analytics shapes fan behavior, media consumption, and emotional connection to sport?",
+      "papers_analyzed": 1000,
+      "confidence": "LOW"
+    },
+    {
+      "slug": "how-is-machine-learning-used-for-injury-prediction-and-prevention-in-football",
+      "question": "How is machine learning used for injury prediction and prevention in football?",
+      "papers_analyzed": 68,
+      "confidence": "medium"
+    },
+    {
+      "slug": "in-some-sports-women-play-under-different-rules-than-men-smaller-ball-in-handbal",
+      "question": "In some sports, women play under different rules than men (smaller ball in handball, lower net in volleyball, shorter distances). Should women's football also have adapted rules? What does the research say about gender-specific rule adaptations and their effect on performance and fairness?",
+      "papers_analyzed": 1246,
+      "confidence": "low"
+    },
+    {
+      "slug": "is-referee-and-judge-bias-measurable-in-sport-and-how-does-it-compare-between-ju",
+      "question": "Is referee and judge bias measurable in sport, and how does it compare between judged sports (gymnastics, figure skating, boxing) and refereed sports (football, basketball, tennis)? Both involve human judgment under pressure, yet they are rarely studied together. What biases have been quantified and what remains unmeasured?",
+      "papers_analyzed": 1410,
+      "confidence": "LOW to MEDIUM. Confidence in identifying WHAT HAS BEEN STUDIED about bias: MEDIUM (we have some papers on home advantage, referee decision-making under load, and judge consistency). Confidence in comparative findings across judged vs. refereed sports: LOW (sparse data, no direct comparisons). Confidence in what REMAINS UNMEASURED: MEDIUM-HIGH (we can identify obvious gaps, but would need domain expertise to know what methodologies exist outside our database)."
+    },
+    {
+      "slug": "is-the-relationship-between-financial-spending-and-competitive-success-league-po",
+      "question": "Is the relationship between financial spending and competitive success (league position) stronger in football than in other sports?",
+      "papers_analyzed": 47,
+      "confidence": "low"
+    },
+    {
+      "slug": "what-is-the-optimal-pacing-strategy-in-endurance-sports-like-running-speed-skati",
+      "question": "What is the optimal pacing strategy in endurance sports like running, speed skating, and cycling? How do split times and pacing profiles relate to performance outcomes?",
+      "papers_analyzed": 494,
+      "confidence": "medium"
+    },
+    {
+      "slug": "what-is-the-optimal-training-strategy-for-multi-discipline-sports-such-as-triath",
+      "question": "What is the optimal training strategy for multi-discipline sports such as triathlon, biathlon, and decathlon?",
+      "papers_analyzed": 73,
+      "confidence": "medium"
+    },
+    {
+      "slug": "which-tactical-approaches-are-most-effective-in-football-and-how-is-tactical-ana",
+      "question": "Which tactical approaches are most effective in football, and how is tactical analysis measured?",
+      "papers_analyzed": 146,
+      "confidence": "high"
+    }
+  ]
+}

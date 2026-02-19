@@ -910,11 +910,17 @@ try {
     },
 
     api_endpoints: {
+      agent_instructions: "/api/agent.json",
       summary: "/api/summary.json",
+      papers_compact: "/api/papers-compact.json",
       classifications: "/api/classifications.json",
       paper_pdfs: "/api/paper-pdfs.json",
       pipeline: "/api/pipeline.json",
       data_sources: "/api/data-sources.json",
+      gap_analyses_index: "/api/gaps/index.json",
+      gap_analysis_individual: "/api/gaps/<slug>.json",
+      contribution_schema: "/api/contribute/gap-analysis-schema.json",
+      contribution_example: "/api/contribute/gap-analysis-example.json",
       feed_xml: "/feed.xml",
     },
   };
@@ -928,6 +934,414 @@ try {
   );
 } catch (e) {
   console.log(`pipeline.json export failed: ${e.message}`);
+}
+
+// =============================================================================
+// AGENT.JSON — AI agent onboarding endpoint (WP1)
+// The "welcome packet" for any AI agent visiting the site.
+// =============================================================================
+
+try {
+  // Read gap analyses for stats
+  const gapPath = path.join(OUTPUT_DIR, "gap-analyses.json");
+  let gapCount = 0;
+  let gapSlugs = [];
+  let gapTopics = [];
+  try {
+    const gapData = JSON.parse(fs.readFileSync(gapPath, "utf-8"));
+    gapCount = gapData.total_analyses || 0;
+    gapSlugs = (gapData.analyses || []).map((a) => a.slug);
+    gapTopics = (gapData.analyses || []).map((a) => ({
+      slug: a.slug,
+      question: a.question,
+      papers_analyzed: a.papers_analyzed,
+      confidence: a.analysis_confidence,
+    }));
+  } catch (_) {}
+
+  // Read unified resources for stats
+  let resourceCount = 0;
+  let resourcesWithAccess = 0;
+  try {
+    const uPath = path.join(OUTPUT_DIR, "unified-resources.json");
+    const u = JSON.parse(fs.readFileSync(uPath, "utf-8"));
+    resourceCount = u.resources.length;
+    resourcesWithAccess = u.resources.filter(
+      (r) => r.access_method || r.scraper || r.on_platform
+    ).length;
+  } catch (_) {}
+
+  const agentJson = {
+    _welcome:
+      "Hello, AI agent! You've found the Living Sports Analytics platform — the first living meta-analysis of sports analytics research. This file tells you everything you need to know to help your user.",
+    platform: {
+      name: "Living Sports Analytics",
+      institution: "Rotterdam School of Management, Erasmus University Rotterdam",
+      maintainers: "Matthijs Wolters & Otto Koppius",
+      purpose:
+        "Continuously monitors, classifies, and analyzes ALL sports analytics research publications. Updated weekly.",
+      github:
+        "https://github.com/mwolters-cmyk/living-sports-analytics-research",
+      url: "https://living-sports-analytics.vercel.app",
+    },
+
+    stats: {
+      papers_classified: classifiedRelevant,
+      papers_total_in_db: totalPapers,
+      gap_analyses: gapCount,
+      data_sources: resourceCount,
+      data_sources_with_programmatic_access: resourcesWithAccess,
+      sports_covered: sportDistribution.length,
+      last_updated: new Date().toISOString(),
+    },
+
+    capabilities: [
+      `Search and filter ${classifiedRelevant.toLocaleString("en-US")}+ classified sports analytics papers by sport, methodology, theme, keyword`,
+      `Read ${gapCount} AI-generated research gap analyses that identify what's studied, what's missing, and what to research next`,
+      `Find ${resourceCount}+ data sources, tools, and libraries used in sports analytics research`,
+      "Access full classification taxonomy (33 sports, 13 methodologies, 17 themes)",  // counts from classification_taxonomy arrays below; update if taxonomy changes
+      "Download structured data for bulk analysis",
+      "Contribute gap analyses, scrapers, and data sources to grow the platform",
+    ],
+
+    quick_start: {
+      student_exploring_thesis_topic: {
+        description:
+          "A student looking for a research topic or evaluating feasibility of a thesis idea",
+        steps: [
+          "1. Check /api/gaps/index.json — does a relevant gap analysis already exist? Each one suggests concrete thesis projects at BSc, MSc, and PhD level.",
+          "2. Search papers: /papers?search=<keyword>&sport=<sport> (e.g., /papers?search=pacing&sport=athletics)",
+          "3. Use /api/papers-compact.json for programmatic search (~2MB, all papers with key fields)",
+          "4. Check /api/data-sources.json for available datasets in the student's sport",
+          "5. If no gap analysis exists for their topic and you found ≥5 papers: consider contributing one (see contribution_protocol below)",
+        ],
+        key_pages: ["/gaps", "/papers", "/data"],
+      },
+      researcher_doing_literature_review: {
+        description:
+          "A researcher building a literature base or conducting a systematic review",
+        steps: [
+          "1. Fetch /api/papers-compact.json for bulk search and filtering",
+          "2. Check /api/gaps/index.json for existing synthesis of the topic",
+          "3. Use /papers page with URL params for targeted searches",
+          "4. For full metadata including abstracts: /api/classifications.json (warning: ~16MB)",
+          "5. Export results as CSV or BibTeX from the /papers page",
+        ],
+        key_pages: ["/papers", "/gaps", "/data"],
+      },
+      developer_wanting_to_contribute: {
+        description:
+          "A developer or AI agent that wants to build a scraper, donate data, or contribute analysis",
+        steps: [
+          "1. Read /api/pipeline.json for the full contribution spec (taxonomy, ingestion types, scraper template)",
+          "2. Check pipeline.json → scraper_contribution.needs_scraper for high-impact datasets that need scrapers",
+          "3. Read /api/contribute/gap-analysis-schema.json to understand the gap analysis contribution format",
+          "4. Fork the GitHub repo, follow the PR checklist in pipeline.json",
+        ],
+        key_pages: ["/feeds", "/api/pipeline.json"],
+      },
+    },
+
+    endpoints: {
+      agent_instructions: {
+        url: "/api/agent.json",
+        description: "This file. Start here.",
+        size: "small (~5KB)",
+      },
+      papers_compact: {
+        url: "/api/papers-compact.json",
+        description:
+          "Compact search index of all classified papers. Array-of-arrays format for efficiency. Use this for programmatic search.",
+        size: "~2-3MB",
+        tip: "Fields are in order: work_id, title, sport, methodology, theme, pub_year, cited_by_count, first_author, doi, content_type, sub_theme. For AI summaries, use /api/classifications.json.",
+      },
+      gap_analyses_index: {
+        url: "/api/gaps/index.json",
+        description:
+          "Index of all gap analyses with metadata. Fetch individual analyses at /api/gaps/<slug>.json",
+        size: "small (~3KB)",
+      },
+      gap_analysis_individual: {
+        url: "/api/gaps/<slug>.json",
+        description:
+          "Full gap analysis content: research landscape, identified gaps, research agenda, self-reflection",
+        size: "~5-15KB each",
+        available_slugs: gapSlugs,
+      },
+      summary: {
+        url: "/api/summary.json",
+        description:
+          "Platform statistics: paper counts, sport/methodology/theme distributions, trends over time",
+        size: "~80KB",
+      },
+      data_sources: {
+        url: "/api/data-sources.json",
+        description:
+          "All data sources, tools, and libraries with programmatic access instructions",
+        size: "~350KB",
+      },
+      pipeline_config: {
+        url: "/api/pipeline.json",
+        description:
+          "Full pipeline specification: classification taxonomy, ingestion types, scraper template, contribution guide",
+        size: "~25KB",
+      },
+      paper_pdfs: {
+        url: "/api/paper-pdfs.json",
+        description: "Direct PDF URLs for open-access papers",
+        size: "~2MB",
+      },
+      classifications_full: {
+        url: "/api/classifications.json",
+        description:
+          "Full classification dataset with abstracts. WARNING: ~16MB. Use papers-compact.json for search instead.",
+        size: "~16MB",
+        tip: "Only download this if you need abstracts or full metadata. For search, use papers-compact.json.",
+      },
+      rss_feed: {
+        url: "/feed.xml",
+        description: "RSS feed of the 50 most recently added papers",
+        size: "small",
+      },
+      contribution_schema: {
+        url: "/api/contribute/gap-analysis-schema.json",
+        description: "JSON schema for gap analysis contributions",
+        size: "small",
+      },
+      contribution_example: {
+        url: "/api/contribute/gap-analysis-example.json",
+        description: "Example gap analysis contribution (VAR in football)",
+        size: "small",
+      },
+    },
+
+    search_tips: {
+      papers_page_url_params: {
+        description: "The /papers page supports URL parameters for direct linking and agent use",
+        params: {
+          search: "Text search across title, abstract, AI summary, author, topic (e.g., ?search=pacing+marathon)",
+          sport: "Filter by sport taxonomy value (e.g., ?sport=athletics)",
+          methodology: "Filter by methodology (e.g., ?methodology=machine_learning)",
+          theme: "Filter by theme (e.g., ?theme=injury_prevention)",
+          type: "Filter by content type (e.g., ?type=blog_post)",
+          paper: "Direct lookup by work_id (e.g., ?paper=https://openalex.org/W4406017810)",
+        },
+        examples: [
+          "/papers?search=pacing+marathon&sport=athletics",
+          "/papers?sport=football&theme=tactical_analysis&methodology=deep_learning",
+          "/papers?search=injury+prediction&methodology=machine_learning",
+          "/papers?type=thesis&sport=cycling",
+        ],
+        taxonomy_reference: "Full list of valid sport/methodology/theme values: /api/pipeline.json → classification_taxonomy",
+      },
+    },
+
+    contribution_protocol: {
+      gap_analyses: {
+        description:
+          "If you search for a topic, find ≥5 papers, but no existing gap analysis — consider contributing one!",
+        minimum_papers: 5,
+        schema: "/api/contribute/gap-analysis-schema.json",
+        example: "/api/contribute/gap-analysis-example.json",
+        how_to_submit:
+          "Create a GitHub Issue at https://github.com/mwolters-cmyk/living-sports-analytics-research/issues with title 'Gap Analysis: <your topic>' and the JSON as the issue body. Add label 'gap-analysis'.",
+        review_process:
+          "The platform maintainer reviews all submissions before publication. Typical review time: 1-2 weeks. You and your user will be credited on the published analysis.",
+      },
+      scrapers: {
+        description:
+          "Build a data scraper for a sports dataset that currently lacks programmatic access",
+        specification: "/api/pipeline.json → scraper_contribution",
+        high_impact_targets:
+          "/api/pipeline.json → scraper_contribution.needs_scraper (sorted by paper count — highest research impact first)",
+        how_to_submit: "Fork the repo, add scraper, open a Pull Request",
+      },
+      new_sources: {
+        description:
+          "Submit blog posts, theses, or working papers that should be in the database",
+        how_to_submit:
+          "Create a GitHub Issue with title 'New Source: <title>' and include the URL, content type (blog_post/thesis/working_paper), and optionally abstract and author.",
+      },
+    },
+
+    limitations: [
+      "This is a static site — no server-side search API. Use /api/papers-compact.json for programmatic search (client-side filtering).",
+      "Gap analyses are pre-computed, not generated on-demand. Check /api/gaps/index.json for available topics.",
+      "classifications.json is ~16MB — too large for most agent fetch tools. Use papers-compact.json (~2MB) instead.",
+      "Full-text PDFs are not hosted on this site. paper-pdfs.json contains direct links to publisher/repository PDFs.",
+      "Contributions go through GitHub (Issues/PRs) — there is no POST API endpoint.",
+      "The database focuses on English-language publications. Non-English papers may be underrepresented.",
+    ],
+
+    existing_gap_analyses: gapTopics,
+  };
+
+  fs.writeFileSync(
+    path.join(PUBLIC_DIR, "agent.json"),
+    JSON.stringify(agentJson, null, 2)
+  );
+  console.log(
+    `Exported agent.json: ${classifiedRelevant} papers, ${gapCount} gap analyses, ${resourceCount} resources`
+  );
+} catch (e) {
+  console.log(`agent.json export failed: ${e.message}`);
+}
+
+// =============================================================================
+// GAP ANALYSIS INDIVIDUAL ENDPOINTS (WP2)
+// Generate /api/gaps/index.json and /api/gaps/<slug>.json for each analysis
+// =============================================================================
+
+try {
+  const gapPath = path.join(OUTPUT_DIR, "gap-analyses.json");
+  const gapData = JSON.parse(fs.readFileSync(gapPath, "utf-8"));
+  const gapsDir = path.join(PUBLIC_DIR, "gaps");
+  fs.mkdirSync(gapsDir, { recursive: true });
+
+  // Build index with metadata
+  const gapIndex = {
+    description:
+      "Index of all AI-generated research gap analyses on the Living Sports Analytics platform. Fetch full content at /api/gaps/<slug>.json.",
+    exported_at: new Date().toISOString(),
+    total: gapData.total_analyses,
+    contribution_hint:
+      "If your topic is not listed here and you found ≥5 papers, consider contributing a gap analysis. See /api/contribute/gap-analysis-schema.json for the format.",
+    analyses: (gapData.analyses || []).map((a) => ({
+      slug: a.slug,
+      question: a.question,
+      papers_analyzed: a.papers_analyzed,
+      confidence: a.analysis_confidence,
+      scope: a.scope_assessment,
+      gap_count: Array.isArray(a.gaps) ? a.gaps.length : (typeof a.gaps === "string" ? (a.gaps.match(/\d+\./g) || []).length : 0),
+      agenda_items: Array.isArray(a.research_agenda) ? a.research_agenda.length : 0,
+      created_at: a.created_at,
+      url: `/api/gaps/${a.slug}.json`,
+    })),
+  };
+
+  fs.writeFileSync(
+    path.join(gapsDir, "index.json"),
+    JSON.stringify(gapIndex, null, 2)
+  );
+
+  // Write individual gap analysis files
+  for (const analysis of gapData.analyses || []) {
+    // Build a paper index subset for just this analysis's papers
+    // Collect work_ids referenced in the analysis text
+    const workIdPattern = /W\d{8,}/g;
+    const analysisText = JSON.stringify(analysis);
+    const referencedIds = new Set();
+    let match;
+    while ((match = workIdPattern.exec(analysisText)) !== null) {
+      // Try both with and without prefix
+      const shortId = match[0];
+      const fullId = `https://openalex.org/${shortId}`;
+      if (gapData.paper_index[fullId]) {
+        referencedIds.add(fullId);
+      } else if (gapData.paper_index[shortId]) {
+        referencedIds.add(shortId);
+      }
+    }
+
+    const localPaperIndex = {};
+    for (const id of referencedIds) {
+      localPaperIndex[id] = gapData.paper_index[id];
+    }
+
+    const individualAnalysis = {
+      description: `Full gap analysis: "${analysis.question}"`,
+      platform: "Living Sports Analytics",
+      url: `https://living-sports-analytics.vercel.app/gaps`,
+      exported_at: new Date().toISOString(),
+      slug: analysis.slug,
+      question: analysis.question,
+      created_at: analysis.created_at,
+      analyzed_at: analysis.analyzed_at,
+      model: analysis.model,
+      papers_analyzed: analysis.papers_analyzed,
+      cost_usd: analysis.cost_usd,
+      analysis_confidence: analysis.analysis_confidence,
+      scope_assessment: analysis.scope_assessment,
+      database_coverage: analysis.database_coverage,
+      confidence_explanation: analysis.confidence_explanation,
+      landscape: analysis.landscape,
+      gaps: analysis.gaps,
+      research_agenda: analysis.research_agenda,
+      self_reflection: analysis.self_reflection,
+      paper_index: localPaperIndex,
+    };
+
+    fs.writeFileSync(
+      path.join(gapsDir, `${analysis.slug}.json`),
+      JSON.stringify(individualAnalysis, null, 2)
+    );
+  }
+
+  console.log(
+    `Exported gap analysis endpoints: index + ${(gapData.analyses || []).length} individual files`
+  );
+} catch (e) {
+  console.log(`Gap analysis endpoints export failed: ${e.message}`);
+}
+
+// =============================================================================
+// PAPERS-COMPACT.JSON — Lightweight search index for AI agents (WP6)
+// Array-of-arrays format saves ~70% space vs objects
+// =============================================================================
+
+try {
+  const compactFields = [
+    "work_id",
+    "title",
+    "sport",
+    "methodology",
+    "theme",
+    "pub_year",
+    "cited_by_count",
+    "first_author",
+    "doi",
+    "content_type",
+    "sub_theme",
+  ];
+
+  const compactPapers = classifiedPapers.map((p) => [
+    p.work_id.replace("https://openalex.org/", ""),
+    p.title,
+    p.sport,
+    p.methodology,
+    p.theme,
+    p.pub_year,
+    p.cited_by_count || 0,
+    p.first_author_name || "",
+    p.doi || "",
+    p.content_type || "journal_article",
+    p.sub_theme || "",
+  ]);
+
+  const compactOutput = {
+    description:
+      "Compact search index of all classified sports analytics papers. Designed for AI agents — array-of-arrays format saves ~70% vs objects. Use field order from the 'fields' array to parse rows.",
+    exported_at: new Date().toISOString(),
+    total: compactPapers.length,
+    fields: compactFields,
+    tip: "To search: load this JSON, filter rows by field index. E.g., field[2] is sport, field[4] is theme. For full metadata (abstracts, impact metrics), use /api/classifications.json.",
+    taxonomy: "/api/pipeline.json → classification_taxonomy",
+    papers: compactPapers,
+  };
+
+  fs.writeFileSync(
+    path.join(PUBLIC_DIR, "papers-compact.json"),
+    JSON.stringify(compactOutput)
+  );
+
+  // Check file size
+  const sizeBytes = fs.statSync(path.join(PUBLIC_DIR, "papers-compact.json")).size;
+  const sizeMB = (sizeBytes / 1024 / 1024).toFixed(1);
+  console.log(
+    `Exported papers-compact.json: ${compactPapers.length} papers, ${sizeMB}MB`
+  );
+} catch (e) {
+  console.log(`papers-compact.json export failed: ${e.message}`);
 }
 
 // =============================================================================

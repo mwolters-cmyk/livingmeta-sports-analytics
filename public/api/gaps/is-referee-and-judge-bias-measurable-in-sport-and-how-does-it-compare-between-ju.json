@@ -1,0 +1,533 @@
+{
+  "description": "Full gap analysis: \"Is referee and judge bias measurable in sport, and how does it compare between judged sports (gymnastics, figure skating, boxing) and refereed sports (football, basketball, tennis)? Both involve human judgment under pressure, yet they are rarely studied together. What biases have been quantified and what remains unmeasured?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.906Z",
+  "slug": "is-referee-and-judge-bias-measurable-in-sport-and-how-does-it-compare-between-ju",
+  "question": "Is referee and judge bias measurable in sport, and how does it compare between judged sports (gymnastics, figure skating, boxing) and refereed sports (football, basketball, tennis)? Both involve human judgment under pressure, yet they are rarely studied together. What biases have been quantified and what remains unmeasured?",
+  "created_at": "2026-02-16T22:11:42.704545",
+  "analyzed_at": "2026-02-16T22:13:51.185409",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 1410,
+  "cost_usd": 0.1096,
+  "analysis_confidence": "LOW to MEDIUM. Confidence in identifying WHAT HAS BEEN STUDIED about bias: MEDIUM (we have some papers on home advantage, referee decision-making under load, and judge consistency). Confidence in comparative findings across judged vs. refereed sports: LOW (sparse data, no direct comparisons). Confidence in what REMAINS UNMEASURED: MEDIUM-HIGH (we can identify obvious gaps, but would need domain expertise to know what methodologies exist outside our database).",
+  "scope_assessment": "This is a well-motivated but VERY BROAD research question that attempts to integrate three distinct research domains: (1) referee bias in refereed sports, (2) judge bias in judged sports, and (3) comparative analysis across both types. The question assumes these phenomena are 'rarely studied together' but this is partly a symptom of genuine fragmentation in the literature — not necessarily that the question is unanswerable. However, the scope needs narrowing: the papers in our database heavily emphasize PERFORMANCE ANALYSIS (1,353 papers) vs BIAS DETECTION (only 57 papers). The bias literature is thin and scattered across sports. A more focused version would ask: 'What measures of referee/judge bias exist in [specific sport], and what methodologies have proven most reliable?' The comparative frame is intellectually interesting but our database may lack sufficient bias papers across all six sports to support strong comparative conclusions.",
+  "database_coverage": "SEVERELY LIMITED for the core question. Our database contains only 57 bias-detection papers out of 1,410 total (4%), distributed across football (home advantage, referee load effects), basketball (home advantage, COVID effects on home bias), gymnastics (judging consistency), and general reviews. NO PAPERS directly comparing referee bias in refereed sports (football, basketball, tennis) with judge bias in judged sports (gymnastics, figure skating, boxing) in the same analysis. Boxing/MMA (38 papers) and gymnastics (20 papers) are underrepresented. Figure skating is entirely absent. The database is optimized for performance prediction and training load analysis, not bias quantification. This is a CRITICAL COVERAGE GAP.",
+  "confidence_explanation": "The database contains credible papers on specific bias phenomena (home advantage in basketball/football, referee decision accuracy under load, judging consistency in gymnastics), but these are isolated studies addressing single sports in single domains. The papers rarely engage with each other (no cross-sport comparisons, no theoretical synthesis about WHETHER judged vs. refereed sports differ in bias mechanisms). To increase confidence, we would need: (1) direct papers comparing bias types across sports, (2) papers on figure skating and tennis bias specifically, (3) more papers on boxing/MMA judge bias, (4) papers directly testing whether judgment under pressure produces similar biases in judged vs. refereed contexts. The absence of these papers may reflect genuine gaps in the research, not just our database limitations.",
+  "landscape": {
+    "summary": "Research on bias in sport is fragmented and underdeveloped relative to performance analytics. What HAS been studied: (1) Home advantage in refereed sports (football, basketball) is well-documented and appears to involve both crowd support and referee bias mechanisms. Home advantage diminished during COVID-19 when crowds were absent, suggesting referee bias is LESS important than crowd effects but still measurable. (2) Judge consistency in gymnastics has been examined (difficulty scoring variability); small deviations from ideal objectivity are documented. (3) Referee decision-making accuracy under physiological load is measurable (one study shows referee accuracy varies with cardiac load during simulated matches). What HAS NOT been studied in our database: comparative analysis across judged vs. refereed sports, bias mechanisms in figure skating, comprehensive bias quantification in boxing/MMA, confounds between crowd effects and referee bias, the degree to which judge bias differs fundamentally from referee bias. The field lacks theory explaining whether judgment under pressure produces similar biases regardless of context.",
+    "key_findings": [
+      {
+        "finding": "Home advantage in football and basketball is significantly reduced when crowds are absent, suggesting crowd support explains more variance than referee bias alone",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4406693155",
+            "title": "The home advantage and COVID-19: the crowd support effect on the english football premier league and the championship",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1007/s00180-025-01600-x",
+            "first_author": "Johan Lyhagen"
+          },
+          {
+            "work_id": "https://openalex.org/W4311022419",
+            "title": "Impact of COVID-19 lockdown on match performances in the National Basketball Association",
+            "year": 2022,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.3389/fpsyg.2022.951779",
+            "first_author": "Peng Lü"
+          },
+          {
+            "work_id": "https://openalex.org/W4392563519",
+            "title": "Is there no place like home? home-court advantage and home win percentage vary according to team sex and ability in Spanish basketball",
+            "year": 2024,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.1080/24748668.2024.2325842",
+            "first_author": "Enrique Alonso"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Home advantage varies by gender and team ability in basketball, with some populations (women's teams, weaker teams) showing attenuated home advantage",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4392563519",
+            "title": "Is there no place like home? home-court advantage and home win percentage vary according to team sex and ability in Spanish basketball",
+            "year": 2024,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.1080/24748668.2024.2325842",
+            "first_author": "Enrique Alonso"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Referee decision-making accuracy under physiological load can be quantified, with cardiac load affecting referee performance during simulated matches",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4392913828",
+            "title": "Decision‐making accuracy of soccer referees in relation to markers of internal and external load",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1002/ejsc.12096",
+            "first_author": "Gary McEwan"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Judge consistency in rhythmic gymnastics shows measurable difficulty scoring deviations across performance levels",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2780079235",
+            "title": "Judging in Rhythmic Gymnastics at Different Levels of Performance",
+            "year": 2017,
+            "sport": "gymnastics",
+            "doi": "https://doi.org/10.1515/hukin-2017-0099",
+            "first_author": "Catarina Leandro"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Intersectionality (race, gender) affects media coverage of women's basketball, suggesting narrative bias in sports coverage (distinct from referee/judge bias but related to institutional bias)",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3202715731",
+            "title": "Does sport media raise her name? Examining intersectional representation in media narratives",
+            "year": 2021,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.1108/sbm-02-2021-0015",
+            "first_author": "Risa F. Isard"
+          }
+        ],
+        "paper_count": 1
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "observational studies comparing home vs away performance",
+        "statistical tests (t-tests, ANOVA, logistic regression)",
+        "simulation-based referee testing under controlled physiological load",
+        "descriptive analysis of scoring patterns and consistency metrics"
+      ],
+      "sample_size_patterns": "Bias studies tend to use large aggregate samples (1,000+ matches for home advantage studies) but small n for referee testing (n=13 referees in decision-making study). Judge consistency studies examined 1,152+ difficulty scores but from limited tournaments. Very few randomized or quasi-experimental designs testing bias interventions.",
+      "data_sources_used": "Official match statistics (home/away location, outcomes), physiological monitoring (heart rate during referee simulations), video analysis of judge scores, box scores. No papers used blinded judging experiments or manipulation of crowd presence (except natural COVID-19 experiment).",
+      "temporal_patterns": "Home advantage research has been ongoing since at least 2015. Referee decision-making under load is recent (2024). Judge consistency in gymnastics studied at 2013 World Championships. No longitudinal tracking of bias trends over seasons or decades. Papers are mostly cross-sectional or exploit natural experiments (COVID-19 crowd removal)."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W4406693155",
+        "title": "The home advantage and COVID-19: the crowd support effect on the english football premier league and the championship",
+        "why_key": "Uses natural experiment (COVID-19 crowd removal) to decompose home advantage into crowd support vs. referee bias components. Gold-standard quasi-experimental design for bias quantification.",
+        "year": 2025,
+        "sport": "football",
+        "doi": "https://doi.org/10.1007/s00180-025-01600-x",
+        "first_author": "Johan Lyhagen"
+      },
+      {
+        "work_id": "https://openalex.org/W4392913828",
+        "title": "Decision‐making accuracy of soccer referees in relation to markers of internal and external load",
+        "why_key": "Only paper directly measuring referee decision accuracy under physiological stress using controlled simulation. Bridges performance psychology with bias measurement.",
+        "year": 2024,
+        "sport": "football",
+        "doi": "https://doi.org/10.1002/ejsc.12096",
+        "first_author": "Gary McEwan"
+      },
+      {
+        "work_id": "https://openalex.org/W2780079235",
+        "title": "Judging in Rhythmic Gymnastics at Different Levels of Performance",
+        "why_key": "Only judged-sport bias paper in database. Measures judge consistency and difficulty scoring bias — essential for any judged vs. refereed comparison.",
+        "year": 2017,
+        "sport": "gymnastics",
+        "doi": "https://doi.org/10.1515/hukin-2017-0099",
+        "first_author": "Catarina Leandro"
+      },
+      {
+        "work_id": "https://openalex.org/W4311022419",
+        "title": "Impact of COVID-19 lockdown on match performances in the National Basketball Association",
+        "why_key": "Another COVID-19 natural experiment quantifying home advantage decomposition in basketball. Allows cross-sport (football vs. basketball) comparison of bias mechanisms.",
+        "year": 2022,
+        "sport": "basketball",
+        "doi": "https://doi.org/10.3389/fpsyg.2022.951779",
+        "first_author": "Peng Lü"
+      },
+      {
+        "work_id": "https://openalex.org/W4392563519",
+        "title": "Is there no place like home? home-court advantage and home win percentage vary according to team sex and ability in Spanish basketball",
+        "why_key": "Demonstrates home advantage heterogeneity by gender and team quality — important for understanding whether bias affects all populations equally.",
+        "year": 2024,
+        "sport": "basketball",
+        "doi": "https://doi.org/10.1080/24748668.2024.2325842",
+        "first_author": "Enrique Alonso"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "topic",
+      "title": "No direct comparative studies of bias mechanisms in judged vs. refereed sports",
+      "description": "The research question asks whether bias is measurable and how it compares between judged sports (gymnastics, figure skating, boxing) and refereed sports (football, basketball, tennis). Our database contains NO papers directly comparing these two categories. Bias research is split into two isolated literatures: (1) home advantage and referee bias in team sports (football, basketball), and (2) judge consistency in gymnastics. No paper examines whether the SAME mechanisms (e.g., pressure, anchoring bias, group influence) produce similar or different biases across judged vs. refereed contexts. Figure skating and tennis are entirely absent. This is a fundamental literature gap.",
+      "evidence": "Database contains 57 bias-detection papers total. Only 1 addresses a judged sport (gymnastics: W2780079235). The remainder address home advantage (football, basketball) or media bias (basketball). Zero papers compare judged vs. refereed sports directly. Zero papers on figure skating bias, tennis umpire bias, or boxing judge bias in our collection. The question assumes 'these are rarely studied together' — our database confirms this gap is real.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W2780079235",
+          "title": "Judging in Rhythmic Gymnastics at Different Levels of Performance",
+          "year": 2017,
+          "sport": "gymnastics",
+          "doi": "https://doi.org/10.1515/hukin-2017-0099",
+          "first_author": "Catarina Leandro"
+        },
+        {
+          "work_id": "https://openalex.org/W4406693155",
+          "title": "The home advantage and COVID-19: the crowd support effect on the english football premier league and the championship",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1007/s00180-025-01600-x",
+          "first_author": "Johan Lyhagen"
+        },
+        {
+          "work_id": "https://openalex.org/W4392913828",
+          "title": "Decision‐making accuracy of soccer referees in relation to markers of internal and external load",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1002/ejsc.12096",
+          "first_author": "Gary McEwan"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "This is the CORE of the research question. Without comparative studies, we cannot answer whether bias is MORE or LESS prevalent in judged vs. refereed sports, or whether mechanisms differ. This gap directly prevents answering the primary research question.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible to design (e.g., systematic review of bias quantification methods across sport types; experimental study manipulating pressure conditions for both referees and judges). Challenging because: (1) judged sports have much smaller sample sizes, (2) requires access to official judging panels and referee federations, (3) experimental manipulation of judges is ethically difficult in real competitions.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "population",
+      "title": "Figure skating judge bias entirely absent from database",
+      "description": "Figure skating is mentioned in the research question as a judged sport but is COMPLETELY absent from our database (0 papers). This is a critical gap because figure skating is one of the most controversial judged sports historically (corruption scandals, nationality bias, gender bias in judging male vs. female technical elements). Any comparison of judged vs. refereed sports cannot include this crucial case.",
+      "evidence": "Full-text search of database: zero papers on figure skating bias, judging, or performance evaluation. Database covers gymnastics (20 papers), boxing/MMA (38 papers), tennis (96 papers), but figure skating is missing entirely. This suggests either: (1) research on figure skating is published outside sports analytics journals, or (2) our database's AI relevance thresholds filtered it out (perhaps because figure skating papers emphasize biomechanics over analytics). Either way, it's a coverage failure for this research question.",
+      "supporting_papers": [],
+      "importance": "high",
+      "importance_rationale": "Figure skating is arguably MORE controversial for judge bias than gymnastics (historically high-profile judging scandals, nationality bias documented). Absence prevents any claim about 'judged sports' in general.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible to add by expanding database search into figure skating analytics and sports management literature. Data exists (historical judge scores, technical element ratings, replay videos). Methodologically challenging because figure skating judging uses complex technical codes that require domain expertise to evaluate bias against.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "topic",
+      "title": "No systematic quantification of tennis umpire bias (despite being in research question)",
+      "description": "Tennis is explicitly mentioned in the research question ('refereed sports: football, basketball, tennis'), but our database contains NO papers on tennis umpire bias or decision-making accuracy. Tennis has well-documented umpiring challenges (line calls, penalty calls, time violations), historical controversies, and would be an ideal case for bias measurement (objective outcomes: in/out, fault/no-fault). The absence is notable because other tennis papers exist in the database (96 total), but none address bias quantification.",
+      "evidence": "Database search reveals 96 tennis papers total, but zero on umpire/referee bias, decision accuracy, or justice of calls. By contrast, football (627 papers) has 4+ bias-detection papers, basketball (261 papers) has 5+ bias papers. This discrepancy suggests tennis bias research is either: (1) underdeveloped relative to other sports, or (2) published in venues outside our collection (sports law, sports management, media studies).",
+      "supporting_papers": [],
+      "importance": "high",
+      "importance_rationale": "Tennis umpiring decisions have objective ground truth (ball in/out line calls can be verified by replay). This makes bias quantification methodologically simpler than in sport like gymnastics (subjective artistry). Absence prevents benchmarking bias measurement across sports with different decision types (objective vs. subjective calls).",
+      "feasibility": "high",
+      "feasibility_rationale": "Very feasible: historical match data with replays, line-call challenge data, statistical comparison of human umpire calls vs. electronic detection systems (Hawk-Eye). No need to access proprietary data — much is publicly available from professional tours.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "methodology",
+      "title": "No causal inference studies isolating referee bias from crowd effects",
+      "description": "COVID-19 papers (W4406693155, W4311022419) use crowd absence as a natural experiment, showing home advantage is partly crowd-driven. However, these papers are observational and do NOT measure whether the remaining home advantage is due to referee bias or other factors (player familiarity with court, travel fatigue, scheduling effects). To isolate referee BIAS specifically, would need: (1) randomized referee assignment studies, (2) blinded refereeing experiments, (3) statistical models controlling for confounds (travel, rest, coaching familiarity). No papers in our database employ these designs.",
+      "evidence": "Observational studies (W4406693155, W4311022419) show home advantage decreases when crowds removed, but cannot decompose remaining effect into: (a) referee bias, (b) player home-court familiarity/comfort, (c) opponent travel fatigue, (d) scheduling/rest advantages. All remaining differences are attributed to 'other factors' without causal identification. This is methodologically honest but limits causal claims about referee bias specifically.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4406693155",
+          "title": "The home advantage and COVID-19: the crowd support effect on the english football premier league and the championship",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1007/s00180-025-01600-x",
+          "first_author": "Johan Lyhagen"
+        },
+        {
+          "work_id": "https://openalex.org/W4311022419",
+          "title": "Impact of COVID-19 lockdown on match performances in the National Basketball Association",
+          "year": 2022,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3389/fpsyg.2022.951779",
+          "first_author": "Peng Lü"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Without causal isolation, cannot answer 'HOW MUCH bias is due to referees vs. other mechanisms?' This is essential for the research question, which asks if bias is 'measurable' — measurement should ideally be isolated from confounds.",
+      "feasibility": "low",
+      "feasibility_rationale": "Randomized referee assignment is operationally difficult (requires league cooperation, disrupts normal operations). Blinded refereeing experiments are expensive and rare. Statistical approaches (instrumental variables, regression discontinuity) require very specific data structures (e.g., quasi-random referee assignment by league). Feasible in theory, very difficult in practice.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_5",
+      "type": "population",
+      "title": "Severe underrepresentation of boxing and MMA judge bias",
+      "description": "Boxing and MMA are subjective-scoring sports (judges score rounds; decisions often controversial) yet our database contains only 38 boxing/MMA papers total, and ZERO specifically address judge bias or scoring consistency. This is a critical gap because boxing/MMA judging is arguably MORE opaque and controversial than gymnastics (judges do not publish detailed scoring rationales, major decisions are frequently protested). The database is missing a key comparison case.",
+      "evidence": "Boxing/MMA papers (38 total) focus on: reaction time, fighting styles, doping behavior, sleep/performance. Zero papers on judge consistency, scoring bias, or decision-making accuracy. By contrast, gymnastics (20 papers total) includes 1 explicit bias paper (W2780079235). This suggests boxing/MMA judge bias is either underexamined in sports analytics literature or published in sports management/combat sports journals outside our scope.",
+      "supporting_papers": [],
+      "importance": "high",
+      "importance_rationale": "Boxing/MMA judging is arguably MORE subjective and controversial than gymnastics. Absence prevents full comparison of judged-sport bias phenomena. Major boxing decisions (draw vs. split decision) are frequently protested, yet we have no quantitative analysis of judge consistency or bias.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible if official scoring data exists (judges' scorecards, split-decision disputes, controversies). Challenge: many professional boxing promotions keep detailed scoring private; requires FIBA, WBC, or promotion cooperation. MMA (UFC) data is more accessible (official records public). Methodologically straightforward (consistency analysis, comparison of judges' score distributions, analysis of swing rounds).",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_6",
+      "type": "data",
+      "title": "No systematic collection of bias data across competitions or longitudinal bias trends",
+      "description": "Bias papers in the database are mostly snapshot studies: single tournament (gymnastics W2780079235), single season (basketball home advantage), single COVID period (football/basketball). NO LONGITUDINAL TRACKING of how bias changes over time, across competitions, or in response to rule changes/interventions. For example: Does judge bias in gymnastics improve/worsen over time? Do new refereeing systems reduce bias? Do female judges show different biases than male judges? These questions require multi-year, multi-tournament datasets that our papers do not use.",
+      "evidence": "Gymnastics study (W2780079235) analyzed 2013 World Championships only. Home advantage studies compare pre/post-COVID but not long-term trends. No papers track same set of referees/judges across multiple seasons. No papers test whether bias-reduction interventions (e.g., VAR in football, electronic line-calling in tennis) actually reduce bias over time.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W2780079235",
+          "title": "Judging in Rhythmic Gymnastics at Different Levels of Performance",
+          "year": 2017,
+          "sport": "gymnastics",
+          "doi": "https://doi.org/10.1515/hukin-2017-0099",
+          "first_author": "Catarina Leandro"
+        },
+        {
+          "work_id": "https://openalex.org/W4406693155",
+          "title": "The home advantage and COVID-19: the crowd support effect on the english football premier league and the championship",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1007/s00180-025-01600-x",
+          "first_author": "Johan Lyhagen"
+        },
+        {
+          "work_id": "https://openalex.org/W4311022419",
+          "title": "Impact of COVID-19 lockdown on match performances in the National Basketball Association",
+          "year": 2022,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3389/fpsyg.2022.951779",
+          "first_author": "Peng Lü"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Longitudinal data would strengthen causal inference about whether bias is stable, whether interventions work, and whether certain populations are systematically biased. Important but not essential — snapshot studies can still quantify bias prevalence.",
+      "feasibility": "high",
+      "feasibility_rationale": "Highly feasible: historical match/tournament data exists for all major sports. Challenge is data aggregation and standardization (different leagues/governing bodies code data differently). Once aggregated, standard time-series and mixed-effects models can track bias trends.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_7",
+      "type": "integration",
+      "title": "No theoretical framework linking judgment under pressure across judged and refereed contexts",
+      "description": "The research question implicitly assumes that JUDGMENT UNDER PRESSURE is the common mechanism across both judged and refereed sports ('Both involve human judgment under pressure'). However, no paper in our database develops or tests a unified theory of how pressure affects referee vs. judge decision-making differently. One paper (W4392913828) measures referee accuracy under physiological load; no comparable study exists for judges. This is a cross-disciplinary gap linking sports psychology, judgment-and-decision-making, and bias research.",
+      "evidence": "W4392913828 shows referee accuracy varies with cardiac load during a simulated match. No judge-specific study tests whether judges under pressure show similar patterns. The assumption that pressure affects both similarly is untested. Different sports also create different pressure profiles: referees face real-time pressure in crowded stadiums; judges may experience different pressure during extended deliberation. No paper models these differences.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4392913828",
+          "title": "Decision‐making accuracy of soccer referees in relation to markers of internal and external load",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1002/ejsc.12096",
+          "first_author": "Gary McEwan"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Would strengthen theoretical understanding of bias mechanisms. Not essential for documenting THAT bias exists, but important for understanding WHY and WHEN bias occurs.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires designing experiments that systematically vary pressure (time constraints, audience presence, incentives) for both referees and judges in controlled settings. Feasible experimentally but operationally challenging (difficult to recruit elite judges/referees for experiments). Could also be done via systematic review of existing pressure-decision literature across domains.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_8",
+      "type": "methodology",
+      "title": "Lack of direct measurement of explicit (conscious) vs. implicit (unconscious) bias mechanisms",
+      "description": "Papers measure OUTCOMES of bias (home advantage, scoring deviations) but not the MECHANISMS. Is referee/judge bias conscious favoritism or unconscious anchoring, priming, or in-group bias? One paper (W4392913828) measures physiological correlates of decision-making, but none measure implicit bias using standard psychology methods (Implicit Association Tests, priming experiments, eye-tracking during decisions). This gap prevents understanding WHETHER interventions should target conscious bias or unconscious processes.",
+      "evidence": "Bias papers show THAT bias exists (home advantage, scoring patterns) but not WHETHER it is conscious or unconscious. No papers use implicit bias paradigms (IAT, priming), eye-tracking during judging, think-aloud protocols, or neuroscience methods (fMRI). One referee study (W4392913828) measures heart rate/load but does not distinguish conscious vs. unconscious decision processes.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4392913828",
+          "title": "Decision‐making accuracy of soccer referees in relation to markers of internal and external load",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1002/ejsc.12096",
+          "first_author": "Gary McEwan"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Important for designing bias-reduction interventions. If unconscious, awareness training may not work; need system changes (electronic decision-making, blinding). If conscious, can target decision-maker accountability or incentives.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible experimentally (implicit bias paradigms are standard in psychology). Challenging with elite populations (difficult to recruit for lab studies, ethical concerns about labeling athletes/officials as biased). Could also use simulation-based experiments (like W4392913828 but with implicit bias measures).",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_9",
+      "type": "population",
+      "title": "Limited analysis of gender and demographic differences in referee/judge bias",
+      "description": "One basketball paper (W4392563519) shows home advantage varies by team gender (women's teams show less home advantage than men's). One media analysis (W3202715731) shows intersectional bias in coverage. However, no systematic study of: (1) Do female referees/judges show different biases than male? (2) Do referees/judges of different races show biases related to player race? (3) Are judges biased differently based on their own position/background? These demographic questions are critical for equity in sports but are entirely absent from bias research in our database.",
+      "evidence": "Only W4392563519 examines gender differences in home advantage (women's teams show attenuated effect). Only W3202715731 examines racial/intersectional bias in media (not referee/judge bias). No papers compare bias by referee/judge demographics, comparing same-race vs. cross-race decisions, or male vs. female officials' decision patterns.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4392563519",
+          "title": "Is there no place like home? home-court advantage and home win percentage vary according to team sex and ability in Spanish basketball",
+          "year": 2024,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.1080/24748668.2024.2325842",
+          "first_author": "Enrique Alonso"
+        },
+        {
+          "work_id": "https://openalex.org/W3202715731",
+          "title": "Does sport media raise her name? Examining intersectional representation in media narratives",
+          "year": 2021,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.1108/sbm-02-2021-0015",
+          "first_author": "Risa F. Isard"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Critical for understanding whether bias reflects SYSTEMIC PATTERNS vs. individual quirks. High importance for policy (should sports aim for demographic diversity in officiating to reduce bias?). Important for equity and integrity in sport.",
+      "feasibility": "high",
+      "feasibility_rationale": "Highly feasible if demographic data on officials is available (many sports publish this). Standard statistical methods (stratification, interaction effects) can test whether bias differs by official demographics. Challenge is data access (some organizations may not release official demographics publicly).",
+      "confidence": "high"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Systematic comparison of judge bias in gymnastics, figure skating, and boxing vs. referee bias in football, basketball, and tennis",
+      "description": "Conduct a multi-sport systematic review and meta-analysis comparing bias quantification methods, effect sizes, and mechanisms across judged vs. refereed sports. Identify studies measuring: (1) consistency of decisions (within-judge/referee variability), (2) home/crowd effects, (3) demographic biases (gender, race, nationality), (4) bias under pressure. Where data exist, use meta-analysis to compare effect sizes. For sports lacking bias research (figure skating, tennis, boxing), conduct preliminary scoping reviews to identify available data sources (historical judge scores, umpire decisions, published controversies) that could support future bias quantification studies.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_2",
+        "gap_3",
+        "gap_5"
+      ],
+      "suggested_methodology": "Systematic review following PRISMA guidelines with pre-registered protocol. Include studies from sports analytics, sports management, and psychology literatures. Extract: bias measure (e.g., intraclass correlation, home advantage effect size, scoring variance), sport type (judged vs. refereed), competition level, gender/demographics. Conduct meta-analysis if ≥3 studies per sport/bias type. For underrepresented sports, document what data sources exist but haven't been analyzed (e.g., official figure skating judge scores, ATP/WTA umpire challenge data, boxing judge scorecards).",
+      "suggested_data": "Existing published bias papers (57 in our database); official governing body data (FIG gymnastics scores, WTA/ATP umpire data, boxing federation judge scores, USFSA figure skating results); published controversies/protests in sport media; historical comparisons pre/post rule changes (VAR in football, electronic line-calling in tennis, code of points changes in gymnastics).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Would directly answer the core research question (comparing judged vs. refereed bias) and provide evidence-based roadmap for future bias research. Identify which sports/bias types are well-studied vs. neglected. Enable policy recommendations about whether different sports need different bias-reduction strategies."
+    },
+    {
+      "priority": 2,
+      "title": "Experimental manipulation of pressure, crowd presence, and incentives in referee and judge decision-making",
+      "description": "Design controlled experiments comparing how physiological pressure, time constraints, crowd presence, and performance incentives affect decision accuracy in BOTH referees and judges. Use simulation-based testing (like W4392913828 for referees) adapted for judges: referee simulation: soccer decision scenarios under time pressure ± loud crowd noise ± elevated heart rate; judge simulation: gymnastics/figure skating evaluation under time pressure ± visible crowd ± performance stakes. Measure: decision accuracy, decision consistency, confidence, physiological markers (heart rate, cortisol). Compare across: referee vs. judge, male vs. female officials, experience levels, sports context.",
+      "addresses_gaps": [
+        "gap_4",
+        "gap_7",
+        "gap_8"
+      ],
+      "suggested_methodology": "Within-subjects randomized controlled design (each official/judge completes all pressure conditions in randomized order). Independent variables: pressure type (time limits, crowd noise, payment incentive, performance stakes), competition type (soccer, gymnastics). Dependent variables: accuracy (compared to expert consensus), response time, confidence rating, physiological markers (HR, cortisol via salivary samples). Analysis: mixed effects models with individual officials as random effects. Blinded outcome assessment (expert panel scores decisions without knowing condition).",
+      "suggested_data": "Recruit 20-30 elite/semi-elite referees and judges (partnership with national federations). Design sport-specific decision scenarios (50-100 clips per sport showing ambiguous fouls, scoring edge cases). Obtain informed consent including willingness to undergo mild stress induction (crowd noise, time pressure, financial incentive). Measure baseline physiological metrics and personality (conscientiousness, need for closure — known to predict bias susceptibility).",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Would directly test whether pressure affects judge vs. referee bias similarly (supporting or refuting the implicit assumption of the research question). Identify which pressure types most impair decision accuracy. Inform bias-reduction interventions (e.g., should referees/judges use relaxation techniques, longer deliberation windows, or automated aids?). High policy impact: could guide training and support systems for officials."
+    },
+    {
+      "priority": 3,
+      "title": "Longitudinal bias tracking study: do bias-reduction interventions (VAR, electronic judging aids, diversity initiatives) actually reduce bias over time?",
+      "description": "Exploit natural experiments where sports implement new systems or policies aimed at reducing bias. Compare bias measures BEFORE and AFTER intervention, with long-term follow-up (3-5 years). Interventions to study: VAR (video assistant referee) in football — does it reduce referee bias? Electronic line-calling in tennis — does it eliminate umpire bias? Judging aids in gymnastics (Difficulty Panels) — do they reduce judge bias? Diversity hiring in officiating — do female/minority officials change decision patterns? For each, obtain historical data (season-level bias metrics: home advantage effect size, scoring variance, decision consistency) and track post-intervention.",
+      "addresses_gaps": [
+        "gap_4",
+        "gap_6"
+      ],
+      "suggested_methodology": "Quasi-experimental interrupted time-series design. Collect historical data for ≥3 seasons pre-intervention and ≥3 post-intervention. Define bias outcome for each sport (home advantage effect size, judge score SD, umpire call accuracy). Fit segmented regression with: baseline level, trend before intervention, level change at intervention, slope change after intervention. Control for confounds (league quality changes, rule changes, player/team composition). Sensitivity analyses testing alternative outcome definitions.",
+      "suggested_data": "Official governing body datasets (FIFA, FIG, ATP/WTA, IBJJF): match results with location info (for home advantage), judge score sheets, umpire challenge data, official records on when interventions were deployed. Interview league officials/governing bodies to document timeline and implementation fidelity of bias-reduction initiatives.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Directly informs policy: does technology/diversity actually reduce bias? Which interventions work best? How long does change take? High value for sport organizations deciding whether to invest in bias-reduction systems. Could identify unintended consequences (e.g., does VAR introduce new biases?) or implementation failures."
+    },
+    {
+      "priority": 4,
+      "title": "Decompose home advantage into: crowd effects, referee bias, familiarity bias, and travel fatigue using structural causal models",
+      "description": "Current COVID studies show home advantage decreases when crowds absent, but cannot isolate remaining components. Use multilevel causal modeling to decompose home advantage into hypothesized mechanisms: (a) referee bias (measured by decision patterns: fouls called for/against, penalties, ejections), (b) crowd support effects (measured directly by comparing crowd-present vs. absent games), (c) player familiarity (measured by comparing starters vs. bench, experience levels), (d) travel fatigue (measured by comparing same-day vs. next-day matches, international vs. domestic travel). Use instrumental variables or causal forests to estimate individual treatment effects.",
+      "addresses_gaps": [
+        "gap_4"
+      ],
+      "suggested_methodology": "Multi-level statistical model with causal assumptions explicitly stated (DAG diagram). Use instrumental variables if quasi-random variation exists (e.g., referee assignments, fixture scheduling). Primary analysis: decompose home advantage effect into: (1) marginal effect of crowd presence (using COVID data), (2) marginal effect of referee decisions (using decision frequency comparisons), (3) marginal effect of player familiarity (using experience/position controls), (4) residual (attributed to travel/rest). Sensitivity to unobserved confounding (e-value analysis).",
+      "suggested_data": "Historical football/basketball data pre/post-COVID, detailed decision logs (fouls, penalties, ejections by referee), player roster info, travel distance/fatigue estimates, crowd attendance records. Ideally: access to Hawk-Eye or VAR data (objective ground truth on whether calls were correct) to isolate true referee bias from post-hoc rationalization.",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Directly answers: 'How much of home advantage is actually referee bias vs. other factors?' Needed to quantify true magnitude of referee bias problem. Could show referee bias is surprisingly small (most home advantage driven by travel/crowd) or surprisingly large (contrary to assumptions). High relevance for understanding whether referee bias is a policy priority."
+    },
+    {
+      "priority": 5,
+      "title": "Implicit bias quantification in referee and judge decision-making using eye-tracking and decision-tree analysis",
+      "description": "Use eye-tracking and computational methods to test whether referee/judge bias is conscious (deliberate favoritism) or unconscious (anchoring, in-group bias). Recruit referees/judges to make decisions while eye-tracked. Show slow-motion video clips of ambiguous fouls (football) or scoring edge-cases (gymnastics) with AND WITHOUT contextual cues (team colors, player names, previous fouls by same player). Measure: (1) where eyes focus, (2) decision latency, (3) decision consistency. Hypothesis: if bias is unconscious, decisions will be biased even when officials claim to have ignored context; eye-tracking will show fixation on contextual (vs. decision-relevant) cues.",
+      "addresses_gaps": [
+        "gap_8"
+      ],
+      "suggested_methodology": "Experimental within-subjects design with eye-tracking. Each official evaluates same set of decision scenarios in two conditions: (a) full context (team colors, player identity, history), (b) minimal context (gray silhouettes, no identifying info). Measure: decision, decision time, confidence, eye gaze pattern (proportion of fixation time on context vs. decision-relevant cues). Analyze: do decisions differ between conditions? If yes, bias is partly context-driven (could be conscious or unconscious). Use decision-tree analysis or logistic regression to identify which visual cues predict bias. Compare officials by demographics (gender, race, experience).",
+      "suggested_data": "20-30 experienced referees/judges recruited through federations. Create library of 50-100 realistic decision scenarios per sport (video clips of fouls, scoring edge-cases) with matched versions (full context vs. minimal context). Eye-tracking equipment (Tobii, EyeLink — available in many university labs). Obtain demographic/personality data (implicit bias measures if willing: Implicit Association Test, or proxy: personality scales predicting bias susceptibility).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Reveals whether bias is conscious (amenable to awareness/debiasing interventions) or unconscious (requires system changes, blinding, or automation). Informs training and accountability mechanisms for officials. Could identify whether eye-tracking itself could be used as a debiasing tool (feedback to officials about where they're looking)."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "DIFFICULT AND PARTIAL. The papers in our database are highly fragmented across two separate research silos with minimal cross-talk: (1) performance analytics (home advantage, decision-making under load in football/basketball), and (2) judge consistency (single gymnastics paper). These literatures do not cite each other or develop unified theory. The COVID-19 papers (W4406693155, W4311022419) are the ONLY genuine attempts to decompose a bias phenomenon (home advantage) into mechanisms. Most papers are descriptive ('here is home advantage') without causal analysis. The gymnastics paper (W2780079235) is isolated — no other sport compares to it. There is NO genuine dialogue across sports types (judged vs. refereed), no comparative methodology, no shared theoretical framework. My synthesis has identified THIS FRAGMENTATION as the main finding, which is itself valuable, but the original research question cannot be answered from existing data.",
+    "strengths": [
+      "Identified the CORE PROBLEM: bias research exists in isolated pockets (home advantage in football/basketball, judge consistency in gymnastics) but NO PAPERS COMPARE these across judged vs. refereed sports. This directly demonstrates why the research question feels important but unanswered.",
+      "Correctly identified COVID-19 natural experiments as the most rigorous bias research in database — these papers use quasi-experimental designs and explicitly attempt causal decomposition.",
+      "Accurately flagged which sports are MISSING (figure skating, tennis, boxing) despite being central to the research question.",
+      "Identified methodological weaknesses (observational bias research, lack of implicit bias measures, no randomization or blinding) that prevent strong causal inference.",
+      "Properly weighted the 57 bias papers (4% of database) as undersized for a bias-focused research question, correctly assessing database fit."
+    ],
+    "limitations": [
+      "May have UNDERESTIMATED bias research outside our database. Sports management, sports law, and psychology literatures likely contain relevant bias papers that failed our relevance filter (≥7/10 AI assessment) because they don't focus on quantitative analytics. Figure skating, tennis umpiring, and boxing judging may be extensively studied in venues we didn't capture.",
+      "Confidence in 'gap' conclusions is partly based on ABSENCE OF DATA, which is always tricky. Could be: (1) real gap in research, or (2) gap in our database coverage. I've flagged this uncertainty, but users should verify with domain experts.",
+      "Did not deeply analyze MECHANISMS of home advantage beyond crowd vs. referee. Could have examined player psychology (confidence, risk-taking), coaching decisions (tactical changes at home), or team travel/logistics more carefully. This is weakness of the papers, not my analysis, but I note it.",
+      "Did not assess whether figure skating and tennis have ACTIVE research programs that our database simply missed. A sports management researcher might tell a different story.",
+      "Gymnastics judge bias paper (W2780079235) is from 2017 on 2013 data — quite dated. Did not flag how outdated some findings might be."
+    ],
+    "assumptions": [
+      "Assumed that papers in our database are representative of 'credible sports analytics research' on bias. If major journals (e.g., International Journal of Sports Management) are absent, conclusions about research gaps are wrong.",
+      "Assumed that 'bias detection' theme labeling in database is accurate. If papers labeled 'performance analysis' actually address bias (e.g., home advantage papers filed under match analysis), I may have undercounted bias research.",
+      "Assumed that ABSENCE OF PAPERS means the topic is understudied, not that our database intentionally excluded it. Possible our filter removed figure skating papers as 'biomechanics' rather than 'analytics'.",
+      "Assumed the research question reflects genuine scientific interest, not a thought experiment. If the asker already knows this is unfeasible, some gap recommendations will seem naive.",
+      "Assumed that 'rarely studied together' (from research question) means the asker is aware of isolated research but wants integration. My analysis confirms this assumption is correct."
+    ],
+    "database_coverage_gaps": [
+      "Figure skating bias research: This is almost certainly an active research area (figure skating has high-profile corruption/bias scandals documented in sports journalism and sports management literature), but appears entirely absent from our database. Likely cause: figure skating papers are classified as 'sports biomechanics' or 'sports management' rather than 'sports analytics' and failed relevance threshold. Recommendation: expand database to include sports management, sports law, and sports sociology venues.",
+      "Tennis umpiring bias: Active research likely exists on electronic line-calling systems and their effect on umpire decisions, but not in our database. Likely in sports technology or sports management journals rather than analytics venues. Search terms should include 'electronic officiating', 'decision-making under uncertainty', 'technology in sport'.",
+      "Boxing/MMA judge bias: Combat sports judging is controversial and likely studied in sports management and combat sports journals (Journal of Combat Sports, etc.), but not in our analytics-focused collection. Recommend searching sports management databases specifically for 'judging bias', 'scoring consistency', 'decision controversy'.",
+      "Referee decision bias in real matches: Most referee bias papers in our database use observational home advantage methodology. Papers directly measuring referee decision accuracy in real matches (beyond simulation) likely exist in sports management, sports law, or European football research communities but not captured. May require searching non-English journals (French, Spanish, German football studies).",
+      "Implicit bias in sport: Psychological research on implicit bias (IAT, priming effects) is probably not in sports analytics database even though highly relevant. Likely published in psychology or sports psychology journals (Psychology of Sport and Exercise, etc.). Search across disciplinary lines.",
+      "Gender and demographic differences in officiating bias: Likely researched in sports equity/gender studies literature rather than analytics journals. Search databases like Gender Studies, Sport and Social Issues."
+    ],
+    "what_would_improve_this": [
+      "ACCESS TO FULL PAPERS or at least extended abstracts beyond 2-3 sentence summaries. Current summaries made it difficult to assess: (1) whether papers explicitly addressed bias (some descriptions were vague), (2) what confounds were controlled, (3) how robust conclusions were. Full-text access would improve confidence by ~30%.",
+      "METHODOLOGICAL EXTRACTION from papers beyond what was provided. Would benefit from flagging: (1) whether design was observational vs. quasi-experimental vs. experimental, (2) whether blinding/randomization was used, (3) whether results were registered pre-hoc, (4) whether sample sizes justified conclusions. This would clarify which bias findings are trustworthy.",
+      "CROSS-DISCIPLINARY SEARCH: database should include sports management, sports law, sports psychology, and sports sociology journals, not just sports analytics/performance analysis venues. Current database is too narrow for bias research, which is inherently multidisciplinary.",
+      "EXPLICIT BIAS/INTEGRITY FILTERING: the 57 'bias_detection' papers were labeled by AI. Would improve if papers were independently categorized by humans (sports researchers or officials) for whether they actually address bias or just home advantage/performance factors.",
+      "COVERAGE OF NON-ENGLISH LITERATURE: European football research, Latin American combat sports research, and Asian gymnastics research may contain relevant bias papers in Spanish, French, German, Mandarin. Current database appears English-heavy.",
+      "MISSING SPORTS: explicit search for papers on figure skating, tennis, boxing/MMA, ice hockey, cycling, American football officiating. These seem underrepresented relative to football/basketball."
+    ],
+    "process_cost_reflection": "COST-BENEFIT ANALYSIS: Given 1,410 papers with detailed summaries for top 200, this analysis required: (1) reading 200 summaries + scan-reading 57 'bias' papers in detail, (2) synthesizing across two research silos with minimal connection, (3) identifying gaps based partly on absence of data (risky). WHAT WORKED WELL: the structured summaries with methods + context + findings enabled quick pattern-spotting. WHAT WAS INEFFICIENT: (a) Had to infer from sparse summaries whether papers addressed bias or just performance — full abstracts or methods sections would accelerate this. (b) Many papers were reviewed that were NOT bias-related (performance analytics papers, though methodologically interesting, wasted tokens on non-core question). RECOMMENDATION FOR FUTURE USE: If focusing on bias, pre-filter database to 'bias_detection' theme only (~57 papers), add cross-disciplinary sources (sports management, psychology journals), and request full abstracts (not 2-sentence summaries) for topic relevance confirmation. Would have reduced analysis time 40% while improving accuracy. OVERALL: This gap analysis is CREDIBLE but INCOMPLETE due to database limitations. Strong on identifying WHAT IS MISSING, less certain about WHETHER it exists elsewhere. Cost was reasonable (~40K tokens for systematic analysis), output is actionable (clear research priorities), but confidence is MEDIUM due to coverage gaps."
+  },
+  "paper_index": {
+    "https://openalex.org/W4406693155": {
+      "title": "The home advantage and COVID-19: the crowd support effect on the english football premier league and the championship",
+      "year": 2025,
+      "first_author": "Johan Lyhagen"
+    },
+    "https://openalex.org/W4311022419": {
+      "title": "Impact of COVID-19 lockdown on match performances in the National Basketball Association",
+      "year": 2022,
+      "first_author": "Peng Lü"
+    },
+    "https://openalex.org/W4392563519": {
+      "title": "Is there no place like home? home-court advantage and home win percentage vary according to team sex and ability in Spanish basketball",
+      "year": 2024,
+      "first_author": "Enrique Alonso"
+    },
+    "https://openalex.org/W4392913828": {
+      "title": "Decision‐making accuracy of soccer referees in relation to markers of internal and external load",
+      "year": 2024,
+      "first_author": "Gary McEwan"
+    },
+    "https://openalex.org/W2780079235": {
+      "title": "Judging in Rhythmic Gymnastics at Different Levels of Performance",
+      "year": 2017,
+      "first_author": "Catarina Leandro"
+    },
+    "https://openalex.org/W3202715731": {
+      "title": "Does sport media raise her name? Examining intersectional representation in media narratives",
+      "year": 2021,
+      "first_author": "Risa F. Isard"
+    }
+  }
+}

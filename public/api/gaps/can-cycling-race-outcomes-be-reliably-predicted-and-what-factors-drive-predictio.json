@@ -1,0 +1,813 @@
+{
+  "description": "Full gap analysis: \"Can cycling race outcomes be reliably predicted, and what factors drive prediction accuracy?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.899Z",
+  "slug": "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
+  "question": "Can cycling race outcomes be reliably predicted, and what factors drive prediction accuracy?",
+  "created_at": "2026-02-16T21:22:58.512677",
+  "analyzed_at": "2026-02-16T21:24:57.975494",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 86,
+  "cost_usd": 0.076,
+  "analysis_confidence": "medium",
+  "scope_assessment": "This question is well-scoped but ambitious. It asks two related sub-questions: (1) predictability of race outcomes (binary/ordinal prediction problem), and (2) feature importance/driver analysis. The database contains 86 cycling papers, but only ~10-12 directly address race outcome prediction. Most papers study performance physiology, training, or power metrics—prerequisites for prediction but not prediction itself. The question assumes race outcome prediction is actively studied; our evidence suggests it is emerging but underexplored. The scope is appropriate for a gap analysis: it identifies a real research frontier.",
+  "database_coverage": "Our database is heavily skewed toward performance analysis (61/86 papers, 70.9%) and physiology (10/86, 11.6%), with minimal coverage of race outcome prediction (machine learning papers: 10/86, 11.6%, and only 2-3 explicitly model race outcomes). We have excellent coverage of power profiling, training load, and physiological predictors, but sparse coverage of: (1) predictive modeling frameworks; (2) race-outcome datasets; (3) comparative model performance; (4) external validation studies; (5) non-physiological factors (e.g., tactical, team strategy, weather). This suggests our database was curated for performance physiology rather than sports analytics/prediction.",
+  "confidence_explanation": "We have strong evidence for what CAN be predicted (power, VO2max, durability) but weak evidence for race outcome prediction specifically. Only 3-4 papers directly predict race outcomes or rider ranking (W4205107775, W4392368282, W4406463513). The absence of prediction studies doesn't mean they don't exist—it likely reflects our database's physiological focus. Confidence would increase with: (1) full-text access to identify prediction studies we may have missed via abstract analysis; (2) explicit search for 'race prediction,' 'outcome model,' 'winner prediction' in our database; (3) access to sports analytics/operations research journals (we may be under-represented there).",
+  "landscape": {
+    "summary": "The literature establishes that cycling performance is driven by measurable physiological traits (power output, VO2max, lactate threshold, durability) and training characteristics (intensity distribution, interval training responses). Recent work demonstrates that elite cyclists exhibit distinct power profiles, pacing strategies, and training load distributions. However, the shift from describing *what predicts performance* to *predicting race outcomes* is incomplete. Only a handful of studies (W4205107775, W4392368282, W4406463513) explicitly model race winners or rankings; most generate predictions at the athlete-metric level (e.g., predicting power output or VO2max) rather than race-outcome level. The research is primarily observational and physiological, not predictive and integrative.",
+    "key_findings": [
+      {
+        "finding": "Power output and durability (ability to maintain power after fatigue) are fundamental performance determinants in elite cyclists across multiple race formats (road, track, mountain bike)",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4392754626",
+            "title": "The intensity rather than the quantity of prior work determines the subsequent downward shift in the power duration relationship in professional cyclists",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1002/ejsc.12077",
+            "first_author": "James Spragg"
+          },
+          {
+            "work_id": "https://openalex.org/W4393186677",
+            "title": "The Influence of High-Intensity Work on the Record Power Profile of Under-23, Pro Team, and World Tour Cyclists",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1123/ijspp.2023-0451",
+            "first_author": "Peter Leo"
+          },
+          {
+            "work_id": "https://openalex.org/W4408498257",
+            "title": "Mechanistic influence of the torque cadence relationship on power output during exhaustive all-out field tests in professional cyclists",
+            "year": 2025,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1080/02640414.2025.2478354",
+            "first_author": "Peter Leo"
+          },
+          {
+            "work_id": "https://openalex.org/W4413330467",
+            "title": "Functional Data Analysis of the Power–Duration Relationship in Cyclists",
+            "year": 2025,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1123/ijspp.2024-0548",
+            "first_author": "Michael J. Puchowicz"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "Training intensity distribution and interval training design significantly affect adaptations, with higher VO2max fraction and polarized training (80/20 low/high intensity) showing benefits",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4403300820",
+            "title": "The higher the fraction of maximal oxygen uptake is during interval training, the greater is the cycling performance gain",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1002/ejsc.12202",
+            "first_author": "Ingvill Odden"
+          },
+          {
+            "work_id": "https://openalex.org/W4390838132",
+            "title": "Physiological and Performance Adaptations to Interval Training in Endurance-Trained Cyclists: An Exploratory Systematic Review and Meta-Analysis",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.47206/ijsc.v4i1.271",
+            "first_author": "Bernardo Norte"
+          },
+          {
+            "work_id": "https://openalex.org/W4415460257",
+            "title": "Differences in Polarization Index of Elite and Subelite Adult Cyclists During a 12-Month Training Cycle",
+            "year": 2025,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1123/ijspp.2024-0436",
+            "first_author": "Ben Cove"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Race stage characteristics (elevation, technicality, surface type) drive performance variability and tactically fragment fields, suggesting stage context matters for outcomes",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4415213466",
+            "title": "Technical classification of professional cycling stages using unsupervised learning: implications for performance variability",
+            "year": 2025,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.3389/fspor.2025.1661456",
+            "first_author": "Igor Garcia-Atutxa"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Machine learning and data-driven approaches can classify riders by specialization and predict race assignments with reasonable accuracy (80% precision), but external validation is limited",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4392368282",
+            "title": "Pro-cycling team cyclist assignment for an upcoming race",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1371/journal.pone.0297270",
+            "first_author": "Maor Sagi"
+          },
+          {
+            "work_id": "https://openalex.org/W4205107775",
+            "title": "Predicting the next Pogačar: a data analytical approach to detect young professional cycling talents",
+            "year": 2022,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1007/s10479-021-04476-4",
+            "first_author": "Bram Janssens"
+          },
+          {
+            "work_id": "https://openalex.org/W4406463513",
+            "title": "PerfoRank: cluster-based performance ranking for improved performance evaluation and estimation in professional cycling",
+            "year": 2025,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1007/s10994-024-06716-7",
+            "first_author": "Bram Janssens"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Women's cycling outcomes differ from men's in pacing, recovery, and training load—yet only 7/86 papers (8.1%) study women, creating a major evidence gap for half the sport",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4392289688",
+            "title": "Impact of menstrual cycle or combined oral contraception on elite female cyclists' training responses through a clustering analysis of training sessions",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.3389/fspor.2024.1307436",
+            "first_author": "Hugo Carlin"
+          },
+          {
+            "work_id": "https://openalex.org/W4401062928",
+            "title": "Racing Demands for Winning a Grand Tour: Differences and Similarities Between a Female and a Male Winner",
+            "year": 2024,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1123/ijspp.2023-0476",
+            "first_author": "Robert P. Lamberts"
+          },
+          {
+            "work_id": "https://openalex.org/W4412521828",
+            "title": "Internal and External Load Characteristics in Professional Female Cyclists During Highly Successful and Less Successful Seasons",
+            "year": 2025,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.1123/ijspp.2024-0365",
+            "first_author": "Annemiek J. Roete"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Tactical and contextual factors (team strategy, stage position, pacing behavior) are acknowledged but rarely modeled or quantified in outcome prediction",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4415213466",
+            "title": "Technical classification of professional cycling stages using unsupervised learning: implications for performance variability",
+            "year": 2025,
+            "sport": "cycling",
+            "doi": "https://doi.org/10.3389/fspor.2025.1661456",
+            "first_author": "Igor Garcia-Atutxa"
+          }
+        ],
+        "paper_count": 1
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "Statistical inference (correlation, regression, ANOVA)",
+        "Observational and quasi-experimental designs",
+        "Machine learning classification (recent, 2024+)"
+      ],
+      "sample_size_patterns": "Highly heterogeneous. Most studies N<30 (29/86, 33.7%), reflecting laboratory-intensive cycling research. Only 1/86 studies N>10,000. Median N ≈ 10-15 participants. This limits generalizability and replication; individual differences in cycling are large.",
+      "data_sources_used": "Power meters (SRM, Stages, Garmin, Assioma, TACX) dominate; supplemented with GPS, HR monitors, metabolic systems, and training platforms (TrainingPeaks, Strava). Very few studies use open race-result datasets. ProCyclingStats used in 2-3 papers; most rely on proprietary team/wearable data.",
+      "temporal_patterns": "Database skewed recent: 54/86 papers (62.8%) from 2024-2026. Only 9 papers pre-2018. Reflects: (1) availability of wearable sensors; (2) growth of sports analytics interest; (3) platform launch timing (likely 2023+). Trend shows shift from physiology (2015-2020) toward machine learning and prediction (2024+)."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W4205107775",
+        "title": "Predicting the next Pogačar: a data analytical approach to detect young professional cycling talents",
+        "why_key": "Directly addresses talent/outcome prediction using ML; demonstrates feasibility of rider-level forecasting with race result data; shows the frontier of prediction work in cycling.",
+        "year": 2022,
+        "sport": "cycling",
+        "doi": "https://doi.org/10.1007/s10479-021-04476-4",
+        "first_author": "Bram Janssens"
+      },
+      {
+        "work_id": "https://openalex.org/W4392368282",
+        "title": "Pro-cycling team cyclist assignment for an upcoming race",
+        "why_key": "Explicit race assignment prediction model (RaceFit, CatBoost); achieves 80% precision; uses multi-source training/race data; demonstrates applied predictive framework.",
+        "year": 2024,
+        "sport": "cycling",
+        "doi": "https://doi.org/10.1371/journal.pone.0297270",
+        "first_author": "Maor Sagi"
+      },
+      {
+        "work_id": "https://openalex.org/W4406463513",
+        "title": "PerfoRank: cluster-based performance ranking for improved performance evaluation and estimation in professional cycling",
+        "why_key": "Develops specialization-aware rider ranking; improves race outcome prediction via stage-context clustering; bridges athlete characterization and outcome modeling.",
+        "year": 2025,
+        "sport": "cycling",
+        "doi": "https://doi.org/10.1007/s10994-024-06716-7",
+        "first_author": "Bram Janssens"
+      },
+      {
+        "work_id": "https://openalex.org/W4415213466",
+        "title": "Technical classification of professional cycling stages using unsupervised learning: implications for performance variability",
+        "why_key": "Models stage-level performance variability; identifies terrain/technicality as CV drivers; demonstrates that stage context is predictable but admits limitations (no rider-level modeling).",
+        "year": 2025,
+        "sport": "cycling",
+        "doi": "https://doi.org/10.3389/fspor.2025.1661456",
+        "first_author": "Igor Garcia-Atutxa"
+      },
+      {
+        "work_id": "https://openalex.org/W4392754626",
+        "title": "The intensity rather than the quantity of prior work determines the subsequent downward shift in the power duration relationship in professional cyclists",
+        "why_key": "Establishes mechanistic principles of fatigue dynamics in elite cyclists; knowledge essential for building realistic race outcome models that account for cumulative fatigue.",
+        "year": 2024,
+        "sport": "cycling",
+        "doi": "https://doi.org/10.1002/ejsc.12077",
+        "first_author": "James Spragg"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "topic",
+      "title": "Race outcome prediction models and external validation",
+      "description": "No studies comprehensively compare machine learning models (regression, classification, ranking) for predicting race winners or podium finishes across multiple race formats and datasets. The 3 papers that build predictive models (W4205107775, W4392368282, W4406463513) lack: (1) external validation on held-out seasons/races; (2) comparison to baselines or alternative models; (3) sensitivity analysis; (4) open-source code/reproducibility. RaceFit (W4392368282) achieves 80% precision but on a small dataset with incomplete Strava data. PerfoRank (W4406463513) improves ranking but is not compared to traditional models. No meta-analysis of model performance exists.",
+      "evidence": "W4392368282 acknowledges 'incomplete data from STRAVA' and 'relatively small dataset.' W4406463513 does not report external validation metrics. W4205107775 demonstrates feasibility but generalizability unknown. W4415213466 explicitly states 'Rider-level attributes and team-strategy variables were not modeled.' Absence of ensemble studies, cross-dataset validation, or benchmark comparisons suggests this is an unstudied frontier.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4392368282",
+          "title": "Pro-cycling team cyclist assignment for an upcoming race",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1371/journal.pone.0297270",
+          "first_author": "Maor Sagi"
+        },
+        {
+          "work_id": "https://openalex.org/W4205107775",
+          "title": "Predicting the next Pogačar: a data analytical approach to detect young professional cycling talents",
+          "year": 2022,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1007/s10479-021-04476-4",
+          "first_author": "Bram Janssens"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Race outcome prediction is of direct interest to teams, broadcasters, and betting markets. Reliable prediction requires robust, validated models. Current work is proof-of-concept only; no production-ready system is documented. This is foundational for evidence-based race strategy.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Data is increasingly available (ProCyclingStats, Strava, ChronoRace API in our resources). ML expertise is widespread. Challenges: (1) outcome data labeling (winner/podium is easy; placement/time margin harder); (2) training-race data linkage; (3) confounding by team/tactical strategy; (4) class imbalance (one winner per race). Feasible for a PhD or industry project with 12-18 months effort.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "data",
+      "title": "Open, linked datasets pairing training metrics with race outcomes",
+      "description": "Most predictive work relies on proprietary wearable data (TrainingPeaks, Strava) or team-internal records. Open datasets exist (ProCyclingStats for results, ChronoRace for race times, Strava for some training) but are not systematically linked. No curated benchmark dataset of cyclist training histories + corresponding race results exists in our database (or cited by papers). W4392368282 uses private Strava data and acknowledges incomplete coverage. This fragmentation makes external validation and replication nearly impossible.",
+      "evidence": "W4392368282 states 'incomplete data from STRAVA with some cyclists not appearing or not sharing all workouts.' Our resource list includes ProCyclingStats, ChronoRace, Strava, TrainingPeaks, FirstCycling, but no paper reports linking them. W4415213466 uses 'Geospatial Road Cycling Race Results Data Set' (unspecified public source). No paper cites a publicly available training+race dataset.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4392368282",
+          "title": "Pro-cycling team cyclist assignment for an upcoming race",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1371/journal.pone.0297270",
+          "first_author": "Maor Sagi"
+        },
+        {
+          "work_id": "https://openalex.org/W4415213466",
+          "title": "Technical classification of professional cycling stages using unsupervised learning: implications for performance variability",
+          "year": 2025,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fspor.2025.1661456",
+          "first_author": "Igor Garcia-Atutxa"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Reproducibility and external validation require open data. Proprietary data limits scientific progress. Teams and platforms withhold data for competitive advantage, but open datasets accelerate research and enable meta-science.",
+      "feasibility": "high",
+      "feasibility_rationale": "Technical feasibility is high: (1) APIs exist (ChronoRace, Sporthive/MYLAPS); (2) web scraping is documented; (3) data engineering is routine. Challenge: privacy/permissions (athletes may not consent to data sharing). Feasible as a consortium effort (UCI, team data-sharing agreements) or synthetic benchmark.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "integration",
+      "title": "Tactical and strategic factors in race outcome models",
+      "description": "Prediction models focus on athlete physiology and training (power, VO2max, durability) but ignore tactics: team composition, domestique support, pacing strategy, breakaway timing, gear choice, weather adaptation. W4415213466 finds stage technicality drives performance variability but admits 'Rider-level attributes and team-strategy variables were not modeled; hence stage-level associations may be confounded by unobserved composition or tactics.' No paper combines physiological predictors with tactical/contextual variables (team size, rival presence, stage position, wind/weather).",
+      "evidence": "W4415213466 explicitly identifies this gap. W4391676994 (case study of a Giro podium finisher) describes day-by-day periodization but does not predict outcomes or model tactics. W4401062928 compares male/female Grand Tour winners but focuses on power/pacing, not team strategy. Qualitative paper W2907745455 discusses 'physical trainers, sport science, powermeters and big data' but does not model outcomes.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4415213466",
+          "title": "Technical classification of professional cycling stages using unsupervised learning: implications for performance variability",
+          "year": 2025,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fspor.2025.1661456",
+          "first_author": "Igor Garcia-Atutxa"
+        },
+        {
+          "work_id": "https://openalex.org/W4391676994",
+          "title": "The Day-by-Day Periodization Strategies of a Giro d’Italia Podium Finisher",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0224",
+          "first_author": "Gabriele Gallo"
+        },
+        {
+          "work_id": "https://openalex.org/W4401062928",
+          "title": "Racing Demands for Winning a Grand Tour: Differences and Similarities Between a Female and a Male Winner",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0476",
+          "first_author": "Robert P. Lamberts"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Cycling is fundamentally a team sport with tactical dimensionality. A physiologically dominant rider can lose if isolated by rivals or under-supported. Ignoring tactics makes models incomplete and unactionable for teams. Integration is necessary for real-world prediction.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Challenges: (1) tactics are not directly measured; must infer from race video, race radio transcripts, or team interviews; (2) team composition data is available but sparse; (3) weather data is archivable but rarely linked to race data. Requires multi-modal data fusion and domain expertise. Feasible with video annotation, archival race data, and collaboration with teams.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "population",
+      "title": "Women's cycling outcome prediction and performance drivers",
+      "description": "Only 7/86 papers (8.1%) study women. Of these, 3 address race outcomes (W4390639238 on age-performance relationships, W4400800783 on talent identification, W4401062928 on Grand Tour demands). No study predicts women's race outcomes or compares drivers to men. W4401062928 compares one male and one female Grand Tour winner but is descriptive, not predictive. W4390639238 studies age-performance but uses only 558 female riders from 1993-2021 (sparse, long time horizon). Severe under-representation limits generalizability of all prediction models.",
+      "evidence": "Literature review: 7/86 women-focused papers vs. 79 men-focused/mixed. W4401062928 explicitly states 'To describe and compare...a male and a female Grand Tour winner' but provides no predictive framework. W4390639238 applies ML to age-performance but not race outcome. W4412521828 compares successful/unsuccessful seasons in 14 female World Tour cyclists but does not build predictive models.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4401062928",
+          "title": "Racing Demands for Winning a Grand Tour: Differences and Similarities Between a Female and a Male Winner",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0476",
+          "first_author": "Robert P. Lamberts"
+        },
+        {
+          "work_id": "https://openalex.org/W4390639238",
+          "title": "The relationships between age and race performance in women’s road cycling",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1080/24748668.2023.2301208",
+          "first_author": "Arie‐Willem de Leeuw"
+        },
+        {
+          "work_id": "https://openalex.org/W4412521828",
+          "title": "Internal and External Load Characteristics in Professional Female Cyclists During Highly Successful and Less Successful Seasons",
+          "year": 2025,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1123/ijspp.2024-0365",
+          "first_author": "Annemiek J. Roete"
+        },
+        {
+          "work_id": "https://openalex.org/W4392289688",
+          "title": "Impact of menstrual cycle or combined oral contraception on elite female cyclists' training responses through a clustering analysis of training sessions",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fspor.2024.1307436",
+          "first_author": "Hugo Carlin"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Women comprise ~8% of our database but ~50% of cycling participation (estimate). Ignoring them perpetuates research bias and limits the applicability of predictive systems to growing women's cycling. Also, women's physiological/tactical profiles may differ from men's (e.g., W4394853539 shows differential recovery; W4392289688 shows menstrual cycle effects), requiring separate or gender-aware models.",
+      "feasibility": "high",
+      "feasibility_rationale": "Women's race data is available (UCI World Tour women's races; ProCyclingStats covers both). Training data access is the same bottleneck as men. No additional technical barriers. Limited by historical data sparsity (women's cycling has grown rapidly only recently).",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_5",
+      "type": "methodology",
+      "title": "Causal inference and feature importance in race outcomes",
+      "description": "Prediction studies use black-box ML (CatBoost, clustering, TrueSkill ranking) without explicit causal models or feature importance analysis. W4392368282 achieves 80% precision but does not report which features matter most or why. W4406463513 identifies specialization (terrain type) but via clustering, not causal regression. W4415213466 uses linear regression to predict stage-level CV but does not establish causality (correlation ≠ causation). No study applies causal inference methods (propensity matching, instrumental variables, causal trees, sensitivity analysis) to identify which interventions or characteristics causally affect race outcomes.",
+      "evidence": "W4392368282: no feature importance reported. W4406463513: specialization derived from unsupervised clustering, not supervised causal modeling. W4415213466: 'stage-level associations may be confounded by unobserved composition or tactics'—explicitly acknowledges confounding without addressing it. No study reports SHAP values, permutation importance, or causal DAGs.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4392368282",
+          "title": "Pro-cycling team cyclist assignment for an upcoming race",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1371/journal.pone.0297270",
+          "first_author": "Maor Sagi"
+        },
+        {
+          "work_id": "https://openalex.org/W4406463513",
+          "title": "PerfoRank: cluster-based performance ranking for improved performance evaluation and estimation in professional cycling",
+          "year": 2025,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1007/s10994-024-06716-7",
+          "first_author": "Bram Janssens"
+        },
+        {
+          "work_id": "https://openalex.org/W4415213466",
+          "title": "Technical classification of professional cycling stages using unsupervised learning: implications for performance variability",
+          "year": 2025,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fspor.2025.1661456",
+          "first_author": "Igor Garcia-Atutxa"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Teams and athletes want actionable insights: 'What training changes will improve race outcomes?' Prediction accuracy (R² or AUC) is insufficient without interpretability. Causal inference converts statistical models into decision-support tools.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires: (1) domain knowledge to specify causal graph; (2) observational data with sufficient overlap (positivity assumption); (3) no unmeasured confounders (often violated in sports). Feasible with domain expert collaboration and sensitivity analysis. Methods (doubly robust estimation, targeted learning) are established in causal inference literature.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_6",
+      "type": "temporal",
+      "title": "Longitudinal outcome prediction and within-season evolution",
+      "description": "Most studies are cross-sectional or short-term (single season). Only 3/86 papers are explicitly longitudinal (W2564232048, W3108048964, W4403453723). No study predicts race outcomes prospectively across seasons or models how predictive drivers evolve over a season. W4205107775 identifies talented young riders post-hoc (2 years of historical data) but does not predict future seasons. W4392368282 uses 5-week rolling windows for assignment prediction but no multi-season validation. Temporal dynamics—how fatigue, injury, form, team changes affect outcome probability—are unexplored.",
+      "evidence": "Longitudinal papers (W2564232048, W3108048964, W4403453723) focus on training/physiology evolution, not outcome prediction. W4205107775 uses historical data but validates on same cohort/period, not future seasons. W4392368282 is the only explicit prospective study (5-week window) but short-term.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4205107775",
+          "title": "Predicting the next Pogačar: a data analytical approach to detect young professional cycling talents",
+          "year": 2022,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1007/s10479-021-04476-4",
+          "first_author": "Bram Janssens"
+        },
+        {
+          "work_id": "https://openalex.org/W4392368282",
+          "title": "Pro-cycling team cyclist assignment for an upcoming race",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1371/journal.pone.0297270",
+          "first_author": "Maor Sagi"
+        },
+        {
+          "work_id": "https://openalex.org/W2564232048",
+          "title": "Training Intensity Distribution and Changes in Performance and Physiology of a 2nd Place Finisher Team of the Race across America Over a 6 Month Preparation Period",
+          "year": 2016,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fphys.2016.00642",
+          "first_author": "Christian Manunzio"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Practical prediction requires multi-season validation and handling of training/injury/team disruptions. Single-season models may not generalize across years with different rosters, courses, or rule changes. Multi-year validation is a scientific necessity for model credibility.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires: (1) multi-year race + training data; (2) handling missing/sparse data (injury periods, team transfers); (3) temporal modeling (time series, survival analysis, rolling windows). Data is available but linking across years and entities (riders changing teams) is non-trivial. Feasible with careful ETL and domain-aware imputation.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_7",
+      "type": "methodology",
+      "title": "Robustness and uncertainty quantification in predictions",
+      "description": "No prediction study reports confidence intervals, prediction intervals, or calibration metrics (e.g., Expected Calibration Error). W4392368282 reports precision@k but not AUC, log-loss, or calibration curves. W4206463513 reports ranking correlation but not uncertainty bounds. W4205107775 does not report out-of-sample performance metrics formally. Without uncertainty quantification, practitioners cannot judge whether a prediction is reliable (high confidence, low error) or speculative (wide bounds, high epistemic uncertainty).",
+      "evidence": "W4392368282: 'up to 80% precision@i' reported but no confidence intervals or error distribution. W4406463513: correlation reported; no prediction intervals. W4205107775: validation metrics not reported. Meta-analysis W4390838132 explicitly states 'Very imprecise interval estimates for most outcomes limiting interpretability.', showing awareness of the issue but only in a physiology context, not prediction.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4392368282",
+          "title": "Pro-cycling team cyclist assignment for an upcoming race",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1371/journal.pone.0297270",
+          "first_author": "Maor Sagi"
+        },
+        {
+          "work_id": "https://openalex.org/W4406463513",
+          "title": "PerfoRank: cluster-based performance ranking for improved performance evaluation and estimation in professional cycling",
+          "year": 2025,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1007/s10994-024-06716-7",
+          "first_author": "Bram Janssens"
+        },
+        {
+          "work_id": "https://openalex.org/W4205107775",
+          "title": "Predicting the next Pogačar: a data analytical approach to detect young professional cycling talents",
+          "year": 2022,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1007/s10479-021-04476-4",
+          "first_author": "Bram Janssens"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Uncertainty quantification is essential for decision-making. A team must know whether a prediction of 'Rider X will win stage Y' is 60% or 95% confidence. Without bounds, predictions are not actionable.",
+      "feasibility": "high",
+      "feasibility_rationale": "Standard methods exist: Bayesian credible intervals, conformal prediction, bootstrap confidence intervals, calibration analysis. Minimal additional computational cost. Requires only methodological awareness.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_8",
+      "type": "data",
+      "title": "Non-physiological outcome drivers: weather, course design, equipment",
+      "description": "Prediction models ignore environmental and equipment factors. No study measures how wind speed, temperature, course gradient distribution, or equipment choices (wheel aerodynamics, tire choice, drivetrain) affect race outcomes. W4415213466 includes elevation and surface type but not weather. W4313519554 and W4313462665 study aerodynamics and positioning but not their outcome-predictive power in races. Weather data is archivable but not linked to race data in our database. Equipment data is proprietary/sparse.",
+      "evidence": "W4415213466: incorporates elevation, surface, distance; does not mention weather data. Equipment studies (W4313519554, W4313462665, W4401703316) are laboratory-based, not race-outcome-linked. W7124249909 (200m TT) states 'Environmental factors, such as air density, were not considered; although all races were held in indoor velodromes under controlled conditions.' Outdoor racing lacks this control.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4415213466",
+          "title": "Technical classification of professional cycling stages using unsupervised learning: implications for performance variability",
+          "year": 2025,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fspor.2025.1661456",
+          "first_author": "Igor Garcia-Atutxa"
+        },
+        {
+          "work_id": "https://openalex.org/W4313462665",
+          "title": "Time Trial positioning in elite cyclists - exploring the physiological effects of adapting to a lower torso position",
+          "year": 2022,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.28985/1322.jsc.14",
+          "first_author": "Claes Cubel"
+        },
+        {
+          "work_id": "https://openalex.org/W7124249909",
+          "title": "Performance Analysis of 200 m Qualifying Time Trial: Gear Ratios, Velocity Patterns, and Acceleration Strategies",
+          "year": 2026,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1002/ejsc.70123",
+          "first_author": "Yusuke Ikeda"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Weather and equipment are significant sources of variance in cycling performance. A rainy, windy stage favors bike handlers and heavier, stronger riders; a dry, fast stage favors climbers and aerodynamicists. Models without these factors are incomplete.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Weather data is openly available (NOAA, weather APIs). Course data can be extracted from GPS. Equipment data requires web scraping or team interviews. Challenges: linking weather to race timing (hourly granularity needed); equipment choices are sparsely documented. Feasible with weather data APIs and motivated data collection.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_9",
+      "type": "replication",
+      "title": "Replication and robustness of ML race prediction models",
+      "description": "The three papers that build race outcome models (W4205107775, W4392368282, W4406463513) are one-off studies with no independent replication or sensitivity analysis. W4392368282 states 'relatively small dataset compared to other sports analytics applications.' W4406463513 is published in a top ML journal but racing is niche; peer review likely did not include cycling experts. No subsequent paper has tested RaceFit, PerfoRank, or the Pogačar model on new data or improved them. This suggests each study is isolated, not part of a cumulative research program.",
+      "evidence": "W4392368282, W4406463513, W4205107775 are 2024-2025 publications. No follow-up papers in our database. No code is released (except W4390838132 meta-analysis on OSF; race prediction models have no open code listed).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4392368282",
+          "title": "Pro-cycling team cyclist assignment for an upcoming race",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1371/journal.pone.0297270",
+          "first_author": "Maor Sagi"
+        },
+        {
+          "work_id": "https://openalex.org/W4205107775",
+          "title": "Predicting the next Pogačar: a data analytical approach to detect young professional cycling talents",
+          "year": 2022,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1007/s10479-021-04476-4",
+          "first_author": "Bram Janssens"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Replication builds scientific credibility. One successful model does not establish robust, generalizable prediction. Independent validation across datasets, time periods, and rider populations is essential.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires: (1) access to original model code/data (not currently released); (2) independent data collection; (3) same or comparable races. Feasible if authors release code and data; otherwise requires reverse-engineering. Depends on community norms in cycling analytics.",
+      "confidence": "high"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Build and validate a multi-format race outcome prediction system with external evaluation",
+      "description": "Develop a unified ML framework that predicts race winners/podium finishes across road races (one-day classics, stage races), track races, and mountain bike events. Use ensemble methods (gradient boosting, neural networks, ranking models) trained on linked training+race datasets (2015-2023). Validate externally on 2024-2025 held-out races. Report AUC, precision@k, calibration error, and feature importance. Compare to baselines (ELO, favorites, oddsmakers). Publish code and anonymized data on GitHub. This addresses gaps 1, 2, 6.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_2",
+        "gap_6"
+      ],
+      "suggested_methodology": "Supervised classification (XGBoost, LightGBM, neural networks for ranking). Temporal cross-validation (train 2015-2022, validate 2023, test 2024-2025). Explainability via SHAP, permutation importance. Calibration via Platt scaling or isotonic regression.",
+      "suggested_data": "ProCyclingStats (race results), ChronoRace (split times, via API), Strava (training, via API if available), TrainingPeaks (proprietary; partner access). Merge by rider ID, race date. Supplement with UCI official data if accessible.",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Establishes cycling race outcome prediction as a rigorous, replicable science. Enables teams, broadcasters, and bettors to make data-driven decisions. Identifies which predictors matter most (power, durability, tactics, recovery). Opens door for causal inference and what-if analysis."
+    },
+    {
+      "priority": 2,
+      "title": "Integrate tactical and strategic variables into outcome prediction models",
+      "description": "Extend race outcome models to include team composition, domestique support patterns, pacing strategy (via race video or GPS), and rival interactions. Collect team roster data (UCI databases), infer domestique roles from historical results, extract pacing profiles from race timekeeping data, and label tactical events (breakaways, attacks, chases) via video annotation or race radio transcripts. Build hybrid physiology+tactics models and measure contribution of each module. Evaluate on a subset of Grand Tours with rich tactical data.",
+      "addresses_gaps": [
+        "gap_3",
+        "gap_5"
+      ],
+      "suggested_methodology": "Feature engineering: team size, domestique power profile, co-occurrence network of prior collaborations, breakaway timing (from GPS). Multi-task learning: predict outcome and tactical events jointly. Causal forest or doubly robust estimation to isolate causal effect of tactics on outcomes.",
+      "suggested_data": "UCI team rosters, ChronoRace split times, GPS traces from Garmin/Strava (if race-specific), video annotations (10-20 key races manually coded), race radio transcripts (if archived).",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Bridges sports analytics and domain expertise. Delivers actionable insights for teams (optimal domestique allocation, breakaway timing). Demonstrates that tactics, not just physiology, drive outcomes. Increases model accuracy and real-world credibility."
+    },
+    {
+      "priority": 3,
+      "title": "Develop and validate separate race outcome prediction models for women's cycling",
+      "description": "Replicate race outcome prediction on women's cycling (UCI Women's WorldTour, U23 races). Test whether drivers differ from men (e.g., do team tactics, durability, or menstrual cycle effects shift importance?). Build gender-specific models or joint gender-aware models with interaction terms. Validate on 2024-2025 women's races. Report metrics by race type, competition level, and season. Explicitly test whether male-trained models transfer to women or require retraining.",
+      "addresses_gaps": [
+        "gap_4"
+      ],
+      "suggested_methodology": "Same as priority 1, but stratified by gender. Hypothesis testing: compare feature importance distributions (male vs. female models) via permutation tests. Transfer learning: train on men, fine-tune on women.",
+      "suggested_data": "ProCyclingStats women's results, Strava women's activities (if linked to race IDs), training data from women's teams (partnership), UCI women's race calendar.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Corrects major representation bias in cycling analytics. Enables evidence-based support for women's teams and athletes. May reveal physiological or tactical differences with implications for training/selection. Increases equity in data science."
+    },
+    {
+      "priority": 4,
+      "title": "Quantify causal drivers of race outcomes using observational causal inference",
+      "description": "Estimate causal effects of training characteristics (intensity distribution, interval intensity, recovery quality), physiological traits (power, VO2max, durability), and environmental factors (altitude, weather) on race outcome probability. Use doubly robust estimation, causal forests, or sensitivity analysis (Rotnitzky bounds) to account for unmeasured confounding. Report treatment effects with confidence intervals. Identify which factors are most causally important for improving race outcomes.",
+      "addresses_gaps": [
+        "gap_5"
+      ],
+      "suggested_methodology": "Causal inference: propensity score matching (if unmeasured confounding is mild), doubly robust estimation, causal forests, targeted maximum likelihood (TMLE). Sensitivity analysis via E-value to quantify robustness to unmeasured confounders. Outcome: race podium finish (binary or time margin).",
+      "suggested_data": "Observational training+race data (same as priority 1), augmented with causal graph from expert elicitation (cyclists, coaches, sports scientists).",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Converts predictive models into causal decision-support tools. Teams can answer 'If we increase VO2max by 5%, what is the expected change in podium probability?' Informs training prescription. Advances methodological rigor in sports analytics."
+    },
+    {
+      "priority": 5,
+      "title": "Build longitudinal, multi-season race outcome models with time-varying effects",
+      "description": "Develop time-series forecasting models that predict race outcomes prospectively across seasons (2023→2024→2025) while handling training/injury/team disruptions. Use state-space models, recurrent neural networks (LSTM), or online learning to capture within-season form evolution and carry-over effects from prior seasons. Validate on multi-year hold-outs. Report time-varying feature importance (e.g., is early-season power more predictive than late-season power?). Quantify sensitivity to missing/sparse data (injuries, team changes).",
+      "addresses_gaps": [
+        "gap_6"
+      ],
+      "suggested_methodology": "Time-series modeling: LSTM-based outcome prediction, Kalman filtering for latent form estimation, hidden Markov models for career phase detection. Temporal cross-validation: train 2015-2022, validate 2023 (form mid-season), test 2024-2025. Survival analysis for career longevity as auxiliary outcome.",
+      "suggested_data": "Multi-year training+race data (2015-2025), injury/team change annotations, career phase labels (rising star, peak, declining).",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Enables real-time, adaptive race prediction (updates as data arrives). Captures form dynamics relevant to coaching. Reveals which early-season indicators predict late-season success. Supports long-term career planning."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "Moderate. The papers fall into clear clusters (physiology, training, power profiling, ML) with weak cross-talk. Few papers truly engage with predictive modeling as a unified goal; most are 'monologues' in their domains. The 3 prediction papers (W4205107775, W4392368282, W4406463513) do not cite each other, suggesting they developed independently despite overlapping questions. Within physiology cluster, there is good cumulative understanding (power, durability, VO2max as determinants); within ML cluster, models are isolated. Synthesis across clusters (physiology→prediction) is incomplete because physiology papers rarely ask 'Can we predict races?' and ML papers rarely ground predictions in physiological mechanisms. Real dialogue would show debate (e.g., 'Does durability or power matter more?') but papers avoid direct comparison. Overall: good evidence for prerequisites, poor evidence for integration.",
+    "strengths": [
+      "Comprehensive coverage of power metrics, training load, and physiological determinants—establishes foundation for prediction.",
+      "Recent surge in ML papers (2024-2025) shows growing interest in predictive modeling in cycling.",
+      "Database includes both descriptive (N=1 case studies) and large-N studies (N=1691 in W4411396935), enabling methodological diversity.",
+      "Papers span multiple cycling disciplines (road, track, MTB, BMX, triathlon), revealing domain-specific nuances.",
+      "Explicit identification of women's under-representation (7/86) allows targeted gap analysis."
+    ],
+    "limitations": [
+      "Small sample sizes dominate (29/86 N<30), limiting generalizability and statistical power for outcome prediction.",
+      "Physiological focus (70% of papers) vs. prediction focus (<5%) creates citation asymmetry: physiology→prediction is unidirectional, prediction→physiology is rare.",
+      "Most recent papers (2024+) are not yet widely cited, limiting evidence of impact or replication.",
+      "Database likely under-represents sports analytics/operations research literature (prediction papers may exist in those journals but not be tagged 'cycling physiology').",
+      "No access to full-text papers limits ability to extract detailed methods, especially code availability and reproducibility details.",
+      "Absence of negative results or replication failures makes it hard to identify which models are robust vs. one-off successes."
+    ],
+    "assumptions": [
+      "Assumed that 'absence from database' = 'gap in research,' but this conflates database limitations with research gaps. Our database is curated for AI-assessed relevance ≥7 (sports analytics fit), which may exclude basic sports science or operations research papers.",
+      "Assumed that race outcome prediction is a coherent research goal, but papers pursue it via different operationalizations (winner prediction vs. talent ranking vs. race assignment). Lack of unified framework makes synthesis harder.",
+      "Assumed that women's under-representation is a research gap, not a data availability issue. Women's cycling has grown rapidly only since ~2010, so historical data is sparse. This is partially a temporal gap, not just a gender bias gap.",
+      "Assumed that physiological predictors are sufficient/necessary for race outcome prediction. Possible that unmeasured factors (psychology, luck, weather, team politics) dominate, making physiological models intrinsically limited.",
+      "Assumed that open data and reproducibility are desirable. Some researchers/teams may intentionally withhold data for competitive advantage; this is a game-theoretic constraint, not a research gap."
+    ],
+    "database_coverage_gaps": [
+      "Sports analytics and operations research literature: Our database includes 10/86 ML papers, but operations research journals (INFORMS, Operations Research, Computers & Operations Research) likely contain optimization and prediction work in cycling that we may have missed. One INFORMS paper (W7126172738) is in our database, suggesting broader coverage possible. Recommend expanding search to sports analytics, sports economics, and management science venues.",
+      "Race outcome datasets and benchmarks: No cycling race outcome prediction benchmark dataset is documented in our papers (e.g., analogous to sports-reference baseball data or Kaggle competitions). Likely exists in sports data science communities but not yet published in peer review. Recommend checking Kaggle, GitHub, and UCI datasets.",
+      "Causal inference in sports: Our database includes 1 qualitative paper (W2907745455) and no formal causal inference studies. Causal inference is active in epidemiology, economics, and ML but may be under-represented in sports science journals, which tend to favor frequentist hypothesis testing.",
+      "Women's cycling physiology and performance: Only 7/86 papers study women. Recent growth in women's professional cycling (post-2020) may not yet be reflected in academic literature (publication lag is 1-2 years). Recommend searching 2024-2025 pre-prints and conference proceedings.",
+      "Tactical and biomechanical prediction: Papers study aerodynamics (W4313462665), positioning (W4313519554), and biomechanics (W4414301499) in isolation but never link to race outcomes. This suggests a methodological gap (no studies combine video + outcome data) rather than a conceptual gap. This is likely feasible but under-explored.",
+      "Time series and longitudinal modeling in sports: Few papers use LSTM, state-space models, or survival analysis (relevant for career trajectories). This gap may reflect journal preferences for cross-sectional designs or lack of multi-year datasets in published work."
+    ],
+    "what_would_improve_this": [
+      "Full-text access to all 86 papers: Summaries sometimes omit code availability, detailed methods, or robustness checks. Full-text would clarify reproducibility and reveal hidden methodological heterogeneity.",
+      "Citation networks and paper-to-paper connections: Knowing which papers cite each other would reveal whether dialogue exists. A citation map could show if prediction papers engage with physiology papers or stand alone.",
+      "Conflict-of-interest and funding source annotations: Knowing which authors/papers are affiliated with teams, wearable companies (Garmin, TrainingPeaks), or betting markets would illuminate incentives and potential bias.",
+      "Outcome-level data: Papers report aggregate metrics (e.g., '80% precision') but not outcome distributions or error analysis. Access to outcome predictions and residuals would reveal whether errors are systematic (e.g., always overestimate climbers) or random.",
+      "Domain expert review: A sports scientist or professional cyclist reviewing this analysis could validate whether identified gaps match practitioner priorities. Current analysis is literature-centric, not problem-centric.",
+      "Longitudinal follow-up: A repeat gap analysis in 12 months would show whether priorities shifted or gaps were addressed. This would calibrate the predictive validity of our gap assessment."
+    ],
+    "process_cost_reflection": "Given: 86 papers with abstracts/structured summaries. Synthesis required: (1) reading/organizing papers into clusters; (2) identifying recurring themes and absences; (3) cross-referencing evidence to support claims; (4) writing detailed gap descriptions; (5) proposing actionable research directions. Cost-benefit: At 86 papers, the database is manageable. 5-10 gaps is sufficient to avoid redundancy. The structured summaries (theme, sub-theme, results, limitations) enabled rapid pattern extraction; full-text access would likely add 30-40% more nuance (e.g., discovering reproducibility issues or code availability) without fundamentally changing gap identification. Bottleneck: most recent papers (2024-2025, 54/86) lack citations to each other, making it hard to assess whether current research is cohesive or fragmented. Abstract-level analysis was probably sufficient; full-text would confirm fragmentation but not change the conclusion. Calibration: This analysis is 'landscape assessment' quality (high-level patterns, low-resolution details). For a funded research agenda (e.g., a center of excellence in cycling analytics), full-text review + expert consultation would be cost-justified. For this initial gap analysis, 86 papers with abstracts is near-optimal: sufficient detail, manageable scale, reasonable cost (~12-16 hours of focused reading and synthesis)."
+  },
+  "paper_index": {
+    "https://openalex.org/W4205107775": {
+      "title": "Predicting the next Pogačar: a data analytical approach to detect young professional cycling talents",
+      "year": 2022,
+      "first_author": "Bram Janssens"
+    },
+    "https://openalex.org/W4392368282": {
+      "title": "Pro-cycling team cyclist assignment for an upcoming race",
+      "year": 2024,
+      "first_author": "Maor Sagi"
+    },
+    "https://openalex.org/W4406463513": {
+      "title": "PerfoRank: cluster-based performance ranking for improved performance evaluation and estimation in professional cycling",
+      "year": 2025,
+      "first_author": "Bram Janssens"
+    },
+    "https://openalex.org/W4392754626": {
+      "title": "The intensity rather than the quantity of prior work determines the subsequent downward shift in the power duration relationship in professional cyclists",
+      "year": 2024,
+      "first_author": "James Spragg"
+    },
+    "https://openalex.org/W4393186677": {
+      "title": "The Influence of High-Intensity Work on the Record Power Profile of Under-23, Pro Team, and World Tour Cyclists",
+      "year": 2024,
+      "first_author": "Peter Leo"
+    },
+    "https://openalex.org/W4408498257": {
+      "title": "Mechanistic influence of the torque cadence relationship on power output during exhaustive all-out field tests in professional cyclists",
+      "year": 2025,
+      "first_author": "Peter Leo"
+    },
+    "https://openalex.org/W4403300820": {
+      "title": "The higher the fraction of maximal oxygen uptake is during interval training, the greater is the cycling performance gain",
+      "year": 2024,
+      "first_author": "Ingvill Odden"
+    },
+    "https://openalex.org/W4390838132": {
+      "title": "Physiological and Performance Adaptations to Interval Training in Endurance-Trained Cyclists: An Exploratory Systematic Review and Meta-Analysis",
+      "year": 2024,
+      "first_author": "Bernardo Norte"
+    },
+    "https://openalex.org/W4415213466": {
+      "title": "Technical classification of professional cycling stages using unsupervised learning: implications for performance variability",
+      "year": 2025,
+      "first_author": "Igor Garcia-Atutxa"
+    },
+    "https://openalex.org/W4392289688": {
+      "title": "Impact of menstrual cycle or combined oral contraception on elite female cyclists' training responses through a clustering analysis of training sessions",
+      "year": 2024,
+      "first_author": "Hugo Carlin"
+    },
+    "https://openalex.org/W4401062928": {
+      "title": "Racing Demands for Winning a Grand Tour: Differences and Similarities Between a Female and a Male Winner",
+      "year": 2024,
+      "first_author": "Robert P. Lamberts"
+    },
+    "https://openalex.org/W4412521828": {
+      "title": "Internal and External Load Characteristics in Professional Female Cyclists During Highly Successful and Less Successful Seasons",
+      "year": 2025,
+      "first_author": "Annemiek J. Roete"
+    },
+    "https://openalex.org/W4391676994": {
+      "title": "The Day-by-Day Periodization Strategies of a Giro d’Italia Podium Finisher",
+      "year": 2024,
+      "first_author": "Gabriele Gallo"
+    },
+    "https://openalex.org/W2907745455": {
+      "title": "About the role of physical trainers, sport science, powermeters and “big data” in professional road cycling",
+      "year": 2018,
+      "first_author": "Míkel Zabala"
+    },
+    "https://openalex.org/W4390639238": {
+      "title": "The relationships between age and race performance in women’s road cycling",
+      "year": 2024,
+      "first_author": "Arie‐Willem de Leeuw"
+    },
+    "https://openalex.org/W4400800783": {
+      "title": "Predicting Future Athletic Performance in Young Female Road Cyclists Based on Aerobic Fitness and Hematological Variables",
+      "year": 2024,
+      "first_author": "Dariusz Sitkowski"
+    },
+    "https://openalex.org/W4394853539": {
+      "title": "The Night-Time Sleep and Autonomic Activity of Male and Female Professional Road Cyclists Competing in the Tour de France and Tour de France Femmes",
+      "year": 2024,
+      "first_author": "Charli Sargent"
+    },
+    "https://openalex.org/W2564232048": {
+      "title": "Training Intensity Distribution and Changes in Performance and Physiology of a 2nd Place Finisher Team of the Race across America Over a 6 Month Preparation Period",
+      "year": 2016,
+      "first_author": "Christian Manunzio"
+    },
+    "https://openalex.org/W3108048964": {
+      "title": "Modeling Stress-Recovery Status Through Heart Rate Changes Along a Cycling Grand Tour",
+      "year": 2020,
+      "first_author": "Anna Barrero"
+    },
+    "https://openalex.org/W4403453723": {
+      "title": "Change in sprint cycling torque is not associated with change in isometric force following six weeks of sprint cycling and resistance training in strength‐trained novice cyclists",
+      "year": 2024,
+      "first_author": "Shannon Connolly"
+    },
+    "https://openalex.org/W4313519554": {
+      "title": "The short-term recovery of sprint cycling performance",
+      "year": 2022,
+      "first_author": "Julian Dale"
+    },
+    "https://openalex.org/W4313462665": {
+      "title": "Time Trial positioning in elite cyclists - exploring the physiological effects of adapting to a lower torso position",
+      "year": 2022,
+      "first_author": "Claes Cubel"
+    },
+    "https://openalex.org/W4401703316": {
+      "title": "The Accuracy and Reliability of the Power Measurements of the TACX Neo 2T Smart Trainer and Its Agreement against the Garmin Vector 3 Pedals",
+      "year": 2024,
+      "first_author": "Jorge E. Morais"
+    },
+    "https://openalex.org/W7124249909": {
+      "title": "Performance Analysis of 200 m Qualifying Time Trial: Gear Ratios, Velocity Patterns, and Acceleration Strategies",
+      "year": 2026,
+      "first_author": "Yusuke Ikeda"
+    },
+    "https://openalex.org/W4411396935": {
+      "title": "Ventilatory Thresholds Differences According to Aerobic Fitness Level in 1450 Males and 241 Females on Cycle‐Ergometer: A Cross‐Sectional Study",
+      "year": 2025,
+      "first_author": "José Antonio Benítez‐Muñoz"
+    },
+    "https://openalex.org/W7126172738": {
+      "title": "Project 4:05: Optimizing USA Cycling’s Women’s Team Pursuit Gold",
+      "year": 2026,
+      "first_author": "Ryan Cooper"
+    },
+    "https://openalex.org/W4414301499": {
+      "title": "A machine learning approach for saddle height classification in cycling",
+      "year": 2025,
+      "first_author": "Fangbo Bing"
+    }
+  }
+}

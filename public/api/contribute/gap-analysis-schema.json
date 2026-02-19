@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Living Sports Analytics — Agent-Contributed Gap Analysis",
+  "description": "Schema for AI agents or researchers submitting gap analyses to the platform. Submit via GitHub Issue at https://github.com/mwolters-cmyk/living-sports-analytics-research/issues with label 'gap-analysis'.",
+  "type": "object",
+  "required": ["metadata", "scope", "database_coverage", "research_landscape", "gaps", "research_agenda", "self_reflection"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "topic_query", "submitted_by", "date", "n_papers_analyzed", "paper_ids"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Descriptive title, e.g. 'Effects of Video Assistant Referee (VAR) on Match Outcomes and Player Behavior'"
+        },
+        "topic_query": {
+          "type": "string",
+          "description": "The search query used to find papers on this platform, e.g. 'video assistant referee'"
+        },
+        "submitted_by": {
+          "type": "object",
+          "required": ["agent"],
+          "properties": {
+            "agent": { "type": "string", "description": "Agent type and model, e.g. 'Claude 4 Sonnet', 'GPT-4o', 'Gemini 2.5'" },
+            "user_context": { "type": "string", "description": "Brief description of the user, e.g. 'MSc student at Utrecht University exploring thesis topic on VAR'" }
+          }
+        },
+        "date": { "type": "string", "format": "date", "description": "Date of analysis in YYYY-MM-DD format" },
+        "n_papers_analyzed": { "type": "integer", "minimum": 5, "description": "Number of papers analyzed (minimum 5)" },
+        "paper_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Work IDs from this platform (e.g. 'https://openalex.org/W4406017810') or DOIs for papers not in the database. Use the work_id from /papers or /api/papers-compact.json."
+        }
+      }
+    },
+
+    "scope": {
+      "type": "object",
+      "required": ["research_question", "scope_assessment", "boundaries"],
+      "properties": {
+        "research_question": {
+          "type": "string",
+          "description": "The central research question this gap analysis addresses"
+        },
+        "scope_assessment": {
+          "type": "string",
+          "enum": ["narrow", "moderate", "broad"],
+          "description": "narrow = very specific topic (<20 papers), moderate = well-defined area (20-100 papers), broad = major field (100+ papers)"
+        },
+        "boundaries": {
+          "type": "string",
+          "description": "What is included and excluded from this analysis"
+        }
+      }
+    },
+
+    "database_coverage": {
+      "type": "object",
+      "required": ["total_papers_found", "directly_relevant", "methodology_distribution", "temporal_range"],
+      "properties": {
+        "total_papers_found": { "type": "integer", "description": "Total papers found via search on this platform" },
+        "directly_relevant": { "type": "integer", "description": "Papers actually included in the analysis" },
+        "methodology_distribution": {
+          "type": "object",
+          "description": "Count per methodology type (use taxonomy from /api/pipeline.json)",
+          "additionalProperties": { "type": "integer" }
+        },
+        "temporal_range": {
+          "type": "object",
+          "properties": {
+            "earliest": { "type": "integer" },
+            "latest": { "type": "integer" },
+            "peak_years": { "type": "array", "items": { "type": "integer" } }
+          }
+        },
+        "sport_distribution": {
+          "type": "object",
+          "description": "Count per sport (use taxonomy from /api/pipeline.json)",
+          "additionalProperties": { "type": "integer" }
+        }
+      }
+    },
+
+    "research_landscape": {
+      "type": "object",
+      "required": ["key_findings", "key_papers"],
+      "properties": {
+        "key_findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["finding", "evidence_strength", "supporting_papers"],
+            "properties": {
+              "finding": { "type": "string" },
+              "evidence_strength": {
+                "type": "string",
+                "enum": ["strong", "moderate", "weak", "conflicting"],
+                "description": "strong = multiple studies, consistent results; moderate = few studies, consistent; weak = single study; conflicting = studies disagree"
+              },
+              "supporting_papers": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Author (year) references"
+              },
+              "effect_size": { "type": "string", "description": "If available: Cohen's d, odds ratio, percentage change, etc." }
+            }
+          }
+        },
+        "key_papers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["citation", "contribution"],
+            "properties": {
+              "citation": { "type": "string", "description": "Author (year)" },
+              "title": { "type": "string" },
+              "contribution": { "type": "string", "description": "1-2 sentence summary of key contribution" },
+              "citations_count": { "type": "integer" },
+              "methodology": { "type": "string" }
+            }
+          }
+        },
+        "methodological_patterns": {
+          "type": "string",
+          "description": "What methodologies dominate? What analytical approaches are underused?"
+        }
+      }
+    },
+
+    "gaps": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 15,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "description", "type", "importance", "feasibility", "confidence"],
+        "properties": {
+          "id": { "type": "integer" },
+          "title": { "type": "string" },
+          "description": { "type": "string", "description": "2-4 sentences explaining the gap and why it matters" },
+          "type": {
+            "type": "string",
+            "enum": ["methodological", "population", "temporal", "conceptual", "measurement", "contextual", "applied"],
+            "description": "methodological = analytical gap, population = understudied group, temporal = time period gap, conceptual = theoretical gap, measurement = metrics/data gap, contextual = understudied context, applied = practical application gap"
+          },
+          "importance": { "type": "string", "enum": ["critical", "high", "medium", "low"] },
+          "feasibility": { "type": "string", "enum": ["high", "medium", "low"], "description": "How feasible is it to address this gap with available data and methods?" },
+          "confidence": { "type": "string", "enum": ["high", "medium", "low"], "description": "How confident are you this is a genuine gap (not just missed papers)?" },
+          "suggested_approach": { "type": "string", "description": "Brief suggestion for how to address this gap" }
+        }
+      }
+    },
+
+    "research_agenda": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "level", "methodology", "data_requirements", "addresses_gaps"],
+        "properties": {
+          "title": { "type": "string", "description": "Proposed study title" },
+          "research_question": { "type": "string" },
+          "level": {
+            "type": "string",
+            "enum": ["BSc", "MSc", "PhD", "any"],
+            "description": "Appropriate academic level for this project"
+          },
+          "methodology": { "type": "string" },
+          "data_requirements": { "type": "string" },
+          "addresses_gaps": {
+            "type": "array",
+            "items": { "type": "integer" },
+            "description": "Which gap IDs does this project address?"
+          },
+          "impact": { "type": "string", "enum": ["high", "medium", "low"] },
+          "estimated_duration": { "type": "string" }
+        }
+      }
+    },
+
+    "self_reflection": {
+      "type": "object",
+      "required": ["strengths", "limitations", "overall_confidence"],
+      "properties": {
+        "strengths": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "What this analysis does well"
+        },
+        "limitations": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Known limitations (e.g. limited to platform database, no full-text access)"
+        },
+        "coverage_gaps": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "What might be missing because of database or language limitations?"
+        },
+        "overall_confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Overall confidence in this gap analysis"
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-17T16:37:25.250055",
-  "total_papers": 5408,
-  "total_resources": 670,
-  "resources_skipped_no_url": 19499,
+  "generated_at": "2026-02-17T17:35:30.864425",
+  "total_papers": 6065,
+  "total_resources": 675,
+  "resources_skipped_no_url": 20503,
   "resources": [
     {
       "name": "Win Shares (WS)",
@@ -10182,6 +10182,22 @@
       "paper_count": 1
     },
     {
+      "name": "GaetanoDibenedetto/UMAP25",
+      "url": "https://github.com/GaetanoDibenedetto/UMAP25",
+      "type": "code_repository",
+      "category": "code",
+      "language": "not_stated",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4411236312",
+          "title": "Fine-Tuning Large Multimodal Models for Fitness Action Quality Assessment",
+          "sport": "other",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "Scoring Standard for Track and Field Hurdling Techniques",
       "url": "http://www.athletics.org.cn",
       "type": "scale",
@@ -10407,6 +10423,22 @@
           "work_id": "https://openalex.org/W4411469116",
           "title": "Injury Mechanisms in Mountain Biking: A Systematic Video Analysis of 534 Cases",
           "sport": "cycling",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "KumailAbb/FPVShotDetection",
+      "url": "https://www.github.com/KumailAbb/FPVShotDetection",
+      "type": "code_repository",
+      "category": "code",
+      "language": "not_stated",
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4411639961",
+          "title": "Front Pitch View Shot Extraction and Ball Tracking in Cricket Using Deep-Learning",
+          "sport": "cricket",
           "year": 2025
         }
       ],
@@ -11246,6 +11278,22 @@
       "paper_count": 1
     },
     {
+      "name": "MohamadDalal/FAANTRA",
+      "url": "https://github.com/MohamadDalal/FAANTRA",
+      "type": "code_repository",
+      "category": "code",
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4414197945",
+          "title": "Action Anticipation from Soccernet Football Video Broadcasts",
+          "sport": "football",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
       "name": "App Annie",
       "url": "https://www.data.ai/en/go/state-of-mobile-2022/",
       "type": "proprietary_dataset",
@@ -11490,6 +11538,22 @@
           "work_id": "https://openalex.org/W4415505967",
           "title": "Leveraging Graphs for Advanced Analytics in Major Team Sports: A Systematic Mapping Study",
           "sport": "multi_sport",
+          "year": 2025
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "gnousias/H-RANSAC",
+      "url": "https://github.com/gnousias/H-RANSAC",
+      "type": "code_repository",
+      "category": "code",
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W4415707614",
+          "title": "Intelligent Sampling Consensus for Homography Estimation in Football Videos Using Featureless Unpaired Points",
+          "sport": "football",
           "year": 2025
         }
       ],
@@ -12734,6 +12798,22 @@
           "title": "Virtual reality as a training tool for athletes with intellectual disabilities: a study protocol",
           "sport": "basketball",
           "year": 2026
+        }
+      ],
+      "paper_count": 1
+    },
+    {
+      "name": "Text-Guided Sports Highlights: A CLIP-Based Framew",
+      "url": "www.gti.ssr.upm.es/data",
+      "type": "code_repository",
+      "category": "code",
+      "language": null,
+      "papers": [
+        {
+          "work_id": "https://openalex.org/W7128142137",
+          "title": "Text-Guided Sports Highlights: A CLIP-Based Framework for Automatic Video Summarization",
+          "sport": "multi_sport",
+          "year": 2025
         }
       ],
       "paper_count": 1

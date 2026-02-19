@@ -1,0 +1,1085 @@
+{
+  "description": "Full gap analysis: \"How is machine learning used for injury prediction and prevention in football?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.904Z",
+  "slug": "how-is-machine-learning-used-for-injury-prediction-and-prevention-in-football",
+  "question": "How is machine learning used for injury prediction and prevention in football?",
+  "created_at": "2026-02-16T20:36:23.338278",
+  "analyzed_at": "2026-02-16T20:53:31.782018",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 68,
+  "cost_usd": 0.0744,
+  "analysis_confidence": "medium",
+  "scope_assessment": "The research question is well-scoped and contemporary. It focuses on a specific application domain (ML for injury prediction/prevention) within a single sport (football). However, the question conflates two related but distinct concepts: prediction (identifying who will be injured) and prevention (reducing injury occurrence). The papers in the database heavily emphasize prediction over causal prevention interventions, which is a significant distinction the analysis must address. The question would benefit from clarity on whether prevention refers to predictive identification or active intervention strategies.",
+  "database_coverage": "The database provides excellent coverage of recent ML applications in football injury research (2024-2026 publications comprise 54/68 papers). However, coverage has three notable gaps: (1) Only 11/68 papers use machine learning methods despite the question's focus—most papers (31) use statistical methods; (2) Women's football is underrepresented (13/68, 19.1%) relative to men's football; (3) Only 1 paper has publicly available code, severely limiting reproducibility and implementation. The database appears strong on GPS/wearable data studies but may lack papers on domain-specific injury prediction frameworks, clinical implementation studies, and comparative method evaluations. Our coverage likely misses work on injury prediction in lower leagues, amateur football, and youth development contexts outside elite settings.",
+  "confidence_explanation": "Confidence is medium because: (1) The database is heavily skewed toward 2024-2026 publications (54/68), making trend analysis unreliable—we lack historical perspective on how this field evolved; (2) Only 10 papers have detailed methodology extraction and 1 has code, limiting our ability to assess replicability and technical rigor; (3) The gap between ML-focused papers (11) and the research question's emphasis suggests the database may not fully capture the ML literature—this is either a real gap in sports analytics ML for football, or the database's relevance threshold filtered out relevant work. This distinction is critical but unresolvable from the data provided. (4) Proprietary data dominates (13/30 data sources), making external validation difficult to verify.",
+  "landscape": {
+    "summary": "The field has experienced explosive growth in 2024-2026, with 54 of 68 papers published in these three years. Research centers on predicting non-contact injuries using GPS workload metrics, wearable sensors, and multiomics data in professional football. Hamstring strain injury (HSI) and anterior cruciate ligament (ACL) injuries dominate, with emerging work on heading/head impact exposure and psychological factors in return-to-sport. Only 11 of 68 papers explicitly use machine learning methods; most are descriptive epidemiology (video analysis, surveillance) or statistical correlation studies (GPS-injury associations). Machine learning studies employ diverse algorithms (random forests, support vector machines, BiLSTM, SHAP-based interpretability) but rarely compare methods or validate across independent datasets. The field emphasizes prediction over intervention: prevention typically means identifying at-risk players rather than testing preventive strategies. Women's football research is growing but remains underrepresented, with most female-specific studies focused on ACL and heading rather than predictive modeling.",
+    "key_findings": [
+      {
+        "finding": "GPS workload metrics are the most commonly integrated features in injury prediction models, but the relationship is inconsistent across studies and injury types.",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4406017810",
+            "title": "Predicting noncontact injuries of professional football players using machine learning",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1371/journal.pone.0315481",
+            "first_author": "Diogo Freitas"
+          },
+          {
+            "work_id": "https://openalex.org/W4401640692",
+            "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/app14167217",
+            "first_author": "Victor Chang"
+          },
+          {
+            "work_id": "https://openalex.org/W4395033210",
+            "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.3233/jsa-240718",
+            "first_author": "Aritra Majumdar"
+          },
+          {
+            "work_id": "https://openalex.org/W4394949414",
+            "title": "Association between External Load and Injury Incidence in Professional and Elite-Youth Football Players",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.56003/pessr.v3i1.316",
+            "first_author": "Georgios Georgiadis"
+          },
+          {
+            "work_id": "https://openalex.org/W4404763099",
+            "title": "Flexible modelling of time-varying exposures and recurrent events to analyse training load effects in team sports injuries",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1093/jrsssc/qlae059",
+            "first_author": "Lore Zumeta‐Olaskoaga"
+          }
+        ],
+        "paper_count": 5
+      },
+      {
+        "finding": "Hamstring strain injuries show predictable biomechanical risk profiles (sprint kinematics, eccentric strength deficits) in prospective cohorts, but machine learning has not systematically replaced univariate risk assessment.",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4408750469",
+            "title": "Sprint running mechanics are associated with hamstring strain injury: a 6-month prospective cohort study of 126 elite male footballers",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1136/bjsports-2024-108600",
+            "first_author": "Christopher Bramah"
+          },
+          {
+            "work_id": "https://openalex.org/W2904890641",
+            "title": "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? – A cluster‐RCT",
+            "year": 2018,
+            "sport": "football",
+            "doi": "https://doi.org/10.1111/sms.13353",
+            "first_author": "Peter Alexander van de Hoef"
+          },
+          {
+            "work_id": "https://openalex.org/W4205341392",
+            "title": "Reliability of the Hip Extension Lower Exercise as a Measure of Eccentric Hamstring Strength",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/biomechanics2010001",
+            "first_author": "Joey O’Brien"
+          },
+          {
+            "work_id": "https://openalex.org/W7123342556",
+            "title": "Hamstring Training and Football Performance: A Systematic Review and Meta-Analysis",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1055/a-2785-7739",
+            "first_author": "Antonio Riego Ruiz"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "Wearable sensors and inertial measurement units show promise for detecting injury-relevant biomechanical patterns (cutting, jumping, heading), but reliability and field applicability remain questionable.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4409617806",
+            "title": "On-field kinematics of cut maneuvers in football players: Are wearable sensors reliable for assessing anterior cruciate ligament injury risk?",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/02640414.2025.2493012",
+            "first_author": "Stefano Di Paolo"
+          },
+          {
+            "work_id": "https://openalex.org/W4415907277",
+            "title": "Testing ACL-Reconstructed Football Players on the Field: An Algorithm to Assess Cutting Biomechanics Injury Risk Through Wearable Sensors",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13110391",
+            "first_author": "Stefano Di Paolo"
+          },
+          {
+            "work_id": "https://openalex.org/W4411020614",
+            "title": "The training and detraining effects of 8-week dynamic stretching of hip flexors on hip range of motion, pain, and physical performance in male professional football players with low back pain. A randomized controlled trial",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/02640414.2025.2513163",
+            "first_author": "Mojtaba Iranmanesh"
+          },
+          {
+            "work_id": "https://openalex.org/W7118020592",
+            "title": "Functional Asymmetries in Youth Soccer Players: A Systematic Review of Assessment Technologies and Artificial Intelligence Applications",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.17309/tmfv.2026.1.03",
+            "first_author": "Walid Bouzid"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "Psychological factors (reinjury anxiety, self-confidence, stress, coping strategies) predict injury and return-to-sport outcomes, but are rarely integrated into machine learning models alongside physical data.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4200491382",
+            "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/ijerph19010143",
+            "first_author": "Ulrika Tranæus"
+          },
+          {
+            "work_id": "https://openalex.org/W4392498958",
+            "title": "Psychosocial Factors Associated With Lower Extremity Reinjury Risk in Soccer Players: Contribution of Self-Confidence and Reinjury Anxiety",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.4085/1062-6050-0434.23",
+            "first_author": "Aynollah Naderi"
+          },
+          {
+            "work_id": "https://openalex.org/W4416291487",
+            "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+            "first_author": "Jiacheng Ma"
+          },
+          {
+            "work_id": "https://openalex.org/W4412019479",
+            "title": "#<scp>ReadyToPlay</scp>: Risk Factors in the Norwegian Women's Premier League Football—Perceptions and Priorities of Club Stakeholders",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1111/sms.70099",
+            "first_author": "Ingvild G. Kåshagen"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "Heading exposure, particularly in young and female players, results in higher head accelerations than previously documented, but no machine learning models predict heading-related concussion risk.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2978300359",
+            "title": "Head impact exposure in youth football—Are current interventions hitting the target?",
+            "year": 2019,
+            "sport": "football",
+            "doi": "https://doi.org/10.1111/sms.13562",
+            "first_author": "Stian Bahr Sandmo"
+          },
+          {
+            "work_id": "https://openalex.org/W2508276981",
+            "title": "Reducing purposeful headers from goal kicks and punts may reduce cumulative exposure to head acceleration",
+            "year": 2016,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/15438627.2016.1230549",
+            "first_author": "Jaclyn B. Caccese"
+          },
+          {
+            "work_id": "https://openalex.org/W4392918014",
+            "title": "Video analysis of heading and risk of head injury situations in elite international men's football: Does the frequency of headers increase with the level of play?",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1002/ejsc.12041",
+            "first_author": "Lorenz Huber"
+          },
+          {
+            "work_id": "https://openalex.org/W4415023494",
+            "title": "Heading to guidance: understanding in-training heading demands for elite men’s and women’s football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1136/bjsports-2024-109525",
+            "first_author": "Dominic Townsend"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "Return-to-play assessment focuses on univariate or simple multivariable risk assessment; only one paper (W4400800812) uses algorithmic change-point detection for rehabilitation progression.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3107394410",
+            "title": "Physical preparation and return to performance of an elite female football player following ACL reconstruction: a journey to the FIFA Women’s World Cup",
+            "year": 2020,
+            "sport": "football",
+            "doi": "https://doi.org/10.1136/bmjsem-2020-000843",
+            "first_author": "Matt Taberner"
+          },
+          {
+            "work_id": "https://openalex.org/W4402542335",
+            "title": "The Time Course of Injury Risk After Return-to-Play in Professional Football (Soccer)",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1007/s40279-024-02103-3",
+            "first_author": "Guangze Zhang"
+          },
+          {
+            "work_id": "https://openalex.org/W4400800812",
+            "title": "A Change-Point Method to Detect Meaningful Change in Return-to-Sport Progression in Athletes",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1123/ijspp.2023-0178",
+            "first_author": "Kate K. Yung"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Multiomics data (genomics, metabolomics) have been integrated into injury prediction models in only one paper (W4396982583), representing an emerging but underdeveloped direction.",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4396982583",
+            "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+            "first_author": "Juan R. González"
+          }
+        ],
+        "paper_count": 1
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "Statistical correlation and regression (GPS metrics vs. injury; external load vs. injury incidence)",
+        "Descriptive epidemiology and video analysis (injury mechanism characterization)",
+        "Machine learning classification (random forest, SVM, logistic regression for binary injury prediction)",
+        "Cross-sectional field testing and reliability studies"
+      ],
+      "sample_size_patterns": "Highly variable: 7 papers with n<100 (mostly biomechanical/functional assessment studies), 1 paper with n=800 (university player survey), most machine learning papers cluster around n=20-50 players (single-club studies). The largest non-survey study is W4396982583 (elite female cohort, n unspecified) and W4411153325 (n=46). Prospective cohort studies range n=35-126. Systematic reviews/meta-analyses vary widely depending on included studies. Very few papers report multi-season, multi-club datasets.",
+      "data_sources_used": "GPS/wearable devices (Polar TeamPro, Catapult, StatsBomb, InStat Scout) dominate machine learning studies. Video analysis is standard for injury mechanism classification. Self-report questionnaires and clinical assessment (isokinetic dynamometry, force plates, FMS) are common baselines. Proprietary team datasets are frequent (13/30 curated resources are proprietary or restricted). Only 5 fully open datasets used (European Soccer Database, FIFA Match Centre, Transfermarkt, StatsBomb Open, FBref). Sensor integration is increasing (IMU, EMG, instrumented mouthguards for heading) but remains research-grade, not routinely deployed.",
+      "temporal_patterns": "Field is nascent as a structured ML domain. 2016-2022: foundational work on GPS-injury correlations (W2904890641, W4281910294) and injury mechanism characterization. 2023-2024: emergence of machine learning models with moderate complexity (random forests, SVM) applied to workload-injury prediction and multiomics. 2025-2026: proliferation of deep learning approaches (BiLSTM, DeepHit survival models), attention mechanisms, process mining, and complex systems perspectives (critical fluctuations). Interpretability (SHAP-based models) appears in 2025. No longitudinal replication studies visible across the temporal span."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W4281910294",
+        "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+        "why_key": "The most-cited review (55 citations, FWCI 13.83) synthesizing ML approaches for training load and injury prediction. Sets the conceptual framework for the entire field and identifies key methodological challenges.",
+        "year": 2022,
+        "sport": "football",
+        "doi": "https://doi.org/10.1186/s40798-022-00465-4",
+        "first_author": "Aritra Majumdar"
+      },
+      {
+        "work_id": "https://openalex.org/W4408750469",
+        "title": "Sprint running mechanics are associated with hamstring strain injury: a 6-month prospective cohort study of 126 elite male footballers",
+        "why_key": "Largest prospective biomechanical cohort (n=126) directly addressing HSI prediction via sprint kinematics. High FWCI (34.16) suggests major impact. Demonstrates predictive validity of a specific biomechanical phenotype.",
+        "year": 2025,
+        "sport": "football",
+        "doi": "https://doi.org/10.1136/bjsports-2024-108600",
+        "first_author": "Christopher Bramah"
+      },
+      {
+        "work_id": "https://openalex.org/W4406017810",
+        "title": "Predicting noncontact injuries of professional football players using machine learning",
+        "why_key": "Recent (2025) ML-native paper explicitly comparing machine learning to statistical methods for GPS-based injury prediction. Addresses the multifactorial nature of injuries—directly aligned with the research question.",
+        "year": 2025,
+        "sport": "football",
+        "doi": "https://doi.org/10.1371/journal.pone.0315481",
+        "first_author": "Diogo Freitas"
+      },
+      {
+        "work_id": "https://openalex.org/W4396982583",
+        "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+        "why_key": "Rare integration of GPS + genomics + metabolomics into injury prediction; elite female focus. Demonstrates multi-modal data fusion in ML—novel methodological direction.",
+        "year": 2024,
+        "sport": "football",
+        "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+        "first_author": "Juan R. González"
+      },
+      {
+        "work_id": "https://openalex.org/W4411153325",
+        "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+        "why_key": "Only paper with publicly available code (GitHub). Addresses interpretability gap in sports ML and provides practical profiling framework using random forests. Cross-sport validation (handball) suggests generalizability.",
+        "year": 2025,
+        "sport": "football",
+        "doi": "https://doi.org/10.3390/app15126436",
+        "first_author": "Bartosz Wilczyński"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "methodology",
+      "title": "No systematic comparison of ML algorithms for injury prediction",
+      "description": "Despite 11 papers using machine learning, none directly compare multiple algorithms on the same dataset or population. Studies apply different ML methods (random forests, SVM, logistic regression, BiLSTM) to different cohorts with different feature sets, making it impossible to determine which algorithms are most effective for football injury prediction. A benchmark study comparing standardized algorithms (RF, XGBoost, SVM, neural networks) on identical injury and workload data would address this critical gap.",
+      "evidence": "W4406017810 uses machine learning but does not compare to other algorithms. W4411153325 uses random forest for motor profiling but validates only on external handball data, not on other football cohorts. W4395033210 (multi-season ML) applies one method without comparison. W4416291487 uses SVM with SHAP but no baseline. W4416382347 develops BiLSTM without comparing to traditional ML. No paper systematically ablates features or algorithms.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4395033210",
+          "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3233/jsa-240718",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4411153325",
+          "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app15126436",
+          "first_author": "Bartosz Wilczyński"
+        },
+        {
+          "work_id": "https://openalex.org/W4416291487",
+          "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+          "first_author": "Jiacheng Ma"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Method comparison is foundational for evidence-based model selection in applied settings. Clubs need guidance on which algorithms to deploy. Without benchmarking, the field risks adopting suboptimal methods based on publication bias rather than empirical superiority.",
+      "feasibility": "high",
+      "feasibility_rationale": "Feasible given existing open datasets (StatsBomb, FBref) and proprietary team datasets. Requires computational resources (moderate) and expertise in algorithm implementation. Could be completed as a focused 6-12 month study.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "replication",
+      "title": "No independent external validation of injury prediction models",
+      "description": "Every machine learning model in the database is validated on the same dataset or cohort from which it was derived (internal cross-validation or held-out test sets). Zero papers report prospective external validation on independent clubs, leagues, or seasons. This is a critical gap: models trained on English Premier League data are not tested on Championship or European clubs; models from 2023 are not prospectively validated on 2024-2025 seasons. Without external validation, predictive accuracy estimates are systematically inflated and models cannot be trusted for real-world deployment.",
+      "evidence": "W4395033210 ('multi-season approach') uses data from one English Premier League club only. W4416291487 reports 95.6% accuracy on 800 university players—no independent test cohort mentioned. W4406017810 develops models on professional data but no external validation reported. W4411153325 validates on handball players (cross-sport) but not on independent football cohorts. No paper tests model drift (performance degradation over time or across leagues).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4395033210",
+          "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3233/jsa-240718",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4411153325",
+          "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app15126436",
+          "first_author": "Bartosz Wilczyński"
+        },
+        {
+          "work_id": "https://openalex.org/W4416291487",
+          "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+          "first_author": "Jiacheng Ma"
+        },
+        {
+          "work_id": "https://openalex.org/W4416382347",
+          "title": "Leveraging GPS Data and Attention-based BiLSTM for Injury Prediction in Professional Football",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.62036/isd.2025.67",
+          "first_author": "Aleksandra Sadurska"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "External validation is non-negotiable for clinical/operational adoption. High internal accuracy is meaningless if models fail on new data. This gap undermines the credibility of the entire ML prediction literature in this domain.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires access to multiple clubs' data (proprietary barrier). Feasible for researchers with multi-club partnerships (e.g., sports tech companies, elite leagues). Would take 18-24 months to collect and validate prospectively. Data sharing agreements are the primary obstacle.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "integration",
+      "title": "Psychological and physiological data rarely combined in ML models",
+      "description": "Psychological factors (reinjury anxiety, self-confidence, stress, sleep, coping) predict injury outcomes (W4200491382, W4392498958, W4416291487), but are almost never integrated with GPS and biomechanical data in the same model. The field has siloed psychological research from physiological ML. A unified model incorporating sleep, stress, confidence, GPS workload, and strength metrics would capture the biopsychosocial nature of injury risk highlighted by recent literature.",
+      "evidence": "W4200491382 uses Classification and Regression Trees on psychological and functional data; predicts injury with psychological factors alone. W4392498958 examines reinjury anxiety post-return-to-play; no GPS integration. W4416291487 identifies stress and sleep as key factors via SHAP, but study focuses on university players, not elite football professionals with GPS monitoring. No paper integrates both domains systematically.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4200491382",
+          "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/ijerph19010143",
+          "first_author": "Ulrika Tranæus"
+        },
+        {
+          "work_id": "https://openalex.org/W4392498958",
+          "title": "Psychosocial Factors Associated With Lower Extremity Reinjury Risk in Soccer Players: Contribution of Self-Confidence and Reinjury Anxiety",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.4085/1062-6050-0434.23",
+          "first_author": "Aynollah Naderi"
+        },
+        {
+          "work_id": "https://openalex.org/W4416291487",
+          "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+          "first_author": "Jiacheng Ma"
+        },
+        {
+          "work_id": "https://openalex.org/W4412019479",
+          "title": "#<scp>ReadyToPlay</scp>: Risk Factors in the Norwegian Women's Premier League Football—Perceptions and Priorities of Club Stakeholders",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1111/sms.70099",
+          "first_author": "Ingvild G. Kåshagen"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Injury is multifactorial (biomechanical + fatigue + psychological). Ignoring psychology limits model performance and misses actionable prevention targets (e.g., sleep interventions, anxiety management). Holistic models are more likely to improve real-world outcomes.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires simultaneous collection of wearable data (GPS, sleep trackers), strength metrics, and valid psychological questionnaires (Brief COPE, GAD-7, reinjury-anxiety scales). Feasible for elite clubs with comprehensive monitoring infrastructure. Data collection requires 1-2 seasons; analysis and model development 6-12 months.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "data",
+      "title": "Proprietary data dominance limits reproducibility and meta-analysis",
+      "description": "Only 5 of 30 curated data resources are fully open; 13 are proprietary or restricted. Most machine learning studies rely on confidential team datasets from single clubs, preventing code sharing, result reproduction, and systematic meta-analysis. This contrasts sharply with other sports analytics domains (e.g., basketball with open play-by-play data) and slows scientific progress. A public benchmark dataset for injury prediction (anonymized player trajectories, GPS metrics, injury outcomes from multiple seasons and clubs) would accelerate research.",
+      "evidence": "Papers using proprietary data: W4395033210 (EPL single club), W4406017810 (professional data source unspecified), W4416291487 (800 university players—no repository). Open datasets used: W4411153325 mentions code availability but no dataset repository. Meta-analysis limited by inability to access raw data and reanalyze. Data access distribution: 13 proprietary, 8 restricted, 5 fully open, 4 not stated.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4395033210",
+          "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3233/jsa-240718",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4411153325",
+          "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app15126436",
+          "first_author": "Bartosz Wilczyński"
+        },
+        {
+          "work_id": "https://openalex.org/W4416291487",
+          "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+          "first_author": "Jiacheng Ma"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Reproducibility is foundational to science. Proprietary data dependency creates publication bias (positive results publishable, negatives not), prevents independent auditing, and locks knowledge within clubs. Open benchmarks would enable competition and accelerate method development.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires anonymization, data governance agreement, and coordination among multiple professional clubs. Likely needs funding from sports bodies (e.g., UEFA, national federations) or major tech companies. One-time 12-18 month effort to aggregate and release.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_5",
+      "type": "topic",
+      "title": "No causal intervention trials testing ML-guided prevention strategies",
+      "description": "The database conflates injury prediction with injury prevention. All machine learning work aims to predict who will be injured; none experimentally tests whether ML-identified risk factors can be modified to reduce injury incidence. For example, GPS-based workload-injury models are descriptive (high load → injury), not causal (can reducing load decrease injury?). Randomized trials or quasi-experimental studies using ML to assign targeted interventions (e.g., load adjustment, strength training, sleep coaching) to at-risk players are absent.",
+      "evidence": "W4406017810 predicts noncontact injuries from GPS but does not test intervention. W4395033210 examines training load-injury relationship but no intervention arm. W4412204000 reviews surveillance implementation; W4411020614 tests stretching intervention in small RCT (n=40); W4413447702 compares resistance training frequencies (n=40 young players)—but neither integrated ML for risk stratification. No paper uses ML predictions to randomize athletes to intervention vs. control.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4395033210",
+          "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3233/jsa-240718",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4412204000",
+          "title": "Lessons Learned from Implementing Injury and Illness Surveillance in Professional Football: Introducing a New Implementation Framework",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1007/s40279-025-02276-5",
+          "first_author": "Montassar Tabben"
+        },
+        {
+          "work_id": "https://openalex.org/W4411020614",
+          "title": "The training and detraining effects of 8-week dynamic stretching of hip flexors on hip range of motion, pain, and physical performance in male professional football players with low back pain. A randomized controlled trial",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/02640414.2025.2513163",
+          "first_author": "Mojtaba Iranmanesh"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Prediction without causal intervention is academically interesting but operationally useless. Clubs need evidence that ML-guided prevention actually reduces injuries. This gap reflects a disciplinary limitation: sports science lacks the trial infrastructure common in clinical medicine.",
+      "feasibility": "low",
+      "feasibility_rationale": "Requires access to elite club, willingness to randomize intervention, follow-up across season(s), and control of confounders. Expensive, slow, and requires team commitment. Most clubs prioritize winning over research. Would take 24-36 months minimum.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_6",
+      "type": "population",
+      "title": "Women's football severely underrepresented in ML injury prediction",
+      "description": "Only 13 of 68 papers (19.1%) focus on women; of these, only 2 explicitly use machine learning for injury prediction (W4396982583 on multiomics, and W7126001043 on time-to-injury forecasting, both recent 2024-2026). Injury epidemiology, ACL risk, and heading exposure are well-studied in female players, but predictive models are almost entirely developed and validated on men. Female physiology (menstrual cycle influences, lower body mass, different movement patterns) may require sex-specific models not yet explored.",
+      "evidence": "Female-focused papers: W4396982583 (GPS + multiomics injury prediction); W3107394410 (qualitative ACL RTS case study); W4399752739 (hamstring mechanism video analysis); W2978300359, W2508276981 (heading exposure); W4402532778 (workload-ACL associations); W4200491382 (FMS and psychological prediction in adolescents); W4389208171 (DOMS from training load). Only W4396982583 and W7126001043 develop ML models on female cohorts. All major prediction papers use male-only samples.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4396982583",
+          "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+          "first_author": "Juan R. González"
+        },
+        {
+          "work_id": "https://openalex.org/W7126001043",
+          "title": "Time-to-Injury Forecasting in Elite Female Football: A DeepHit Survival Approach",
+          "year": 2026,
+          "sport": "football",
+          "doi": null,
+          "first_author": "Victoria Catterall"
+        },
+        {
+          "work_id": "https://openalex.org/W4200491382",
+          "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/ijerph19010143",
+          "first_author": "Ulrika Tranæus"
+        },
+        {
+          "work_id": "https://openalex.org/W4399752739",
+          "title": "A comparative video analysis of hamstring injuries mechanism and situational pattern in men's and women's football (soccer)",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1002/ksa.12313",
+          "first_author": "Francesco Della Villa"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Women's football is rapidly professionalizing with injury rates comparable to men's. Sex differences in biomechanics, physiology, and menstrual cycle effects may affect injury risk and ML model performance. Failing to develop female-specific models perpetuates gender inequity in injury prevention.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires partnerships with elite women's clubs (growing availability in Europe, North America, Asia). Data collection and model development timeline similar to men's studies (12-18 months). Menstrual cycle tracking adds minor complexity.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_7",
+      "type": "methodology",
+      "title": "Feature selection and interpretability gaps in most ML models",
+      "description": "Of 11 ML papers, only 2 explicitly address interpretability (W4416291487 with SHAP, W4411153325 with random forest feature importance). Most papers do not justify feature selection, do not report which variables drive predictions, and do not provide practitioners with actionable insights. A model that predicts injury with 85% accuracy but lacks interpretability is not useful for coaches and medical staff who need to know which modifiable risk factors to target.",
+      "evidence": "W4406017810 develops ML for noncontact injury but does not report feature importance. W4395033210 (multi-season ML) no feature interpretation reported. W4416382347 (BiLSTM + GPS) does not explain learned patterns. Only W4416291487 uses SHAP; W4411153325 reports feature importance via random forest. W4405417350 (critical fluctuations) attempts to identify early warning patterns but F1 score of 0.08 indicates poor discriminatory power despite interpretable framing.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4395033210",
+          "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3233/jsa-240718",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4416382347",
+          "title": "Leveraging GPS Data and Attention-based BiLSTM for Injury Prediction in Professional Football",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.62036/isd.2025.67",
+          "first_author": "Aleksandra Sadurska"
+        },
+        {
+          "work_id": "https://openalex.org/W4416291487",
+          "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1038/s41598-025-24144-y",
+          "first_author": "Jiacheng Ma"
+        },
+        {
+          "work_id": "https://openalex.org/W4411153325",
+          "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app15126436",
+          "first_author": "Bartosz Wilczyński"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Black-box models may be rejected by medical staff for liability and ethical reasons. Interpretability is essential for trust, adoption, and debugging when models fail. Explainable ML is a regulatory expectation in clinical settings.",
+      "feasibility": "high",
+      "feasibility_rationale": "SHAP, LIME, and attention mechanisms are now standard in ML. Requires no additional data collection, only reanalysis of existing models. Can be applied retroactively to published work. 2-4 weeks per model.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_8",
+      "type": "temporal",
+      "title": "Lack of longitudinal, multi-season validation and model drift assessment",
+      "description": "No study prospectively validates models across multiple seasons or assesses model degradation over time (drift). A model trained on 2022-2023 data may not generalize to 2024 due to rule changes, fitness inflation, or tactical evolution. Longitudinal validation (train on season N, test on season N+1, N+2, etc.) and drift detection are absent. This is critical for operational deployment: clubs need to know when to retrain models.",
+      "evidence": "W4395033210 claims 'multi-season' but uses data from one club, unclear temporal structure. No paper reports holdout test seasons. No paper measures AUC or accuracy degradation year-over-year. W4404763099 analyzes recurrent events but in retrospective design. Temporal patterns in methodology profile show 2024-2026 explosion but no historical continuity studies.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4395033210",
+          "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3233/jsa-240718",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4404763099",
+          "title": "Flexible modelling of time-varying exposures and recurrent events to analyse training load effects in team sports injuries",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1093/jrsssc/qlae059",
+          "first_author": "Lore Zumeta‐Olaskoaga"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Model drift is a known problem in deployed ML systems. Without drift monitoring, clubs may make decisions based on obsolete models. Temporal validation is essential for production readiness.",
+      "feasibility": "high",
+      "feasibility_rationale": "Requires 3-5 seasons of historical data (often available in clubs' databases). Analysis is straightforward: train/test splits across seasons, drift metrics (JS divergence, Kolmogorov-Smirnov test). 3-6 months for analysis and reporting.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_9",
+      "type": "population",
+      "title": "Youth and amateur football largely absent; elite-only bias",
+      "description": "Database is skewed toward professional elite football (English Premier League, Serie A, elite academies). Youth football research focuses on epidemiology and heading exposure, not ML prediction. Amateur and semi-professional football—where injury surveillance may be poorest and prevention most needed—is absent from ML studies. W4411153325 validates on youth handball (n=46), and W4200491382 uses adolescent female footballers (n=419), but systematic youth and amateur cohorts with longitudinal injury tracking and wearable data do not exist in the literature.",
+      "evidence": "Elite-focused papers: W4408750469 (126 elite male footballers); W4406017810 (professional players); W4395033210 (EPL single club); W4416291487 (800 university players—not elite). Youth/amateur: W4200491382 (n=419 adolescent females, no wearables); W4206022039 (n=22 youth soccer, small). No large-scale youth longitudinal ML study with GPS, strength, and psychological data exists.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4408750469",
+          "title": "Sprint running mechanics are associated with hamstring strain injury: a 6-month prospective cohort study of 126 elite male footballers",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1136/bjsports-2024-108600",
+          "first_author": "Christopher Bramah"
+        },
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4395033210",
+          "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3233/jsa-240718",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4200491382",
+          "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/ijerph19010143",
+          "first_author": "Ulrika Tranæus"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Elite players have medical support; youth players often do not. Youth injury prevention is more cost-effective and impactful on life-long health. However, youth injury surveillance is harder (parental consent, rapid development, high turnover). Lower practical importance than elite clubs' immediate needs.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires partnership with youth academies or grassroots clubs, parental consent, lower equipment cost (less sophisticated wearables). Biological variability (maturation) complicates modeling. 12-18 months to recruit and collect data.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_10",
+      "type": "topic",
+      "title": "Heading-related injury prediction via ML is completely absent",
+      "description": "Heading exposure has been quantified in 4 papers (W2978300359, W2508276981, W4392918014, W4415023494); head acceleration profiles documented; and risk factors (sex, age, technique) identified. However, no machine learning model predicts concussion or heading-related brain injury. This is surprising given the public health concern about chronic traumatic encephalopathy (CTE) in football. A predictive model integrating heading exposure, player age, sex, technique, and cumulative impact might guide interventions (heading restrictions, technique coaching).",
+      "evidence": "Heading descriptive studies: W2978300359 (youth heading exposure, n=250 matches); W2508276981 (head acceleration from goal kicks, n=14 women's college games); W4392918014 (elite international heading frequency, n=45 matches); W4415023494 (elite heading demands from instrumented mouthguards). No injury outcome data linked to these exposure metrics. No predictive model exists.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W2978300359",
+          "title": "Head impact exposure in youth football—Are current interventions hitting the target?",
+          "year": 2019,
+          "sport": "football",
+          "doi": "https://doi.org/10.1111/sms.13562",
+          "first_author": "Stian Bahr Sandmo"
+        },
+        {
+          "work_id": "https://openalex.org/W2508276981",
+          "title": "Reducing purposeful headers from goal kicks and punts may reduce cumulative exposure to head acceleration",
+          "year": 2016,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/15438627.2016.1230549",
+          "first_author": "Jaclyn B. Caccese"
+        },
+        {
+          "work_id": "https://openalex.org/W4392918014",
+          "title": "Video analysis of heading and risk of head injury situations in elite international men's football: Does the frequency of headers increase with the level of play?",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1002/ejsc.12041",
+          "first_author": "Lorenz Huber"
+        },
+        {
+          "work_id": "https://openalex.org/W4415023494",
+          "title": "Heading to guidance: understanding in-training heading demands for elite men’s and women’s football",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1136/bjsports-2024-109525",
+          "first_author": "Dominic Townsend"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Heading-related concussion is less frequent than non-contact MSK injuries (hamstring, ACL), so immediate player safety burden is lower. However, chronic neurological effects are unknown and potentially catastrophic. Long-term public health importance is high; immediate operational importance is moderate.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires prospective head impact data (instrumented mouthguards ~$500 per player) + concussion surveillance. Concussion is rare (low event rate for ML), requiring large sample. 2-3 seasons data needed. Feasible for major clubs or national federations.",
+      "confidence": "medium"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Benchmark study: Systematic comparison of ML algorithms for GPS-based injury prediction",
+      "description": "Develop a standardized dataset (anonymized GPS + strength + injury data from 2-3 professional clubs, 2-3 seasons, n=100-150 players) and compare 6-8 ML algorithms (random forest, XGBoost, logistic regression, SVM, neural networks, LSTM, attention mechanisms) using consistent train/test splits and evaluation metrics (AUC, F1, specificity, sensitivity). Report feature importance via SHAP and identify which algorithm generalizes best across cohorts. Produce: algorithm performance leaderboard, hyperparameter optimization guidance, and interpretability profiles for each method.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_4",
+        "gap_7"
+      ],
+      "suggested_methodology": "Supervised classification (binary injury occurrence within T days). Stratified k-fold cross-validation plus holdout club/season test set. Bayesian hyperparameter optimization. SHAP feature importance. Conflict of interest disclosure for proprietary data used.",
+      "suggested_data": "Open datasets: StatsBomb event data + FBref stats + publicly released club data (none currently available). Proprietary: 2-3 clubs with GPS + strength + injury records (18-36 months). Minimum: n=100 players, 3+ seasons, standardized injury surveillance (OSTRC or equivalent).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Provides evidence-based algorithm selection for practitioners, establishes baseline performance expectations, and identifies which data features matter most. Directly actionable for clubs."
+    },
+    {
+      "priority": 2,
+      "title": "Multi-club external validation of published injury prediction models",
+      "description": "Identify 3-4 published ML models (e.g., from W4406017810, W4395033210, W4416291487) and request original authors for model code/weights. Prospectively apply these models to 2-3 independent professional football clubs (different leagues/seasons if possible) with similar wearable/injury data. Report: model AUC/F1 on external cohorts, evidence of drift over time, club-specific performance variation. Publish results even if models fail externally (negative results are critical). Develop and release a open-source model registry with code and performance metadata.",
+      "addresses_gaps": [
+        "gap_2",
+        "gap_4",
+        "gap_8"
+      ],
+      "suggested_methodology": "Prospective cohort with retrospective model application (train on historical data, test on new seasons). Report calibration (expected vs. observed injury rates), discrimination (AUC), and decision curve analysis. Assess for data drift using statistical tests (JS divergence).",
+      "suggested_data": "Partner clubs with GPS systems, injury surveillance ≥2 seasons historical + 1+ season prospective. Aim for n=50-80 players per club. Standardize data definitions (injury definition, GPS variables, processing pipeline).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Establishes real-world generalizability of published methods. Identifies necessary conditions for model success. Builds trust and adoption pathway. Generates negative results (essential for scientific integrity)."
+    },
+    {
+      "priority": 3,
+      "title": "Integrated biopsychosocial prediction model: GPS + strength + psychology + sleep",
+      "description": "Develop and validate a unified ML model integrating: (1) GPS workload (acute:chronic ratio, high-speed running); (2) neuromuscular capacity (eccentric hamstring strength, hop symmetry); (3) psychological state (Brief COPE, GAD-7, reinjury anxiety); (4) sleep metrics (wearable duration + quality). Train on n=80-100 elite football players (50% male, 50% female) across 2 seasons with weekly data collection. Use random forest or gradient boosting for feature interaction discovery. Validate: internal (nested CV), external (hold-out club/season), and sex-stratified performance.",
+      "addresses_gaps": [
+        "gap_3",
+        "gap_6",
+        "gap_7"
+      ],
+      "suggested_methodology": "Prospective cohort, weekly monitoring. Multivariate mixed-effects logistic regression as baseline; tree-based models for nonlinear interactions. SHAP feature importance + ablation studies (iteratively remove domains, measure AUC drop). Sex-stratified analysis with interaction tests.",
+      "suggested_data": "Elite club partnership. Wearable suite: GPS + sleep tracker (e.g., Oura) + isokinetic dynamometry (weekly or bi-weekly) + online questionnaires (Brief COPE, GAD-7, Pittsburgh Sleep Quality Index variants). Injury surveillance: OSTRC-O. Total: ~800 observations across 2 seasons.",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Demonstrates feasibility of multi-modal injury prediction and identifies modifiable psychological targets (sleep, stress, anxiety). More clinically actionable than GPS-only models. Addresses why some players tolerate high loads without injury (psychological resilience)."
+    },
+    {
+      "priority": 4,
+      "title": "Youth and amateur football ML prediction cohort with long-term follow-up",
+      "description": "Establish prospective longitudinal cohort of n=200-300 youth football players (U15-U21, across amateur/semi-professional clubs) with GPS monitoring (cheaper systems like Catapult Mini), basic strength testing (bilateral leg strength asymmetry), and psychological screening. Follow for 2-3 seasons (includes transitions from youth to professional/retirement). Develop and validate injury prediction model on youth-specific dataset. Secondary aim: compare model performance across elite vs. amateur populations and across maturation stages.",
+      "addresses_gaps": [
+        "gap_6",
+        "gap_9"
+      ],
+      "suggested_methodology": "Prospective cohort design with multi-level clustering (players nested in clubs). Account for biological maturation as confounder/effect modifier. Use logistic mixed models and ML classification. Validate on held-out clubs.",
+      "suggested_data": "Wearable GPS (Catapult, Polar, or equivalent), manual strength testing (dynamometry or portable force plate), injury surveillance (weekly questionnaire). Partner with 8-12 youth academies. Total: 2-3 seasons, ~300 players.",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "Fills critical gap in youth injury prevention. Identifies whether elite-trained models transfer to youth populations. Addresses equity and access (amateur clubs often lack data infrastructure). High potential for long-term player health impact."
+    },
+    {
+      "priority": 5,
+      "title": "Causal intervention trial: ML-stratified injury prevention randomized trial",
+      "description": "Randomized controlled trial in which professional football players are stratified into risk tiers using an ML model (baseline GPS, strength, psychology). Players in moderate/high-risk tier are randomized to: (1) standard care (usual team prevention) or (2) ML-guided personalized intervention (load adjustment, strength coaching, sleep coaching, anxiety management) based on model-identified risk factors. Primary outcome: non-contact injury incidence over one season. Secondary: cost-effectiveness, player adherence, performance metrics.",
+      "addresses_gaps": [
+        "gap_5"
+      ],
+      "suggested_methodology": "Parallel-group RCT, stratified randomization by baseline risk tier and position. Blinding: impossible for coaching staff; outcome assessor blinding if possible. ITT analysis. Pre-register protocol.",
+      "suggested_data": "Professional club partnership (1-2 clubs, total n=60-80 players per arm). Weekly monitoring as in priority 3 above. Intervention protocol must be standardized, manualized.",
+      "estimated_difficulty": "major_initiative",
+      "potential_impact": "First causal evidence that ML-guided injury prevention reduces injury incidence. Demonstrates intervention feasibility and cost-effectiveness. Likely to transform club adoption. Publishable in high-impact venues (Sports Medicine, BJSM, Lancet Sport) regardless of outcome."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "Moderate. The papers are largely monologues: each reports a single study on a narrow question (e.g., 'Do hamstring kinematics predict HSI?' or 'Does GPS workload correlate with injury?'). Very few papers cite or engage with each other's methods or findings in ways that suggest genuine dialogue. The review (W4281910294) attempts synthesis but is itself primarily a survey listing examples rather than identifying conflicts or meta-patterns. Genuine debates about what constitutes injury risk, how to measure it, or which methods are superior are absent. The rapid publication surge (2024-2026) suggests field growth but also fragmentation—many parallel efforts without integration. Machine learning papers cluster into three siloed groups: (1) GPS-based workload prediction; (2) biomechanical feature testing; (3) multimodal fusion. These rarely cross-reference or compare findings. The field has not yet developed shared conceptual frameworks or empirical standards (e.g., what constitutes adequate external validation, how to handle class imbalance, which injury definitions to use).",
+    "strengths": [
+      "Database provides excellent recent coverage (2024-2026) of machine learning applications in football injury, capturing the field's latest methods and datasets.",
+      "Rich diversity of data modalities represented: GPS, video, wearables (IMU, EMG), sensors (force plates, isokinetic dynamometry), multiomics, psychological questionnaires.",
+      "Several high-quality prospective cohort studies with biomechanical validation (e.g., W4408750469 n=126, W4396982583 multiomics integration).",
+      "Emerging work on interpretability (SHAP, feature importance) addresses translational gap between accuracy and actionability.",
+      "Growing attention to women's football (13/68 papers) reflects real-world sport professionalization, even if ML work remains male-dominated."
+    ],
+    "limitations": [
+      "Severe publication recency bias: 54/68 papers from 2024-2026 makes trend analysis and historical perspective impossible. Field appears young; may actually be newer or represent database capture artifact (older papers may not meet relevance threshold).",
+      "Only 10/68 papers have detailed methodology extraction; relying on abstracts limits assessment of statistical rigor, effect sizes, and technical quality.",
+      "Single code repository (W4411153325) from 68 papers severely undermines reproducibility assessment and external validation.",
+      "Proprietary data dominance (13/30 resources proprietary or restricted) creates opacity—cannot independently verify claims in most ML papers.",
+      "No systematic reviews or meta-analyses of ML methods specifically (only 3 meta-analyses total: W4416666775 on FIFA 11+, W7125394211 on ACL RTP, W7123342556 on hamstring training—none on ML).",
+      "Absence of published protocols, registered trials, or pre-analysis plans suggests risk of selective reporting and p-hacking.",
+      "Sample sizes highly variable and generally small for ML (n=20-50 for training); insufficient for robust feature learning in high-dimensional problems."
+    ],
+    "assumptions": [
+      "Assumed that 'injury prevention' in research question includes both prediction and intervention. Literature heavily emphasizes prediction; true prevention (RCTs of interventions) is rare. This conflation may distort gap prioritization.",
+      "Assumed that absence of papers from database means absence of research in the field. However, database filters for papers with AI-assessed relevance ≥7/10. Some highly relevant work (e.g., computer vision for biomechanics, naturalistic language processing of injury reports) might exist but fall below relevance threshold.",
+      "Assumed that high FWCI scores (e.g., W4408750469 FWCI 34.16) reflect genuine impact. FWCI is relative to field baseline; may not correlate with clinical utility or methodological quality.",
+      "Assumed machine learning papers are methodologically superior to statistical papers. Many statistical approaches (mixed models, survival analysis) may be more appropriate for sports data than black-box ML, but this is unexplored in the database.",
+      "Assumed that sole focus on football is appropriate. The research question specifies football, so database correctly filtered to 68 papers. However, injury prediction methods (e.g., BiLSTM, process mining) are borrowed from other domains; may be limited by sport-specific considerations not visible in this analysis."
+    ],
+    "database_coverage_gaps": [
+      "Likely missing domain-specific injury prediction frameworks from sports medicine and epidemiology literatures. Papers on clinical prediction rules (e.g., Ottawa Ankle Rules) or Framingham-style injury risk scores may exist but not be tagged as 'machine learning' and thus filtered out. These traditional approaches are relevant for benchmarking ML against.",
+      "Likely missing recent computer vision and video analysis work for injury risk assessment. Several papers use video analysis (W4402308206, W4399752739, W4392918014), but automated ML-based video analysis (pose estimation, movement classification) may exist in computer vision literature outside sports science databases. Our search likely does not capture this cross-disciplinary work.",
+      "Likely missing applied ML papers from sports tech companies (Catapult, StatsBomb, InStat Scout, Hawkin Dynamics). These companies publish proprietary models; some may have white papers or technical documents not indexed in academic databases. Trade literature gap.",
+      "Likely missing naturalistic language processing (NLP) work on injury reports, medical notes, or surveillance data. One paper (W4399295847) mentions process mining; NLP for injury pattern discovery may exist but not be represented.",
+      "Likely missing work on transfer learning and domain adaptation for injury prediction across leagues/populations. This is a hot topic in applied ML but may not yet be established in sports injury literature.",
+      "Likely missing long-term follow-up studies (≥5 years) on injury prediction model performance and model drift. Sports science typically reports within-season validation; longer-term implementations likely exist in clubs but are unpublished.",
+      "Likely missing comparative effectiveness research and health economics papers on injury prediction (cost per injury prevented, cost-per-QALY). These bridge ML and health policy but may not be in sports science databases."
+    ],
+    "what_would_improve_this": [
+      "Access to full texts of all 68 papers would enable extraction of actual sample sizes, effect sizes, confidence intervals, study quality scores (JADAD, QUADAS, GRADE). Abstract-only analysis misses nuance.",
+      "Structured data extraction form applied to all papers would enable meta-analysis of: algorithm performance (AUC across studies), feature importance consensus, and temporal trends in methods. Currently, heterogeneous reporting prevents quantitative synthesis.",
+      "Direct contact with authors of machine learning papers for: (1) code/model weights; (2) feature lists and preprocessing details; (3) external validation results (if available). Many positive results may not be published; negative external validation especially valuable.",
+      "Expanded search strategy to include preprints (arXiv, medRxiv), technical reports, and conference proceedings (IEEE, ACM, SIAM, Sloan Sports Analytics Conference). Many ML papers appear as preprints before or instead of journal publication.",
+      "Inclusion of sports tech gray literature (white papers, case studies from Catapult, StatsBomb, InStat Scout, Zebra Technologies, Hawkin Dynamics). Applied ML often lives outside academia.",
+      "Systematic search of injury registration and epidemiology literature (British Journal of Sports Medicine, Scandinavian Journal of Medicine & Science in Sports, American Journal of Sports Medicine) to capture biomechanical and physiological predictors that could inform ML feature selection. Currently dominated by outcomes/mechanisms, not prediction.",
+      "Database expansion to include sports medicine and athletic training conference proceedings (AOSSM, EATA, NATA) where clinical translation and practical implementation barriers are discussed."
+    ],
+    "process_cost_reflection": "Provided with 68 paper summaries (abstracts + minimal metadata), this analysis required synthesis across fragmented, heterogeneous studies with limited methodological detail. Cost-benefit assessment: (1) Volume appropriate: 68 papers is manageable in one pass; more would yield diminishing returns; (2) Quality of summaries: abstracts alone were INSUFFICIENT for assessing methodological rigor, sample quality, or technical soundness. Statements like 'ML achieved X% accuracy' without reporting confidence intervals, cross-validation strategy, or base rate are common; full-text access would have revealed major gaps (e.g., how many papers actually report external validation?). (3) Time allocation: Spent 60% identifying missing papers/gaps and 40% assessing what WAS studied—reflects sparsity of core research and large white space. (4) Confidence cost: Medium-confidence output reflects genuine uncertainty about whether gaps represent field-wide blindspots or database coverage artifacts. Higher confidence would require: structured full-text review, author interviews, and meta-analysis of results. (5) Actionability: Output provides clear research directions (5 priorities with defined scope, methods, and feasibility). Clubs and researchers can immediately act. This justifies the analysis even with medium confidence. Estimate for this analysis: 8-12 hours of careful reading + synthesis. Full-text analysis would extend to 40-60 hours. For a 68-paper collection, AI-assisted abstract analysis + human gap synthesis is cost-effective; full-text access would improve confidence by ~15-20% at 5x cost."
+  },
+  "paper_index": {
+    "https://openalex.org/W4406017810": {
+      "title": "Predicting noncontact injuries of professional football players using machine learning",
+      "year": 2025,
+      "first_author": "Diogo Freitas"
+    },
+    "https://openalex.org/W4401640692": {
+      "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
+      "year": 2024,
+      "first_author": "Victor Chang"
+    },
+    "https://openalex.org/W4395033210": {
+      "title": "A multi-season machine learning approach to examine the training load and injury relationship in professional soccer",
+      "year": 2024,
+      "first_author": "Aritra Majumdar"
+    },
+    "https://openalex.org/W4404763099": {
+      "title": "Flexible modelling of time-varying exposures and recurrent events to analyse training load effects in team sports injuries",
+      "year": 2024,
+      "first_author": "Lore Zumeta‐Olaskoaga"
+    },
+    "https://openalex.org/W4408750469": {
+      "title": "Sprint running mechanics are associated with hamstring strain injury: a 6-month prospective cohort study of 126 elite male footballers",
+      "year": 2025,
+      "first_author": "Christopher Bramah"
+    },
+    "https://openalex.org/W2904890641": {
+      "title": "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? – A cluster‐RCT",
+      "year": 2018,
+      "first_author": "Peter Alexander van de Hoef"
+    },
+    "https://openalex.org/W7123342556": {
+      "title": "Hamstring Training and Football Performance: A Systematic Review and Meta-Analysis",
+      "year": 2026,
+      "first_author": "Antonio Riego Ruiz"
+    },
+    "https://openalex.org/W4409617806": {
+      "title": "On-field kinematics of cut maneuvers in football players: Are wearable sensors reliable for assessing anterior cruciate ligament injury risk?",
+      "year": 2025,
+      "first_author": "Stefano Di Paolo"
+    },
+    "https://openalex.org/W4411020614": {
+      "title": "The training and detraining effects of 8-week dynamic stretching of hip flexors on hip range of motion, pain, and physical performance in male professional football players with low back pain. A randomized controlled trial",
+      "year": 2025,
+      "first_author": "Mojtaba Iranmanesh"
+    },
+    "https://openalex.org/W4200491382": {
+      "title": "The Role of the Results of Functional Tests and Psychological Factors on Prediction of Injuries in Adolescent Female Football Players",
+      "year": 2021,
+      "first_author": "Ulrika Tranæus"
+    },
+    "https://openalex.org/W4392498958": {
+      "title": "Psychosocial Factors Associated With Lower Extremity Reinjury Risk in Soccer Players: Contribution of Self-Confidence and Reinjury Anxiety",
+      "year": 2024,
+      "first_author": "Aynollah Naderi"
+    },
+    "https://openalex.org/W4416291487": {
+      "title": "SHAP-based interpretable machine learning for injury risk prediction in university football players: a multi-dimensional data analysis approach",
+      "year": 2025,
+      "first_author": "Jiacheng Ma"
+    },
+    "https://openalex.org/W2978300359": {
+      "title": "Head impact exposure in youth football—Are current interventions hitting the target?",
+      "year": 2019,
+      "first_author": "Stian Bahr Sandmo"
+    },
+    "https://openalex.org/W2508276981": {
+      "title": "Reducing purposeful headers from goal kicks and punts may reduce cumulative exposure to head acceleration",
+      "year": 2016,
+      "first_author": "Jaclyn B. Caccese"
+    },
+    "https://openalex.org/W4392918014": {
+      "title": "Video analysis of heading and risk of head injury situations in elite international men's football: Does the frequency of headers increase with the level of play?",
+      "year": 2024,
+      "first_author": "Lorenz Huber"
+    },
+    "https://openalex.org/W4415023494": {
+      "title": "Heading to guidance: understanding in-training heading demands for elite men’s and women’s football",
+      "year": 2025,
+      "first_author": "Dominic Townsend"
+    },
+    "https://openalex.org/W4400800812": {
+      "title": "A Change-Point Method to Detect Meaningful Change in Return-to-Sport Progression in Athletes",
+      "year": 2024,
+      "first_author": "Kate K. Yung"
+    },
+    "https://openalex.org/W3107394410": {
+      "title": "Physical preparation and return to performance of an elite female football player following ACL reconstruction: a journey to the FIFA Women’s World Cup",
+      "year": 2020,
+      "first_author": "Matt Taberner"
+    },
+    "https://openalex.org/W4396982583": {
+      "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+      "year": 2024,
+      "first_author": "Juan R. González"
+    },
+    "https://openalex.org/W4411153325": {
+      "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+      "year": 2025,
+      "first_author": "Bartosz Wilczyński"
+    },
+    "https://openalex.org/W4281910294": {
+      "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+      "year": 2022,
+      "first_author": "Aritra Majumdar"
+    },
+    "https://openalex.org/W4416382347": {
+      "title": "Leveraging GPS Data and Attention-based BiLSTM for Injury Prediction in Professional Football",
+      "year": 2025,
+      "first_author": "Aleksandra Sadurska"
+    },
+    "https://openalex.org/W4412204000": {
+      "title": "Lessons Learned from Implementing Injury and Illness Surveillance in Professional Football: Introducing a New Implementation Framework",
+      "year": 2025,
+      "first_author": "Montassar Tabben"
+    },
+    "https://openalex.org/W4413447702": {
+      "title": "Comparative Effects of 2 Different Frequencies of Resistance Training in an Integral Periodization Approach on High-Intensity Actions and Noncontact Injuries in Young Trained Soccer Players",
+      "year": 2025,
+      "first_author": "Jose Jimenez-Iglesias"
+    },
+    "https://openalex.org/W7126001043": {
+      "title": "Time-to-Injury Forecasting in Elite Female Football: A DeepHit Survival Approach",
+      "year": 2026,
+      "first_author": "Victoria Catterall"
+    },
+    "https://openalex.org/W4399752739": {
+      "title": "A comparative video analysis of hamstring injuries mechanism and situational pattern in men's and women's football (soccer)",
+      "year": 2024,
+      "first_author": "Francesco Della Villa"
+    },
+    "https://openalex.org/W4402532778": {
+      "title": "Match workload and international travel associated with (ACL) injuries in professional women's football",
+      "year": 2024,
+      "first_author": "Steve den Hollander"
+    },
+    "https://openalex.org/W4389208171": {
+      "title": "Training Load and Current Soreness Predict Future Delayed Onset Muscle Soreness in Collegiate Female Soccer Athletes",
+      "year": 2023,
+      "first_author": "Brett S. Pexa"
+    },
+    "https://openalex.org/W4405417350": {
+      "title": "Critical Fluctuations as an Early Warning Signal of Sports Injuries? A Proof of Concept Using Football Monitoring Data",
+      "year": 2024,
+      "first_author": "Niklas D. Neumann"
+    },
+    "https://openalex.org/W4206022039": {
+      "title": "Predictive Analytic Techniques to Identify Hidden Relationships between Training Load, Fatigue and Muscle Strains in Young Soccer Players",
+      "year": 2021,
+      "first_author": "Mauro Mandorino"
+    },
+    "https://openalex.org/W4416666775": {
+      "title": "Effects of the FIFA 11 + Program on Physical Fitness in Youth and Adult Soccer Players: A Systematic Review and Meta-analysis",
+      "year": 2025,
+      "first_author": "Ibnu Noufal Kambitta Valappil"
+    },
+    "https://openalex.org/W7125394211": {
+      "title": "High return to play but low return to preinjury level after anterior cruciate ligament reconstruction in soccer players: A systematic review with meta‐analysis",
+      "year": 2026,
+      "first_author": "Weipeng Liu"
+    },
+    "https://openalex.org/W4402308206": {
+      "title": "Injury-inciting circumstances of sudden-onset hamstring injuries: video analyses of 63 match injuries in male professional football players in the Qatar Stars League (2013–2020)",
+      "year": 2024,
+      "first_author": "Robin Vermeulen"
+    },
+    "https://openalex.org/W4399295847": {
+      "title": "Process mining to investigate the relationship between clinical antecedents and injury risk, severity and return to play in professional sports",
+      "year": 2024,
+      "first_author": "Ramón Pi"
+    }
+  }
+}

@@ -201,20 +201,28 @@ export default function ExplorePage() {
 function ExploreContent() {
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(searchParams.get("search") || "");
-  const [sport, setSport] = useState("");
-  const [theme, setTheme] = useState("");
-  const [methodology, setMethodology] = useState("");
-  const [contentType, setContentType] = useState("");
+  const [sport, setSport] = useState(searchParams.get("sport") || "");
+  const [theme, setTheme] = useState(searchParams.get("theme") || "");
+  const [methodology, setMethodology] = useState(searchParams.get("methodology") || "");
+  const [contentType, setContentType] = useState(searchParams.get("type") || "");
   const [womenOnly, setWomenOnly] = useState(false);
   const [fullTextOnly, setFullTextOnly] = useState(false);
   const [sortBy, setSortBy] = useState<SortOption>("date");
   const [page, setPage] = useState(0);
   const limit = 25;
 
-  // Sync with URL search param when navigating from other pages
+  // Sync with URL search params when navigating from other pages
   useEffect(() => {
     const s = searchParams.get("search");
     if (s && s !== query) setQuery(s);
+    const sp = searchParams.get("sport");
+    if (sp && sp !== sport) setSport(sp);
+    const th = searchParams.get("theme");
+    if (th && th !== theme) setTheme(th);
+    const meth = searchParams.get("methodology");
+    if (meth && meth !== methodology) setMethodology(meth);
+    const ct = searchParams.get("type");
+    if (ct && ct !== contentType) setContentType(ct);
   }, [searchParams]);
 
   // Direct paper ID filter (from resources page links)

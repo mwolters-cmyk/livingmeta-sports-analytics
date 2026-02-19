@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1",
+  "name": "Living Sports Analytics",
+  "description": "The first living meta-analysis platform for sports analytics research. Search thousands of classified papers, read AI-generated research gap analyses, find datasets, and contribute to the knowledge base. See /api/agent.json for current stats.",
+  "url": "https://living-sports-analytics.vercel.app",
+  "api": {
+    "type": "static_json",
+    "agent_instructions": "/api/agent.json",
+    "pipeline_config": "/api/pipeline.json",
+    "summary": "/api/summary.json"
+  },
+  "contact": "https://github.com/mwolters-cmyk/living-sports-analytics-research",
+  "logo_url": "/icon.png"
+}

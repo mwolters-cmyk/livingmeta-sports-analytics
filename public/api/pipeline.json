@@ -1,6 +1,6 @@
 {
   "description": "Machine-readable pipeline configuration for the Living Sports Analytics platform. Use this to understand how to contribute sources, what classification taxonomy is used, and how papers are processed.",
-  "exported_at": "2026-02-17T16:06:19.851Z",
+  "exported_at": "2026-02-19T19:00:03.854Z",
   "version": "1.0",
   "platform_url": "https://living-sports-analytics.vercel.app",
   "classification_taxonomy": {
@@ -935,11 +935,17 @@
     ]
   },
   "api_endpoints": {
+    "agent_instructions": "/api/agent.json",
     "summary": "/api/summary.json",
+    "papers_compact": "/api/papers-compact.json",
     "classifications": "/api/classifications.json",
     "paper_pdfs": "/api/paper-pdfs.json",
     "pipeline": "/api/pipeline.json",
     "data_sources": "/api/data-sources.json",
+    "gap_analyses_index": "/api/gaps/index.json",
+    "gap_analysis_individual": "/api/gaps/<slug>.json",
+    "contribution_schema": "/api/contribute/gap-analysis-schema.json",
+    "contribution_example": "/api/contribute/gap-analysis-example.json",
     "feed_xml": "/feed.xml"
   }
 }

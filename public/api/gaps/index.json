@@ -1,0 +1,129 @@
+{
+  "description": "Index of all AI-generated research gap analyses on the Living Sports Analytics platform. Fetch full content at /api/gaps/<slug>.json.",
+  "exported_at": "2026-02-19T19:00:03.897Z",
+  "total": 11,
+  "contribution_hint": "If your topic is not listed here and you found ≥5 papers, consider contributing a gap analysis. See /api/contribute/gap-analysis-schema.json for the format.",
+  "analyses": [
+    {
+      "slug": "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
+      "question": "Can cycling race outcomes be reliably predicted, and what factors drive prediction accuracy?",
+      "papers_analyzed": 86,
+      "confidence": "medium",
+      "scope": "This question is well-scoped but ambitious. It asks two related sub-questions: (1) predictability of race outcomes (binary/ordinal prediction problem), and (2) feature importance/driver analysis. The database contains 86 cycling papers, but only ~10-12 directly address race outcome prediction. Most papers study performance physiology, training, or power metrics—prerequisites for prediction but not prediction itself. The question assumes race outcome prediction is actively studied; our evidence suggests it is emerging but underexplored. The scope is appropriate for a gap analysis: it identifies a real research frontier.",
+      "gap_count": 9,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T21:22:58.512677",
+      "url": "/api/gaps/can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio.json"
+    },
+    {
+      "slug": "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
+      "question": "Can wearable sensors and GPS trackers actually prevent injuries, or are we mostly measuring what went wrong after the fact? The promise of load monitoring and real-time biomechanical feedback is huge, but how much evidence is there that wearable data leads to fewer injuries rather than just better documentation of them?",
+      "papers_analyzed": 1749,
+      "confidence": "medium",
+      "scope": "This is a well-scoped and clinically urgent question. It correctly identifies a gap between promise and proof: the database contains 189 injury prevention papers (10.8% of 1749), yet the research question asks the critical distinction between *predictive validity* (sensors prevent injury) vs. *postdictive utility* (sensors document injury). The question is appropriately skeptical—most wearable research measures load or biomechanics, not injury *reduction*. However, the framing could benefit from clarity: 'prevent' can mean (a) causal intervention reducing incidence, or (b) predictive screening enabling prevention. The database appears to contain mostly the latter.",
+      "gap_count": 8,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T22:14:08.488420",
+      "url": "/api/gaps/can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly.json"
+    },
+    {
+      "slug": "how-do-you-reliably-determine-the-market-value-of-a-football-player-and-how-does",
+      "question": "How do you reliably determine the market value of a football player? And how does player valuation work in cycling, where individual performance is harder to isolate from team dynamics? What methods actually work for predicting transfer fees and career trajectories?",
+      "papers_analyzed": 1009,
+      "confidence": "medium",
+      "scope": "This question is reasonably well-scoped but contains three distinct sub-questions with very different answers: (1) football player market valuation (well-studied), (2) cycling player valuation (severely understudied), and (3) transfer fee and career trajectory prediction (mixed coverage). The question assumes cycling has analogous 'player valuation' problems to football, which is partly true but not equivalent—cycling is predominantly individual performance within team tactics, while football is mixed. The research question is ambitious but answerable with our database, though cycling analysis will be severely limited.",
+      "gap_count": 8,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T22:09:27.873991",
+      "url": "/api/gaps/how-do-you-reliably-determine-the-market-value-of-a-football-player-and-how-does.json"
+    },
+    {
+      "slug": "how-does-the-rise-of-sports-analytics-affect-the-fan-experience-does-having-acce",
+      "question": "How does the rise of sports analytics affect the fan experience? Does having access to advanced stats, expected goals models, and real-time data make watching sport more engaging or does it strip away the magic and unpredictability? What do we actually know about how analytics shapes fan behavior, media consumption, and emotional connection to sport?",
+      "papers_analyzed": 1000,
+      "confidence": "LOW",
+      "scope": "This research question is BROAD and MULTI-FACETED, touching on three distinct but interconnected domains: (1) fan experience/engagement, (2) psychological/emotional effects of analytics exposure, and (3) behavioral changes in media consumption. The question also contains an implicit hypothesis (analytics either enhances OR diminishes engagement) that may be false—the relationship could be conditional, heterogeneous, or null. The question conflates several mechanisms: availability of analytics, fan consumption of analytics, understanding of analytics, and emotional responses to them. To be well-scoped, this would benefit from separating: (a) what data exists on fan engagement with analytics-driven content; (b) whether analytics exposure causally affects enjoyment/engagement; (c) whether it affects viewing behavior (consumption patterns); and (d) whether it affects emotional investment. Our database has minimal direct evidence on any of these.",
+      "gap_count": 8,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T22:16:48.845668",
+      "url": "/api/gaps/how-does-the-rise-of-sports-analytics-affect-the-fan-experience-does-having-acce.json"
+    },
+    {
+      "slug": "how-is-machine-learning-used-for-injury-prediction-and-prevention-in-football",
+      "question": "How is machine learning used for injury prediction and prevention in football?",
+      "papers_analyzed": 68,
+      "confidence": "medium",
+      "scope": "The research question is well-scoped and contemporary. It focuses on a specific application domain (ML for injury prediction/prevention) within a single sport (football). However, the question conflates two related but distinct concepts: prediction (identifying who will be injured) and prevention (reducing injury occurrence). The papers in the database heavily emphasize prediction over causal prevention interventions, which is a significant distinction the analysis must address. The question would benefit from clarity on whether prevention refers to predictive identification or active intervention strategies.",
+      "gap_count": 10,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T20:36:23.338278",
+      "url": "/api/gaps/how-is-machine-learning-used-for-injury-prediction-and-prevention-in-football.json"
+    },
+    {
+      "slug": "in-some-sports-women-play-under-different-rules-than-men-smaller-ball-in-handbal",
+      "question": "In some sports, women play under different rules than men (smaller ball in handball, lower net in volleyball, shorter distances). Should women's football also have adapted rules? What does the research say about gender-specific rule adaptations and their effect on performance and fairness?",
+      "papers_analyzed": 1246,
+      "confidence": "low",
+      "scope": "This question is well-scoped but addresses a critical gap: it asks for normative guidance (should rules be adapted?) based on empirical evidence that largely does not exist in our database. The research question conflates three distinct sub-questions: (1) Do performance/physiological differences between men and women warrant rule adaptations? (2) What are the effects of rule adaptations on performance equity and fairness? (3) Is women's football specifically disadvantaged by current rules? Our database contains abundant gender-comparative performance data but virtually no evidence on rule adaptation effects. The question assumes rule adaptation is a viable policy lever—this assumption is untested empirically in women's football.",
+      "gap_count": 8,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T22:07:26.402044",
+      "url": "/api/gaps/in-some-sports-women-play-under-different-rules-than-men-smaller-ball-in-handbal.json"
+    },
+    {
+      "slug": "is-referee-and-judge-bias-measurable-in-sport-and-how-does-it-compare-between-ju",
+      "question": "Is referee and judge bias measurable in sport, and how does it compare between judged sports (gymnastics, figure skating, boxing) and refereed sports (football, basketball, tennis)? Both involve human judgment under pressure, yet they are rarely studied together. What biases have been quantified and what remains unmeasured?",
+      "papers_analyzed": 1410,
+      "confidence": "LOW to MEDIUM. Confidence in identifying WHAT HAS BEEN STUDIED about bias: MEDIUM (we have some papers on home advantage, referee decision-making under load, and judge consistency). Confidence in comparative findings across judged vs. refereed sports: LOW (sparse data, no direct comparisons). Confidence in what REMAINS UNMEASURED: MEDIUM-HIGH (we can identify obvious gaps, but would need domain expertise to know what methodologies exist outside our database).",
+      "scope": "This is a well-motivated but VERY BROAD research question that attempts to integrate three distinct research domains: (1) referee bias in refereed sports, (2) judge bias in judged sports, and (3) comparative analysis across both types. The question assumes these phenomena are 'rarely studied together' but this is partly a symptom of genuine fragmentation in the literature — not necessarily that the question is unanswerable. However, the scope needs narrowing: the papers in our database heavily emphasize PERFORMANCE ANALYSIS (1,353 papers) vs BIAS DETECTION (only 57 papers). The bias literature is thin and scattered across sports. A more focused version would ask: 'What measures of referee/judge bias exist in [specific sport], and what methodologies have proven most reliable?' The comparative frame is intellectually interesting but our database may lack sufficient bias papers across all six sports to support strong comparative conclusions.",
+      "gap_count": 9,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T22:11:42.704545",
+      "url": "/api/gaps/is-referee-and-judge-bias-measurable-in-sport-and-how-does-it-compare-between-ju.json"
+    },
+    {
+      "slug": "is-the-relationship-between-financial-spending-and-competitive-success-league-po",
+      "question": "Is the relationship between financial spending and competitive success (league position) stronger in football than in other sports?",
+      "papers_analyzed": 47,
+      "confidence": "low",
+      "scope": "This question is well-scoped and testable, but our database is poorly positioned to answer it definitively. The question requires: (1) direct empirical comparison of spending-to-performance elasticity across sports, (2) consistent operationalization of 'competitive success' (league position, wins, playoff qualification), and (3) equivalent data availability across sports. Our database has 23 football papers but only 10 basketball, 7 baseball, 2 American football, and 1 each for esports, cricket, and ice hockey. More critically, most papers study player valuation or salary prediction, NOT the relationship between total team spending and league position. This is a fundamental mismatch between the research question and what our papers actually study.",
+      "gap_count": 8,
+      "agenda_items": 4,
+      "created_at": "2026-02-16T21:07:14.690932",
+      "url": "/api/gaps/is-the-relationship-between-financial-spending-and-competitive-success-league-po.json"
+    },
+    {
+      "slug": "what-is-the-optimal-pacing-strategy-in-endurance-sports-like-running-speed-skati",
+      "question": "What is the optimal pacing strategy in endurance sports like running, speed skating, and cycling? How do split times and pacing profiles relate to performance outcomes?",
+      "papers_analyzed": 494,
+      "confidence": "medium",
+      "scope": "This question is well-scoped but with notable caveats. It targets a specific phenomenon (pacing strategy and split times) across defined endurance sports (running, cycling; speed skating is notably underrepresented). The question conflates two related but distinct inquiries: (1) what pacing strategy is optimal, and (2) how pacing profiles relate to performance. These require different analytical approaches—the first is prescriptive/normative, the second is descriptive/correlational. The database contains substantial work on pacing in running and cycling but minimal coverage of speed skating. The research tends to describe successful pacing patterns post-hoc rather than identify mechanistically optimal strategies.",
+      "gap_count": 10,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T22:04:06.024567",
+      "url": "/api/gaps/what-is-the-optimal-pacing-strategy-in-endurance-sports-like-running-speed-skati.json"
+    },
+    {
+      "slug": "what-is-the-optimal-training-strategy-for-multi-discipline-sports-such-as-triath",
+      "question": "What is the optimal training strategy for multi-discipline sports such as triathlon, biathlon, and decathlon?",
+      "papers_analyzed": 73,
+      "confidence": "medium",
+      "scope": "This question is moderately well-scoped but conflates three distinct sports with different physiological demands and structures. Triathlon (swimming-cycling-running) and biathlon (cross-country skiing-shooting) share endurance cores but differ fundamentally; decathlon is a track-and-field combined event with explosive and endurance components. The term 'optimal' assumes a single best strategy, which is likely sport-, level-, and individual-dependent. A more rigorous framing would specify: optimal for whom (elite/developmental/recreational), at what level (youth/adult), in which distance (sprint/Olympic/long/Ironman), and measured by what outcome (podium placement/personal improvement/health). The question would benefit from disaggregation.",
+      "gap_count": 9,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T21:25:56.388447",
+      "url": "/api/gaps/what-is-the-optimal-training-strategy-for-multi-discipline-sports-such-as-triath.json"
+    },
+    {
+      "slug": "which-tactical-approaches-are-most-effective-in-football-and-how-is-tactical-ana",
+      "question": "Which tactical approaches are most effective in football, and how is tactical analysis measured?",
+      "papers_analyzed": 146,
+      "confidence": "high",
+      "scope": "This is a well-scoped but expansive two-part question: (1) effectiveness of tactics, and (2) measurement methods. The question is neither too narrow nor too broad—it sits at the heart of applied sports analytics. However, 'most effective' is ambiguous: effective for what outcome (winning, goal-scoring, possession retention, defensive solidity)? And 'tactical approaches' spans formations, pressing, transitions, set pieces, and passing styles. The literature addresses these implicitly through outcome correlation studies but rarely isolates causality. The second part (measurement) is better covered by methodological papers. The question would benefit from clarity on sport level (elite vs. grassroots), gender, and outcome of interest.",
+      "gap_count": 9,
+      "agenda_items": 5,
+      "created_at": "2026-02-16T21:20:14.231442",
+      "url": "/api/gaps/which-tactical-approaches-are-most-effective-in-football-and-how-is-tactical-ana.json"
+    }
+  ]
+}

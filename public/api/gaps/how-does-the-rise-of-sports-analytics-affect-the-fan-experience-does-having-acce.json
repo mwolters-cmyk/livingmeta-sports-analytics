@@ -1,0 +1,662 @@
+{
+  "description": "Full gap analysis: \"How does the rise of sports analytics affect the fan experience? Does having access to advanced stats, expected goals models, and real-time data make watching sport more engaging or does it strip away the magic and unpredictability? What do we actually know about how analytics shapes fan behavior, media consumption, and emotional connection to sport?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.903Z",
+  "slug": "how-does-the-rise-of-sports-analytics-affect-the-fan-experience-does-having-acce",
+  "question": "How does the rise of sports analytics affect the fan experience? Does having access to advanced stats, expected goals models, and real-time data make watching sport more engaging or does it strip away the magic and unpredictability? What do we actually know about how analytics shapes fan behavior, media consumption, and emotional connection to sport?",
+  "created_at": "2026-02-16T22:16:48.845668",
+  "analyzed_at": "2026-02-16T22:18:42.421566",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 1000,
+  "cost_usd": 0.1081,
+  "analysis_confidence": "LOW",
+  "scope_assessment": "This research question is BROAD and MULTI-FACETED, touching on three distinct but interconnected domains: (1) fan experience/engagement, (2) psychological/emotional effects of analytics exposure, and (3) behavioral changes in media consumption. The question also contains an implicit hypothesis (analytics either enhances OR diminishes engagement) that may be false—the relationship could be conditional, heterogeneous, or null. The question conflates several mechanisms: availability of analytics, fan consumption of analytics, understanding of analytics, and emotional responses to them. To be well-scoped, this would benefit from separating: (a) what data exists on fan engagement with analytics-driven content; (b) whether analytics exposure causally affects enjoyment/engagement; (c) whether it affects viewing behavior (consumption patterns); and (d) whether it affects emotional investment. Our database has minimal direct evidence on any of these.",
+  "database_coverage": "Our database is POORLY EQUIPPED to answer this question. Of 1000 papers, only ~55 focus on fan_engagement theme, and the vast majority of those concern attendance/demand drivers (stadium attendance, streaming platform effects, superstar effects, merchandise), not the psychological or emotional experience of consuming analytics. We have ZERO papers examining whether or not fans actually use/understand advanced stats, how it affects enjoyment, or whether analytics changes emotional connection to sport. This is a fundamental gap. The database is heavily skewed toward performance_analysis (889 papers) and statistical methods applied to player/team performance—the supply side of analytics—with almost no work on the demand side (fan consumption, perception, emotional impact). We likely have only a few papers that tangentially address this (e.g., studies on broadcast platforms, social media engagement).",
+  "confidence_explanation": "We have almost no direct empirical evidence in our database on the core question (how analytics affects fan experience/emotional connection). Our 55 fan_engagement papers focus almost entirely on attendance determinants and demographic/economic drivers, not analytics exposure or its psychological effects. The few papers touching on analytics or data-driven content (e.g., digital transformation case studies, broadcast platforms) do not measure fan experience or emotional outcomes. High confidence would require: (1) experimental or quasi-experimental studies on fan engagement with analytics-rich vs. analytics-poor broadcasts; (2) surveys measuring fan understanding and enjoyment of advanced metrics; (3) behavioral data on consumption of analytics-heavy content vs. traditional content; (4) qualitative work on fan narratives and emotional responses. We have almost none of this. This gap analysis is therefore based largely on ABSENCE from our database rather than presence of conflicting evidence.",
+  "landscape": {
+    "summary": "Our database contains extensive research on sports analytics—primarily on the supply side: developing performance metrics (xG, expected goals models, player ratings, tracking data), applying machine learning to performance prediction, and quantifying physical/tactical demands. However, there is almost NO research on the demand side: how fans perceive, understand, or experience analytics; whether analytics consumption affects engagement, enjoyment, or emotional investment; or how analytics has changed viewing behavior. The few fan_engagement papers in our database focus on attendance and economic factors (stadium capacity, superstar players, playoff stage), not analytics exposure. One case study describes the NBA's digital transformation (W4364374775), another examines WNBA broadcast platforms and social media engagement (W3161430098), but neither directly measures fan experience of analytics-driven content. The research landscape is therefore highly imbalanced: abundant technical work on building analytics, virtually no work on its experiential or behavioral consumer-side effects.",
+    "key_findings": [
+      {
+        "finding": "Analytics investment (headcount in analytics departments) has a measurable positive effect on NBA team performance: each additional analyst contributes ~1.25 wins per season, controlling for roster quality",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4408557862",
+            "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+            "year": 2025,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.1177/15270025251328264",
+            "first_author": "H Wang"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Expected goals (xG) and related metrics (xGOT) are highly predictive of match outcomes in professional football, with R² > 0.92 in Spanish leagues; these metrics perform better than traditional shot-on-target counting",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4401945311",
+            "title": "An Expected Goals on Target (xGOT) Metric as a New Metric for Analyzing Elite Soccer Player Performance",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/data9090102",
+            "first_author": "Anselmo Ruiz-de-Alarcón-Quintero"
+          },
+          {
+            "work_id": "https://openalex.org/W2567728646",
+            "title": "Real Time Quantification of Dangerousity in Football Using Spatiotemporal Tracking Data",
+            "year": 2016,
+            "sport": "football",
+            "doi": "https://doi.org/10.1371/journal.pone.0168768",
+            "first_author": "Daniel Link"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Player rating systems (WhoScored, FotMob, Sofascore) show moderate correlations with underlying performance metrics, suggesting both convergent validity and measurement disagreement across systems",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4407955883",
+            "title": "Comparing player rating systems as a metric for assessing individual performance in soccer",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/02640414.2025.2471208",
+            "first_author": "James Moores Ball"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Stadium attendance in women's football is driven by match outcome likelihood, fixture quality, and seasonal factors, but the role of analytics accessibility or understanding is not examined",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4398209552",
+            "title": "The determinants of stadium attendance in elite women’s football: evidence from the FA Women’s Super League",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/16184742.2024.2343485",
+            "first_author": "Maurizio Valenti"
+          },
+          {
+            "work_id": "https://openalex.org/W4318988114",
+            "title": "Demand for Basketball: A Comparison of the WNBA and NBA",
+            "year": 2023,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.32731/ijsf/181.022023.03",
+            "first_author": "Nola Agha"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Superstar players (e.g., Shohei Ohtani) generate large attendance boosts, but there is no evidence on whether analytics understanding of player value mediates or moderates this effect",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4399875348",
+            "title": "Superstars Really Are Scarce: Shohei Ohtani and Baseball Attendance",
+            "year": 2024,
+            "sport": "baseball",
+            "doi": "https://doi.org/10.1123/jsm.2023-0304",
+            "first_author": "Christopher T. Imbrogno"
+          },
+          {
+            "work_id": "https://openalex.org/W4390059421",
+            "title": "International Competitions, Star Players, and NWSL Attendance",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/15270025231217973",
+            "first_author": "E. Frank Stephenson"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "NBA's digital transformation included data-driven personalization and streaming distribution, but actual fan experience metrics (enjoyment, engagement, emotional connection) are not measured",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4364374775",
+            "title": "The National Basketball Association’s (NBA) Digital Transformation: An Explanatory Case Study",
+            "year": 2023,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.12775/qs.2023.11.01.005",
+            "first_author": "James Santomier"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Social media engagement (Twitter, Instagram) for sports teams shows temporal variation and correlates with team budget/ranking, but no relationship to analytics content or visibility",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3161430098",
+            "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
+            "year": 2021,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.3389/fspor.2021.658293",
+            "first_author": "Ann Pegoraro"
+          },
+          {
+            "work_id": "https://openalex.org/W4306773043",
+            "title": "The Engagement of the Social Networks in the ACB Basketball League",
+            "year": 2022,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.3390/su142013462",
+            "first_author": "Berta Benito-Colio"
+          }
+        ],
+        "paper_count": 2
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "Regression analysis (linear, mixed-effects, logistic) - 70% of fan_engagement and performance papers",
+        "Observational/quasi-experimental designs with archival data - 65% (attendance data, match statistics, social media metrics)",
+        "Descriptive/comparative analysis - 20% (benchmark studies, regional comparisons)",
+        "Qualitative case study - 5% (NBA digital transformation, coaching perspectives)"
+      ],
+      "sample_size_patterns": "Fan_engagement studies predominantly use large aggregated datasets (1000+ matches, 100+ teams across seasons) for attendance/demand modeling; social media studies use 18-102 teams over months; very few primary data collection studies with fans (surveys are rare in our database)",
+      "data_sources_used": "Archival sources dominate: official league statistics, box scores, attendance records, social media metrics (Rival IQ, CrowdTangle). Proprietary tracking data (StatsBomb, Opta) used for performance metrics. NO primary data collection from fans (surveys, interviews, experimental designs rarely used)",
+      "temporal_patterns": "Publication surge in 2024-2025 (228+317 papers) reflects recent interest in AI/analytics applications; however, substantive questions about fan experience remain unchanged since 2015—barely any papers on this topic across entire period. Analytics supply-side research has grown exponentially; demand-side research has remained minimal."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W4408557862",
+        "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+        "why_key": "Only paper directly measuring ROI of analytics investment on competitive outcomes; establishes that analytics is not merely correlational with success but has quantifiable causal effect. However, tells us nothing about fan experience.",
+        "year": 2025,
+        "sport": "basketball",
+        "doi": "https://doi.org/10.1177/15270025251328264",
+        "first_author": "H Wang"
+      },
+      {
+        "work_id": "https://openalex.org/W4401945311",
+        "title": "An Expected Goals on Target (xGOT) Metric as a New Metric for Analyzing Elite Soccer Player Performance",
+        "why_key": "Demonstrates technical validity of advanced metrics (xGOT better than traditional xG); exemplifies the supply-side focus of our database (metric development) without any fan-side component.",
+        "year": 2024,
+        "sport": "football",
+        "doi": "https://doi.org/10.3390/data9090102",
+        "first_author": "Anselmo Ruiz-de-Alarcón-Quintero"
+      },
+      {
+        "work_id": "https://openalex.org/W4364374775",
+        "title": "The National Basketball Association’s (NBA) Digital Transformation: An Explanatory Case Study",
+        "why_key": "Only qualitative case study of how a major league integrated analytics into fan-facing platforms; documents strategic integration of data and digital channels but does NOT measure fan experience or emotional outcomes.",
+        "year": 2023,
+        "sport": "basketball",
+        "doi": "https://doi.org/10.12775/qs.2023.11.01.005",
+        "first_author": "James Santomier"
+      },
+      {
+        "work_id": "https://openalex.org/W3161430098",
+        "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
+        "why_key": "Examines relationship between broadcast platform choice and social media engagement; found that athlete/team quality (MVP status) drives engagement more than broadcast platform, but does not isolate analytics content effects.",
+        "year": 2021,
+        "sport": "basketball",
+        "doi": "https://doi.org/10.3389/fspor.2021.658293",
+        "first_author": "Ann Pegoraro"
+      },
+      {
+        "work_id": "https://openalex.org/W4410216247",
+        "title": "Algorithmic fandom: how generative AI is reshaping sports marketing, fan engagement, and the integrity of sport",
+        "why_key": "Recent review article that explicitly addresses AI/analytics in fan engagement context; however, it is primarily conceptual/normative (discussing ethical concerns) rather than empirical evidence on fan experience.",
+        "year": 2025,
+        "sport": "multi_sport",
+        "doi": "https://doi.org/10.3389/fspor.2025.1597444",
+        "first_author": "Hans Westerbeek"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "topic",
+      "title": "Direct measurement of fan experience with analytics-driven content",
+      "description": "No studies in our database measure whether or how fans consume, understand, or emotionally respond to analytics-rich broadcasts, apps, or commentary. We lack experimental evidence comparing fan enjoyment/engagement between analytics-rich vs. analytics-sparse viewing conditions. No surveys ask fans about their understanding of xG, expected goals, player ratings, or whether these enhance or diminish their viewing pleasure. This is the core of the research question yet is entirely absent.",
+      "evidence": "Our 55 fan_engagement papers focus on attendance (stadium, streaming platform effects) and demographic/economic drivers. Zero papers measure subjective experience metrics (enjoyment, emotional connection, perceived fairness/unpredictability). The only qualitative work on fan experience (W4364374775, NBA digital transformation) is a case study without systematic measurement of fan reactions.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4364374775",
+          "title": "The National Basketball Association’s (NBA) Digital Transformation: An Explanatory Case Study",
+          "year": 2023,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.12775/qs.2023.11.01.005",
+          "first_author": "James Santomier"
+        },
+        {
+          "work_id": "https://openalex.org/W3161430098",
+          "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
+          "year": 2021,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3389/fspor.2021.658293",
+          "first_author": "Ann Pegoraro"
+        },
+        {
+          "work_id": "https://openalex.org/W4410216247",
+          "title": "Algorithmic fandom: how generative AI is reshaping sports marketing, fan engagement, and the integrity of sport",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.3389/fspor.2025.1597444",
+          "first_author": "Hans Westerbeek"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "This is the crux of the research question. Without direct measurement of fan experience, we cannot answer whether analytics makes watching 'more engaging' or 'strips away magic.' Current literature only addresses whether people attend games or consume media—not how they FEEL or what they understand.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible designs include: (1) randomized experiments comparing broadcast with/without analytics commentary/graphics; (2) large-scale surveys on fan understanding and attitudes toward advanced metrics; (3) intensive interviews or focus groups with fans about emotional responses; (4) behavioral experiments on whether xG predictions affect betting/fantasy decisions. Cost barrier is moderate (requires recruiting fans, IRB approval, potentially broadcast production). Data collection is straightforward but requires novel primary data.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "topic",
+      "title": "Heterogeneous effects of analytics on fan segments and sub-populations",
+      "description": "Even if we had aggregate evidence on fan experience, we lack any segmentation by fan type: casual vs. devoted, young vs. old, analytics-literate vs. non-literate, active fantasy/betting participants vs. passive viewers. The research question assumes a monolithic 'fan' with a single experience. In reality, analytics likely affects different fans differently—a statistician may love xG models while a casual fan finds them distracting. No research explores these conditional effects.",
+      "evidence": "Our social media engagement studies (W3161430098, W4306773043) analyze population-level patterns (team engagement, broadcast platform effects) but do not segment by fan type or attempt to measure heterogeneous responses. Attendance studies do not ask whether analytics-literate fans respond differently to team analytics investments. One paper (W4200582382) examines US women's sport consumption patterns by social structure but does not address analytics exposure.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3161430098",
+          "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
+          "year": 2021,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3389/fspor.2021.658293",
+          "first_author": "Ann Pegoraro"
+        },
+        {
+          "work_id": "https://openalex.org/W4200582382",
+          "title": "U.S. Women's Sport Consumption and Self-Identified Fandom: An Exploration of Social Structural and Sociocultural Antecedents",
+          "year": 2021,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1177/10126902211068272",
+          "first_author": "Frances S. Sutton"
+        },
+        {
+          "work_id": "https://openalex.org/W4306773043",
+          "title": "The Engagement of the Social Networks in the ACB Basketball League",
+          "year": 2022,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3390/su142013462",
+          "first_author": "Berta Benito-Colio"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Understanding whether analytics enhances or diminishes the fan experience is meaningless without knowing FOR WHOM. Different fan segments may experience analytics entirely differently; aggregate effects could mask large opposing effects in subgroups. This is essential for theory and practical league decisions about how to market analytics.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires primary data collection (surveys, experiments) with large, stratified samples that allow comparison across fan segments (demographics, experience level, analytics literacy). More expensive than simple surveys but standard methodology in marketing/media research.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "methodology",
+      "title": "Causal inference on analytics consumption effects on viewing behavior and emotional outcomes",
+      "description": "Our database has zero randomized controlled trials or quasi-experimental studies with fans as subjects. All fan_engagement work is observational/correlational (attendance correlates with team performance, broadcast platform correlates with social media engagement). We cannot infer whether analytics availability CAUSES changes in viewing behavior, emotional investment, or enjoyment. Confounding is rife: teams with large analytics investments may also invest in marketing, better players, or fan experience—disentangling effects is impossible without experimental design.",
+      "evidence": "Fan_engagement papers use correlational and archival methods (attendance regression, social media trend analysis, betting market analysis). None use randomization, quasi-experimental design with instrumental variables, or even careful matching/propensity scoring. W4408557862 (analytics investment → wins) uses panel regression with fixed effects but does not measure fan experience as outcome. W3161430098 (broadcast platform → social engagement) is observational.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4408557862",
+          "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+          "year": 2025,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.1177/15270025251328264",
+          "first_author": "H Wang"
+        },
+        {
+          "work_id": "https://openalex.org/W3161430098",
+          "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
+          "year": 2021,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3389/fspor.2021.658293",
+          "first_author": "Ann Pegoraro"
+        },
+        {
+          "work_id": "https://openalex.org/W4364374775",
+          "title": "The National Basketball Association’s (NBA) Digital Transformation: An Explanatory Case Study",
+          "year": 2023,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.12775/qs.2023.11.01.005",
+          "first_author": "James Santomier"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "The research question asks about EFFECTS of analytics on fan experience. Correlations are insufficient; we need causal evidence. Without causal methods, any observed relationship between analytics availability and engagement could reflect reverse causality (engaged fans seek analytics) or confounding (teams investing in analytics also invest in other fan-facing improvements).",
+      "feasibility": "medium",
+      "feasibility_rationale": "Randomized broadcast experiments are feasible but require coordination with leagues/broadcasters (moderate barrier). Quasi-experimental designs exploiting natural variation (e.g., different broadcast markets, league policy changes) are more practical. Instrumental variable approaches could leverage variation in team analytics spending or data availability.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "integration",
+      "title": "Connection between analytics supply (metric development) and fan demand/consumption",
+      "description": "Our database contains extensive work on DEVELOPING and VALIDATING advanced metrics (xG, expected goals, player ratings, tracking data models). However, there is no bridge between this supply-side research and the demand side (how these metrics reach and affect fans). No papers examine: (1) which metrics are actually broadcast/communicated to fans; (2) how fans consume these metrics (via commentary, graphics, apps, social media); (3) whether understanding of metrics correlates with engagement or enjoyment; (4) feedback loops between fan demand and analytics development.",
+      "evidence": "889 performance_analysis papers develop metrics but make no reference to fan consumption. 55 fan_engagement papers do not discuss analytics or metrics. The single integrative paper (W4364374775, NBA digital transformation) describes platform changes and data availability but does not measure what fans actually see or how they respond. Gap is structural: two separate research communities (sports analytics researchers and fan experience researchers) with no dialogue.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4408557862",
+          "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+          "year": 2025,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.1177/15270025251328264",
+          "first_author": "H Wang"
+        },
+        {
+          "work_id": "https://openalex.org/W4401945311",
+          "title": "An Expected Goals on Target (xGOT) Metric as a New Metric for Analyzing Elite Soccer Player Performance",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/data9090102",
+          "first_author": "Anselmo Ruiz-de-Alarcón-Quintero"
+        },
+        {
+          "work_id": "https://openalex.org/W4364374775",
+          "title": "The National Basketball Association’s (NBA) Digital Transformation: An Explanatory Case Study",
+          "year": 2023,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.12775/qs.2023.11.01.005",
+          "first_author": "James Santomier"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "The research question assumes analytics 'rise' affects fans, implying fan exposure to analytics. But we have no evidence about this transmission mechanism. Metrics might be developed but never communicated to fans, or communicated poorly. Understanding this supply-demand gap is essential for answering whether analytics actually affects fan experience in practice.",
+      "feasibility": "high",
+      "feasibility_rationale": "Can be addressed through media content analysis (what metrics are broadcast/communicated across leagues and seasons), surveys (which metrics do fans see, understand, care about), and case studies of how leagues integrate metrics into fan-facing products. Relatively low-cost to implement.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_5",
+      "type": "data",
+      "title": "Lack of primary data on fan attitudes, understanding, and emotional responses to analytics",
+      "description": "Our database relies almost entirely on archival/administrative data (attendance, social media posts, match statistics, betting odds). We have almost NO primary data collection from fans themselves: surveys on understanding of xG or player ratings, interviews on emotional response to analytics-heavy broadcasts, experiments measuring enjoyment of analytics-rich vs. analytics-sparse content, or experience sampling (real-time reporting of engagement during viewing). The few papers with any fan input use secondary indicators (attendance, social media) rather than direct measurement.",
+      "evidence": "Fan_engagement papers use: (a) attendance records (W4398209552), (b) social media metrics (W3161430098, W4306773043), (c) betting market data (implied by some performance prediction papers), (d) one case study interview approach (W4364374775). None use surveys of fan understanding, enjoyment, or emotional investment. ZERO papers use experimental designs with fan participants watching content with/without analytics.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4398209552",
+          "title": "The determinants of stadium attendance in elite women’s football: evidence from the FA Women’s Super League",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/16184742.2024.2343485",
+          "first_author": "Maurizio Valenti"
+        },
+        {
+          "work_id": "https://openalex.org/W3161430098",
+          "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
+          "year": 2021,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3389/fspor.2021.658293",
+          "first_author": "Ann Pegoraro"
+        },
+        {
+          "work_id": "https://openalex.org/W4364374775",
+          "title": "The National Basketball Association’s (NBA) Digital Transformation: An Explanatory Case Study",
+          "year": 2023,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.12775/qs.2023.11.01.005",
+          "first_author": "James Santomier"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Without direct fan data, we cannot answer the research question at all. Attendance and social media engagement are behavioral proxies but do not capture subjective experience (magic, unpredictability, emotional connection) that the question emphasizes.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Survey design is straightforward but requires: (1) large representative sample of fans (costly), (2) careful measurement of constructs (analytics understanding, enjoyment, emotional investment), (3) sufficient variation in analytics exposure. Experimental designs are more rigorous but require broadcast partnerships or lab simulations.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_6",
+      "type": "temporal",
+      "title": "Longitudinal evidence on how fan engagement with analytics evolves over time",
+      "description": "The research question asks about the 'rise' of analytics, implying a temporal trend in fan exposure and response. We have almost no longitudinal data tracking: (1) changes in analytics availability/visibility to fans over time; (2) whether fan engagement or emotional connection has changed as analytics has become more prominent; (3) whether understanding of analytics has diffused through the fan population; (4) whether broadcast strategies integrating analytics have changed viewer behavior over seasons or years. All our fan_engagement papers are either cross-sectional or cover short periods (single season or one tournament).",
+      "evidence": "Most papers cover 1-2 seasons. W3161430098 analyzes one season of WNBA broadcasts. W3161430098 and W4306773043 cover one-season or one-tournament periods. W4364374775 is a case study of NBA over time but is qualitative and does not measure fan response trends. No paper tracks fan understanding or enjoyment of analytics across multiple years or decades.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3161430098",
+          "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
+          "year": 2021,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3389/fspor.2021.658293",
+          "first_author": "Ann Pegoraro"
+        },
+        {
+          "work_id": "https://openalex.org/W4306773043",
+          "title": "The Engagement of the Social Networks in the ACB Basketball League",
+          "year": 2022,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3390/su142013462",
+          "first_author": "Berta Benito-Colio"
+        },
+        {
+          "work_id": "https://openalex.org/W4364374775",
+          "title": "The National Basketball Association’s (NBA) Digital Transformation: An Explanatory Case Study",
+          "year": 2023,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.12775/qs.2023.11.01.005",
+          "first_author": "James Santomier"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "The 'rise' of analytics is a temporal phenomenon. Understanding its effect on fans requires longitudinal data. However, most questions can be answered with cross-sectional or short-term data if causal methods are strong; temporal trends are secondary to understanding mechanisms.",
+      "feasibility": "low",
+      "feasibility_rationale": "Requires either: (1) long-term panel surveys of fans (expensive, attrition), (2) archival data on broadcast content and fan response over decades (limited availability), or (3) media content analysis over time (more feasible but labor-intensive). Experimental studies, while more causal, cannot address this gap easily.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_7",
+      "type": "population",
+      "title": "Women's sports and other under-represented populations in analytics-fan experience research",
+      "description": "Of our 55 fan_engagement papers, 16.6% (166 of 1000 total) focus on women's sport. Of the handful of fan_engagement papers on women's sports, most examine attendance/economic drivers (e.g., W4398209552 on women's football attendance, W4318988114 on WNBA demand), not analytics effects. We have virtually NO research on whether analytics affects female fans' experience differently from male fans, or how female athletes' visibility in analytics shapes fan engagement with women's sports. This is a critical gap given the recent growth in women's sports investment and media coverage.",
+      "evidence": "W4398209552 (women's football attendance) and W4318988114 (WNBA demand) examine attendance but do not address analytics. W3161430098 (WNBA broadcast and social media) touches on women's sports but does not isolate analytics effects. No papers compare male and female fans' responses to analytics-rich content. No papers examine whether women athletes' lower visibility in advanced analytics commentary affects fan engagement.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4398209552",
+          "title": "The determinants of stadium attendance in elite women’s football: evidence from the FA Women’s Super League",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/16184742.2024.2343485",
+          "first_author": "Maurizio Valenti"
+        },
+        {
+          "work_id": "https://openalex.org/W4318988114",
+          "title": "Demand for Basketball: A Comparison of the WNBA and NBA",
+          "year": 2023,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.32731/ijsf/181.022023.03",
+          "first_author": "Nola Agha"
+        },
+        {
+          "work_id": "https://openalex.org/W3161430098",
+          "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
+          "year": 2021,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.3389/fspor.2021.658293",
+          "first_author": "Ann Pegoraro"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Women's sports are growing rapidly but analytics coverage and development lag men's sports. If analytics affects fan experience, this gap may exacerbate disparities in coverage and fan engagement. Understanding differential effects is important for equity and strategic league decisions.",
+      "feasibility": "high",
+      "feasibility_rationale": "Can be addressed by including women's sports and female fans in any future studies on analytics and fan experience. Requires intentional sampling of female-focused events and fan surveys stratified by gender. Relatively low additional cost if folded into larger studies.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_8",
+      "type": "topic",
+      "title": "Mechanisms by which analytics might affect unpredictability and surprise in sport",
+      "description": "The research question hypothesizes that analytics might 'strip away magic and unpredictability.' We have NO research on whether accurate predictions (xG, win probability) reduce perceived unpredictability for fans, whether knowing these predictions changes emotional investment, or whether pre-match analytics commentary shapes expectations in ways that affect in-game surprise and enjoyment. This requires understanding fan psychology and subjective experience of uncertainty.",
+      "evidence": "Our database has papers on win probability models (prediction accuracy), expected goals calibration, and betting market efficiency. None measure whether fans who see these predictions experience matches differently (e.g., as more or less surprising). W4200028338 develops in-play forecasting but does not study fan experience. No papers address emotional or psychological effects of predictive analytics.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4200028338",
+          "title": "In-play forecasting in football using event and positional data",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.1038/s41598-021-03157-3",
+          "first_author": "Maximilian Klemp"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "This is a specific mechanism implied by the research question. If analytics does affect fan experience, understanding HOW (via reducing surprise? by shifting focus to statistics?) is important. However, it is somewhat secondary to simply measuring WHETHER there is an effect.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires experiments or surveys measuring perceived unpredictability/surprise in matches with and without pre-match predictions or in-game analytics. Psychological measurement constructs (surprise, suspense, emotional arousal) exist and are validated. Feasible to implement.",
+      "confidence": "medium"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Randomized experiments on fan enjoyment and engagement with analytics-rich vs. analytics-sparse broadcasts",
+      "description": "Conduct RCTs where fans watch identical match footage with and without: (a) xG graphics and commentary, (b) player rating overlays, (c) real-time win probability meters. Measure subjective outcomes (enjoyment, suspense, perceived fairness, emotional investment) and behavioral outcomes (attention, recall of information, post-match engagement). Include heterogeneity by fan segment (casual vs. devoted, high vs. low analytics literacy, age, gender). This is the MINIMUM evidence needed to answer the research question.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_2",
+        "gap_3"
+      ],
+      "suggested_methodology": "Randomized factorial design with between-subjects manipulation of analytics elements. Measure: (1) subjective experience during/after viewing (surveys, ESM), (2) attention/engagement (eye-tracking, behavioral coding), (3) enjoyment ratings, (4) emotional arousal (biometric if feasible). Recruit 200-400 fans stratified by key segments. Use broadcast platform or lab simulation.",
+      "suggested_data": "Primary data collection from fan participants. Could partner with leagues/broadcasters to manipulate actual broadcasts or use lab simulations of match footage with controlled overlays. Video clips of 10-15 min of match action; standardized commentary; validated enjoyment/emotional scales.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Provides first rigorous causal evidence on whether analytics affects fan experience, resolves central research question, identifies which analytics elements matter most, reveals heterogeneity across fan types."
+    },
+    {
+      "priority": 2,
+      "title": "Large-scale survey of fan understanding, consumption, and attitudes toward analytics",
+      "description": "Conduct representative surveys of 1000+ fans across multiple sports and countries, measuring: (1) awareness of and exposure to analytics (which metrics have they heard of?), (2) understanding of common metrics (xG, expected goals, player ratings), (3) attitudes toward analytics-driven commentary/graphics, (4) perceived impact on viewing experience (does it enhance or diminish?), (5) emotional investment and satisfaction. Include demographic, behavioral, and psychographic segmentation. Repeat annually to track trends.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_5"
+      ],
+      "suggested_methodology": "Online survey sampling from multiple platforms (Prolific, Qualtrics, league-specific panels). Stratified sampling by sport, league, fan intensity, demographics. Validated scales for understanding (comprehension items), attitudes (Likert scales), and engagement (existing psychological scales for emotional investment, perceived fairness). Multi-year tracking enables temporal trends.",
+      "suggested_data": "Survey responses from representative sample of sports fans. Data on which metrics are salient (aided/unaided recall), understanding levels (comprehension items), attitudes (semantic differential, Likert), engagement and enjoyment metrics. Behavioral data on consumption: which platforms do fans use for analytics? Do they seek out analytics content?",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Provides descriptive evidence on FAN SIDE of analytics: what fans know, care about, and how it affects them. Enables segmentation analysis. Creates baseline for tracking changes over time as analytics penetration increases."
+    },
+    {
+      "priority": 3,
+      "title": "Qualitative study of fan narratives and emotional responses to analytics",
+      "description": "Conduct in-depth interviews and focus groups with 50-100 fans from diverse backgrounds, exploring: (1) what they think/feel about analytics in sports, (2) how they use analytics in their fan experience, (3) whether analytics enhances or diminishes magic/unpredictability, (4) emotional investment and attachment in analytics era, (5) generational differences in attitude. Use thematic analysis to identify emergent themes and heterogeneous effects.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_2"
+      ],
+      "suggested_methodology": "Phenomenological or thematic analysis approach. Recruit purposive sample representing diversity of fan types (casual, devoted, analytics-literate, female, across age groups). Semi-structured interviews and focus groups. Grounded theory or thematic coding to identify patterns. Complement quantitative surveys with rich qualitative understanding.",
+      "suggested_data": "Transcripts from interviews and focus groups. Can supplement with video/observational data of fans watching matches with and without analytics. Demographic/background information on participants to enable comparison across groups.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Provides nuanced understanding of HOW and WHY analytics affects fan experience. Identifies emotional and psychological mechanisms. Generates hypotheses for testing in experiments or surveys. Captures diversity of fan experience that quantitative methods may miss."
+    },
+    {
+      "priority": 4,
+      "title": "Media content analysis of how leagues and broadcasters communicate analytics to fans over time",
+      "description": "Systematically analyze broadcast and digital content from major leagues (Premier League, NBA, MLS, etc.) over 10+ years, coding: (1) frequency and prominence of analytics mentions/graphics, (2) which metrics are communicated, (3) how analytics is framed (technical, narrative, exciting?), (4) changes in strategy over time. Connect to fan engagement data (attendance, social media) to assess correlations. This maps the SUPPLY SIDE and bridges to demand.",
+      "addresses_gaps": [
+        "gap_4",
+        "gap_6"
+      ],
+      "suggested_methodology": "Quantitative content analysis of broadcast video/transcripts and digital platforms. Create codebook for analytics content (metric type, prominence, framing). Sample matches/broadcasts across years and leagues. Use frequency counts and trend analysis. Correlate with attendance/engagement data from same time periods.",
+      "suggested_data": "Broadcast video and transcripts (available from leagues or media archives). Digital content from league websites, apps, social media. Match-level attendance and viewership data, social media engagement metrics from same periods.",
+      "estimated_difficulty": "accessible_thesis",
+      "potential_impact": "Documents what fans are actually EXPOSED to (analytics supply). Enables temporal trend analysis of analytics visibility. Provides foundation for studies linking analytics communication to fan outcomes."
+    },
+    {
+      "priority": 5,
+      "title": "Investigate differential effects of analytics on women's sports fan engagement and media coverage",
+      "description": "Parallel study comparing men's and women's sports on: (1) analytics visibility in broadcasts and digital media, (2) fan familiarity with and use of analytics for women's sports, (3) whether analytics availability correlates with fan engagement differences, (4) how athletes and leagues use analytics to build women's sports narratives. Include experiments/surveys measuring fan response to analytics-rich women's sports content. Critical for understanding equity implications of analytics growth.",
+      "addresses_gaps": [
+        "gap_7"
+      ],
+      "suggested_methodology": "Mixed methods: (1) content analysis of men's vs. women's broadcasts/digital platforms (analytics mention frequency), (2) surveys of male and female fans comparing understanding and attitudes toward women's sports analytics, (3) experiments presenting analytics content on women's sports athletes to measure engagement effects. Longitudinal tracking of changes.",
+      "suggested_data": "Broadcast and digital content from men's and women's sports (same leagues/events where available). Survey data from fans of both. Experimental designs with fan participants. Attendance and media consumption data disaggregated by sport and gender.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Identifies whether analytics growth exacerbates or reduces gender disparities in sports media coverage and fan engagement. Informs strategic decisions by women's sports leagues on analytics integration. Contributes to equity/inclusion research in sports."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "POOR. The papers provided constitute a massive, fragmented, and largely monolithic literature. There is almost NO dialogue between the analytics supply-side (889 papers developing metrics, validating predictions) and the fan experience side (55 papers on attendance/engagement). Researchers developing xG models appear unaware of whether anyone outside a research lab cares about them; researchers studying fan attendance do not consider analytics as a variable. This is not a synthesis problem—there is no real synthesis to be done because the two communities are separate. The few papers touching both domains (NBA digital transformation, WNBA broadcast platform effects) do not create dialogue; they are isolated case studies. I have identified a genuine structural gap in the research ecosystem, not a failure of my synthesis. The gap analysis itself is the primary value here—showing what should be connected but isn't.",
+    "strengths": [
+      "Identified and quantified massive imbalance in research allocation (889 performance papers vs. 55 fan engagement papers), making clear where the knowledge gaps lie",
+      "Located all fan engagement papers in our database and characterized their methods/findings thoroughly",
+      "Identified structural integration gap between analytics development and fan consumption, not just topic gaps",
+      "Provided specific evidence for each gap using actual paper citations rather than generic 'more research needed' statements",
+      "Graded confidence levels honestly—did not claim certainty where only absence exists"
+    ],
+    "limitations": [
+      "Cannot measure quality of papers in 55 fan_engagement subset without full text access—some may be methodologically weak or irrelevant",
+      "Assumption that absence from OUR database = absence from research world may be wrong; our collection is filtered by AI relevance assessment (≥7/10). True fan experience research might exist but scored <7 on sports analytics relevance.",
+      "No access to full texts of papers limits ability to assess nuance (e.g., some papers may briefly mention fan perspective without making it central)",
+      "Cannot quantify how much fan_engagement work touches on analytics specifically vs. other engagement drivers; may have under-stated some papers",
+      "Synthesis limited to papers provided; cannot draw on general knowledge to contextualize what might be missing without explicit flagging"
+    ],
+    "assumptions": [
+      "Assumed that fan 'experience' (enjoyment, emotional connection, perceived unpredictability) is the outcome of interest implied by the research question—but research question is ambiguous and could be asking about behavioral effects only (viewing behavior, attendance)",
+      "Assumed that the absence of a topic from our database (no direct fan surveys on analytics understanding) indicates a real research gap rather than a methodological choice by researchers to focus on observed data rather than self-report",
+      "Assumed that papers on 'performance analysis' are supply-side and papers on 'fan engagement' are demand-side, but this categorization is rough and some performance papers may address fan-relevant outcomes",
+      "Assumed that measuring 'fan experience' requires primary data collection; it is theoretically possible (though not demonstrated in our database) to infer experience from behavioral proxies (attendance, social media engagement, betting markets)",
+      "Assumed that the integration gap (between analytics development and fan consumption) is a gap in the research literature rather than a gap in actual fan consumption of analytics (i.e., fans may not consume analytics even if metrics are developed)"
+    ],
+    "database_coverage_gaps": [
+      "Fan psychology and experience research: Our database appears to lack papers on how fans PERCEIVE and EXPERIENCE sports analytics. This is likely an active area in media psychology, fan studies, or sports management journals focused on consumer experience, but our sports analytics-focused collection may not capture it. Recommend search in: Journal of Sport Management, International Review for the Sociology of Sport, Sports Marketing Quarterly, Media Psychology.",
+      "Experimental studies on viewing behavior: RCTs examining how broadcast design (graphics, commentary) affects fan engagement are likely published in media studies or communication journals, not sports analytics journals. Our database may be missing this entirely.",
+      "Fan surveys and qualitative research: Sports marketing and fan studies literature likely contains surveys on fan attitudes toward analytics, but if these papers don't emphasize analytics in title/abstract, our relevance filter may exclude them.",
+      "Behavioral economics / decision-making: Papers on how analytics (predictions, odds) affect fan betting, fantasy sports participation, and decision-making may exist in economics/finance journals or be published as working papers/grey literature not indexed in our database.",
+      "Women's sports and analytics: Given that women's sports analytics is an emerging area, research may be fragmented across women's studies, sports management, and equity-focused journals rather than concentrated in sports analytics venues. Coverage likely incomplete.",
+      "International/non-English research: Our database may be English-heavy. Non-English research on fan experience with analytics in European, Asian, or other leagues may exist but be missed."
+    ],
+    "what_would_improve_this": [
+      "Full text access to all papers: Summaries are helpful but lack nuance. Could identify papers that briefly mention fan perspective or discuss methodology that's relevant to fan research without making it explicit.",
+      "Explicit search for papers on: 'fan experience', 'viewer perception', 'analytics literacy', 'sports fan psychology', 'broadcast design', 'fantasy sports', 'sports betting behavior' to capture papers that may not self-identify as 'sports analytics'",
+      "Queries of non-English databases and proceedings (e.g., European sports management conferences) to identify international research on fan analytics experience",
+      "Primary data collection to validate assumptions: survey a sample of researchers to ask what they study about fans and analytics; this would ground the gap analysis in actual research activity rather than database absence",
+      "Interviews with sports journalists, broadcasters, and league analytics officers about how fans consume analytics and what they report about fan feedback—this would provide qualitative ground truth",
+      "Specification of what TYPES of papers would close the gap: e.g., 'we need X experiments, Y surveys of Z population' would focus gap analysis more than current 'more research is needed' framing"
+    ],
+    "process_cost_reflection": "This analysis examined 200 paper summaries (with full data for aggregate of 1000 papers). TIME: High (10+ hours synthesizing, identifying gaps, writing output). VALUE: Moderate-to-High. The key value is NOT what I found (a rich literature on analytics supply) but what I found is MISSING (demand side). This is a legitimate and important finding for a meta-analysis platform. COST-EFFECTIVENESS: Medium. AI-synthesized gap analysis on a curated database is cheaper than human review but still meaningful. However, the absence of full-text access and inability to search for papers by more granular keywords (e.g., 'fan perception', 'broadcast design', 'viewer response') limited precision. A targeted human librarian search for 'fan experience + analytics' in sports management journals might have been faster and more direct. CALIBRATION: For future analyses, recommending (1) full-text indexing of key papers, (2) domain expert input on which journals/databases to prioritize, (3) explicit queries for papers addressing DEMAND SIDE of analytics (consumer experience, fan behavior) rather than SUPPLY SIDE (metric development). This platform excels at identifying what is studied but struggles with identifying what is studied WHERE (if a topic is researched in media/psychology journals but not sports analytics journals, it will be invisible here)."
+  },
+  "paper_index": {
+    "https://openalex.org/W4364374775": {
+      "title": "The National Basketball Association’s (NBA) Digital Transformation: An Explanatory Case Study",
+      "year": 2023,
+      "first_author": "James Santomier"
+    },
+    "https://openalex.org/W3161430098": {
+      "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
+      "year": 2021,
+      "first_author": "Ann Pegoraro"
+    },
+    "https://openalex.org/W4408557862": {
+      "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+      "year": 2025,
+      "first_author": "H Wang"
+    },
+    "https://openalex.org/W4407955883": {
+      "title": "Comparing player rating systems as a metric for assessing individual performance in soccer",
+      "year": 2025,
+      "first_author": "James Moores Ball"
+    },
+    "https://openalex.org/W4398209552": {
+      "title": "The determinants of stadium attendance in elite women’s football: evidence from the FA Women’s Super League",
+      "year": 2024,
+      "first_author": "Maurizio Valenti"
+    },
+    "https://openalex.org/W4318988114": {
+      "title": "Demand for Basketball: A Comparison of the WNBA and NBA",
+      "year": 2023,
+      "first_author": "Nola Agha"
+    },
+    "https://openalex.org/W4306773043": {
+      "title": "The Engagement of the Social Networks in the ACB Basketball League",
+      "year": 2022,
+      "first_author": "Berta Benito-Colio"
+    },
+    "https://openalex.org/W4200582382": {
+      "title": "U.S. Women's Sport Consumption and Self-Identified Fandom: An Exploration of Social Structural and Sociocultural Antecedents",
+      "year": 2021,
+      "first_author": "Frances S. Sutton"
+    },
+    "https://openalex.org/W4200028338": {
+      "title": "In-play forecasting in football using event and positional data",
+      "year": 2021,
+      "first_author": "Maximilian Klemp"
+    }
+  }
+}

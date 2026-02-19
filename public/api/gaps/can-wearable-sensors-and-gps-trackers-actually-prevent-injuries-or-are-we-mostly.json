@@ -1,0 +1,1051 @@
+{
+  "description": "Full gap analysis: \"Can wearable sensors and GPS trackers actually prevent injuries, or are we mostly measuring what went wrong after the fact? The promise of load monitoring and real-time biomechanical feedback is huge, but how much evidence is there that wearable data leads to fewer injuries rather than just better documentation of them?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.900Z",
+  "slug": "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
+  "question": "Can wearable sensors and GPS trackers actually prevent injuries, or are we mostly measuring what went wrong after the fact? The promise of load monitoring and real-time biomechanical feedback is huge, but how much evidence is there that wearable data leads to fewer injuries rather than just better documentation of them?",
+  "created_at": "2026-02-16T22:14:08.488420",
+  "analyzed_at": "2026-02-16T22:16:29.891453",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 1749,
+  "cost_usd": 0.1229,
+  "analysis_confidence": "medium",
+  "scope_assessment": "This is a well-scoped and clinically urgent question. It correctly identifies a gap between promise and proof: the database contains 189 injury prevention papers (10.8% of 1749), yet the research question asks the critical distinction between *predictive validity* (sensors prevent injury) vs. *postdictive utility* (sensors document injury). The question is appropriately skeptical—most wearable research measures load or biomechanics, not injury *reduction*. However, the framing could benefit from clarity: 'prevent' can mean (a) causal intervention reducing incidence, or (b) predictive screening enabling prevention. The database appears to contain mostly the latter.",
+  "database_coverage": "Our database has good coverage of wearables (588 papers use sensor_device data), GPS monitoring, and injury prediction, but has critical coverage gaps. We have 189 injury prevention papers total, but these are dominated by: (1) biomechanical risk factor studies (prospective cohorts identifying associations, not RCTs of interventions), (2) injury tracking/epidemiology, and (3) machine learning prediction models. We have very few (likely ≤5) true RCTs testing whether wearable feedback interventions *actually reduce* injury incidence. This is likely a real gap in the literature, not just in our database. The temporal distribution skews recent (405 papers in 2024, 653 in 2025), which may reflect recent emphasis on this topic.",
+  "confidence_explanation": "We can identify what *has* been studied with high confidence (predictive models, load monitoring, risk factors). However, confidence is only medium for the core question because: (1) small number of true intervention RCTs visible in database (n≤5), making it unclear whether this is a genuine gap or evidence exists outside our collection; (2) many prediction studies lack long-term follow-up to show whether alerts actually change behavior or injury outcomes; (3) distinguishing 'prevention' (causal reduction) from 'monitoring' (description) requires careful reading of study design, and 14 papers had unspecified designs. Better RCT and implementation data would substantially increase confidence.",
+  "landscape": {
+    "summary": "The research landscape is dominated by three research streams: (1) **Injury risk prediction models** using machine learning on GPS/IMU data (W4406017810, W4396982583, W4411153325), with reasonable predictive accuracy (AUC 0.7–0.9) but limited evidence of behavioral change or injury reduction; (2) **Biomechanical risk factor identification** via prospective cohort studies (W2520828294 on ACL, W4408750469 on hamstring injury, W4401283644 on head acceleration), identifying associations between movement patterns and injury risk but not testing interventions; (3) **Load monitoring validation** comparing external load indicators from GPS, accelerometry, and wearables (W4408561507, W2396709736, W2996541587), establishing reliability of measurement but not efficacy of load management protocols. A critical gap: most injury prevention research is *associational* (X predicts injury) rather than *causal/interventional* (managing X reduces injury). The 14 RCTs and 23 longitudinal studies are largely in the performance domain, not injury prevention. Studies on injury impact (W4413313707, W4391883999, W4389884367) document performance decrements post-injury but provide no prevention evidence.",
+    "key_findings": [
+      {
+        "finding": "Wearable sensors reliably measure external load (GPS, IMU-based metrics), and several studies confirm interunit reliability and validity vs. criterion measures",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4408561507",
+            "title": "Interunit Reliability of Firstbeat Sport Sensors as Accelerometer-Based Tracking Devices in Basketball",
+            "year": 2025,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.1123/ijspp.2024-0289",
+            "first_author": "Daniele Conte"
+          },
+          {
+            "work_id": "https://openalex.org/W2396709736",
+            "title": "Assessing Stride Variables and Vertical Stiffness with GPS-Embedded Accelerometers: Preliminary Insights for the Monitoring of Neuromuscular Fatigue on the Field.",
+            "year": 2015,
+            "sport": "multi_sport",
+            "doi": "",
+            "first_author": "Martin Buchheit"
+          },
+          {
+            "work_id": "https://openalex.org/W2996541587",
+            "title": "Accelerometry-Based External Load Indicators in Sport: Too Many Options, Same Practical Outcome?",
+            "year": 2019,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/ijerph16245101",
+            "first_author": "Carlos D. Gómez‐Carmona"
+          },
+          {
+            "work_id": "https://openalex.org/W2334127990",
+            "title": "Intersession and Intrasession Reliability and Validity of the My Jump App for Measuring Different Jump Actions in Trained Male and Female Athletes",
+            "year": 2015,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1519/jsc.0000000000001304",
+            "first_author": "Francisco Gallardo-Fuentes"
+          },
+          {
+            "work_id": "https://openalex.org/W2565829716",
+            "title": "Accuracy of Jump-Mat Systems for Measuring Jump Height",
+            "year": 2016,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1123/ijspp.2016-0511",
+            "first_author": "Basílio Pueo"
+          }
+        ],
+        "paper_count": 5
+      },
+      {
+        "finding": "Machine learning models can predict injury risk with moderate-to-good accuracy (AUC 0.7–0.85) using GPS/IMU data, but predictive accuracy does not imply intervention efficacy or clinical utility",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4406017810",
+            "title": "Predicting noncontact injuries of professional football players using machine learning",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1371/journal.pone.0315481",
+            "first_author": "Diogo Freitas"
+          },
+          {
+            "work_id": "https://openalex.org/W4396982583",
+            "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+            "first_author": "Juan R. González"
+          },
+          {
+            "work_id": "https://openalex.org/W4411153325",
+            "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/app15126436",
+            "first_author": "Bartosz Wilczyński"
+          },
+          {
+            "work_id": "https://openalex.org/W4412089571",
+            "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+            "year": 2025,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+            "first_author": "Jesper Schuster Brandt Frandsen"
+          },
+          {
+            "work_id": "https://openalex.org/W4281910294",
+            "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+            "year": 2022,
+            "sport": "football",
+            "doi": "https://doi.org/10.1186/s40798-022-00465-4",
+            "first_author": "Aritra Majumdar"
+          }
+        ],
+        "paper_count": 5
+      },
+      {
+        "finding": "Biomechanical risk factors (stiff landings, sprint mechanics, horizontal deceleration, cut kinematics) show prospective associations with injury (odds ratios 1.5–3.0), but no study tests whether providing real-time biomechanical feedback reduces injury incidence",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2520828294",
+            "title": "Stiff Landings Are Associated With Increased ACL Injury Risk in Young Female Basketball and Floorball Players",
+            "year": 2016,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.1177/0363546516665810",
+            "first_author": "Mari Leppänen"
+          },
+          {
+            "work_id": "https://openalex.org/W4408750469",
+            "title": "Sprint running mechanics are associated with hamstring strain injury: a 6-month prospective cohort study of 126 elite male footballers",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1136/bjsports-2024-108600",
+            "first_author": "Christopher Bramah"
+          },
+          {
+            "work_id": "https://openalex.org/W4409617806",
+            "title": "On-field kinematics of cut maneuvers in football players: Are wearable sensors reliable for assessing anterior cruciate ligament injury risk?",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/02640414.2025.2493012",
+            "first_author": "Stefano Di Paolo"
+          },
+          {
+            "work_id": "https://openalex.org/W4412494090",
+            "title": "Is There a Performance‐Injury Conflict Between Maximum Horizontal Deceleration and Surrogates of Noncontact Anterior Cruciate Ligament Injury?",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1002/ejsc.70014",
+            "first_author": "Junlei Lin"
+          },
+          {
+            "work_id": "https://openalex.org/W2995999385",
+            "title": "Biomechanical Determinants of the Modified and Traditional 505 Change of Direction Speed Test",
+            "year": 2019,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1519/jsc.0000000000003439",
+            "first_author": "Thomas Dos’Santos"
+          }
+        ],
+        "paper_count": 5
+      },
+      {
+        "finding": "Training load spikes are associated with increased injury risk (hazard ratios 1.5–2.3), and load monitoring systems are widely implemented, but we found no RCTs demonstrating that load feedback interventions reduce injury incidence",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4412089571",
+            "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+            "year": 2025,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+            "first_author": "Jesper Schuster Brandt Frandsen"
+          },
+          {
+            "work_id": "https://openalex.org/W2899693514",
+            "title": "Time-to-event analysis for sports injury research part 1: time-varying exposures",
+            "year": 2018,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1136/bjsports-2018-099408",
+            "first_author": "Rasmus Oestergaard Nielsen"
+          },
+          {
+            "work_id": "https://openalex.org/W4401640692",
+            "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/app14167217",
+            "first_author": "Victor Chang"
+          },
+          {
+            "work_id": "https://openalex.org/W2768078938",
+            "title": "Proposal of a Global Training Load Measure Predicting Match Performance in an Elite Team Sport",
+            "year": 2017,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fphys.2017.00930",
+            "first_author": "Brendan H. Lazarus"
+          },
+          {
+            "work_id": "https://openalex.org/W4408759757",
+            "title": "Study of wearable monitoring of molecular and cellular biomechanics during physical training",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.62617/mcb1521",
+            "first_author": "Wei Zhu"
+          }
+        ],
+        "paper_count": 5
+      },
+      {
+        "finding": "Post-injury performance analysis (e.g., NBA injury impact, female rugby concussion) documents performance deficits but provides no prospective data on whether wearable monitoring prevented the initial injury",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4413313707",
+            "title": "Sports Analytics for Evaluating Injury Impact on NBA Performance",
+            "year": 2025,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.3390/info16080699",
+            "first_author": "Vangelis Sarlis"
+          },
+          {
+            "work_id": "https://openalex.org/W4391883999",
+            "title": "Injury Patterns and Impact on Performance in the NBA League Using Sports Analytics",
+            "year": 2024,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.3390/computation12020036",
+            "first_author": "Vangelis Sarlis"
+          },
+          {
+            "work_id": "https://openalex.org/W4389884367",
+            "title": "Sports Analytics and Text Mining NBA Data to Assess Recovery from Injuries and Their Economic Impact",
+            "year": 2023,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.3390/computers12120261",
+            "first_author": "Vangelis Sarlis"
+          },
+          {
+            "work_id": "https://openalex.org/W4310047376",
+            "title": "Longitudinal study of six seasons of match injuries in elite female rugby union",
+            "year": 2022,
+            "sport": "rugby",
+            "doi": "https://doi.org/10.1136/bjsports-2022-105831",
+            "first_author": "Lindsay Starling"
+          },
+          {
+            "work_id": "https://openalex.org/W4401283644",
+            "title": "Instrumented mouthguards in elite-level men’s and women’s rugby union: characterising tackle-based head acceleration events",
+            "year": 2024,
+            "sport": "rugby",
+            "doi": "https://doi.org/10.1136/bmjsem-2024-002013",
+            "first_author": "James Woodward"
+          }
+        ],
+        "paper_count": 5
+      },
+      {
+        "finding": "Real-time wearable feedback systems (biomechanical, fatigue) are described as technically feasible and reliable (e.g., IMU action recognition 96.9% accuracy), but no study measures whether athletes who receive such feedback sustain fewer injuries than controls",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4406617236",
+            "title": "Action Recognition in Basketball with Inertial Measurement Unit-Supported Vest",
+            "year": 2025,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.3390/s25020563",
+            "first_author": "Hamza Sonalcan"
+          },
+          {
+            "work_id": "https://openalex.org/W4406179613",
+            "title": "A Diagnostic and Performance System for Soccer: Technical Design and Development",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13010010",
+            "first_author": "Alberto Hijazo Gascón"
+          },
+          {
+            "work_id": "https://openalex.org/W4408759757",
+            "title": "Study of wearable monitoring of molecular and cellular biomechanics during physical training",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.62617/mcb1521",
+            "first_author": "Wei Zhu"
+          },
+          {
+            "work_id": "https://openalex.org/W4390236576",
+            "title": "AI-Assisted Fatigue and Stamina Control for Performance Sports on IMU-Generated Multivariate Times Series Datasets",
+            "year": 2023,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.3390/s24010132",
+            "first_author": "Attila Biró"
+          },
+          {
+            "work_id": "https://openalex.org/W4411959032",
+            "title": "Hybrid Transformer-LSTM Model for Athlete Performance Prediction in Sports Training Management",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.31449/inf.v49i24.8013",
+            "first_author": "Ying Chen"
+          }
+        ],
+        "paper_count": 5
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "statistical (univariate/mixed models, logistic regression, Cox regression)",
+        "machine learning (gradient boosting, random forest, logistic regression)",
+        "deep learning (CNN, LSTM for time-series prediction and activity recognition)"
+      ],
+      "sample_size_patterns": "Highly bimodal: predictive model papers often n>1000 (e.g., W4406017810, n>5200; W4412089571, n=5205), while biomechanical studies n=15–50 (W2520828294, n=126; W4409617806, n=47). RCTs typically n=15–42 (W4406891392, n=20; W4412481398, n=42). Very few studies n<30 report injury outcomes—most measure biomechanics or load only.",
+      "data_sources_used": "GPS (Catapult, Statsports, Garmin), IMU/accelerometry (Xsens, WIMU, Firstbeat), force plates (Kistler), motion capture (Vicon), instrumented mouthguards (for head acceleration). Proprietary wearable data dominates (680 of 1749 papers); only 187 fully open datasets cited.",
+      "temporal_patterns": "Major shift 2023–2025: 650+ papers in 2024–2025 vs. ~100 per year 2015–2020. This recent surge is mostly performance analytics (data_engineering, machine_learning themes). Injury prevention papers remain <15% across all years, suggesting injury work has *not* scaled with general wearable research."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W4412089571",
+        "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+        "why_key": "Largest prospective cohort (n=5205) linking GPS data (Garmin) to actual injury incidence. Shows dose-response: distance spikes >10% of 30-day max increase injury risk (HRR 1.64–2.28). Critical for question because it proves wearable data *predicts* injury, but does not show whether feedback intervention reduces injury.",
+        "year": 2025,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+        "first_author": "Jesper Schuster Brandt Frandsen"
+      },
+      {
+        "work_id": "https://openalex.org/W2520828294",
+        "title": "Stiff Landings Are Associated With Increased ACL Injury Risk in Young Female Basketball and Floorball Players",
+        "why_key": "Seminal prospective biomechanics study (n=126 female athletes, 345 citations). Demonstrates that drop-jump kinematics predict ACL injury prospectively. High-quality evidence of biomechanical risk factors, but no intervention testing.",
+        "year": 2016,
+        "sport": "basketball",
+        "doi": "https://doi.org/10.1177/0363546516665810",
+        "first_author": "Mari Leppänen"
+      },
+      {
+        "work_id": "https://openalex.org/W4406017810",
+        "title": "Predicting noncontact injuries of professional football players using machine learning",
+        "why_key": "Recent machine learning approach (2025) using GPS data for injury prediction. Acknowledges 'most research on this topic is retrospective' and aims to build predictive models, but does not test whether coaches using the model reduce injury incidence.",
+        "year": 2025,
+        "sport": "football",
+        "doi": "https://doi.org/10.1371/journal.pone.0315481",
+        "first_author": "Diogo Freitas"
+      },
+      {
+        "work_id": "https://openalex.org/W4281910294",
+        "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+        "why_key": "Systematic review (55 citations) directly addressing ML for injury prediction in football. Concludes that technology enables monitoring and prediction, but notes critical gap: evidence of actual injury reduction through intervention is lacking.",
+        "year": 2022,
+        "sport": "football",
+        "doi": "https://doi.org/10.1186/s40798-022-00465-4",
+        "first_author": "Aritra Majumdar"
+      },
+      {
+        "work_id": "https://openalex.org/W4408759757",
+        "title": "Study of wearable monitoring of molecular and cellular biomechanics during physical training",
+        "why_key": "Proposes biomarker monitoring (lactate, cortisol) via wearable biosensors for injury prevention and performance optimization. Rare example of real-time biochemical feedback, but no intervention study or injury outcome data.",
+        "year": 2025,
+        "sport": "multi_sport",
+        "doi": "https://doi.org/10.62617/mcb1521",
+        "first_author": "Wei Zhu"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "methodology",
+      "title": "Absence of RCTs testing whether wearable feedback interventions reduce injury incidence",
+      "description": "The database contains extensive injury prediction models (n≈20 papers) and biomechanical risk factor studies (n≈30), but we identified ≤5 RCTs or quasi-experiments testing whether coaches/athletes who receive wearable feedback (load alerts, movement warnings, fatigue scores) actually sustain fewer injuries than controls. Papers like W4412089571 show *that* GPS data predicts injury risk, but not *whether* giving athletes or coaches access to that data changes behavior or reduces incidence. This is the core evidence gap for the research question.",
+      "evidence": "W4281910294 (review, 55 citations) explicitly notes the gap between prediction and prevention: 'attempts to better understand the relationship between training and competition load and injury... remains an area with limited prospective evidence.' W4406017810 acknowledges research is 'mostly retrospective.' None of the prediction papers (W4406017810, W4396982583, W4411153325, W4412089571) report intervention outcomes. We identified only 14 RCTs in the entire database on any sports science topic; injury prevention RCTs are a tiny fraction.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4281910294",
+          "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1186/s40798-022-00465-4",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4412089571",
+          "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+          "first_author": "Jesper Schuster Brandt Frandsen"
+        },
+        {
+          "work_id": "https://openalex.org/W4396982583",
+          "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+          "first_author": "Juan R. González"
+        },
+        {
+          "work_id": "https://openalex.org/W4411153325",
+          "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app15126436",
+          "first_author": "Bartosz Wilczyński"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "This is the core question asked. Without RCT evidence, wearables remain sophisticated monitoring/documentation tools, not proven prevention tools. The research question specifically challenges whether wearables 'prevent injuries' vs. 'measure what went wrong'—this gap defines the answer.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible but challenging: requires multi-season prospective design, random assignment of teams/athletes to feedback vs. control, injury tracking, and behavior change measurement. Elite sports teams resistant to withhold data. Cost high (~$50k–500k per season for large cohort). Requires collaboration with professional/elite clubs willing to run 'negative' controls. 2–3 year timeline minimum.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "integration",
+      "title": "Disconnect between prediction model accuracy and clinical/practical decision-making utility",
+      "description": "Machine learning papers (W4406017810, W4396982583, W4411153325) report AUC 0.7–0.85 for injury prediction, but do not address: (1) How sensitive/specific must a model be for a coach to act on it? (2) What is the positive/negative predictive value at the population prevalence they study? (3) If a model flags 100 athletes at 'high risk,' how many actually injure? (4) What are the costs of false positives (unnecessary load reduction, detraining) vs. false negatives (preventable injury)? These papers show technical ML performance but not whether clinicians would adopt the tool or whether adoption improves outcomes.",
+      "evidence": "W4411153325 reports 81% accuracy on 46 youth soccer players for classifying motor profiles—high accuracy, but no injury follow-up. W4396982583 on female football combines GPS + multiomics + machine learning for injury prediction, but outcome is binary (injured/not injured), with no prospective validation or decision threshold analysis. W4281910294 (review) notes 'performance metrics are often not interpretable in a practical setting.' None of the prediction papers report positive/negative predictive values or discuss decision curves.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4396982583",
+          "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+          "first_author": "Juan R. González"
+        },
+        {
+          "work_id": "https://openalex.org/W4411153325",
+          "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app15126436",
+          "first_author": "Bartosz Wilczyński"
+        },
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4281910294",
+          "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1186/s40798-022-00465-4",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4401640692",
+          "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app14167217",
+          "first_author": "Victor Chang"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "A model with 80% accuracy might be statistically impressive but clinically useless if applied to a population where 5% suffer injury (high false-positive rate, low positive predictive value). This gap explains why high-performing ML models have not driven widespread intervention adoption in elite sports.",
+      "feasibility": "high",
+      "feasibility_rationale": "Existing prediction models could be analyzed retrospectively for positive/negative predictive values, decision curves, and number-needed-to-screen. Does not require new data collection. Requires reanalysis of published model predictions and actual injury outcomes. Cost: low. Timeline: 3–6 months.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "temporal",
+      "title": "Lack of long-term follow-up and longitudinal injury tracking in wearable studies",
+      "description": "Most wearable validation studies (W4408561507, W2396709736, W2996541587) measure reliability over 1–2 sessions or weeks. Longitudinal studies measuring training load and injury are present (W4412089571, n=5205, 18 months; W2899693514 methodology paper), but do not systematically report whether load feedback was provided to athletes/coaches or whether awareness of risk changed behavior. Studies like W4390701063 track menstrual cycle over a competition, but do not measure injury outcomes. The field lacks multi-season prospective designs combining wearable monitoring, feedback provision, behavior change, and injury tracking.",
+      "evidence": "W4408561507 reports Firstbeat sensor reliability over 8 basketball training sessions—no injury data. W2396709736 (2015) validates GPS-accelerometer stride variables over 'high-intensity runs'—no longitudinal injury follow-up. W4412089571 (largest injury study, n=5205) uses Garmin GPS wearables and shows dose-response to injury, but was an observational cohort; unclear if athletes had access to their load data or received alerts. No papers report: 'We monitored load with wearables, gave teams feedback, and measured injury incidence over 2 seasons vs. baseline.'",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4408561507",
+          "title": "Interunit Reliability of Firstbeat Sport Sensors as Accelerometer-Based Tracking Devices in Basketball",
+          "year": 2025,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.1123/ijspp.2024-0289",
+          "first_author": "Daniele Conte"
+        },
+        {
+          "work_id": "https://openalex.org/W2396709736",
+          "title": "Assessing Stride Variables and Vertical Stiffness with GPS-Embedded Accelerometers: Preliminary Insights for the Monitoring of Neuromuscular Fatigue on the Field.",
+          "year": 2015,
+          "sport": "multi_sport",
+          "doi": "",
+          "first_author": "Martin Buchheit"
+        },
+        {
+          "work_id": "https://openalex.org/W4412089571",
+          "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+          "first_author": "Jesper Schuster Brandt Frandsen"
+        },
+        {
+          "work_id": "https://openalex.org/W4390701063",
+          "title": "The Dose–Response in Elite Soccer: Preliminary Insights From Menstrual-Cycle Tracking During the FIFA Women’s World Cup 2019",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1123/ijspp.2022-0282",
+          "first_author": "Dawn M. Scott"
+        },
+        {
+          "work_id": "https://openalex.org/W2899693514",
+          "title": "Time-to-event analysis for sports injury research part 1: time-varying exposures",
+          "year": 2018,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1136/bjsports-2018-099408",
+          "first_author": "Rasmus Oestergaard Nielsen"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Injury is rare (2–10 per 100 athlete-seasons in elite sports). Measuring prevention requires >1 season; cross-sectional or short-term studies cannot detect injury reduction. This temporal gap makes it impossible to draw causal conclusions about wearables and injury prevention.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible but logistically complex: requires coordination with teams across multiple seasons, injury tracking systems (medical staff reporting), and loss-to-follow-up management. Elite teams often change coaching staff, systems, or rosters between seasons, complicating continuity. Timeline: 3–5 seasons minimum.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "population",
+      "title": "Severe underrepresentation of women's sports and lower-tier/recreational athletes in injury prevention research",
+      "description": "Of 189 injury prevention papers, only 30 (16%) explicitly focus on women's sports (e.g., W2520828294, W4396982583, W4403500282). The database shows 230 women-focused papers overall (13.2%), but injury prevention is even more female-sparse. Elite male football dominates injury studies (n>50 papers on GPS + load + football). Recreational runners (W4412089571, excellent study, n=5205) are an exception. Youth sports, female football, female basketball, and recreational populations have minimal injury prediction/prevention data. This skew limits generalizability: injury mechanisms, load tolerance, and prevention needs differ by sex and competitive level.",
+      "evidence": "Gender representation: W2520828294 (ACL, female basketball, 2016, highly cited) remains a landmark study. W4396982583 (female football, multiomics, 2024) is recent and strong. But most baseball studies (none in top 200), rugby studies (male-heavy), cycling studies (male-skewed) lack female arms. W4412089571 (running, large n) is the rare large cohort with sex-representative data. Most prediction papers (W4406017810, W4411153325) either male-only or small female n.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W2520828294",
+          "title": "Stiff Landings Are Associated With Increased ACL Injury Risk in Young Female Basketball and Floorball Players",
+          "year": 2016,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.1177/0363546516665810",
+          "first_author": "Mari Leppänen"
+        },
+        {
+          "work_id": "https://openalex.org/W4396982583",
+          "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+          "first_author": "Juan R. González"
+        },
+        {
+          "work_id": "https://openalex.org/W4403500282",
+          "title": "Tackle characteristics associated with suspected concussion in female varsity rugby union: a case-control video analysis study",
+          "year": 2024,
+          "sport": "rugby",
+          "doi": "https://doi.org/10.1080/24748668.2024.2413802",
+          "first_author": "Isla Shill"
+        },
+        {
+          "work_id": "https://openalex.org/W4412089571",
+          "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+          "first_author": "Jesper Schuster Brandt Frandsen"
+        },
+        {
+          "work_id": "https://openalex.org/W4401283644",
+          "title": "Instrumented mouthguards in elite-level men’s and women’s rugby union: characterising tackle-based head acceleration events",
+          "year": 2024,
+          "sport": "rugby",
+          "doi": "https://doi.org/10.1136/bmjsem-2024-002013",
+          "first_author": "James Woodward"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Women and lower-tier athletes may have different injury epidemiology (e.g., ACL injury rates 2–9× higher in females), different biomechanical risk profiles, different load tolerances, and different access to wearable technology. Extrapolating elite male findings to women is unsafe. This gap limits applicability of injury prevention insights.",
+      "feasibility": "high",
+      "feasibility_rationale": "No new technology needed. Requires recruiting women's teams and recreational cohorts into existing prospective study designs. Slightly higher effort (sex-specific analysis, potential confounders), but high scientific value and broader applicability. Cost: same as male-focused studies.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_5",
+      "type": "data",
+      "title": "Proprietary wearable data dominance; limited open-source injury datasets for model development and replication",
+      "description": "Of 1749 papers, 680 use proprietary data (38.9%), only 187 use fully open datasets (10.7%). For injury-specific papers, proprietary systems (Catapult, Garmin, Firstbeat, Xsens) dominate. Replication and meta-analysis are hampered because researchers cannot access original wearable data or injury records. W4412089571 (5200-person running cohort) is exceptional for using publicly available Garmin Connect data, but injury outcome was self-reported. Professional sports (NBA, EPL) have rich data but are locked behind commercial platforms (Catapult, InStat Scout). Open injury databases (e.g., compiled from multiple published prospective cohorts) do not exist in our database.",
+      "evidence": "Data access types: 680 proprietary, 195 not_stated, 187 fully_open. Only curated resource explicitly for injury is ultrasound data (W4406096932 uses institutional ultrasound for tendinopathy screening—one study). W4412089571 accessible because Garmin Connect is open, but this is an outlier. W4396982583 (female football) is proprietary Catapult data. No papers cite a shared injury dataset repository (e.g., 'Injury Dataset Registry' or similar). Code availability: only 16 papers (0.9%) have code available.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4412089571",
+          "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+          "first_author": "Jesper Schuster Brandt Frandsen"
+        },
+        {
+          "work_id": "https://openalex.org/W4396982583",
+          "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+          "first_author": "Juan R. González"
+        },
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4401640692",
+          "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app14167217",
+          "first_author": "Victor Chang"
+        },
+        {
+          "work_id": "https://openalex.org/W4281910294",
+          "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1186/s40798-022-00465-4",
+          "first_author": "Aritra Majumdar"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Limits reproducibility and meta-analysis, slows scientific progress. However, injury data is sensitive (medical records); ethical/privacy barriers are real. Still, anonymized datasets could be shared more openly to enable model validation and innovation beyond vendor-specific systems.",
+      "feasibility": "medium",
+      "feasibility_rationale": "High technical and ethical complexity. Requires: (1) IRB approval for data sharing, (2) anonymization/de-identification, (3) infrastructure (database, API), (4) buy-in from teams/organizations. Some elite leagues/federations (IOC, professional leagues) have sufficient scale and governance to host. Cost: $100k–500k to build; $50k/year to maintain.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_6",
+      "type": "replication",
+      "title": "Single-team or single-league studies with no independent replication of predictive models",
+      "description": "Machine learning injury prediction papers (W4406017810 on football, W4396982583 on female football, W4401640692 on EPL) are typically single-team or single-season cohorts. Internal cross-validation is common (80–20 splits, k-fold), but independent external validation on a different team/league is rare. For example, W4406017810 builds a model on one elite football club's GPS data; no evidence it generalizes to another club. This limits confidence that models capture generalizable injury risk mechanisms vs. team-specific confounders (coaching style, player selection, recovery practices).",
+      "evidence": "W4406017810: 'Noncontact injuries of professional football players using machine learning'—does not explicitly state if model was validated on external data. W4396982583 (female football, multiomics): 'development and validation' but both on same elite club. W4401640692 (EPL): single-league analysis. In contrast, W4412089571 (running cohort, n=5205) has potential for external validation because data is multi-country ('87 countries, predominantly Europe and North America'), though authors do not explicitly test generalization.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W4396982583",
+          "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+          "first_author": "Juan R. González"
+        },
+        {
+          "work_id": "https://openalex.org/W4401640692",
+          "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app14167217",
+          "first_author": "Victor Chang"
+        },
+        {
+          "work_id": "https://openalex.org/W4412089571",
+          "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+          "first_author": "Jesper Schuster Brandt Frandsen"
+        },
+        {
+          "work_id": "https://openalex.org/W4281910294",
+          "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1186/s40798-022-00465-4",
+          "first_author": "Aritra Majumdar"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Without external validation, models may overfit to team-specific features. Risk of false confidence in predictions, leading coaches to over-rely on unreliable alerts. Important for adoption in practice.",
+      "feasibility": "high",
+      "feasibility_rationale": "Straightforward: test published models on new team/league data. Requires model code/coefficients (often not published) and access to external data. Cost: low if data access negotiated. Timeline: 6–12 months per replication.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_7",
+      "type": "topic",
+      "title": "No studies on coach/athlete behavior change following wearable feedback; black box between prediction and action",
+      "description": "Even if wearables predict injury with 80% accuracy, *do coaches/athletes act on the information?* We found no studies measuring: (1) coach interpretation of wearable alerts, (2) perceived credibility/trustworthiness of feedback, (3) adherence to recommended load reduction, (4) athlete anxiety/detraining from repeated alerts, (5) organizational barriers to behavior change. This is a critical missing link between prediction and prevention. W4408759757 proposes real-time biosensors for injury prevention but provides zero data on whether athletes/coaches would use them or change behavior.",
+      "evidence": "No papers in database title/abstract mention 'adherence,' 'compliance,' 'behavior change,' or 'coach decision-making' in context of wearable injury alerts. W4390236576 (AI-assisted fatigue control using IMU) describes technical feasibility but not adoption or behavior change. W4412089571 mentions runners had access to Garmin data but does not measure whether runners who saw high-load warnings reduced training. W4281910294 (review) does not address implementation science or behavior change barriers.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4408759757",
+          "title": "Study of wearable monitoring of molecular and cellular biomechanics during physical training",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.62617/mcb1521",
+          "first_author": "Wei Zhu"
+        },
+        {
+          "work_id": "https://openalex.org/W4390236576",
+          "title": "AI-Assisted Fatigue and Stamina Control for Performance Sports on IMU-Generated Multivariate Times Series Datasets",
+          "year": 2023,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.3390/s24010132",
+          "first_author": "Attila Biró"
+        },
+        {
+          "work_id": "https://openalex.org/W4412089571",
+          "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+          "first_author": "Jesper Schuster Brandt Frandsen"
+        },
+        {
+          "work_id": "https://openalex.org/W4281910294",
+          "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1186/s40798-022-00465-4",
+          "first_author": "Aritra Majumdar"
+        },
+        {
+          "work_id": "https://openalex.org/W4401640692",
+          "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app14167217",
+          "first_author": "Victor Chang"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "A perfectly accurate model is useless if no one acts on it. Implementation science, behavioral psychology, and organizational change management are essential to answering whether wearables 'prevent' injury in practice. This gap is often invisible in technical papers but is clinically critical.",
+      "feasibility": "high",
+      "feasibility_rationale": "Requires mixed-methods design: (a) qualitative interviews/focus groups with coaches/athletes on decision-making, (b) tracking of alerts vs. actual training load changes, (c) organizational/team culture assessment. No new sensors needed. Cost: moderate ($50k–150k per season). Timeline: 1–2 seasons.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_8",
+      "type": "topic",
+      "title": "Absence of cost-effectiveness and return-on-investment analysis for wearable injury prevention systems",
+      "description": "Wearable systems are expensive ($500–5000+ per athlete per season). No studies quantify: (1) cost per injury prevented, (2) cost per quality-adjusted life year (QALY), (3) return on investment for teams, (4) break-even threshold for injury reduction. W4408557862 (single paper) examines analytics investment ROI in NBA but for performance wins, not injury prevention. This gap is critical for adoption: teams need to know if spending $1M on wearables + analytics staff will prevent sufficient injuries to justify cost.",
+      "evidence": "W4408557862 is the sole ROI paper in database: 'The Effect of Basketball Analytics Investment on NBA Team Performance.' Shows each analyst contributes ~1.25 wins (p<0.05), but zero focus on injury prevention ROI. W4401640692 (EPL workload-injury-performance) does not discuss cost-effectiveness. W4412089571 (Garmin running study) is free data source, so cost was low, but commercial systems (Catapult, Firstbeat) are expensive; no cost-effectiveness analysis present.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4408557862",
+          "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+          "year": 2025,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.1177/15270025251328264",
+          "first_author": "H Wang"
+        },
+        {
+          "work_id": "https://openalex.org/W4401640692",
+          "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app14167217",
+          "first_author": "Victor Chang"
+        },
+        {
+          "work_id": "https://openalex.org/W4412089571",
+          "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1136/bjsports-2024-109380",
+          "first_author": "Jesper Schuster Brandt Frandsen"
+        },
+        {
+          "work_id": "https://openalex.org/W4396982583",
+          "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0184",
+          "first_author": "Juan R. González"
+        },
+        {
+          "work_id": "https://openalex.org/W4406017810",
+          "title": "Predicting noncontact injuries of professional football players using machine learning",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0315481",
+          "first_author": "Diogo Freitas"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Critical for adoption by non-elite (amateur, college, semi-professional) teams with limited budgets. Elite teams may adopt regardless of ROI (competitive edge), but cost-effectiveness matters for scaling to broader populations.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires linking wearable data to injury incidence, medical costs, and lost performance/salary. Possible with elite professional teams (NBA, EPL) that track all data, but requires team collaboration and disclosure of injury/cost data (sensitive). Timeline: 2–3 seasons per organization.",
+      "confidence": "medium"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Multi-site prospective RCT: Does real-time load feedback reduce injury incidence in elite team sports?",
+      "description": "Randomize 20–30 elite football or basketball teams to: (A) standard wearable monitoring (load data collected but not displayed to coaches/athletes), (B) intervention (coaches receive weekly load dashboards + injury risk alerts + recommended load adjustments), (C) enhanced intervention (teams receive feedback + monthly education on interpreting alerts + manual load adjustment support). Primary outcome: time-loss injury incidence (per 1000 athlete-exposures) over 2 seasons. Secondary outcomes: load adherence, player compliance, perception of alert utility, performance. This is the definitive study for the research question.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_3",
+        "gap_7"
+      ],
+      "suggested_methodology": "Cluster RCT (team = unit of randomization) to avoid contamination. Use validated injury definitions (time-loss ≥7 days) and standardized injury reporting forms. GPS/IMU wearables (Catapult or equivalent) for all groups. Blinded outcome assessment impossible but standardized medical staff protocols can reduce bias. Statistical analysis: mixed effects Poisson regression for injury incidence, intention-to-treat.",
+      "suggested_data": "External load (distance, high-speed running, accelerometry), internal load (heart rate variability, RPE), injury records (date, anatomy, mechanism, time-loss), behavior data (did coaches modify training in response to alerts?), contextual data (team resources, staff turnover, rule changes). Minimum 20 teams × 2 seasons = 40 team-seasons, ideally >1000 athlete-seasons total.",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "If positive, provides first definitive evidence that wearable monitoring + feedback prevents injury, would justify widespread adoption and unlock investment. If negative or neutral, clarifies that current monitoring systems are descriptive tools, not preventive interventions—fundamentally changes expectations. Either outcome resolves the research question and redirects the field."
+    },
+    {
+      "priority": 2,
+      "title": "Systematic review and meta-analysis: Predictive validity of wearable-based injury prediction models—do accuracy metrics translate to clinical utility?",
+      "description": "Identify all published machine learning / prospective cohort studies using wearables (GPS, IMU, force plates) to predict injury. Extract: study design, sample size, wearable type, injury outcome (time-loss, training cessation, imaging confirmation), model performance (AUC, sensitivity, specificity), positive/negative predictive value, time-to-follow-up. Meta-analyze accuracy and clinical utility across sports/populations. Assess risk of bias (selective outcome reporting, inadequate injury definition, short follow-up). Produce evidence summary on generalizability and readiness for clinical translation.",
+      "addresses_gaps": [
+        "gap_2",
+        "gap_4",
+        "gap_6"
+      ],
+      "suggested_methodology": "Systematic review per PRISMA 2020. Search PubMed, Scopus, Web of Science for (wearable OR GPS OR accelerometer OR IMU) AND (injur* OR risk AND prediction) AND (prospective OR cohort OR prediction model). Screening: title/abstract (2 reviewers), full-text (2 reviewers). Risk of bias using CASP checklist or adapted Cochrane tool. Meta-analysis feasible if ≥5 homogeneous studies; otherwise narrative synthesis.",
+      "suggested_data": "Published injury studies with wearable data. Request missing data from authors (original prediction tables, outcome verification). Consider both published and gray literature (conference presentations, dissertations) to reduce publication bias.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Synthesizes fragmented literature, identifies highest-confidence predictions, clarifies which wearable combinations + injury outcomes are most predictive. Defines confidence in model performance, informs next RCTs on feasibility/sample size."
+    },
+    {
+      "priority": 3,
+      "title": "Implementation science study: Qualitative + quantitative assessment of coach/athlete adoption barriers for wearable injury prevention feedback",
+      "description": "Partner with 3–5 elite sports organizations using wearable monitoring systems. Conduct: (A) structured interviews (n=20–30) with coaches, medical staff, athletes on alert interpretation, perceived credibility, barriers to load adjustment, anxiety/detraining concerns; (B) track system usage (login frequency, alert viewing, actions taken); (C) measure training load changes pre/post alert (did load actually decrease?); (D) survey team culture/organizational readiness for behavior change. Produce framework for what motivates/inhibits adoption and identify levers for improving implementation.",
+      "addresses_gaps": [
+        "gap_7",
+        "gap_2"
+      ],
+      "suggested_methodology": "Mixed-methods convergent design. Qualitative: iterative thematic analysis of interviews/focus groups. Quantitative: descriptive statistics on system usage, generalized linear models for load changes post-alert (fixed effects = alert presence, random effects = team/season). Measure outcomes: alert response time, load adjustment magnitude, injury outcome (secondary).",
+      "suggested_data": "System usage logs (timestamp, alert type, coach/athlete action), training load data (pre/post alert), interview transcripts, team context (budget, staff expertise, turnover). Minimal new data collection if partnering with teams already using wearables.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Identifies organizational and psychological factors enabling/blocking adoption. Produces actionable recommendations for improving feedback design (e.g., alert fatigue, credibility, actionability). Essential for understanding *why* prediction models may/may not reduce injury in practice."
+    },
+    {
+      "priority": 4,
+      "title": "Development and external validation of a sex/sport-specific injury prediction model using open or semi-open data sources",
+      "description": "Compile injury data from 5–10 prospective cohorts (combine published data with new data collection). Develop machine learning model for injury prediction separately by sex and sport (e.g., female soccer, male rugby) using: training load metrics (GPS/RPE), biomechanics (force plate, IMU), demographics, prior injury, menstrual cycle (females). Validate externally on 2–3 independent cohorts from same sport/sex. Produce open-source model and online calculator for coaches/medical staff.",
+      "addresses_gaps": [
+        "gap_4",
+        "gap_5",
+        "gap_6"
+      ],
+      "suggested_methodology": "Prospective cohort (2–3 seasons), stratified analysis by sex and sport. Feature engineering from wearable data (load spikes, trend slopes, variability metrics). Logistic regression and tree-based ensemble models. Internal cross-validation (5-fold). External validation on held-out cohorts. Produce final model with coefficients/thresholds, open-source code (R/Python), online tool.",
+      "suggested_data": "Amalgamate existing published prospective cohort data (W4412089571 on runners available; request data from W4406017810, W4396982583 authors). Negotiate access to 2–3 elite team datasets (Catapult or equivalent) for sex/sport stratification. Total target n>2000 athletes, >50 injuries.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "First open-source, externally validated injury prediction tool specifically tailored by sex/sport. Reduces reliance on proprietary vendor models. Enables rapid adoption and future improvements via community contributions."
+    },
+    {
+      "priority": 5,
+      "title": "Long-term longitudinal cohort (3–5 years): Injury incidence and wearable monitoring in female athletes across sports and competitive levels",
+      "description": "Recruit 500+ female athletes (recreational through elite) from soccer, basketball, rugby, running, cycling. Prospectively collect injury data (time-loss definition: ≥7 days modified activity), wearable monitoring (GPS/IMU), and individual characteristics (age, maturation, prior injury, menstrual cycle, energy availability). Measure injury incidence stratified by sport, level, age, and load patterns. Identify sport/sex-specific injury risk profiles.",
+      "addresses_gaps": [
+        "gap_3",
+        "gap_4"
+      ],
+      "suggested_methodology": "Prospective cohort with multi-site recruitment (5–10 organizations across sports). Standardized injury definitions and reporting via centralized app. Seasonal GPS/IMU monitoring (entire season). Quarterly surveys on menstrual cycle, training satisfaction, energy availability. Cox regression for time-to-event analysis.",
+      "suggested_data": "External load (GPS), menstrual cycle tracking, injury incidence, demographic/anthropometric data, sport/position, competitive level. Collaborative with female-focused sports medicine networks to ensure feasibility.",
+      "estimated_difficulty": "major_initiative",
+      "potential_impact": "First large, sex-stratified, multi-sport injury cohort with wearable data. Establishes female-specific injury epidemiology, identifies sport/age-specific risk profiles, generates hypotheses for future RCTs."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "Moderate-to-good synthesis achieved, but with notable constraints. The papers in the database are largely 'monologues': prediction papers cite load monitoring papers, which cite biomechanics papers, which cite injury epidemiology—but rarely do they truly integrate findings or debate trade-offs. For example, W4412089571 (dose-response to running load) never cites or discusses the behavioral interventions that might *use* its risk thresholds (e.g., coaching education, alert design). Similarly, W4281910294 (ML review) and W4406017810 (ML prediction model) work in adjacent domains but do not synthesize: the review acknowledges the prediction-to-prevention gap, yet the prediction study does not address behavior change. The research landscape is fragmented into: (1) prediction/analytics stream (optimizing model AUC), (2) monitoring/validation stream (proving sensors are reliable), (3) epidemiology stream (describing injury patterns)—with minimal cross-talk. Genuine debate or synthesis is rare. I identified consensus that load *predicts* injury, but no resolution on *whether feedback reduces injury*. This fragmentation is itself a key finding: the literature answers 'what predicts injury?' but avoids 'does telling people about risk change outcomes?'",
+    "strengths": [
+      "Large, diverse database (1749 papers) enabled identification of dominant themes and absences across sports, methods, and years.",
+      "Granular paper summaries (methodology, sample size, effect sizes, study design) allowed assessment of evidence quality and replicability. Ability to distinguish RCTs from observational studies critical.",
+      "Multiple perspectives: reviewed injury prevention (189 papers), performance analytics (1310), biomechanics (86), and data engineering (106). Interdisciplinary view helped identify gaps at intersections (e.g., prediction models that lack implementation science).",
+      "Longitudinal database coverage (2015–2026) enabled temporal trend analysis: recent surge in wearable research (2024–2025) shows field momentum but reveals that injury prevention is NOT scaling proportionally.",
+      "Identification of publication bias and data access patterns: 680 proprietary vs. 187 open datasets is quantifiable evidence that replication and meta-analysis are structurally limited."
+    ],
+    "limitations": [
+      "Paper summaries (not full texts) limited depth of methodological critique. E.g., we marked W4412089571 as having 'excellent' injury outcome tracking, but cannot assess data quality, loss-to-follow-up rates, or injury verification rigor without full text.",
+      "Classification of papers into themes (injury_prevention, performance_analysis, biomechanics) is sometimes arbitrary. W4401640692 ('workload-injury-performance') touches all three; unclear which theme drove the analysis. Borderline papers may be miscategorized.",
+      "Sample sizes of injury studies vary wildly (n=15 to n=5205). Summing into 'gap' statements (e.g., 'n~30 biomechanics studies') obscures that some are statistically powerful and others are underpowered. High-quality small studies are not equivalent to low-quality small studies.",
+      "Unable to assess conflict of interest: many papers cite proprietary wearable companies (Catapult, Garmin, Firstbeat); unclear if authors have financial ties. Potential bias toward positive findings for sponsored wearables.",
+      "Absence from database ≠ absence from literature. Our database includes only papers with AI-assessed relevance ≥7/10. True RCTs on wearable feedback interventions may exist outside this collection; we cannot claim they don't exist, only that they are not in our database.",
+      "Difficulty distinguishing 'confirmed negative findings' from 'unstudied'. E.g., no papers report 'we tested wearable feedback and injury did NOT decrease'—absence could reflect true gap or publication bias against negative results."
+    ],
+    "assumptions": [
+      "Assumed 'injury prevention' means *reducing incidence* (causal, intervention-based) rather than *detection after fact* (postdictive). Some papers labeled 'injury prevention' are actually epidemiology or risk profiling; this distinction affects gap classification.",
+      "Assumed injury outcomes must be 'time-loss' or medical diagnosis; did not credit papers measuring 'reduced performance' or 'symptom reduction' as true injury prevention. This is conservative but justified by the research question.",
+      "Assumed RCTs and longitudinal cohorts are necessary for causal claims about wearables and injury. Acknowledged that quasi-experimental and before-after designs have value but are not sufficient for 'prevention proof.'",
+      "Assumed papers published 2015–2026 represent current state of knowledge. Earlier work (pre-2015) on load monitoring and injury is likely excluded, potentially missing historical context on why the gap persists.",
+      "Assumed that papers reporting 'model accuracy' without clinical utility measures are incomplete for the prevention question. This is a deliberate and strong assumption that reflects the research question's skepticism.",
+      "Assumed external validity and generalizability are essential for practical impact. Small single-site studies are valued less than multi-site or multi-sport studies in importance ranking."
+    ],
+    "database_coverage_gaps": [
+      "**Sports injury epidemiology and prevention research outside sports analytics**: Our database is heavily weighted toward AI/ML/data science methods. Injury prevention research in traditional sports medicine journals (e.g., *British Journal of Sports Medicine*, *American Journal of Sports Medicine*, *Clinical Journal of Sport Medicine*) is likely underrepresented. We see some papers (W4310047376 on female rugby injury, W2768492879 on concussion and musculoskeletal injury) but suspect the database misses systematic reviews and large prospective cohorts published in medical journals. This may explain perceived lack of RCTs—they may exist but not be indexed as 'sports analytics' papers.",
+      "**Implementation science and behavior change literature specific to sports**: Our database has zero papers on coach/athlete behavior change, organizational barriers, or implementation of injury prevention interventions. This literature likely exists in implementation science and health services research journals but is not captured by sports analytics filters. Relevant methodologies (RE-AIM framework, CFIR, PRISM) may not appear in sports-indexed venues.",
+      "**Economic and cost-effectiveness analyses in sports injury**: Beyond W4408557862 on analytics ROI, cost-effectiveness studies are likely rare or published in sports management/economics rather than sports science. We have minimal coverage of $, return-on-investment, and healthcare economic analyses specific to wearable injury prevention.",
+      "**Biomedical sensor and wearable device innovation literature**: Our database focuses on application (using sensors in sports) rather than sensor development. Papers on new biomarkers (sweat electrolytes, lactate biosensors, genetic risk profiling) may exist in biomedical engineering or analytical chemistry journals and are not captured.",
+      "**Qualitative and mixed-methods research on athlete/coach perceptions of wearables**: Our database is ~99% quantitative. Papers exploring trust, skepticism, alert fatigue, usability, and organizational culture around wearables are likely rare in sports science journals and published in psychology, organizational behavior, or human-computer interaction venues.",
+      "**Long-term follow-up studies (5+ years) linking adolescent wearable monitoring to adult injury outcomes**: Longitudinal cohorts tracking the same athletes over decades are scarce in all of sports science but would provide causal evidence of early intervention efficacy. Our temporal span (2015–2026) captures only recent cohorts with short follow-up."
+    ],
+    "what_would_improve_this": [
+      "Access to full-text PDFs of all 200 papers (and full cohort of 1749) would allow assessment of risk of bias, loss-to-follow-up, injury outcome validation, and conflicts of interest. Summaries are sufficient for theme discovery but inadequate for meta-analysis.",
+      "Explicit coding of study design quality indicators: Was injury outcome verified by medical staff or self-reported? Was follow-up >80%? Were inclusion/exclusion criteria pre-specified? Did paper report effect size + confidence intervals? These are binary checklist items that would sharpen evidence strength assessment.",
+      "Citation network analysis: Map which papers cite each other and identify clusters (e.g., 'prediction model community' vs. 'biomechanics community'). This would quantify the 'monologue' observation and reveal missing bridges between fields.",
+      "Structured extraction of behavior change / implementation content: Re-code papers for mentions of 'intervention,' 'feedback,' 'coach education,' 'behavior change,' 'adoption,' 'adherence.' Most papers likely score zero, confirming gap_7. This would ground the claim in quantitative absence rather than impressionistic assessment.",
+      "Categorization of each paper by whether it addresses prevention (intervention, RCT, behavior change outcome) vs. prediction/monitoring/description. Current theme coding (performance_analysis, injury_prevention) blurs this distinction. A 'prevention_level' tier (Level 1: RCT on injury reduction; Level 2: Prediction model; Level 3: Risk profiling; Level 4: Monitoring/validation) would clarify evidence hierarchy.",
+      "Survey of journal editors / sports medicine leaders on reasons why RCTs on wearable feedback interventions are rare. Is it ethical concerns? Cost? Difficulty recruiting teams? Lack of hypotheses? This would move from gap description to gap causation.",
+      "Algorithmic reproducibility check: Attempt to reproduce one published prediction model's results using original data or synthetic data. This would concretely test generalizability and identify practical barriers to adoption."
+    ],
+    "process_cost_reflection": "This analysis synthesized 1749 papers using 200 summaries + aggregate statistics. The token cost was high (~200k tokens), but the approach was efficient for the problem: reading all 1749 full texts would be unfeasible (estimated 500k+ tokens, 40+ hours manual review). The summary-based approach traded depth for breadth and speed. **What worked well**: Summaries included effect sizes, study design, sample sizes, primary findings—sufficient to assess evidence quality and identify absences. Aggregate statistics (study design distribution, data source types, methodology profile) were especially valuable for pattern recognition. **What was lost**: Risk of bias assessment, qualitative nuance, and deep methodological critique. For instance, the claim 'we found ≤5 RCTs testing wearable interventions' is strong but relies on absence from summaries—a paper titled 'Prediction Model' might be embedded in an RCT evaluation study that was not clearly flagged. **Recommendation for future analyses**: If answer hinges on precise counts (e.g., 'how many RCTs exist?') or high-confidence risk of bias assessment (e.g., 'are these studies high-quality?'), full-text access or manual screening of 50–100 papers is justified. For gap discovery and theme mapping, summary-based analysis is cost-effective. The 200-paper subset appears reasonably representative (top papers by citation count, recent papers, diverse sports), though the temporal skew (405 in 2024, 653 in 2025) introduces recency bias—new papers may not be fully peer-reviewed or may represent early reports."
+  },
+  "paper_index": {
+    "https://openalex.org/W4406017810": {
+      "title": "Predicting noncontact injuries of professional football players using machine learning",
+      "year": 2025,
+      "first_author": "Diogo Freitas"
+    },
+    "https://openalex.org/W4396982583": {
+      "title": "Predicting Injuries in Elite Female Football Players With Global-Positioning-System and Multiomics Data",
+      "year": 2024,
+      "first_author": "Juan R. González"
+    },
+    "https://openalex.org/W4411153325": {
+      "title": "An Interpretable Machine Learning Framework for Athlete Motor Profiling Using Multi-Domain Field Assessments: A Proof-of-Concept Study",
+      "year": 2025,
+      "first_author": "Bartosz Wilczyński"
+    },
+    "https://openalex.org/W2520828294": {
+      "title": "Stiff Landings Are Associated With Increased ACL Injury Risk in Young Female Basketball and Floorball Players",
+      "year": 2016,
+      "first_author": "Mari Leppänen"
+    },
+    "https://openalex.org/W4408750469": {
+      "title": "Sprint running mechanics are associated with hamstring strain injury: a 6-month prospective cohort study of 126 elite male footballers",
+      "year": 2025,
+      "first_author": "Christopher Bramah"
+    },
+    "https://openalex.org/W4401283644": {
+      "title": "Instrumented mouthguards in elite-level men’s and women’s rugby union: characterising tackle-based head acceleration events",
+      "year": 2024,
+      "first_author": "James Woodward"
+    },
+    "https://openalex.org/W4408561507": {
+      "title": "Interunit Reliability of Firstbeat Sport Sensors as Accelerometer-Based Tracking Devices in Basketball",
+      "year": 2025,
+      "first_author": "Daniele Conte"
+    },
+    "https://openalex.org/W2396709736": {
+      "title": "Assessing Stride Variables and Vertical Stiffness with GPS-Embedded Accelerometers: Preliminary Insights for the Monitoring of Neuromuscular Fatigue on the Field.",
+      "year": 2015,
+      "first_author": "Martin Buchheit"
+    },
+    "https://openalex.org/W2996541587": {
+      "title": "Accelerometry-Based External Load Indicators in Sport: Too Many Options, Same Practical Outcome?",
+      "year": 2019,
+      "first_author": "Carlos D. Gómez‐Carmona"
+    },
+    "https://openalex.org/W4413313707": {
+      "title": "Sports Analytics for Evaluating Injury Impact on NBA Performance",
+      "year": 2025,
+      "first_author": "Vangelis Sarlis"
+    },
+    "https://openalex.org/W4391883999": {
+      "title": "Injury Patterns and Impact on Performance in the NBA League Using Sports Analytics",
+      "year": 2024,
+      "first_author": "Vangelis Sarlis"
+    },
+    "https://openalex.org/W4389884367": {
+      "title": "Sports Analytics and Text Mining NBA Data to Assess Recovery from Injuries and Their Economic Impact",
+      "year": 2023,
+      "first_author": "Vangelis Sarlis"
+    },
+    "https://openalex.org/W4412089571": {
+      "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
+      "year": 2025,
+      "first_author": "Jesper Schuster Brandt Frandsen"
+    },
+    "https://openalex.org/W4281910294": {
+      "title": "Machine Learning for Understanding and Predicting Injuries in Football",
+      "year": 2022,
+      "first_author": "Aritra Majumdar"
+    },
+    "https://openalex.org/W4409617806": {
+      "title": "On-field kinematics of cut maneuvers in football players: Are wearable sensors reliable for assessing anterior cruciate ligament injury risk?",
+      "year": 2025,
+      "first_author": "Stefano Di Paolo"
+    },
+    "https://openalex.org/W4412494090": {
+      "title": "Is There a Performance‐Injury Conflict Between Maximum Horizontal Deceleration and Surrogates of Noncontact Anterior Cruciate Ligament Injury?",
+      "year": 2025,
+      "first_author": "Junlei Lin"
+    },
+    "https://openalex.org/W2899693514": {
+      "title": "Time-to-event analysis for sports injury research part 1: time-varying exposures",
+      "year": 2018,
+      "first_author": "Rasmus Oestergaard Nielsen"
+    },
+    "https://openalex.org/W4401640692": {
+      "title": "Football Analytics: Assessing the Correlation between Workload, Injury and Performance of Football Players in the English Premier League",
+      "year": 2024,
+      "first_author": "Victor Chang"
+    },
+    "https://openalex.org/W4408759757": {
+      "title": "Study of wearable monitoring of molecular and cellular biomechanics during physical training",
+      "year": 2025,
+      "first_author": "Wei Zhu"
+    },
+    "https://openalex.org/W4310047376": {
+      "title": "Longitudinal study of six seasons of match injuries in elite female rugby union",
+      "year": 2022,
+      "first_author": "Lindsay Starling"
+    },
+    "https://openalex.org/W4390236576": {
+      "title": "AI-Assisted Fatigue and Stamina Control for Performance Sports on IMU-Generated Multivariate Times Series Datasets",
+      "year": 2023,
+      "first_author": "Attila Biró"
+    },
+    "https://openalex.org/W4406891392": {
+      "title": "Eight‐Week Flywheel Training Enhances Jump Performance and Stretch‐Shortening Cycle Function in Collegiate Basketball Players",
+      "year": 2025,
+      "first_author": "Takashi Shimizu"
+    },
+    "https://openalex.org/W4412481398": {
+      "title": "Effects of loaded vs unloaded plyometric training combined with change-of-direction sprints on neuromuscular performance in elite U-18 female basketball players: a randomized controlled study",
+      "year": 2025,
+      "first_author": "Yosser Cherni"
+    },
+    "https://openalex.org/W4390701063": {
+      "title": "The Dose–Response in Elite Soccer: Preliminary Insights From Menstrual-Cycle Tracking During the FIFA Women’s World Cup 2019",
+      "year": 2024,
+      "first_author": "Dawn M. Scott"
+    },
+    "https://openalex.org/W4403500282": {
+      "title": "Tackle characteristics associated with suspected concussion in female varsity rugby union: a case-control video analysis study",
+      "year": 2024,
+      "first_author": "Isla Shill"
+    },
+    "https://openalex.org/W4406096932": {
+      "title": "Ultrasound as a predictor of time-loss injury for the patellar tendon, Achilles tendon and plantar fascia in division I collegiate athletes",
+      "year": 2025,
+      "first_author": "Daniel M. Cushman"
+    },
+    "https://openalex.org/W4408557862": {
+      "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+      "year": 2025,
+      "first_author": "H Wang"
+    },
+    "https://openalex.org/W2768492879": {
+      "title": "Lower Extremity Musculoskeletal Injury Risk After Concussion Recovery in High School Athletes",
+      "year": 2017,
+      "first_author": "Robert C. Lynall"
+    }
+  }
+}

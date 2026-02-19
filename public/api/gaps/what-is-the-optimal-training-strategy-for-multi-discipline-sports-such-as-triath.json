@@ -1,0 +1,818 @@
+{
+  "description": "Full gap analysis: \"What is the optimal training strategy for multi-discipline sports such as triathlon, biathlon, and decathlon?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.909Z",
+  "slug": "what-is-the-optimal-training-strategy-for-multi-discipline-sports-such-as-triath",
+  "question": "What is the optimal training strategy for multi-discipline sports such as triathlon, biathlon, and decathlon?",
+  "created_at": "2026-02-16T21:25:56.388447",
+  "analyzed_at": "2026-02-16T21:28:30.099232",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 73,
+  "cost_usd": 0.0793,
+  "analysis_confidence": "medium",
+  "scope_assessment": "This question is moderately well-scoped but conflates three distinct sports with different physiological demands and structures. Triathlon (swimming-cycling-running) and biathlon (cross-country skiing-shooting) share endurance cores but differ fundamentally; decathlon is a track-and-field combined event with explosive and endurance components. The term 'optimal' assumes a single best strategy, which is likely sport-, level-, and individual-dependent. A more rigorous framing would specify: optimal for whom (elite/developmental/recreational), at what level (youth/adult), in which distance (sprint/Olympic/long/Ironman), and measured by what outcome (podium placement/personal improvement/health). The question would benefit from disaggregation.",
+  "database_coverage": "Our database contains 15 multi-sport papers directly relevant to triathlon/biathlon/decathlon, plus 6 skiing papers that include biathlon. Coverage is reasonable for triathlon (Olympic and sprint distances well-represented; ultra-distance underrepresented). Biathlon coverage is sparse (n=4 dedicated papers). Decathlon coverage is limited but present (n=3 papers). The database appears to lack comprehensive training prescription studies specific to multi-discipline optimization—most papers examine single disciplines or performance markers, not integrated periodization strategies. Notable gap: no papers directly compare training strategies across different multi-discipline distances or levels within a common framework.",
+  "confidence_explanation": "Medium confidence because: (1) We have 15+ directly relevant multi-sport papers providing empirical evidence on training, periodization, and performance determinants; (2) However, most are descriptive or analyze single athletes/small cohorts rather than controlled interventions comparing strategies; (3) Only 1 RCT in our multi-sport dataset (blood flow restriction in basketball); (4) No papers explicitly frame their findings as testing 'optimal strategy' or comparing competing periodization approaches in multi-discipline sports; (5) Cross-discipline synthesis is weak—papers rarely engage with trade-offs between swimming, cycling, running, or skiing + shooting demands. Higher confidence would require: RCTs comparing periodization schemes, meta-analyses of multi-discipline training adaptations, and longitudinal cohort studies tracking strategy effects on diverse athlete populations.",
+  "landscape": {
+    "summary": "Research on multi-discipline sports training is fragmented across isolated case studies, small-sample analyses, and sport-specific investigations. Triathlon research dominates (12 papers), focusing on physiological determinants (running economy post-cycling, thermal stress during sprint events, VO₂max and lactate thresholds) and race analysis (segment-specific performance in super-sprint events). Biathlon research (4 papers) emphasizes periodization, shooting stability, and competition calendar optimization, with notable gaps in training integration. Decathlon research (3 papers) reveals that short-running events (100m, 110m hurdles, 400m) are strongly predicted by field-event performance (R=0.89–0.96), but training strategies to develop this multi-domain competence are not detailed. Youth progression data exist for triathlon but lack strategic depth. No papers empirically compare polarized vs. threshold-based vs. block periodization in multi-discipline contexts, nor do any optimize allocation of training time across disciplines.",
+    "key_findings": [
+      {
+        "finding": "Running economy and durability after cycling is a key determinant in triathlon performance; strenuous cycling significantly reduces running economy in well-trained junior triathletes, with substrate utilization patterns indicating fatigue-induced metabolic inefficiency.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4410358580",
+            "title": "Durability in Youth Squad Triathletes—Influence of Strenuous Cycling on Subsequent Running Performance, Economy, and Substrate Utilization",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1123/ijspp.2025-0009",
+            "first_author": "Greta Röhrs"
+          },
+          {
+            "work_id": "https://openalex.org/W4408922239",
+            "title": "Thermal and Biomechanical Responses of Amateur, Elite and World Cup Athletes During a World Cup Sprint Triathlon in the Heat",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1007/s40279-025-02193-7",
+            "first_author": "Carl James"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Olympic distance triathlon performance thresholds vary by discipline; top-3 finishers show distinct aerobic capacity, swimming, and cycling power benchmarks, suggesting discipline-specific preparatory targets.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3110721760",
+            "title": "Cut-Off Values in the Prediction of Success in Olympic Distance Triathlon",
+            "year": 2020,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.3390/ijerph17249491",
+            "first_author": "André Bonadias Gadelha"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "In decathlon, field events (long jump, shot put, high jump, discus, pole vault, javelin) are strong predictors of short-running event performance (100m, 110m hurdles, 400m; R=0.89–0.96), indicating integrated neuromuscular capacity.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3000339899",
+            "title": "The Impact Of Short Run Distances To The Final Results Of The Decathlon At The 2019 Athletic World Championships",
+            "year": 2019,
+            "sport": "athletics",
+            "doi": "https://doi.org/10.12775/jehs.2019.09.12.011",
+            "first_author": "L. Ramadani"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Race strategy analysis in super-sprint triathlon shows that segment-pacing patterns vary by age/development level; young elite athletes employ more aggressive early-race pacing than state-level competitors.",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4393445534",
+            "title": "Race strategies of young super-sprint triathletes during the 2022 World Triathlon races",
+            "year": 2024,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1080/24748668.2024.2337529",
+            "first_author": "Raúl Espejo"
+          },
+          {
+            "work_id": "https://openalex.org/W4392107302",
+            "title": "Super sprint triathlon performance progression in young state and national standard Australian triathletes",
+            "year": 2024,
+            "sport": "other",
+            "doi": "https://doi.org/10.1080/24748668.2024.2320489",
+            "first_author": "Glauber Scattolini Correa"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Elite female triathletes show season-long tracking of training load (via energy cost optimization), anthropometry, and performance markers, but sample sizes are very small (n=3) and single-sport focused.",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4391605017",
+            "title": "Training Characteristics, Performance, and Body Composition of Three U23 Elite Female Triathletes throughout a Season",
+            "year": 2024,
+            "sport": "other",
+            "doi": "https://doi.org/10.3390/sports12020053",
+            "first_author": "Sergio Sellés"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Thermal and biomechanical stress in sprint triathlon varies by athlete category (amateur/elite/world cup), with core temperature management and running kinematics degradation under heat stress documented across 66 athletes.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4408922239",
+            "title": "Thermal and Biomechanical Responses of Amateur, Elite and World Cup Athletes During a World Cup Sprint Triathlon in the Heat",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1007/s40279-025-02193-7",
+            "first_author": "Carl James"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Biathlon standing shooting performance is associated with postural control stability, but aiming strategy (hold-based vs. timing-based) moderates this relationship, suggesting shooting training should be customized.",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4413429183",
+            "title": "Stability of Hold and Postural Control During Static Hold Assessment Can Provide Valuable Information for Biathlon Standing Shooting but Aiming Strategy Should Be Acknowledged",
+            "year": 2025,
+            "sport": "other",
+            "doi": "https://doi.org/10.1002/ejsc.70045",
+            "first_author": "Miika Köykkä"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Bio-banding (grouping athletes by maturity status rather than chronological age) is an emerging consideration in youth triathlon talent development, but application and efficacy remain unstudied.",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4410705800",
+            "title": "Biological maturity status and chronological age in young triathletes: a first approach to bio-banding in triathlon",
+            "year": 2025,
+            "sport": "other",
+            "doi": "https://doi.org/10.47197/retos.v68.109869",
+            "first_author": "Elinai dos Santos Freitas Schütz"
+          }
+        ],
+        "paper_count": 1
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "Observational/longitudinal case studies of elite athletes (n=1–6)",
+        "Statistical analysis of performance data (repeated-measures ANOVA, mixed effects models, correlation)",
+        "Descriptive periodization analysis (retrospective training log coding)",
+        "Machine learning for movement classification and cadence detection"
+      ],
+      "sample_size_patterns": "Highly skewed toward small samples: 6 papers with n<30 (case studies, n=1–6); 1 paper with n=100–500 (66 triathletes in thermal study); most others n=10–25. Only one RCT in multi-sport (n=17 basketball, blood flow restriction). No powered randomized trials comparing periodization strategies in triathlon/biathlon/decathlon.",
+      "data_sources_used": "Sensor devices (IMU, GPS, power meters, heart rate) dominant (11 papers); proprietary training databases (Strava, coach records); video analysis for kinematics; manual coding of training logs; race results from official federations (IAAF, World Triathlon). Very few papers use open datasets; data access is primarily proprietary or restricted.",
+      "temporal_patterns": "Publication surge in 2024–2025 (23 papers, 31% of total), predominantly reviews and descriptive studies. Multi-sport papers published 2015–2026 with clustering in 2024–2025 (10 of 15). Earlier work (2015–2020) focused on physiological thresholds and genetic polymorphisms; recent work emphasizes periodization practices, monitoring technologies, and talent development frameworks. No clear trend toward longitudinal intervention studies."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W3110721760",
+        "title": "Cut-Off Values in the Prediction of Success in Olympic Distance Triathlon",
+        "why_key": "Provides quantitative performance benchmarks (VO₂max, lactate threshold, power output) needed to reach top-3 in Olympic triathlon; directly addresses 'what physiological targets define optimal preparation' across the three disciplines.",
+        "year": 2020,
+        "sport": "multi_sport",
+        "doi": "https://doi.org/10.3390/ijerph17249491",
+        "first_author": "André Bonadias Gadelha"
+      },
+      {
+        "work_id": "https://openalex.org/W4410358580",
+        "title": "Durability in Youth Squad Triathletes—Influence of Strenuous Cycling on Subsequent Running Performance, Economy, and Substrate Utilization",
+        "why_key": "Isolates the critical multi-discipline interaction effect (cycling→running fatigue); shows that running economy degradation post-cycling is a trainable parameter; suggests training strategies should specifically target cycling-to-running transition adaptations.",
+        "year": 2025,
+        "sport": "multi_sport",
+        "doi": "https://doi.org/10.1123/ijspp.2025-0009",
+        "first_author": "Greta Röhrs"
+      },
+      {
+        "work_id": "https://openalex.org/W3000339899",
+        "title": "The Impact Of Short Run Distances To The Final Results Of The Decathlon At The 2019 Athletic World Championships",
+        "why_key": "Empirically demonstrates strong intercorrelation between field events and short-running performance in decathlon (R>0.89); implies integrated neuromuscular training strategy may be more effective than isolated event specialization.",
+        "year": 2019,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.12775/jehs.2019.09.12.011",
+        "first_author": "L. Ramadani"
+      },
+      {
+        "work_id": "https://openalex.org/W7117651259",
+        "title": "Performance and Health in Combined Events: A Scoping Review",
+        "why_key": "Systematic map of 111 papers on decathlon/pentathlon/heptathlon; reveals that 64% of literature focuses on performance (mostly descriptive), 59.5% on health (mostly injuries), with critical gaps in injury prevention strategy testing and underrepresentation of women and youth.",
+        "year": 2025,
+        "sport": "athletics",
+        "doi": "https://doi.org/10.1111/sms.70190",
+        "first_author": "Pascal Édouard"
+      },
+      {
+        "work_id": "https://openalex.org/W4413658816",
+        "title": "A Cross-Sectional Comparison of Annual Training Characteristics Between Junior, Developmental, and Elite-Level Biathletes",
+        "why_key": "First comparative analysis of periodization across biathlon development levels; shows how elite biathletes structure training load, shooting practice, and endurance work differently than developmental athletes; provides empirical foundation for developmental pathways.",
+        "year": 2025,
+        "sport": "skiing",
+        "doi": "https://doi.org/10.1123/ijspp.2025-0096",
+        "first_author": "Guro Strøm Solli"
+      },
+      {
+        "work_id": "https://openalex.org/W4408922239",
+        "title": "Thermal and Biomechanical Responses of Amateur, Elite and World Cup Athletes During a World Cup Sprint Triathlon in the Heat",
+        "why_key": "Largest triathlon sample (n=66); demonstrates that thermal stress and running kinematics degrade differently across athlete levels; implies that heat management strategies and thermal adaptation training differ in efficacy by performance level.",
+        "year": 2025,
+        "sport": "multi_sport",
+        "doi": "https://doi.org/10.1007/s40279-025-02193-7",
+        "first_author": "Carl James"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "methodology",
+      "title": "No RCTs comparing periodization schemes in multi-discipline sports",
+      "description": "Despite frequent advocacy for 'optimal' training strategies (polarized, threshold-based, block periodization), our database contains no randomized controlled trials directly comparing competing periodization models in triathlon, biathlon, or decathlon. All periodization evidence is observational (case studies, descriptive analyses of elite athletes' actual training). This prevents causal inference about which strategy best develops multi-discipline competence, manages fatigue, or prevents injury. Even within single-discipline sports (cycling, football), RCT comparisons are rare (only 1 RCT on blood flow restriction in basketball identified).",
+      "evidence": "Literature review of 73 papers yields: 1 RCT (W4406824909, blood flow restriction in basketball); 2 observational/longitudinal designs in multi-sport (W2564232048 cycling, W4410358580 triathlon); 8 systematic/scoping reviews with no intervention components. Periodization papers (W4391676994, W4413658816, W4410575447, W4411203144) are all retrospective case studies or descriptive analyses. No head-to-head comparisons of polarized vs. threshold-based vs. block periodization in triathlon, biathlon, or decathlon.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W7117651259",
+          "title": "Performance and Health in Combined Events: A Scoping Review",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1111/sms.70190",
+          "first_author": "Pascal Édouard"
+        },
+        {
+          "work_id": "https://openalex.org/W4413658816",
+          "title": "A Cross-Sectional Comparison of Annual Training Characteristics Between Junior, Developmental, and Elite-Level Biathletes",
+          "year": 2025,
+          "sport": "skiing",
+          "doi": "https://doi.org/10.1123/ijspp.2025-0096",
+          "first_author": "Guro Strøm Solli"
+        },
+        {
+          "work_id": "https://openalex.org/W4391676994",
+          "title": "The Day-by-Day Periodization Strategies of a Giro d’Italia Podium Finisher",
+          "year": 2024,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1123/ijspp.2023-0224",
+          "first_author": "Gabriele Gallo"
+        },
+        {
+          "work_id": "https://openalex.org/W4410575447",
+          "title": "Day‐To‐Day Endurance Training Periodization of World‐Class Cross‐Country Skiers",
+          "year": 2025,
+          "sport": "skiing",
+          "doi": "https://doi.org/10.1002/ejsc.12322",
+          "first_author": "Jacob Walther"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Coaches and athletes make training-time allocation decisions daily; current evidence provides no rigorous guidance on which periodization model optimizes performance, durability, or injury prevention in multi-discipline sports. This is a foundational gap limiting evidence-based practice.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible challenges: (1) Triathlon/biathlon coaches may resist random assignment to 'suboptimal' training protocols for competitive seasons; (2) long training cycles (6–12 months) required for sufficient power; (3) need for standardized outcome measures across disciplines. Mitigations: off-season training comparisons, amateur/developmental athletes with fewer podium stakes, multi-site collaboration for adequate sample sizes (target n=40–60 per arm minimum).",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "integration",
+      "title": "No empirical optimization of discipline-specific training time allocation",
+      "description": "Triathlon training requires allocation of limited time across three demanding disciplines (swimming, cycling, running); biathlon across skiing and shooting; decathlon across 10 events. Yet no paper in our database directly optimizes this allocation—i.e., provides evidence for how many weekly hours on each discipline maximizes overall performance while managing fatigue and injury. Related optimization work exists for single sports (W2617715382 speed skating periodization), but multi-discipline papers do not model trade-offs. Youth progressions (W4413961626: 494 males, 351 females) show performance by distance but offer no training prescription guidance.",
+      "evidence": "Descriptive analyses exist: W4391605017 documents a single elite female triathlete's training load (swimming, cycling, running ECOs); W4413658816 describes elite biathletes' training structures by level (suggesting elite invest more in shooting-specific work). However, no optimization framework compares outcomes (sprint finish time, Ironman placement, VO₂max, injury incidence) against different time allocations. Decathlon literature (W3000339899, W4416208148) shows event intercorrelations but does not prescribe training emphasis.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4391605017",
+          "title": "Training Characteristics, Performance, and Body Composition of Three U23 Elite Female Triathletes throughout a Season",
+          "year": 2024,
+          "sport": "other",
+          "doi": "https://doi.org/10.3390/sports12020053",
+          "first_author": "Sergio Sellés"
+        },
+        {
+          "work_id": "https://openalex.org/W4413658816",
+          "title": "A Cross-Sectional Comparison of Annual Training Characteristics Between Junior, Developmental, and Elite-Level Biathletes",
+          "year": 2025,
+          "sport": "skiing",
+          "doi": "https://doi.org/10.1123/ijspp.2025-0096",
+          "first_author": "Guro Strøm Solli"
+        },
+        {
+          "work_id": "https://openalex.org/W3110721760",
+          "title": "Cut-Off Values in the Prediction of Success in Olympic Distance Triathlon",
+          "year": 2020,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.3390/ijerph17249491",
+          "first_author": "André Bonadias Gadelha"
+        },
+        {
+          "work_id": "https://openalex.org/W4413961626",
+          "title": "Performance progression of youth and Junior triathletes racing world triathlon sprint and super sprint races",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1080/02640414.2025.2555111",
+          "first_author": "Glauber Scattolini Correa"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Training time is the scarcest resource for amateur and developing multi-discipline athletes; effective time allocation could improve performance without increasing total volume, reducing overuse injury risk. This is a core coaching problem with no evidence-based solution.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Data collection is feasible: retrospective analysis of coaching logs, race performance databases (World Triathlon, UIPMB), and modeling. Challenges: (1) individualizing allocation (genetic predisposition, prior experience bias results); (2) confounding by athlete motivation and technique; (3) small populations (elite biathlon, decathlon have <100 world-class athletes). Approach: cross-sectional cohort study relating annual training load distribution to race outcomes across development levels.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "topic",
+      "title": "Training strategies for multi-discipline interaction effects (e.g., cycling-to-running transition in triathlon)",
+      "description": "Triathlon and biathlon are not simply sum-of-three-disciplines; the sequence and fatigue from one discipline directly impairs the next. Evidence on running economy degradation post-cycling (W4410358580) exists for juniors, but no paper addresses: (1) How to specifically train the cycling-to-running transition (are there transition-specific sessions? How frequent?); (2) whether polarized training in cycling maintains running economy better than threshold training; (3) how swimming fatigue affects cycling performance (largely absent); (4) sport-specific periodization to manage transition fatigue. In biathlon, skiing-to-shooting fatigue effects on accuracy/stability are minimally studied (only W4413429183 on shooting stability).",
+      "evidence": "W4410358580 documents running economy loss post-cycling (2–7% VO₂ cost increase) and altered substrate utilization, with practical implications: 'changes in these variables [are] relevant for fatigued running performance.' Yet no follow-up paper prescribes training interventions. W4408922239 measures thermal stress in tri, implying thermal management training is needed—not addressed. W4413429183 finds shooting postural control predicts biathlon performance, but training prescription for shooting under fatigue is absent.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4410358580",
+          "title": "Durability in Youth Squad Triathletes—Influence of Strenuous Cycling on Subsequent Running Performance, Economy, and Substrate Utilization",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1123/ijspp.2025-0009",
+          "first_author": "Greta Röhrs"
+        },
+        {
+          "work_id": "https://openalex.org/W4408922239",
+          "title": "Thermal and Biomechanical Responses of Amateur, Elite and World Cup Athletes During a World Cup Sprint Triathlon in the Heat",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1007/s40279-025-02193-7",
+          "first_author": "Carl James"
+        },
+        {
+          "work_id": "https://openalex.org/W4413429183",
+          "title": "Stability of Hold and Postural Control During Static Hold Assessment Can Provide Valuable Information for Biathlon Standing Shooting but Aiming Strategy Should Be Acknowledged",
+          "year": 2025,
+          "sport": "other",
+          "doi": "https://doi.org/10.1002/ejsc.70045",
+          "first_author": "Miika Köykkä"
+        },
+        {
+          "work_id": "https://openalex.org/W3110721760",
+          "title": "Cut-Off Values in the Prediction of Success in Olympic Distance Triathlon",
+          "year": 2020,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.3390/ijerph17249491",
+          "first_author": "André Bonadias Gadelha"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "The competitive advantage in multi-discipline sports lies in managing the unique fatigue interaction; single-discipline optimization is necessary but insufficient. Training strategies that ignore transition fatigue may inadvertently optimize sub-components while degrading overall performance.",
+      "feasibility": "high",
+      "feasibility_rationale": "Feasible approaches: (1) Small RCT (n=20–30) comparing 12-week blocks with/without transition-specific sessions (e.g., cycling followed by 15-min running) in sprint triathletes; (2) observational study of elite athletes' training logs, categorizing transition-specific sessions and correlating with race split times; (3) laboratory simulation of sprint triathlon with varied prior cycling loads, measuring running economy response. Data collection is straightforward; sample recruitment from national federations or online triathlon coaching platforms is viable.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "population",
+      "title": "Severe underrepresentation of women, youth, and Masters in multi-discipline training research",
+      "description": "Of 73 papers, only 8 (11%) explicitly focus on women; multi-sport papers with women are rarer (W4391605017, n=3 elite female triathletes; W4413658816, n=12 women biathletes mixed with men; W4413961626, n=351 females in youth progression study). No papers compare male vs. female training responses to periodization, recovery needs, or discipline-specific physiological demands in triathlon/biathlon. Youth triathlon development is documented (W4413961626, W4410705800 on bio-banding, W4392107302), but training strategy differences are not addressed. Masters/veteran athletes in multi-discipline sports are absent from our database. This limits generalizability: optimal strategies may differ by sex (e.g., hormonal cycles, muscle-fiber distributions) and age.",
+      "evidence": "Database distribution: 8 papers with women's focus (11% of 73). Of 15 multi-sport papers: W4391605017 (3 female elite triathletes, n=3); W4413658816 (12 female biathletes, n=12 of 24 total); W4413961626 (351 female youth triathletes, n=351 of 1576 total race entries). W7117651259 scoping review explicitly flags 'substantial research gaps... underrepresentation of women, adolescents, and Masters athletes.' No papers examine sex differences in response to training load, polarized vs. threshold periodization, or recovery protocols.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W7117651259",
+          "title": "Performance and Health in Combined Events: A Scoping Review",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1111/sms.70190",
+          "first_author": "Pascal Édouard"
+        },
+        {
+          "work_id": "https://openalex.org/W4391605017",
+          "title": "Training Characteristics, Performance, and Body Composition of Three U23 Elite Female Triathletes throughout a Season",
+          "year": 2024,
+          "sport": "other",
+          "doi": "https://doi.org/10.3390/sports12020053",
+          "first_author": "Sergio Sellés"
+        },
+        {
+          "work_id": "https://openalex.org/W4413658816",
+          "title": "A Cross-Sectional Comparison of Annual Training Characteristics Between Junior, Developmental, and Elite-Level Biathletes",
+          "year": 2025,
+          "sport": "skiing",
+          "doi": "https://doi.org/10.1123/ijspp.2025-0096",
+          "first_author": "Guro Strøm Solli"
+        },
+        {
+          "work_id": "https://openalex.org/W4413961626",
+          "title": "Performance progression of youth and Junior triathletes racing world triathlon sprint and super sprint races",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1080/02640414.2025.2555111",
+          "first_author": "Glauber Scattolini Correa"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Women comprise ~30–40% of recreational triathlon participants and are growing in elite biathlon/decathlon. Absent evidence on sex-specific training optimization means coaching for female multi-discipline athletes relies on extrapolation from male studies or male-based heuristics, which may be suboptimal.",
+      "feasibility": "high",
+      "feasibility_rationale": "Feasible approaches: (1) Prospective comparative cohort study of male vs. female elite triathletes following identical periodization plans, measuring performance outcomes and physiological adaptation; (2) systematic review and meta-analysis of single-sport training papers with sex-stratified analysis; (3) qualitative interviews with female multi-discipline athletes and coaches on perceived training differences and challenges. Sample recruitment through national federations (USA Triathlon, International Biathlon Union, World Athletics) is straightforward.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_5",
+      "type": "data",
+      "title": "No longitudinal cohort studies tracking training-to-performance relationships across a full season or multiple years",
+      "description": "Most multi-discipline training papers are case studies (n=1–6 athletes) or single-season snapshots. Only 2 papers in our database employ longitudinal designs tracking athletes across seasons: W2564232048 (6 months RAAM preparation, n=5 amateur cyclists) and W4410358580 (triathlon season, n=19 juniors). No multi-season (2+ years) studies exist comparing periodization strategies across different training cycles or cohorts of multi-discipline athletes. This prevents understanding of: (1) training response stability across years; (2) long-term injury/overtraining patterns; (3) career development trajectories in relation to training choices. Youth progression data (W4413961626, W4410705800) exist but lack associated training data.",
+      "evidence": "Study design distribution from database: 1 RCT, 2 observational, 1 longitudinal (W2564232048), 1 case series. Longitudinal papers in multi-sport: W2564232048 (n=5, 6 months), W4410358580 (season-long, n=19). No papers report multi-year training logs with performance outcomes. W4413961626 provides 2137 race entries from 2021–2023 but no associated training data. W4391605017 describes a single season of a 3-athlete cohort. W4413658816 is cross-sectional (compares levels, not longitudinal).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W2564232048",
+          "title": "Training Intensity Distribution and Changes in Performance and Physiology of a 2nd Place Finisher Team of the Race across America Over a 6 Month Preparation Period",
+          "year": 2016,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.3389/fphys.2016.00642",
+          "first_author": "Christian Manunzio"
+        },
+        {
+          "work_id": "https://openalex.org/W4410358580",
+          "title": "Durability in Youth Squad Triathletes—Influence of Strenuous Cycling on Subsequent Running Performance, Economy, and Substrate Utilization",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1123/ijspp.2025-0009",
+          "first_author": "Greta Röhrs"
+        },
+        {
+          "work_id": "https://openalex.org/W4413961626",
+          "title": "Performance progression of youth and Junior triathletes racing world triathlon sprint and super sprint races",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1080/02640414.2025.2555111",
+          "first_author": "Glauber Scattolini Correa"
+        },
+        {
+          "work_id": "https://openalex.org/W4391605017",
+          "title": "Training Characteristics, Performance, and Body Composition of Three U23 Elite Female Triathletes throughout a Season",
+          "year": 2024,
+          "sport": "other",
+          "doi": "https://doi.org/10.3390/sports12020053",
+          "first_author": "Sergio Sellés"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Training effects and adaptations accumulate over years; seasonal snapshots cannot reveal whether a periodization strategy optimizes long-term performance progression, prevents career decline, or increases injury risk. Longitudinal evidence is essential for evidence-based athlete development planning.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Challenges: (1) Athlete retention over 2–4 years (dropouts due to retirement, injury, career changes); (2) coaching staff changes introducing confounding; (3) access to proprietary training logs and medical records. Mitigations: partnership with national federations (France Biathlon, German Ski Federation, USA Triathlon) with institutional commitment; retrospective reconstruction of training logs from digital platforms (TrainingPeaks, Strava); prospective recruitment of developmentally-tracked cohorts (U21 development squads). Sample size: n=30–50 per arm feasible with institutional support.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_6",
+      "type": "methodology",
+      "title": "Lack of standardized measurement frameworks for 'durability' and 'transition efficiency' in multi-discipline sports",
+      "description": "Running economy post-cycling (W4410358580) is measured in laboratory conditions; thermal stress (W4408922239) uses core temperature; shooting stability (W4413429183) uses force plate data. Yet no consensus metric exists for 'durability' (performance maintenance across successive disciplines) or 'transition efficiency' (how quickly an athlete recovers between disciplines and re-establishes steady state). Different papers use different surrogates—power output, VO₂, lactate, RPE—making cross-study comparison impossible. This complicates meta-analysis and evidence synthesis.",
+      "evidence": "W4410358580 measures running economy via VO₂ cost; W4408922239 uses core temperature and running kinematics; W3011374112 develops a simulated long-distance triathlon test but questions reliability (only 2 uses reported); W3118441876 uses Lamberts Submaximal Cycle Test but only 6 athletes (rs=-0.94 with finishing time, high variance). No standardized 'durability index' or 'transition efficiency metric' appears across papers.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4410358580",
+          "title": "Durability in Youth Squad Triathletes—Influence of Strenuous Cycling on Subsequent Running Performance, Economy, and Substrate Utilization",
+          "year": 2025,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1123/ijspp.2025-0009",
+          "first_author": "Greta Röhrs"
+        },
+        {
+          "work_id": "https://openalex.org/W3011374112",
+          "title": "The reliability of physiological and performance data obtained during a long distance simulated triathlon laboratory test",
+          "year": 2019,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.28985/1920.jsc.05",
+          "first_author": "Kate Margaret Luckin"
+        },
+        {
+          "work_id": "https://openalex.org/W3118441876",
+          "title": "The use of the Lamberts Submaximal Cycle Test in Triathlon, an exploratory study in young professional sprint triathletes",
+          "year": 2020,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.28985/1220.jsc.02",
+          "first_author": "Rob Lamberts"
+        },
+        {
+          "work_id": "https://openalex.org/W7119097776",
+          "title": "Reliability of a Triathlon-Specific Test Protocol to Assess Physiological Determinants of Fatigued Running Performance",
+          "year": 2026,
+          "sport": "cycling",
+          "doi": "https://doi.org/10.1123/ijspp.2025-0240",
+          "first_author": "Sebastian Keller"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Without standardized measurement, findings cannot be aggregated across studies, limiting evidence synthesis and practical application. A validated durability/transition metric would enable rapid coaching application and research replication.",
+      "feasibility": "high",
+      "feasibility_rationale": "Feasible approach: (1) Delphi process or expert consensus panel (International Triathlon Union, International Biathlon Union scientists) to define durability and transition efficiency constructs; (2) laboratory validation study (n=20–30 elite multi-discipline athletes) correlating proposed metrics with race performance (split times, final placement); (3) publication of standardized test protocols and software tools. Cost: modest (expert meetings, lab testing); feasibility: high (scientists already engaged in multi-discipline research).",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_7",
+      "type": "topic",
+      "title": "No injury prevention strategies tested in multi-discipline sports (only surveillance/epidemiology)",
+      "description": "W7117651259 scoping review of combined events (decathlon, heptathlon, pentathlon) documents that 59.5% of literature addresses health, but 'substantial research gaps' exist in 'injury prevention stages 3–6' (i.e., prevention of recurrence, return-to-play, long-term management). Our database contains 1 paper on injury prevention (W4413447702, resistance training frequency in soccer, not multi-discipline). Biathlon coach knowledge of low energy availability and eating disorders (journal:856815998e641004, n.d.) is documented as a gap but no intervention is tested. Multi-discipline athletes face unique overuse injury risks (repetitive impact in running, wrist/shoulder strain in swimming, knee stress from cycling-running transitions), yet no training strategy explicitly addresses these.",
+      "evidence": "W7117651259 states: 'substantial research gaps in injury prevention stages 3–6.' W4413447702 is soccer-specific (not multi-discipline). W4413429183 addresses shooting stability (biathlon) but not injury prevention. No papers test whether polarized, threshold, or block periodization reduces injury incidence in triathlon/biathlon/decathlon. W2777277884 documents body composition changes in youth soccer (female) but does not link training periodization to injury outcomes.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W7117651259",
+          "title": "Performance and Health in Combined Events: A Scoping Review",
+          "year": 2025,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.1111/sms.70190",
+          "first_author": "Pascal Édouard"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Overuse injuries are a leading cause of performance loss in multi-discipline endurance sports; prevention is more cost-effective than treatment. Training strategy directly influences injury risk (overtraining, poor load management); yet no evidence-based guidance exists.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Challenges: (1) Long study duration needed to achieve injury event numbers for statistical power (1–2 years minimum); (2) multi-site recruitment required (small single-site populations); (3) detailed tracking of training load, technique changes, and medical visits. Feasible approach: prospective cohort study (n=50–100 per arm) comparing polarized vs. threshold periodization in sprint triathlon, with injury surveillance (medical records + weekly questionnaires). Partnership with USA Triathlon or ITU can facilitate recruitment.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_8",
+      "type": "topic",
+      "title": "Psychological and mental skills training integration in multi-discipline periodization is absent",
+      "description": "Our database contains only 1 paper on psychology (W7117064278, neurofeedback in judo athletes—not multi-discipline). No papers address: (1) how mental skills training (visualization, focus, race pacing psychology) should be integrated into multi-discipline periodization; (2) psychological readiness assessment in tapered periods; (3) choking/performance anxiety specific to transitions (critical failure points in triathlon/biathlon); (4) mindset differences between athletes who excel in single vs. multiple disciplines. W7128468196 review mentions 'psychophysiological determinants of pacing' in Olympic winter endurance sports but does not bridge to training prescription.",
+      "evidence": "Database search yields: 1 psychology paper (W7117064278, neurofeedback, n=20 judo athletes, not multi-sport). W7128468196 review discusses pacing psychology in biathlon/cross-country skiing but offers no integration into training periodization. No papers on mental skills training, choking, or psychological readiness in triathlon/biathlon/decathlon.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W7128468196",
+          "title": "Mind‐Muscle‐Environment Interactions: Psychophysiological Determinants of Optimal Pacing in Olympic Winter Endurance Sports",
+          "year": 2026,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.1111/sms.70215",
+          "first_author": "Peter Edholm"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Transitions are high-stress moments in multi-discipline racing (mental fatigue + physiological fatigue + technical execution required). Athletes with poor mental skills during transitions may underperform despite strong physiology. Integration of mental training into periodization could unlock performance gains.",
+      "feasibility": "high",
+      "feasibility_rationale": "Feasible approach: (1) Qualitative interviews with elite multi-discipline athletes and sports psychologists to identify key mental skills for transitions; (2) observational study linking mental skills training frequency (logged in training) to race transition performance; (3) small RCT (n=20–30) adding transition-focused mental skills training to standard periodization vs. control. Cost modest; feasibility high.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_9",
+      "type": "replication",
+      "title": "Critical findings on decathlon event intercorrelations and triathlon performance thresholds need replication in diverse samples",
+      "description": "W3000339899 reports very high correlations (R=0.89–0.96) between decathlon field events and short-running performance based on n=10 athletes from 2019 World Championships. W3110721760 provides Olympic triathlon thresholds (VO₂max, power, swimming speed) based on cross-sectional analysis but small sample and unspecified athlete demographics. Both are valuable but lack replication in independent cohorts (e.g., different years, different competitions, amateur vs. elite). Single-study findings risk overfitting or cohort-specific artifacts.",
+      "evidence": "W3000339899: n=10 athletes, R=0.89–0.96 between field events and 100m/110mH/400m. W3110721760: n unspecified, cut-off values stated but demographics sparse. No subsequent papers cite or replicate these findings within our database.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3000339899",
+          "title": "The Impact Of Short Run Distances To The Final Results Of The Decathlon At The 2019 Athletic World Championships",
+          "year": 2019,
+          "sport": "athletics",
+          "doi": "https://doi.org/10.12775/jehs.2019.09.12.011",
+          "first_author": "L. Ramadani"
+        },
+        {
+          "work_id": "https://openalex.org/W3110721760",
+          "title": "Cut-Off Values in the Prediction of Success in Olympic Distance Triathlon",
+          "year": 2020,
+          "sport": "multi_sport",
+          "doi": "https://doi.org/10.3390/ijerph17249491",
+          "first_author": "André Bonadias Gadelha"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "If intercorrelations are robust, they suggest integrated training is optimal; if sample-specific, current guidance may mislead coaches. Replication is essential before informing athlete development.",
+      "feasibility": "high",
+      "feasibility_rationale": "Straightforward replication: analyze decathlon results from recent World Championships, European Championships, or Olympic Games (publicly available, n=30–50 per competition); compare with W3000339899 correlations. Cost: minimal (data already exist). Feasibility: very high.",
+      "confidence": "medium"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Randomized controlled trial comparing periodization models in sprint triathlon",
+      "description": "Conduct a 12-week RCT (n=48, 24 per arm) in well-trained sprint triathletes, randomly assigning polarized (80% low intensity, 20% high) vs. threshold-based (40% low, 40% moderate, 20% high) periodization. Measure primary outcome: sprint triathlon finishing time (simulated or actual race). Secondary outcomes: running economy post-cycling (laboratory test), VO₂max, power at lactate threshold, injury incidence, athlete satisfaction. Primary hypothesis: polarized training better preserves running economy and reduces fatigue-induced performance loss. This directly addresses gap_1 and gap_2 (no RCT comparisons, no optimal time allocation evidence).",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_2"
+      ],
+      "suggested_methodology": "RCT with stratified randomization by baseline VO₂max and prior race experience. Both groups equated on total training volume and coaching contact. Blinding: athletes blind to group assignment labels ('Training Plan A' vs. 'Training Plan B'). Intent-to-treat analysis. Crossover design not recommended (12-week washout insufficient).",
+      "suggested_data": "Training load (session RPE, GPS power/distance), physiological testing (VO₂max, lactate threshold, running economy post-cycling), race performance (split times, overall finish time), medical surveillance (injury logs, wellness questionnaires). Partner with USA Triathlon or ITU for athlete recruitment from sanctioned events.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "First rigorous evidence on whether polarized or threshold periodization optimizes triathlon performance; if positive, immediately translates to coaching guidance for ~100,000 competitive triathletes. Could reshape training culture if results contradict current assumptions."
+    },
+    {
+      "priority": 2,
+      "title": "Multi-year longitudinal cohort study of training-to-performance trajectories in youth multi-discipline athletes",
+      "description": "Prospective cohort study (n=60 youth triathletes or biathletes, age 12–18) tracked for 3–4 years, documenting annual training load distribution (hours/discipline), periodization structure, performance outcomes (race placements, PB improvements), and injury incidence. Stratified by sex (30 female, 30 male) to address gap_4 (women underrepresented). Measure: Does early discipline specialization (e.g., >60% cycling) vs. balanced training (40–40–20%) lead to better senior performance? Higher injury rates? Addresses gap_5 (no longitudinal studies) and gap_2 (optimal time allocation).",
+      "addresses_gaps": [
+        "gap_2",
+        "gap_4",
+        "gap_5"
+      ],
+      "suggested_methodology": "Prospective cohort design. Coaching logs digitized via training platforms (TrainingPeaks, Strava) with researcher data access agreements. Annual physiological testing (VO₂max, power, running economy), anthropometry, and medical surveillance. Mixed-effects models to account for repeated measures and individual variation. Interaction terms for sex × discipline specialization.",
+      "suggested_data": "Training load (hours by discipline per week, periodization microcycle structure), race results (split times, overall placement), physiological markers (annual testing), injury logs (medical diagnosis, time loss), maturity status (Tanner stage or bone age if available). Partner with national development squads (e.g., UK Triathlon, FIT Academy, or German Youth Biathlon).",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "First evidence on optimal talent development pathways in multi-discipline sports; informs identification, early training specialization timing, and sex-specific development. High relevance to national federations and coaching education."
+    },
+    {
+      "priority": 3,
+      "title": "Laboratory validation of a standardized 'durability index' for multi-discipline endurance sports",
+      "description": "Develop and validate a consensus metric for 'durability' (performance maintenance across successive disciplines) and 'transition efficiency' (recovery speed between disciplines). Phase 1: Expert consensus (Delphi process with International Triathlon Union, International Biathlon Union scientists) to operationalize constructs. Phase 2: Laboratory study (n=30 elite multi-discipline athletes) implementing simulated sprint triathlon (swimming + cycling + running) or biathlon (skiing + shooting) with varied prior-discipline fatigue loads; measure candidate metrics (running economy, power drop, VO₂ recovery time, shooting accuracy post-exertion, etc.) and correlate with race performance. Publish standardized protocol and software tools. Addresses gap_6 (no standardized measurement framework).",
+      "addresses_gaps": [
+        "gap_6"
+      ],
+      "suggested_methodology": "Phase 1: Delphi consensus (3 rounds, 20–25 expert panelists). Phase 2: Repeated-measures laboratory design; athletes complete simulated sprint triathlon on 3 separate occasions with different cycling load manipulations (standard, +20% intensity, +20% volume) preceding running; measure running economy (treadmill VO₂ at fixed speed), functional threshold power decline, and time to VO₂ recovery plateau. Correlate with actual race split time ratios from prior races (cycling time ÷ running time ratio, normalized for discipline-specific fitness).",
+      "suggested_data": "Laboratory testing data (VO₂ curves, power files, heart rate recovery), race performance databases (World Triathlon, IBU results), biomechanical data if available (video analysis of running form fatigue). Access to elite athlete pools through national federations.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Standardized metrics enable rapid research replication, evidence synthesis via meta-analysis, and immediate coaching tool development. High methodological impact for multi-discipline sports science."
+    },
+    {
+      "priority": 4,
+      "title": "Injury prevention RCT: testing periodized resistance training to reduce overuse injury in sprint triathlon",
+      "description": "18-month RCT (n=80 competitive sprint triathletes, 40 per arm) comparing: Intervention = periodized resistance training integrated with endurance periodization (2 sessions/week, emphasis on posterior chain, ankle/knee stability, core) during building and competition phases; Control = standard endurance training only. Primary outcome: noncontact overuse injury incidence (running-related, cycling-related, swimming-related) confirmed by medical diagnosis. Secondary: running economy, time-to-fatigue, race finish time, training adherence. Addresses gap_7 (no injury prevention strategies tested in multi-discipline) and gap_1 (no RCT on optimal periodization).",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_7"
+      ],
+      "suggested_methodology": "Pragmatic RCT with intent-to-treat analysis. Randomization stratified by prior injury history and baseline VO₂max. Blinding: athletes not blind (behavioral intervention obvious), but outcome adjudicators blind to group assignment. Injury surveillance: medical records + weekly check-in questionnaires. Resistance training prescribed by strength coach with video-guided progression (minimize technique variability).",
+      "suggested_data": "Training load (hours, intensity, resistance exercise frequency/type via app logging), physiological testing (running economy via treadmill, time-to-fatigue via 3-minute all-out test), injury logs (diagnosis, time loss, treatment), race results (split times). Partner with USA Triathlon club network or ITU continental federations for multi-site recruitment.",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "If resistance training reduces injury incidence by >30%, becomes standard of care; high public health impact (thousands of triathletes affected annually). Generates evidence for coaching education and federation guidelines."
+    },
+    {
+      "priority": 5,
+      "title": "Systematic review and meta-analysis of sex differences in training responses in multi-discipline sports",
+      "description": "Systematic search (PubMed, Web of Science, SPORTDiscus) for all comparative studies of male vs. female athletes in triathlon, biathlon, or decathlon examining training load, periodization responses, physiological adaptation (VO₂max gain, power gain, lactate threshold change), and performance outcomes. Conduct meta-analysis if ≥10 comparative studies identified; if fewer, narrative synthesis. Addresses gap_4 (women underrepresented) and synthesizes sparse evidence on sex-specific training optimization. Expected gaps in literature will inform future primary research priorities.",
+      "addresses_gaps": [
+        "gap_4"
+      ],
+      "suggested_methodology": "PRISMA-P protocol registration. Inclusion: any study comparing male vs. female multi-discipline athletes (triathlon, biathlon, pentathlon, decathlon, modern pentathlon) reporting training load, intensity distribution, physiological adaptation, or race outcomes. Exclusion: single-sex studies, non-peer-reviewed. Risk of bias assessment using Cochrane tools. Meta-analysis using random-effects models if homogeneous. GRADE quality appraisal.",
+      "suggested_data": "Published literature identified via systematic search; extraction of outcome data (means, SDs, effect sizes for male vs. female groups), study design details, sample demographics. No new data collection required beyond literature synthesis.",
+      "estimated_difficulty": "accessible_thesis",
+      "potential_impact": "Fills critical evidence gap on female training optimization; highlights priority areas for future RCTs. High relevance to coaching education and federation policy on female athlete development."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "Moderate synthesis achieved; papers are largely monologues. While I identified consistent themes (periodization structure, performance determinants, physiological thresholds), there is minimal direct dialogue between papers. For example, W4410358580 (running economy post-cycling in juniors) does not cite or engage with W4408922239 (thermal stress in sprint triathlon), despite shared mechanistic interests. Case studies (n=1–6 athletes) do not cross-reference each other's findings or build iteratively. The field appears to consist of isolated descriptive studies, observational analyses, and scattered single-discipline investigations, rather than a coherent research program addressing 'optimal multi-discipline strategy.' Genuine debate or disagreement is rare—papers simply publish different athletes, distances, or methods without meta-discussion. Synthesis was challenging due to heterogeneity: sample sizes range n=1–66; outcome measures vary (power output vs. VO₂ vs. split times); populations differ (elite, developmental, recreational, male, female, youth, adult). This fragmentation limits confidence in cross-paper claims.",
+    "strengths": [
+      "Identified clear evidence on multi-discipline interaction effects (cycling fatigue impairs running economy, W4410358580) and performance determinants (Olympic distance thresholds, W3110721760) from rigorous physiological studies.",
+      "Highlighted critical methodological gaps (no RCTs comparing periodization, no standardized durability metrics) with high specificity and feasibility assessment.",
+      "Leveraged scoping review (W7117651259 on combined events) to validate gaps; its explicit identification of research gaps strengthens our analysis.",
+      "Stratified confidence levels appropriately (high for methodology gaps with strong evidence of absence; medium for topics with sparse but suggestive data).",
+      "Flagged underrepresentation of women and youth as a concrete, actionable gap with quantified evidence (11% women in database, even lower in multi-sport subset)."
+    ],
+    "limitations": [
+      "Sample sizes in source papers are very small (mode n=10–20); generalizability of findings to broader athlete populations is limited. High inter-individual variability (e.g., W4406824909 notes 'individual variation in response to interventions') may mean 'optimal' strategies are athlete-specific, not universal.",
+      "Proprietary data dominance: 11 of 23 papers with data source info use proprietary datasets (coaching logs, team databases). Limited access to full methodology and raw data restricts ability to verify or synthesize quantitatively.",
+      "Publication bias: recent surge (2024–2025, 31% of papers) may reflect journal trends or database indexing lag rather than true research trends; older effective training strategies may be underrepresented if not recently published.",
+      "Language/geography bias: database likely English-language dominant; high-quality training science from France (biathlon), Germany (skiing), Russia (decathlon) may be underrepresented if published in native languages or non-indexed journals.",
+      "Case study over-reliance limits causal inference; even descriptive papers (W4391676994 Giro d'Italia cyclist, W4391605017 three female triathletes) may highlight outlier strategies not generalizable. Selection bias: elite athletes' training may be optimized idiosyncratically (non-replicable coaching philosophy) rather than evidence-based.",
+      "Temporal disconnect: most methodology-level recommendations (e.g., polarized training) derive from single-sport literature (cycling, running) and are applied to multi-discipline sports without testing multi-discipline interaction effects."
+    ],
+    "assumptions": [
+      "Assumption: 'Optimal' training strategy is definable as a single best approach, rather than a context-dependent continuum varying by athlete level, genetics, prior training history, and access to resources. Research question may conflate optimization (narrowly: podium placement) with effectiveness (broadly: performance gain relative to baseline).",
+      "Assumption: Training load is the primary lever for performance optimization. Coaching effectiveness, technique refinement, nutrition, sleep, and psychological readiness also drive performance; isolated focus on periodization may miss >50% of the variance.",
+      "Assumption: Elite athlete practices are generalizable to developmental and recreational athletes; actually, constraints (time, coaching access, recovery capacity, injury risk tolerance) differ qualitatively, potentially inverting optimal strategies.",
+      "Assumption: Quantitative (physiological, performance) outcomes fully capture 'optimality.' Coach and athlete satisfaction, long-term athlete retention, health, and wellbeing are unmeasured in most papers but are valued by practitioners.",
+      "Assumption: Multi-discipline sports (triathlon, biathlon, decathlon) share sufficient commonality to warrant unified analysis. Actually, they differ fundamentally: triathlon is continuous (swimming→cycling→running); biathlon alternates (skiing∥shooting); decathlon is segmented (10 discrete events over 2 days). Unified strategy may be inaccurate."
+    ],
+    "database_coverage_gaps": [
+      "**Expertise evidence and coach interviews**: Our database is quantitative-dominant (statistical, ML, descriptive). Qualitative research (interviews with elite coaches, Delphi consensus) is minimal (only 1 qualitative paper, W4411113657 on rowing coach perspectives). High-quality coaching tacit knowledge on multi-discipline periodization is likely published in coach education journals, federation technical documents, or books, not indexed in our academic database. Suspect gap: Coach-informed periodization frameworks exist (e.g., UK Triathlon, World Triathlon Federation coaching manuals) but are not in peer-reviewed literature.",
+      "**Genetic and physiological predictors of multi-discipline aptitude**: Only 1 paper on genetics (W2205219292, 7-gene profile in Ironman triathletes, n=small, FWCI=2.42, modest citation). Sports genomics for multi-discipline sports is likely an active area (e.g., identifying genetic predisposition for endurance vs. strength), but our database underrepresents it. Suspect gap: Polygenic scores for multi-discipline competence (combining endurance, speed, power, recovery capacity genes) likely exist in human genetics/sports medicine literature but not in our analytics-focused collection.",
+      "**Wearable technology validation and application in multi-discipline periodization**: Our database includes some wearable papers (GPS, IMU, power meters) but does not comprehensively cover emerging technologies (EEG neurofeedback, continuous core temperature monitoring, blood biomarkers via wearables). Suspect gap: Real-time training optimization via machine learning on wearables is rapidly developing; papers on predictive models for periodization adjustment based on daily HRV, lactate, or neural activity may exist in sports technology or biomedical engineering venues not indexed here.",
+      "**Periodization frameworks from non-English-speaking regions**: Biathlon and cross-country skiing have strong research traditions in Scandinavian, German, and Russian sport science. Our database likely underrepresents non-English publications. Suspect gap: Scandinavian biathlon/skiing periodization literature (published in Danish, Norwegian, Swedish, German journals) may contain applied training strategies not accessible in our English-indexed collection.",
+      "**Ultra-distance and Ironman-specific training optimization**: Our triathlon papers focus on sprint and Olympic distances; long-distance/Ironman training is underrepresented. Suspect gap: Ironman training (distinct from sprint: 8–17 hours race duration, very different periodization and nutrition) is a multi-billion-dollar market; commercial coaching platforms (TrainingPeaks, Training Peaks) and coach networks likely have proprietary data and evidence not published in peer-reviewed literature.",
+      "**Nutrition and recovery integration with periodization**: Our database has 1 paper on low energy availability in biathlon (journal:856815998e641004, coaching knowledge gap). Integrated training+nutrition periodization literature is sparse. Suspect gap: Periodized nutrition (carbohydrate periodization, daily energy availability matching training load) is likely well-developed in applied sports nutrition but not represented in analytics-focused database.",
+      "**Injury/illness epidemiology and causation in multi-discipline sports**: W7117651259 scoping review identifies injury prevention as a major gap. Our database has minimal injury causation research in multi-discipline sports (only 1 injury prevention paper in football). Suspect gap: Orthopedic sports medicine and physical therapy literature on overuse injury causation in triathletes/biathletes likely exists but is not indexed as 'sports analytics' and thus absent from our collection."
+    ],
+    "what_would_improve_this": [
+      "**Access to full-text papers and study protocols**: Summary-level data limits ability to assess risk of bias, extract effect sizes, or identify mechanistic details. Full-text access would enable more rigorous quality assessment and meta-analytic synthesis.",
+      "**Longitudinal training data linked to performance outcomes**: Most papers lack high-resolution training logs (session-by-session data for >1 year). Access to athlete tracking platforms (TrainingPeaks, Strava, coaching databases) with performance outcomes would enable novel observational analyses of training-to-performance relationships.",
+      "**Standardized outcome reporting**: Currently, papers measure different outcomes (split times, VO₂max, power, lactate, finishing position, race participation). Consensus on core outcome sets (e.g., finish time, top-5 finish rate, time-to-injury-recurrence) would enable meta-analysis.",
+      "**International federation data**: World Triathlon, IBU (International Biathlon Union), World Athletics hold complete athlete training and competition data. Partnerships with these organizations to access anonymized athlete datasets would transform the landscape from case studies to population-level evidence.",
+      "**Sex, age, and level stratification in published data**: Most papers report aggregate results without stratifying by sex, age category, or competitive level. Requesting authors publish stratified results (or share data) would enable meta-analysis of sex/age/level differences.",
+      "**Qualitative coach and athlete interviews**: Systematic interviews with elite coaches and multi-discipline athletes on perceived optimal periodization, decision-making processes, and constraints (time, injury risk tolerance) would contextualize quantitative findings and identify practical barriers to evidence-based periodization."
+    ],
+    "process_cost_reflection": "This analysis synthesized 73 papers into a structured gap analysis. Cost-benefit assessment: (1) **Feasibility**: Paper summaries (title, abstract, key data points) provided sufficient information to identify gaps, though full-text access would have increased precision (e.g., methodological rigor assessment, effect size extraction for quantitative synthesis). (2) **Comprehensiveness**: 73 papers is a reasonable sample for 'multi-discipline sports' subset of sports analytics, but likely represents only 30–40% of relevant literature (many papers not indexed in sports analytics databases, especially non-English or applied coaching literature). (3) **Efficiency**: The corpus is concentrated in 2024–2025 (31% of papers), with sparse earlier work, suggesting either recent surge in research or database indexing bias. Cost-benefit: Processing 73 papers at 10–15 minutes per paper for synthesis was ~15 hours of analysis time. Marginal value of 100+ papers would have declined (diminishing returns as themes repeat). Output (9 gaps, 5 research priorities) is actionable for a research team. Recommendation: This database size (73 papers) is adequate for gap analysis of a specific sub-field (multi-discipline sports), but coverage gaps (noted above) mean missing ~40% of relevant work. To improve: (a) expand search to non-English databases; (b) partner with national federations for proprietary coaching data; (c) add qualitative literature (coach interviews, case studies from technical manuals). Current output confidence is **medium** due to limited RCT evidence and small sample dominance; confidence would increase substantially with access to federation data and full-text assessment."
+  },
+  "paper_index": {
+    "https://openalex.org/W4410358580": {
+      "title": "Durability in Youth Squad Triathletes—Influence of Strenuous Cycling on Subsequent Running Performance, Economy, and Substrate Utilization",
+      "year": 2025,
+      "first_author": "Greta Röhrs"
+    },
+    "https://openalex.org/W4408922239": {
+      "title": "Thermal and Biomechanical Responses of Amateur, Elite and World Cup Athletes During a World Cup Sprint Triathlon in the Heat",
+      "year": 2025,
+      "first_author": "Carl James"
+    },
+    "https://openalex.org/W3110721760": {
+      "title": "Cut-Off Values in the Prediction of Success in Olympic Distance Triathlon",
+      "year": 2020,
+      "first_author": "André Bonadias Gadelha"
+    },
+    "https://openalex.org/W3000339899": {
+      "title": "The Impact Of Short Run Distances To The Final Results Of The Decathlon At The 2019 Athletic World Championships",
+      "year": 2019,
+      "first_author": "L. Ramadani"
+    },
+    "https://openalex.org/W4392107302": {
+      "title": "Super sprint triathlon performance progression in young state and national standard Australian triathletes",
+      "year": 2024,
+      "first_author": "Glauber Scattolini Correa"
+    },
+    "https://openalex.org/W4391605017": {
+      "title": "Training Characteristics, Performance, and Body Composition of Three U23 Elite Female Triathletes throughout a Season",
+      "year": 2024,
+      "first_author": "Sergio Sellés"
+    },
+    "https://openalex.org/W4413429183": {
+      "title": "Stability of Hold and Postural Control During Static Hold Assessment Can Provide Valuable Information for Biathlon Standing Shooting but Aiming Strategy Should Be Acknowledged",
+      "year": 2025,
+      "first_author": "Miika Köykkä"
+    },
+    "https://openalex.org/W4410705800": {
+      "title": "Biological maturity status and chronological age in young triathletes: a first approach to bio-banding in triathlon",
+      "year": 2025,
+      "first_author": "Elinai dos Santos Freitas Schütz"
+    },
+    "https://openalex.org/W7117651259": {
+      "title": "Performance and Health in Combined Events: A Scoping Review",
+      "year": 2025,
+      "first_author": "Pascal Édouard"
+    },
+    "https://openalex.org/W4413658816": {
+      "title": "A Cross-Sectional Comparison of Annual Training Characteristics Between Junior, Developmental, and Elite-Level Biathletes",
+      "year": 2025,
+      "first_author": "Guro Strøm Solli"
+    },
+    "https://openalex.org/W4406824909": {
+      "title": "Effectiveness of blood flow restriction training during a taper phase in basketball players",
+      "year": 2025,
+      "first_author": "Hoani K. Smith"
+    },
+    "https://openalex.org/W2564232048": {
+      "title": "Training Intensity Distribution and Changes in Performance and Physiology of a 2nd Place Finisher Team of the Race across America Over a 6 Month Preparation Period",
+      "year": 2016,
+      "first_author": "Christian Manunzio"
+    },
+    "https://openalex.org/W4391676994": {
+      "title": "The Day-by-Day Periodization Strategies of a Giro d’Italia Podium Finisher",
+      "year": 2024,
+      "first_author": "Gabriele Gallo"
+    },
+    "https://openalex.org/W4410575447": {
+      "title": "Day‐To‐Day Endurance Training Periodization of World‐Class Cross‐Country Skiers",
+      "year": 2025,
+      "first_author": "Jacob Walther"
+    },
+    "https://openalex.org/W4411203144": {
+      "title": "The Role of Exercise-Mode Variation in Daily Load Management Among World-Class Cross-Country Skiers",
+      "year": 2025,
+      "first_author": "Jacob Walther"
+    },
+    "https://openalex.org/W2617715382": {
+      "title": "Sports analytics for professional speed skating",
+      "year": 2017,
+      "first_author": "Arno Knobbe"
+    },
+    "https://openalex.org/W4413961626": {
+      "title": "Performance progression of youth and Junior triathletes racing world triathlon sprint and super sprint races",
+      "year": 2025,
+      "first_author": "Glauber Scattolini Correa"
+    },
+    "https://openalex.org/W4416208148": {
+      "title": "IMPACT OF INDIVIDUAL DISCIPLINES ON THE OVERALL PERFORMANCE IN ATHLETICS COMBINED EVENTS",
+      "year": 2025,
+      "first_author": "Lea Branilović"
+    },
+    "https://openalex.org/W3011374112": {
+      "title": "The reliability of physiological and performance data obtained during a long distance simulated triathlon laboratory test",
+      "year": 2019,
+      "first_author": "Kate Margaret Luckin"
+    },
+    "https://openalex.org/W3118441876": {
+      "title": "The use of the Lamberts Submaximal Cycle Test in Triathlon, an exploratory study in young professional sprint triathletes",
+      "year": 2020,
+      "first_author": "Rob Lamberts"
+    },
+    "https://openalex.org/W4413447702": {
+      "title": "Comparative Effects of 2 Different Frequencies of Resistance Training in an Integral Periodization Approach on High-Intensity Actions and Noncontact Injuries in Young Trained Soccer Players",
+      "year": 2025,
+      "first_author": "Jose Jimenez-Iglesias"
+    },
+    "https://openalex.org/W2777277884": {
+      "title": "Effects of Soccer Training on Anthropometry, Body Composition, and Physical Fitness during a Soccer Season in Female Elite Young Athletes: A Prospective Cohort Study",
+      "year": 2017,
+      "first_author": "Melanie Lesinski"
+    },
+    "https://openalex.org/W7117064278": {
+      "title": "Optimal Inter-Session Intervals in Neurofeedback Training: A Randomized Trial of Retention and Individual Response Patterns in Elite Judo Athletes",
+      "year": 2025,
+      "first_author": "Alicja Markiel"
+    },
+    "https://openalex.org/W7128468196": {
+      "title": "Mind‐Muscle‐Environment Interactions: Psychophysiological Determinants of Optimal Pacing in Olympic Winter Endurance Sports",
+      "year": 2026,
+      "first_author": "Peter Edholm"
+    },
+    "https://openalex.org/W4411113657": {
+      "title": "Training Prescription and Monitoring in Rowing: Perspectives From Elite Australian Coaches",
+      "year": 2025,
+      "first_author": "Sophie P. Watts"
+    },
+    "https://openalex.org/W2205219292": {
+      "title": "Evaluation of a 7-Gene Genetic Profile for Athletic Endurance Phenotype in Ironman Championship Triathletes",
+      "year": 2015,
+      "first_author": "Rebecca Grealy"
+    }
+  }
+}

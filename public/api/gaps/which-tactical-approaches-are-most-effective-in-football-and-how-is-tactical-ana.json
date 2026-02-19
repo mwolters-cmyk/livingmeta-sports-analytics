@@ -1,0 +1,950 @@
+{
+  "description": "Full gap analysis: \"Which tactical approaches are most effective in football, and how is tactical analysis measured?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T19:00:03.910Z",
+  "slug": "which-tactical-approaches-are-most-effective-in-football-and-how-is-tactical-ana",
+  "question": "Which tactical approaches are most effective in football, and how is tactical analysis measured?",
+  "created_at": "2026-02-16T21:20:14.231442",
+  "analyzed_at": "2026-02-16T21:22:33.575160",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 146,
+  "cost_usd": 0.0841,
+  "analysis_confidence": "high",
+  "scope_assessment": "This is a well-scoped but expansive two-part question: (1) effectiveness of tactics, and (2) measurement methods. The question is neither too narrow nor too broad—it sits at the heart of applied sports analytics. However, 'most effective' is ambiguous: effective for what outcome (winning, goal-scoring, possession retention, defensive solidity)? And 'tactical approaches' spans formations, pressing, transitions, set pieces, and passing styles. The literature addresses these implicitly through outcome correlation studies but rarely isolates causality. The second part (measurement) is better covered by methodological papers. The question would benefit from clarity on sport level (elite vs. grassroots), gender, and outcome of interest.",
+  "database_coverage": "Excellent coverage of tactical measurement methods (146 papers, all on tactical analysis). Strong in: deep learning for tactic detection, passing network analysis, formation identification, defensive/offensive pattern mining, and set-piece analysis. Moderate coverage of: causal effectiveness (most papers are correlational), women's football (10 papers, 6.8%), non-European leagues (sparse), and grassroots football. Notable gap: very few studies directly compare tactic effectiveness across competition levels or with experimental/quasi-experimental designs. The 2024-2025 surge (93 papers) suggests emerging interest in AI-driven tactic discovery and explainability.",
+  "confidence_explanation": "Strong confidence due to large sample size (146 papers), consistent theme focus (100% on tactical analysis), and breadth of methodologies represented (10+ distinct methods). Confidence is tempered by: (1) publication year skew (63% from 2024-2025, risking recency bias and incomplete maturity of newer work); (2) low effect size/CI reporting (only 6 and 7 papers respectively, making evidence strength assessment difficult); (3) heavy reliance on proprietary data (17 restricted, 8 proprietary vs. 7 fully open), limiting reproducibility and cross-validation; (4) minimal replication studies. Synthesis across papers is challenging because most are methodological/exploratory rather than hypothesis-testing (few true experimental designs). This analysis would be significantly strengthened by full-text access and access to restricted datasets.",
+  "landscape": {
+    "summary": "Football tactical analysis has evolved from manual video observation to data-driven AI-assisted systems. The field is dominated by descriptive studies identifying patterns (passing networks, formations, pressing intensity, transition play) and machine learning approaches automating tactic detection. Key findings cluster around four themes: (1) formation and passing patterns correlate with team performance, (2) defensive compactness and pressing intensity are measurable via tracking data, (3) set pieces (corners, throw-ins) have exploitable tactical patterns, and (4) transition play (defense-to-offense, offense-to-defense) is tactically critical but under-analyzed. However, evidence for 'which tactics are *most effective*' remains largely correlational; few studies establish causal links between specific tactics and match outcomes. Measurement has shifted from manual notational analysis to automated detection via deep learning on tracking and event data, enabling real-time coaching support (e.g., TacticAI). The field is fragmentary—papers identify tactical metrics independently rather than building cumulative evidence.",
+    "key_findings": [
+      {
+        "finding": "Team formation and passing network topology predict match outcomes (win/loss classification 67-74% accuracy)",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3140924543",
+            "title": "Modelling team performance in soccer using tactical features derived from position tracking data",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.1093/imaman/dpab006",
+            "first_author": "Floris Goes"
+          },
+          {
+            "work_id": "https://openalex.org/W4409570740",
+            "title": "Identification and optimization of high-performance passing networks in football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1103/physreve.111.044313",
+            "first_author": "Andrés Chacoma"
+          },
+          {
+            "work_id": "https://openalex.org/W4415619715",
+            "title": "Positional Influence in Football Passing Networks: An Analysis of the Tactical Systems and Match Outcomes",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/app152111513",
+            "first_author": "Ricardo Alves"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Defensive compactness (inter-team distance, effective playing space) correlates with defensive success; however, empirical support is mixed—some studies find compactness important, others do not",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4376636437",
+            "title": "Is a compact organization important for defensive success in elite soccer? – Analysis based on player tracking data",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/17479541231172695",
+            "first_author": "Leander Forcher"
+          },
+          {
+            "work_id": "https://openalex.org/W4384923235",
+            "title": "Prediction of defensive success in elite soccer using machine learning - Tactical analysis of defensive play using tracking data and explainable AI",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/24733938.2023.2239766",
+            "first_author": "Leander Forcher"
+          },
+          {
+            "work_id": "https://openalex.org/W3082987535",
+            "title": "Using Optical Tracking System Data to Measure Team Synergic Behavior: Synchronization of Player-Ball-Goal Angles in a Football Match",
+            "year": 2020,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/s20174990",
+            "first_author": "Daniel Carrilho"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Counterattacks and offensive transitions show detectable patterns; automated detection of counterpress/counterpressing is feasible (54 citations for W3179399922 suggests impact)",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3179399922",
+            "title": "Data-driven detection of counterpressing in professional football",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.1007/s10618-021-00763-7",
+            "first_author": "Pascal Bauer"
+          },
+          {
+            "work_id": "https://openalex.org/W3094428387",
+            "title": "The tactics of successful attacks in professional association football: large-scale spatiotemporal analysis of dynamic subgroups using position tracking data",
+            "year": 2020,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/02640414.2020.1834689",
+            "first_author": "Floris Goes"
+          },
+          {
+            "work_id": "https://openalex.org/W4321795163",
+            "title": "Towards Expected Counter - Using Comprehensible Features to Predict Counterattacks",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.1007/978-3-031-27527-2_1",
+            "first_author": "Henrik Biermann"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Set pieces (corners, throw-ins) have repeatable, analyzable tactical patterns; corner execution effectiveness is measurable and predictable (TacticAI 90% expert approval rate)",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4392947498",
+            "title": "TacticAI: an AI assistant for football tactics",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41467-024-45965-x",
+            "first_author": "Zhe Wang"
+          },
+          {
+            "work_id": "https://openalex.org/W3112956238",
+            "title": "Routine Inspection: A Playbook for Corner Kicks",
+            "year": 2020,
+            "sport": "football",
+            "doi": "https://doi.org/10.1007/978-3-030-64912-8_1",
+            "first_author": "Laurie Shaw"
+          },
+          {
+            "work_id": "https://openalex.org/W4391655216",
+            "title": "Automated Discovery of Successful Strategies in Association Football",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/app14041403",
+            "first_author": "Omar Muñoz"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Expected goals (xG) and possession value metrics capture shooting decision quality; teams sub-optimally select shots (leaving 0.5–1.5 goals/season on table by not shooting enough from distance)",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3147376827",
+            "title": "Leaving Goals on the Pitch: Evaluating Decision Making in Soccer",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.48550/arxiv.2104.03252",
+            "first_author": "Maaike Van Roy"
+          },
+          {
+            "work_id": "https://openalex.org/W4401112308",
+            "title": "The Finishing Space Value for Shooting Decision-Making in High-Performance Football",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports12080208",
+            "first_author": "Nelson Caldeira"
+          },
+          {
+            "work_id": "https://openalex.org/W4416793117",
+            "title": "The strategy tradeoff between risk and reward in soccer: Expected ball gain and expected possession value in Bundesliga",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/17479541251389831",
+            "first_author": "Leander Forcher"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Tactical formations are dynamic (change mid-match), and automated detection methods exist but assume static formations in many analyses, limiting accuracy",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4319938163",
+            "title": "Putting team formations in association football into context",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.3233/jsa-220620",
+            "first_author": "Pascal Bauer"
+          },
+          {
+            "work_id": "https://openalex.org/W6892106873",
+            "title": "SoccerCPD: Formation and Role Change-Point Detection in Soccer Matches Using Spatiotemporal Tracking Data",
+            "year": 2022,
+            "sport": "football",
+            "doi": "https://doi.org/10.48550/arxiv.2206.10926",
+            "first_author": null
+          },
+          {
+            "work_id": "https://openalex.org/W4407231335",
+            "title": "Statistical analysis of team formation and player roles in football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.48550/arxiv.2502.03342",
+            "first_author": "Ali Baouan"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Women's football tactical patterns differ from men's (e.g., play style in 2023 Women's World Cup) but remain under-studied (only 10 papers, 6.8%)",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4393234237",
+            "title": "Relationship between key offensive performance indicators and match running performance in the FIFA Women’s World Cup 2023",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/24748668.2024.2335460",
+            "first_author": "Luís Branquinho"
+          },
+          {
+            "work_id": "https://openalex.org/W4407213060",
+            "title": "Analysis of attacking styles and goal-scoring in the 2021/22 Women’s Super League",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.1371/journal.pone.0318929",
+            "first_author": "Lizzie Craven"
+          },
+          {
+            "work_id": "https://openalex.org/W4403912801",
+            "title": "The influence of scanning behaviour on performance during 4v4 small-sided games in youth female football",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/02640414.2024.2421662",
+            "first_author": "Mirjam Hintermann"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Passing patterns and player roles are identifiable via pass direction, position, and network centrality, enabling player-specific tactical profiling",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2897736725",
+            "title": "Not Every Pass Can Be an Assist: A Data-Driven Model to Measure Pass Effectiveness in Professional Soccer Matches",
+            "year": 2018,
+            "sport": "football",
+            "doi": "https://doi.org/10.1089/big.2018.0067",
+            "first_author": "Floris Goes"
+          },
+          {
+            "work_id": "https://openalex.org/W4384576008",
+            "title": "CMPN: Modeling and analysis of soccer teams using Complex Multiplex Passing Network",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.1016/j.chaos.2023.113778",
+            "first_author": "Arash Beheshtian-Ardakani"
+          },
+          {
+            "work_id": "https://openalex.org/W4200247838",
+            "title": "Machine Learning on Soccer Player Positions",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.4018/ijdsst.286678",
+            "first_author": "Umberto Di Giacomo"
+          }
+        ],
+        "paper_count": 3
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "statistical (32% — descriptive, correlational, hypothesis tests)",
+        "machine learning (19% — classification, clustering, prediction)",
+        "deep learning (8% — neural networks, transformers for pattern detection)",
+        "computer vision (5% — trajectory extraction, visualization)",
+        "network analysis (3% — passing graphs, centrality measures)",
+        "simulation (4% — Markov models, game-theoretic optimization)",
+        "descriptive/qualitative (19% — video analysis, manual coding)"
+      ],
+      "sample_size_patterns": "Highly variable. Event-level analyses (n=1000–10,000 events per study) dominate (e.g., W3094428387: 12,424 attacks). Match-level studies range n=1–380 matches. Player/sample sizes: n<30 (4 studies, mostly case studies), n=100–500 (5 studies), n=1000+ (5 studies). Large-scale studies leverage automated event/tracking data (StatsBomb, InStat); small-n studies often manual video coding. Few longitudinal designs (temporal span typically 1 season).",
+      "data_sources_used": "Proprietary tracking systems dominate (SportsVU, ChyronHego, TRACAB, InStat Scout — 12 papers). Open datasets (StatsBomb, European Soccer Database, Wyscout, Understat, FBref) used in ~8 papers. Proprietary data access is a barrier to reproducibility: 17 papers restrict access, 8 proprietary, 7 fully open. Video manual coding (6 papers, labor-intensive). Sensor data (GNSS, accelerometers) underutilized (3 papers). API access (Transfermarkt, Meteostat) minimal.",
+      "temporal_patterns": "Recency bias: 63% of papers (93/146) published 2024–2025, only 7 papers pre-2018. This suggests: (1) rapid methodological innovation (deep learning, tracking data availability), (2) potential for premature publication before findings mature, (3) historical comparisons limited. Few longitudinal analyses (tracking trends over 5+ seasons). Most studies analyze single seasons or tournaments (EURO 2016, World Cup 2022). Trend analysis of tactical evolution (e.g., pressing intensity over a decade) rare (W4406270942, W4388740233 partial exceptions)."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W4392947498",
+        "title": "TacticAI: an AI assistant for football tactics",
+        "why_key": "Landmark application of geometric deep learning (Graph Attention Networks with D2 convolutions) to tactical recommendation; demonstrates state-of-the-art corner-kick analysis (90% expert approval). High citation count (53) and impact factor (top 10%, FWCI 52.98) indicate strong influence on AI-driven tactics.",
+        "year": 2024,
+        "sport": "football",
+        "doi": "https://doi.org/10.1038/s41467-024-45965-x",
+        "first_author": "Zhe Wang"
+      },
+      {
+        "work_id": "https://openalex.org/W3016752259",
+        "title": "Unlocking the potential of big data to support tactical performance analysis in professional soccer: A systematic review",
+        "why_key": "Comprehensive review of position tracking data and feature engineering for tactical analysis (180 citations). Synthesizes measurement challenge: how to extract meaningful tactical metrics from high-dimensional spatio-temporal data. Critical for understanding measurement landscape.",
+        "year": 2020,
+        "sport": "football",
+        "doi": "https://doi.org/10.1080/17461391.2020.1747552",
+        "first_author": "Floris Goes"
+      },
+      {
+        "work_id": "https://openalex.org/W3179399922",
+        "title": "Data-driven detection of counterpressing in professional football",
+        "why_key": "Seminal work on automated tactic detection (counterpressing), moving from manual video coding to machine learning. 54 citations suggest adoption in practice. Establishes methodology for recognizing complex defensive tactics.",
+        "year": 2021,
+        "sport": "football",
+        "doi": "https://doi.org/10.1007/s10618-021-00763-7",
+        "first_author": "Pascal Bauer"
+      },
+      {
+        "work_id": "https://openalex.org/W3140924543",
+        "title": "Modelling team performance in soccer using tactical features derived from position tracking data",
+        "why_key": "Demonstrates tactic-outcome link: LDA model predicts match outcome (win/loss) 74% accuracy using tactical features (e.g., effective playing space, offensive principles). Direct evidence that tactical metrics relate to performance.",
+        "year": 2021,
+        "sport": "football",
+        "doi": "https://doi.org/10.1093/imaman/dpab006",
+        "first_author": "Floris Goes"
+      },
+      {
+        "work_id": "https://openalex.org/W4210590305",
+        "title": "The use of player tracking data to analyze defensive play in professional soccer - A scoping review",
+        "why_key": "Recent review (2022) on defensive analysis methods. Identifies gap: offensive play analyzed more thoroughly than defense. Justifies focus on defensive tactic measurement.",
+        "year": 2022,
+        "sport": "football",
+        "doi": "https://doi.org/10.1177/17479541221075734",
+        "first_author": "Leander Forcher"
+      },
+      {
+        "work_id": "https://openalex.org/W4319938163",
+        "title": "Putting team formations in association football into context",
+        "why_key": "Deep learning approach to dynamic formation detection and phase-of-play analysis. Shows formations change mid-match and context matters (possession, attacking vs. defending). Challenges static formation assumption in many studies.",
+        "year": 2023,
+        "sport": "football",
+        "doi": "https://doi.org/10.3233/jsa-220620",
+        "first_author": "Pascal Bauer"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "methodology",
+      "title": "Lack of causal inference for tactic effectiveness",
+      "description": "The literature is overwhelmingly correlational. Papers identify that certain passing patterns or formations correlate with wins, but do not establish causal links: does team A win *because* of the 4-3-3 formation, or do strong teams tend to play 4-3-3? Only 3 papers explicitly apply causal methods (matching, instrumental variables, RCT-adjacent designs). W3147376827 uses Markov Decision Processes to argue teams should shoot more from distance, but this is model-based, not experimental. Conversely, tactical experiments in training/matches are absent—no papers report randomized implementation of a tactic and measurement of outcome. This limits actionable recommendations: coaches cannot distinguish 'correlation with success' from 'causes success.'",
+      "evidence": "W3140924543 (predicts wins from tactics but does not causally attribute), W3147376827 (MDP-based argument, not causal evidence), W4406316775 (correlates pressure with performance, no causality). Review W3016752259 does not cite causal inference methods. Absence of 'causal', 'instrumental variable', 'quasi-experiment', 'RCT', 'difference-in-differences' in paper titles/abstracts suggests near-zero causal work.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3140924543",
+          "title": "Modelling team performance in soccer using tactical features derived from position tracking data",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.1093/imaman/dpab006",
+          "first_author": "Floris Goes"
+        },
+        {
+          "work_id": "https://openalex.org/W3147376827",
+          "title": "Leaving Goals on the Pitch: Evaluating Decision Making in Soccer",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.48550/arxiv.2104.03252",
+          "first_author": "Maaike Van Roy"
+        },
+        {
+          "work_id": "https://openalex.org/W3016752259",
+          "title": "Unlocking the potential of big data to support tactical performance analysis in professional soccer: A systematic review",
+          "year": 2020,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/17461391.2020.1747552",
+          "first_author": "Floris Goes"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Coaches make tactical decisions costing millions in wages and transfer fees. Correlational evidence is insufficient to justify major tactical shifts. Causal evidence (e.g., 'implementing high press increases win probability by X%') would directly improve decision-making and reduce costly tactical errors.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Causal inference is challenging in football because: (1) full randomization is infeasible (teams cannot randomize tactics mid-season), (2) confounding is severe (team quality, injuries, opponent strength all affect tactics and outcomes), (3) small-N (few teams, seasons). However, quasi-experimental designs are possible: (a) regression discontinuity (compare teams just above/below threshold for tactical change), (b) synthetic control (match treated team to control league), (c) event studies (sudden manager change forcing tactic shift). Requires longer time-series data and careful covariate adjustment.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "population",
+      "title": "Severe under-representation of women's football, youth, and lower leagues",
+      "description": "Only 10 papers (6.8%) focus on women's football. Elite men's football (top 5 European leagues, Champions League, World Cup) dominates. Youth football (U17, U21) appears in <5 papers despite being a training ground for future elite tactics. Lower leagues and grassroots (<10 papers) are nearly absent, yet they represent 90%+ of football globally. Tactical principles may not transfer: small-sided games with 6v6, youth players with limited spatial awareness, or lower-league teams with inferior technical execution may require different tactical frameworks. The gap limits generalizability and excludes populations that could benefit most from tactical guidance.",
+      "evidence": "Database overview: 'Women's sport focus: 10 papers (6.8%)'. Scanning paper titles: W4393234237 (women's 2023 World Cup), W4407213060 (women's WSL), W4403912801 (youth female scanning), W4416778947 (women's tactics deep learning), W7111296551 (women's elite technical-tactical evolution). All other 96+ papers are men's elite football. Youth papers (W4405723723 on U19 SSGs, W4408972339 on university players). Grassroots: W4417300089 on youth U12. No papers on adolescent elite academies, semi-professional leagues, or developing nations.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4393234237",
+          "title": "Relationship between key offensive performance indicators and match running performance in the FIFA Women’s World Cup 2023",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24748668.2024.2335460",
+          "first_author": "Luís Branquinho"
+        },
+        {
+          "work_id": "https://openalex.org/W4407213060",
+          "title": "Analysis of attacking styles and goal-scoring in the 2021/22 Women’s Super League",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1371/journal.pone.0318929",
+          "first_author": "Lizzie Craven"
+        },
+        {
+          "work_id": "https://openalex.org/W4403912801",
+          "title": "The influence of scanning behaviour on performance during 4v4 small-sided games in youth female football",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/02640414.2024.2421662",
+          "first_author": "Mirjam Hintermann"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Women's football is the fastest-growing segment globally; tactical understanding is critical for coaches. Youth development is where tactics are learned; early tactical proficiency may predict elite performance. Lower leagues employ millions of coaches and players who lack evidence-based guidance. Absent research == absent knowledge transfer to these populations.",
+      "feasibility": "high",
+      "feasibility_rationale": "Data accessibility is improving: StatsBomb opened Women's Super League data (2023+), European women's leagues increasingly track players. Youth football has club video recordings. Lower leagues have less professional tracking but match video is abundant. Feasibility is high if researchers partner with clubs/federations willing to share data.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "data",
+      "title": "Over-reliance on proprietary, restricted datasets limiting reproducibility and external validity",
+      "description": "Data access distribution: 17 restricted, 8 proprietary, 7 fully open, 4 not stated, 3 open with registration, 1 publicly available. This means ~73% of papers use data others cannot access, preventing replication and meta-analysis. StatsBomb Open Data (used by 2-4 papers) is the main reproducible source, but covers only subset of leagues/seasons. European Soccer Database (Kaggle) is used (8 papers) but is outdated (2008-2016). Only 3 papers report code availability (W4392947498, W4406317775). Result: tactical findings are scattered across siloed datasets. A systematic comparison of whether, e.g., 'high press is effective in Premier League' vs. 'high press is effective in Bundesliga' is impossible because studies use different proprietary datasets with different event definitions and tracking fidelity.",
+      "evidence": "From 'Data access types': 17 restricted, 8 proprietary vs. 7 fully open. 'Code available: 3 papers' vs. 146 total. Papers using proprietary InStat Scout (4), ChyronHego (multiple), TRACAB (multiple) cannot be fully reproduced. Open-access papers: StatsBomb (W4391655216), FoTD (W4406317775). No systematic replication studies found (0 papers re-analyze same dataset with different methods).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4391655216",
+          "title": "Automated Discovery of Successful Strategies in Association Football",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/app14041403",
+          "first_author": "Omar Muñoz"
+        },
+        {
+          "work_id": "https://openalex.org/W4406317775",
+          "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.48550/arxiv.2501.05870",
+          "first_author": "Tiago Mendes-Neves"
+        },
+        {
+          "work_id": "https://openalex.org/W3016752259",
+          "title": "Unlocking the potential of big data to support tactical performance analysis in professional soccer: A systematic review",
+          "year": 2020,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/17461391.2020.1747552",
+          "first_author": "Floris Goes"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Scientific reproducibility is foundational. Proprietary barriers slow knowledge accumulation, enable cherry-picking (negative results unreported), and prevent cross-validation. For applied coaching, knowing which findings hold across datasets/leagues is critical; siloed data prevents this.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Data providers (StatsBomb, InStat, Wyscout) have commercial incentives to restrict access. However: (1) academic licensing (freely available to universities) is expanding, (2) consortia (e.g., sports data commons) could aggregate anonymized data, (3) simulation/synthetic data generation could complement proprietary sources. Feasibility depends on negotiation with data vendors and institutional support.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "topic",
+      "title": "Tactical effectiveness across different competition levels and opponent quality",
+      "description": "Papers analyze elite teams in isolation or compare formations/tactics *within* a league but do not systematically test whether tactical principles transfer across levels (amateur → semi-professional → elite) or whether the same tactic works against stronger vs. weaker opponents. W4417013370 partially addresses this (defensive transitions vs. different-tier opponents) with descriptive design only. No papers test: 'Does 4-4-2 effectiveness change when opponent strength is controlled?' or 'Do pressing triggers differ in amateur vs. professional?' This is critical because: (1) coaching manuals assume universal principles, (2) player quality affects tactical execution (lower-league players may fail to execute complex patterns), (3) resource constraints differ (elite teams have analytics staff; grassroots teams do not).",
+      "evidence": "W4417013370 explicitly mentions 'is it different to defend against different-tier opponents?' but analyzes n=7 matches only, descriptive design. W4406316775 compares Chinese vs. German youth but focuses on pressure, not systematic cross-level comparison. No paper titles/abstracts mention 'generalization across leagues' or 'tactical transfer.' Most papers study one league/level (e.g., Premier League, Bundesliga, Champions League).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4417013370",
+          "title": "Effects of tactical behaviours on football defensive transitions’ outcomes: is it different to defend against different-tier opponents?",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.47197/retos.v75.117553",
+          "first_author": "Rui Freitas"
+        },
+        {
+          "work_id": "https://openalex.org/W3140924543",
+          "title": "Modelling team performance in soccer using tactical features derived from position tracking data",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.1093/imaman/dpab006",
+          "first_author": "Floris Goes"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Coaches at different levels need different tactical guidance. Elite tactics may be infeasible for semi-professional teams with worse players or no analytics. Conversely, simple tactics effective at grassroots may become ineffective at elite (because opponents are better). Evidence of level-dependent effectiveness is essential for actionable coaching.",
+      "feasibility": "high",
+      "feasibility_rationale": "Data exists across levels (elite European leagues tracked professionally, youth leagues increasingly have video, grassroots have club recordings). Comparative analysis is methodologically straightforward (stratified analysis, interaction terms in regression). Main barrier is data access (see gap_3).",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_5",
+      "type": "temporal",
+      "title": "Absence of longitudinal tactical evolution studies and trend analysis",
+      "description": "No paper tracks how a team's tactics evolve over multiple seasons (>5 years) in response to injuries, transfers, manager changes, or rule changes. Most analyses are cross-sectional snapshots of single seasons or tournaments. W4403876520 briefly mentions rule changes affecting formations (from 1810 to present) but offers no quantitative trend analysis. W4388547168 studies rest defense but does not track whether this defensive transition strategy became more common over time. This gap is significant because: (1) understanding tactical innovation requires longitudinal data (did 'inverted fullbacks' emerge gradually or suddenly?), (2) manager effects on tactics are unquantified (when a new manager joins, does tactic shift measurably?), (3) rule changes' impacts are anecdotal, not empirically measured.",
+      "evidence": "Publication year distribution skews recent (63% from 2024-2025). Scanning paper methodologies, none report longitudinal designs with >3 seasons of tracking data. W4306398697 (corners over time) and W4399652383 (formation-goal link) are cross-sectional. Only W4403876520 mentions historical rules (1810–present) but does not quantify tactical evolution.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4403876520",
+          "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.62229/uavii_4_24-16",
+          "first_author": "Sebastian-Iulian VICOL"
+        },
+        {
+          "work_id": "https://openalex.org/W4306398697",
+          "title": "Individual role classification for players defending corners in football (soccer)",
+          "year": 2022,
+          "sport": "football",
+          "doi": "https://doi.org/10.1515/jqas-2022-0003",
+          "first_author": "Pascal Bauer"
+        },
+        {
+          "work_id": "https://openalex.org/W4388547168",
+          "title": "The Success Factors of Rest Defense in Soccer – A Mixed-Methods Approach of Expert Interviews, Tracking Data, and Machine Learning",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.52082/jssm.2023.707",
+          "first_author": "Leander Forcher"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Understanding tactical innovation and adaptation is valuable for coaches learning from history. Quantifying manager effects could identify high-impact coaching styles. However, this is less urgent than causal effectiveness (gap_1) or population coverage (gap_2).",
+      "feasibility": "high",
+      "feasibility_rationale": "Longitudinal data is available (historical tracking from elite leagues, 2017+; video archives extend back further). Methodology is standard (time-series analysis, change-point detection, manager effect models). Barrier is effort and data access, not technical feasibility.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_6",
+      "type": "integration",
+      "title": "Disconnect between tactical analysis and player physical/cognitive capacity",
+      "description": "Tactical papers rarely integrate insights from biomechanics, exercise physiology, or cognitive science. For example: (1) 'high press' is recommended as effective tactic (W3179399922, W4406270942), but papers do not quantify physical demands (distance, acceleration, sprints) or fatigue effect on press sustenance; (2) decision-making under pressure is assumed rational (e.g., MDP models in W3147376827), but no papers test whether players actually execute decisions as modeled, or how cognitive load affects choice; (3) youth tactical development papers (W4405723723, W4408972339) do not measure perceptual/attentional maturation required to execute tactics. This fragmentation means coaches cannot integrate tactical plans with fitness/skill training.",
+      "evidence": "Tactical papers (all 146) focus on event/tracking data and outcome prediction. Biomechanics papers (if any in database) are separate. W4408972339 measures tactical actions in SSGs but does not report GPS/accelerometer data on fatigue or intensity. W3147376827 models shooting decisions but does not test cognitive load or player compliance. No paper combines tracking data with EMG, eye-tracking, or reaction-time measures to link tactics to physiology/cognition.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3179399922",
+          "title": "Data-driven detection of counterpressing in professional football",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.1007/s10618-021-00763-7",
+          "first_author": "Pascal Bauer"
+        },
+        {
+          "work_id": "https://openalex.org/W3147376827",
+          "title": "Leaving Goals on the Pitch: Evaluating Decision Making in Soccer",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.48550/arxiv.2104.03252",
+          "first_author": "Maaike Van Roy"
+        },
+        {
+          "work_id": "https://openalex.org/W4408972339",
+          "title": "The impact of playing area dimension and team imbalance on the performance of individual tactical actions in soccer ball possession",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24748668.2025.2485555",
+          "first_author": "Nuno André Nunes"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Integration would improve coaching: coaches could time high-press implementation to points in match where fatigue is low, or adjust press design for younger players with lower cognitive capacity. Currently, tactics are recommended without knowing if players can execute them sustainably.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Requires multi-disciplinary collaboration (sports scientists + analysts). Data integration is technical (aligning time-series from tracking, GPS, video). Small sample sizes likely (expensive to equip players with all sensors). However, elite clubs already collect this (GPS, power meters, eye-tracking), so feasibility is emerging.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_7",
+      "type": "replication",
+      "title": "No independent replication or meta-analysis of key tactical findings",
+      "description": "No paper systematically replicates another study's findings on a new dataset or performs meta-analysis. For example, if W4376636437 claims 'defensive compactness improves defensive success,' has this been replicated in other leagues, eras, or player populations? Unknown. W3140924543 reports 74% accuracy in predicting wins from tactics; does this hold out-of-sample? Unknown. Few papers report effect sizes (only 6) or confidence intervals (7), making meta-analysis impossible. Result: cannot distinguish robust findings (true effect, replicable) from noise or lucky correlations (overfitting to single dataset).",
+      "evidence": "Meta-analysis search: zero papers with 'replication', 'meta-analysis', 'systematic review of findings' (W3016752259 is a methods review, not meta-analysis of results). Effect sizes reported: 6 papers (out of 146). CIs reported: 7 papers. Cross-dataset validation rare (most papers report results on test set from same league/dataset).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W3140924543",
+          "title": "Modelling team performance in soccer using tactical features derived from position tracking data",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.1093/imaman/dpab006",
+          "first_author": "Floris Goes"
+        },
+        {
+          "work_id": "https://openalex.org/W4376636437",
+          "title": "Is a compact organization important for defensive success in elite soccer? – Analysis based on player tracking data",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1177/17479541231172695",
+          "first_author": "Leander Forcher"
+        },
+        {
+          "work_id": "https://openalex.org/W3016752259",
+          "title": "Unlocking the potential of big data to support tactical performance analysis in professional soccer: A systematic review",
+          "year": 2020,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/17461391.2020.1747552",
+          "first_author": "Floris Goes"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Replication and meta-analysis are foundational to scientific credibility. Single-study findings (especially from proprietary data) have low evidential weight. Without replication, spurious findings (e.g., formation X predicts wins by chance) persist and mislead coaches.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Replication requires: (1) multiple datasets (see gap_3 barrier), (2) standardized metrics across studies (currently, 'compactness' is defined differently across papers), (3) coordination (systematic review protocol). However, once datasets are shared (via consortia), replication is straightforward.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_8",
+      "type": "topic",
+      "title": "Tactical interactions between attacking and defending teams under-explored",
+      "description": "Most papers analyze one team in isolation (e.g., 'how does Team A attack?') or compare static formations between teams, but few explicitly model tactical *interaction*: how does Team A's high press change how Team B's build-up play evolves? W4409348231 models spatial teamwork under uncertainty (multi-agent optimization) but is simulation-only, not empirical. W3094428387 analyzes synchrony of defenders during attacks but does not compare to defender behavior when opponent uses different tactics. This gap means tactical recommendations are myopic: coaches are told 'implement high press' without understanding how strong passing teams (e.g., Manchester City) adapt their build-up to neutralize pressing.",
+      "evidence": "Papers typically label data 'attacking team' vs. 'defending team' separately or compare formation distributions across teams but do not run conditional analysis (e.g., 'given opponent uses 4-4-2, our team's optimal response is X'). W4409348231 is exception but is theoretical (game theory, MDP), not empirical on match data.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409348231",
+          "title": "Optimising Spatial Teamwork Under Uncertainty",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.1609/aaai.v39i22.34482",
+          "first_author": "Gregory E. Everett"
+        },
+        {
+          "work_id": "https://openalex.org/W3094428387",
+          "title": "The tactics of successful attacks in professional association football: large-scale spatiotemporal analysis of dynamic subgroups using position tracking data",
+          "year": 2020,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/02640414.2020.1834689",
+          "first_author": "Floris Goes"
+        },
+        {
+          "work_id": "https://openalex.org/W3147376827",
+          "title": "Leaving Goals on the Pitch: Evaluating Decision Making in Soccer",
+          "year": 2021,
+          "sport": "football",
+          "doi": "https://doi.org/10.48550/arxiv.2104.03252",
+          "first_author": "Maaike Van Roy"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Real matches are games with interaction. Recommending a tactic without knowing opponent response is incomplete. Coaches need to understand 'if opponent uses this, we should counter with that.' Interaction analysis is essential for realistic tactical advice.",
+      "feasibility": "high",
+      "feasibility_rationale": "Tracking data already captures both teams simultaneously. Empirical analysis requires conditional/stratified models (e.g., logistic regression of 'Team B success | Team A tactic'). Methodology is standard; barrier is conceptualization and effort.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_9",
+      "type": "methodology",
+      "title": "Inconsistent definitions and measurement of core tactical concepts",
+      "description": "Terms like 'pressing,' 'compactness,' 'formation,' 'transition,' and 'attacking style' are defined differently across papers, making comparison impossible. E.g., 'high press' is qualitatively defined in some papers but measured as PPDA (passes per defensive action) in others; 'compactness' is variously computed as mean inter-player distance, convex hull area, or effective playing space. W4406270942 proposes a new 'pressing intensity' metric, implicitly acknowledging prior definitions were inadequate. This lack of standardization fragments the literature and prevents meta-analysis (see gap_7). Coaches reading multiple papers receive conflicting definitions of the same tactic.",
+      "evidence": "Term 'compactness' appears in W4376636437, W3082987535, W4412882744 with different operationalizations. 'Formation' is detected via clustering in W4392381725, geometric templates in W4416522835, deep learning in W4319938163—no unified definition. 'Pressing intensity' is new in W4406270942, suggesting prior literature lacked standard. W3016752259 mentions 'feature engineering' challenge—different papers extract different features from same data.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4406270942",
+          "title": "Pressing Intensity: An Intuitive Measure for Pressing in Soccer",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.48550/arxiv.2501.04712",
+          "first_author": "Joris Bekkers"
+        },
+        {
+          "work_id": "https://openalex.org/W4376636437",
+          "title": "Is a compact organization important for defensive success in elite soccer? – Analysis based on player tracking data",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1177/17479541231172695",
+          "first_author": "Leander Forcher"
+        },
+        {
+          "work_id": "https://openalex.org/W3016752259",
+          "title": "Unlocking the potential of big data to support tactical performance analysis in professional soccer: A systematic review",
+          "year": 2020,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/17461391.2020.1747552",
+          "first_author": "Floris Goes"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Without standardization, cumulative knowledge is impossible. Coaches cannot trust generalizations if definitions shift across studies. Standardization would enable meta-analysis, replication, and clear communication of findings.",
+      "feasibility": "high",
+      "feasibility_rationale": "High feasibility: convene stakeholders (researchers, coaches, data providers), propose standard definitions, and publish guidelines (similar to existing biomechanics standards). Technical barrier is minimal; organizational/social barrier is real but surmountable.",
+      "confidence": "high"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Establish causal links between specific tactics and match outcomes using quasi-experimental designs",
+      "description": "Conduct a series of quasi-experimental studies leveraging manager changes, injury-forced substitutions, or rule changes as 'natural experiments' to isolate causal tactic effects. Example: when a new manager joins mid-season and shifts from 4-3-3 to 3-5-2, does win probability change controlling for opponent strength, player quality, and confounding injuries? Use synthetic control methods to match treated team (manager change) to control teams (no change). Repeat across 20+ transitions over 5-10 seasons to estimate causal effects of formation, pressing, and build-up style changes. Report effect sizes, CIs, and pre-registration to prevent p-hacking.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_7"
+      ],
+      "suggested_methodology": "Quasi-experimental design with propensity score matching or difference-in-differences estimation. Primary outcome: win probability; secondary: goals, possession. Confounders: opponent Elo rating, team injury list, recent form. Stratify by competition level to test generalizability (see gap_4).",
+      "suggested_data": "Historical match data (StatsBomb Open, WhoScored, Understat, FBref) spanning 10 seasons, 5+ leagues. Augment with manager appointment data (Transfermarkt). Requires 100+ manager transitions for adequate power.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Would be first rigorous causal evidence of tactic effectiveness. High-impact publication (nature of evidence unprecedented in football analytics). Directly applicable: coaches could confidently implement tactics with quantified success rates."
+    },
+    {
+      "priority": 2,
+      "title": "Develop standardized definitions and open-source taxonomy for tactical concepts",
+      "description": "Convene a working group (researchers, elite club analysts, coaches) to define core tactical concepts (pressing, compactness, formation, transition, attacking style) with precise operational definitions and validation protocols. Publish a taxonomy paper with code-shareable implementations (Python/R libraries). Validate definitions on multiple datasets (StatsBomb, FBref, open video) to test reproducibility. Example: 'high press' defined as (1) proportion of defensive actions in opponent's half, (2) average opponent ball possession distance from goal, (3) PPDA threshold. Publish benchmark results showing definition consensus and stability.",
+      "addresses_gaps": [
+        "gap_9",
+        "gap_7",
+        "gap_3"
+      ],
+      "suggested_methodology": "Delphi study (iterative expert consensus rounds) followed by empirical validation on >500 matches across multiple leagues. Compare metrics' correlation with outcomes to justify definitions.",
+      "suggested_data": "StatsBomb Open Data (free, reproducible); supplementary validation on proprietary datasets from partnering clubs.",
+      "estimated_difficulty": "accessible_thesis",
+      "potential_impact": "Enables meta-analysis, replication, and cross-study comparisons. Becomes de facto standard used by community. Opens path to cumulative knowledge in tactical analysis."
+    },
+    {
+      "priority": 3,
+      "title": "Analyze tactical evolution and manager effects using longitudinal tracking data (2015–present)",
+      "description": "Construct a longitudinal dataset of elite team tactics spanning 10 seasons (2015–2025) across top 5 European leagues. For each team-season, extract tactical metrics (average compactness, pressing intensity, pass completion by zone, transition speed) using consistent methods. Use time-series analysis and change-point detection to identify when tactics shift (e.g., manager arrival). Estimate manager fixed effects on tactics independent of player quality and opposition. Secondary goal: quantify impact of rule changes (VAR 2019, handball rule 2020) on tactical behavior. Publish an open database of team tactics over time for community use.",
+      "addresses_gaps": [
+        "gap_5",
+        "gap_3"
+      ],
+      "suggested_methodology": "Mixed-effects regression (tactics ~ manager + team + season, with random intercepts for team and manager). Change-point detection via PELT algorithm or Bayesian methods. Visualization of tactical trajectories by team/manager.",
+      "suggested_data": "StatsBomb (partial coverage), partnership with data providers (InStat, Wyscout) for full 10-season access. Alternatively, video-based automated tracking (deep learning pose estimation, W4416397228 provides foundation).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "First comprehensive narrative of how elite football tactics have evolved. Identifies influential managers and innovations. Creates valuable historical dataset for community."
+    },
+    {
+      "priority": 4,
+      "title": "Study women's football and youth tactical patterns with direct comparison to men/elite models",
+      "description": "Conduct matched analysis comparing women's elite (WSL, Champions League) and youth elite (U21) tactical patterns to men's elite using identical methods and metrics. Example: measure pressing intensity, passing patterns, and formation stability in >300 women's and youth matches using tracking data (if available) or high-quality video-based pose estimation. Test whether (1) tactical principles are universal, (2) women/youth require adapted tactics (e.g., different press spacing due to speed differences), or (3) coaching is less sophisticated (tactics are less consistent/effective). Publish findings to inform coaching of women's and youth programs. Collaborate with national federations to ensure data access and implementation.",
+      "addresses_gaps": [
+        "gap_2",
+        "gap_4"
+      ],
+      "suggested_methodology": "Comparative cross-sectional study. Stratified analyses by gender and age group. ANOVA/regression to test for population differences in tactics after controlling for league strength.",
+      "suggested_data": "StatsBomb (limited women's coverage); partner with WSL, NWSL, women's Champions League organizers. Youth data from elite academies (Chelsea, Barcelona, Bayern, etc.).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "First systematic evidence base for women's and youth tactics. Enables female/youth coaches to adopt evidence-based tactics. Fills major research gap and supports growth of these segments."
+    },
+    {
+      "priority": 5,
+      "title": "Model tactical interactions: how opponent tactics reshape team behavior (game-theoretic empirical study)",
+      "description": "Use conditional analysis on multi-team tracking data to estimate how one team's tactic changes another team's response. Example: when opponent team increases pressing intensity, does our team's build-up speed change? By how much? Use multilevel or dyadic regression (both teams in one model) or Bayesian hierarchical models to estimate interaction effects. Combine with game-theoretic solution concepts (Nash equilibrium) to predict optimal mutual tactic responses. Test predictions on held-out matches. Result: a model that coaches can use to choose counter-tactics to known opponent style.",
+      "addresses_gaps": [
+        "gap_8"
+      ],
+      "suggested_methodology": "Dyadic multilevel regression: outcome ~ team A tactic × team B tactic + team A ability + team B ability + controls. Augment with game-theoretic modeling (Bayesian games, stochastic games) to find equilibrium tactics.",
+      "suggested_data": "Multi-team tracking data (StatsBomb 360, InStat Scout). Requires simultaneous data on both teams (not all datasets provide this equally).",
+      "estimated_difficulty": "challenging_project",
+      "potential_impact": "First empirical game-theoretic analysis of football tactics. Bridges traditional game theory and data science. Directly applicable: coaches can input opponent formation/style and receive recommended counter-tactic with success probability."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "Moderate. The papers are largely 'monologues'—isolated methodological contributions (here's a deep learning model for tactic detection, here's a passing network metric) rather than genuine dialogue or debate. Few papers cite each other's findings and build cumulatively. For example, W4376636437 and W3082987535 both study team synchrony/compactness but do not reference each other or reconcile conflicting findings (one finds compactness important, literature is mixed). The recent surge (2024-2025) means many papers are not yet in conversation. Genuine debate exists on narrow topics: (1) formation detection methods (W4319938163 vs. W4416522835 vs. W6892106873 use different approaches but do not compare head-to-head), (2) passing network vs. event-based vs. tracking-based analysis (implicit tension but no direct confrontation). Synthesis was difficult because: (1) highly technical papers require deep domain knowledge to compare methodology validity, (2) outcome metrics differ (some predict wins, others measure possessional efficiency, others measure defensive success—incommensurable), (3) proprietary data fragmentation makes cross-validation impossible. I had to infer gaps from absence rather than from explicit unresolved debates.",
+    "strengths": [
+      "Comprehensive coverage of measurement methodologies: deep learning (GNNs, transformers), classical ML (LDA, clustering), statistical testing, network analysis, simulation—the database captures the full methodological landscape.",
+      "Identification of high-impact papers (TacticAI, counterpressing detection) that show trajectory toward applied real-world impact (e.g., AI coaching assistants).",
+      "Clear evidence of recency and innovation: 2024-2025 papers show emerging methods (shape graphs, graph-transformers, LLM-enhanced visualization) not yet consolidated into best practices.",
+      "Data source documentation: detailed inventory of open vs. proprietary data, enabling assessment of reproducibility and access barriers."
+    ],
+    "limitations": [
+      "Publication bias likely: only positive/novel findings published; null results (e.g., 'high press did not improve defense in this league') are absent.",
+      "Recency bias: 63% of papers from 2024-2025, making it hard to assess which findings are durable vs. transient.",
+      "Full-text access unavailable: summaries are brief. Multiple papers (e.g., W4407407252) have truncated abstracts; likely hiding important findings or limitations.",
+      "Limited to papers labeled 'tactical_analysis' at confidence ≥7: may exclude relevant work on (e.g.) team cohesion, player communication, or coaching philosophy that affects tactics indirectly.",
+      "Sampling of 'effectiveness' data: papers on what correlates with wins are included, but papers on injuries, transfers, or player motivation (which also affect tactics) may not be, limiting contextual understanding.",
+      "Inability to assess effect size and methodology quality systematically: only 6 papers report effect sizes; judging evidence strength relied on citation count and confidence intervals (7 papers), which are imperfect proxies."
+    ],
+    "assumptions": [
+      "Papers with high citation counts (e.g., W4392947498 with 53 citations) are more influential and correct. (Counterexample: seminal papers on flawed methods accumulate citations.)",
+      "Absence from database = not studied. (Limitation: our database is specialized in AI-assessed relevance ≥7; relevant work in other databases or gray literature may exist.)",
+      "Operational definitions in methods sections are consistent across papers. (False: 'compactness', 'pressing', 'formation' vary widely.)",
+      "Recent papers (2024-2025) represent mature, validated research. (Risky: may include preprints, not-yet-peer-reviewed, or early-stage work.)"
+    ],
+    "database_coverage_gaps": [
+      "Biomechanics and exercise physiology of tactical execution: papers on fatigue, acceleration, sprint demands during pressing or high-intensity transitions likely exist in sports science journals but may not be in our football+AI database. Our database appears to miss the integration of tactics with physiology/neuroscience.",
+      "Qualitative coaching studies and interview-based research on why coaches choose tactics: likely published in coaching journals or sport psychology venues. Our database skews quantitative/data-driven, missing ethnographic or interview work on tactical decision-making.",
+      "Comparative football systems (e.g., academies in different countries, genetic/talent development effects on tactical sophistication): likely in sports development or sociology journals, not tactical analytics.",
+      "Non-elite football (grassroots, semi-professional, lower divisions): likely published in locally-focused journals or gray literature (coaching manuals, conference proceedings); our international, English-language database may underrepresent.",
+      "Economic/organizational aspects of tactics (e.g., how budget constrains tactical choice, how organizational structure affects coaching tactics): likely in sports management or economics journals.",
+      "Rule changes and law-of-the-game evolution: likely in rules/governance literature, not our tactical analytics focus."
+    ],
+    "what_would_improve_this": [
+      "Full-text access to all 146 papers: would enable assessment of limitations, effect sizes, and methodological quality beyond abstracts and summaries.",
+      "Standardized extraction form for all papers: consistent data on sample size, effect size, CI, study design, confounders would enable rapid meta-analysis.",
+      "Citation network visualization: map which papers cite which, identify clusters (schools of thought), and spot isolated findings vs. consensus areas.",
+      "Access to restricted datasets (proprietary club data): would enable replication and cross-dataset validation of findings.",
+      "Longitudinal metadata: publication date alone is insufficient; need to track when papers are written vs. published, preprint availability, and retraction status.",
+      "Domain expert review: sports scientists/coaches review findings for realism and practical importance, not just statistical significance."
+    ],
+    "process_cost_reflection": "Given N=146 papers, this analysis required synthesizing across high-dimensional data (10+ methodologies, 30+ tactical concepts, multiple leagues/populations, temporal span 2013-2026). The brief summaries (1-3 sentences per paper) were informationally sufficient to extract methodology, sample, and population; however, full-text access would have dramatically improved confidence in assessing: (1) actual effect sizes and CIs (only summary statistics available), (2) limitations and author caveats (summaries omit nuance), (3) novel findings not captured in title/abstract. Cost-benefit: at ~5-10 minutes per paper to read summaries, taxonomy, and metadata, total effort ~15-20 hours. This is economical for gap identification but insufficient for a systematic review (which would require full-text, quality appraisal, risk-of-bias assessment, adding 10-20× effort). The analysis confidently identified major structural gaps (causality, replication, standardization, population coverage) but missed finer-grained debates within narrow topics due to fragmentation. To improve cost-effectiveness: (1) full-text abstracts (200-500 words) instead of 1-3 sentences, (2) standardized extraction forms (methods, N, effect size, outcome) for all papers would enable automated meta-analysis, (3) flagging of preprints vs. peer-reviewed would reduce publication bias. Overall: brief summary analysis is cost-effective for broad landscape/gap identification but low-confidence for fine-grained evidence synthesis."
+  },
+  "paper_index": {
+    "https://openalex.org/W3140924543": {
+      "title": "Modelling team performance in soccer using tactical features derived from position tracking data",
+      "year": 2021,
+      "first_author": "Floris Goes"
+    },
+    "https://openalex.org/W4376636437": {
+      "title": "Is a compact organization important for defensive success in elite soccer? – Analysis based on player tracking data",
+      "year": 2023,
+      "first_author": "Leander Forcher"
+    },
+    "https://openalex.org/W3082987535": {
+      "title": "Using Optical Tracking System Data to Measure Team Synergic Behavior: Synchronization of Player-Ball-Goal Angles in a Football Match",
+      "year": 2020,
+      "first_author": "Daniel Carrilho"
+    },
+    "https://openalex.org/W3179399922": {
+      "title": "Data-driven detection of counterpressing in professional football",
+      "year": 2021,
+      "first_author": "Pascal Bauer"
+    },
+    "https://openalex.org/W3094428387": {
+      "title": "The tactics of successful attacks in professional association football: large-scale spatiotemporal analysis of dynamic subgroups using position tracking data",
+      "year": 2020,
+      "first_author": "Floris Goes"
+    },
+    "https://openalex.org/W4392947498": {
+      "title": "TacticAI: an AI assistant for football tactics",
+      "year": 2024,
+      "first_author": "Zhe Wang"
+    },
+    "https://openalex.org/W4391655216": {
+      "title": "Automated Discovery of Successful Strategies in Association Football",
+      "year": 2024,
+      "first_author": "Omar Muñoz"
+    },
+    "https://openalex.org/W3147376827": {
+      "title": "Leaving Goals on the Pitch: Evaluating Decision Making in Soccer",
+      "year": 2021,
+      "first_author": "Maaike Van Roy"
+    },
+    "https://openalex.org/W4319938163": {
+      "title": "Putting team formations in association football into context",
+      "year": 2023,
+      "first_author": "Pascal Bauer"
+    },
+    "https://openalex.org/W6892106873": {
+      "title": "SoccerCPD: Formation and Role Change-Point Detection in Soccer Matches Using Spatiotemporal Tracking Data",
+      "year": 2022,
+      "first_author": null
+    },
+    "https://openalex.org/W4393234237": {
+      "title": "Relationship between key offensive performance indicators and match running performance in the FIFA Women’s World Cup 2023",
+      "year": 2024,
+      "first_author": "Luís Branquinho"
+    },
+    "https://openalex.org/W4407213060": {
+      "title": "Analysis of attacking styles and goal-scoring in the 2021/22 Women’s Super League",
+      "year": 2025,
+      "first_author": "Lizzie Craven"
+    },
+    "https://openalex.org/W4403912801": {
+      "title": "The influence of scanning behaviour on performance during 4v4 small-sided games in youth female football",
+      "year": 2024,
+      "first_author": "Mirjam Hintermann"
+    },
+    "https://openalex.org/W4406270942": {
+      "title": "Pressing Intensity: An Intuitive Measure for Pressing in Soccer",
+      "year": 2024,
+      "first_author": "Joris Bekkers"
+    },
+    "https://openalex.org/W4388740233": {
+      "title": "When do Risky Substitutions Improve Match Outcomes? Interpreting Causal Machine Learning Models for Insights",
+      "year": 2023,
+      "first_author": "Özden Gür Ali"
+    },
+    "https://openalex.org/W3016752259": {
+      "title": "Unlocking the potential of big data to support tactical performance analysis in professional soccer: A systematic review",
+      "year": 2020,
+      "first_author": "Floris Goes"
+    },
+    "https://openalex.org/W4416778947": {
+      "title": "Improving women football tactics analysis by using extreme learning and accumulated optimization algorithm",
+      "year": 2025,
+      "first_author": "Junmin Li"
+    },
+    "https://openalex.org/W7111296551": {
+      "title": "A data-driven analysis of the technical and tactical evolution of elite women's football",
+      "year": 2024,
+      "first_author": null
+    },
+    "https://openalex.org/W4405723723": {
+      "title": "Effects of Different Tactical Formations on Positional Team Behaviors during Small Sided Games in Youth Soccer Players",
+      "year": 2024,
+      "first_author": "Joaquín González-Ródenas"
+    },
+    "https://openalex.org/W4408972339": {
+      "title": "The impact of playing area dimension and team imbalance on the performance of individual tactical actions in soccer ball possession",
+      "year": 2025,
+      "first_author": "Nuno André Nunes"
+    },
+    "https://openalex.org/W4417300089": {
+      "title": "Framing Causal Questions in Sports Analytics: A Case Study of Crossing in Soccer",
+      "year": 2025,
+      "first_author": "Shomoita Alam"
+    },
+    "https://openalex.org/W4406317775": {
+      "title": "A Neighbor-based Approach to Pitch Ownership Models in Soccer",
+      "year": 2025,
+      "first_author": "Tiago Mendes-Neves"
+    },
+    "https://openalex.org/W4417013370": {
+      "title": "Effects of tactical behaviours on football defensive transitions’ outcomes: is it different to defend against different-tier opponents?",
+      "year": 2025,
+      "first_author": "Rui Freitas"
+    },
+    "https://openalex.org/W4403876520": {
+      "title": "EVOLUTION OF THE GAME OF FOOTBALL IN TERMS OF RULES AND FORMATIONS OF PLAY",
+      "year": 2024,
+      "first_author": "Sebastian-Iulian VICOL"
+    },
+    "https://openalex.org/W4388547168": {
+      "title": "The Success Factors of Rest Defense in Soccer – A Mixed-Methods Approach of Expert Interviews, Tracking Data, and Machine Learning",
+      "year": 2023,
+      "first_author": "Leander Forcher"
+    },
+    "https://openalex.org/W4306398697": {
+      "title": "Individual role classification for players defending corners in football (soccer)",
+      "year": 2022,
+      "first_author": "Pascal Bauer"
+    },
+    "https://openalex.org/W4399652383": {
+      "title": "A competing risk survival analysis of the impacts of team formation on goals in professional football",
+      "year": 2024,
+      "first_author": "Sebastian Le Coz"
+    },
+    "https://openalex.org/W4409348231": {
+      "title": "Optimising Spatial Teamwork Under Uncertainty",
+      "year": 2025,
+      "first_author": "Gregory E. Everett"
+    },
+    "https://openalex.org/W4412882744": {
+      "title": "Shape graphs and the instantaneous inference of tactical positions in soccer",
+      "year": 2025,
+      "first_author": "Ulrik Brandes"
+    },
+    "https://openalex.org/W4392381725": {
+      "title": "Classifying and quantifying team playing styles in the Australian Football League",
+      "year": 2024,
+      "first_author": "Samuel J. Moffatt"
+    },
+    "https://openalex.org/W4416522835": {
+      "title": "EFPI: Elastic Formation and Position Identification in Football (Soccer) using Template Matching and Linear Assignment",
+      "year": 2025,
+      "first_author": "J.E.J. Bekkers"
+    },
+    "https://openalex.org/W4416397228": {
+      "title": "STRIKE-Net: An explainable dynamic spatiotemporal graph-transformer network for fine-grained soccer action recognition",
+      "year": 2025,
+      "first_author": "Abdulrahman Alqarafi"
+    },
+    "https://openalex.org/W4407407252": {
+      "title": "Decoding the influence of Field Surface, Tactical Positioning, and Field Zone on Tactical Networks in Youth Football",
+      "year": 2025,
+      "first_author": "Ângelo Brito"
+    }
+  }
+}
