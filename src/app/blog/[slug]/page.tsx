@@ -2,6 +2,24 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import blogPosts from "@/data/blog-posts.json";
 
+interface RefItem {
+  work_id: string;
+  label: string;
+}
+
+interface BodyBlock {
+  type: string;
+  text?: string;
+  items?: string[] | RefItem[];
+  work_id?: string;
+  label?: string;
+}
+
+interface Reference {
+  work_id: string;
+  citation: string;
+}
+
 interface BlogPost {
   slug: string;
   title: string;
@@ -12,7 +30,8 @@ interface BlogPost {
   related_gap_slug?: string;
   image_emoji: string;
   reading_time_min: number;
-  body: { type: string; text?: string; items?: string[] }[];
+  body: BodyBlock[];
+  references?: Reference[];
 }
 
 const posts: BlogPost[] = blogPosts as BlogPost[];
@@ -23,6 +42,14 @@ function formatDate(dateStr: string): string {
     month: "long",
     year: "numeric",
   });
+}
+
+/** Build a papers page URL from a work_id. */
+function paperUrl(workId: string): string {
+  if (workId.startsWith("https://")) return `/papers?paper=${workId}`;
+  if (workId.startsWith("W")) return `/papers?paper=https://openalex.org/${workId}`;
+  // Non-OA papers (preprint:xxx, blog:xxx, etc.)
+  return `/papers?search=${encodeURIComponent(workId)}`;
 }
 
 /**
@@ -110,7 +137,7 @@ export default async function BlogPostPage({
           if (block.type === "list" && block.items) {
             return (
               <ul key={i} className="mb-4 ml-1 space-y-3">
-                {block.items.map((item, j) => (
+                {(block.items as string[]).map((item, j) => (
                   <li
                     key={j}
                     className="flex gap-3 text-gray-700 leading-relaxed"
@@ -123,9 +150,63 @@ export default async function BlogPostPage({
             );
           }
 
+          {/* Single paper reference — rendered as small linked citation */}
+          if (block.type === "ref" && block.work_id) {
+            return (
+              <p key={i} className="mb-4 -mt-2 text-sm text-gray-400">
+                <Link
+                  href={paperUrl(block.work_id)}
+                  className="underline decoration-gray-300 hover:text-navy hover:decoration-navy"
+                >
+                  {block.label || block.work_id} →
+                </Link>
+              </p>
+            );
+          }
+
+          {/* Multiple paper references */}
+          if (block.type === "refs" && block.items) {
+            return (
+              <p key={i} className="mb-4 -mt-2 text-sm text-gray-400">
+                {(block.items as RefItem[]).map((ref, j) => (
+                  <span key={j}>
+                    {j > 0 && " · "}
+                    <Link
+                      href={paperUrl(ref.work_id)}
+                      className="underline decoration-gray-300 hover:text-navy hover:decoration-navy"
+                    >
+                      {ref.label} →
+                    </Link>
+                  </span>
+                ))}
+              </p>
+            );
+          }
+
           return null;
         })}
       </article>
+
+      {/* References section */}
+      {post.references && post.references.length > 0 && (
+        <section className="mt-10 border-t border-gray-200 pt-6">
+          <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-400">
+            References
+          </h2>
+          <ol className="space-y-2">
+            {post.references.map((ref, i) => (
+              <li key={i} className="text-sm text-gray-500 leading-relaxed">
+                <Link
+                  href={paperUrl(ref.work_id)}
+                  className="underline decoration-gray-300 transition-colors hover:text-navy hover:decoration-navy"
+                >
+                  {ref.citation}
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       {/* Related gap analysis CTA */}
       {post.related_gap_slug && (

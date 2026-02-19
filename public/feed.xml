@@ -5,13 +5,24 @@
     <link>https://living-sports-analytics.vercel.app</link>
     <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Feb 2026 20:05:49 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 20:39:14 GMT</lastBuildDate>
     <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://living-sports-analytics.vercel.app/icon.png</url>
       <title>Living Sports Analytics</title>
       <link>https://living-sports-analytics.vercel.app</link>
     </image>
+    <item>
+      <title>In-season head-coach dismissals and the performance of professional football teams</title>
+      <link>https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=2444742</link>
+      <description>This paper studies the causes and consequences of in-season changes of the head-coach of association football teams. We exploit data from the highest level of Dutch professional football during 14 successive seasons. An in-season change of the head-coach depends on recent match results and the difference between actual results and expectations as measured using bookmaker data. We find that, after the head-coach has been replaced, teams perform better than before. However, the performance is also better than before for a control group of coach replacements that did not occur. From this we conclude that replacement of head-coaches does not improve team performance.</description>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">preprint:393fce3e4ca68520</guid>
+      <source url="https://living-sports-analytics.vercel.app">CentER Discussion Paper, Tilburg University</source>
+      <category>football</category>
+      <category>coaching</category>
+      <category>working_paper</category>
+    </item>
     <item>
       <title>040 Injuries are negatively associated with team performance in professional cricket</title>
       <link>https://doi.org/10.1136/bjsports-2021-ioc.38</link>
@@ -549,17 +560,6 @@
       <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physical Therapy</source>
       <category>football</category>
       <category>injury_prevention</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Epidemiology and aetiology of sport‐related nasal fractures: Analysis of 599 Finnish patients</title>
-      <link>https://doi.org/10.1111/coa.13976</link>
-      <description>Analysis of 599 Finnish patients with nasal fractures from 2013-2018 found that sports cause 15% of all nasal fractures, with highest prevalence in team sports (basketball, soccer, American football, rugby, baseball), martial arts, and equine sports, predominantly affecting young males.</description>
-      <pubDate>Fri, 26 Aug 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4293199782</guid>
-      <source url="https://living-sports-analytics.vercel.app">Clinical Otolaryngology</source>
-      <category>multi_sport</category>
-      <category>epidemiology</category>
       <category>journal_article</category>
     </item>
   </channel>

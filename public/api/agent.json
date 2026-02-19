@@ -9,16 +9,16 @@
     "url": "https://living-sports-analytics.vercel.app"
   },
   "stats": {
-    "papers_classified": 13822,
-    "papers_total_in_db": 58795,
+    "papers_classified": 13823,
+    "papers_total_in_db": 58796,
     "gap_analyses": 12,
     "data_sources": 733,
     "data_sources_with_programmatic_access": 128,
     "sports_covered": 33,
-    "last_updated": "2026-02-19T20:05:48.659Z"
+    "last_updated": "2026-02-19T20:39:14.125Z"
   },
   "capabilities": [
-    "Search and filter 13,822+ classified sports analytics papers by sport, methodology, theme, keyword",
+    "Search and filter 13,823+ classified sports analytics papers by sport, methodology, theme, keyword",
     "Read 12 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
     "Find 733+ data sources, tools, and libraries used in sports analytics research",
     "Access full classification taxonomy (33 sports, 13 methodologies, 17 themes)",

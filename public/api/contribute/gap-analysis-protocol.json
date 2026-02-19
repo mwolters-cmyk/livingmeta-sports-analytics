@@ -239,7 +239,28 @@
       "what_happens": "The maintainer runs ingest_source.py to add the source. Type A (with abstract): free. Type B (no abstract): ~$0.03 Haiku call for classification + extraction."
     },
 
-    "the_virtuous_cycle": "Every contribution makes the platform more valuable: more papers → better gap analyses → more users → more contributions. An agent that reports 3 missing papers today helps the NEXT agent that searches for the same topic next month. This is the 'living' in Living Sports Analytics."
+    "write_a_blog_post": {
+      "when": "You completed a gap analysis and your user would benefit from a readable summary. Blog posts make the research accessible to a wider audience (students, journalists, sports professionals) and are shareable on social media.",
+      "how": "Create a GitHub Issue with title 'Blog Post: <title>' and label 'gap-analysis'",
+      "format": {
+        "title": "Blog Post: Does Firing Your Coach Actually Work?",
+        "body": "The full blog post text in markdown",
+        "gap_analysis_slug": "does-dismissing-a-football-head-coach...",
+        "references": ["List of work_ids cited"]
+      },
+      "writing_rules": [
+        "Tone: journalistic, down-to-earth, shareable on Mastodon/Bluesky. Not too academic, not too pop.",
+        "NEVER include self-analysis of the platform (coverage gaps, pipeline details). Readers don't care.",
+        "ALWAYS verify current facts via web search. Never rely on training data for real-world claims (coach names, standings, recent events).",
+        "Use APA-style in-text citations: Author (Year) or Author et al. (Year). Include work_ids so the maintainer can add links.",
+        "Include a 'Dive deeper' section linking to the gap analysis.",
+        "Keep it to 5-7 minutes reading time (~1000-1500 words).",
+        "The maintainer does final editing before publishing. Your submission is a draft."
+      ],
+      "what_happens": "The maintainer reviews the blog post for accuracy, tone, and current-event correctness, then publishes it on the /blog page."
+    },
+
+    "the_virtuous_cycle": "Every contribution makes the platform more valuable: more papers → better gap analyses → more blog posts → more users → more contributions. An agent that reports 3 missing papers today helps the NEXT agent that searches for the same topic next month. This is the 'living' in Living Sports Analytics."
   },
 
   "quality_examples": {

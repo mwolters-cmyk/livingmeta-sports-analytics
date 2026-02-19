@@ -1,14 +1,14 @@
 {
   "description": "Summary statistics for the Living Sports Analytics platform",
-  "exported_at": "2026-02-19T20:05:17.276Z",
+  "exported_at": "2026-02-19T20:38:43.292Z",
   "papers": {
-    "total": 58795,
-    "with_abstract": 51714,
-    "classified": 14306,
-    "relevant": 13822
+    "total": 58796,
+    "with_abstract": 51715,
+    "classified": 14307,
+    "relevant": 13823
   },
   "authors": {
-    "total": 174643,
+    "total": 174644,
     "with_gender": 94438
   },
   "distributions": {
@@ -19,7 +19,7 @@
       },
       {
         "sport": "football",
-        "count": 3023
+        "count": 3024
       },
       {
         "sport": "other",
@@ -149,7 +149,7 @@
     "methodology": [
       {
         "methodology": "statistical",
-        "count": 8106
+        "count": 8107
       },
       {
         "methodology": "descriptive",
@@ -251,7 +251,7 @@
       },
       {
         "theme": "coaching",
-        "count": 454
+        "count": 455
       },
       {
         "theme": "data_engineering",
@@ -297,7 +297,7 @@
     "data_type": [
       {
         "data_type": "event",
-        "count": 2902
+        "count": 2903
       },
       {
         "data_type": "physiological",
@@ -335,7 +335,7 @@
       {
         "year": 2014,
         "sport": "football",
-        "count": 23
+        "count": 24
       },
       {
         "year": 2014,
@@ -2192,7 +2192,7 @@
       {
         "year": 2014,
         "methodology": "statistical",
-        "count": 88
+        "count": 89
       },
       {
         "year": 2014,
@@ -3153,6 +3153,11 @@
       },
       {
         "year": 2014,
+        "theme": "coaching",
+        "count": 2
+      },
+      {
+        "year": 2014,
         "theme": "transfer_market",
         "count": 1
       },
@@ -3164,11 +3169,6 @@
       {
         "year": 2014,
         "theme": "data_engineering",
-        "count": 1
-      },
-      {
-        "year": 2014,
-        "theme": "coaching",
         "count": 1
       },
       {
