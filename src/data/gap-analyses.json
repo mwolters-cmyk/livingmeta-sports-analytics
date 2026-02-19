@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T21:04:51.615663",
+  "generated_at": "2026-02-19T22:19:26.069578",
   "total_analyses": 12,
   "paper_index": {
     "https://openalex.org/W2205219292": {
@@ -167,11 +167,6 @@
       "year": 2020,
       "first_author": "Floris Goes"
     },
-    "https://openalex.org/W3023097278": {
-      "title": "A Study on the Conceptual Structure for the Estimation of Annual Salary of K-league Players",
-      "year": 2018,
-      "first_author": "Yong-Rae Kim"
-    },
     "https://openalex.org/W3043874967": {
       "title": "Deep soccer analytics: learning an action-value function for evaluating soccer players",
       "year": 2020,
@@ -247,11 +242,6 @@
       "year": 2021,
       "first_author": "Maaike Van Roy"
     },
-    "https://openalex.org/W3160711719": {
-      "title": "Sunk or Dunk?: An Empirical Analysis of the Effect of Sunk Cost Fallacy in Professional Basketball",
-      "year": 2021,
-      "first_author": "Hailey DiCicco"
-    },
     "https://openalex.org/W3161430098": {
       "title": "An Analysis of Broadcasting Media Using Social Media Engagement in the WNBA",
       "year": 2021,
@@ -301,16 +291,6 @@
       "title": "Effects of age and sex on association between toe muscular strength and vertical jump performance in adolescent populations",
       "year": 2021,
       "first_author": "Toshiyuki Kurihara"
-    },
-    "https://openalex.org/W4210605152": {
-      "title": "Women on the Field and Money in the Bank: The Business of the All-American Girls Professional Baseball League",
-      "year": 2021,
-      "first_author": "Lisa Giddings"
-    },
-    "https://openalex.org/W4214682128": {
-      "title": "5% of Zion: Evaluating the potential for probability-split trades in professional sports",
-      "year": 2022,
-      "first_author": "Dawson M. Brown"
     },
     "https://openalex.org/W4281910294": {
       "title": "Machine Learning for Understanding and Predicting Injuries in Football",
@@ -366,6 +346,11 @@
       "title": "Putting team formations in association football into context",
       "year": 2023,
       "first_author": "Pascal Bauer"
+    },
+    "https://openalex.org/W4321367797": {
+      "title": "Determinants of football players’ valuation: A systematic review",
+      "year": 2023,
+      "first_author": "Maxence Franceschi"
     },
     "https://openalex.org/W4364374775": {
       "title": "The National Basketball Association’s (NBA) Digital Transformation: An Explanatory Case Study",
@@ -426,11 +411,6 @@
       "title": "Physiological and Performance Adaptations to Interval Training in Endurance-Trained Cyclists: An Exploratory Systematic Review and Meta-Analysis",
       "year": 2024,
       "first_author": "Bernardo Norte"
-    },
-    "https://openalex.org/W4391543758": {
-      "title": "The Appraisal of Players' Transfer Market Values: Empirical Evidence From Italian Serie A",
-      "year": 2024,
-      "first_author": "Marco Di Domizio"
     },
     "https://openalex.org/W4391592359": {
       "title": "Sex‐based differences in track running distances of 100, 200, 400, 800, and 1500m in the 8 and under and 9–10‐year‐old age groups",
@@ -532,11 +512,6 @@
       "year": 2024,
       "first_author": "Luís Branquinho"
     },
-    "https://openalex.org/W4393371529": {
-      "title": "IMPACT OF THE FOOTBALL MANAGEMENT MODERNIZATION AND FISCAL RESPONSIBILITY PROGRAM ON THE FINANCIAL AND SPORTING PERFORMANCE OF BRAZILIAN CLUBS",
-      "year": 2024,
-      "first_author": "Alberto Granzotto"
-    },
     "https://openalex.org/W4394853539": {
       "title": "The Night-Time Sleep and Autonomic Activity of Male and Female Professional Road Cyclists Competing in the Tour de France and Tour de France Femmes",
       "year": 2024,
@@ -621,11 +596,6 @@
       "title": "Racing Demands for Winning a Grand Tour: Differences and Similarities Between a Female and a Male Winner",
       "year": 2024,
       "first_author": "Robert P. Lamberts"
-    },
-    "https://openalex.org/W4401276487": {
-      "title": "Does Draft Currency Promote Competitive Balance? An Empirical Investigation of the National Football League 2002–2021",
-      "year": 2024,
-      "first_author": "Michael A. Lapré"
     },
     "https://openalex.org/W4401283644": {
       "title": "Instrumented mouthguards in elite-level men’s and women’s rugby union: characterising tackle-based head acceleration events",
@@ -732,11 +702,6 @@
       "year": 2024,
       "first_author": "Joaquín González-Ródenas"
     },
-    "https://openalex.org/W4405791145": {
-      "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
-      "year": 2024,
-      "first_author": "Mehmet Ali Yalçınkaya"
-    },
     "https://openalex.org/W4405935582": {
       "title": "Dynamic Prediction of Physical Exertion: Leveraging AI Models and Wearable Sensor Data During Cycling Exercise",
       "year": 2024,
@@ -747,11 +712,6 @@
       "year": 2025,
       "first_author": "Diogo Freitas"
     },
-    "https://openalex.org/W4406035559": {
-      "title": "The Impact of Financial Investment on Game Results: A Comparative Study of Manchester",
-      "year": 2025,
-      "first_author": "Zhaoqin Yang"
-    },
     "https://openalex.org/W4406096932": {
       "title": "Ultrasound as a predictor of time-loss injury for the patellar tendon, Achilles tendon and plantar fascia in division I collegiate athletes",
       "year": 2025,
@@ -761,6 +721,11 @@
       "title": "The Impact of Advanced Footwear Technology on the Performance and Running Biomechanics of Mountain Runners",
       "year": 2025,
       "first_author": "Pedro Corbí-Santamaría"
+    },
+    "https://openalex.org/W4406243376": {
+      "title": "’Creative accounting’ in the Spanish professional football League: An attempt to dodge the rules economic control?",
+      "year": 2025,
+      "first_author": "Rudemarlyn Urdaneta-Camacho"
     },
     "https://openalex.org/W4406270942": {
       "title": "Pressing Intensity: An Intuitive Measure for Pressing in Soccer",
@@ -877,11 +842,6 @@
       "year": 2025,
       "first_author": "Nuno André Nunes"
     },
-    "https://openalex.org/W4409087716": {
-      "title": "Valuation of NHL draft picks using functional data analysis",
-      "year": 2025,
-      "first_author": "Ryker Moreau"
-    },
     "https://openalex.org/W4409348231": {
       "title": "Optimising Spatial Teamwork Under Uncertainty",
       "year": 2025,
@@ -891,11 +851,6 @@
       "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
       "year": 2025,
       "first_author": "Bartlomiej Stachnik"
-    },
-    "https://openalex.org/W4409487186": {
-      "title": "Weighted dyadicity for major league baseball player transaction networks",
-      "year": 2025,
-      "first_author": "Nathaniel Bushek"
     },
     "https://openalex.org/W4409617806": {
       "title": "On-field kinematics of cut maneuvers in football players: Are wearable sensors reliable for assessing anterior cruciate ligament injury risk?",
@@ -926,11 +881,6 @@
       "title": "Day‐To‐Day Endurance Training Periodization of World‐Class Cross‐Country Skiers",
       "year": 2025,
       "first_author": "Jacob Walther"
-    },
-    "https://openalex.org/W4410637294": {
-      "title": "Exploring the Dynamics of NBA Player Salaries: An Analysis of Influencing Factors",
-      "year": 2025,
-      "first_author": "Depeng Wang"
     },
     "https://openalex.org/W4410705800": {
       "title": "Biological maturity status and chronological age in young triathletes: a first approach to bio-banding in triathlon",
@@ -967,11 +917,6 @@
       "year": 2025,
       "first_author": "Dennis Petrov"
     },
-    "https://openalex.org/W4411896424": {
-      "title": "JÁTÉKOSJOGOK VAGYONI SZEREPE HAZAI ÉS KÜLFÖLDI FUTBALLKLUBOK BESZÁMOLÓI ALAPJÁN",
-      "year": 2025,
-      "first_author": "Norbert Nagy"
-    },
     "https://openalex.org/W4412089571": {
       "title": "How much running is too much? Identifying high-risk running sessions in a 5200-person cohort study",
       "year": 2025,
@@ -1007,10 +952,10 @@
       "year": 2025,
       "first_author": "Davronbek Malikov"
     },
-    "https://openalex.org/W4412685988": {
-      "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+    "https://openalex.org/W4412685979": {
+      "title": "An exploration of high-performance environments in esports: A preliminary model",
       "year": 2025,
-      "first_author": "Sean Pradhan"
+      "first_author": "Dylan Poulus"
     },
     "https://openalex.org/W4412882744": {
       "title": "Shape graphs and the instantaneous inference of tactical positions in soccer",
@@ -1062,21 +1007,6 @@
       "year": 2025,
       "first_author": "Fangbo Bing"
     },
-    "https://openalex.org/W4414559250": {
-      "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
-      "year": 2025,
-      "first_author": "Mohammed Jamal Bataineh"
-    },
-    "https://openalex.org/W4414742830": {
-      "title": "Mapping sponsorship portfolios in esports: implied strategic continuity and diversification in the league of legends pro league",
-      "year": 2025,
-      "first_author": "Pengyu Zhu"
-    },
-    "https://openalex.org/W4415014400": {
-      "title": "The most important quantitative determinants affecting the transfer market of professional football players in Iraq",
-      "year": 2025,
-      "first_author": "Ali Abdul Hamid"
-    },
     "https://openalex.org/W4415023494": {
       "title": "Heading to guidance: understanding in-training heading demands for elite men’s and women’s football",
       "year": 2025,
@@ -1086,16 +1016,6 @@
       "title": "Technical classification of professional cycling stages using unsupervised learning: implications for performance variability",
       "year": 2025,
       "first_author": "Igor Garcia-Atutxa"
-    },
-    "https://openalex.org/W4415268362": {
-      "title": "Developing A Predictive Model for Football Players’ Market Value Using Machine Learning",
-      "year": 2025,
-      "first_author": "Muhammad Idris"
-    },
-    "https://openalex.org/W4415292821": {
-      "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
-      "year": 2025,
-      "first_author": "Dhruv J Joglekar"
     },
     "https://openalex.org/W4416208148": {
       "title": "IMPACT OF INDIVIDUAL DISCIPLINES ON THE OVERALL PERFORMANCE IN ATHLETICS COMBINED EVENTS",
@@ -1147,11 +1067,6 @@
       "year": 2022,
       "first_author": null
     },
-    "https://openalex.org/W7107867268": {
-      "title": "Financial Governance and Transfer Policies in Football: A Positional Analysis of Expenditures in Europe's Top Leagues",
-      "year": 2025,
-      "first_author": null
-    },
     "https://openalex.org/W7111296551": {
       "title": "A data-driven analysis of the technical and tactical evolution of elite women's football",
       "year": 2024,
@@ -1166,11 +1081,6 @@
       "title": "Performance and Health in Combined Events: A Scoping Review",
       "year": 2025,
       "first_author": "Pascal Édouard"
-    },
-    "https://openalex.org/W7119564663": {
-      "title": "Potential and Low-Cost Football Talents for UAE Clubs Based on Data-Driven Analysis",
-      "year": 2025,
-      "first_author": "Rashid Alqemzi"
     },
     "https://openalex.org/W7123342556": {
       "title": "Hamstring Training and Football Performance: A Systematic Review and Meta-Analysis",
@@ -6573,172 +6483,117 @@
     {
       "slug": "is-the-relationship-between-financial-spending-and-competitive-success-league-po",
       "question": "Is the relationship between financial spending and competitive success (league position) stronger in football than in other sports?",
-      "created_at": "2026-02-16T21:07:14.690932",
-      "analyzed_at": "2026-02-16T21:09:07.081461",
-      "prompt_version": "v1",
+      "created_at": "2026-02-19T22:17:46.184537",
+      "analyzed_at": "2026-02-19T22:19:15.531410",
+      "prompt_version": "v3",
       "model": "claude-haiku-4-5-20251001",
-      "papers_analyzed": 47,
-      "cost_usd": 0.06,
+      "papers_analyzed": 5392,
+      "cost_usd": 0.1701,
       "analysis_confidence": "low",
-      "scope_assessment": "This question is well-scoped and testable, but our database is poorly positioned to answer it definitively. The question requires: (1) direct empirical comparison of spending-to-performance elasticity across sports, (2) consistent operationalization of 'competitive success' (league position, wins, playoff qualification), and (3) equivalent data availability across sports. Our database has 23 football papers but only 10 basketball, 7 baseball, 2 American football, and 1 each for esports, cricket, and ice hockey. More critically, most papers study player valuation or salary prediction, NOT the relationship between total team spending and league position. This is a fundamental mismatch between the research question and what our papers actually study.",
-      "database_coverage": "Our database heavily skews toward football (49%) and contains minimal coverage of other major team sports. Among the papers we do have, the dominant theme is player-level salary/valuation (83% of papers, 39/47), not team-level spending-to-performance relationships. We found only ~5 papers that directly examine team-spending vs. league-position relationships, and even these vary wildly in methodology and operationalization. The database lacks longitudinal, comparative designs that would be essential for this question. Coverage gap: virtually no papers examining spending-to-performance elasticity comparisons across sports using consistent methods.",
-      "confidence_explanation": "We have very few papers (n≈5) that directly address the core research question, they use inconsistent methods, and there is no genuine comparative study across multiple sports with standardized metrics. Most database papers address adjacent questions (player salaries, transfer values) rather than the causal link between team spending and league position. To raise confidence to 'medium', we would need at least 3-4 papers per sport doing comparable analyses with reported effect sizes and confidence intervals. We currently have effect sizes reported in only 6 papers total across all sports.",
+      "scope_assessment": "This question is well-scoped but requires careful interpretation. It makes a specific comparative claim: that the money-performance relationship differs across sports. The database contains 1320 football papers and only moderate coverage of other sports (basketball: 476, athletics: 373, volleyball: 173, etc.), which creates an inherent asymmetry in what can be studied. The question assumes that 'spending' and 'league position' are measurable constructs across diverse sports with different financial structures (e.g., salary caps in some sports, no caps in others; different league structures). The database overwhelmingly focuses on performance analysis (4499 papers) rather than financial-competitive relationships, which is the core of this question. This is a significant limitation.",
+      "database_coverage": "Our database has poor coverage of the research needed to answer this question. We have 37 papers addressing player valuation/transfer market topics, but almost none directly examine the relationship between financial spending aggregated at the team level and competitive outcomes. The one paper on NBA analytics investment (W4408557862) provides evidence that analytics spending (proxy for investment) improves wins, but this is not team salary/spending. We have transfer fee determination papers (W4321367797, W4283159414) but these focus on individual player valuation, not team-level spending-performance relationships. We have no systematic studies of salary cap relationships to performance across sports. The papers on football financial fair play (W4406243376) examine accounting practices, not spending-performance relationships. This appears to be a significant gap in our collection—likely an active research area in sports economics that is underrepresented in a database focused on sports analytics with AI/ML methods.",
+      "confidence_explanation": "The database contains insufficient evidence to address the research question. We found zero papers directly comparing the relationship between aggregate team financial spending and competitive success (league position) across football and other sports. We have one tangential NBA paper on analytics investment. The question requires cross-sport comparative analysis of salary/spending versus league position, which our collection does not contain. To increase confidence, we would need: (1) multiple studies examining team salary vs. final league position in football across seasons; (2) equivalent studies in 3-4 other sports with comparable methodology; (3) direct statistical comparisons of correlation strengths or regression coefficients across sports. We have none of these.",
       "landscape": {
-        "summary": "The literature overwhelmingly focuses on individual player valuation and salary prediction using machine learning and statistical methods, particularly in football. Across all sports, researchers seek to understand what factors determine player market value (age, position, performance metrics, contract status) and develop predictive models. The handful of papers examining team-spending effects finds mixed results: some suggest spending significantly predicts wins (W4412685988 in NBA, W4414559250 in Saudi football), while others find weak or context-dependent relationships (W4415292821 in IPL cricket shows minimal relationship to short-term performance). The field is characterized by isolated, sport-specific case studies rather than integrated comparative analysis. Very few papers examine the temporal stability of spending-to-performance relationships or test for sport-specific differences in this relationship.",
+        "summary": "The database is dominated by performance analysis research (4499 papers), with a particular focus on technical-tactical metrics, physical demands, and machine learning applications for prediction. Player valuation research exists (269 papers) but concentrates on individual transfer fees and market value rather than team-level financial spending. The football research is substantially larger than other sports (1320 papers vs. 476 for basketball, 373 for athletics), but this does not reflect an evidence base for comparing money-performance relationships. Notably, papers on financial fair play regulations (W4406243376 on Spanish La Liga) examine creative accounting practices, not the fundamental spending-success relationship. The single most relevant paper on NBA analytics investment (W4408557862) found that each additional analyst contributes ~1.25 wins, but this measures investment in data infrastructure, not team salary spending. Transfer market research (W4321367797 systematic review of 29 papers) identifies determinants of player valuation but does not address whether team spending predicts league position. There is no comparative cross-sport literature in the database examining whether the money-wins relationship differs between football and other sports.",
         "key_findings": [
           {
-            "finding": "In the NBA, salary cap violations correlate with significantly higher win totals and offensive ratings, suggesting that increased spending (via luxury tax) justifies the cost for most teams.",
-            "evidence_strength": "moderate",
-            "papers": [
-              {
-                "work_id": "https://openalex.org/W4412685988",
-                "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
-                "year": 2025,
-                "sport": "basketball",
-                "doi": "https://doi.org/10.3389/fspor.2025.1625458",
-                "first_author": "Sean Pradhan"
-              }
-            ],
-            "paper_count": 1
-          },
-          {
-            "finding": "In Saudi Arabian Professional Football League, the influx of public investment funds (PIF) has transformed competitive balance, with concentrated investment creating performance disparities.",
+            "finding": "Analytics investment in NBA teams is associated with improved win records (~1.25 wins per analyst), but this is infrastructure spending, not salary spending",
             "evidence_strength": "weak",
             "papers": [
               {
-                "work_id": "https://openalex.org/W4414559250",
-                "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
+                "work_id": "https://openalex.org/W4408557862",
+                "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+                "year": 2025,
+                "sport": "basketball",
+                "doi": "https://doi.org/10.1177/15270025251328264",
+                "first_author": "H Wang"
+              }
+            ],
+            "paper_count": 1
+          },
+          {
+            "finding": "Player transfer fees are determined by multiple factors including age, position, performance metrics, and market dynamics, but team-level spending-position relationships are not systematically studied in the database",
+            "evidence_strength": "moderate",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4321367797",
+                "title": "Determinants of football players’ valuation: A systematic review",
+                "year": 2023,
+                "sport": "football",
+                "doi": "https://doi.org/10.1111/joes.12552",
+                "first_author": "Maxence Franceschi"
+              },
+              {
+                "work_id": "https://openalex.org/W4283159414",
+                "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+                "year": 2022,
+                "sport": "football",
+                "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+                "first_author": "Ian G. McHale"
+              }
+            ],
+            "paper_count": 2
+          },
+          {
+            "finding": "Financial regulations (e.g., UEFA FFP, Spanish LFP) exist in football but their effectiveness in controlling spending-performance relationships remains unstudied in this database",
+            "evidence_strength": "weak",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4406243376",
+                "title": "’Creative accounting’ in the Spanish professional football League: An attempt to dodge the rules economic control?",
                 "year": 2025,
                 "sport": "football",
-                "doi": "https://doi.org/10.3389/fspor.2025.1649310",
-                "first_author": "Mohammed Jamal Bataineh"
+                "doi": "https://doi.org/10.6018/rcsar.553911",
+                "first_author": "Rudemarlyn Urdaneta-Camacho"
               }
             ],
             "paper_count": 1
           },
           {
-            "finding": "In Indian Premier League cricket (IPL), team auction spending strategies show minimal short-term relationships to winning percentage or playoff qualification, with only modest long-term effects.",
-            "evidence_strength": "moderate",
-            "papers": [
-              {
-                "work_id": "https://openalex.org/W4415292821",
-                "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
-                "year": 2025,
-                "sport": "cricket",
-                "doi": "https://doi.org/10.1177/22150218251386294",
-                "first_author": "Dhruv J Joglekar"
-              }
-            ],
-            "paper_count": 1
-          },
-          {
-            "finding": "In Major League Baseball, payroll has no significant effect on transaction patterns (player trades) between competitive teams, and historical competitive teams avoid trading with each other.",
-            "evidence_strength": "moderate",
-            "papers": [
-              {
-                "work_id": "https://openalex.org/W4409487186",
-                "title": "Weighted dyadicity for major league baseball player transaction networks",
-                "year": 2025,
-                "sport": "baseball",
-                "doi": "https://doi.org/10.1177/22150218251326427",
-                "first_author": "Nathaniel Bushek"
-              }
-            ],
-            "paper_count": 1
-          },
-          {
-            "finding": "Player performance metrics (points per game, assists) are strong predictors of NBA player salaries (R²=0.9999), but this is a salary-to-performance relationship, not team spending to league position.",
+            "finding": "The database contains no comparative studies of salary cap effects or spending limits across sports (e.g., NBA salary cap vs. uncapped leagues), which would be essential to answer the research question",
             "evidence_strength": "strong",
-            "papers": [
-              {
-                "work_id": "https://openalex.org/W4410637294",
-                "title": "Exploring the Dynamics of NBA Player Salaries: An Analysis of Influencing Factors",
-                "year": 2025,
-                "sport": "basketball",
-                "doi": "https://doi.org/10.54097/zjexq891",
-                "first_author": "Depeng Wang"
-              }
-            ],
-            "paper_count": 1
-          },
-          {
-            "finding": "Draft pick valuation and competitive success show non-linear relationships; late-round NFL draft picks are undervalued by traditional charts, and trade-ups in early rounds show lower performance outcomes.",
-            "evidence_strength": "moderate",
-            "papers": [
-              {
-                "work_id": "https://openalex.org/W4414086638",
-                "title": "Redefining the draft pick valuation in the National Football League",
-                "year": 2025,
-                "sport": "american_football",
-                "doi": "https://doi.org/10.3389/fspor.2025.1628223",
-                "first_author": "Bryce Hadley"
-              }
-            ],
-            "paper_count": 1
-          },
-          {
-            "finding": "Financial investment (club spending) appears to correlate with league performance in comparative case studies of Manchester United and City, but causal inference is limited.",
-            "evidence_strength": "weak",
-            "papers": [
-              {
-                "work_id": "https://openalex.org/W4406035559",
-                "title": "The Impact of Financial Investment on Game Results: A Comparative Study of Manchester",
-                "year": 2025,
-                "sport": "football",
-                "doi": "https://doi.org/10.54254/2754-1169/2024.19249",
-                "first_author": "Zhaoqin Yang"
-              }
-            ],
-            "paper_count": 1
+            "papers": [],
+            "paper_count": 0
           }
         ],
         "methodology_profile": {
           "dominant_methods": [
-            "Multiple linear regression (statistical)",
-            "Machine learning (Random Forest, Gradient Boosting, neural networks)",
-            "Principal Component Analysis (PCA) for dimensionality reduction",
-            "Network analysis (passing networks, transaction networks)"
+            "Statistical analysis (regression, correlation, ANOVA)",
+            "Machine learning (gradient boosting, random forest, neural networks)",
+            "Descriptive/observational studies",
+            "Deep learning models"
           ],
-          "sample_size_patterns": "Highly variable and frequently underpowered for comparative analysis. Player-level studies: n=400-1577 (NBA), n=1508 (football). Team-level studies: n=127 (IPL), n=390 (NBA seasons), n=25961 (transfers across 6 leagues). Only 2 papers report n>10,000; many papers with low sample sizes (n<30) attempting to make broad claims.",
-          "data_sources_used": "Primarily proprietary/commercial databases: Transfermarkt (transfer values), Basketball-Reference, Spotrac (salary data), pro-football-reference.com, official league websites. Very few studies use official financial/accounting data or government sources. Heavy reliance on web-scraped or secondary-source data with unknown validation.",
-          "temporal_patterns": "Spike in 2024-2025 publications (35 of 47 papers, 74%), mostly recent machine learning approaches. Earlier papers (2016-2021) focused on descriptive statistics and linear regression. Longitudinal analysis is rare; most are cross-sectional or single-season snapshots. No papers systematically examine how spending-to-performance relationships have changed over decades."
+          "sample_size_patterns": "Highly variable: player valuation studies typically use 100-1000+ observations (e.g., W4283159414 with 1577 NBA players); match/performance analyses use 50-1000+ matches; individual studies of athletes often use small samples (n=15-50). Cross-sport comparative studies are absent.",
+          "data_sources_used": "Official league databases, transfer market websites, betting odds data, GPS/tracking systems, proprietary datasets. Financial data is rarely used; most studies rely on publicly available performance statistics rather than salary/spending data.",
+          "temporal_patterns": "Database heavily skewed toward recent years (2023-2025: 3407 papers; 2020-2022: 910 papers; pre-2020: 1075 papers). This temporal distribution does not help with the question, as longitudinal spending-performance relationships over decades would be needed."
         },
         "key_papers": [
           {
-            "work_id": "https://openalex.org/W4412685988",
-            "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
-            "why_key": "Directly tests spending (salary cap violations) vs. performance (wins, offensive ratings) in a major sport; uses mixed-effects models to account for team and season variation; reports concrete effect sizes. This is the closest paper to addressing the core research question, though limited to one sport.",
+            "work_id": "https://openalex.org/W4408557862",
+            "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
+            "why_key": "Only paper in database attempting to link financial/organizational investment to team performance outcomes; finds ~1.25 wins per analytics analyst. However, this measures data infrastructure spending, not team salary spending, and is limited to one sport and one type of investment.",
             "year": 2025,
             "sport": "basketball",
-            "doi": "https://doi.org/10.3389/fspor.2025.1625458",
-            "first_author": "Sean Pradhan"
+            "doi": "https://doi.org/10.1177/15270025251328264",
+            "first_author": "H Wang"
           },
           {
-            "work_id": "https://openalex.org/W4415292821",
-            "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
-            "why_key": "Explicitly examines the relationship between team spending strategies and performance in a different sport (cricket). Provides a comparative contrast to football studies. Finds minimal short-term spending-performance links, which contradicts some football findings.",
-            "year": 2025,
-            "sport": "cricket",
-            "doi": "https://doi.org/10.1177/22150218251386294",
-            "first_author": "Dhruv J Joglekar"
-          },
-          {
-            "work_id": "https://openalex.org/W4414559250",
-            "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
-            "why_key": "Measures impact of massive investment concentration (PIF) on competitive balance in football. Addresses the research question directly but lacks comparison to other sports and statistical rigor in the abstract.",
-            "year": 2025,
+            "work_id": "https://openalex.org/W4321367797",
+            "title": "Determinants of football players’ valuation: A systematic review",
+            "why_key": "Systematic review of 29 papers on player valuation; identifies variables that influence transfer fees but does not address team-level spending-league position relationships. Highlights the fragmentation of research in this area.",
+            "year": 2023,
             "sport": "football",
-            "doi": "https://doi.org/10.3389/fspor.2025.1649310",
-            "first_author": "Mohammed Jamal Bataineh"
+            "doi": "https://doi.org/10.1111/joes.12552",
+            "first_author": "Maxence Franceschi"
           },
           {
-            "work_id": "https://openalex.org/W4409487186",
-            "title": "Weighted dyadicity for major league baseball player transaction networks",
-            "why_key": "Examines spending-to-transaction relationships in baseball across 100 seasons; provides long-term temporal perspective. Finds payroll has no effect on trades, suggesting spending-performance link may be weaker in baseball than football.",
-            "year": 2025,
-            "sport": "baseball",
-            "doi": "https://doi.org/10.1177/22150218251326427",
-            "first_author": "Nathaniel Bushek"
+            "work_id": "https://openalex.org/W4283159414",
+            "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+            "why_key": "Demonstrates ML application to transfer fee prediction in football; relevant to understanding player value but not team spending-performance at aggregate level. No comparison to other sports.",
+            "year": 2022,
+            "sport": "football",
+            "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+            "first_author": "Ian G. McHale"
           }
         ]
       },
@@ -6746,449 +6601,222 @@
         {
           "id": "gap_1",
           "type": "topic",
-          "title": "Comparative spending-to-performance elasticity across sports",
-          "description": "No paper directly compares the strength of the spending-to-league-position relationship across multiple sports using equivalent methods and effect size metrics. The research question specifically asks WHETHER the relationship is STRONGER in football than others, but our database contains no study that tests this comparative hypothesis. We have isolated case studies in football (W4406035559, W4414559250), basketball (W4412685988), cricket (W4415292821), and baseball (W4409487186), but no meta-analysis or comparative regression testing the statistical significance of cross-sport differences.",
-          "evidence": "Database contains zero papers with titles or abstracts indicating cross-sport comparison of spending-to-performance elasticity. W4412685988 (NBA), W4415292821 (IPL), W4409487186 (MLB), and W4414559250 (Saudi football) all examine the relationship within a single sport. The multi_sport paper (W4214682128) focuses on novel draft trading mechanisms, not spending-performance relationships. This is a critical absence.",
-          "supporting_papers": [
-            {
-              "work_id": "https://openalex.org/W4412685988",
-              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
-              "year": 2025,
-              "sport": "basketball",
-              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
-              "first_author": "Sean Pradhan"
-            },
-            {
-              "work_id": "https://openalex.org/W4415292821",
-              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
-              "year": 2025,
-              "sport": "cricket",
-              "doi": "https://doi.org/10.1177/22150218251386294",
-              "first_author": "Dhruv J Joglekar"
-            },
-            {
-              "work_id": "https://openalex.org/W4409487186",
-              "title": "Weighted dyadicity for major league baseball player transaction networks",
-              "year": 2025,
-              "sport": "baseball",
-              "doi": "https://doi.org/10.1177/22150218251326427",
-              "first_author": "Nathaniel Bushek"
-            },
-            {
-              "work_id": "https://openalex.org/W4414559250",
-              "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
-              "year": 2025,
-              "sport": "football",
-              "doi": "https://doi.org/10.3389/fspor.2025.1649310",
-              "first_author": "Mohammed Jamal Bataineh"
-            }
-          ],
+          "title": "No direct empirical comparison of money-performance relationships across sports",
+          "description": "The database contains zero papers directly comparing the relationship between aggregate team financial spending (salary, payroll, or budget) and competitive success (league position, championship wins, etc.) across football and other sports. This is the core of the research question and is entirely absent. The closest work (W4408557862) examines analytics investment, not salary spending, and is limited to the NBA. To answer the research question rigorously would require: (1) identification of multiple seasons of salary/payroll data for teams in football (e.g., Premier League, La Liga, Bundesliga) and equivalent data for at least 3 other major sports; (2) calculation of correlation coefficients (or equivalent effect sizes) between spending and league position within each sport; (3) statistical testing of whether these correlation strengths differ significantly across sports; (4) accounting for confounders (e.g., year effects, league structure, salary cap rules).",
+          "evidence": "Complete absence of any paper in the database addressing this comparison. The database has 1320 football papers and substantial coverage of other sports, yet none make this specific comparison. This suggests either: (a) the research question is not typically investigated within sports analytics/AI research communities (more likely in sports economics), or (b) our database, focused on performance analytics with AI/ML methods, is not capturing the relevant economics literature.",
+          "supporting_papers": [],
           "importance": "high",
-          "importance_rationale": "This is THE core question being asked. Without a paper (or set of papers) directly testing whether football's spending-to-performance relationship is stronger than other sports, the research question cannot be answered from our database.",
-          "feasibility": "high",
-          "feasibility_rationale": "Feasible because (1) data exists for major sports leagues, (2) methodology is straightforward (multi-level regression with sport as a moderator), (3) effect sizes can be standardized (e.g., percentage change in league position per unit spending). Requires access to total team payroll/spending and final league positions for 10+ seasons across ≥3 sports. Estimated effort: 3-6 months for a doctoral thesis.",
+          "importance_rationale": "This is the direct answer to the research question posed. Without evidence on this specific comparison, the question cannot be answered. The finding that such research appears to be absent is itself informative—it suggests that comparative cross-sport financial-performance relationships are not well studied in the sports analytics literature.",
+          "feasibility": "medium",
+          "feasibility_rationale": "Feasible in principle: salary/budget data for major leagues are publicly available (e.g., Spotrac, Transfermarkt, official league financial reports). However, obtaining and standardizing spending data across sports with different financial structures (salary caps, luxury taxes, revenue-sharing) would require careful design. Causal inference would be challenging due to reverse causality (successful teams attract investment) and unmeasured confounders (e.g., coaching quality, player development systems).",
           "confidence": "high"
         },
         {
           "id": "gap_2",
-          "type": "methodology",
-          "title": "Lack of causal inference for spending-to-performance relationships",
-          "description": "All papers examining spending-to-performance are observational and use regression (OLS, mixed-effects) or clustering. None employ causal inference methods (instrumental variables, quasi-experimental designs, propensity score matching, regression discontinuity) that would account for confounding (e.g., successful teams attract more revenue, reverse causality). W4412685988 uses mixed-effects but does not address endogeneity. W4415292821 acknowledges this but calls it a limitation. This methodological gap makes it impossible to claim spending CAUSES success vs. success enabling spending.",
-          "evidence": "Examined methodology of papers addressing spending-to-performance: W4412685988 (mixed-effects, no IV), W4415292821 (k-means clustering, no causal methods), W4414559250 (not detailed but stated as statistical), W4409487186 (network dyadicity, not causal). None cite or employ instrumental variables, RDD, or quasi-experimental designs. The broader literature on sports economics (from training knowledge) has used salary cap changes as natural experiments, but our database contains no such study.",
+          "type": "topic",
+          "title": "No examination of whether football's spending-success relationship differs from other sports due to league structure or regulations",
+          "description": "Related to gap_1 but more specific: even if spending-performance correlations are measured in individual sports, there is no analysis of why football's relationship might be stronger or weaker than other sports. Potential moderating factors include: (1) salary cap structures (NBA/NFL have hard caps; most football leagues do not until recently); (2) transfer rules (uniquely complex in football); (3) league competitive balance policies; (4) revenue distribution models. One paper (W4406243376) examines UEFA Financial Fair Play and Spanish LFP regulations, but focuses on accounting manipulation, not on whether regulations affect the spending-winning relationship.",
+          "evidence": "W4406243376 examines earnings management in Spanish football but does not address whether FFP regulations weakened or strengthened the salary-position relationship. The paper on NBA analytics (W4408557862) is from a salary-capped league. No paper systematically examines whether salary cap effects differ in their impact on competitive balance across sports.",
           "supporting_papers": [
             {
-              "work_id": "https://openalex.org/W4412685988",
-              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
-              "year": 2025,
-              "sport": "basketball",
-              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
-              "first_author": "Sean Pradhan"
-            },
-            {
-              "work_id": "https://openalex.org/W4415292821",
-              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
-              "year": 2025,
-              "sport": "cricket",
-              "doi": "https://doi.org/10.1177/22150218251386294",
-              "first_author": "Dhruv J Joglekar"
-            },
-            {
-              "work_id": "https://openalex.org/W4414559250",
-              "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
+              "work_id": "https://openalex.org/W4406243376",
+              "title": "’Creative accounting’ in the Spanish professional football League: An attempt to dodge the rules economic control?",
               "year": 2025,
               "sport": "football",
-              "doi": "https://doi.org/10.3389/fspor.2025.1649310",
-              "first_author": "Mohammed Jamal Bataineh"
+              "doi": "https://doi.org/10.6018/rcsar.553911",
+              "first_author": "Rudemarlyn Urdaneta-Camacho"
             }
           ],
           "importance": "high",
-          "importance_rationale": "Policy and managerial decisions depend on causal understanding. Teams need to know whether spending MORE will improve position, not just whether spending and position are correlated. Without causal inference, conclusions are confounded.",
+          "importance_rationale": "Understanding WHY a difference exists (if it does) is as important as measuring whether a difference exists. This mechanistic understanding would inform policy discussions around competitive balance regulations.",
           "feasibility": "high",
-          "feasibility_rationale": "NFL and NBA salary caps are quasi-natural experiments (exogenous constraints on spending). League rule changes (transfer window restrictions, salary regulations in various countries) provide variation. Feasible for a PhD project using event study or RDD designs.",
+          "feasibility_rationale": "Straightforward comparative analysis once spending-performance correlations are estimated within each sport. Would require literature review of regulations and institutional differences, then statistical comparison of correlation strengths while controlling for league structure variables.",
           "confidence": "high"
         },
         {
           "id": "gap_3",
-          "type": "temporal",
-          "title": "Absence of long-term longitudinal analysis of spending-performance relationships",
-          "description": "Most papers are single-season or cross-sectional snapshots (W4410637294 uses 1 season, W4415292821 uses 127 team-seasons, W4405791145 uses 1 season). W4409487186 covers 100 seasons (1922-2021) in baseball but does not analyze trend changes. No paper examines whether the spending-to-performance elasticity has STRENGTHENED or WEAKENED over time in any sport, or whether competitive balance has shifted (fewer teams competitive due to spending concentration). This temporal dimension is critical for understanding market evolution.",
-          "evidence": "Publication date patterns show 74% of papers published 2024-2025 (recent snapshot data). Papers citing temporal ranges: W4409487186 (100 years but transaction focus, not spending elasticity), W4411896424 (3 seasons), W4393371529 (unclear period), W4391543758 (2007-2017). No paper explicitly analyzes HOW the strength of spending-to-performance has changed decade by decade.",
+          "type": "data",
+          "title": "Absence of standardized, publicly available team-level financial spending datasets across sports",
+          "description": "A foundational barrier: while individual player transfer fees and some salary data are publicly available, comprehensive team-level spending aggregates (total payroll, budget, revenue) for multiple sports and seasons are not standardized in accessible databases. Football has better access to spending data (Transfermarkt, Spotrac provide European data; some transparency in player contracts) but other sports have varying levels of transparency. For example: NBA salary data is public; NFL is also public; MLB is public; but international basketball, rugby, cricket leagues vary widely in data transparency. This fragmentation makes cross-sport comparison infeasible without substantial data collection effort.",
+          "evidence": "No papers in the database reference standardized cross-sport financial datasets. W4283159414 uses transfer market websites and official NBA data. W4321367797 lists 'transfer fees' as data but notes heterogeneity in availability and measurement across studies. This is implicit evidence that standardized financial data is lacking.",
           "supporting_papers": [
             {
-              "work_id": "https://openalex.org/W4410637294",
-              "title": "Exploring the Dynamics of NBA Player Salaries: An Analysis of Influencing Factors",
-              "year": 2025,
-              "sport": "basketball",
-              "doi": "https://doi.org/10.54097/zjexq891",
-              "first_author": "Depeng Wang"
-            },
-            {
-              "work_id": "https://openalex.org/W4415292821",
-              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
-              "year": 2025,
-              "sport": "cricket",
-              "doi": "https://doi.org/10.1177/22150218251386294",
-              "first_author": "Dhruv J Joglekar"
-            },
-            {
-              "work_id": "https://openalex.org/W4405791145",
-              "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
-              "year": 2024,
+              "work_id": "https://openalex.org/W4283159414",
+              "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+              "year": 2022,
               "sport": "football",
-              "doi": "https://doi.org/10.54141/psbd.1489554",
-              "first_author": "Mehmet Ali Yalçınkaya"
+              "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+              "first_author": "Ian G. McHale"
             },
             {
-              "work_id": "https://openalex.org/W4409487186",
-              "title": "Weighted dyadicity for major league baseball player transaction networks",
-              "year": 2025,
-              "sport": "baseball",
-              "doi": "https://doi.org/10.1177/22150218251326427",
-              "first_author": "Nathaniel Bushek"
+              "work_id": "https://openalex.org/W4321367797",
+              "title": "Determinants of football players’ valuation: A systematic review",
+              "year": 2023,
+              "sport": "football",
+              "doi": "https://doi.org/10.1111/joes.12552",
+              "first_author": "Maxence Franceschi"
             }
           ],
           "importance": "high",
-          "importance_rationale": "Football's spending dominance (if true) may be recent. Knowing WHEN this divergence emerged (e.g., post-Champions League monetization, post-2000 TV deals) is essential for understanding the mechanism. Without temporal analysis, we cannot distinguish between 'football is inherently more spending-dependent' vs. 'football became more spending-dependent recently.'",
+          "importance_rationale": "Without reliable, comparable data, the research question cannot be answered empirically. This is a prerequisite gap.",
           "feasibility": "medium",
-          "feasibility_rationale": "Requires 20+ seasons of payroll data across multiple sports. NBA/Premier League data is available; MLB salary data exists since 1985; other leagues less accessible. Methodologically straightforward (rolling-window correlations, time-series regression with interactions). Estimated effort: 4-8 months.",
+          "feasibility_rationale": "Data exist but must be compiled from multiple sources (league websites, Spotrac, Transfermarkt, official financial disclosures, team annual reports). Significant effort required to standardize across sports with different fiscal years, accounting standards, and transparency levels. Possible but resource-intensive.",
           "confidence": "high"
         },
         {
           "id": "gap_4",
-          "type": "data",
-          "title": "Inconsistent operationalization of 'competitive success' across papers and sports",
-          "description": "Papers use different metrics as the dependent variable: wins (W4412685988), playoff qualification (W4415292821), league position/ranking (W4414559250), market value (W4405791145), salary (W4410637294). This heterogeneity prevents cross-study synthesis. Furthermore, 'league position' (the specific outcome in the research question) is rarely used as the dependent variable; most papers predict salary or market value (player-level) rather than team position (team-level). This mismatch means our database cannot directly answer whether spending predicts league position across sports.",
-          "evidence": "Dependent variables in papers examining spending-to-performance: W4412685988 uses 'games won' and 'offensive rating'; W4415292821 uses 'winning percentage' and 'playoff qualification'; W4414559250 measures 'competitive balance' (Herfindahl index) not league position; W4409487186 examines 'transaction patterns' not performance. No consistent metric. Of 47 papers, only ~5 even attempt to relate team spending to team outcomes; the rest predict player value/salary.",
+          "type": "methodology",
+          "title": "No causal inference studies of spending effects on performance; potential reverse causality unaddressed",
+          "description": "Even if correlations between spending and position are estimated, causality is difficult to establish. Better teams attract investment (reverse causality). Wealthier teams make better spending decisions, not just spend more. Confounders like coaching quality, player development, and organizational culture are unmeasured. The database contains no instrumental variable studies, regression discontinuity designs, or quasi-experimental approaches to isolating the causal effect of spending on performance. W4408557862 (analytics investment and wins) uses fixed effects regression but does not fully address reverse causality.",
+          "evidence": "W4408557862 acknowledges measurement error and potential bias but does not employ strong causal inference methods. No papers in the database use IV, RD, or diff-in-diff designs to estimate spending effects on performance. This is true across all sports studied.",
           "supporting_papers": [
             {
-              "work_id": "https://openalex.org/W4412685988",
-              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+              "work_id": "https://openalex.org/W4408557862",
+              "title": "The Effect of Basketball Analytics Investment on National Basketball Association (NBA) Team Performance",
               "year": 2025,
               "sport": "basketball",
-              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
-              "first_author": "Sean Pradhan"
-            },
-            {
-              "work_id": "https://openalex.org/W4415292821",
-              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
-              "year": 2025,
-              "sport": "cricket",
-              "doi": "https://doi.org/10.1177/22150218251386294",
-              "first_author": "Dhruv J Joglekar"
-            },
-            {
-              "work_id": "https://openalex.org/W4414559250",
-              "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
-              "year": 2025,
-              "sport": "football",
-              "doi": "https://doi.org/10.3389/fspor.2025.1649310",
-              "first_author": "Mohammed Jamal Bataineh"
-            },
-            {
-              "work_id": "https://openalex.org/W4409487186",
-              "title": "Weighted dyadicity for major league baseball player transaction networks",
-              "year": 2025,
-              "sport": "baseball",
-              "doi": "https://doi.org/10.1177/22150218251326427",
-              "first_author": "Nathaniel Bushek"
-            },
-            {
-              "work_id": "https://openalex.org/W4405791145",
-              "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
-              "year": 2024,
-              "sport": "football",
-              "doi": "https://doi.org/10.54141/psbd.1489554",
-              "first_author": "Mehmet Ali Yalçınkaya"
+              "doi": "https://doi.org/10.1177/15270025251328264",
+              "first_author": "H Wang"
             }
           ],
           "importance": "high",
-          "importance_rationale": "The research question specifically asks about 'league position,' but papers use different outcome metrics. Without standardization, comparing effect sizes across sports is invalid. This is a fundamental measurement issue.",
-          "feasibility": "high",
-          "feasibility_rationale": "Can be addressed in a comparative meta-analysis or new primary study by standardizing all outcomes to final league position (or ranking points, or playoff probability). No new data collection needed; reanalysis of existing studies suffices.",
+          "importance_rationale": "Answering the research question requires not just correlations but potentially causal understanding. A correlation could be entirely due to reverse causality (success attracts investment) rather than spending causing success.",
+          "feasibility": "medium",
+          "feasibility_rationale": "Possible approaches: (1) Use salary cap rules as quasi-natural experiments (e.g., changes to salary cap in a league provide exogenous variation); (2) Instrumental variables (e.g., draft order as instrument for team quality/future spending); (3) Regression discontinuity at promotion/relegation thresholds. All feasible but require careful research design.",
           "confidence": "high"
         },
         {
           "id": "gap_5",
           "type": "population",
-          "title": "Severe underrepresentation of non-top-tier leagues and women's sports",
-          "description": "Database heavily focuses on top-tier leagues in wealthy countries: Premier League, La Liga, Serie A (football), NBA (basketball). Only 1 paper (W4210605152) addresses women's sports (All-American Girls Professional Baseball League, historical). Non-top-tier leagues: only ~2-3 papers on lower divisions or less wealthy countries (W3023097278 on K-league, W4415014400 on Iraqi football, W7119564663 on UAE). This limits generalizability. The spending-to-performance relationship may be fundamentally different in less commercialized leagues where spending variance is lower and salary/transfer markets are less efficient.",
-          "evidence": "Sport distribution: 23 football papers, but almost exclusively European top 5 leagues (Premier League, La Liga, Serie A, Ligue 1, Bundesliga). Basketball papers focus on NBA. Cricket limited to IPL. Only 1 women's sport paper out of 47. Regional distribution: ~45 papers focus on European/North American leagues; ~2 on emerging markets. This bias toward wealthy, commercialized leagues means conclusions about 'football vs. other sports' actually mean 'Premier League vs. NBA vs. La Liga,' not football universally.",
-          "supporting_papers": [
-            {
-              "work_id": "https://openalex.org/W4210605152",
-              "title": "Women on the Field and Money in the Bank: The Business of the All-American Girls Professional Baseball League",
-              "year": 2021,
-              "sport": "baseball",
-              "doi": "https://doi.org/10.1353/nin.2021.0013",
-              "first_author": "Lisa Giddings"
-            },
-            {
-              "work_id": "https://openalex.org/W3023097278",
-              "title": "A Study on the Conceptual Structure for the Estimation of Annual Salary of K-league Players",
-              "year": 2018,
-              "sport": "football",
-              "doi": "https://doi.org/10.35159/kjss.2018.12.27.6.389",
-              "first_author": "Yong-Rae Kim"
-            },
-            {
-              "work_id": "https://openalex.org/W4415014400",
-              "title": "The most important quantitative determinants affecting the transfer market of professional football players in Iraq",
-              "year": 2025,
-              "sport": "football",
-              "doi": "https://doi.org/10.37359/jope.v37(3)2025.2290",
-              "first_author": "Ali Abdul Hamid"
-            },
-            {
-              "work_id": "https://openalex.org/W7119564663",
-              "title": "Potential and Low-Cost Football Talents for UAE Clubs Based on Data-Driven Analysis",
-              "year": 2025,
-              "sport": "football",
-              "doi": null,
-              "first_author": "Rashid Alqemzi"
-            }
-          ],
+          "title": "Evidence limited to professional leagues; amateur, youth, and emerging sports not covered",
+          "description": "The research question implicitly focuses on professional/elite competition where spending varies substantially. The database has virtually no papers examining the spending-performance relationship in amateur sports, university sports, or youth leagues. Additionally, emerging sports like esports (70 papers in database) are not examined for spending-performance relationships. This limits generalizability of findings and prevents understanding whether the relationship differs at different competitive levels within the same sport.",
+          "evidence": "Database identifies 'amateur' or 'recreational' contexts in ~5% of papers. Papers on esports (W4412685979) examine high-performance environments but not spending-position. No papers on university or youth league spending-performance.",
+          "supporting_papers": [],
           "importance": "medium",
-          "importance_rationale": "Affects generalizability. If spending-to-performance is stronger in football because of market maturity and inequality, this is a valid finding. But our database cannot test this because it lacks lower-league and women's sport data.",
+          "importance_rationale": "Less critical for answering the original question (which likely refers to professional leagues) but relevant for understanding the scope and generalizability of any findings.",
           "feasibility": "medium",
-          "feasibility_rationale": "Lower-tier league data exists but is less publicly available (requires web scraping or manual collection). Women's sport data increasingly available (WSL, NWSL, etc.). Feasible for a comparative thesis but requires data engineering effort.",
-          "confidence": "high"
+          "feasibility_rationale": "Data availability is limited for non-professional leagues but many exist (university athletic department budgets are public; some amateur leagues publish data). Feasible but would require significant data collection.",
+          "confidence": "medium"
         },
         {
           "id": "gap_6",
-          "type": "integration",
-          "title": "Missing connection between team spending and strategic competition models",
-          "description": "Papers on spending-to-performance exist in isolation from economic theory. No paper integrates spending effects with theories of competitive balance, salary cap economics, or tournament theory. For example, W4412685988 shows salary cap violations improve wins but does not discuss whether this is an inefficiency (money-burning) or rational economic decision. W4415292821 finds auction strategies barely predict IPL performance but does not theorize WHY (market efficiency vs. randomness). The field lacks dialogue with sports economics theory on rent-seeking, information asymmetry, and league governance.",
-          "evidence": "Papers are atheoretical or use weak theory. W4412685988 title mentions 'luxury tax' but doesn't engage with economic models of salary cap design. W4415292821 mentions 'strategic groups' but doesn't connect to strategic management literature. No papers cite or build on canonical sports economics work (e.g., models of competitive balance by Quirk & Fort, Szymanski & Kuypers). This suggests insufficient integration across disciplines.",
+          "type": "temporal",
+          "title": "No longitudinal studies tracking how spending-performance relationships evolve over time within sports",
+          "description": "Even within a single sport, the relationship between spending and success may change over time due to salary caps, regulatory changes, or market dynamics. For example, the introduction of UEFA Financial Fair Play in 2010-2011 may have altered football's spending-performance relationship. No longitudinal studies in the database track such evolution within a sport, let alone comparatively across sports. Most studies are cross-sectional or cover short periods (1-3 seasons).",
+          "evidence": "W4406243376 examines pre/post FFP period (2011-2021) in Spanish football but focuses on accounting practices, not spending-position relationships. No other papers examine long-term temporal trends in spending effects.",
           "supporting_papers": [
             {
-              "work_id": "https://openalex.org/W4412685988",
-              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
+              "work_id": "https://openalex.org/W4406243376",
+              "title": "’Creative accounting’ in the Spanish professional football League: An attempt to dodge the rules economic control?",
               "year": 2025,
-              "sport": "basketball",
-              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
-              "first_author": "Sean Pradhan"
-            },
-            {
-              "work_id": "https://openalex.org/W4415292821",
-              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
-              "year": 2025,
-              "sport": "cricket",
-              "doi": "https://doi.org/10.1177/22150218251386294",
-              "first_author": "Dhruv J Joglekar"
+              "sport": "football",
+              "doi": "https://doi.org/10.6018/rcsar.553911",
+              "first_author": "Rudemarlyn Urdaneta-Camacho"
             }
           ],
           "importance": "medium",
-          "importance_rationale": "Understanding the causal mechanisms (why spending predicts success MORE in football) requires theoretical grounding. Current papers describe relationships but don't explain them.",
+          "importance_rationale": "Understanding temporal trends would enrich the answer to the research question and provide insights into regulatory effects. However, the core question could be answered with snapshot data from a single season across sports.",
           "feasibility": "medium",
-          "feasibility_rationale": "Requires literature review and theoretical development. Could be done in a master's thesis combining sports economics and empirical analysis. Existing theory frameworks exist; application is the missing step.",
+          "feasibility_rationale": "Requires access to historical spending and position data over 10-20 years. Some sports have excellent data archives (e.g., NBA); others less so. Feasible but time-consuming.",
           "confidence": "medium"
         },
         {
           "id": "gap_7",
-          "type": "replication",
-          "title": "Critical findings not independently replicated across multiple datasets/time periods",
-          "description": "The key finding that spending affects performance (W4412685988 in NBA) is based on n=390 team-seasons. The IPL finding of minimal spending-performance relationship (W4415292821, n=127 team-seasons) uses a subjective clustering algorithm (k-means) with acknowledged small sample size (n reduced further with lags). Neither has been replicated in a different league or time period. Standard practice would require replication in, e.g., a different 10-year window or a different league with similar structure before claiming generalizability.",
-          "evidence": "Each paper studies a single dataset in a single sport over one time period. W4412685988 (NBA 2014-2023), W4415292821 (IPL seasons 1-16), W4414559250 (Saudi SPL recent seasons). No paper states it is a replication study. The sports analytics field (from training knowledge) has a known replication crisis, but our database shows no replication attempts for key spending-performance findings.",
-          "supporting_papers": [
-            {
-              "work_id": "https://openalex.org/W4412685988",
-              "title": "Violating the salary cap: exploring performance gains in the National Basketball Association",
-              "year": 2025,
-              "sport": "basketball",
-              "doi": "https://doi.org/10.3389/fspor.2025.1625458",
-              "first_author": "Sean Pradhan"
-            },
-            {
-              "work_id": "https://openalex.org/W4415292821",
-              "title": "Clustered auction strategies and performance outcomes in the Indian Premier League",
-              "year": 2025,
-              "sport": "cricket",
-              "doi": "https://doi.org/10.1177/22150218251386294",
-              "first_author": "Dhruv J Joglekar"
-            },
-            {
-              "work_id": "https://openalex.org/W4414559250",
-              "title": "The take-off of the Saudi professional football league in the context of the 2030 vision: effect on the competitive balance",
-              "year": 2025,
-              "sport": "football",
-              "doi": "https://doi.org/10.3389/fspor.2025.1649310",
-              "first_author": "Mohammed Jamal Bataineh"
-            }
-          ],
-          "importance": "medium",
-          "importance_rationale": "Without replication, we cannot distinguish between true effects and idiosyncratic findings for one league in one era. Medium urgency because some papers have reasonable sample sizes, but important for scientific credibility.",
-          "feasibility": "high",
-          "feasibility_rationale": "Straightforward replication in different leagues/periods using published data. Could be completed in a semester-long graduate project.",
+          "type": "integration",
+          "title": "Disconnect between sports economics and sports analytics research communities",
+          "description": "This gap is meta-level: the research question is fundamentally an economics question (relationship between financial input and competitive output), but our database is dominated by sports analytics and performance analysis research (machine learning, biomechanics, technical-tactical analysis). The disconnect is evident: player valuation research (269 papers) focuses on predicting individual transfer fees using ML, not on team-level spending effects. Financial regulations (UEFA FFP) are studied from an accounting perspective (W4406243376), not from a competitive balance perspective. The AI/ML sports analytics community does not appear to engage substantially with sports economics questions, creating a gap between where the literature is concentrated and where this particular research question would be answered.",
+          "evidence": "Large numbers of papers on player valuation (269) but zero on team salary-position relationships. Papers on financial fair play (1 in database) examine accounting, not spending effects. Papers on betting and markets (125) focus on prediction, not on relationships between spending and predictability of outcomes. This distribution suggests the research question is not a priority in sports analytics with AI/ML focus.",
+          "supporting_papers": [],
+          "importance": "high",
+          "importance_rationale": "This gap explains why the primary research question cannot be answered from our database. It is not a gap in data or methods, but a gap in research priorities and interdisciplinary collaboration.",
+          "feasibility": "low",
+          "feasibility_rationale": "Closing this gap would require deliberate research agenda-setting by sports economics researchers to engage with sports analytics methods, or vice versa. Not feasible through gap analysis alone; would require research community initiatives.",
           "confidence": "high"
-        },
-        {
-          "id": "gap_8",
-          "type": "data",
-          "title": "Over-reliance on Transfermarkt data without validation of player valuation accuracy",
-          "description": "At least 10 papers use Transfermarkt for transfer value data (W4391543758, W4405791145, W7107867268, W4415268362, W4415014400, and others). Transfermarkt is a crowdsourced, expert-opinion-based database with no published validation study in our database. W4405791145 explicitly acknowledges 'market value subjectivity' and reliance on user votes but proceeds anyway. No paper compares Transfermarkt valuations to actual transfer fees to validate the data. This is a critical data quality issue because the entire player valuation literature depends on it.",
-          "evidence": "Multiple papers cite Transfermarkt as their primary data source (e.g., W7107867268: 'n=25961 transfers' from Transfermarkt). W4405791145 states: 'Transfermarkt relies on subjective inputs such as expert opinions and user votes, and may not fully capture market dynamics' but does not validate this concern empirically. No paper in our database performs a Transfermarkt-to-actual-transaction validation study.",
-          "supporting_papers": [
-            {
-              "work_id": "https://openalex.org/W4391543758",
-              "title": "The Appraisal of Players' Transfer Market Values: Empirical Evidence From Italian Serie A",
-              "year": 2024,
-              "sport": "football",
-              "doi": "https://doi.org/10.32731/ijsf/191.022024.03",
-              "first_author": "Marco Di Domizio"
-            },
-            {
-              "work_id": "https://openalex.org/W4405791145",
-              "title": "The Role of Performance Metrics in Estimating Market Values of Footballers in Europe's Top Five Leagues",
-              "year": 2024,
-              "sport": "football",
-              "doi": "https://doi.org/10.54141/psbd.1489554",
-              "first_author": "Mehmet Ali Yalçınkaya"
-            },
-            {
-              "work_id": "https://openalex.org/W7107867268",
-              "title": "Financial Governance and Transfer Policies in Football: A Positional Analysis of Expenditures in Europe's Top Leagues",
-              "year": 2025,
-              "sport": "football",
-              "doi": "https://doi.org/10.5281/zenodo.17682683",
-              "first_author": null
-            },
-            {
-              "work_id": "https://openalex.org/W4415268362",
-              "title": "Developing A Predictive Model for Football Players’ Market Value Using Machine Learning",
-              "year": 2025,
-              "sport": "football",
-              "doi": "https://doi.org/10.33093/jiwe.2025.4.3.12",
-              "first_author": "Muhammad Idris"
-            }
-          ],
-          "importance": "medium",
-          "importance_rationale": "If Transfermarkt valuations are systematically biased (e.g., overvaluing young players, undervaluing defenders), downstream findings about what predicts value will be confounded. This could affect the spending-to-performance relationship if teams rely on accurate valuations for decision-making.",
-          "feasibility": "medium",
-          "feasibility_rationale": "Requires collecting actual transfer fee data (publicly available for top-tier leagues from press reports and official sources) and correlating with Transfermarkt values. Feasible but requires careful data collection and curation.",
-          "confidence": "medium"
         }
       ],
       "research_agenda": [
         {
           "priority": 1,
-          "title": "Comparative multi-sport analysis of spending-to-league-position elasticity with standardized methodology",
-          "description": "Conduct a panel regression study across NBA (20 seasons), Premier League (20 seasons), and MLB (20 seasons) with league position as the dependent variable and total team payroll as the predictor, controlling for lagged performance and market size. Use mixed-effects models with sport as a moderator to test whether the spending-to-position elasticity is significantly different in football vs. basketball vs. baseball. Report effect sizes (e.g., 1% increase in payroll → X% change in league position) with 95% CIs separately by sport. This directly answers the research question.",
+          "title": "Establish baseline spending-performance correlations within major sports, then compare across sports",
+          "description": "Conduct a large-scale empirical study quantifying the relationship between aggregate team financial spending (salary, payroll, budget, or investment) and competitive success (final league position, points, wins, championship probability) in 4-5 sports: (1) English Premier League (football); (2) NBA (basketball); (3) NFL (American football); (4) MLB (baseball); (5) Bundesliga or La Liga (football for robustness). For each sport and season (10-20 years of data), calculate Pearson or Spearman correlations between spending and position. Fit linear regression models to estimate the elasticity of position with respect to spending (e.g., 1% increase in payroll → X% improvement in league position). Conduct meta-regression comparing the strength of these relationships across sports, controlling for league structure (salary cap, revenue sharing, promotion/relegation). Test the hypothesis that football's relationship is stronger/weaker than other sports using interaction terms.",
           "addresses_gaps": [
             "gap_1",
-            "gap_4"
+            "gap_2",
+            "gap_3"
           ],
-          "suggested_methodology": "Multi-level linear regression: League_Position ~ log(Payroll) + Sport + log(Payroll)×Sport + Prior_Position + Market_Size + (1|Team) + (1|Season). Report marginal effects by sport.",
-          "suggested_data": "Official league payroll data (NBA Salary Cap database, Premier League financials via Deloitte, MLB from USA Today salary database) and final league standings for 2004-2024 (20 seasons). Total sample: 60 teams × 20 seasons × 3 sports = 3,600 team-season observations.",
+          "suggested_methodology": "Cross-sectional time series analysis (panel regression with fixed effects for teams and years). Use multiple regression to control for confounders: previous season's performance (to account for team quality persistence), league size, year effects. Sensitivity analysis: test robustness using Spearman rank correlation, quantile regression (do effects differ for top vs. bottom spenders?), and lagged spending variables (does prior-year spending predict current-year position?).",
+          "suggested_data": "Team payroll/salary data from: Spotrac (NFL, NBA, MLB), official league websites (Premier League, La Liga, Bundesliga publish financial data), Transfermarkt (European football). Final league positions from official league websites. Availability: excellent for NBA/NFL/MLB; good for Premier League; moderate for La Liga/Bundesliga; mixed for international leagues. Data cleaning needed: standardize for inflation, currency exchange rates, league size changes.",
           "estimated_difficulty": "standard_phd",
-          "potential_impact": "Directly answers whether football's spending-to-performance relationship is stronger. If significant, opens questions about WHY (market structure, league governance, player mobility). Could inform policy discussions about competitive balance regulations."
+          "potential_impact": "Direct answer to the research question. Would establish whether football's money-performance relationship is truly stronger than other sports, with quantified effect sizes. Would inform policy discussions on competitive balance regulations. High relevance to sports economics, sports management, and sports administration stakeholders."
         },
         {
           "priority": 2,
-          "title": "Instrumental variable analysis of spending-to-performance causality using salary cap changes as natural experiments",
-          "description": "Exploit exogenous variation in salary cap levels (NBA cap increases, Premier League FFP regulation changes, MLB competitive balance tax threshold adjustments) as instruments for team spending changes. Use two-stage least squares or local linear regression around cap thresholds (RDD) to estimate the causal effect of a 1% increase in allowable spending on final league position, controlling for team and season fixed effects. Compare estimated causal effects across sports to test whether the spending-to-performance relationship is structurally stronger in football.",
+          "title": "Investigate causal effects of spending changes on performance using quasi-experimental designs",
+          "description": "Build on priority 1 by isolating causal effects of spending on performance. Design quasi-experimental studies exploiting exogenous variation in spending or rules: (1) Salary cap changes: study seasons immediately before/after salary cap introductions (e.g., when salary caps are implemented or raised/lowered) as a quasi-natural experiment. (2) Promotion/relegation thresholds: teams on the promotion/relegation boundary may face different incentive structures; use regression discontinuity at the boundary. (3) Revenue shocks: natural disasters or stadium changes that exogenously alter team revenues. (4) Transfer window changes: regulatory changes affecting player trading patterns. Use difference-in-differences, regression discontinuity, or instrumental variables to estimate causal effect of spending on league position.",
           "addresses_gaps": [
-            "gap_1",
-            "gap_2"
+            "gap_4"
           ],
-          "suggested_methodology": "Two-stage IV regression or regression discontinuity design (RDD) around salary cap/FFP threshold discontinuities. IV: League_Position = β₁×Spending + controls + ε, where Spending is instrumented by (Cap_Change OR Distance_to_FFP_Threshold).",
-          "suggested_data": "Historical salary cap/FFP regulations and their changes (from league official documents), actual team payroll (Spotrac, USA Today, Deloitte), league positions. Sample: 2000-2024 for NFL (hard cap) and NBA (soft cap with luxury tax); 2010-2024 for Premier League (FFP era).",
+          "suggested_methodology": "Difference-in-differences regression: compare teams that were forced to reduce spending (e.g., due to regulatory compliance) to control teams, tracking position before/after the shock. Regression discontinuity: exploit sharp thresholds (e.g., teams narrowly missing promotion face different budgets in next season). Instrumental variables: use draft order, unexpected player injuries, or coach retirement as instruments for team spending.",
+          "suggested_data": "Same as priority 1, plus: regulatory change dates, promotion/relegation thresholds, draft order data, injury/event dates. Requires careful matching of spending and performance data at the exact time of exogenous shocks.",
           "estimated_difficulty": "challenging_project",
-          "potential_impact": "Provides causal evidence rather than correlational. If spending causally improves position more in football, this is robust to omitted variable bias. High value for policy makers considering regulation changes."
+          "potential_impact": "Would answer not just whether spending predicts position, but whether increases in spending cause performance improvements. Would clarify reverse causality concerns. Highly policy-relevant: informs whether salary caps/regulations effectively constrain dominant teams."
         },
         {
           "priority": 3,
-          "title": "Temporal analysis of spending-to-performance elasticity evolution over 30+ seasons",
-          "description": "Conduct a rolling-window analysis (10-year windows, moving forward by 1 year) of the correlation between team payroll and final league position in football (Premier League 1992-2024), basketball (NBA 1990-2024), and baseball (MLB 1985-2024). Plot elasticity coefficients over time with 95% CIs to visualize whether spending's predictive power has increased, decreased, or remained stable. Test whether the sport-level differences are constant or changing over time (e.g., 'football's spending dependence increased post-2000 TV deals').",
+          "title": "Examine mechanisms: does spending-performance relationship differ due to spending efficiency, organizational factors, or league structure?",
+          "description": "Conditional on establishing that spending-performance relationships differ across sports (from priority 1), investigate WHY. Potential mechanisms: (1) Spending efficiency: some teams may convert spending into wins more efficiently (e.g., through better recruitment, player development, coaching). Measure efficiency as league position / spending quintile. (2) League structure: salary cap constraints (NBA/NFL) may weaken the relationship compared to uncapped leagues (football). Interaction analysis: compare capped vs. uncapped sports; within football, compare pre/post salary cap countries. (3) Organizational factors: team performance also depends on coaching quality, organizational culture, player development systems. Control for or measure these variables. (4) Market size and revenue sources: small-market teams in large-revenue-gap leagues may systematically underperform relative to spending.",
           "addresses_gaps": [
-            "gap_3",
-            "gap_1"
+            "gap_2"
           ],
-          "suggested_methodology": "Rolling-window OLS regression: League_Position_t = α + β_t×log(Payroll_t) + controls_t + ε_t for each 10-year window. Plot β_t vs. Year with confidence bands.",
-          "suggested_data": "20+ seasons of payroll and league position data for at least 2 sports (football and basketball recommended). Public sources: Premier League financials (annual reports), NBA Salary Cap database, official league standings.",
-          "estimated_difficulty": "standard_phd",
-          "potential_impact": "Reveals whether spending-performance relationships are stable or have changed. May explain contradictions in literature (e.g., why IPL shows weak spending-performance link while Premier League appears strong)."
+          "suggested_methodology": "Mediation analysis: does the spending-position relationship operate through spending efficiency? Stratified analysis: does the relationship differ for high-spending vs. low-spending teams? Moderation analysis: does league structure (capped vs. uncapped) moderate the spending-position relationship? Structural equation modeling: model the pathways from spending → organizational practices → performance.",
+          "suggested_data": "From priority 1-2, plus: coaching tenure and performance history, player development metrics (academy graduates as % of roster), organization/team fixed effects from panel regression, league revenue and distribution data, market size data.",
+          "estimated_difficulty": "challenging_project",
+          "potential_impact": "Would explain not just whether but HOW spending influences performance. Highly relevant for team management: identifies levers beyond just spending more (e.g., organizational efficiency, player development). Policy-relevant: informs whether spending caps alone address competitive imbalance or whether other factors matter more."
         },
         {
           "priority": 4,
-          "title": "Cross-league replication and validation of spending-to-performance findings using multiple data sources",
-          "description": "Replicate W4412685988 (NBA salary cap violation effect) and W4415292821 (IPL auction strategy effect) in comparable leagues with independent data sources. For NBA: repeat salary-cap analysis on a held-out 2024-2025 season. For cricket: repeat IPL study on Pakistan Super League (PSL) data to test whether auction spending strategies have equivalent weak effects. Validate Transfermarkt transfer valuations by comparing to actual transaction prices for a random sample of 500+ transfers from public records. Report whether key findings hold in new contexts.",
+          "title": "Test whether spending-performance relationships change at different competitive levels (amateur, university, professional) and over career stages",
+          "description": "Extend priority 1 research to non-professional contexts. Test hypothesis that money-performance relationship is weaker in amateur/university sports (due to salary cap constraints, scholarship limits, less financial variation) than professional sports. Within professional sports, test whether the relationship changes over time (e.g., spending matters more in early seasons of a sport's history, before talent development systems mature). Within individual sports, examine whether the relationship differs across competition levels: does the spending-position relationship in Premier League differ from Championship (second tier) or League One?",
           "addresses_gaps": [
-            "gap_7",
-            "gap_8"
+            "gap_5"
           ],
-          "suggested_methodology": "Exact replication using new data (out-of-sample validation). For Transfermarkt validation: Pearson correlation and Bland-Altman plot comparing Transfermarkt value vs. actual fee for transfers with public price data.",
-          "suggested_data": "NBA 2024-2025 salary data (Spotrac), PSL auction and performance data (ESPN Cricinfo), actual transfer fees from Transfershack, TransferLive, official club announcements (500-1000 transfers).",
-          "estimated_difficulty": "accessible_thesis",
-          "potential_impact": "Establishes whether key findings are robust or idiosyncratic to one league/era. Validates data sources used in downstream analyses. Foundation for cumulative science in sports analytics."
+          "suggested_methodology": "Multi-level regression: level 1 = teams, level 2 = leagues (professional vs. amateur vs. university). Interaction terms: does league type moderate the spending-position relationship? Temporal moderation: does the relationship change as a sport matures (measured by league age, player career professionalization)?",
+          "suggested_data": "University athletic department budgets (public in US, some transparency in Europe), amateur league data (often not publicly available; may require survey/collection), professional league data from priority 1-2. Availability: good for US universities (through database searches); poor for amateur leagues internationally.",
+          "estimated_difficulty": "standard_phd",
+          "potential_impact": "Would establish generalizability of findings: is the spending-position relationship universal across competition levels or context-dependent? Informs policy for different contexts (e.g., university sports have different equity goals than professional sports)."
         }
       ],
       "self_reflection": {
-        "synthesis_quality": "Poor to moderate. The papers are near-perfect examples of fragmented 'monologues'—they rarely cite each other despite overlap. W4412685988, W4415292821, and W4414559250 all address spending-to-performance but do not engage with each other's findings or methods. The player valuation papers (n=39) form one isolated cluster; the few spending-to-performance papers (n≈5) form another. No paper attempts to synthesize across sports. Genuine debate is absent; instead, each paper makes isolated claims within one sport/league. The research question (comparative cross-sport analysis) requires dialogue that doesn't exist in this database.",
+        "synthesis_quality": "Poor to moderate. The database provides monologues rather than dialogue on this topic. We found isolated papers on player valuation, financial fair play regulations, and analytics investment, but no conversation between them addressing the core research question. The papers do not cite each other in ways suggesting cumulative knowledge building around spending-performance relationships. For example, W4406243376 (FFP regulations) does not engage with W4408557862 (analytics investment) despite both addressing financial aspects of sports. The lack of comparative cross-sport studies means there are no debates or disagreements to synthesize—simply an absence of evidence.",
         "strengths": [
-          "Database provides comprehensive coverage of football analytics (23 papers), enabling detailed assessment of what football research has done.",
-          "Recent publication spike (74% from 2024-2025) means papers address current leagues and recent rule changes (e.g., Saudi Vision 2030, FFP regulations).",
-          "Mix of methodologies (ML, statistical, network analysis) shows breadth of analytical approaches being applied.",
-          "Some papers (W4409087716, W4405791145, W4412526552) use modern ML with reported accuracy/R² metrics, enabling methodological transparency.",
-          "Access metadata (15 fully open, 7 upon request) suggests reasonable data-sharing practices, though proprietary data remains a barrier."
+          "Systematic search of database identified all papers with potential relevance (valuation, financial regulations, analytics investment)",
+          "Clear identification of the complete absence of the specific evidence needed to answer the research question",
+          "Recognition that the gap is not just methodological but reflects a fundamental research priority mismatch (economics questions not addressed in AI/ML sports analytics community)"
         ],
         "limitations": [
-          "Database is not positioned to answer the research question. We have isolated studies in each sport but NO comparative design across sports.",
-          "Severe imbalance: 23 football papers but only 10 basketball, 7 baseball, 2 American football. This imbalance makes statistical comparison unreliable—any apparent 'football effect' could be database bias.",
-          "Most papers (83%) address player valuation, not team spending-to-league-position causality. This mismatch between question and database content is fundamental.",
-          "Sample sizes for team-level analysis are small (n≤390 team-seasons for most studies), limiting statistical power for cross-sport comparison.",
-          "Effect sizes reported in only 6 papers total; confidence intervals in 5 papers. Cannot conduct meta-analysis or compare effect magnitudes across sports.",
-          "Methodology diversity makes synthesis difficult. No two papers use identical operationalization of 'competitive success' or 'spending.'",
-          "Temporal coverage is recent (mostly 2024-2025); longitudinal trends cannot be assessed.",
-          "Data sources are heterogeneous (Transfermarkt, Spotrac, official databases, web-scraped) with unknown cross-validation. Transfermarkt data used heavily but not validated in our database."
+          "Unable to assess whether relevant literature exists outside the database in sports economics journals (e.g., Journal of Sports Economics, Journal of Sports Management); our analysis is limited to what our database contains",
+          "The single paper on NBA analytics investment (W4408557862) is interpreted as tangentially relevant, but it measures organizational/infrastructure spending, not team salary spending—conflating these may misrepresent the evidence",
+          "No access to unpublished working papers, dissertations, or industry reports that might address the research question",
+          "The assessment that this is an 'economics question' answered by 'economics researchers' is based on general knowledge, not evidence from the database"
         ],
         "assumptions": [
-          "Assumed that papers in database with sport label 'football' refer to association football/soccer, not American football (clarified by checking W4401276487 which is explicitly NFL, creating distinction).",
-          "Assumed 'competitive success' in research question means final league position (not playoff qualification, which some papers use as proxy). This may be too narrow (league position is one measure; competitive success is broader).",
-          "Assumed 'financial spending' means total team payroll/wage bill. Some papers focus on transfer spending (outlays), which is different from ongoing salary costs. These may have different spending-to-performance elasticities.",
-          "Assumed that absence of a paper in our database means the topic hasn't been studied in our collection, but NOT that it hasn't been studied globally. This is explicit in our rules.",
-          "Assumed papers describing correlation (e.g., W4412685988 showing salary cap violations and wins are correlated) are attempting to estimate causal effects, when they may only describe associations.",
-          "Assumed that multi-sport papers should synthesize across sports, but W4214682128 (multi-sport) and W3160711719 (NBA vs. WNBA) both focus on specific sub-questions unrelated to comparative spending-to-performance analysis."
+          "Assumed that 'financial spending' refers to team salary/payroll aggregates, not individual investment vehicles (e.g., investor funding, stadium spending). The research question is ambiguous on this point",
+          "Assumed that 'league position' is the primary measure of competitive success. Other metrics (championships won, playoff performance, revenue/profit) would change the analysis",
+          "Assumed that 'stronger relationship' means higher Pearson/Spearman correlation or larger regression coefficient, not other statistical properties (e.g., R-squared, predictive power)"
         ],
         "database_coverage_gaps": [
-          "Longitudinal time-series studies of spending-to-performance trends: Our database lacks papers analyzing how the elasticity of spending to success has changed over 20+ years in any single sport. From general knowledge, this is likely an active area in sports economics journals (e.g., Journal of Sports Economics, International Journal of Sport Finance) that we may not have captured.",
-          "Causal inference methods in sports spending: Our database has zero papers using IV/2SLS, RDD, or propensity score methods for spending-to-performance questions. From training knowledge, papers leveraging salary cap changes as natural experiments likely exist in economics and management journals but are not in our sports analytics-focused database.",
-          "Women's sports comparative analysis: Only 1 of 47 papers addresses women's sports (W4210605152, and it's historical). Yet women's sports (NWSL, WSL, WNBA, etc.) are increasingly professionalized and have different spending distributions. Our database likely misses comparative studies between men's and women's leagues.",
-          "Lower-tier league analysis: We have ~2 papers on non-top-tier leagues (K-league, Iraqi football). Spending-to-performance relationships likely differ fundamentally in lower divisions with less inequality. This is plausibly an active research area in regional sports journals we don't capture.",
-          "Esports spending-to-performance: Only 1 esports paper (W4414742830) on sponsorship portfolios, not player salaries or team spending to competitive rank. Esports economics is likely studied but not represented.",
-          "Sports league governance and competitive balance regulation: No papers systematically comparing how different salary cap structures (hard cap NFL, soft cap NBA, FFP in football, auction IPL) affect the spending-to-performance relationship. This is likely studied in sports management literature we don't access.",
-          "Financial inefficiency and 'money-burning': Our database contains no papers on whether teams overspend relative to competitive returns (economic waste), which would be relevant to understanding if spending-to-performance relationships are economically rational. This is plausibly addressed in behavioral economics of sports."
+          "Sports economics literature appears entirely absent from the database. The research question is fundamentally an economics question—it asks whether the relationship between a financial input (spending) and a competitive output (success) differs across contexts. Economics journals (Journal of Sports Economics, Journal of Economic Behavior & Organization, Economic Journal) likely contain relevant literature on salary/spending effects on team performance, competitive balance, and regulatory impacts. Our database, focused on sports analytics with AI/ML methods, does not capture this.",
+          "Financial regulation and policy literature is minimal. Papers on UEFA Financial Fair Play (1 identified: W4406243376) or equivalent salary cap regulations in other sports are rare or absent. Sports management journals addressing league governance likely contain more relevant work.",
+          "Comparative cross-sport research is absent. The question inherently requires comparison across sports, but our database is organized by sport (football: 1320 papers; basketball: 476; etc.) with no systematic cross-sport comparative studies. This may reflect research community structure (football researchers, basketball researchers) rather than a database gap per se.",
+          "Older literature (pre-2015) is underrepresented. The database is heavily weighted toward 2020-2025 (3407 papers) vs. pre-2015 (1075 papers). Some foundational work on salary caps and competitive balance in sports economics may be in pre-2015 literature not well-covered here."
         ],
         "what_would_improve_this": [
-          "Access to full-text papers: Summaries omit methodological details (e.g., which controls were used, was fixed effects included?) that would enable precise replication assessment. Full-text access would clarify methodology quality.",
-          "Structured data on reported effect sizes: Only 6 papers report effect sizes; if all papers reported standardized coefficients or elasticities, meta-analysis would be possible. A standardized 'results' field in each paper would help.",
-          "Cross-paper citation and engagement data: Knowing which papers explicitly build on or critique each other (beyond simple citation) would enable network analysis of genuine intellectual dialogue vs. fragmentation.",
-          "Sample composition details: Papers report sample size (n) but not composition (e.g., 'n=1508 players from Premier League, La Liga, Serie A, Ligue 1' vs. 'n=1508 all from Premier League'). League composition affects generalizability.",
-          "Replication/validation flags: If papers indicated 'this is a replication study' or 'this uses previously published data' or 'this is novel data collection,' we could assess robustness more easily.",
-          "Temporal boundary clarity: Some papers report year ranges (2007-2017), others list only publication year. Temporal boundaries should be explicit in structured metadata.",
-          "Effect size standardization: If all papers reported elasticities (% change in outcome per % change in predictor), cross-sport comparison would be immediate. Urge JOURNAL EDITORS to require standardized effect reporting.",
-          "Data availability statement: Metadata shows 'data_access_type' but not 'actual_link_or_note.' Papers claiming data are 'open' should have DOI or direct URL for reproducibility."
+          "Access to sports economics literature databases or journals would immediately reveal whether this research question has been addressed. A targeted search of Journal of Sports Economics and related outlets would be far more efficient than trying to extract this answer from a sports analytics database.",
+          "Inclusion of team-level financial data (salary caps, payroll, budgets) explicitly linked to competitive outcomes in the database would make this question answerable. The data exists but is not integrated into our collection.",
+          "Metadata specifying whether papers address causal vs. correlational questions would help identify which studies could be used for inference (priority 2) vs. description (priority 1).",
+          "Tagging papers by research tradition (economics, biomechanics, data science, etc.) would clarify the interdisciplinary gaps and help users recognize when their question belongs to a different research community."
         ],
-        "process_cost_reflection": "We were given 47 papers with structured summaries (title, abstract, sample size, methods, key results, data sources, limitations). This was manageable and sufficient to identify the major gap (absence of comparative cross-sport spending-to-performance analysis). However, summaries averaged ~200 words and lacked fine-grained methodology details (e.g., 'mixed-effects model' is mentioned, but were random slopes included? what was the random effects structure?). Full-text access would have improved our assessment of methodology quality and enabled replication appraisal. That said, full-text analysis of 47 papers would cost ~3-4× more tokens/time with marginal benefit, given the abstracts and methodology fields were reasonably complete. The paper metadata was well-structured (sport, method, theme, sample size, year, data sources) — this enabled rapid classification and trend identification. Our confidence in identifying gaps would increase from 'low' to 'medium' with: (1) effect size standardization across papers, (2) full methodological details (were models specified identically?), and (3) even 5-10 additional papers directly comparing spending-to-performance across sports. Cost-benefit: This 47-paper analysis (8,000 tokens invested) identified that the research question CANNOT be answered from our database and produced a concrete research agenda. Was worth the investment. Larger database (100+ papers) would yield diminishing returns unless papers included more cross-sport comparisons."
+        "process_cost_reflection": "This gap analysis required ~40 papers reviewed in detail and ~100 skimmed to identify relevant concepts. The fundamental conclusion—that the research question cannot be answered from this database—emerged within the first 10-15 papers reviewed, but thoroughness required confirming this absence across the full set. The cost/benefit is unfavorable: we spent significant effort synthesizing an empty result. However, this null result is valuable: it clearly identifies (1) that the research question is outside the scope of the database's research community, and (2) where to look for relevant literature (sports economics). A better process would have been to conduct a pre-analysis assessment of whether the database was likely to contain literature on financial-competitive relationships, identify it as an economics question, and recommend the user consult sports economics sources. For future analyses, adding domain classification to papers would enable this assessment upfront. The 200-paper limit was sufficient to identify the absence; reading all 5392 papers would not change the conclusion."
       }
     },
     {

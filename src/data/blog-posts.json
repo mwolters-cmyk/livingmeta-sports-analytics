@@ -24,30 +24,15 @@
       },
       {
         "type": "paragraph",
-        "text": "Van Ours & Van Tuijl (2014) studied 59 in-season coach changes across 14 Eredivisie seasons. Their key insight: yes, teams perform better after a sacking \u2014 but so do teams in similar slumps that kept their coach. The improvement is regression to the mean, not a coaching effect. They used bookmaker odds to construct a control group of 'near-dismissals' that didn't happen, and found no significant difference."
-      },
-      {
-        "type": "ref",
-        "work_id": "preprint:393fce3e4ca68520",
-        "label": "Van Ours & Van Tuijl (2014)"
+        "text": "[Van Ours & Van Tuijl (2014)](/papers?paper=preprint%3A393fce3e4ca68520) studied 59 in-season coach changes across 14 Eredivisie seasons. Their key insight: yes, teams perform better after a sacking \u2014 but so do teams in similar slumps that kept their coach. The improvement is regression to the mean, not a coaching effect. They used bookmaker odds to construct a control group of 'near-dismissals' that didn't happen, and found no significant difference."
       },
       {
         "type": "paragraph",
-        "text": "The most methodologically rigorous recent study confirms this. Stachnik (2025) analyzed 115 dismissals in the Polish Ekstraklasa between 2006 and 2024, using ELO ratings to build counterfactual scenarios: what would have happened if the club had simply waited? Same conclusion \u2014 the bounce is real, but it would have happened anyway."
-      },
-      {
-        "type": "ref",
-        "work_id": "W4409425702",
-        "label": "Stachnik (2025)"
+        "text": "The most methodologically rigorous recent study confirms this. [Stachnik (2025)](/papers?paper=https://openalex.org/W4409425702) analyzed 115 dismissals in the Polish Ekstraklasa between 2006 and 2024, using ELO ratings to build counterfactual scenarios: what would have happened if the club had simply waited? Same conclusion \u2014 the bounce is real, but it would have happened anyway."
       },
       {
         "type": "paragraph",
-        "text": "But not everyone agrees. Madum (2016) found a genuine improvement in the Danish Premier League after sackings \u2014 though only in home games. That's a curious finding. Is the 'new manager bounce' about tactics, or about the crowd responding to the drama?"
-      },
-      {
-        "type": "ref",
-        "work_id": "W2946480687",
-        "label": "Madum (2016)"
+        "text": "But not everyone agrees. [Madum (2016)](/papers?paper=https://openalex.org/W2946480687) found a genuine improvement in the Danish Premier League after sackings \u2014 though only in home games. That's a curious finding. Is the 'new manager bounce' about tactics, or about the crowd responding to the drama?"
       },
       {
         "type": "heading",
@@ -55,23 +40,11 @@
       },
       {
         "type": "paragraph",
-        "text": "A 2025 study went beyond goals and points and strapped GPS trackers to players across three coaching regimes at the same club. Petrov et al. (2025) found that high-speed running distance, sprint profiles, and pressing intensity all shifted significantly when the coach changed. So managers do affect how teams play on a physical level. Whether that translates into better results is a different question."
-      },
-      {
-        "type": "ref",
-        "work_id": "W4411782569",
-        "label": "Petrov et al. (2025)"
+        "text": "A 2025 study went beyond goals and points and strapped GPS trackers to players across three coaching regimes at the same club. [Petrov et al. (2025)](/papers?paper=https://openalex.org/W4411782569) found that high-speed running distance, sprint profiles, and pressing intensity all shifted significantly when the coach changed. So managers do affect how teams play on a physical level. Whether that translates into better results is a different question."
       },
       {
         "type": "paragraph",
-        "text": "Meanwhile, Ponc\u00e9-Bord\u00f3n et al. (2023) found short-term improvements (games 1\u20135) in Spanish leagues, but the effect faded fast. And Galdino (2025) showed that Brazilian betting markets only adjusted their odds 5\u20138 games post-sacking \u2014 then the signal disappeared."
-      },
-      {
-        "type": "refs",
-        "items": [
-          {"work_id": "W4388526044", "label": "Ponc\u00e9-Bord\u00f3n et al. (2023)"},
-          {"work_id": "W4410157616", "label": "Galdino (2025)"}
-        ]
+        "text": "Meanwhile, [Ponc\u00e9-Bord\u00f3n et al. (2023)](/papers?paper=https://openalex.org/W4388526044) found short-term improvements (games 1\u20135) in Spanish leagues, but the effect faded fast. And [Galdino (2025)](/papers?paper=https://openalex.org/W4410157616) showed that Brazilian betting markets only adjusted their odds 5\u20138 games post-sacking \u2014 then the signal disappeared."
       },
       {
         "type": "heading",
@@ -108,7 +81,7 @@
       },
       {
         "type": "paragraph",
-        "text": "The full gap analysis \u2014 9 identified research gaps, 4 proposed studies, and 41 paper references \u2014 is on our Find the Gap page. If you're a student looking for a thesis topic in sports analytics, start there. The data is available, the methods exist, and the questions are wide open."
+        "text": "The full gap analysis \u2014 9 identified research gaps, 4 proposed studies, and 41 paper references \u2014 is on our [Find the Gap](/gaps) page. If you're a student looking for a thesis topic in sports analytics, start there. The data is available, the methods exist, and the questions are wide open."
       }
     ],
     "references": [

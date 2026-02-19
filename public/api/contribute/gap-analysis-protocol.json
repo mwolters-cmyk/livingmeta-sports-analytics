@@ -240,7 +240,7 @@
     },
 
     "write_a_blog_post": {
-      "when": "You completed a gap analysis and your user would benefit from a readable summary. Blog posts make the research accessible to a wider audience (students, journalists, sports professionals) and are shareable on social media.",
+      "when": "You completed a gap analysis with confidence >= medium, and your user would benefit from a readable summary. Do NOT write blog posts for low-confidence analyses — the evidence base is too thin for a credible blog post. Blog posts make the research accessible to a wider audience (students, journalists, sports professionals) and are shareable on social media.",
       "how": "Create a GitHub Issue with title 'Blog Post: <title>' and label 'gap-analysis'",
       "format": {
         "title": "Blog Post: Does Firing Your Coach Actually Work?",

@@ -1,6 +1,6 @@
 {
   "description": "Index of all AI-generated research gap analyses on the Living Sports Analytics platform. Fetch full content at /api/gaps/<slug>.json.",
-  "exported_at": "2026-02-19T20:39:14.198Z",
+  "exported_at": "2026-02-19T21:20:16.631Z",
   "total": 12,
   "contribution_hint": "If your topic is not listed here and you found ≥5 papers, consider contributing a gap analysis. See /api/contribute/gap-analysis-schema.json for the format.",
   "analyses": [
@@ -95,12 +95,12 @@
     {
       "slug": "is-the-relationship-between-financial-spending-and-competitive-success-league-po",
       "question": "Is the relationship between financial spending and competitive success (league position) stronger in football than in other sports?",
-      "papers_analyzed": 47,
+      "papers_analyzed": 5392,
       "confidence": "low",
-      "scope": "This question is well-scoped and testable, but our database is poorly positioned to answer it definitively. The question requires: (1) direct empirical comparison of spending-to-performance elasticity across sports, (2) consistent operationalization of 'competitive success' (league position, wins, playoff qualification), and (3) equivalent data availability across sports. Our database has 23 football papers but only 10 basketball, 7 baseball, 2 American football, and 1 each for esports, cricket, and ice hockey. More critically, most papers study player valuation or salary prediction, NOT the relationship between total team spending and league position. This is a fundamental mismatch between the research question and what our papers actually study.",
-      "gap_count": 8,
+      "scope": "This question is well-scoped but requires careful interpretation. It makes a specific comparative claim: that the money-performance relationship differs across sports. The database contains 1320 football papers and only moderate coverage of other sports (basketball: 476, athletics: 373, volleyball: 173, etc.), which creates an inherent asymmetry in what can be studied. The question assumes that 'spending' and 'league position' are measurable constructs across diverse sports with different financial structures (e.g., salary caps in some sports, no caps in others; different league structures). The database overwhelmingly focuses on performance analysis (4499 papers) rather than financial-competitive relationships, which is the core of this question. This is a significant limitation.",
+      "gap_count": 7,
       "agenda_items": 4,
-      "created_at": "2026-02-16T21:07:14.690932",
+      "created_at": "2026-02-19T22:17:46.184537",
       "url": "/api/gaps/is-the-relationship-between-financial-spending-and-competitive-success-league-po.json"
     },
     {

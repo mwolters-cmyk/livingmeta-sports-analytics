@@ -15,7 +15,7 @@
     "data_sources": 733,
     "data_sources_with_programmatic_access": 128,
     "sports_covered": 33,
-    "last_updated": "2026-02-19T20:39:14.125Z"
+    "last_updated": "2026-02-19T21:20:16.596Z"
   },
   "capabilities": [
     "Search and filter 13,823+ classified sports analytics papers by sport, methodology, theme, keyword",
@@ -269,7 +269,7 @@
     {
       "slug": "is-the-relationship-between-financial-spending-and-competitive-success-league-po",
       "question": "Is the relationship between financial spending and competitive success (league position) stronger in football than in other sports?",
-      "papers_analyzed": 47,
+      "papers_analyzed": 5392,
       "confidence": "low"
     },
     {
