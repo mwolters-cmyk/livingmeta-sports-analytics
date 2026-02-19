@@ -263,7 +263,14 @@
 
     "improve_coverage_after_analysis": {
       "when": "Your gap analysis has confidence of medium, low, or unknown. The self_reflection.database_coverage_gaps field identifies missing literature.",
-      "how": "Create GitHub Issues to address coverage gaps. This is how the platform improves over time.",
+      "how": "Create GitHub Issues to address coverage gaps — but ONLY after verifying the gap is real.",
+      "critical_filter_check": {
+        "step": "FIRST: Distinguish filter gaps from database gaps",
+        "explanation": "The gap analyzer uses theme/sport/methodology filters. If the AI claims 'economics literature is absent' but the database has 400+ papers from Journal of Sports Economics under different themes, that's a FILTER gap, not a DATABASE gap. Filing issues about 'missing' journals that are already monitored is wasteful.",
+        "how_to_check": "Look at filter_exclusion_stats in the context file. If thousands of papers were excluded and the 'missing' topic appears in excluded_themes or top_excluded_journals, re-run the analysis with broader filters instead of filing issues.",
+        "example_filter_gap": "Analysis filtered on themes=[performance_analysis, coaching]. AI says 'sports economics literature absent'. But filter_exclusion_stats shows 432 papers from Journal of Sports Economics excluded under theme='other'. Solution: re-run with broader themes, NOT file a new-source issue.",
+        "example_real_gap": "Analysis includes all themes. AI says 'FIFA technical reports and grey literature absent'. No relevant journals in excluded list. This is a genuine database gap — file an issue."
+      },
       "before_filing_issues": {
         "step": "Check OpenAlex first for each referenced DOI",
         "how": "Query https://api.openalex.org/works/<doi> — many papers are freely available with abstracts and sometimes PDF URLs. If found, the paper can be ingested via ingest_source.py Type A (with abstract) without user intervention.",
