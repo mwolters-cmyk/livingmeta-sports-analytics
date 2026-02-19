@@ -443,13 +443,24 @@ export default function Home() {
                 This is your onboarding guide.
               </p>
             </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-5">
+            <div className="rounded-xl border border-orange/20 bg-orange/5 p-5">
               <h3 className="mb-1 font-semibold text-navy">
-                <a href="/api/papers-compact.json" className="hover:text-orange transition-colors">/api/papers-compact.json</a>
+                <a href="/api/papers/sport/index.json" className="hover:text-orange transition-colors">/api/papers/sport/</a>
               </h3>
               <p className="text-sm text-gray-500">
-                Search index: {(stats.classifiedRelevant || 0).toLocaleString()} papers as compact
-                arrays. Title, sport, methodology, theme, year, citations, DOI.
+                Papers by sport — one small JSON file per sport (~40KB–800KB).
+                Fetch <a href="/api/papers/sport/football.json" className="text-orange hover:underline">football.json</a>,{" "}
+                <a href="/api/papers/sport/cricket.json" className="text-orange hover:underline">cricket.json</a>, etc.
+              </p>
+            </div>
+            <div className="rounded-xl border border-orange/20 bg-orange/5 p-5">
+              <h3 className="mb-1 font-semibold text-navy">
+                <a href="/api/papers/theme/index.json" className="hover:text-orange transition-colors">/api/papers/theme/</a>
+              </h3>
+              <p className="text-sm text-gray-500">
+                Papers by theme — one file per research theme.
+                Fetch <a href="/api/papers/theme/betting_markets.json" className="text-orange hover:underline">betting_markets.json</a>,{" "}
+                <a href="/api/papers/theme/injury_prevention.json" className="text-orange hover:underline">injury_prevention.json</a>, etc.
               </p>
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-5">

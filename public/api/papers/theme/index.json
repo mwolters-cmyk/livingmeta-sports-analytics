@@ -1,0 +1,161 @@
+{
+  "description": "Per-theme paper files. Each file contains all papers for one research theme in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
+  "exported_at": "2026-02-19T22:18:40.793Z",
+  "fields": [
+    "work_id",
+    "title",
+    "sport",
+    "methodology",
+    "theme",
+    "pub_year",
+    "cited_by_count",
+    "first_author",
+    "doi",
+    "content_type",
+    "sub_theme"
+  ],
+  "total_themes": 20,
+  "total_papers": 13823,
+  "themes": [
+    {
+      "theme": "performance_analysis",
+      "slug": "performance_analysis",
+      "total": 4499,
+      "url": "/api/papers/theme/performance_analysis.json",
+      "size_kb": 1357
+    },
+    {
+      "theme": "injury_prevention",
+      "slug": "injury_prevention",
+      "total": 1331,
+      "url": "/api/papers/theme/injury_prevention.json",
+      "size_kb": 429
+    },
+    {
+      "theme": "player_development",
+      "slug": "player_development",
+      "total": 1237,
+      "url": "/api/papers/theme/player_development.json",
+      "size_kb": 388
+    },
+    {
+      "theme": "methodology",
+      "slug": "methodology",
+      "total": 1011,
+      "url": "/api/papers/theme/methodology.json",
+      "size_kb": 285
+    },
+    {
+      "theme": "psychology",
+      "slug": "psychology",
+      "total": 818,
+      "url": "/api/papers/theme/psychology.json",
+      "size_kb": 245
+    },
+    {
+      "theme": "fan_engagement",
+      "slug": "fan_engagement",
+      "total": 771,
+      "url": "/api/papers/theme/fan_engagement.json",
+      "size_kb": 226
+    },
+    {
+      "theme": "physiology",
+      "slug": "physiology",
+      "total": 658,
+      "url": "/api/papers/theme/physiology.json",
+      "size_kb": 200
+    },
+    {
+      "theme": "biomechanics",
+      "slug": "biomechanics",
+      "total": 638,
+      "url": "/api/papers/theme/biomechanics.json",
+      "size_kb": 189
+    },
+    {
+      "theme": "tactical_analysis",
+      "slug": "tactical_analysis",
+      "total": 481,
+      "url": "/api/papers/theme/tactical_analysis.json",
+      "size_kb": 138
+    },
+    {
+      "theme": "coaching",
+      "slug": "coaching",
+      "total": 455,
+      "url": "/api/papers/theme/coaching.json",
+      "size_kb": 136
+    },
+    {
+      "theme": "data_engineering",
+      "slug": "data_engineering",
+      "total": 380,
+      "url": "/api/papers/theme/data_engineering.json",
+      "size_kb": 110
+    },
+    {
+      "theme": "bias_detection",
+      "slug": "bias_detection",
+      "total": 278,
+      "url": "/api/papers/theme/bias_detection.json",
+      "size_kb": 79
+    },
+    {
+      "theme": "player_valuation",
+      "slug": "player_valuation",
+      "total": 269,
+      "url": "/api/papers/theme/player_valuation.json",
+      "size_kb": 75
+    },
+    {
+      "theme": "nutrition_recovery",
+      "slug": "nutrition_recovery",
+      "total": 222,
+      "url": "/api/papers/theme/nutrition_recovery.json",
+      "size_kb": 71
+    },
+    {
+      "theme": "epidemiology",
+      "slug": "epidemiology",
+      "total": 212,
+      "url": "/api/papers/theme/epidemiology.json",
+      "size_kb": 64
+    },
+    {
+      "theme": "gender_equity",
+      "slug": "gender_equity",
+      "total": 209,
+      "url": "/api/papers/theme/gender_equity.json",
+      "size_kb": 61
+    },
+    {
+      "theme": "other",
+      "slug": "other",
+      "total": 181,
+      "url": "/api/papers/theme/other.json",
+      "size_kb": 52
+    },
+    {
+      "theme": "betting_markets",
+      "slug": "betting_markets",
+      "total": 125,
+      "url": "/api/papers/theme/betting_markets.json",
+      "size_kb": 34
+    },
+    {
+      "theme": "transfer_market",
+      "slug": "transfer_market",
+      "total": 44,
+      "url": "/api/papers/theme/transfer_market.json",
+      "size_kb": 12
+    },
+    {
+      "theme": "unknown",
+      "slug": "unknown",
+      "total": 4,
+      "url": "/api/papers/theme/unknown.json",
+      "size_kb": 1
+    }
+  ]
+}

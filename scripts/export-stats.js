@@ -913,6 +913,10 @@ try {
       agent_instructions: "/api/agent.json",
       summary: "/api/summary.json",
       papers_compact: "/api/papers-compact.json",
+      papers_by_sport_index: "/api/papers/sport/index.json",
+      papers_by_sport: "/api/papers/sport/<slug>.json",
+      papers_by_theme_index: "/api/papers/theme/index.json",
+      papers_by_theme: "/api/papers/theme/<slug>.json",
       classifications: "/api/classifications.json",
       paper_pdfs: "/api/paper-pdfs.json",
       pipeline: "/api/pipeline.json",
@@ -1011,8 +1015,8 @@ try {
           "A student looking for a research topic or evaluating feasibility of a thesis idea",
         steps: [
           "1. Check /api/gaps/index.json — does a relevant gap analysis already exist? Each one suggests concrete thesis projects at BSc, MSc, and PhD level.",
-          "2. Search papers: /papers?search=<keyword>&sport=<sport> (e.g., /papers?search=pacing&sport=athletics)",
-          "3. Use /api/papers-compact.json for programmatic search (~2MB, all papers with key fields)",
+          "2. Fetch papers for their sport: /api/papers/sport/<slug>.json (e.g., /api/papers/sport/football.json). Much smaller than papers-compact.json. See /api/papers/sport/index.json for all sports.",
+          "3. Or fetch papers for their theme: /api/papers/theme/<slug>.json (e.g., /api/papers/theme/betting_markets.json). See /api/papers/theme/index.json for all themes.",
           "4. Check /api/data-sources.json for available datasets in the student's sport",
           "5. If no gap analysis exists for their topic and you found ≥5 papers: consider contributing one (see contribution_protocol below)",
         ],
@@ -1022,9 +1026,9 @@ try {
         description:
           "A researcher building a literature base or conducting a systematic review",
         steps: [
-          "1. Fetch /api/papers-compact.json for bulk search and filtering",
-          "2. Check /api/gaps/index.json for existing synthesis of the topic",
-          "3. Use /papers page with URL params for targeted searches",
+          "1. Fetch per-sport or per-theme paper files for targeted search: /api/papers/sport/<slug>.json or /api/papers/theme/<slug>.json",
+          "2. Or fetch /api/papers-compact.json for cross-sport/cross-theme bulk search (~4MB, all papers)",
+          "3. Check /api/gaps/index.json for existing synthesis of the topic",
           "4. For full metadata including abstracts: /api/classifications.json (warning: ~16MB)",
           "5. Export results as CSV or BibTeX from the /papers page",
         ],
@@ -1092,6 +1096,22 @@ try {
         description: "Direct PDF URLs for open-access papers",
         size: "~2MB",
       },
+      papers_by_sport: {
+        url: "/api/papers/sport/index.json",
+        description:
+          "Per-sport paper files. Each sport has its own small JSON file (~40KB-800KB). RECOMMENDED for agents: fetch only the sport you need instead of the full 4MB papers-compact.json.",
+        size: "index ~2KB, individual files 5KB-800KB",
+        tip: "Fetch the index first to see all sports with paper counts and file sizes, then fetch /api/papers/sport/<slug>.json for the sport you need.",
+        example: "/api/papers/sport/football.json",
+      },
+      papers_by_theme: {
+        url: "/api/papers/theme/index.json",
+        description:
+          "Per-theme paper files. Each research theme has its own small JSON file. Same format as per-sport files.",
+        size: "index ~2KB, individual files 5KB-600KB",
+        tip: "Fetch the index first, then /api/papers/theme/<slug>.json for the theme you need.",
+        example: "/api/papers/theme/betting_markets.json",
+      },
       classifications_full: {
         url: "/api/classifications.json",
         description:
@@ -1141,6 +1161,15 @@ try {
           "/papers?type=thesis&sport=cycling",
         ],
         taxonomy_reference: "Full list of valid sport/methodology/theme values: /api/pipeline.json → classification_taxonomy",
+      },
+      per_sport_and_theme_files: {
+        description: "RECOMMENDED for agents: instead of downloading the full papers-compact.json (~4MB), fetch only the sport or theme file you need. Each file is small enough for WebFetch.",
+        sport_index: "/api/papers/sport/index.json",
+        theme_index: "/api/papers/theme/index.json",
+        sport_example: "/api/papers/sport/football.json (~800KB, ~3000 papers)",
+        theme_example: "/api/papers/theme/betting_markets.json (~35KB, ~125 papers)",
+        format: "Same array-of-arrays format as papers-compact.json (same field order)",
+        when_to_use: "When you know which sport or theme the user is interested in. For cross-sport or cross-theme searches, use papers-compact.json instead.",
       },
     },
 
@@ -1193,9 +1222,9 @@ try {
     },
 
     limitations: [
-      "This is a static site — no server-side search API. Use /api/papers-compact.json for programmatic search (client-side filtering).",
+      "This is a static site — no server-side search API. Use per-sport/per-theme files for targeted search, or papers-compact.json for cross-cutting search.",
       "Gap analyses are pre-computed, not generated on-demand. Check /api/gaps/index.json for available topics.",
-      "classifications.json is ~16MB — too large for most agent fetch tools. Use papers-compact.json (~2MB) instead.",
+      "classifications.json is ~16MB — too large for most agent fetch tools. Use per-sport/per-theme files (~40KB-800KB each) or papers-compact.json (~4MB).",
       "Full-text PDFs are not hosted on this site. paper-pdfs.json contains direct links to publisher/repository PDFs.",
       "Contributions go through GitHub (Issues/PRs) — there is no POST API endpoint.",
       "The database focuses on English-language publications. Non-English papers may be underrepresented.",
@@ -1370,6 +1399,181 @@ try {
   );
 } catch (e) {
   console.log(`papers-compact.json export failed: ${e.message}`);
+}
+
+// =============================================================================
+// PER-SPORT PAPER FILES — /api/papers/sport/<slug>.json
+// Small enough for WebFetch (~40KB-800KB each vs 4MB for papers-compact.json)
+// =============================================================================
+
+try {
+  const papersSportDir = path.join(PUBLIC_DIR, "papers", "sport");
+  fs.mkdirSync(papersSportDir, { recursive: true });
+
+  // Compact fields (same as papers-compact.json)
+  const compactFields = [
+    "work_id", "title", "sport", "methodology", "theme",
+    "pub_year", "cited_by_count", "first_author", "doi",
+    "content_type", "sub_theme",
+  ];
+
+  // Group papers by sport
+  const papersBySport = {};
+  for (const p of classifiedPapers) {
+    const sport = p.sport || "unknown";
+    if (!papersBySport[sport]) papersBySport[sport] = [];
+    papersBySport[sport].push([
+      p.work_id.replace("https://openalex.org/", ""),
+      p.title,
+      p.sport,
+      p.methodology,
+      p.theme,
+      p.pub_year,
+      p.cited_by_count || 0,
+      p.first_author_name || "",
+      p.doi || "",
+      p.content_type || "journal_article",
+      p.sub_theme || "",
+    ]);
+  }
+
+  // Write per-sport files
+  const sportIndex = [];
+  for (const [sport, papers] of Object.entries(papersBySport)) {
+    const slug = sport.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/_+$/, "");
+    const fileName = `${slug}.json`;
+
+    const sportFile = {
+      sport,
+      total: papers.length,
+      fields: compactFields,
+      tip: `All ${papers.length} papers classified under '${sport}'. Same array-of-arrays format as papers-compact.json.`,
+      papers,
+    };
+
+    fs.writeFileSync(
+      path.join(papersSportDir, fileName),
+      JSON.stringify(sportFile)
+    );
+
+    const sizeBytes = fs.statSync(path.join(papersSportDir, fileName)).size;
+    sportIndex.push({
+      sport,
+      slug,
+      total: papers.length,
+      url: `/api/papers/sport/${fileName}`,
+      size_kb: Math.round(sizeBytes / 1024),
+    });
+  }
+
+  // Sort by paper count descending
+  sportIndex.sort((a, b) => b.total - a.total);
+
+  // Write sport index
+  fs.writeFileSync(
+    path.join(papersSportDir, "index.json"),
+    JSON.stringify({
+      description: "Per-sport paper files. Each file contains all papers for one sport in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
+      exported_at: new Date().toISOString(),
+      fields: compactFields,
+      total_sports: sportIndex.length,
+      total_papers: classifiedPapers.length,
+      sports: sportIndex,
+    }, null, 2)
+  );
+
+  console.log(
+    `Exported per-sport paper files: ${sportIndex.length} sports (${sportIndex.slice(0, 5).map(s => `${s.sport}:${s.total}`).join(", ")}...)`
+  );
+} catch (e) {
+  console.log(`Per-sport paper files export failed: ${e.message}`);
+}
+
+// =============================================================================
+// PER-THEME PAPER FILES — /api/papers/theme/<slug>.json
+// Same approach as per-sport: small files for WebFetch
+// =============================================================================
+
+try {
+  const papersThemeDir = path.join(PUBLIC_DIR, "papers", "theme");
+  fs.mkdirSync(papersThemeDir, { recursive: true });
+
+  const compactFields = [
+    "work_id", "title", "sport", "methodology", "theme",
+    "pub_year", "cited_by_count", "first_author", "doi",
+    "content_type", "sub_theme",
+  ];
+
+  // Group papers by theme
+  const papersByTheme = {};
+  for (const p of classifiedPapers) {
+    const theme = p.theme || "unknown";
+    if (!papersByTheme[theme]) papersByTheme[theme] = [];
+    papersByTheme[theme].push([
+      p.work_id.replace("https://openalex.org/", ""),
+      p.title,
+      p.sport,
+      p.methodology,
+      p.theme,
+      p.pub_year,
+      p.cited_by_count || 0,
+      p.first_author_name || "",
+      p.doi || "",
+      p.content_type || "journal_article",
+      p.sub_theme || "",
+    ]);
+  }
+
+  // Write per-theme files
+  const themeIndex = [];
+  for (const [theme, papers] of Object.entries(papersByTheme)) {
+    const slug = theme.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/_+$/, "");
+    const fileName = `${slug}.json`;
+
+    const themeFile = {
+      theme,
+      total: papers.length,
+      fields: compactFields,
+      tip: `All ${papers.length} papers classified under theme '${theme}'. Same array-of-arrays format as papers-compact.json.`,
+      papers,
+    };
+
+    fs.writeFileSync(
+      path.join(papersThemeDir, fileName),
+      JSON.stringify(themeFile)
+    );
+
+    const sizeBytes = fs.statSync(path.join(papersThemeDir, fileName)).size;
+    themeIndex.push({
+      theme,
+      slug,
+      total: papers.length,
+      url: `/api/papers/theme/${fileName}`,
+      size_kb: Math.round(sizeBytes / 1024),
+    });
+  }
+
+  // Sort by paper count descending
+  themeIndex.sort((a, b) => b.total - a.total);
+
+  // Write theme index
+  fs.writeFileSync(
+    path.join(papersThemeDir, "index.json"),
+    JSON.stringify({
+      description: "Per-theme paper files. Each file contains all papers for one research theme in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
+      exported_at: new Date().toISOString(),
+      fields: compactFields,
+      total_themes: themeIndex.length,
+      total_papers: classifiedPapers.length,
+      themes: themeIndex,
+    }, null, 2)
+  );
+
+  console.log(
+    `Exported per-theme paper files: ${themeIndex.length} themes (${themeIndex.slice(0, 5).map(t => `${t.theme}:${t.total}`).join(", ")}...)`
+  );
+} catch (e) {
+  console.log(`Per-theme paper files export failed: ${e.message}`);
 }
 
 // =============================================================================

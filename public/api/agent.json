@@ -15,7 +15,7 @@
     "data_sources": 733,
     "data_sources_with_programmatic_access": 128,
     "sports_covered": 33,
-    "last_updated": "2026-02-19T21:20:16.596Z"
+    "last_updated": "2026-02-19T22:18:40.520Z"
   },
   "capabilities": [
     "Search and filter 13,823+ classified sports analytics papers by sport, methodology, theme, keyword",
@@ -30,8 +30,8 @@
       "description": "A student looking for a research topic or evaluating feasibility of a thesis idea",
       "steps": [
         "1. Check /api/gaps/index.json — does a relevant gap analysis already exist? Each one suggests concrete thesis projects at BSc, MSc, and PhD level.",
-        "2. Search papers: /papers?search=<keyword>&sport=<sport> (e.g., /papers?search=pacing&sport=athletics)",
-        "3. Use /api/papers-compact.json for programmatic search (~2MB, all papers with key fields)",
+        "2. Fetch papers for their sport: /api/papers/sport/<slug>.json (e.g., /api/papers/sport/football.json). Much smaller than papers-compact.json. See /api/papers/sport/index.json for all sports.",
+        "3. Or fetch papers for their theme: /api/papers/theme/<slug>.json (e.g., /api/papers/theme/betting_markets.json). See /api/papers/theme/index.json for all themes.",
         "4. Check /api/data-sources.json for available datasets in the student's sport",
         "5. If no gap analysis exists for their topic and you found ≥5 papers: consider contributing one (see contribution_protocol below)"
       ],
@@ -44,9 +44,9 @@
     "researcher_doing_literature_review": {
       "description": "A researcher building a literature base or conducting a systematic review",
       "steps": [
-        "1. Fetch /api/papers-compact.json for bulk search and filtering",
-        "2. Check /api/gaps/index.json for existing synthesis of the topic",
-        "3. Use /papers page with URL params for targeted searches",
+        "1. Fetch per-sport or per-theme paper files for targeted search: /api/papers/sport/<slug>.json or /api/papers/theme/<slug>.json",
+        "2. Or fetch /api/papers-compact.json for cross-sport/cross-theme bulk search (~4MB, all papers)",
+        "3. Check /api/gaps/index.json for existing synthesis of the topic",
         "4. For full metadata including abstracts: /api/classifications.json (warning: ~16MB)",
         "5. Export results as CSV or BibTeX from the /papers page"
       ],
@@ -126,6 +126,20 @@
       "description": "Direct PDF URLs for open-access papers",
       "size": "~2MB"
     },
+    "papers_by_sport": {
+      "url": "/api/papers/sport/index.json",
+      "description": "Per-sport paper files. Each sport has its own small JSON file (~40KB-800KB). RECOMMENDED for agents: fetch only the sport you need instead of the full 4MB papers-compact.json.",
+      "size": "index ~2KB, individual files 5KB-800KB",
+      "tip": "Fetch the index first to see all sports with paper counts and file sizes, then fetch /api/papers/sport/<slug>.json for the sport you need.",
+      "example": "/api/papers/sport/football.json"
+    },
+    "papers_by_theme": {
+      "url": "/api/papers/theme/index.json",
+      "description": "Per-theme paper files. Each research theme has its own small JSON file. Same format as per-sport files.",
+      "size": "index ~2KB, individual files 5KB-600KB",
+      "tip": "Fetch the index first, then /api/papers/theme/<slug>.json for the theme you need.",
+      "example": "/api/papers/theme/betting_markets.json"
+    },
     "classifications_full": {
       "url": "/api/classifications.json",
       "description": "Full classification dataset with abstracts. WARNING: ~16MB. Use papers-compact.json for search instead.",
@@ -172,6 +186,15 @@
         "/papers?type=thesis&sport=cycling"
       ],
       "taxonomy_reference": "Full list of valid sport/methodology/theme values: /api/pipeline.json → classification_taxonomy"
+    },
+    "per_sport_and_theme_files": {
+      "description": "RECOMMENDED for agents: instead of downloading the full papers-compact.json (~4MB), fetch only the sport or theme file you need. Each file is small enough for WebFetch.",
+      "sport_index": "/api/papers/sport/index.json",
+      "theme_index": "/api/papers/theme/index.json",
+      "sport_example": "/api/papers/sport/football.json (~800KB, ~3000 papers)",
+      "theme_example": "/api/papers/theme/betting_markets.json (~35KB, ~125 papers)",
+      "format": "Same array-of-arrays format as papers-compact.json (same field order)",
+      "when_to_use": "When you know which sport or theme the user is interested in. For cross-sport or cross-theme searches, use papers-compact.json instead."
     }
   },
   "contribution_protocol": {
@@ -210,9 +233,9 @@
     }
   },
   "limitations": [
-    "This is a static site — no server-side search API. Use /api/papers-compact.json for programmatic search (client-side filtering).",
+    "This is a static site — no server-side search API. Use per-sport/per-theme files for targeted search, or papers-compact.json for cross-cutting search.",
     "Gap analyses are pre-computed, not generated on-demand. Check /api/gaps/index.json for available topics.",
-    "classifications.json is ~16MB — too large for most agent fetch tools. Use papers-compact.json (~2MB) instead.",
+    "classifications.json is ~16MB — too large for most agent fetch tools. Use per-sport/per-theme files (~40KB-800KB each) or papers-compact.json (~4MB).",
     "Full-text PDFs are not hosted on this site. paper-pdfs.json contains direct links to publisher/repository PDFs.",
     "Contributions go through GitHub (Issues/PRs) — there is no POST API endpoint.",
     "The database focuses on English-language publications. Non-English papers may be underrepresented."
