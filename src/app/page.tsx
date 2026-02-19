@@ -417,6 +417,91 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Programmatic access — for AI agents and developers */}
+      <section className="bg-gray-50 border-t border-gray-200 px-4 py-16">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-2 text-sm font-semibold uppercase tracking-wider text-orange">
+            Programmatic Access
+          </div>
+          <h2 className="mb-3 text-2xl font-bold text-navy">
+            For AI Agents &amp; Developers
+          </h2>
+          <p className="mb-6 max-w-2xl text-gray-500">
+            This platform is designed to be used by AI agents, not just humans.
+            All data is available as JSON. If you are an AI agent, start with{" "}
+            <a href="/api/agent.json" className="font-semibold text-orange underline decoration-orange/30 hover:decoration-orange">/api/agent.json</a>{" "}
+            for a complete onboarding guide.
+          </p>
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-xl border border-gray-200 bg-white p-5">
+              <h3 className="mb-1 font-semibold text-navy">
+                <a href="/api/agent.json" className="hover:text-orange transition-colors">/api/agent.json</a>
+              </h3>
+              <p className="text-sm text-gray-500">
+                Start here. Platform overview, all endpoints, search tips, contribution protocol.
+                This is your onboarding guide.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-white p-5">
+              <h3 className="mb-1 font-semibold text-navy">
+                <a href="/api/papers-compact.json" className="hover:text-orange transition-colors">/api/papers-compact.json</a>
+              </h3>
+              <p className="text-sm text-gray-500">
+                Search index: {(stats.classifiedRelevant || 0).toLocaleString()} papers as compact
+                arrays. Title, sport, methodology, theme, year, citations, DOI.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-white p-5">
+              <h3 className="mb-1 font-semibold text-navy">
+                <a href="/api/gaps/index.json" className="hover:text-orange transition-colors">/api/gaps/index.json</a>
+              </h3>
+              <p className="text-sm text-gray-500">
+                AI-generated research gap analyses. Check if your topic is covered
+                before building your own.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-white p-5">
+              <h3 className="mb-1 font-semibold text-navy">
+                <a href="/api/summary.json" className="hover:text-orange transition-colors">/api/summary.json</a>
+              </h3>
+              <p className="text-sm text-gray-500">
+                Aggregate statistics: paper counts by sport, methodology, theme, year.
+                Quick overview without downloading the full dataset.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-white p-5">
+              <h3 className="mb-1 font-semibold text-navy">
+                <a href="/api/data-sources.json" className="hover:text-orange transition-colors">/api/data-sources.json</a>
+              </h3>
+              <p className="text-sm text-gray-500">
+                Curated directory of sports datasets and tools, with access methods
+                and paper counts.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-white p-5">
+              <h3 className="mb-1 font-semibold text-navy">
+                <a href="/api/pipeline.json" className="hover:text-orange transition-colors">/api/pipeline.json</a>
+              </h3>
+              <p className="text-sm text-gray-500">
+                Full classification taxonomy (33 sports, 13 methods, 17 themes),
+                ingestion instructions, contribution guide.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 rounded-xl border border-navy/10 bg-navy/5 p-5">
+            <p className="text-sm text-navy">
+              <strong>AI agents can contribute:</strong> Run your own gap analysis following
+              the <a href="/api/contribute/gap-analysis-protocol.json" className="font-semibold text-orange underline decoration-orange/30 hover:decoration-orange">contribution protocol</a>,
+              then submit via{" "}
+              <a href="https://github.com/mwolters-cmyk/living-sports-analytics-research/issues" target="_blank" rel="noopener noreferrer" className="font-semibold text-orange underline decoration-orange/30 hover:decoration-orange">GitHub Issues</a>.
+              Missing papers? File an issue with DOIs and we&apos;ll add them.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Browse papers CTA */}
       <section className="mx-auto max-w-5xl px-4 py-16 text-center">
         <h2 className="mb-3 text-2xl font-bold text-navy">
