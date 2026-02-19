@@ -1,0 +1,694 @@
+{
+  "description": "Full gap analysis: \"Does dismissing a football head coach during the season actually improve team performance, and what analytical methods can reliably isolate this causal effect?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-19T20:05:48.695Z",
+  "slug": "does-dismissing-a-football-head-coach-during-the-season-actually-improve-team-pe",
+  "question": "Does dismissing a football head coach during the season actually improve team performance, and what analytical methods can reliably isolate this causal effect?",
+  "created_at": "2026-02-19T21:02:20.009653",
+  "analyzed_at": "2026-02-19T21:04:14.866775",
+  "model": "claude-haiku-4-5-20251001",
+  "papers_analyzed": 449,
+  "cost_usd": 0.1534,
+  "analysis_confidence": "medium",
+  "scope_assessment": "Well-scoped but challenging. The question has two components: (1) empirical—does coach dismissal improve performance? and (2) methodological—what methods can isolate causal effects? The first is answerable with existing data; the second requires critical assessment of econometric and statistical approaches. The question is specific enough to be tractable but broad enough to encompass both observational and quasi-experimental designs.",
+  "database_coverage": "Moderate coverage of the core question. Our database contains 5 papers directly studying coach dismissal effects on performance (Managerial turnover in Polish Ekstraklasa, Danish soccer, Spanish leagues, and one qualitative study on manager impact). We also have papers on manager characteristics, tenure, and hiring effects. However, we lack: (1) papers explicitly comparing causal inference methods for isolating coach effects; (2) longitudinal studies with multiple league/season data; (3) papers using instrumental variables or regression discontinuity designs; (4) qualitative research on HOW dismissals affect player psychology/behavior; (5) studies on non-performance factors affecting dismissal decisions (e.g., boardroom politics, financial constraints). The betting market paper (Brazilian coaching replacements) provides an interesting angle but via betting efficiency rather than direct performance measurement.",
+  "confidence_explanation": "We have solid empirical evidence on the Polish Ekstraklasa and Danish league showing modest/null effects and methodological guidance (regression to the mean, matched scenarios). The Spanish study suggests short-term improvements. However: (1) findings are inconsistent across leagues, suggesting context-dependency; (2) causal identification methods vary in sophistication; (3) sample sizes for within-season changes are often small (115–379 dismissals); (4) no papers explicitly compare multiple causal inference techniques on the same dataset; (5) we lack qualitative evidence on mechanisms and player/staff responses. Higher confidence would require more papers using identical methods across multiple leagues, or papers explicitly validating causal identification approaches.",
+  "landscape": {
+    "summary": "Research on coach dismissals and team performance reveals a nuanced picture with inconsistent findings across leagues. The Polish Ekstraklasa study (W4409425702) found no significant performance improvements following mid-season dismissals after controlling for regression to the mean using ELO ratings and matched counterfactual scenarios—a methodologically sophisticated finding. In contrast, the Danish Premier League study (W2946480687) found significant improvements in home matches after coach dismissal, suggesting home advantage and supporter psychology may play roles. A Spanish study (W4388526044) identified short-term performance improvements but with important caveats about context dependency. A 2025 study (W4411782569) examined physical performance changes across three coaching regimes, finding significant effects on high-speed running metrics, suggesting coaches do influence how players execute on-field tasks. The broader literature identifies coach tenure, age, professional experience, and power dynamics as moderators of performance effects, but these studies rarely isolate causal effects convincingly. The field relies heavily on observational designs, quasi-experimental matching, and regression discontinuity approaches, but systematic comparisons of these methods are absent.",
+    "key_findings": [
+      {
+        "finding": "Mid-season coach dismissals in the Polish Ekstraklasa (2006-2024) showed modest improvement after dismissal, but this improvement was largely attributable to regression to the mean when teams with matched pre-dismissal performance are compared, suggesting causal effect is minimal.",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4409425702",
+            "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+            "first_author": "Bartlomiej Stachnik"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Danish Premier League study found significant performance improvements following coach dismissals, but improvements occurred exclusively in home matches, implicating home-crowd psychology and supporter effects rather than pure coaching ability differences.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2946480687",
+            "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+            "year": 2016,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/155862351601100104",
+            "first_author": "Andreas Madum"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Coach dismissals significantly impact physical performance profiles of players (high-speed running, sprint distance) across three different coaching regimes in elite soccer, suggesting coaches do affect how players execute tactically, not just outcomes.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4411782569",
+            "title": "The Impact of Managerial Changes on Physical Performance in Elite Soccer Players",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13070213",
+            "first_author": "Dennis Petrov"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Spanish professional leagues showed short-term (1-5 games) performance improvements following coach dismissal, but improvement magnitude varies by league tier and fixture context, indicating context-dependency of effects.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4388526044",
+            "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/24748668.2023.2278370",
+            "first_author": "José Carlos Ponce-Bordón"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Coach dismissal determinants are influenced by performance expectations, power structures (coach reputation, tenure), and organizational factors—not just win-loss records. NBA coaches with higher prestige experience lower dismissal probability despite poor performance.",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2751035262",
+            "title": "Power, performance, and expectations in the dismissal of NBA coaches: A survival analysis study",
+            "year": 2017,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.1016/j.smr.2017.08.002",
+            "first_author": "David B. Wangrow"
+          },
+          {
+            "work_id": "https://openalex.org/W3191974746",
+            "title": "Time to Say Goodbye: A Duration Analysis of the Determinants of Coach Dismissals and Quits in Major League Soccer",
+            "year": 2021,
+            "sport": "american_football",
+            "doi": "https://doi.org/10.1177/15270025211034820",
+            "first_author": "Dirk Semmelroth"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Betting market efficiency study shows causal ROI effects for bets following coach dismissals in Brazil, with positive ROI for 'bets to win' appearing 5-8 games post-dismissal—suggesting markets detect real but delayed performance changes.",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4410157616",
+            "title": "Betting (In)Efficiency After Football Coaching Replacements in Brazil",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.32731/ijsf/202.052025.02",
+            "first_author": "Matheus Galdino"
+          }
+        ],
+        "paper_count": 1
+      }
+    ],
+    "methodology_profile": {
+      "dominant_methods": [
+        "Quasi-experimental matching (nearest neighbor, ELO-based counterfactuals) - Polish and Danish studies",
+        "Linear regression with fixed effects and binary treatment variables - Polish Ekstraklasa study",
+        "Observational analysis with contextual controls (match location, opponent quality, team strength)",
+        "One-way ANOVA for post-dismissal vs. pre-dismissal comparisons - Spanish leagues study",
+        "Logistic regression for dismissal determinants (NBA/MLS studies) and betting market analysis"
+      ],
+      "sample_size_patterns": "Coach dismissal studies typically analyze 100-400 dismissals per league per study period (Polish: 115 cases; Spanish: multiple dismissals over 4 seasons; Danish: 19+ seasons of data). When analyzing performance changes, studies use 10-90 games pre/post dismissal as the unit of analysis. Small sample sizes for dismissal events relative to total games played, making statistical power an issue for detecting small effects.",
+      "data_sources_used": "Official league match statistics, betting odds (for team strength estimation via ELO ratings), GPS tracking data (for physical performance metrics), official league databases (points, goals, game results). One study uses BetExplorer and ClubElo for team strength estimation. Brazilian study uses betting market data (ROI analysis).",
+      "temporal_patterns": "Polish study covers 2006-2024 (18 seasons); Danish study covers 19 recent seasons; Spanish study 2015-2019 (4 seasons). All are retrospective analyses. The 2025 physical performance study is recent and uses single-season GPS data. Temporal design is cross-sectional for dismissal timing but longitudinal in tracking performance before/after events. No prospective studies exist."
+    },
+    "key_papers": [
+      {
+        "work_id": "https://openalex.org/W4409425702",
+        "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+        "why_key": "Most methodologically rigorous study in the database on this question. Uses ELO ratings to construct matched counterfactual scenarios ('what would have happened if manager was retained'), explicitly addresses regression to the mean, and finds null causal effect. Provides template for future causal inference work.",
+        "year": 2025,
+        "sport": "football",
+        "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+        "first_author": "Bartlomiej Stachnik"
+      },
+      {
+        "work_id": "https://openalex.org/W2946480687",
+        "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+        "why_key": "Second strongest empirical study. Finds positive effect but limited to home matches, implicating confounders (supporter psychology, home advantage). Uses nearest-neighbor matching and robustness checks. Directly contradicts Polish findings, highlighting context-dependency.",
+        "year": 2016,
+        "sport": "football",
+        "doi": "https://doi.org/10.1177/155862351601100104",
+        "first_author": "Andreas Madum"
+      },
+      {
+        "work_id": "https://openalex.org/W4388526044",
+        "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+        "why_key": "Examines both performance outcomes AND physical demand changes across dismissal contexts. Finds short-term effects (1-5 games) but questions their practical significance. Compares First and Second divisions, providing league-level heterogeneity evidence.",
+        "year": 2023,
+        "sport": "football",
+        "doi": "https://doi.org/10.1080/24748668.2023.2278370",
+        "first_author": "José Carlos Ponce-Bordón"
+      },
+      {
+        "work_id": "https://openalex.org/W2751035262",
+        "title": "Power, performance, and expectations in the dismissal of NBA coaches: A survival analysis study",
+        "why_key": "Uses survival analysis (Cox proportional hazards) to model dismissal determinants. Finds non-linear relationship between performance and dismissal likelihood, plus evidence that coach power/prestige moderates dismissal. Demonstrates that organizational factors drive dismissal decisions independently of performance.",
+        "year": 2017,
+        "sport": "basketball",
+        "doi": "https://doi.org/10.1016/j.smr.2017.08.002",
+        "first_author": "David B. Wangrow"
+      },
+      {
+        "work_id": "https://openalex.org/W4411782569",
+        "title": "The Impact of Managerial Changes on Physical Performance in Elite Soccer Players",
+        "why_key": "Only paper examining how coach changes affect EXECUTION (GPS metrics, physical load) rather than just outcomes. Finds significant differences in high-speed running and sprint metrics across three coaching regimes. Suggests coaches affect tactical implementation even if final outcomes are unchanged.",
+        "year": 2025,
+        "sport": "football",
+        "doi": "https://doi.org/10.3390/sports13070213",
+        "first_author": "Dennis Petrov"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "methodology",
+      "title": "Lack of comparative validation of causal inference methods",
+      "description": "The database contains papers using different quasi-experimental approaches (ELO matching, nearest-neighbor matching, regression with controls, observational analysis) but NO papers directly comparing these methods on identical datasets or validating which approach most reliably isolates causal effects. The Polish study uses ELO-based matching; the Danish study uses nearest-neighbor matching; the Spanish study uses simple ANOVA. Without head-to-head comparison, it is unclear which method is most robust to confounding or best suited for coach dismissal research. For practitioners designing future studies, guidance on method selection is absent.",
+      "evidence": "Polish Ekstraklasa paper (W4409425702) and Danish paper (W2946480687) employ different matching strategies and reach opposite conclusions about effect existence. Spanish paper uses simpler methods. No paper acknowledges these methodological differences as a source of conflicting findings or tests whether results are robust to method choice.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+          "first_author": "Bartlomiej Stachnik"
+        },
+        {
+          "work_id": "https://openalex.org/W2946480687",
+          "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+          "year": 2016,
+          "sport": "football",
+          "doi": "https://doi.org/10.1177/155862351601100104",
+          "first_author": "Andreas Madum"
+        },
+        {
+          "work_id": "https://openalex.org/W4388526044",
+          "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24748668.2023.2278370",
+          "first_author": "José Carlos Ponce-Bordón"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "The research question explicitly asks for 'analytical methods that can reliably isolate causal effects.' Without methodological validation, practitioners cannot have confidence in findings. The conflicting evidence across leagues may partly reflect method choice, not true effect heterogeneity.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible if researcher obtains comprehensive data from a single league (e.g., Polish Ekstraklasa) and re-analyzes using multiple methods (ELO matching, propensity score matching, regression discontinuity, instrumental variables). Requires advanced econometric expertise but is doable with existing data.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_2",
+      "type": "topic",
+      "title": "Mechanism studies: How do coach dismissals affect player behavior and team dynamics?",
+      "description": "All papers in the database examine WHETHER dismissals improve performance outcomes, but NONE examine HOW or WHY. What psychological, tactical, or interpersonal mechanisms drive performance changes? Do players respond with motivation boost ('bounce effect'), fatigue reduction, or tactical shifts? Do different dismissal contexts (poor performance vs. conflict) trigger different player responses? Do squad cohesion, morale, or perceived tactical clarity change? One paper (W4392058132) on coaching behavior and instruction focus is qualitative but does not examine dismissal effects. The sole blog post (soccermatics) hints at 'fit' between manager and team style but lacks empirical investigation.",
+      "evidence": "Of 5 core dismissal papers, zero employ interviews, focus groups, or behavioral observation to understand mechanism. The Polish study explicitly states regression to the mean explains observed performance—implying no true causal coaching effect—but does not investigate what coaches might have changed tactically that the regression model captures. The 'physical performance' paper (W4411782569) is the closest, showing coaches affect GPS metrics, but does not explain HOW (e.g., more direct play? higher pressing intensity? different formation?).",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+          "first_author": "Bartlomiej Stachnik"
+        },
+        {
+          "work_id": "https://openalex.org/W2946480687",
+          "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+          "year": 2016,
+          "sport": "football",
+          "doi": "https://doi.org/10.1177/155862351601100104",
+          "first_author": "Andreas Madum"
+        },
+        {
+          "work_id": "https://openalex.org/W4388526044",
+          "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24748668.2023.2278370",
+          "first_author": "José Carlos Ponce-Bordón"
+        },
+        {
+          "work_id": "https://openalex.org/W4411782569",
+          "title": "The Impact of Managerial Changes on Physical Performance in Elite Soccer Players",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.3390/sports13070213",
+          "first_author": "Dennis Petrov"
+        },
+        {
+          "work_id": "https://openalex.org/W4392058132",
+          "title": "Using a coproduced educational workshop to change the focus of verbal instructions delivered by professional youth soccer coaches: a case study",
+          "year": 2024,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/17408989.2024.2319056",
+          "first_author": "Matthew Andrew"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Without understanding mechanisms, policy decisions about when to dismiss coaches and what to expect are uninformed. If bounce is psychological, different interventions apply than if it's tactical clarity. Managers need to know: (1) what coaching qualities to seek in a replacement; (2) whether dismissal solves the problem or is cosmetic; (3) which players are sensitive to coach changes.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible through mixed-methods design: combine econometric performance analysis with post-dismissal interviews of players and coaching staff (10–20 players per team, conducted weeks after dismissal). Requires access to professional clubs and ethical clearance but is standard in qualitative sports management research.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_3",
+      "type": "population",
+      "title": "Coach dismissal effects in non-European, non-elite leagues largely unstudied",
+      "description": "All 5 core papers focus on European top-tier leagues (Poland, Denmark, Spain) or NBA. We have ONE study from Brazil's betting market (W4410157616) but it does not measure performance directly. Zero papers examine: (1) lower-tier/amateur football; (2) women's professional leagues; (3) Asian, African, or South American top-tier leagues; (4) non-football sports in the database (basketball, ice hockey). Are effects similar in resource-constrained or lower-skill environments? Do women's teams show different dismissal-performance dynamics (e.g., due to different player turnover, squad stability, financial pressures)? The geographic and competitive-level bias suggests findings may not generalize.",
+      "evidence": "Database contains 276 football papers, 133 basketball, 30 American football, 10 ice hockey. Only 1 paper on coach dismissal in non-European context (Brazil, via betting); none in women's football or basketball; none in lower divisions. The 50 women's sport papers in database do not address coaching changes.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+          "first_author": "Bartlomiej Stachnik"
+        },
+        {
+          "work_id": "https://openalex.org/W2946480687",
+          "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+          "year": 2016,
+          "sport": "football",
+          "doi": "https://doi.org/10.1177/155862351601100104",
+          "first_author": "Andreas Madum"
+        },
+        {
+          "work_id": "https://openalex.org/W4388526044",
+          "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24748668.2023.2278370",
+          "first_author": "José Carlos Ponce-Bordón"
+        },
+        {
+          "work_id": "https://openalex.org/W4410157616",
+          "title": "Betting (In)Efficiency After Football Coaching Replacements in Brazil",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.32731/ijsf/202.052025.02",
+          "first_author": "Matheus Galdino"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Generalizability of findings is unclear. European leagues have strong players unions, regulated salary structures, and developed scouting systems—context may not apply to lower divisions or resource-constrained leagues where coach dismissal could have larger or smaller effects. Women's leagues may differ in squad cohesion and player retention patterns.",
+      "feasibility": "medium",
+      "feasibility_rationale": "Feasible for researchers in those regions to apply existing methods to local league data. However, data access and standardized metrics may be barriers in lower-tier or non-European leagues. Requires international collaboration.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_4",
+      "type": "data",
+      "title": "Lack of pre-determined dismissal thresholds and confounding-by-expectation",
+      "description": "All dismissal studies use observational data where dismissal timing is endogenous—boards dismiss coaches based on expected future performance, not random timing. This creates selection bias: teams with dismissals are typically underperforming and at inflection points. Even matched analyses cannot fully control for unmeasured confounders (e.g., boardroom confidence in new manager, recent injury to key player, upcoming transfer window). The Polish study uses ELO matching and controls for 'team strength,' but unmeasured factors remain. NO paper uses natural experiments (e.g., coach illness, arbitrary fixture congestion causing unexpected poor run, league rules changes affecting dismissal eligibility) to isolate truly exogenous coach turnover events.",
+      "evidence": "Polish study acknowledges regression to the mean as explanation for observed improvement, implying dismissal timing is endogenous to performance trajectory. Danish study notes 'teams that dismissed coaches subsequently performed better' but acknowledges boards likely make informed dismissal decisions. No paper reports attempts to find instrumental variables or natural experiments that would provide exogenous variation in dismissal timing.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+          "first_author": "Bartlomiej Stachnik"
+        },
+        {
+          "work_id": "https://openalex.org/W2946480687",
+          "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+          "year": 2016,
+          "sport": "football",
+          "doi": "https://doi.org/10.1177/155862351601100104",
+          "first_author": "Andreas Madum"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Without exogenous variation, all estimates are potentially biased. The true causal effect of coach quality may be different from the 'effect of dismissal' (which conflates coach quality with dismissal timing and expectations). This is a fundamental identification problem.",
+      "feasibility": "low",
+      "feasibility_rationale": "Natural experiments for coach dismissal are rare. Would require creative use of data (e.g., sudden coach illness, unexpected relegation threat triggering dismissals, or rule changes in league governance). Alternatively, researcher could design a survey or interview study asking boards WHY they dismissed (to measure dismissal threshold and identify near-dismissal cases that were retained—creating a valid counterfactual).",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_5",
+      "type": "temporal",
+      "title": "Short-term performance windows; long-term effects unstudied",
+      "description": "Available studies measure performance over 1–10 games post-dismissal, or up to one season. The Spanish study (W4388526044) finds short-term improvements (1–5 games) that may fade. NO paper examines: (1) whether effects persist beyond 10 games or into the following season; (2) whether initial bounce reverses; (3) whether coach replacement quality moderates long-term outcomes; (4) trajectory of team performance over 2–3 seasons. If dismissals produce only temporary morale boosts, longer-term measurement is essential for assessing true value. Conversely, if effects take time to manifest (e.g., new formations require adaptation), short-term analysis may miss true causality.",
+      "evidence": "Polish study: 115 dismissals analyzed over full seasons. Spanish study: identifies short-term improvements (games 1–5) but does not extend analysis beyond 10 games. No paper explicitly discusses long-term persistence or fade-out of effects. The Brazilian betting market study (W4410157616) shows ROI effects on games 5–8 post-dismissal, then effects disappear—suggestive of fade-out, but not directly measuring performance.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+          "first_author": "Bartlomiej Stachnik"
+        },
+        {
+          "work_id": "https://openalex.org/W4388526044",
+          "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24748668.2023.2278370",
+          "first_author": "José Carlos Ponce-Bordón"
+        },
+        {
+          "work_id": "https://openalex.org/W4410157616",
+          "title": "Betting (In)Efficiency After Football Coaching Replacements in Brazil",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.32731/ijsf/202.052025.02",
+          "first_author": "Matheus Galdino"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "For decision-making, understanding whether dismissal effects are durable matters. If effects fade within 2 weeks, dismissal is a temporary fix; if they persist, it indicates real improvement. Medium importance because short-term effects may be sufficient for competitive purposes (e.g., ensuring playoffs), but long-term understanding is valuable for forward planning.",
+      "feasibility": "high",
+      "feasibility_rationale": "Straightforward extension of existing studies: simply extend performance measurement window to 20–30 games or next season. Requires only additional data collection and analysis, no new methods.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_6",
+      "type": "integration",
+      "title": "Coach dismissal effects not integrated with organizational/governance research",
+      "description": "The dismissal studies exist in isolation from broader sport management literature on organizational change, leadership transitions, and performance. One paper (W2751035262) examines NBA dismissal DETERMINANTS (using survival analysis) and finds power dynamics and expectations matter. Another (W3191974746) on MLS shows performance expectations and coach reputation influence dismissal timing. But these are not integrated with the performance-outcome papers. There is no synthesis asking: 'When boards make informed dismissal decisions based on clear performance thresholds, does that selection process make causal estimation harder or easier?' No paper bridges governance (how dismissals are decided) with performance (what effect they have). This prevents understanding of whether dismissal decisions are justified by subsequent performance, or whether boards over/underestimate new coach impact.",
+      "evidence": "Performance papers (W4409425702, W2946480687) analyze effect of dismissal; determinant papers (W2751035262, W3191974746) analyze why dismissals happen. No paper cites the other group or attempts synthesis. The blog post (soccermatics) on manager recruitment hints at fit but is descriptive, not empirical.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+          "first_author": "Bartlomiej Stachnik"
+        },
+        {
+          "work_id": "https://openalex.org/W2751035262",
+          "title": "Power, performance, and expectations in the dismissal of NBA coaches: A survival analysis study",
+          "year": 2017,
+          "sport": "basketball",
+          "doi": "https://doi.org/10.1016/j.smr.2017.08.002",
+          "first_author": "David B. Wangrow"
+        },
+        {
+          "work_id": "https://openalex.org/W3191974746",
+          "title": "Time to Say Goodbye: A Duration Analysis of the Determinants of Coach Dismissals and Quits in Major League Soccer",
+          "year": 2021,
+          "sport": "american_football",
+          "doi": "https://doi.org/10.1177/15270025211034820",
+          "first_author": "Dirk Semmelroth"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "Understanding governance + performance together would help answer: 'Do boards make good dismissal decisions?' If dismissals are driven by performance below expectations, and subsequent performance improves but remains below the threshold, boards may be making uninformed choices. Integration would reveal whether dismissal is a rational response or an emotional one.",
+      "feasibility": "high",
+      "feasibility_rationale": "Feasible through literature review and secondary analysis: combine insights from dismissal determinant and performance outcome papers, then analyze whether dismissal decisions (based on thresholds) are ex post justified by performance improvements. Requires no new data, only synthesis.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_7",
+      "type": "methodology",
+      "title": "Regression discontinuity and instrumental variables approaches absent",
+      "description": "All dismissal papers use observational regression, matching, or ANOVA. No paper employs: (1) regression discontinuity design (e.g., teams that just-barely-miss-playoffs vs. teams-just-barely-make-playoffs are dismissed at different rates; use this discontinuity to estimate effect), (2) instrumental variables (IV) estimation, (3) event-study methodology with placebo/falsification tests, (4) causal forests or heterogeneous treatment effect estimation. These methods could provide more credible causal estimates than current approaches. RDD could exploit the sharp threshold of playoff qualification or relegation as a quasi-natural experiment for dismissal timing.",
+      "evidence": "No paper reports RDD, IV, event-study with falsification tests, or causal forests. Most sophisticated method used is ELO-based nearest-neighbor matching (Polish study). This is a methodological gap, not an empirical one.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+          "first_author": "Bartlomiej Stachnik"
+        },
+        {
+          "work_id": "https://openalex.org/W2946480687",
+          "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+          "year": 2016,
+          "sport": "football",
+          "doi": "https://doi.org/10.1177/155862351601100104",
+          "first_author": "Andreas Madum"
+        },
+        {
+          "work_id": "https://openalex.org/W4388526044",
+          "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24748668.2023.2278370",
+          "first_author": "José Carlos Ponce-Bordón"
+        }
+      ],
+      "importance": "medium",
+      "importance_rationale": "These methods could provide more robust causal estimates, but their applicability depends on data structure (RDD requires sharp cutoff; IV requires valid instrument). Not a critical gap if matching works well, but represents untapped methodological rigor.",
+      "feasibility": "medium",
+      "feasibility_rationale": "RDD and event-study feasible with existing data if playoff/relegation thresholds are sharp. IV requires identifying valid instrument (e.g., unexpected injury to manager, manager contract termination clause triggered by rule change)—harder to find. Requires econometric expertise.",
+      "confidence": "medium"
+    },
+    {
+      "id": "gap_8",
+      "type": "replication",
+      "title": "Conflicting findings across leagues not explained; replication in same league missing",
+      "description": "Polish study finds NULL effect; Danish study finds POSITIVE effect (in home matches); Spanish study finds SHORT-TERM improvement. Why the disagreement? Is it league-specific, method-specific, or time-period-specific? NO paper replicates findings in the same league across multiple time periods or uses identical methods across leagues. Without replication or within-league sensitivity analysis, it is unclear whether findings are robust or artifacts of particular samples, time periods, or methods. The Polish study explicitly addresses regression to the mean as explanation—but does not test this explanation in Danish or Spanish data.",
+      "evidence": "Three core empirical papers (W4409425702, W2946480687, W4388526044) reach different conclusions. Polish authors discuss regression to the mean but do not test this hypothesis on other datasets. No meta-analysis or cross-study comparison exists.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+          "first_author": "Bartlomiej Stachnik"
+        },
+        {
+          "work_id": "https://openalex.org/W2946480687",
+          "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+          "year": 2016,
+          "sport": "football",
+          "doi": "https://doi.org/10.1177/155862351601100104",
+          "first_author": "Andreas Madum"
+        },
+        {
+          "work_id": "https://openalex.org/W4388526044",
+          "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24748668.2023.2278370",
+          "first_author": "José Carlos Ponce-Bordón"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Without replication, it is impossible to know which result is 'true' or whether effects are heterogeneous across leagues. This directly affects the reliability of causal inference, the main focus of the research question.",
+      "feasibility": "high",
+      "feasibility_rationale": "High feasibility: apply Polish methodology (ELO matching, regression to the mean analysis) to Danish and Spanish datasets, or vice versa. Or use identical methods across all three leagues. Requires access to data and moderate econometric effort.",
+      "confidence": "high"
+    },
+    {
+      "id": "gap_9",
+      "type": "topic",
+      "title": "Coach dismissal effects conditional on replacement coach quality",
+      "description": "All studies measure 'effect of dismissal' but do not disaggregate by replacement coach quality. Does dismissing a poor coach and hiring an elite coach have different effects than dismissing a good coach? Are effects moderated by quality gap (replacement is much better vs. similar quality)? One determinant paper (W3191974746) shows coach experience and reputation affect dismissal likelihood, but no paper measures whether hiring a 'better' coach produces larger performance gains. This is crucial: dismissing a coach is not random—boards typically replace with someone they perceive as better. The performance gain may reflect this selection, not dismissal itself.",
+      "evidence": "No paper disaggregates effects by replacement coach quality or compares dismissals resulting in coach upgrades vs. lateral moves vs. downgrades. The MLS paper (W3191974746) shows coach reputation affects dismissal, but does not measure subsequent performance effects by reputation of replacement.",
+      "supporting_papers": [
+        {
+          "work_id": "https://openalex.org/W4409425702",
+          "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+          "year": 2025,
+          "sport": "football",
+          "doi": "https://doi.org/10.29119/1641-3466.2025.218.33",
+          "first_author": "Bartlomiej Stachnik"
+        },
+        {
+          "work_id": "https://openalex.org/W2946480687",
+          "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+          "year": 2016,
+          "sport": "football",
+          "doi": "https://doi.org/10.1177/155862351601100104",
+          "first_author": "Andreas Madum"
+        },
+        {
+          "work_id": "https://openalex.org/W4388526044",
+          "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+          "year": 2023,
+          "sport": "football",
+          "doi": "https://doi.org/10.1080/24748668.2023.2278370",
+          "first_author": "José Carlos Ponce-Bordón"
+        }
+      ],
+      "importance": "high",
+      "importance_rationale": "Critical for isolating coaching effect. If effect varies dramatically by replacement quality, dismissal decisions should account for replacement hiring. Without this analysis, the question 'does dismissal improve performance?' is unanswerable—the answer depends on who replaces the coach.",
+      "feasibility": "high",
+      "feasibility_rationale": "Straightforward: collect data on replacement coach's prior performance, tenure, or external ratings (FIFA ratings, scout consensus). Include interaction term in regression model: 'Effect of dismissal × replacement coach quality.' Requires minimal additional effort beyond existing studies.",
+      "confidence": "high"
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Methodological validation study: comparing causal inference approaches for coach dismissal effects",
+      "description": "Conduct a single-league, multi-method analysis that applies four different quasi-experimental approaches (ELO-based matching, propensity score matching, regression discontinuity using playoff qualification as threshold, and regression with extensive controls) to identical dismissal data from a league with sufficient sample size (e.g., Polish Ekstraklasa with 115+ dismissals). Report effect estimates and 95% CIs from each method; test for sensitivity of conclusions to method choice. Include falsification tests (e.g., measure dismissal effects on lagged performance variables, which should be zero if causal identification is valid). This directly addresses the research question's focus on 'analytical methods that can reliably isolate causal effects' and resolves contradictions in existing findings.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_8"
+      ],
+      "suggested_methodology": "Quasi-experimental comparison study with parallel estimation of: (1) kernel-based matching using ELO ratings; (2) propensity score matching on pre-dismissal performance indicators; (3) regression discontinuity at playoff qualification threshold; (4) panel regression with team fixed effects and controls. Include sensitivity analysis (e.g., varying matched sample sizes, bandwidth selection in RDD).",
+      "suggested_data": "Comprehensive historical data from Polish Ekstraklasa (or similar league): all 115 dismissals from 2006–2024, pre-dismissal team performance (3 seasons), team strength indicators (ELO, market value, points), post-dismissal performance (10–20 games), contextual variables (home/away, opponent quality, playoff race status).",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Would clarify which methods are most robust for future research, provide confidence intervals around causal effects, and resolve contradictions in existing literature. Directly applicable to coach hiring/firing decisions."
+    },
+    {
+      "priority": 2,
+      "title": "Mixed-methods mechanism study: how coach dismissals affect player behavior and team dynamics",
+      "description": "Combine econometric analysis (short-term performance + GPS data on physical output, tactical shifts) with qualitative research (post-dismissal interviews with players, coaches, staff). Measure: (1) immediate player morale/motivation change (via questionnaire); (2) tactical shifts (via video analysis or GPS-derived formation changes); (3) squad cohesion/team dynamics (via team climate questionnaire); (4) perceived leadership clarity (interviews). Correlate these mechanisms with subsequent performance outcomes. This addresses the 'how' question that current quantitative papers ignore and provides coaches with actionable insights into what happens after dismissal.",
+      "addresses_gaps": [
+        "gap_2"
+      ],
+      "suggested_methodology": "Mixed methods: (1) Quantitative—GPS tracking analysis pre/post dismissal to measure distance covered, formation (convex hull of player positions), pressing intensity, passing network centrality; (2) Qualitative—semi-structured interviews (n=15–20 players + staff per club) conducted 2–4 weeks post-dismissal, exploring perceived changes in tactics, motivation, clarity, team cohesion; (3) Psychometric—pre/post questionnaires on team climate, psychological empowerment, role clarity. Use thematic analysis for interviews; correlate themes with quantitative performance outcomes.",
+      "suggested_data": "One or two professional clubs with documented mid-season dismissals. GPS tracking data (every training/match), player performance metrics, post-dismissal video (for tactical analysis), interview transcripts, questionnaire responses. Requires ethical approval and club cooperation.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Would reveal which psychological/tactical mechanisms drive performance changes after dismissals, informing best practices for interim managers and transition support. Could identify which players/personalities are dismissal-sensitive."
+    },
+    {
+      "priority": 3,
+      "title": "Cross-national comparative study: coach dismissal effects across leagues and competitive levels",
+      "description": "Apply the Polish Ekstraklasa dismissal methodology (ELO-based matching, regression to the mean analysis) to data from at least three additional leagues (one non-European, one lower-tier, one women's league). Compare effect sizes, heterogeneity, and contextual moderators across leagues. Report which contextual factors (league competitiveness, wage disparities, relegation threat, player turnover, squad stability) predict larger/smaller dismissal effects. This addresses generalizability concerns and identifies league-specific factors affecting dismissal effectiveness.",
+      "addresses_gaps": [
+        "gap_3"
+      ],
+      "suggested_methodology": "Observational comparative design using identical econometric approach across all leagues: (1) ELO-based matching of dismissed-coach vs. retained-coach teams; (2) Regression to the mean analysis; (3) Robustness checks (different match windows, contextual subgroups). Meta-regression to identify league-level moderators.",
+      "suggested_data": "Complete historical match data for 3+ leagues (e.g., Brazilian Serie A, English Championship, women's Super League, or lower-tier divisions): all dismissals, team strength indicators, pre/post performance, contextual variables. Data availability is the main constraint.",
+      "estimated_difficulty": "standard_phd",
+      "potential_impact": "Would establish whether dismissal effects generalize across contexts or are league-specific. Provides evidence for whether findings from elite European leagues apply to lower divisions or developing soccer markets."
+    },
+    {
+      "priority": 4,
+      "title": "Long-term performance trajectory study: do dismissal effects persist?",
+      "description": "Extend current studies by measuring performance over 20–30 games post-dismissal (rather than current 5–10 games) and tracking team performance into the following season. Model performance as a smooth trajectory (e.g., using growth curve models) to test whether effects fade, persist, or strengthen over time. Include replacement coach quality as a predictor of trajectory shape. Test whether short-term bounce (documented in Spanish study) reverts to baseline or represents sustained improvement. This directly addresses whether dismissal effects are temporary vs. durable.",
+      "addresses_gaps": [
+        "gap_5",
+        "gap_9"
+      ],
+      "suggested_methodology": "Longitudinal analysis with growth curve models (multilevel modeling of performance over time). Dependent variable: points per game or rolling performance metric (e.g., 5-game rolling average). Time measured in games post-dismissal (0–30+ games). Predictors: dismissal indicator, replacement coach quality, team strength, contextual factors. Test for interactions (dismissal × coach quality × time).",
+      "suggested_data": "Existing data from Polish, Danish, Spanish leagues extended to cover full seasons post-dismissal. Replacement coach quality operationalized via prior performance, win% as interim manager, or external ratings.",
+      "estimated_difficulty": "accessible_thesis",
+      "potential_impact": "Would clarify whether dismissal is a strategic tool (producing durable gains) or psychological band-aid (temporary boost). Informs whether boards should expect gains to persist or plan accordingly for fade-out."
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "Moderate. The papers on coach dismissal effects (5 core empirical studies) engage with each other implicitly—they cite similar datasets (Polish, Danish leagues) and acknowledge related methods (matching, regression to mean)—but rarely directly cite or debate each other's findings. The papers are 'related monologues' rather than genuine dialogue. For example, the Polish and Danish papers reach opposite conclusions but do not engage in explicit methodological critique of each other. The determinant papers (why coaches are dismissed) cite performance papers but do not integrate findings. The blog posts exist outside the academic literature entirely. The broader landscape (500+ papers on performance analysis, coaching, etc.) is largely disconnected from the dismissal question—e.g., papers on leadership and team dynamics (W2808883453, W3089149533) exist but are not brought to bear on dismissal effects. Synthesis benefited from the fact that dismissal papers are few (allowing deep reading) but suffered from their isolation from cognate literature.",
+    "strengths": [
+      "Polish Ekstraklasa study is methodologically sophisticated (explicit treatment of regression to the mean, matched counterfactual construction) and represents best practice for causal inference in this domain.",
+      "Database includes papers on coach dismissal determinants and performance outcomes, allowing some integration of 'why dismissed' with 'what effect'.",
+      "Spanish study measures both performance outcomes and physical execution (GPS data), providing mechanistic insight beyond just results.",
+      "Brazilian betting market study offers novel angle (market pricing as revealed performance belief), complementing direct performance measurement.",
+      "Multiple papers on related topics (coach characteristics, team cohesion, leadership) exist in database but are underutilized in gap analysis—indicates room for creative synthesis."
+    ],
+    "limitations": [
+      "Analysis relies entirely on 5 core dismissal papers; if database missed relevant papers (e.g., published in non-English journals or sports management conferences), gaps may be misidentified.",
+      "Mechanism gap (gap_2) is identified but not deeply supported by evidence—absence of qualitative papers could reflect genuine research gap or database limitation.",
+      "Cannot assess unpublished/working papers, dissertations, or preprints that might address gaps.",
+      "Assumed that 'method comparison' as a standalone research need is important, but this may be a researcher's problem rather than a practitioner's need.",
+      "Did not systematically search for papers on coach effects in other sports (basketball, American football, ice hockey) that might provide methodological lessons—focused too narrowly on football."
+    ],
+    "assumptions": [
+      "Assumed that causal effect of dismissal is the primary policy-relevant question, but it's possible that boards care more about dismissal-as-signal or dismissal-as-corrective-action regardless of magnitude of effect.",
+      "Assumed geographic/competitive-level generalizability is important, but it's possible that league-specific effects are sufficient for local decision-making.",
+      "Assumed that replication within leagues is necessary, but it's possible that consistent directions of effect (even if magnitudes differ) are sufficient for current purposes.",
+      "Assumed qualitative research on mechanisms would add value, but it's possible that coaches already understand mechanisms and focus is purely on outcome prediction.",
+      "Assumed that long-term trajectory measurement is important, but it's possible that short-term effects are the decision-relevant outcome (e.g., for playoff qualification)."
+    ],
+    "database_coverage_gaps": [
+      "Coach dismissal effects in women's professional sports: Database has 50 women's sports papers but none address coaching changes. This is likely a gap—women's leagues exist globally and have dismissals, but data may be harder to access or research may be published in different venues.",
+      "Coach dismissal via natural experiments or instrumental variables: We found no papers using these sophisticated econometric methods for coach dismissal, despite their use elsewhere in sports (e.g., W2953855120 on fourth down decisions uses IV). This likely reflects that good instruments for coach dismissal are rare, not that the approach has been attempted and failed.",
+      "Qualitative research on coach transitions, team dynamics, and psychological effects: Zero papers in database examine player/staff perspectives on dismissal using interviews or ethnography. This is likely a genuine gap—qualitative sports management research exists but may not be in sports analytics venues indexed by this database.",
+      "Coach dismissal in lower professional tiers and amateur leagues: All empirical papers study top-tier or professional leagues. Lower tiers likely have dismissals and may show different effects, but data access and research funding are barriers.",
+      "Longitudinal studies tracking dismissal effects beyond one season: None of our papers extend analysis past ~20 games post-dismissal (one season), but long-term studies (2–5 years) might exist in organizational change literature or be published in business/management journals not indexed as sports analytics.",
+      "Coach dismissal effects moderated by player characteristics (age, experience, nationality, contract status): One paper (W4413160759) on coach gender finds gender moderates performance, but no dismissal papers disaggregate by player demographics, which might affect responsiveness to coaching changes."
+    ],
+    "what_would_improve_this": [
+      "Access to full-text papers would enable deeper methodological critique (e.g., whether papers cite causal inference limitations, whether effect sizes are reported with confidence intervals, whether all statistical tests are pre-registered).",
+      "International collaboration to obtain dismissal data from non-European leagues (Brazil, Argentina, China, Japan, Korea) and women's professional leagues (NWSL, Barclays Super League, etc.).",
+      "Contact with practitioners (club managers, sporting directors, player agents) to validate whether identified gaps match practitioners' actual research needs.",
+      "Systematic review protocol specifying search strategy for dismissal studies, inclusion criteria, quality assessment—currently analysis is ad-hoc synthesis of papers encountered in this database.",
+      "Qualitative interviews with authors of dismissal papers to understand methodological choices, data constraints, and interpretations of conflicting findings.",
+      "Meta-regression model predicting effect size from league/contextual characteristics, which would quantify heterogeneity and identify unmeasured confounders."
+    ],
+    "process_cost_reflection": "This analysis synthesized ~200 individual paper summaries across a large sports analytics database. The cost-benefit trade-off is unclear: (1) Benefit: we identified 9 specific gaps and 4 actionable research directions, providing a map for future work. (2) Cost: parsing 200 summaries is time-consuming; many were irrelevant to the dismissal question (e.g., plyometric training, eye-tracking in basketball). If the goal is gap analysis for a specific question, a narrower extraction (e.g., 'retrieve papers citing coach/manager dismissal, turnover, or replacement') followed by full-text reading would be more efficient. Current process worked because the dismissal papers are few (5), so extensive reading of context was feasible. For broader questions (e.g., 'what does analytics reveal about team performance?'), the current approach of wide synthesis may be necessary. Recommendation: for future work, use keyword filtering (dismissal/turnover/replacement + performance) before assigning summaries to analysts, and reserve full database synthesis for meta-analyses or scoping reviews, not gap analyses for specific questions."
+  },
+  "paper_index": {
+    "https://openalex.org/W4409425702": {
+      "title": "Managerial turnover and performance: lessons from the Polish Ekstraklasa",
+      "year": 2025,
+      "first_author": "Bartlomiej Stachnik"
+    },
+    "https://openalex.org/W2946480687": {
+      "title": "Managerial Turnover and Subsequent Firm Performance: Evidence from Danish Soccer Teams",
+      "year": 2016,
+      "first_author": "Andreas Madum"
+    },
+    "https://openalex.org/W4388526044": {
+      "title": "The effect of coach dismissal on team performance and match physical demands in Spanish professional soccer leagues",
+      "year": 2023,
+      "first_author": "José Carlos Ponce-Bordón"
+    },
+    "https://openalex.org/W4411782569": {
+      "title": "The Impact of Managerial Changes on Physical Performance in Elite Soccer Players",
+      "year": 2025,
+      "first_author": "Dennis Petrov"
+    },
+    "https://openalex.org/W2751035262": {
+      "title": "Power, performance, and expectations in the dismissal of NBA coaches: A survival analysis study",
+      "year": 2017,
+      "first_author": "David B. Wangrow"
+    },
+    "https://openalex.org/W3191974746": {
+      "title": "Time to Say Goodbye: A Duration Analysis of the Determinants of Coach Dismissals and Quits in Major League Soccer",
+      "year": 2021,
+      "first_author": "Dirk Semmelroth"
+    },
+    "https://openalex.org/W4410157616": {
+      "title": "Betting (In)Efficiency After Football Coaching Replacements in Brazil",
+      "year": 2025,
+      "first_author": "Matheus Galdino"
+    },
+    "https://openalex.org/W4392058132": {
+      "title": "Using a coproduced educational workshop to change the focus of verbal instructions delivered by professional youth soccer coaches: a case study",
+      "year": 2024,
+      "first_author": "Matthew Andrew"
+    },
+    "https://openalex.org/W2808883453": {
+      "title": "The “I” in team: Coach incivility, coach gender, and team performance in women’s basketball teams",
+      "year": 2018,
+      "first_author": "Amber L. Smittick"
+    },
+    "https://openalex.org/W3089149533": {
+      "title": "How external load of youth basketball players varies according to playing position, game period and playing time",
+      "year": 2020,
+      "first_author": "María Reina"
+    },
+    "https://openalex.org/W2953855120": {
+      "title": "What was lost? A causal estimate of fourth down behavior in the National Football League",
+      "year": 2019,
+      "first_author": "Derrick Yam"
+    },
+    "https://openalex.org/W4413160759": {
+      "title": "The impact of coach gender on team performance: A quantitative analysis of women’s five-a-side basketball leagues",
+      "year": 2025,
+      "first_author": "Palizha Kulaijiang"
+    }
+  }
+}

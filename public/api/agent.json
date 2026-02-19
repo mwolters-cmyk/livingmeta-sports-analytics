@@ -11,15 +11,15 @@
   "stats": {
     "papers_classified": 13822,
     "papers_total_in_db": 58795,
-    "gap_analyses": 11,
+    "gap_analyses": 12,
     "data_sources": 733,
     "data_sources_with_programmatic_access": 128,
     "sports_covered": 33,
-    "last_updated": "2026-02-19T19:49:09.918Z"
+    "last_updated": "2026-02-19T20:05:48.659Z"
   },
   "capabilities": [
     "Search and filter 13,822+ classified sports analytics papers by sport, methodology, theme, keyword",
-    "Read 11 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
+    "Read 12 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
     "Find 733+ data sources, tools, and libraries used in sports analytics research",
     "Access full classification taxonomy (33 sports, 13 methodologies, 17 themes)",
     "Download structured data for bulk analysis",
@@ -94,6 +94,7 @@
       "available_slugs": [
         "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
         "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
+        "does-dismissing-a-football-head-coach-during-the-season-actually-improve-team-pe",
         "how-do-you-reliably-determine-the-market-value-of-a-football-player-and-how-does",
         "how-does-the-rise-of-sports-analytics-affect-the-fan-experience-does-having-acce",
         "how-is-machine-learning-used-for-injury-prediction-and-prevention-in-football",
@@ -227,6 +228,12 @@
       "slug": "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
       "question": "Can wearable sensors and GPS trackers actually prevent injuries, or are we mostly measuring what went wrong after the fact? The promise of load monitoring and real-time biomechanical feedback is huge, but how much evidence is there that wearable data leads to fewer injuries rather than just better documentation of them?",
       "papers_analyzed": 1749,
+      "confidence": "medium"
+    },
+    {
+      "slug": "does-dismissing-a-football-head-coach-during-the-season-actually-improve-team-pe",
+      "question": "Does dismissing a football head coach during the season actually improve team performance, and what analytical methods can reliably isolate this causal effect?",
+      "papers_analyzed": 449,
       "confidence": "medium"
     },
     {
