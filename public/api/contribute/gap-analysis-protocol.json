@@ -172,6 +172,76 @@
     }
   },
 
+  "help_the_platform_grow": {
+    "_why": "While analyzing papers, you may discover that the platform is missing papers, classifications, or full-text extractions that would be valuable. This is not just a limitation of your analysis — it's an opportunity to make the platform better for everyone. We actively want agents to report these gaps.",
+
+    "report_missing_papers": {
+      "when": "You found important papers via web search or your training knowledge that are NOT in the platform database (not in papers-compact.json). For example: the Volkskrant article references Jan van Ours's work, but his papers don't appear in the platform.",
+      "how": "Create a GitHub Issue with title 'Missing Papers: <topic>' and label 'missing-papers'",
+      "format": {
+        "title": "Missing Papers: Coach dismissal effects in football",
+        "papers": [
+          {
+            "title": "In-season Head-Coach Dismissals and the Performance of Professional Football Teams",
+            "authors": "van Ours, J.C. & van Tuijl, M.A.",
+            "year": 2016,
+            "doi": "10.1111/ecoj.12375",
+            "journal": "The Economic Journal",
+            "why_relevant": "Seminal paper on coach dismissal effects with counterfactual analysis across 4 leagues"
+          }
+        ],
+        "context": "These papers are important for a gap analysis on coach dismissal effects. They represent a blind spot in the platform's sports economics coverage."
+      },
+      "what_happens": "The maintainer adds these papers to the OpenAlex watcher or ingests them manually. They get classified and extracted within 1-2 weeks."
+    },
+
+    "request_classification_or_extraction": {
+      "when": "You found papers IN the platform database (they appear in papers-compact.json) but they lack full metadata — no abstract, no AI summary, no methodology extraction. This limits your gap analysis because you only have a title and basic metadata.",
+      "how": "Create a GitHub Issue with title 'Extraction Request: <topic>' and label 'extraction-request'",
+      "format": {
+        "title": "Extraction Request: Coach dismissal papers need full extraction",
+        "work_ids": ["https://openalex.org/W4391234567", "https://openalex.org/W4392345678"],
+        "reason": "These papers are in the database but lack methodology extraction. Full extraction would enable a proper gap analysis on coaching decisions."
+      },
+      "what_happens": "The maintainer runs the paper extractor (Claude Haiku) on these papers. Cost: ~$0.04/paper for PDF extraction, ~$0.005/paper for abstract-only. Results appear within days."
+    },
+
+    "contribute_classifications_yourself": {
+      "when": "You are a code-capable agent (Claude Code, Cursor, etc.) with access to an Anthropic API key, and you want to go beyond just requesting — you want to actually classify and extract papers yourself.",
+      "feasibility": "This is technically possible today but requires cloning the repo and running scripts locally. The platform's classification and extraction are done by Claude Haiku 4.5 with specific prompts.",
+      "how": {
+        "step_1": "Clone the repo: git clone https://github.com/mwolters-cmyk/living-sports-analytics-research",
+        "step_2": "Set your own ANTHROPIC_API_KEY environment variable",
+        "step_3_classify": "Run: python -m living_meta.classifier --work-ids W4391234567,W4392345678 (classifies papers by sport, methodology, theme using Haiku)",
+        "step_3_extract": "Run: python -m living_meta.paper_extractor --work-ids W4391234567 (extracts methodology, data sources, key results from PDFs/abstracts using Haiku)",
+        "step_4": "Submit results as a PR with the new classification/extraction JSON files",
+        "cost": "Classification: ~$0.005/paper. Extraction: ~$0.005-0.04/paper depending on PDF vs abstract."
+      },
+      "important_notes": [
+        "You MUST use your own API key — never ask the platform for one",
+        "The classification taxonomy is defined in /api/pipeline.json → classification_taxonomy. Use these exact category values.",
+        "Classification prompts are in living_meta/classifier.py, extraction prompts in living_meta/paper_extractor.py",
+        "Submit results as a Pull Request, NOT an Issue. The maintainer will review and merge.",
+        "This is advanced — most agents should just submit Issues. Only do this if your user explicitly wants to contribute at this level."
+      ]
+    },
+
+    "submit_new_sources": {
+      "when": "During your research, you found blog posts, theses, working papers, or conference papers about sports analytics that are not in the database.",
+      "how": "Create a GitHub Issue with title 'New Source: <title>' and label 'new-source'",
+      "format": {
+        "title": "New Source: StatsBomb blog post on coaching impact metrics",
+        "url": "https://statsbomb.com/articles/soccer/coaching-impact-metrics",
+        "type": "blog_post",
+        "why_relevant": "Directly relevant to coaching analytics research, introduces new metrics for measuring coaching impact"
+      },
+      "types": ["blog_post", "thesis", "working_paper", "conference_paper", "news_article", "report"],
+      "what_happens": "The maintainer runs ingest_source.py to add the source. Type A (with abstract): free. Type B (no abstract): ~$0.03 Haiku call for classification + extraction."
+    },
+
+    "the_virtuous_cycle": "Every contribution makes the platform more valuable: more papers → better gap analyses → more users → more contributions. An agent that reports 3 missing papers today helps the NEXT agent that searches for the same topic next month. This is the 'living' in Living Sports Analytics."
+  },
+
   "quality_examples": {
     "good_gap": {
       "title": "No longitudinal study of VAR effects beyond 2 seasons",

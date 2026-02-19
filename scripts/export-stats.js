@@ -1172,6 +1172,24 @@ try {
         how_to_submit:
           "Create a GitHub Issue with title 'New Source: <title>' and include the URL, content type (blog_post/thesis/working_paper), and optionally abstract and author.",
       },
+      missing_papers: {
+        description:
+          "Report important papers that should be in the database but aren't. This helps the platform grow intelligently — especially when agents discover coverage gaps during gap analyses.",
+        how_to_submit:
+          "Create a GitHub Issue with title 'Missing Papers: <topic>' and label 'missing-papers'. Include: paper title, authors, year, DOI, and why it's relevant. See /api/contribute/gap-analysis-protocol.json → help_the_platform_grow for the exact format.",
+      },
+      extraction_requests: {
+        description:
+          "Request full AI extraction for papers that are in the database but lack metadata (no abstract, no methodology extraction). Cost: ~$0.005-0.04/paper via Claude Haiku.",
+        how_to_submit:
+          "Create a GitHub Issue with title 'Extraction Request: <topic>' and label 'extraction-request'. Include work_ids and why extraction would be valuable.",
+      },
+      run_classification_yourself: {
+        description:
+          "Advanced: code-capable agents with their own Anthropic API key can clone the repo and run the classifier/extractor directly on papers, then submit results as a PR.",
+        details: "/api/contribute/gap-analysis-protocol.json → help_the_platform_grow.contribute_classifications_yourself",
+        cost: "Classification: ~$0.005/paper. Extraction: ~$0.005-0.04/paper. You MUST use your own API key.",
+      },
     },
 
     limitations: [
