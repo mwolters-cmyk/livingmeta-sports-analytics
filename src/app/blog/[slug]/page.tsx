@@ -48,8 +48,63 @@ function formatDate(dateStr: string): string {
 function paperUrl(workId: string): string {
   if (workId.startsWith("https://")) return `/papers?paper=${workId}`;
   if (workId.startsWith("W")) return `/papers?paper=https://openalex.org/${workId}`;
-  // Non-OA papers (preprint:xxx, blog:xxx, etc.)
-  return `/papers?search=${encodeURIComponent(workId)}`;
+  // Non-OA papers (preprint:xxx, blog:xxx, etc.) — use ?paper= for exact match
+  return `/papers?paper=${encodeURIComponent(workId)}`;
+}
+
+/**
+ * Parse inline markdown-style links [text](url) in a string and return
+ * React elements with proper <a> or <Link> tags.
+ */
+function renderInlineLinks(text: string): React.ReactNode {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    // Add preceding plain text
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const linkText = match[1];
+    const url = match[2];
+    // External links get <a>, internal links get <Link>
+    if (url.startsWith("http")) {
+      parts.push(
+        <a
+          key={match.index}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-navy underline decoration-navy/30 hover:text-orange hover:decoration-orange transition-colors"
+        >
+          {linkText}
+        </a>
+      );
+    } else {
+      parts.push(
+        <Link
+          key={match.index}
+          href={url}
+          className="text-navy underline decoration-navy/30 hover:text-orange hover:decoration-orange transition-colors"
+        >
+          {linkText}
+        </Link>
+      );
+    }
+    lastIndex = match.index + match[0].length;
+  }
+
+  // If no links found, return plain text
+  if (parts.length === 0) return text;
+
+  // Add trailing text
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return <>{parts}</>;
 }
 
 /**
@@ -129,7 +184,7 @@ export default async function BlogPostPage({
           if (block.type === "paragraph") {
             return (
               <p key={i} className="mb-4 text-gray-700 leading-relaxed">
-                {block.text}
+                {renderInlineLinks(block.text || "")}
               </p>
             );
           }
@@ -218,9 +273,9 @@ export default async function BlogPostPage({
                 Read the full gap analysis
               </h3>
               <p className="mb-3 text-sm text-purple-700">
-                This post is based on an AI-powered gap analysis of 449 papers.
-                The full analysis includes 9 identified research gaps, 4
-                proposed studies, and references to 41 papers in our database.
+                This post is based on an AI-powered research gap analysis. The
+                full report includes identified research gaps, proposed studies,
+                and references to papers in our database.
               </p>
               <Link
                 href="/gaps"

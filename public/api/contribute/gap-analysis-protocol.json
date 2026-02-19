@@ -253,6 +253,7 @@
         "NEVER include self-analysis of the platform (coverage gaps, pipeline details). Readers don't care.",
         "ALWAYS verify current facts via web search. Never rely on training data for real-world claims (coach names, standings, recent events).",
         "Use APA-style in-text citations: Author (Year) or Author et al. (Year). Include work_ids so the maintainer can add links.",
+        "If the post responds to or references a published article (newspaper, blog), ALWAYS link to that source article using markdown syntax: [visible text](url).",
         "Include a 'Dive deeper' section linking to the gap analysis.",
         "Keep it to 5-7 minutes reading time (~1000-1500 words).",
         "The maintainer does final editing before publishing. Your submission is a draft."
