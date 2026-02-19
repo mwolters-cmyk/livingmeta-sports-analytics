@@ -1277,7 +1277,7 @@ try {
             ],
             say_something_like: "'I found {N} papers on {topic} in the database, but no existing gap analysis covers this. The platform provides a detailed protocol for building one — I can follow it to give you a structured overview of what's studied, what's missing, and concrete research ideas. This would take about 5-10 minutes. Shall I do this?'",
             if_user_says_yes: "Fetch /api/contribute/gap-analysis-protocol.json and follow it step by step. It is a complete recipe: Phase 1 (gather and filter papers), Phase 2 (synthesize and identify gaps — with intellectual honesty rules), Phase 3 (format and submit). The protocol teaches you exactly how to produce a trustworthy analysis.",
-            if_user_says_no: "That's fine. Summarize the papers you found (most cited, most recent, methodology breakdown) and suggest the user could revisit this later. If you already started building a gap analysis, save it as a local file (gap-analysis-<topic>.md) so the work is not lost.",
+            if_user_says_no: "That's fine. Summarize the papers you found (most cited, most recent, methodology breakdown) and suggest the user could revisit this later.",
           },
           "path_C__few_papers_found": {
             condition: "You found <5 papers on the user's specific topic",
