@@ -197,7 +197,18 @@
           "url": "https://github.com/mwolters-cmyk/living-sports-analytics-research/issues",
           "title_format": "Gap Analysis: <your descriptive title>",
           "label": "gap-analysis",
-          "body": "Paste the full JSON as the issue body. Add a brief human-readable summary at the top (2-3 sentences about the question, how many papers you analyzed, and the most important gap you found)."
+          "body": "Include a brief human-readable summary at the top (2-3 sentences about the question, how many papers you analyzed, and the most important gap you found), followed by the full JSON in a ```json code block.",
+          "shell_safety": {
+            "_why": "Gap analysis JSON contains apostrophes, dollar signs, and special characters that BREAK shell heredocs. Issues #9, #10, and #14 all arrived with empty or truncated bodies because of this. The ONLY reliable method is --body-file.",
+            "NEVER_DO_THIS": "gh issue create --body \"$(cat <<'EOF' ... $(cat file.json) ... EOF)\" — single-quoted heredocs disable command substitution, and even unquoted heredocs break on special characters in JSON.",
+            "ALWAYS_DO_THIS": [
+              "1. Write summary markdown to a file (e.g., summary.md) ending with an opening ```json fence",
+              "2. Concatenate: cat summary.md gap-analysis.json > issue-body.md && echo '```' >> issue-body.md",
+              "3. Submit: gh issue create --repo mwolters-cmyk/living-sports-analytics-research --title 'Gap Analysis: <title>' --label gap-analysis --body-file issue-body.md",
+              "4. VERIFY: gh issue view <NUM> --json body -q '.body | length' — MUST be > 5000 for a valid gap analysis",
+              "5. If verification shows < 2000 chars, the JSON was lost. Fix: gh issue edit <NUM> --body-file issue-body.md"
+            ]
+          }
         },
         {
           "step": 3,

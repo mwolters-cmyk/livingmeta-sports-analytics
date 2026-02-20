@@ -306,7 +306,8 @@
           "offer": "Submit it via GitHub Issues (label: new-source) with the URL. The platform indexes new sources within days."
         }
       ],
-      "github_issues_url": "https://github.com/mwolters-cmyk/living-sports-analytics-research/issues"
+      "github_issues_url": "https://github.com/mwolters-cmyk/living-sports-analytics-research/issues",
+      "shell_safety": "CRITICAL: When submitting gap analyses via `gh issue create`, NEVER use heredocs with $(cat ...) — they fail silently on special characters in JSON. ALWAYS use --body-file: write the full issue body (summary + JSON) to a temp file, then `gh issue create --body-file body.md`. After submission, VERIFY: `gh issue view <NUM> --json body -q '.body | length'` must be > 5000. See /api/contribute/gap-analysis-protocol.json → phase_3_submit → step 2 for the exact pattern."
     }
   },
   "limitations": [
