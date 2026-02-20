@@ -1,0 +1,362 @@
+{
+  "description": "Full gap analysis: \"What does the quantitative evidence say about the relative effectiveness of short vs. long corner kick delivery strategies in football, and what contextual factors moderate the optimal choice?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-20T08:53:22.254Z",
+  "slug": "what-does-the-quantitative-evidence-say-about-the-relative-effectiveness-of",
+  "question": "What does the quantitative evidence say about the relative effectiveness of short vs. long corner kick delivery strategies in football, and what contextual factors moderate the optimal choice?",
+  "created_at": "2026-02-20",
+  "analyzed_at": "2026-02-20",
+  "model": "external_agent",
+  "papers_analyzed": 15,
+  "cost_usd": 0,
+  "analysis_confidence": "medium-low",
+  "scope_assessment": "Football (association football) only. Focuses on corner kicks as a specific set-piece type, with delivery strategy (short vs. long) as the primary tactical variable. Includes related set-piece research (throw-ins, free kicks) for methodological comparison. Excludes penalty kicks as a distinct category. Covers all competitive levels where event data exists.",
+  "database_coverage": "15 directly relevant papers out of 481 total.",
+  "confidence_explanation": "Only 15 papers is a thin evidence base — synthesis depth is constrained by sparse academic literature on this specific topic; Analysis based on titles, metadata, and sub-themes only — no full-text access to any paper; TacticAI (53 citations) almost certainly contains detailed corner outcome data that could partially address the question, but full-text content not accessible; The blog post about Arsenal and set pieces is not peer-reviewed academic work; StatsBomb event data granularity for corner delivery type is assumed but not directly verified from the database; Shaw (2020), 'Routine Inspection: A Playbook for Corner Kicks' — referenced in existing tactical gap analysis — does not appear in search results and may be missing or indexed under different keywords",
+  "landscape": {
+    "key_findings": [
+      {
+        "finding": "TacticAI (Wang et al., 2024) is the landmark AI system for corner kick tactics, achieving 90% expert approval for tactical recommendations using geometric deep learning on tracking data. However, it optimizes player positioning within a chosen delivery type — it does not compare short vs. long corner effectiveness head-to-head.",
+        "evidence_strength": "strong",
+        "effect_size": "90% expert approval rate for TacticAI corner kick recommendations; system operates post-delivery-choice",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4392947498",
+            "title": "TacticAI: an AI assistant for football tactics",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41467-024-45965-x",
+            "first_author": "Zhe Wang"
+          },
+          {
+            "work_id": "https://openalex.org/W4387796460",
+            "title": "TacticAI: an AI assistant for football tactics",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.48550/arxiv.2310.10553",
+            "first_author": "Zhe Wang"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Corner kick research is descriptive, not causal. Studies document corner kick characteristics and success rates but do not isolate the causal effect of delivery type on outcomes. Selection bias is severe: teams choose short corners in specific situations, confounding raw outcome comparisons.",
+        "evidence_strength": "moderate",
+        "effect_size": "Corner kick effectiveness documented descriptively but no causal estimates of delivery type effect exist",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4391839610",
+            "title": "Corner Kick Characteristics: A Case Study of the 2020/21 Northern Ireland Football League (NIFL) Premiership Season",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/24748668.2024.2316334",
+            "first_author": "James Goodman"
+          },
+          {
+            "work_id": "https://openalex.org/W4391655216",
+            "title": "Automated Discovery of Successful Strategies in Association Football",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/app14041403",
+            "first_author": "Omar Muñoz"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Defensive corner analysis (role classification, off-ball positioning) exists but is completely disconnected from offensive delivery strategy. The offensive-defensive interaction — how defensive setup should influence delivery choice — is unstudied.",
+        "evidence_strength": "moderate",
+        "effect_size": "Deep learning achieves successful defensive role classification but no link to offensive decision-making established",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4306398697",
+            "title": "Individual role classification for players defending corners in football (soccer)",
+            "year": 2022,
+            "sport": "football",
+            "doi": "https://doi.org/10.1515/jqas-2022-0003",
+            "first_author": "Pascal Bauer"
+          },
+          {
+            "work_id": "https://openalex.org/W7119234868",
+            "title": "A Machine Learning Framework for Off Ball Defensive Role and Performance Evaluation in Football",
+            "year": 2026,
+            "sport": "football",
+            "doi": null,
+            "first_author": "S.L. Groom"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Causal inference methods have been applied to crossing in football (Alam, 2025) and penalty kicks (Zheng, 2024), demonstrating the methodology is feasible for set-piece analysis, but nobody has applied these methods to corner kicks specifically.",
+        "evidence_strength": "moderate",
+        "effect_size": "Causal methods proven feasible for football tactical decisions; not yet applied to corner delivery type",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4401393501",
+            "title": "Goalkeepers benefit from using deceptive actions in the soccer penalty kick",
+            "year": 2024,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/02640414.2024.2387969",
+            "first_author": "Ran Zheng"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Set-piece importance is growing in competitive football, with journalistic evidence from the Premier League highlighting set pieces as a competitive differentiator. Academic evidence confirms set plays contribute significantly to goals in youth football but no longitudinal trend analysis exists for senior football.",
+        "evidence_strength": "weak",
+        "effect_size": "Set play contribution to goal-scoring documented in youth football; trend over time unknown for senior competition",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4409606537",
+            "title": "Tactical Indicators and Situational Variables Affecting Goal-Scoring Opportunities in the UEFA Youth League 2023–2024",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/app15084532",
+            "first_author": "Vasilis Armatas"
+          }
+        ],
+        "paper_count": 1
+      }
+    ],
+    "key_papers": [
+      {
+        "citation": "Wang, Z. et al. (2024)",
+        "title": "TacticAI: an AI assistant for football tactics",
+        "contribution": "Landmark AI system for corner kick tactical recommendations using geometric deep learning; 90% expert approval rate. The most-cited paper on corner kick analytics.",
+        "citations_count": 53,
+        "methodology": "deep_learning"
+      },
+      {
+        "citation": "Bauer, P. (2022)",
+        "title": "Individual role classification for players defending corners in football",
+        "contribution": "Deep learning framework classifying individual defensive roles during corner kicks, enabling structured defensive analysis.",
+        "citations_count": 6,
+        "methodology": "deep_learning"
+      },
+      {
+        "citation": "Goodman, J. (2024)",
+        "title": "Corner Kick Characteristics: A Case Study of the 2020/21 Northern Irish Football League (NIFL) Premiership Season",
+        "contribution": "Descriptive analysis of corner kick effectiveness including offensive and defensive strategies in a competitive league setting.",
+        "citations_count": 6,
+        "methodology": "descriptive"
+      },
+      {
+        "citation": "Alam, S. (2025)",
+        "title": "Framing Causal Questions in Sports Analytics: A Case Study of Crossing in Soccer",
+        "contribution": "Demonstrates how causal inference (ATE, ATT) can be applied to football tactical decisions — directly applicable methodology for corner kick analysis.",
+        "citations_count": 0,
+        "methodology": "statistical"
+      },
+      {
+        "citation": "Muñoz, O. (2024)",
+        "title": "Automated Discovery of Successful Strategies in Association Football",
+        "contribution": "Pattern mining approach to discover successful corner kick strategies, identifying exploitable tactical patterns.",
+        "citations_count": 0,
+        "methodology": "machine_learning"
+      }
+    ],
+    "methodological_patterns": "The corner kick literature is overwhelmingly recent (2022–2026) and methodologically diverse but thin. Deep learning dominates the highest-impact work (TacticAI), while descriptive studies fill the remaining space. Causal inference has been demonstrated for adjacent football tactical questions (crossing, penalties) but not yet applied to corners. Sample sizes range from single-league seasons (Goodman, ~300 corners) to multi-league tracking datasets (TacticAI). No meta-analysis or systematic review of corner kick effectiveness exists. Open data availability through StatsBomb makes replication feasible."
+  },
+  "gaps": [
+    {
+      "id": 1,
+      "title": "No head-to-head comparison of short vs. long corner kick effectiveness",
+      "description": "No paper in the database compares the goal-scoring probability, expected goals generated, or possession outcomes of short vs. long corner kick delivery. This is the central tactical question for practitioners but remains empirically unanswered. TacticAI optimizes positioning within a delivery type but does not compare between types. Goodman describes characteristics but does not isolate delivery type as a variable.",
+      "type": "applied",
+      "importance": "critical",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Use StatsBomb event data (which tags corner kick delivery type) to compute xG generated per corner by delivery type (short/long/inswing/outswing). Apply propensity score matching or inverse probability weighting to control for confounders (game state, score, personnel, opponent strength).",
+      "evidence": "Use StatsBomb event data (which tags corner kick delivery type) to compute xG generated per corner by delivery type (short/long/inswing/outswing). Apply propensity score matching or inverse probability weighting to control for confounders (game state, score, personnel, opponent strength)."
+    },
+    {
+      "id": 2,
+      "title": "No causal inference applied to corner kick outcomes",
+      "description": "All corner kick studies are observational and descriptive. Selection bias is severe: teams choose short corners because of specific game situations (e.g., opponent parking the bus, time-wasting incentives), meaning raw comparison of outcomes is confounded. Alam (2025) demonstrates causal methods can work for crossing in football, but nobody has applied them to corners.",
+      "type": "methodological",
+      "importance": "critical",
+      "feasibility": "medium",
+      "confidence": "high",
+      "suggested_approach": "Apply the causal framework from Alam (2025) — ATE/ATT estimation via propensity scores — to corner kicks. Use instrumental variables (e.g., corner side relative to kicker foot, wind conditions) or exploit quasi-random variation in corner assignment (e.g., deflections creating corners in unusual positions).",
+      "evidence": "Apply the causal framework from Alam (2025) — ATE/ATT estimation via propensity scores — to corner kicks. Use instrumental variables (e.g., corner side relative to kicker foot, wind conditions) or exploit quasi-random variation in corner assignment (e.g., deflections creating corners in unusual positions)."
+    },
+    {
+      "id": 3,
+      "title": "Context-dependency of optimal corner strategy is unexplored",
+      "description": "The answer to 'short or long?' likely depends on match context: score differential, minute, opponent defensive setup, available personnel (tall target vs. technical players), home/away, and competition stage. No paper models corner effectiveness as a function of situational variables. TacticAI considers spatial positioning but not match-state factors.",
+      "type": "contextual",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "medium",
+      "suggested_approach": "Build a conditional corner effectiveness model: xG = f(delivery_type, score_differential, minute, personnel_height, opponent_defensive_formation). Use gradient boosted trees with SHAP explanations to identify when short corners dominate long ones and vice versa.",
+      "evidence": "Build a conditional corner effectiveness model: xG = f(delivery_type, score_differential, minute, personnel_height, opponent_defensive_formation). Use gradient boosted trees with SHAP explanations to identify when short corners dominate long ones and vice versa."
+    },
+    {
+      "id": 4,
+      "title": "Defensive adaptation to corner strategies is not linked to offensive decisions",
+      "description": "Bauer (2022) classifies defensive roles at corners; Groom (2026) models off-ball defensive behavior. But neither connects defensive structure to the offensive delivery choice. A game-theoretic analysis is missing: if defenses adapt to a team's corner tendencies, the optimal strategy is a mixed strategy (randomizing), not a pure one. Whether teams play near Nash equilibrium is unknown.",
+      "type": "conceptual",
+      "importance": "high",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "suggested_approach": "Model corner kicks as a simultaneous game between offense (delivery type) and defense (formation type). Compute payoff matrix from historical outcomes. Compute Nash equilibrium mixed strategy. Test whether actual team delivery distributions approach equilibrium predictions.",
+      "evidence": "Model corner kicks as a simultaneous game between offense (delivery type) and defense (formation type). Compute payoff matrix from historical outcomes. Compute Nash equilibrium mixed strategy. Test whether actual team delivery distributions approach equilibrium predictions."
+    },
+    {
+      "id": 5,
+      "title": "No longitudinal analysis of set-piece importance trends in senior football",
+      "description": "Journalistic evidence suggests set pieces are becoming a larger share of goals in top leagues (Arsenal's Premier League dominance partly attributed to set pieces). Armatas (2025) documents set-play importance in youth football. But no academic study tracks the proportion of goals from corners over time across senior leagues, or tests whether this proportion is increasing.",
+      "type": "temporal",
+      "importance": "medium",
+      "feasibility": "high",
+      "confidence": "medium",
+      "suggested_approach": "Use FBref goal-scoring data (2017/18–2025/26) for Big 5 European leagues. Compute percentage of goals originating from corners per season. Test for time trend using Poisson regression. Compare across leagues.",
+      "evidence": "Use FBref goal-scoring data (2017/18–2025/26) for Big 5 European leagues. Compute percentage of goals originating from corners per season. Test for time trend using Poisson regression. Compare across leagues."
+    },
+    {
+      "id": 6,
+      "title": "Second-ball and full possession chain outcomes not measured for corners",
+      "description": "Corner effectiveness is measured by direct goals or shots. But many corners generate second-ball situations — rebounds, deflections, recycled possession leading to delayed shots. Short corners may generate fewer direct goals but more sustained pressure. Long corners may get cleared but occasionally produce headers. No paper measures the full chain of outcomes following a corner, including secondary chances and counter-attack risk conceded.",
+      "type": "measurement",
+      "importance": "medium",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "suggested_approach": "Use StatsBomb event sequences to track the full possession chain after each corner until possession changes or a shot occurs. Compute 'total xG generated in the 30 seconds following corner delivery' and 'counter-attack xG conceded' by delivery type.",
+      "evidence": "Use StatsBomb event sequences to track the full possession chain after each corner until possession changes or a shot occurs. Compute 'total xG generated in the 30 seconds following corner delivery' and 'counter-attack xG conceded' by delivery type."
+    },
+    {
+      "id": 7,
+      "title": "Women's football corner tactics entirely absent from the literature",
+      "description": "No paper studies corner kicks in women's football. Given differences in average height, aerial contest outcomes, and physical profiles, the optimal corner strategy may differ significantly between men's and women's football. Free StatsBomb data exists for multiple women's tournaments and leagues but remains unused for set-piece analysis.",
+      "type": "population",
+      "importance": "medium",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Replicate short vs. long corner analysis using StatsBomb Open Data for Women's World Cup and FA WSL. Compare optimal delivery strategies across genders. Test whether physical attribute differences moderate strategy effectiveness.",
+      "evidence": "Replicate short vs. long corner analysis using StatsBomb Open Data for Women's World Cup and FA WSL. Compare optimal delivery strategies across genders. Test whether physical attribute differences moderate strategy effectiveness."
+    }
+  ],
+  "research_agenda": [
+    {
+      "title": "Short vs. Long Corners: A Causal Analysis Using Event Data",
+      "level": "MSc",
+      "addresses_gaps": [
+        1,
+        2,
+        3
+      ],
+      "estimated_duration": "6–9 months",
+      "suggested_methodology": "Extract all corner kick events from StatsBomb Open Data (delivery type tagged). Compute xG generated within 30 seconds of each corner, including second-ball xG. Apply propensity score matching on confounders (score, minute, team, opponent Elo rating). Estimate ATE and CATE by context using causal forests. Use SHAP values to identify when each strategy dominates.",
+      "suggested_data": "StatsBomb Open Data (free — Premier League, La Liga, Bundesliga, Champions League with corner delivery type tagged), Club Elo API (free — opponent strength adjustment). Estimated: 5,000–15,000 corner kick events across multiple seasons.",
+      "potential_impact": "high",
+      "estimated_difficulty": "hard",
+      "description": "What is the causal effect of short vs. long corner delivery on expected goals generated, controlling for match context and selection bias?",
+      "priority": 1
+    },
+    {
+      "title": "Game-Theoretic Corner Kick Strategy: Do Teams Play Nash Equilibrium?",
+      "level": "PhD",
+      "addresses_gaps": [
+        4,
+        3
+      ],
+      "estimated_duration": "12 months",
+      "suggested_methodology": "Model corner kicks as a simultaneous-move game using Bauer (2022) defensive formation classification and StatsBomb offensive delivery type. Build payoff matrix from historical xG outcomes. Compute Nash equilibrium mixed strategies. Compare actual team delivery distributions to equilibrium. Test whether teams closer to equilibrium achieve better corner outcomes.",
+      "suggested_data": "StatsBomb event data + tracking data (for defensive formations). Bauer (2022) classification framework. Multiple seasons, minimum 2 leagues. Estimated: 10,000+ corners with defensive formation classification.",
+      "potential_impact": "high",
+      "estimated_difficulty": "extreme",
+      "description": "Can corner kick delivery be modeled as a strategic game, and do football teams play near the Nash equilibrium when choosing between short and long corners?",
+      "priority": 2
+    },
+    {
+      "title": "The Full Corner Kick Value Chain: Beyond Direct Goals",
+      "level": "MSc",
+      "addresses_gaps": [
+        6,
+        1
+      ],
+      "estimated_duration": "6 months",
+      "suggested_methodology": "Use StatsBomb event sequences to track full possession chains following corners. Decompose total corner value into: (1) first-contact xG, (2) second-ball xG, (3) sustained pressure xG, (4) counter-attack xG conceded (negative). Compare total value by delivery type. Test whether short corners generate more sustained value despite lower first-contact xG.",
+      "suggested_data": "StatsBomb Open Data event sequences with timestamps. Public xG model implementations (e.g., StatsBomb's open xG model or custom logistic regression). Estimated: 5,000+ corner possession chains.",
+      "potential_impact": "medium",
+      "estimated_difficulty": "hard",
+      "description": "What is the total expected value of a corner kick when including second-ball situations, recycled possession, and counter-attack risk?",
+      "priority": 3
+    },
+    {
+      "title": "Is Set-Piece Football Getting More Important? A Longitudinal Trend Analysis",
+      "level": "BSc",
+      "addresses_gaps": [
+        5
+      ],
+      "estimated_duration": "3–4 months",
+      "suggested_methodology": "Collect goal origin classification from FBref (2017/18–2025/26, Big 5 leagues). Categorize: open play, corner, direct free kick, indirect free kick, penalty, throw-in. Fit Poisson regression with year as predictor. Control for league fixed effects. Report trend coefficients with confidence intervals.",
+      "suggested_data": "FBref goal data (free, scraped). 8 seasons × 5 leagues × ~1,000 goals/league/season = ~40,000 goals.",
+      "potential_impact": "medium",
+      "estimated_difficulty": "moderate",
+      "description": "Is the proportion of goals scored from corners and set pieces increasing over time across major football leagues?",
+      "priority": 4
+    },
+    {
+      "title": "Women's Football Corner Strategy: Does Optimal Delivery Differ by Gender?",
+      "level": "BSc",
+      "addresses_gaps": [
+        7
+      ],
+      "estimated_duration": "4–6 months",
+      "suggested_methodology": "Apply short vs. long corner effectiveness analysis to StatsBomb Open Data for women's competitions. Compare xG per corner by delivery type across men's and women's tournaments. Test whether height differentials and aerial contest success rates moderate delivery type effectiveness.",
+      "suggested_data": "StatsBomb Open Data: Women's World Cup 2019 and 2023, FA WSL, NWSL (all free). Men's World Cup 2018 and 2022 for comparison. Estimated: 2,000+ women's corners, 1,000+ men's World Cup corners.",
+      "potential_impact": "medium",
+      "estimated_difficulty": "moderate",
+      "description": "Does the optimal corner delivery strategy differ between men's and women's football, and are physical attribute differences a moderating factor?",
+      "priority": 5
+    }
+  ],
+  "self_reflection": {
+    "strengths": [
+      "Identified all 15 relevant papers from the platform through multiple search strategies across football and tactical_analysis datasets",
+      "All 7 gaps are specific, actionable, and directly connected to the user's question — no generic gaps",
+      "Research agenda proposes 5 projects spanning BSc to PhD level, all feasible with freely available StatsBomb Open Data and FBref",
+      "Cross-referenced TacticAI (the landmark paper, 53 citations) with the existing tactical gap analysis to avoid duplication",
+      "Identified that the core question (short vs. long) is not just understudied but essentially unanswered — a clear finding",
+      "Connected adjacent methodological work (Alam 2025 on crossing causality) as a template for corner kick analysis"
+    ],
+    "limitations": [
+      "Only 15 papers is a thin evidence base — synthesis depth is constrained by sparse academic literature on this specific topic",
+      "Analysis based on titles, metadata, and sub-themes only — no full-text access to any paper",
+      "TacticAI (53 citations) almost certainly contains detailed corner outcome data that could partially address the question, but full-text content not accessible",
+      "The blog post about Arsenal and set pieces is not peer-reviewed academic work",
+      "StatsBomb event data granularity for corner delivery type is assumed but not directly verified from the database",
+      "Shaw (2020), 'Routine Inspection: A Playbook for Corner Kicks' — referenced in existing tactical gap analysis — does not appear in search results and may be missing or indexed under different keywords"
+    ],
+    "database_coverage_gaps": [
+      "Industry analysis from football analytics companies (StatsBomb, Opta, SkillCorner) likely contains the most relevant corner kick evidence but is not indexed academically",
+      "Conference presentations at OptaPro Forum and MIT Sloan frequently cover set-piece analytics but may not be fully indexed on the platform",
+      "Shaw (2020) 'Routine Inspection' paper may be missing from the database — should be verified and added if absent",
+      "Coaching materials (UEFA Pro License, FA coaching manuals) discuss corner strategy extensively but are not academic publications",
+      "Non-English research on set pieces (Spanish Liga analysis, German Bundesliga tactical studies, Dutch Eredivisie analytics) may exist but be underrepresented",
+      "Football manager simulation research and Expected Threat (xT) applications to set pieces may use different terminology not captured by keyword search"
+    ],
+    "what_would_improve_this": []
+  },
+  "paper_index": {
+    "https://openalex.org/W4392947498": {
+      "title": "TacticAI: an AI assistant for football tactics",
+      "year": 2024,
+      "first_author": "Zhe Wang"
+    },
+    "https://openalex.org/W4391655216": {
+      "title": "Automated Discovery of Successful Strategies in Association Football",
+      "year": 2024,
+      "first_author": "Omar Muñoz"
+    },
+    "https://openalex.org/W4306398697": {
+      "title": "Individual role classification for players defending corners in football (soccer)",
+      "year": 2022,
+      "first_author": "Pascal Bauer"
+    }
+  }
+}

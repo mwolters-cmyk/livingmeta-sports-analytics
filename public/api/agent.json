@@ -11,17 +11,17 @@
     "url": "https://living-sports-analytics.vercel.app"
   },
   "stats": {
-    "papers_classified": 13829,
-    "papers_total_in_db": 58802,
-    "gap_analyses": 13,
+    "papers_classified": 13841,
+    "papers_total_in_db": 58814,
+    "gap_analyses": 16,
     "data_sources": 733,
     "data_sources_with_programmatic_access": 128,
     "sports_covered": 33,
-    "last_updated": "2026-02-20T08:23:58.341Z"
+    "last_updated": "2026-02-20T08:53:22.202Z"
   },
   "capabilities": [
-    "Search and filter 13,829+ classified sports analytics papers by sport, methodology, theme, keyword",
-    "Read 13 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
+    "Search and filter 13,841+ classified sports analytics papers by sport, methodology, theme, keyword",
+    "Read 16 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
     "Find 733+ data sources, tools, and libraries used in sports analytics research",
     "Access full classification taxonomy (33 sports, 13 methodologies, 17 themes)",
     "Download structured data for bulk analysis",
@@ -86,8 +86,10 @@
       "size": "~5-15KB each",
       "available_slugs": [
         "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
+        "can-we-objectively-determine-who-the-best-footballer-of-the-last-decade",
         "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
         "does-dismissing-a-football-head-coach-during-the-season-actually-improve-team-pe",
+        "how-accurate-is-the-wisdom-of-the-crowd-for-football-predictions-match",
         "how-are-analytical-insights-effectively-communicated-from-sports-data-analysts-t",
         "how-do-you-reliably-determine-the-market-value-of-a-football-player-and-how-does",
         "how-does-the-rise-of-sports-analytics-affect-the-fan-experience-does-having-acce",
@@ -95,6 +97,7 @@
         "in-some-sports-women-play-under-different-rules-than-men-smaller-ball-in-handbal",
         "is-referee-and-judge-bias-measurable-in-sport-and-how-does-it-compare-between-ju",
         "is-the-relationship-between-financial-spending-and-competitive-success-league-po",
+        "what-does-the-quantitative-evidence-say-about-the-relative-effectiveness-of",
         "what-is-the-optimal-pacing-strategy-in-endurance-sports-like-running-speed-skati",
         "what-is-the-optimal-training-strategy-for-multi-discipline-sports-such-as-triath",
         "which-tactical-approaches-are-most-effective-in-football-and-how-is-tactical-ana"
@@ -322,6 +325,12 @@
       "confidence": "medium"
     },
     {
+      "slug": "can-we-objectively-determine-who-the-best-footballer-of-the-last-decade",
+      "question": "Can we objectively determine who the best footballer of the last decade (2015–2025) is using quantitative performance metrics, and what methodological framework would be required to do so?",
+      "papers_analyzed": 50,
+      "confidence": "medium"
+    },
+    {
       "slug": "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
       "question": "Can wearable sensors and GPS trackers actually prevent injuries, or are we mostly measuring what went wrong after the fact? The promise of load monitoring and real-time biomechanical feedback is huge, but how much evidence is there that wearable data leads to fewer injuries rather than just better documentation of them?",
       "papers_analyzed": 1749,
@@ -332,6 +341,12 @@
       "question": "Does dismissing a football head coach during the season actually improve team performance, and what analytical methods can reliably isolate this causal effect?",
       "papers_analyzed": 449,
       "confidence": "medium"
+    },
+    {
+      "slug": "how-accurate-is-the-wisdom-of-the-crowd-for-football-predictions-match",
+      "question": "How accurate is the 'wisdom of the crowd' for football predictions -- match outcomes, player valuations, and tournament results -- and how does crowd accuracy compare to algorithmic models and expert judgment?",
+      "papers_analyzed": 35,
+      "confidence": "medium-low"
     },
     {
       "slug": "how-are-analytical-insights-effectively-communicated-from-sports-data-analysts-t",
@@ -374,6 +389,12 @@
       "question": "Is the relationship between financial spending and competitive success (league position) stronger in football than in other sports?",
       "papers_analyzed": 5392,
       "confidence": "low"
+    },
+    {
+      "slug": "what-does-the-quantitative-evidence-say-about-the-relative-effectiveness-of",
+      "question": "What does the quantitative evidence say about the relative effectiveness of short vs. long corner kick delivery strategies in football, and what contextual factors moderate the optimal choice?",
+      "papers_analyzed": 15,
+      "confidence": "medium-low"
     },
     {
       "slug": "what-is-the-optimal-pacing-strategy-in-endurance-sports-like-running-speed-skati",

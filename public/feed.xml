@@ -5,13 +5,145 @@
     <link>https://living-sports-analytics.vercel.app</link>
     <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Feb 2026 08:23:59 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Feb 2026 08:53:22 GMT</lastBuildDate>
     <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://living-sports-analytics.vercel.app/icon.png</url>
       <title>Living Sports Analytics</title>
       <link>https://living-sports-analytics.vercel.app</link>
     </image>
+    <item>
+      <title>Notational Analysis of Corner Kicks in English Premier League Soccer</title>
+      <link>https://www.taylorfrancis.com/chapters/edit/10.4324/9780203412992-38</link>
+      <description>This study analysed corner kicks from English Premier League matches to identify factors contributing to corner kick success. 160 corner kicks from 20 EPL matches were analysed using a computerized notational analysis system. Results showed inswinging deliveries yielded more goals (66% of all corner kick goals) while outswinging corners generated more shot attempts (60.7%). A critical delivery area was identified between the penalty spot and the six-yard box, with near-post deliveries proving most effective for goal scoring. The study introduced the concept of the goalkeeper area of uncertainty as a framework for understanding corner kick effectiveness.</description>
+      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
+      <guid isPermaLink="false">conference:ce916bce9b37dbaa</guid>
+      <source url="https://living-sports-analytics.vercel.app">Science and Football V</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>conference_paper</category>
+    </item>
+    <item>
+      <title>Mythbusting Set-Pieces in Soccer</title>
+      <link>https://www.statsperform.com/resource/exploiting-inefficiencies-at-set-pieces-sloan/</link>
+      <description>This paper presents a novel image-based representation approach for analyzing set-piece situations in soccer, combining tracking and event data to detect defensive structures and exploit inefficiencies. The framework was developed using 2016-17 Premier League data, where 16% of all goals came from corners and free kicks. The methodology enables teams to identify defensive vulnerabilities at set pieces and maximize goalscoring opportunities from these situations.</description>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">conference:f25e6500e8a45dd2</guid>
+      <source url="https://living-sports-analytics.vercel.app">MIT Sloan Sports Analytics Conference</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>conference_paper</category>
+    </item>
+    <item>
+      <title>Defending Corner Kicks: Analysis from the English Premier League</title>
+      <link>https://doi.org/10.1080/24748668.2013.11868637</link>
+      <description>The aim of this study was to explore tactical behaviour when defending corner kicks within the English Premier League. Specifically, the types of marking and defensive players positioned at the goalposts were investigated. A total of 436 corner kicks from 50 English Premier League games were analysed. The most commonly used marking system was one-to-one marking (90.1% of total corners), with zonal marking being used less often (9.9% of total corners). There was no significant association between the marking set-up and the number of attempts at goal conceded when defending corner kicks (p&gt;0.05). However, teams who applied zonal marking conceded fewer goals and fewer attempts at goal than teams who used one-to-one marking. The most common set-up for defenders positioned at the goalposts was having a defender positioned only on the far post (47.3% of total corners). There was no significant association between the positioning of defensive players at goalposts and the number of attempts at goal conceded when defending corner kicks. A further detailed analysis of defending corner kicks is still required and suggestions have been made for future studies.</description>
+      <pubDate>Mon, 01 Apr 2013 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W1879650636</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Defending corner kicks in the English Premier League: near-post guard systems</title>
+      <link>https://doi.org/10.1080/24748668.2017.1331577</link>
+      <description>The aim of this study was to investigate the use of near-post guard systems when defending corner kicks in the English Premier League during the 2015/2016 season. A total of 750 corner kicks from 79 English Premier League matches were analysed. There were a total of eight different near-post guard systems observed. Only six corner kicks (0.8%) were observed where there was no guard positioned in the near-post area when defending corner kicks. The one-one system only conceded one goal from 148 corner kicks (0.7%) observed, whereas the one-zero system conceded 8 goals from 159 corner kicks (5.0%) observed. However, when all attempts at goal were included, there was no significant association between the different near-post guard systems and the number of attempts at goal (p &gt; 0.05). An important finding was that there were 236 defensive clearances performed by the guards from the 750 corner kicks that were analysed (31.5%), this suggests that these defensive players play an important role in preventing the attacking team from having an attempt at goal from a corner kick. Further research on corner kicks is still required and suggestions have been made for future investigations.</description>
+      <pubDate>Thu, 04 May 2017 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2587563523</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Effectiveness of Indirect Free Kicks in Elite Soccer</title>
+      <link>https://doi.org/10.1080/24748668.2014.11868755</link>
+      <description>The aims of this study were to determine the effectiveness of indirect free kicks, identify variables associated with a successful outcome, and propose a model for taking free kicks with an increased probability of success. The analysis focused on 783 free kicks taken in 124 matches at the 2010 FIFA World Cup, the final stages of the UEFA Champions League in 2010/11, and the 2010 UEFA Euro-pean Championships. The following variables were studied by univariate, biva-riate, and multivariate analyses: time of the match when the indirect free kick was taken, position and laterally of the kick, number of attackers, number of defenders, interaction context, delivery of ball, path of ball, type of marking, number of intervening attackers, area to which the ball was passed, shooting area, offensive organization, type of shot, and match status. The results show that almost 36 indirect free kicks are needed to score a goal, but that 64% of goals from indirect free kicks have a decisive influence on game outcome. Goals were more common when the attack was organized dynamically and three or four players touched the ball before a shot was taken. These findings could help coaches to improve free-kick performance.</description>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2762549502</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Analysis of Corner Kick Success in Elite Football</title>
+      <link>https://doi.org/10.1080/24748668.2015.11868805</link>
+      <description>This study analyzes corner kicks in elite football to determine their efficacy, identify shared characteristics and associated variables, and propose a model for predicting successful outcomes. In total, 1139 kicks taken in 124 matches in the 2010 FIFA World Cup (64 matches), UEFA Euro 2012 (31 matches), and the UEFA Champions League 2010-2011 (29 matches) were studied by univariate, bivariate, and multivariate analysis. Just 2.2% of the corners ended in goal, but this goal was responsible for the team winning or drawing the match on 76% of occasions. In general, kicks are delivered through the air to the near post, with 1 or 2 intervening attackers; the attack is organized statically and the defense is a combination of zone and man-to-man. The following variables were significantly associated with corner kicks resulting in a goal: time (p=0.04), number of intervening attackers (p=0.001), and offensive organization (p=0.02). The likelihood of a shot on goal or shot could be increased with the intervention of 3 or 4 attackers, a dynamic attack, and indirect delivery of the ball to the far post. This information could be of great interest for football professionals interested in improving corner kick performance.</description>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2763571936</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Application of multivariant decision tree technique in high performance football: The female and male corner kick</title>
+      <link>https://doi.org/10.1371/journal.pone.0212549</link>
+      <description>The use of multidimensional statistical technique based on decision trees is of recent application in sports science. In the case of football, this technique has not yet been sufficiently proven. The aim of the present study was to search for different success models for the corners in the FIFA World Cup 2014 and FIFA Women&apos;s World Cup 2015. For this, the statistical analysis focused on the search for classification models for the different criteria considered (shot, shot between the three posts and goal), based on the creation of different decision trees that allow the most important variables to be identified quickly and efficiently. For this, 1117 corners were collected between the two competitions, performed in 116 international matches. It has been possible to establish multivariate models for the &quot;shot&quot; and &quot;shot between the three posts&quot; criteria, allowing, in some cases, to quadruple the potential for offensive success. On the other hand, we have been able to identify significant differences in the male and female model of execution. These findings suggest the need to continue deepening the study of tactical behavior in women&apos;s soccer from a multivariate perspective, and also propose a better optimization of the management and training of this type of actions for both male and female football. In addition, it has allowed to test the decision tree statistical technique in the analysis of high performance football, with satisfactory results and of great relevance in the applied field.</description>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2921043473</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>The undervalued set piece: Analysis of soccer throw-ins during the English Premier League 2018–2019 season</title>
+      <link>https://doi.org/10.1177/1747954121991447</link>
+      <description>Set pieces in soccer (i.e., free kicks and corners) have been examined in detail and are a common focus for coaches during training and performance preparation. However, limited evidence is available on the impact of throw-ins on soccer performance and if coaches should dedicate time in training towards this specific set piece. Therefore, this research aimed to firstly examine if throw-in performance is linked with soccer performance, and secondly the effect throw-in direction and length has on first contact success rate, possession retention, mean time in possession and shot creation. 16,154 throw-ins from 380 English Premier League matches during the 2018–2019 season were analysed. Higher final league position was correlated to increased throw-in first contact success and possession retention. 83% of throw-in’s resulted in a successful first contact, 54% resulted in possession being retained and 8.8% of throw-ins led to a shot at goal from the possession achieved after a successful first contact. Throw-in’s which went backwards or laterally in direction resulted in increased first contact success, retaining of possession, and shot creation. The least efficient throw-in was forwards and long, which resulted in both reduced first contact success and possession retention. Findings highlight, that throwing the ball laterally or backwards should be a focus for coaches and players during attacking training. In contrast, a team’s defensive strategy should reduce the opportunities to throw backwards or laterally with a higher press and look to force a long forward throw-in, therefore, increasing the likelihood of winning possession and counter attacking.</description>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3130161218</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Observational Analysis of Corner Kicks in High-Level Football: A Mixed Methods Study</title>
+      <link>https://doi.org/10.3390/su13147562</link>
+      <description>Corner kicks are one of the most important set pieces in high-level football. The present study aimed to analyze the evolution of the tactical approach to corner kicks in high-performance football. For this, a total of 1704 corner kicks executed in the 192 matches corresponding to the 2010, 2014 and 2018 FIFA World Cups were analyzed. To achieve the proposed objectives, the observational methodology was used. The results show an evolution in the mode of execution of these actions, but instead the success rate remains low. The log-linear test allowed to find significant relationships between some of the most important categorical variables in these actions: match status, number of intervening attackers and time. The decision tree models show that the number of players involved in these actions is the criterion that presents the greatest information gain. These results corroborate previous multivariate studies, although more research is still needed. Finally, the results of the present study can be used by coaches to create different training situations where success in this type of action can be enhanced.</description>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W3179127440</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Zones where corner kicks are most effective in the penalty box: Is there a sweet spot?</title>
+      <link>https://doi.org/10.1177/17479541241256223</link>
+      <description>This research aims to evaluate the effectiveness of corner kicks, analyze the goal patterns resulting from corner kicks, and develop a model for the implementation of optimal corner kick strategies. The study used a descriptive retrospective design, and the data consisted of 455.898 corner kicks from matches played by 768 teams in 33 different leagues and an international tournament (UEFA). Six different models based on logistic regression were developed and analyzed. The results showed that more goals were scored from certain zones (1c, 2b, and 2c) inside the penalty area than from others ( p &amp;lt; 0.001). According to logistic regression, zones 1c and 2c increased the probability of scoring a goal by 1.12 and 1.08 times, respectively, compared to other regions. In addition, it is noticeable that the probability of scoring from the zones varies considerably depending on the type of kick. Further results showed that there were no statistically significant differences between goals scored from in-swing and out-swing corners, but significant differences were found for the other types of corners. Finally, 3.1% of all corners resulted in goals, and 69% of those goals resulted in a draw or the team taking the lead in the match. For these reasons, it is important to develop new corner-kick strategies in order to score goals and win matches.</description>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4399548097</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Technical–Tactical Analysis of Corner Kicks in Male Soccer: A Systematic Review</title>
+      <link>https://doi.org/10.3390/app15094984</link>
+      <description>Corner kicks are one of the most frequent and potentially decisive set pieces in soccer, occurring approximately ten times per match. Aim: This systematic review aimed to synthesize the existing evidence on the technical–tactical execution of corner kicks in male soccer, assess the methodological quality of published studies, and provide practical recommendations for coaching staff. Methodology: Following PRISMA guidelines, a systematic search was conducted on 2 March 2025, in the Web of Science and Scopus databases. Studies were included if they focused on the technical–tactical analysis of corner kicks in male soccer, published in peer-reviewed journals or conferences, and written in English. A total of 21 eligible studies were identified. Each study was assessed for quality using a 13-item checklist, and a qualitative synthesis was performed based on key tactical, contextual, and methodological dimensions. Results: The included studies showed that most corners were delivered to the central area between the six-yard box and penalty spot. Dynamic attacking organizations involving 3–4 players and indirect deliveries to the far post were associated with higher probabilities of shots on target. Defensively, mixed marking strategies with players covering the near post yielded lower concession rates. Methodological quality was generally moderate to high. Inconsistencies in zone division and limited reporting of contextual variables were common limitations. Only two studies examined the transition phase after ball loss. Conclusions: Despite their strategic importance, corner kicks remain understudied in certain aspects. There is a need for standardized frameworks in zone division and a greater focus on contextual and transitional elements. This review provides evidence-based recommendations for optimizing set-piece strategy and highlights key areas for future research, including the systematic integration of transition phases and meta-analytical synthesis of performance indicators.</description>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4410037983</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Inswing or Outswing Corner Kicks? A Meta-Analysis of Offensive Outcomes in Professional Soccer</title>
+      <link>https://doi.org/10.58524/jcss.v4i2.730</link>
+      <description>Background: Although corner kicks are the most tactically analyzed set pieces in professional soccer, there is still no consensus on whether inswinging or outswinging deliveries are more effective, and no previous meta-analysis has systematically addressed this question.Aims: The study aimed to compare the offensive effectiveness of inswinging and outswinging corner kicks, specifically concerning goal conversion and the creation of final attempts, while also examining differences between domestic and international competitions.Methods: A meta-analysis was conducted using data from 12 eligible studies involving professional competitions. Binary outcomes (goal vs. no goal; final attempt vs. no attempt) were analyzed using log odds ratios under a random-effects model to account for heterogeneity. Subgroup analyses were performed based on competition type (domestic vs. international).Result: The cumulative goal conversion rate from corners was 3.09%, while the rate for final attempts was 25.61%. No statistically significant difference was found between inswinging and outswinging corners regarding goal conversion (OR = 0.99, p = 0.67). However, outswinging corners increase the probability of a final attempt (OR = 0.79, p = 0.02) compared to inswinging corners.Conclusion: This first meta-analysis comparing corner kick delivery types shows that, while both are equally effective for scoring, outswinging corners lead to more final attempts. Coaches may prioritize outswinging deliveries to improve offensive output and reduce counterattack risk. Future studies should examine contextual factors (e.g., marking systems, delivery zones) and include defensive outcomes for a more holistic tactical understanding.</description>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W4412413605</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>football</category>
+      <category>tactical_analysis</category>
+      <category>journal_article</category>
+    </item>
     <item>
       <title>Theory of the Perfect Game: Competitive Balance in Monopoly Sports Leagues</title>
       <link>https://doi.org/10.1007/s11151-009-9202-7</link>
@@ -27,7 +159,7 @@
       <title>The Economic Design of Sporting Contests</title>
       <link>https://doi.org/10.1257/002205103771800004</link>
       <description>This paper reviews the literature on commercial sport through the lens of the economic theory of contests/tournaments. It seeks to draw together research on incentives in individualistic sports such as golf and footraces with the research on uncertainty of outcome and competitive balance in team sports such as baseball and soccer. The contest framework is used to analyze issues such as the optimal distribution of prizes, the impact of revenue sharing, salary caps, draft rules, and a variety of other restraints commonly employed in sports leagues. The paper draws heavily on a comparative analysis of contest organization, in particular between North America and Europe.</description>
-      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
       <guid isPermaLink="false">preprint:2674fea161c8c93e</guid>
       <source url="https://living-sports-analytics.vercel.app">Journal of Economic Literature</source>
       <category>multi_sport</category>
@@ -38,7 +170,7 @@
       <title>Testing Causality Between Team Performance and Payroll</title>
       <link>https://doi.org/10.1177/152700250200300204</link>
       <description>The link between team payroll and competitive balance plays a central role in the theory of team sports but is seldom investigated empirically. This paper uses data on team payrolls in Major League Baseball between 1980 and 2000 to examine the link and implements Granger causality tests to establish whether the relationship runs from payroll to performance or vice versa. While there is no evidence that causality runs from payroll to performance over the entire sample period, the data shows that the cross section correlation between payroll and performance increased significantly in the 1990s. As a comparison, the paper examines the relationship between pay and performance in English soccer, and it is shown that Granger causality from higher payrolls to better performance cannot be rejected. We argue that this difference may be a consequence of the open market for player talent that obtains in soccer compared to the significant restrictions on trade that exist in Major League Baseball.</description>
-      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
       <guid isPermaLink="false">preprint:83456bed83710d33</guid>
       <source url="https://living-sports-analytics.vercel.app">Journal of Sports Economics</source>
       <category>multi_sport</category>
@@ -49,7 +181,7 @@
       <title>The English Football Industry: profit, performance and industrial structure</title>
       <link>https://doi.org/10.1080/02692179700000008</link>
       <description>The English (Association) Football League is a long established industrial cartel selling a highly popular product with only imperfect substitutes. Despite that, the majority of its member clubs lose money and the industry has faced successive financial crises over the last decade. This paper develops an empirical model of the financial performance of English League clubs using a high quality dataset of 48 clubs over the period 1974-89. The underlying model explains how rents are competed away through the maximising behaviour of club owners subject to production constraints. This model is parameterised by a system of equations which describe the behaviour of a maximising owner subject to demand and production constraints. The model is then used to examine the coordination failure which lies at the heart of the English Football League&apos;s decline and to assess the prospects for the Premier League.</description>
-      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
       <guid isPermaLink="false">preprint:9637658eafc76cf9</guid>
       <source url="https://living-sports-analytics.vercel.app">International Review of Applied Economics</source>
       <category>football</category>
@@ -60,7 +192,7 @@
       <title>Welfare Economics of “Financial Fair Play” in a Sports League With Benefactor Owners</title>
       <link>https://doi.org/10.1177/1527002512465759</link>
       <description>With European soccer leagues in mind, a novel model of club owner objectives nests standard profit (and win) maximization, but adds benefactor behavior where owners inject personal funds to increase their team’s quality. A “generosity” parameter differentiates owners; parameter value zero equates to profit maximizers, with benefactors emerging at sufficiently positive values. The model is used to investigate consequences of Union of European Football Associations’ (UEFA) “Financial Fair Play” regulations (FFP) for the league, aimed to preclude benefactor injections. Assuming (post-Bosman) a relatively large elasticity of talent supply to the league, FFP is a poor regulatory device, creating welfare losses for fans, owners, and players.</description>
-      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
       <guid isPermaLink="false">preprint:af3736279e0e62bf</guid>
       <source url="https://living-sports-analytics.vercel.app">Journal of Sports Economics</source>
       <category>football</category>
@@ -71,7 +203,7 @@
       <title>Financial fair play in European football</title>
       <link>https://doi.org/10.1111/1468-0327.12031</link>
       <description>In 2010 UEFA, the governing body of European football, announced a set of financial restraints, which clubs must observe when seeking to enter its competitions, notably the UEFA Champions League. We analyse the financial and sporting impact of these ‘Financial Fair Play’ (FFP) regulations in four major European football leagues. We first discuss the details of FFP and frame these regulations in the institutional set-up of the European football industry. We then show how the break-even constraint embedded in FFP could substantially reduce average payrolls and wage-to-turnover ratios, while strengthening the position of the traditional top teams. Since the benefits of the break-even rule to consumers remain unclear, we argue that these rent-shifting regulations might fall foul of European competition law.— Thomas Peeters and Stefan Szymanski</description>
-      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
       <guid isPermaLink="false">preprint:c676048ab1e79685</guid>
       <source url="https://living-sports-analytics.vercel.app">Economic Policy</source>
       <category>football</category>
@@ -428,138 +560,6 @@
       <source url="https://living-sports-analytics.vercel.app">Molecular &amp; cellular biomechanics</source>
       <category>badminton</category>
       <category>biomechanics</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Utility of 2D Video Analysis for Assessing Frontal Plane Trunk and Pelvis Motion during Stepping, Landing, and Change in Direction Tasks: A Validity Study</title>
-      <link>https://doi.org/10.26603/001c.30994</link>
-      <description>Concurrent validity study of 39 healthy participants found 2D video analysis appropriately correlated with 3D kinematics for assessing frontal plane trunk and pelvis motion during athletic landing tasks, though absolute agreement limits were wide.</description>
-      <pubDate>Tue, 01 Feb 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4210814442</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Sports Physical Therapy</source>
-      <category>other</category>
-      <category>methodology</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Effects of Dual Task Interference on Biomechanics of the Entire Lower Extremity During the Drop Vertical Jump</title>
-      <link>https://doi.org/10.2478/hukin-2022-0001</link>
-      <description>Kinematic analysis of 20 female collegiate athletes found concurrent cognitive task during drop vertical jump significantly increased peak external knee abduction moment and joint moments at hip and ankle with reduced knee flexion at initial contact.</description>
-      <pubDate>Thu, 10 Feb 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4211097303</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Human Kinetics</source>
-      <category>other</category>
-      <category>biomechanics</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Análisis del clima motivacional en Educación Física a partir del empleo del modelo Teaching Games for Understanding (Analysis of the motivational climate in Physical Education from the use of the Teaching Games for Understanding model)</title>
-      <link>https://doi.org/10.47197/retos.v44i0.92689</link>
-      <description>Quasi-experimental study of 73 secondary students (39 experimental, 34 control) found that Teaching Games for Understanding pedagogy significantly improved perceived motivational climate in basketball units compared to traditional instruction.</description>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4212976600</guid>
-      <source url="https://living-sports-analytics.vercel.app">Retos</source>
-      <category>basketball</category>
-      <category>player_development</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>The Effect of Learning Approach and Gender on Understanding, Fun, and Skills in Playing Soccer in Junior High School Students</title>
-      <link>https://doi.org/10.5614/jskk.2021.6.2.1</link>
-      <description>An experimental factorial study with 60 junior high school students (30 boys, 30 girls) found that a tactical learning approach significantly improved understanding, enjoyment, and soccer playing skills, with differential effects by gender.</description>
-      <pubDate>Thu, 30 Dec 2021 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4213275793</guid>
-      <source url="https://living-sports-analytics.vercel.app">Jurnal Sains Keolahragaan dan Kesehatan</source>
-      <category>football</category>
-      <category>player_development</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Screening Tests for Assessing Athletes at Risk of ACL Injury or Reinjury—A Scoping Review</title>
-      <link>https://doi.org/10.3390/ijerph19052864</link>
-      <description>Scoping review identifies six categories of ACL injury screening tests (balance, gait, joint laxity, morphology, jump, strength) and recommends multitest approaches for injury risk assessment despite controversies in predictive validity.</description>
-      <pubDate>Tue, 01 Mar 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4214506122</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Environmental Research and Public Health</source>
-      <category>multi_sport</category>
-      <category>injury_prevention</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Validity of Velocity Measurements of a Motorized Resistance Device During Change of Direction</title>
-      <link>https://doi.org/10.3389/fphys.2022.824606</link>
-      <description>Motorized resistance device velocity measurements during change of direction tasks show excellent validity (r=0.93-1.00) with low bias when compared to center of mass kinematics in male and female participants.</description>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4214744226</guid>
-      <source url="https://living-sports-analytics.vercel.app">Frontiers in Physiology</source>
-      <category>other</category>
-      <category>biomechanics</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Descriptive trunk kinematics in healthy collegiate women&apos;s soccer players indicate trunk center of mass is laterally positioned prior to decelerating and cutting</title>
-      <link>https://doi.org/10.1016/j.jisako.2022.03.002</link>
-      <description>Kinematic analysis of collegiate women&apos;s soccer players shows trunk center of mass is laterally positioned prior to deceleration and cutting maneuvers, relevant to ACL injury mechanisms.</description>
-      <pubDate>Mon, 04 Apr 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4223905976</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of ISAKOS Joint Disorders &amp; Orthopaedic Sports Medicine</source>
-      <category>football</category>
-      <category>biomechanics</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Early Warning of Basketball Injury Risk Based on Attribute Reduction Algorithm</title>
-      <link>https://doi.org/10.1155/2022/6981246</link>
-      <description>Machine learning approach using attribute reduction algorithm for early warning of basketball injury risk aims to identify preventable training-related injury causes in college athletes.</description>
-      <pubDate>Wed, 13 Apr 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4224113774</guid>
-      <source url="https://living-sports-analytics.vercel.app">Computational Intelligence and Neuroscience</source>
-      <category>basketball</category>
-      <category>injury_prevention</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Cocreating injury prevention training for youth team handball: bridging theory and practice</title>
-      <link>https://doi.org/10.1136/bmjsem-2021-001263</link>
-      <description>Participatory action research with youth handball coaches, players, and researchers co-creates evidence-based injury prevention training combining physical principles (technique, strength) and psychological aspects (motivation, body awareness).</description>
-      <pubDate>Fri, 01 Apr 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4225774518</guid>
-      <source url="https://living-sports-analytics.vercel.app">BMJ Open Sport &amp; Exercise Medicine</source>
-      <category>handball</category>
-      <category>injury_prevention</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Comparing the Effects of Long-Term vs. Periodic Inclusion of Isometric Strength Training on Strength and Dynamic Performances</title>
-      <link>https://doi.org/10.1519/jsc.0000000000004276</link>
-      <description>Twenty-four floorball athletes showed greater improvements in 5-m, 10-m, and 20-m sprint times with 24 consecutive weeks of isometric strength training compared to control, with no significant difference versus periodic inclusion.</description>
-      <pubDate>Mon, 09 May 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4280511583</guid>
-      <source url="https://living-sports-analytics.vercel.app">The Journal of Strength and Conditioning Research</source>
-      <category>floorball</category>
-      <category>performance_analysis</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Design and Implementation of Athlete’s Knee Health Monitoring System Based on Cloud Computing</title>
-      <link>https://doi.org/10.1155/2022/4778376</link>
-      <description>Cloud-based system using depth cameras and deep learning to monitor athlete knee joint health in real-time achieved 6% overall error rate and strong correlation with clinical KSS scoring.</description>
-      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4280633068</guid>
-      <source url="https://living-sports-analytics.vercel.app">Journal of Sensors</source>
-      <category>multi_sport</category>
-      <category>injury_prevention</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Organized Sport Activities of 11 to 15-Year-Old Adolescents: Trends from 2010–2018 and Socioeconomic Context</title>
-      <link>https://doi.org/10.3390/ijerph19106074</link>
-      <description>Czech adolescents from high-SES families were 3.01 times more likely to participate in organized individual sports than low-SES peers, with gaps widening with age from 2010–2018.</description>
-      <pubDate>Tue, 17 May 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4280635401</guid>
-      <source url="https://living-sports-analytics.vercel.app">International Journal of Environmental Research and Public Health</source>
-      <category>multi_sport</category>
-      <category>player_development</category>
       <category>journal_article</category>
     </item>
   </channel>

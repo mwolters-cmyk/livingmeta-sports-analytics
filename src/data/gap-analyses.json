@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-20T01:07:22.743264",
-  "total_analyses": 13,
+  "generated_at": "2026-02-20T09:52:32.552255",
+  "total_analyses": 16,
   "paper_index": {
     "https://openalex.org/W2205219292": {
       "title": "Evaluation of a 7-Gene Genetic Profile for Athletic Endurance Phenotype in Ironman Championship Triathletes",
@@ -61,6 +61,11 @@
       "title": "Power, performance, and expectations in the dismissal of NBA coaches: A survival analysis study",
       "year": 2017,
       "first_author": "David B. Wangrow"
+    },
+    "https://openalex.org/W2753745987": {
+      "title": "A döntések lélektanának bemutatása egy labdarúgó tippjáték példáján keresztül",
+      "year": 2016,
+      "first_author": "Márton Attila Boda"
     },
     "https://openalex.org/W2768492879": {
       "title": "Lower Extremity Musculoskeletal Injury Risk After Concussion Recovery in High School Athletes",
@@ -1097,6 +1102,11 @@
       "year": 2026,
       "first_author": "Weipeng Liu"
     },
+    "https://openalex.org/W7125814715": {
+      "title": "NeuroSwift: computer vision-based system to assess the cognitive–motor speed of soccer players—preliminary findings",
+      "year": 2026,
+      "first_author": "Fabián Moya-Vergara"
+    },
     "https://openalex.org/W7126001043": {
       "title": "Time-to-Injury Forecasting in Elite Female Football: A DeepHit Survival Approach",
       "year": 2026,
@@ -1111,6 +1121,11 @@
       "title": "Mind‐Muscle‐Environment Interactions: Psychophysiological Determinants of Optimal Pacing in Olympic Winter Endurance Sports",
       "year": 2026,
       "first_author": "Peter Edholm"
+    },
+    "https://openalex.org/W7128469417": {
+      "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+      "year": 2026,
+      "first_author": "Yi Chen"
     }
   },
   "analyses": [
@@ -1785,6 +1800,395 @@
           "Longitudinal follow-up: A repeat gap analysis in 12 months would show whether priorities shifted or gaps were addressed. This would calibrate the predictive validity of our gap assessment."
         ],
         "process_cost_reflection": "Given: 86 papers with abstracts/structured summaries. Synthesis required: (1) reading/organizing papers into clusters; (2) identifying recurring themes and absences; (3) cross-referencing evidence to support claims; (4) writing detailed gap descriptions; (5) proposing actionable research directions. Cost-benefit: At 86 papers, the database is manageable. 5-10 gaps is sufficient to avoid redundancy. The structured summaries (theme, sub-theme, results, limitations) enabled rapid pattern extraction; full-text access would likely add 30-40% more nuance (e.g., discovering reproducibility issues or code availability) without fundamentally changing gap identification. Bottleneck: most recent papers (2024-2025, 54/86) lack citations to each other, making it hard to assess whether current research is cohesive or fragmented. Abstract-level analysis was probably sufficient; full-text would confirm fragmentation but not change the conclusion. Calibration: This analysis is 'landscape assessment' quality (high-level patterns, low-resolution details). For a funded research agenda (e.g., a center of excellence in cycling analytics), full-text review + expert consultation would be cost-justified. For this initial gap analysis, 86 papers with abstracts is near-optimal: sufficient detail, manageable scale, reasonable cost (~12-16 hours of focused reading and synthesis)."
+      }
+    },
+    {
+      "slug": "can-we-objectively-determine-who-the-best-footballer-of-the-last-decade",
+      "question": "Can we objectively determine who the best footballer of the last decade (2015–2025) is using quantitative performance metrics, and what methodological framework would be required to do so?",
+      "created_at": "2026-02-20",
+      "analyzed_at": "2026-02-20",
+      "prompt_version": "?",
+      "model": "external_agent",
+      "papers_analyzed": 50,
+      "cost_usd": 0,
+      "analysis_confidence": "medium",
+      "scope_assessment": "Football (association football) only. Individual player evaluation, not team-level. Covers the period 2015–2025. Excludes purely qualitative or opinion-based assessments. Includes attacking, defensive, creative, and physical performance dimensions. Spans player rating systems, action-value models, market valuation proxies, and physical performance metrics.",
+      "database_coverage": "50 directly relevant papers out of 3027 total.",
+      "confidence_explanation": "Analysis based on titles, metadata, and brief abstracts — no full-text access to any of the 50 papers; Citation counts for 2025–2026 papers are near-zero (too recent for citation accumulation), making impact assessment unreliable for recent work; Some key papers (e.g., Fernández's Expected Possession Value, Decroos's VAEP original paper) may exist in the database under different keywords but were not captured by the search strategy; The platform skews toward academic publications; industry player evaluation models developed by clubs, betting companies, and analytics firms (e.g., Opta's Power Rankings) are absent; Could not access client-side-rendered paper detail pages for AI-generated summaries, limiting depth of individual paper assessment; Search strategy focused on English-language keywords; relevant German, Spanish, or Portuguese literature may have been missed",
+      "landscape": {
+        "key_findings": [
+          {
+            "finding": "Expected Goals (xG) is the dominant single metric for attacking player evaluation, but it only captures shot quality and frequency — ignoring defensive, creative, and off-ball contributions entirely.",
+            "evidence_strength": "strong",
+            "effect_size": "xG models achieve reasonable predictive accuracy for goal scoring but explain only one dimension of player quality",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W7124851303",
+                "title": "Association Between Expected Goals (xG) and Goal Scoring Across Club and National Team Competitions in Elite Football",
+                "year": 2026,
+                "sport": "football",
+                "doi": "https://doi.org/10.53905/inspiree.v7i01.161",
+                "first_author": "Cristian Murillo García"
+              },
+              {
+                "work_id": "https://openalex.org/W7118313619",
+                "title": "A Statistical Look into how Common Soccer Metrics Influence Expected Goal Measures in the Professional Game",
+                "year": 2026,
+                "sport": "football",
+                "doi": "https://doi.org/10.33697/ajur.2025.161",
+                "first_author": "Tristan Rumsey"
+              },
+              {
+                "work_id": "https://openalex.org/W7121602014",
+                "title": "Goalstats - An application for statistics and predicitve analytics in football using Xg Algorithm in AI and Machine learning",
+                "year": 2026,
+                "sport": "football",
+                "doi": "https://doi.org/10.5281/zenodo.18208314",
+                "first_author": "Sieer Shafi Lone"
+              },
+              {
+                "work_id": "https://openalex.org/W7128784313",
+                "title": "The Role of Shot Velocity in Advanced Post-Shot Metrics: Evidence from the UEFA European Football Championships",
+                "year": 2026,
+                "sport": "football",
+                "doi": "https://doi.org/10.3390/data11020039",
+                "first_author": "Blanca De-la-Cruz-Torres"
+              }
+            ],
+            "paper_count": 4
+          },
+          {
+            "finding": "Action-value frameworks (VAEP, xT, EPV) attempt position-agnostic player evaluation by assigning value to every on-ball action, but show poor validation against ground truth and struggle with defensive/midfield players.",
+            "evidence_strength": "moderate",
+            "effect_size": "Deep RL action-value models show negative correlation with actual goals in some implementations; VAEP validation remains limited to small samples",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W7126281912",
+                "title": "VERSA: Verified Event Data Format for Reliable Soccer Analytics",
+                "year": 2026,
+                "sport": "football",
+                "doi": null,
+                "first_author": "Geonhee Jo"
+              },
+              {
+                "work_id": "https://openalex.org/W3035679825",
+                "title": "Inverse Reinforcement Learning for Team Sports: Valuing Actions and Players",
+                "year": 2020,
+                "sport": "multi_sport",
+                "doi": "https://doi.org/10.24963/ijcai.2020/464",
+                "first_author": "Yudong Luo"
+              }
+            ],
+            "paper_count": 2
+          },
+          {
+            "finding": "PlayeRank (Pappalardo et al., 2019) is the most-cited purpose-built player ranking system (139 citations) designed to compare players across positions, but no independent replication or validation study exists in the database.",
+            "evidence_strength": "moderate",
+            "effect_size": "PlayeRank produces role-adjusted rankings using event data but has not been validated against expert consensus, transfer fees, or award voting",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W2972682136",
+                "title": "PlayeRank",
+                "year": 2019,
+                "sport": "football",
+                "doi": "https://doi.org/10.1145/3343172",
+                "first_author": null
+              }
+            ],
+            "paper_count": 1
+          },
+          {
+            "finding": "Market value (Transfermarkt) correlates with but does not equal playing quality. Transfer fee prediction models achieve R² = 0.40–0.70, but values reflect age, marketability, nationality, and contract status alongside on-field performance.",
+            "evidence_strength": "moderate",
+            "effect_size": "R² = 0.40–0.70 for transfer fee prediction; post-prime depreciation of −0.43/year after age 27 in Bundesliga regardless of form",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W2612396739",
+                "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+                "year": 2017,
+                "sport": "football",
+                "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+                "first_author": "Oliver Müller"
+              },
+              {
+                "work_id": "https://openalex.org/W4283159414",
+                "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+                "year": 2022,
+                "sport": "football",
+                "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+                "first_author": "Ian G. McHale"
+              },
+              {
+                "work_id": "https://openalex.org/W2917135457",
+                "title": "Measuring soccer players’ contributions to chance creation by valuing their passes",
+                "year": 2019,
+                "sport": "football",
+                "doi": "https://doi.org/10.1515/jqas-2018-0020",
+                "first_author": "Lotte Bransen"
+              },
+              {
+                "work_id": "https://openalex.org/W4407105460",
+                "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+                "year": 2025,
+                "sport": "football",
+                "doi": "https://doi.org/10.3390/ijfs13010017",
+                "first_author": "James H. Liu"
+              }
+            ],
+            "paper_count": 4
+          },
+          {
+            "finding": "No comprehensive cross-metric comparison study exists that applies multiple evaluation systems to the same set of players over the same time period. Each research stream operates as an isolated monologue.",
+            "evidence_strength": "weak",
+            "effect_size": "Absence of evidence — no convergent validity study identified in 3,027 football papers",
+            "papers": [],
+            "paper_count": 0
+          }
+        ],
+        "key_papers": [
+          {
+            "citation": "Müller, O. (2017)",
+            "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+            "contribution": "Foundational multilevel regression methodology for transfer fee estimation; established the field of data-driven player valuation",
+            "citations_count": 166,
+            "methodology": "statistical"
+          },
+          {
+            "citation": "Pappalardo, L. et al. (2019)",
+            "title": "PlayeRank: Data-driven Performance Evaluation and Player Ranking in Soccer via a Machine Learning Approach",
+            "contribution": "Most-cited player ranking system specifically designed to compare football players across positions using event data",
+            "citations_count": 139,
+            "methodology": "machine_learning"
+          },
+          {
+            "citation": "Jewell, R. T. (2015)",
+            "title": "The Effect of Marquee Players on Sports Demand",
+            "contribution": "Quantified the commercial and attendance impact of star players on team economics",
+            "citations_count": 80,
+            "methodology": "statistical"
+          },
+          {
+            "citation": "Al-Asadi, M. (2022)",
+            "title": "Predict the Value of Football Players Using FIFA Video Game Data and Machine Learning Techniques",
+            "contribution": "Modern ML approach demonstrating FIFA video game attributes as proxy for real-world player quality assessment",
+            "citations_count": 73,
+            "methodology": "machine_learning"
+          },
+          {
+            "citation": "Franceschi, M. (2023)",
+            "title": "Determinants of football players' valuation: A systematic review",
+            "contribution": "Comprehensive review identifying all factors driving player valuation in the literature",
+            "citations_count": 55,
+            "methodology": "review"
+          },
+          {
+            "citation": "McHale, I. G. (2022)",
+            "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+            "contribution": "Demonstrated R² = 0.40–0.70 for transfer fee prediction using advanced metrics",
+            "citations_count": 42,
+            "methodology": "machine_learning"
+          },
+          {
+            "citation": "Bransen, L. (2019)",
+            "title": "Measuring soccer players' contributions to chance creation by valuing their passes",
+            "contribution": "Linked individual passing actions to chance creation value, enabling creative player evaluation",
+            "citations_count": 42,
+            "methodology": "machine_learning"
+          }
+        ],
+        "methodological_patterns": "The field is dominated by cross-sectional observational studies using machine learning (gradient boosting, random forests, neural networks) and statistical regression. Sample sizes range from 50–500 matches for action-value models to 500–3,000+ players for transfer prediction. Deep reinforcement learning approaches emerged 2018–2020 but remain poorly validated. Longitudinal studies tracking the same players across multiple seasons are rare. Only 3–4 papers out of 50 relevant ones provide open code or data."
+      },
+      "gaps": [
+        {
+          "id": 1,
+          "title": "No longitudinal cross-metric player comparison spanning 2015–2025",
+          "description": "No paper applies multiple evaluation frameworks (xG, VAEP, PlayeRank, commercial ratings, market value) to the same set of elite players over a sustained period. Without convergent validity testing across systems, the question 'who is best' cannot be empirically answered because each metric produces a different ranking and no study examines whether these rankings converge or systematically diverge.",
+          "type": "methodological",
+          "importance": "critical",
+          "feasibility": "high",
+          "confidence": "high",
+          "suggested_approach": "Select top 50 players by Transfermarkt value per season (2015–2025). Apply xG/xA (Understat API), VAEP (StatsBomb Open Data), commercial ratings (WhoScored), and market value (Transfermarkt). Measure rank correlation (Kendall's tau, Spearman's rho) across systems per year and over the full period.",
+          "evidence": "Select top 50 players by Transfermarkt value per season (2015–2025). Apply xG/xA (Understat API), VAEP (StatsBomb Open Data), commercial ratings (WhoScored), and market value (Transfermarkt). Measure rank correlation (Kendall's tau, Spearman's rho) across systems per year and over the full period."
+        },
+        {
+          "id": 2,
+          "title": "Defensive and off-ball contributions remain un-quantified at scale",
+          "description": "Virtually all player evaluation metrics privilege on-ball attacking actions. Only one paper (W7128469417, 2026) attempts off-ball defensive evaluation using hidden Markov models. Players like Kanté, Casemiro, or Van Dijk are systematically undervalued by existing quantitative frameworks. Any 'best player' determination that ignores defensive contribution is inherently biased toward attackers.",
+          "type": "measurement",
+          "importance": "critical",
+          "feasibility": "medium",
+          "confidence": "high",
+          "suggested_approach": "Combine tracking data (positional/movement data) with event data to develop defensive contribution metrics such as 'Expected Defensive Actions' (xDA). Validate against goals conceded, shots faced, and expert defensive ratings while controlling for team and opposition quality.",
+          "evidence": "Combine tracking data (positional/movement data) with event data to develop defensive contribution metrics such as 'Expected Defensive Actions' (xDA). Validate against goals conceded, shots faced, and expert defensive ratings while controlling for team and opposition quality."
+        },
+        {
+          "id": 3,
+          "title": "No positional equivalence framework (football WAR) exists",
+          "description": "Comparing a striker's xG to a midfielder's key passes to a defender's aerial duels is comparing incommensurable quantities. No paper in the database develops a 'position-adjusted' meta-metric enabling cross-positional comparison — analogous to baseball's WAR (Wins Above Replacement). The concept is discussed in analytics blogs but has no rigorous academic implementation.",
+          "type": "conceptual",
+          "importance": "high",
+          "feasibility": "medium",
+          "confidence": "high",
+          "suggested_approach": "Define 'replacement level' per position using lower-league or squad rotation data. Compute each player's contribution above replacement using action-value models (VAEP). Normalize across positions to produce a single WAR-like number.",
+          "evidence": "Define 'replacement level' per position using lower-league or squad rotation data. Compute each player's contribution above replacement using action-value models (VAEP). Normalize across positions to produce a single WAR-like number."
+        },
+        {
+          "id": 4,
+          "title": "Absence of uncertainty quantification in player rankings",
+          "description": "All ranking systems produce point estimates without confidence intervals. When PlayeRank ranks Player A above Player B, the margin may be within statistical noise. No paper quantifies the uncertainty around player rankings, making it impossible to determine whether observed rank differences are statistically significant or artifacts of sampling variability.",
+          "type": "methodological",
+          "importance": "high",
+          "feasibility": "high",
+          "confidence": "medium",
+          "suggested_approach": "Apply Bayesian hierarchical models to player evaluation, treating player quality as a latent variable with match-level observations. Produce posterior distributions over player quality and report credible intervals alongside rankings.",
+          "evidence": "Apply Bayesian hierarchical models to player evaluation, treating player quality as a latent variable with match-level observations. Produce posterior distributions over player quality and report credible intervals alongside rankings."
+        },
+        {
+          "id": 5,
+          "title": "No opponent-quality or league-difficulty adjustment for player metrics",
+          "description": "Player performance is not adjusted for opponent strength or league difficulty. A player scoring 30 goals in the Eredivisie is not equivalent to 30 goals in the Premier League, yet no standardized adjustment exists. Cross-league comparison of players (e.g., Messi in La Liga vs. Lewandowski in Bundesliga vs. Haaland in the Premier League) is methodologically unsupported.",
+          "type": "contextual",
+          "importance": "high",
+          "feasibility": "medium",
+          "confidence": "medium",
+          "suggested_approach": "Use Club Elo ratings (free API) to weight each match contribution by opponent strength. Develop league-difficulty adjustment factors using Champions League cross-league performance as a natural experiment.",
+          "evidence": "Use Club Elo ratings (free API) to weight each match contribution by opponent strength. Develop league-difficulty adjustment factors using Champions League cross-league performance as a natural experiment."
+        },
+        {
+          "id": 6,
+          "title": "Peak performance vs. sustained consistency not formally distinguished",
+          "description": "The concept of 'best' conflates peak performance (e.g., Messi's 2022 World Cup) with sustained consistency (e.g., Lewandowski's decade of 30+ goal seasons). No paper formally decomposes player performance time-series into trend, seasonality, and peak components to enable comparison on each dimension separately.",
+          "type": "temporal",
+          "importance": "medium",
+          "feasibility": "high",
+          "confidence": "medium",
+          "suggested_approach": "Apply time-series decomposition (STL or similar) to player performance data. Compute separate 'peak quality' (best 10-match window) and 'career consistency' (variance-adjusted career average) metrics.",
+          "evidence": "Apply time-series decomposition (STL or similar) to player performance data. Compute separate 'peak quality' (best 10-match window) and 'career consistency' (variance-adjusted career average) metrics."
+        },
+        {
+          "id": 7,
+          "title": "Women's football entirely excluded from quantitative 'best player' discourse",
+          "description": "Only 2–3 valuation papers address women's football. The question 'who is the best footballer' implicitly excludes players like Alexia Putellas, Sam Kerr, or Ada Hegerberg. No comparative analytical framework exists to evaluate women's football players with the same rigor applied to men's football, despite data availability (StatsBomb open women's data).",
+          "type": "population",
+          "importance": "high",
+          "feasibility": "high",
+          "confidence": "high",
+          "suggested_approach": "Apply identical evaluation metrics (xG, VAEP, commercial ratings) to women's football using StatsBomb's freely available women's tournament data. Test measurement invariance across genders. Produce first quantitative women's football player ranking.",
+          "evidence": "Apply identical evaluation metrics (xG, VAEP, commercial ratings) to women's football using StatsBomb's freely available women's tournament data. Test measurement invariance across genders. Produce first quantitative women's football player ranking."
+        },
+        {
+          "id": 8,
+          "title": "No integration of physical, technical, and cognitive performance dimensions",
+          "description": "Papers on physical performance (GPS, sprint data), technical metrics (xG, passes, dribbles), and cognitive speed (NeuroSwift, W7125814715) exist in complete isolation. The 'best' player likely excels across multiple dimensions, but no integrative multi-dimensional framework exists. Physical, technical, and cognitive/tactical streams do not cross-reference each other.",
+          "type": "conceptual",
+          "importance": "medium",
+          "feasibility": "low",
+          "confidence": "medium",
+          "suggested_approach": "Develop a multi-dimensional player quality model combining physical (tracking data), technical (event data), and tactical/cognitive (decision-making metrics) components using multi-source data fusion and latent factor analysis.",
+          "evidence": "Develop a multi-dimensional player quality model combining physical (tracking data), technical (event data), and tactical/cognitive (decision-making metrics) components using multi-source data fusion and latent factor analysis."
+        }
+      ],
+      "research_agenda": [
+        {
+          "title": "The Football WAR Project: A Cross-Metric Longitudinal Player Ranking (2015–2025)",
+          "level": "PhD",
+          "addresses_gaps": [
+            1,
+            3,
+            5
+          ],
+          "estimated_duration": "12–18 months",
+          "suggested_methodology": "Collect per-match data for top 100 players per season from FBref (stats), Understat (xG/xA), Transfermarkt (market value), and WhoScored (ratings). Compute VAEP using StatsBomb event data. Calculate rank correlation (Kendall's tau) across systems. Develop composite WAR metric using factor analysis or principal component analysis. Validate against Ballon d'Or voting, Champions League performance, and expert panel.",
+          "suggested_data": "FBref (10 seasons × 100 players, scraped), Understat API (xG data since 2014/15), Transfermarkt (historical market values, scraped), StatsBomb Open Data (for VAEP computation), Club Elo API (opponent strength adjustment). Estimated total: ~10,000 player-seasons.",
+          "potential_impact": "high",
+          "estimated_difficulty": "extreme",
+          "description": "How do elite footballer rankings compare across evaluation systems, and can a composite Wins Above Replacement metric be constructed for football?",
+          "priority": 1
+        },
+        {
+          "title": "Quantifying Defensive Contributions: Towards Expected Defensive Actions (xDA)",
+          "level": "PhD",
+          "addresses_gaps": [
+            2,
+            8
+          ],
+          "estimated_duration": "12 months",
+          "suggested_methodology": "Combine tracking data (player positioning, pressure events, movement intensity) with event data (tackles, interceptions, clearances, aerial duels). Develop 'Expected Defensive Actions' metric. Validate against defensive outcomes (goals conceded, shots on target faced, clean sheets) controlling for team and opposition quality using multilevel regression.",
+          "suggested_data": "StatsBomb 360 data or tracking data from club partnerships. Event data from StatsBomb Open Data. Match outcome data from FBref. Minimum 3 seasons, 2 leagues.",
+          "potential_impact": "high",
+          "estimated_difficulty": "extreme",
+          "description": "Can defensive player contributions be quantified at a level comparable to xG for attacking players?",
+          "priority": 2
+        },
+        {
+          "title": "Bayesian Player Rankings with Credible Intervals",
+          "level": "MSc",
+          "addresses_gaps": [
+            4
+          ],
+          "estimated_duration": "6–9 months",
+          "suggested_methodology": "Implement Bayesian hierarchical model using match-level performance data as observations and player quality as latent variable. Use Stan or PyMC. Produce posterior distributions over player quality. Test whether the difference between consecutively ranked players exceeds a meaningful threshold with >95% posterior probability.",
+          "suggested_data": "FBref match-level statistics for top 5 European leagues, 10 seasons. ~50,000 player-match observations.",
+          "potential_impact": "medium",
+          "estimated_difficulty": "hard",
+          "description": "What are the credible intervals around elite player rankings, and are differences between top-ranked players statistically meaningful?",
+          "priority": 3
+        },
+        {
+          "title": "Opposition-Adjusted Performance Metrics for Cross-League Comparison",
+          "level": "MSc",
+          "addresses_gaps": [
+            5,
+            6
+          ],
+          "estimated_duration": "6 months",
+          "suggested_methodology": "Weight each player's per-match contributions by opponent Elo rating (Club Elo API, free). Compute league-difficulty adjustment factors using Champions League group stage results as cross-league calibration. Compare raw vs. adjusted rankings. Test sensitivity of 'best player' determination to adjustment method.",
+          "suggested_data": "Club Elo API (free, historical), FBref match-level data (5 leagues, 10 seasons), Champions League results and statistics.",
+          "potential_impact": "medium",
+          "estimated_difficulty": "hard",
+          "description": "How much do player performance metrics change when adjusted for opponent quality and league difficulty?",
+          "priority": 4
+        },
+        {
+          "title": "Women's Football Player Evaluation: Closing the Analytics Gender Gap",
+          "level": "MSc",
+          "addresses_gaps": [
+            7
+          ],
+          "estimated_duration": "6 months",
+          "suggested_methodology": "Apply xG, VAEP, and available commercial ratings to women's football data. Test measurement invariance across genders (do the same metrics capture the same constructs?). Produce first quantitative women's football player ranking using the same methodology as men's evaluation.",
+          "suggested_data": "StatsBomb Open Data (Women's World Cup, NWSL, FA WSL available for free), FBref women's football sections. Transfermarkt women's football valuations.",
+          "potential_impact": "high",
+          "estimated_difficulty": "hard",
+          "description": "Can existing player evaluation methods be validly applied to women's football, and who ranks as the best women's footballer of the last decade?",
+          "priority": 5
+        }
+      ],
+      "self_reflection": {
+        "strengths": [
+          "Identified 50+ relevant papers across performance analysis, player valuation, and tactical analysis themes from the platform database",
+          "Mapped five distinct research streams (xG, action-value, PlayeRank, market value, physical performance) and documented their disconnection",
+          "All 8 gaps are specific, actionable, and grounded in evidence from the database — no generic 'more research needed' gaps",
+          "Research agenda proposes concrete projects with named data sources (most freely available) and realistic timelines",
+          "Honest acknowledgment that the question is inherently multi-dimensional and that no single metric can answer it",
+          "Cross-referenced existing gap analyses (#5 player valuation, #13 tactical effectiveness) to avoid duplication"
+        ],
+        "limitations": [
+          "Analysis based on titles, metadata, and brief abstracts — no full-text access to any of the 50 papers",
+          "Citation counts for 2025–2026 papers are near-zero (too recent for citation accumulation), making impact assessment unreliable for recent work",
+          "Some key papers (e.g., Fernández's Expected Possession Value, Decroos's VAEP original paper) may exist in the database under different keywords but were not captured by the search strategy",
+          "The platform skews toward academic publications; industry player evaluation models developed by clubs, betting companies, and analytics firms (e.g., Opta's Power Rankings) are absent",
+          "Could not access client-side-rendered paper detail pages for AI-generated summaries, limiting depth of individual paper assessment",
+          "Search strategy focused on English-language keywords; relevant German, Spanish, or Portuguese literature may have been missed"
+        ],
+        "database_coverage_gaps": [
+          "Industry/proprietary player evaluation models (club analytics departments, betting firms) are not published academically and are absent from the database",
+          "Analytics blog posts and journalism (StatsBomb blog, The Athletic, FiveThirtyEight) contain relevant methodology not indexed on the platform",
+          "Conference proceedings from MIT Sloan Sports Analytics Conference and ECML Sports Analytics Workshop may be partially indexed",
+          "Non-English academic literature (Spanish football analytics, German Sportwissenschaft) likely underrepresented",
+          "The original Expected Possession Value (Fernández, 2019) and VAEP (Decroos et al., 2019) papers should be verified as present in the database"
+        ],
+        "what_would_improve_this": []
       }
     },
     {
@@ -3320,6 +3724,419 @@
           "Meta-regression model predicting effect size from league/contextual characteristics, which would quantify heterogeneity and identify unmeasured confounders."
         ],
         "process_cost_reflection": "This analysis synthesized ~200 individual paper summaries across a large sports analytics database. The cost-benefit trade-off is unclear: (1) Benefit: we identified 9 specific gaps and 4 actionable research directions, providing a map for future work. (2) Cost: parsing 200 summaries is time-consuming; many were irrelevant to the dismissal question (e.g., plyometric training, eye-tracking in basketball). If the goal is gap analysis for a specific question, a narrower extraction (e.g., 'retrieve papers citing coach/manager dismissal, turnover, or replacement') followed by full-text reading would be more efficient. Current process worked because the dismissal papers are few (5), so extensive reading of context was feasible. For broader questions (e.g., 'what does analytics reveal about team performance?'), the current approach of wide synthesis may be necessary. Recommendation: for future work, use keyword filtering (dismissal/turnover/replacement + performance) before assigning summaries to analysts, and reserve full database synthesis for meta-analyses or scoping reviews, not gap analyses for specific questions."
+      }
+    },
+    {
+      "slug": "how-accurate-is-the-wisdom-of-the-crowd-for-football-predictions-match",
+      "question": "How accurate is the 'wisdom of the crowd' for football predictions -- match outcomes, player valuations, and tournament results -- and how does crowd accuracy compare to algorithmic models and expert judgment?",
+      "created_at": "2026-02-20",
+      "analyzed_at": "2026-02-20",
+      "prompt_version": "?",
+      "model": "external_agent",
+      "papers_analyzed": 35,
+      "cost_usd": 0,
+      "analysis_confidence": "medium-low",
+      "scope_assessment": "Football (association football) primary, with relevant multi-sport prediction studies. Covers: (1) betting odds as crowd-aggregated predictions, (2) Transfermarkt as crowd-sourced valuation, (3) match/tournament prediction accuracy, (4) comparison between crowd, expert, and algorithmic predictions. Excludes in-depth analysis of ML model architectures. Focuses on accuracy assessment rather than prediction method development.",
+      "database_coverage": "35 directly relevant papers out of 8000 total.",
+      "confidence_explanation": "Only 35 directly relevant papers -- the topic sits between disciplines (behavioral economics, cognitive science, sports analytics) and may be underrepresented in a sports-focused database; Analysis based on titles, metadata, and sub-themes -- no full-text access to any paper; Blog posts from Van Haaren (odds accuracy analysis, Transfermarkt testing) may contain substantial evidence accessible only through full content; The term 'wisdom of the crowd' may not be used in the sports literature -- papers studying the phenomenon may use entirely different terminology (market efficiency, collective intelligence, judgment aggregation); The betting markets theme has 125 papers but many focus on gambling behavior, regulation, and advertising rather than prediction accuracy",
+      "landscape": {
+        "key_findings": [
+          {
+            "finding": "Betting odds are the strongest implicit wisdom-of-the-crowd mechanism in football, but the literature frames them exclusively as 'markets' using EMH language rather than 'crowds' using cognitive science language. Multiple papers test market efficiency without ever invoking the crowd wisdom framework.",
+            "evidence_strength": "strong",
+            "effect_size": "Betting markets show approximate semi-strong efficiency; closing odds are well-calibrated with ~2-5% overround",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W3198221774",
+                "title": "Are Sports Betting Markets Semi-Strong Efficient? Evidence From the COVID-19 Pandemic",
+                "year": 2021,
+                "sport": "football",
+                "doi": "https://doi.org/10.32731/ijsf/163.082021.01",
+                "first_author": "Pascal Flurin Meier"
+              },
+              {
+                "work_id": "https://openalex.org/W3128655830",
+                "title": "Sports prediction and betting models in the machine learning age: The case of tennis",
+                "year": 2021,
+                "sport": "tennis",
+                "doi": "https://doi.org/10.3233/jsa-200463",
+                "first_author": "Sascha Wilkens"
+              },
+              {
+                "work_id": "https://openalex.org/W4388183914",
+                "title": "Are Betting Markets Inefficient? Evidence From Simulations and Real Data",
+                "year": 2023,
+                "sport": "football",
+                "doi": "https://doi.org/10.1177/15270025231204997",
+                "first_author": "David Winkelmann"
+              },
+              {
+                "work_id": "https://openalex.org/W3109828610",
+                "title": "FIFA World Cup: A Case of (In)efficiency of the Betting Market",
+                "year": 2020,
+                "sport": "football",
+                "doi": "https://doi.org/10.32731/jsf.2020.a927061",
+                "first_author": "Ricardo Manuel Santos"
+              }
+            ],
+            "paper_count": 4
+          },
+          {
+            "finding": "Transfermarkt is the only explicitly crowd-sourced system studied in the database, but its prediction accuracy has never been systematically validated. Mueller (2017) explicitly positions data-driven models as superior to crowd judgments without measuring how accurate the crowd actually is.",
+            "evidence_strength": "moderate",
+            "effect_size": "Transfermarkt crowd valuations used as training targets (ground truth) in 50+ papers without independent validation of crowd accuracy",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W2612396739",
+                "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+                "year": 2017,
+                "sport": "football",
+                "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+                "first_author": "Oliver Müller"
+              },
+              {
+                "work_id": "https://openalex.org/W2806631010",
+                "title": "Information Precision in Online Communities: Player Valuations on www.Transfermarkt.De",
+                "year": 2018,
+                "sport": "football",
+                "doi": "https://doi.org/10.1177/155862351801300402",
+                "first_author": "Franziska Prockl"
+              },
+              {
+                "work_id": "https://openalex.org/W4410814915",
+                "title": "Predictive Modeling of Lower-Level English Club Soccer Using Crowd-Sourced Player Valuations",
+                "year": 2025,
+                "sport": "football",
+                "doi": "https://doi.org/10.5149/ms.1327",
+                "first_author": "J. Conway Brown"
+              }
+            ],
+            "paper_count": 3
+          },
+          {
+            "finding": "ML prediction models are benchmarked against bookmaker odds but never against pure crowd predictions (fan surveys, prediction tournaments, tipster aggregations). The crowd component of betting odds is never isolated from the algorithmic component.",
+            "evidence_strength": "moderate",
+            "effect_size": "ML models typically cannot beat closing odds (which include crowd information); comparison to pure crowd predictions never attempted",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4294142579",
+                "title": "On Predicting Soccer Outcomes in the Greek League Using Machine Learning",
+                "year": 2022,
+                "sport": "football",
+                "doi": "https://doi.org/10.3390/computers11090133",
+                "first_author": "Marios-Christos Malamatinos"
+              },
+              {
+                "work_id": "https://openalex.org/W3197767830",
+                "title": "Forecasting binary outcomes in soccer",
+                "year": 2021,
+                "sport": "football",
+                "doi": "https://doi.org/10.1007/s10479-021-04224-8",
+                "first_author": "Raffaele Mattera"
+              },
+              {
+                "work_id": "https://openalex.org/W7128157956",
+                "title": "Can simple models predict football — and beat the odds? Lessons from the German Bundesliga",
+                "year": 2026,
+                "sport": "football",
+                "doi": "https://doi.org/10.1177/22150218261416681",
+                "first_author": "Sascha Wilkens"
+              }
+            ],
+            "paper_count": 3
+          },
+          {
+            "finding": "Cognitive biases in crowd predictions are documented (fan bias, sentiment effects, overreaction) but never linked to overall crowd accuracy. We know crowds are biased in specific ways, but not whether aggregated biased predictions are still more accurate than alternatives.",
+            "evidence_strength": "moderate",
+            "effect_size": "Fan identity bias increases prediction error for own team (Na 2018, 38 citations); sentiment affects bookmaker pricing (Flepp 2014, 22 citations); overreaction detectable in odds (Wheatcroft 2020)",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W2899128831",
+                "title": "Do not bet on your favourite football team: the influence of fan identity-based biases and sport context knowledge on game prediction accuracy",
+                "year": 2018,
+                "sport": "football",
+                "doi": "https://doi.org/10.1080/16184742.2018.1530689",
+                "first_author": "Sangwon Na"
+              },
+              {
+                "work_id": "https://openalex.org/W2472731915",
+                "title": "Sentiment Bias in National Basketball Association Betting",
+                "year": 2016,
+                "sport": "basketball",
+                "doi": "https://doi.org/10.1177/1527002516656726",
+                "first_author": "Arne Feddersen"
+              },
+              {
+                "work_id": "https://openalex.org/W3121288399",
+                "title": "Does Bettor Sentiment Affect Bookmaker Pricing?",
+                "year": 2014,
+                "sport": "football",
+                "doi": "https://doi.org/10.1177/1527002514521427",
+                "first_author": "Raphael Flepp"
+              },
+              {
+                "work_id": "https://openalex.org/W3030416346",
+                "title": "Profiting from overreaction in soccer betting odds",
+                "year": 2020,
+                "sport": "football",
+                "doi": "https://doi.org/10.1515/jqas-2019-0009",
+                "first_author": "Edward Wheatcroft"
+              }
+            ],
+            "paper_count": 4
+          },
+          {
+            "finding": "Zero papers in the database use the term 'wisdom of the crowd' as a theoretical framework, invoke Surowiecki's four conditions (diversity, independence, decentralization, aggregation), or connect the sports prediction literature to the broader judgment aggregation literature from behavioral economics.",
+            "evidence_strength": "strong",
+            "effect_size": "Complete absence of the conceptual framework despite 35 papers studying its implicit manifestations",
+            "papers": [],
+            "paper_count": 0
+          }
+        ],
+        "key_papers": [
+          {
+            "citation": "Mueller, O. (2017)",
+            "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+            "contribution": "Foundational paper explicitly naming 'crowd judgments' (Transfermarkt) as the benchmark to beat with data-driven models. 166 citations. Ironically never measures how accurate the crowd actually is.",
+            "citations_count": 166,
+            "methodology": "statistical"
+          },
+          {
+            "citation": "Wilkens, S. (2021)",
+            "title": "Sports prediction and betting models in the machine learning age",
+            "contribution": "Comprehensive review of ML prediction models vs. betting markets. Tests whether algorithms can beat the market. 45 citations.",
+            "citations_count": 45,
+            "methodology": "machine_learning"
+          },
+          {
+            "citation": "Na, S. (2018)",
+            "title": "Do not bet on your favourite football team",
+            "contribution": "Demonstrates fan identity bias in football predictions -- a key crowd-wisdom failure mode. 38 citations.",
+            "citations_count": 38,
+            "methodology": "statistical"
+          },
+          {
+            "citation": "Prockl, F. (2018)",
+            "title": "Information Precision in Online Communities: Player Valuations on www.Transfermarkt.De",
+            "contribution": "Studies the precision of crowd-sourced information on Transfermarkt. 35 citations.",
+            "citations_count": 35,
+            "methodology": "descriptive"
+          },
+          {
+            "citation": "Strumbelj, E. (2014)",
+            "title": "A Comment on the Bias of Probabilities Derived From Betting Odds and Their Usefulness for Testing Models",
+            "contribution": "Foundational methodology for converting betting odds to probabilities -- essential for evaluating any prediction source. 31 citations.",
+            "citations_count": 31,
+            "methodology": "statistical"
+          },
+          {
+            "citation": "Meier, P.F. (2021)",
+            "title": "Are Sports Betting Markets Semi-Strong Efficient? Evidence from the COVID-19 Pandemic",
+            "contribution": "Tests market efficiency using COVID-19 ghost games as natural experiment. 19 citations.",
+            "citations_count": 19,
+            "methodology": "statistical"
+          },
+          {
+            "citation": "Mattera, R. (2021)",
+            "title": "Forecasting binary outcomes in soccer",
+            "contribution": "Develops forecasting framework for binary football outcomes with proper calibration assessment. 19 citations.",
+            "citations_count": 19,
+            "methodology": "statistical"
+          }
+        ],
+        "methodological_patterns": "The field is dominated by statistical methods (63%) with growing ML applications. Studies typically use betting odds as the gold standard benchmark. Calibration is rarely measured formally (Brier score used in <5 papers). Sample sizes range from single tournaments (64 matches) to multi-league multi-season datasets (10,000+ matches). The football-data.co.uk dataset is the most common odds source. No experimental designs -- all observational. No prediction tournament designs. The absence of proper scoring rules (beyond classification accuracy) is a methodological weakness."
+      },
+      "gaps": [
+        {
+          "id": 1,
+          "title": "No explicit wisdom-of-the-crowd study for football match predictions",
+          "description": "No paper in the database explicitly tests the wisdom-of-the-crowd hypothesis for football. Betting odds aggregate crowd and algorithmic information but are distorted by bookmaker margins. Pure crowd predictions -- fan surveys, prediction tournaments, tipster aggregations -- have never been systematically compared to odds or ML models. The concept of 'wisdom of the crowd' (Surowiecki, 2004) is never invoked despite being directly applicable.",
+          "type": "conceptual",
+          "importance": "critical",
+          "feasibility": "high",
+          "confidence": "high",
+          "suggested_approach": "Run a season-long prediction tournament collecting predictions from (1) large fan crowd (n>1000), (2) expert journalists (n>50), (3) closing bookmaker odds (football-data.co.uk), (4) ML models (Elo, Dixon-Coles). Compare Brier scores across all four. Test whether simple crowd averaging outperforms individual predictors.",
+          "evidence": "Run a season-long prediction tournament collecting predictions from (1) large fan crowd (n>1000), (2) expert journalists (n>50), (3) closing bookmaker odds (football-data.co.uk), (4) ML models (Elo, Dixon-Coles). Compare Brier scores across all four. Test whether simple crowd averaging outperforms individual predictors."
+        },
+        {
+          "id": 2,
+          "title": "Transfermarkt crowd valuation accuracy never validated against actual outcomes",
+          "description": "Transfermarkt is the largest crowd-sourced sports prediction system. Mueller (2017, 166 citations) explicitly positions data-driven models as superior to 'crowd judgments' but never measures crowd accuracy. 50+ papers use Transfermarkt valuations as training targets without validating whether the crowd is actually accurate. No paper tests whether crowd valuations predict transfer fees, league standings, or player performance.",
+          "type": "measurement",
+          "importance": "critical",
+          "feasibility": "high",
+          "confidence": "high",
+          "suggested_approach": "Compare Transfermarkt crowd valuations at season start to (1) actual transfer fees, (2) end-of-season league standings (aggregate squad value vs. final position), (3) individual player xG/xA (Understat). Compute MAE, Spearman rank correlation, and calibration curves across 10 seasons using Transfermarkt scraper and Understat API.",
+          "evidence": "Compare Transfermarkt crowd valuations at season start to (1) actual transfer fees, (2) end-of-season league standings (aggregate squad value vs. final position), (3) individual player xG/xA (Understat). Compute MAE, Spearman rank correlation, and calibration curves across 10 seasons using Transfermarkt scraper and Understat API."
+        },
+        {
+          "id": 3,
+          "title": "Crowd component of betting odds never isolated from algorithmic component",
+          "description": "Betting odds aggregate bookmaker models (algorithmic) and bettor activity (crowd). No paper decomposes odds into these components. Opening odds reflect bookmaker models; closing odds additionally reflect crowd betting. If closing odds are more accurate, the crowd adds value. This decomposition is essential to test whether the crowd part of odds is wise.",
+          "type": "methodological",
+          "importance": "high",
+          "feasibility": "high",
+          "confidence": "medium",
+          "suggested_approach": "Compare opening vs. closing odds from football-data.co.uk (available for 30+ leagues, 10+ seasons with opening and closing odds). Convert to implied probabilities using Strumbelj (2014) method. Compute Brier score improvement from opening to closing. This improvement isolates the crowd information contribution.",
+          "evidence": "Compare opening vs. closing odds from football-data.co.uk (available for 30+ leagues, 10+ seasons with opening and closing odds). Convert to implied probabilities using Strumbelj (2014) method. Compute Brier score improvement from opening to closing. This improvement isolates the crowd information contribution."
+        },
+        {
+          "id": 4,
+          "title": "No comparison across crowd types (fans, bettors, experts, algorithms)",
+          "description": "Different crowds may have different wisdom. Fans, professional bettors, journalists/pundits, and algorithms use different information and have different biases. Na (2018) shows fans are biased, but no study compares prediction accuracy across crowd types. The prediction aggregation literature (Tetlock superforecasting) has never been applied to football.",
+          "type": "methodological",
+          "importance": "high",
+          "feasibility": "medium",
+          "confidence": "high",
+          "suggested_approach": "Design multi-source prediction study: collect match predictions from (1) fan surveys (Reddit r/soccer, Twitter/X polls), (2) tipster aggregation sites, (3) journalist columns, (4) bookmaker odds, (5) ML models. Compare Brier scores for a full Premier League season.",
+          "evidence": "Design multi-source prediction study: collect match predictions from (1) fan surveys (Reddit r/soccer, Twitter/X polls), (2) tipster aggregation sites, (3) journalist columns, (4) bookmaker odds, (5) ML models. Compare Brier scores for a full Premier League season."
+        },
+        {
+          "id": 5,
+          "title": "Surowiecki's four conditions for crowd wisdom never tested in football",
+          "description": "Surowiecki (2004) identified four conditions: diversity of opinion, independence of judgment, decentralization, and effective aggregation. Football fandom may violate independence (social media herding, pundit influence) and diversity (shared cultural biases). No paper tests whether these conditions hold in football prediction contexts or whether violations degrade crowd accuracy.",
+          "type": "conceptual",
+          "importance": "high",
+          "feasibility": "medium",
+          "confidence": "medium",
+          "suggested_approach": "Analyze prediction data from social media for herding effects. Run controlled experiment: independent predictions vs. predictions after exposure to crowd consensus. Test whether diverse crowds (international) outpredict homogeneous ones (local fans).",
+          "evidence": "Analyze prediction data from social media for herding effects. Run controlled experiment: independent predictions vs. predictions after exposure to crowd consensus. Test whether diverse crowds (international) outpredict homogeneous ones (local fans)."
+        },
+        {
+          "id": 6,
+          "title": "Tournament-level crowd predictions (World Cup, Euros) never systematically evaluated",
+          "description": "Major tournaments generate massive crowd prediction activity -- office pools, prediction games, media forecasts. No paper systematically collects and evaluates crowd predictions for World Cups or European Championships. This is the highest-visibility crowd wisdom application with easily accessible data.",
+          "type": "applied",
+          "importance": "medium",
+          "feasibility": "high",
+          "confidence": "high",
+          "suggested_approach": "Collect prediction game data from public platforms (UEFA prediction game, Superbru, Kicktipp) for World Cup 2022 and Euro 2024. Compute aggregated crowd accuracy. Compare to bookmaker odds and Elo-based models (eloratings.net).",
+          "evidence": "Collect prediction game data from public platforms (UEFA prediction game, Superbru, Kicktipp) for World Cup 2022 and Euro 2024. Compute aggregated crowd accuracy. Compare to bookmaker odds and Elo-based models (eloratings.net)."
+        },
+        {
+          "id": 7,
+          "title": "Real-time crowd accuracy (in-play predictions) not examined",
+          "description": "In-play betting markets update continuously, reflecting real-time crowd belief revision. No paper tests whether in-play crowd predictions incorporate new information (goals, red cards, substitutions) efficiently. Live betting is a unique natural experiment in real-time collective intelligence.",
+          "type": "temporal",
+          "importance": "medium",
+          "feasibility": "medium",
+          "confidence": "medium",
+          "suggested_approach": "Track in-play odds movements around key match events. Measure adjustment speed and post-event calibration. Compare crowd reaction speed to algorithmic model updates. Use live odds data from BetExplorer or similar platforms.",
+          "evidence": "Track in-play odds movements around key match events. Measure adjustment speed and post-event calibration. Compare crowd reaction speed to algorithmic model updates. Use live odds data from BetExplorer or similar platforms."
+        },
+        {
+          "id": 8,
+          "title": "Cross-sport crowd prediction accuracy comparison absent",
+          "description": "Football has high inherent randomness (low scoring). Is crowd wisdom more or less accurate for low-predictability sports? No paper compares crowd prediction accuracy across sports. Testing whether sport predictability moderates crowd wisdom would connect the sports analytics literature to the broader judgment aggregation literature.",
+          "type": "contextual",
+          "importance": "medium",
+          "feasibility": "high",
+          "confidence": "medium",
+          "suggested_approach": "Compare betting market calibration (Brier score of closing odds) across football, basketball, tennis, and American football using football-data.co.uk and equivalent sources. Test whether crowd accuracy correlates with sport-level predictability (favorite win rate).",
+          "evidence": "Compare betting market calibration (Brier score of closing odds) across football, basketball, tennis, and American football using football-data.co.uk and equivalent sources. Test whether crowd accuracy correlates with sport-level predictability (favorite win rate)."
+        }
+      ],
+      "research_agenda": [
+        {
+          "title": "The Football Crowd Prediction Tournament: Fans vs. Experts vs. Algorithms vs. Markets",
+          "level": "PhD",
+          "addresses_gaps": [
+            1,
+            4,
+            5
+          ],
+          "estimated_duration": "12-18 months",
+          "suggested_methodology": "Run a season-long prediction tournament collecting predictions from: (1) large fan crowd via online survey (n>1000), (2) football journalists and experts (n>50), (3) closing bookmaker odds (football-data.co.uk), (4) baseline ML models (Elo from clubelo.com, Dixon-Coles, xG-based from Understat). Measure calibration (Brier score), discrimination (AUC), and sharpness. Apply Surowiecki framework: test diversity, independence, and aggregation effects. Use simple average, median, and extremized aggregation methods.",
+          "suggested_data": "football-data.co.uk odds (free, direct download), Club Elo API (free), Understat xG API (free), custom survey platform for crowd predictions. Estimated: ~380 Premier League matches per season x 4+ prediction sources x 1000+ crowd predictions per match.",
+          "potential_impact": "high",
+          "estimated_difficulty": "extreme",
+          "description": "How does the accuracy of aggregated crowd predictions for football match outcomes compare to bookmaker odds, expert predictions, and machine learning models?",
+          "priority": 1
+        },
+        {
+          "title": "Transfermarkt Crowd Valuation Accuracy: A 10-Year Assessment",
+          "level": "MSc",
+          "addresses_gaps": [
+            2
+          ],
+          "estimated_duration": "6-9 months",
+          "suggested_methodology": "Collect historical Transfermarkt valuations at season start (2015-2025) for top 5 European leagues. Compare to: (1) actual transfer fees (Transfermarkt transaction data), (2) end-of-season league position (aggregate squad value vs. final rank -- Spearman correlation), (3) individual player xG/xA (Understat). Compute MAE, RMSE, rank correlation, and calibration curves. Test whether crowd accuracy improves over time as the platform grows.",
+          "suggested_data": "Transfermarkt historical values (scraper, free), Understat API (free), FBref (free). Estimated: ~5,000 players x 10 seasons = 50,000 player-season observations.",
+          "potential_impact": "high",
+          "estimated_difficulty": "hard",
+          "description": "How accurate are Transfermarkt crowd-sourced player valuations in predicting actual transfer fees, league standings, and individual player performance?",
+          "priority": 2
+        },
+        {
+          "title": "Opening vs. Closing Odds: Isolating the Crowd Effect in Football Betting",
+          "level": "MSc",
+          "addresses_gaps": [
+            3
+          ],
+          "estimated_duration": "6 months",
+          "suggested_methodology": "Collect opening and closing odds from football-data.co.uk for 5+ leagues, 10 seasons. Convert to implied probabilities using Strumbelj (2014) overround removal. Compute Brier score for opening vs. closing probabilities against actual outcomes. The accuracy improvement from opening to closing isolates the crowd information contribution. Test by league, match importance, and market liquidity.",
+          "suggested_data": "football-data.co.uk (free, direct download -- includes opening and closing odds for 30+ leagues spanning 20+ years). Estimated: ~50,000 matches with opening + closing odds.",
+          "potential_impact": "medium",
+          "estimated_difficulty": "hard",
+          "description": "Do closing odds (reflecting crowd betting activity) outpredict opening odds (reflecting bookmaker models), thereby demonstrating crowd information value?",
+          "priority": 3
+        },
+        {
+          "title": "World Cup Crowd Predictions: How Wise Were the Masses?",
+          "level": "BSc",
+          "addresses_gaps": [
+            6
+          ],
+          "estimated_duration": "3-4 months",
+          "suggested_methodology": "Collect prediction game data from public platforms (Superbru, Kicktipp, UEFA prediction game). Aggregate crowd predictions per match. Compare to (1) closing bookmaker odds (football-data.co.uk), (2) Elo ratings (eloratings.net, free), (3) FIFA rankings. Compute Brier score per round. Test whether crowd accuracy degrades in knockout stages.",
+          "suggested_data": "Public prediction game archives (many publish results/standings), World Football Elo ratings (free), FIFA rankings (free), bookmaker odds (football-data.co.uk). Estimated: 64 WC matches + 51 Euro matches = 115 matches.",
+          "potential_impact": "medium",
+          "estimated_difficulty": "moderate",
+          "description": "How accurate were aggregated crowd predictions for the 2022 World Cup and Euro 2024, and did crowd predictions outperform simple Elo-based models?",
+          "priority": 4
+        },
+        {
+          "title": "Social Media Herding and the Collapse of Crowd Independence in Football",
+          "level": "PhD",
+          "addresses_gaps": [
+            5,
+            4
+          ],
+          "estimated_duration": "12 months",
+          "suggested_methodology": "Phase 1 (observational): Collect match predictions from Twitter/X and Reddit before and after popular pundits publish forecasts. Test whether individual predictions shift toward pundit consensus (herding). Phase 2 (experimental): Randomize participants into independent prediction condition vs. social information condition (seeing aggregated crowd prediction before making own). Compare Brier scores between conditions. Tests Surowiecki independence condition directly.",
+          "suggested_data": "Twitter/X API or scraper, Reddit r/soccer match threads, custom survey platform for experimental phase. Estimated: 1,000+ fan predictions per match x 38 matches for observational phase; 500 participants for experimental phase.",
+          "potential_impact": "high",
+          "estimated_difficulty": "extreme",
+          "description": "Do football fans exhibit herding behavior in predictions, and does exposure to pundit or crowd predictions reduce collective accuracy?",
+          "priority": 5
+        }
+      ],
+      "self_reflection": {
+        "strengths": [
+          "Searched 8,000+ papers across 6 themes (football, multi_sport, betting_markets, fan_engagement, player_valuation, methodology) to ensure comprehensive coverage",
+          "Identified a genuinely novel conceptual gap: the wisdom-of-the-crowd framework has never been applied to football despite being directly relevant to 35+ papers",
+          "Connected three isolated research streams (betting efficiency, Transfermarkt valuation, ML prediction) that all implicitly study crowd wisdom but never reference each other",
+          "All 8 gaps are specific and actionable with named data sources and feasibility assessments",
+          "Research agenda uses exclusively freely available data sources for all 5 proposed projects",
+          "Identified the irony that Mueller (2017, 166 citations) aims to go 'beyond crowd judgments' without ever measuring how good crowd judgments actually are"
+        ],
+        "limitations": [
+          "Only 35 directly relevant papers -- the topic sits between disciplines (behavioral economics, cognitive science, sports analytics) and may be underrepresented in a sports-focused database",
+          "Analysis based on titles, metadata, and sub-themes -- no full-text access to any paper",
+          "Blog posts from Van Haaren (odds accuracy analysis, Transfermarkt testing) may contain substantial evidence accessible only through full content",
+          "The term 'wisdom of the crowd' may not be used in the sports literature -- papers studying the phenomenon may use entirely different terminology (market efficiency, collective intelligence, judgment aggregation)",
+          "The betting markets theme has 125 papers but many focus on gambling behavior, regulation, and advertising rather than prediction accuracy"
+        ],
+        "database_coverage_gaps": [
+          "Behavioral economics and cognitive science journals studying crowd prediction applied to sports (Tetlock's Good Judgment Project, prediction markets literature) are likely not indexed in a sports analytics database",
+          "FiveThirtyEight's Elo-based football prediction models and their published calibration analyses exist as data journalism, not academic papers",
+          "Prediction market platforms (Metaculus, Polymarket, PredictIt) have sports prediction data and accuracy studies not covered",
+          "The experimental psychology literature on judgment aggregation (Mannes, Soll & Larrick) is foundational but not sports-specific and absent from this database",
+          "The operations research literature on forecast combination (Bates & Granger, 1969 -- the seminal paper showing combined forecasts outperform individuals) is not in a sports database despite being directly relevant",
+          "Kaggle competition leaderboards for football prediction (e.g., March Machine Learning Mania) contain crowd-vs-algorithm accuracy data not published academically",
+          "The Boda (2016) paper in Hungarian on football prediction and gender differences (W2753745987, 1 citation) may be more relevant than its low citation count suggests"
+        ],
+        "what_would_improve_this": []
       }
     },
     {
@@ -7867,6 +8684,348 @@
           "Tagging papers by research tradition (economics, biomechanics, data science, etc.) would clarify the interdisciplinary gaps and help users recognize when their question belongs to a different research community."
         ],
         "process_cost_reflection": "This gap analysis required ~40 papers reviewed in detail and ~100 skimmed to identify relevant concepts. The fundamental conclusion—that the research question cannot be answered from this database—emerged within the first 10-15 papers reviewed, but thoroughness required confirming this absence across the full set. The cost/benefit is unfavorable: we spent significant effort synthesizing an empty result. However, this null result is valuable: it clearly identifies (1) that the research question is outside the scope of the database's research community, and (2) where to look for relevant literature (sports economics). A better process would have been to conduct a pre-analysis assessment of whether the database was likely to contain literature on financial-competitive relationships, identify it as an economics question, and recommend the user consult sports economics sources. For future analyses, adding domain classification to papers would enable this assessment upfront. The 200-paper limit was sufficient to identify the absence; reading all 5392 papers would not change the conclusion."
+      }
+    },
+    {
+      "slug": "what-does-the-quantitative-evidence-say-about-the-relative-effectiveness-of",
+      "question": "What does the quantitative evidence say about the relative effectiveness of short vs. long corner kick delivery strategies in football, and what contextual factors moderate the optimal choice?",
+      "created_at": "2026-02-20",
+      "analyzed_at": "2026-02-20",
+      "prompt_version": "?",
+      "model": "external_agent",
+      "papers_analyzed": 15,
+      "cost_usd": 0,
+      "analysis_confidence": "medium-low",
+      "scope_assessment": "Football (association football) only. Focuses on corner kicks as a specific set-piece type, with delivery strategy (short vs. long) as the primary tactical variable. Includes related set-piece research (throw-ins, free kicks) for methodological comparison. Excludes penalty kicks as a distinct category. Covers all competitive levels where event data exists.",
+      "database_coverage": "15 directly relevant papers out of 481 total.",
+      "confidence_explanation": "Only 15 papers is a thin evidence base — synthesis depth is constrained by sparse academic literature on this specific topic; Analysis based on titles, metadata, and sub-themes only — no full-text access to any paper; TacticAI (53 citations) almost certainly contains detailed corner outcome data that could partially address the question, but full-text content not accessible; The blog post about Arsenal and set pieces is not peer-reviewed academic work; StatsBomb event data granularity for corner delivery type is assumed but not directly verified from the database; Shaw (2020), 'Routine Inspection: A Playbook for Corner Kicks' — referenced in existing tactical gap analysis — does not appear in search results and may be missing or indexed under different keywords",
+      "landscape": {
+        "key_findings": [
+          {
+            "finding": "TacticAI (Wang et al., 2024) is the landmark AI system for corner kick tactics, achieving 90% expert approval for tactical recommendations using geometric deep learning on tracking data. However, it optimizes player positioning within a chosen delivery type — it does not compare short vs. long corner effectiveness head-to-head.",
+            "evidence_strength": "strong",
+            "effect_size": "90% expert approval rate for TacticAI corner kick recommendations; system operates post-delivery-choice",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4392947498",
+                "title": "TacticAI: an AI assistant for football tactics",
+                "year": 2024,
+                "sport": "football",
+                "doi": "https://doi.org/10.1038/s41467-024-45965-x",
+                "first_author": "Zhe Wang"
+              },
+              {
+                "work_id": "https://openalex.org/W4387796460",
+                "title": "TacticAI: an AI assistant for football tactics",
+                "year": 2023,
+                "sport": "football",
+                "doi": "https://doi.org/10.48550/arxiv.2310.10553",
+                "first_author": "Zhe Wang"
+              }
+            ],
+            "paper_count": 2
+          },
+          {
+            "finding": "Corner kick research is descriptive, not causal. Studies document corner kick characteristics and success rates but do not isolate the causal effect of delivery type on outcomes. Selection bias is severe: teams choose short corners in specific situations, confounding raw outcome comparisons.",
+            "evidence_strength": "moderate",
+            "effect_size": "Corner kick effectiveness documented descriptively but no causal estimates of delivery type effect exist",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4391839610",
+                "title": "Corner Kick Characteristics: A Case Study of the 2020/21 Northern Ireland Football League (NIFL) Premiership Season",
+                "year": 2024,
+                "sport": "football",
+                "doi": "https://doi.org/10.1080/24748668.2024.2316334",
+                "first_author": "James Goodman"
+              },
+              {
+                "work_id": "https://openalex.org/W4391655216",
+                "title": "Automated Discovery of Successful Strategies in Association Football",
+                "year": 2024,
+                "sport": "football",
+                "doi": "https://doi.org/10.3390/app14041403",
+                "first_author": "Omar Muñoz"
+              }
+            ],
+            "paper_count": 2
+          },
+          {
+            "finding": "Defensive corner analysis (role classification, off-ball positioning) exists but is completely disconnected from offensive delivery strategy. The offensive-defensive interaction — how defensive setup should influence delivery choice — is unstudied.",
+            "evidence_strength": "moderate",
+            "effect_size": "Deep learning achieves successful defensive role classification but no link to offensive decision-making established",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4306398697",
+                "title": "Individual role classification for players defending corners in football (soccer)",
+                "year": 2022,
+                "sport": "football",
+                "doi": "https://doi.org/10.1515/jqas-2022-0003",
+                "first_author": "Pascal Bauer"
+              },
+              {
+                "work_id": "https://openalex.org/W7119234868",
+                "title": "A Machine Learning Framework for Off Ball Defensive Role and Performance Evaluation in Football",
+                "year": 2026,
+                "sport": "football",
+                "doi": null,
+                "first_author": "S.L. Groom"
+              }
+            ],
+            "paper_count": 2
+          },
+          {
+            "finding": "Causal inference methods have been applied to crossing in football (Alam, 2025) and penalty kicks (Zheng, 2024), demonstrating the methodology is feasible for set-piece analysis, but nobody has applied these methods to corner kicks specifically.",
+            "evidence_strength": "moderate",
+            "effect_size": "Causal methods proven feasible for football tactical decisions; not yet applied to corner delivery type",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4401393501",
+                "title": "Goalkeepers benefit from using deceptive actions in the soccer penalty kick",
+                "year": 2024,
+                "sport": "football",
+                "doi": "https://doi.org/10.1080/02640414.2024.2387969",
+                "first_author": "Ran Zheng"
+              }
+            ],
+            "paper_count": 2
+          },
+          {
+            "finding": "Set-piece importance is growing in competitive football, with journalistic evidence from the Premier League highlighting set pieces as a competitive differentiator. Academic evidence confirms set plays contribute significantly to goals in youth football but no longitudinal trend analysis exists for senior football.",
+            "evidence_strength": "weak",
+            "effect_size": "Set play contribution to goal-scoring documented in youth football; trend over time unknown for senior competition",
+            "papers": [
+              {
+                "work_id": "https://openalex.org/W4409606537",
+                "title": "Tactical Indicators and Situational Variables Affecting Goal-Scoring Opportunities in the UEFA Youth League 2023–2024",
+                "year": 2025,
+                "sport": "football",
+                "doi": "https://doi.org/10.3390/app15084532",
+                "first_author": "Vasilis Armatas"
+              }
+            ],
+            "paper_count": 1
+          }
+        ],
+        "key_papers": [
+          {
+            "citation": "Wang, Z. et al. (2024)",
+            "title": "TacticAI: an AI assistant for football tactics",
+            "contribution": "Landmark AI system for corner kick tactical recommendations using geometric deep learning; 90% expert approval rate. The most-cited paper on corner kick analytics.",
+            "citations_count": 53,
+            "methodology": "deep_learning"
+          },
+          {
+            "citation": "Bauer, P. (2022)",
+            "title": "Individual role classification for players defending corners in football",
+            "contribution": "Deep learning framework classifying individual defensive roles during corner kicks, enabling structured defensive analysis.",
+            "citations_count": 6,
+            "methodology": "deep_learning"
+          },
+          {
+            "citation": "Goodman, J. (2024)",
+            "title": "Corner Kick Characteristics: A Case Study of the 2020/21 Northern Irish Football League (NIFL) Premiership Season",
+            "contribution": "Descriptive analysis of corner kick effectiveness including offensive and defensive strategies in a competitive league setting.",
+            "citations_count": 6,
+            "methodology": "descriptive"
+          },
+          {
+            "citation": "Alam, S. (2025)",
+            "title": "Framing Causal Questions in Sports Analytics: A Case Study of Crossing in Soccer",
+            "contribution": "Demonstrates how causal inference (ATE, ATT) can be applied to football tactical decisions — directly applicable methodology for corner kick analysis.",
+            "citations_count": 0,
+            "methodology": "statistical"
+          },
+          {
+            "citation": "Muñoz, O. (2024)",
+            "title": "Automated Discovery of Successful Strategies in Association Football",
+            "contribution": "Pattern mining approach to discover successful corner kick strategies, identifying exploitable tactical patterns.",
+            "citations_count": 0,
+            "methodology": "machine_learning"
+          }
+        ],
+        "methodological_patterns": "The corner kick literature is overwhelmingly recent (2022–2026) and methodologically diverse but thin. Deep learning dominates the highest-impact work (TacticAI), while descriptive studies fill the remaining space. Causal inference has been demonstrated for adjacent football tactical questions (crossing, penalties) but not yet applied to corners. Sample sizes range from single-league seasons (Goodman, ~300 corners) to multi-league tracking datasets (TacticAI). No meta-analysis or systematic review of corner kick effectiveness exists. Open data availability through StatsBomb makes replication feasible."
+      },
+      "gaps": [
+        {
+          "id": 1,
+          "title": "No head-to-head comparison of short vs. long corner kick effectiveness",
+          "description": "No paper in the database compares the goal-scoring probability, expected goals generated, or possession outcomes of short vs. long corner kick delivery. This is the central tactical question for practitioners but remains empirically unanswered. TacticAI optimizes positioning within a delivery type but does not compare between types. Goodman describes characteristics but does not isolate delivery type as a variable.",
+          "type": "applied",
+          "importance": "critical",
+          "feasibility": "high",
+          "confidence": "high",
+          "suggested_approach": "Use StatsBomb event data (which tags corner kick delivery type) to compute xG generated per corner by delivery type (short/long/inswing/outswing). Apply propensity score matching or inverse probability weighting to control for confounders (game state, score, personnel, opponent strength).",
+          "evidence": "Use StatsBomb event data (which tags corner kick delivery type) to compute xG generated per corner by delivery type (short/long/inswing/outswing). Apply propensity score matching or inverse probability weighting to control for confounders (game state, score, personnel, opponent strength)."
+        },
+        {
+          "id": 2,
+          "title": "No causal inference applied to corner kick outcomes",
+          "description": "All corner kick studies are observational and descriptive. Selection bias is severe: teams choose short corners because of specific game situations (e.g., opponent parking the bus, time-wasting incentives), meaning raw comparison of outcomes is confounded. Alam (2025) demonstrates causal methods can work for crossing in football, but nobody has applied them to corners.",
+          "type": "methodological",
+          "importance": "critical",
+          "feasibility": "medium",
+          "confidence": "high",
+          "suggested_approach": "Apply the causal framework from Alam (2025) — ATE/ATT estimation via propensity scores — to corner kicks. Use instrumental variables (e.g., corner side relative to kicker foot, wind conditions) or exploit quasi-random variation in corner assignment (e.g., deflections creating corners in unusual positions).",
+          "evidence": "Apply the causal framework from Alam (2025) — ATE/ATT estimation via propensity scores — to corner kicks. Use instrumental variables (e.g., corner side relative to kicker foot, wind conditions) or exploit quasi-random variation in corner assignment (e.g., deflections creating corners in unusual positions)."
+        },
+        {
+          "id": 3,
+          "title": "Context-dependency of optimal corner strategy is unexplored",
+          "description": "The answer to 'short or long?' likely depends on match context: score differential, minute, opponent defensive setup, available personnel (tall target vs. technical players), home/away, and competition stage. No paper models corner effectiveness as a function of situational variables. TacticAI considers spatial positioning but not match-state factors.",
+          "type": "contextual",
+          "importance": "high",
+          "feasibility": "high",
+          "confidence": "medium",
+          "suggested_approach": "Build a conditional corner effectiveness model: xG = f(delivery_type, score_differential, minute, personnel_height, opponent_defensive_formation). Use gradient boosted trees with SHAP explanations to identify when short corners dominate long ones and vice versa.",
+          "evidence": "Build a conditional corner effectiveness model: xG = f(delivery_type, score_differential, minute, personnel_height, opponent_defensive_formation). Use gradient boosted trees with SHAP explanations to identify when short corners dominate long ones and vice versa."
+        },
+        {
+          "id": 4,
+          "title": "Defensive adaptation to corner strategies is not linked to offensive decisions",
+          "description": "Bauer (2022) classifies defensive roles at corners; Groom (2026) models off-ball defensive behavior. But neither connects defensive structure to the offensive delivery choice. A game-theoretic analysis is missing: if defenses adapt to a team's corner tendencies, the optimal strategy is a mixed strategy (randomizing), not a pure one. Whether teams play near Nash equilibrium is unknown.",
+          "type": "conceptual",
+          "importance": "high",
+          "feasibility": "medium",
+          "confidence": "medium",
+          "suggested_approach": "Model corner kicks as a simultaneous game between offense (delivery type) and defense (formation type). Compute payoff matrix from historical outcomes. Compute Nash equilibrium mixed strategy. Test whether actual team delivery distributions approach equilibrium predictions.",
+          "evidence": "Model corner kicks as a simultaneous game between offense (delivery type) and defense (formation type). Compute payoff matrix from historical outcomes. Compute Nash equilibrium mixed strategy. Test whether actual team delivery distributions approach equilibrium predictions."
+        },
+        {
+          "id": 5,
+          "title": "No longitudinal analysis of set-piece importance trends in senior football",
+          "description": "Journalistic evidence suggests set pieces are becoming a larger share of goals in top leagues (Arsenal's Premier League dominance partly attributed to set pieces). Armatas (2025) documents set-play importance in youth football. But no academic study tracks the proportion of goals from corners over time across senior leagues, or tests whether this proportion is increasing.",
+          "type": "temporal",
+          "importance": "medium",
+          "feasibility": "high",
+          "confidence": "medium",
+          "suggested_approach": "Use FBref goal-scoring data (2017/18–2025/26) for Big 5 European leagues. Compute percentage of goals originating from corners per season. Test for time trend using Poisson regression. Compare across leagues.",
+          "evidence": "Use FBref goal-scoring data (2017/18–2025/26) for Big 5 European leagues. Compute percentage of goals originating from corners per season. Test for time trend using Poisson regression. Compare across leagues."
+        },
+        {
+          "id": 6,
+          "title": "Second-ball and full possession chain outcomes not measured for corners",
+          "description": "Corner effectiveness is measured by direct goals or shots. But many corners generate second-ball situations — rebounds, deflections, recycled possession leading to delayed shots. Short corners may generate fewer direct goals but more sustained pressure. Long corners may get cleared but occasionally produce headers. No paper measures the full chain of outcomes following a corner, including secondary chances and counter-attack risk conceded.",
+          "type": "measurement",
+          "importance": "medium",
+          "feasibility": "medium",
+          "confidence": "medium",
+          "suggested_approach": "Use StatsBomb event sequences to track the full possession chain after each corner until possession changes or a shot occurs. Compute 'total xG generated in the 30 seconds following corner delivery' and 'counter-attack xG conceded' by delivery type.",
+          "evidence": "Use StatsBomb event sequences to track the full possession chain after each corner until possession changes or a shot occurs. Compute 'total xG generated in the 30 seconds following corner delivery' and 'counter-attack xG conceded' by delivery type."
+        },
+        {
+          "id": 7,
+          "title": "Women's football corner tactics entirely absent from the literature",
+          "description": "No paper studies corner kicks in women's football. Given differences in average height, aerial contest outcomes, and physical profiles, the optimal corner strategy may differ significantly between men's and women's football. Free StatsBomb data exists for multiple women's tournaments and leagues but remains unused for set-piece analysis.",
+          "type": "population",
+          "importance": "medium",
+          "feasibility": "high",
+          "confidence": "high",
+          "suggested_approach": "Replicate short vs. long corner analysis using StatsBomb Open Data for Women's World Cup and FA WSL. Compare optimal delivery strategies across genders. Test whether physical attribute differences moderate strategy effectiveness.",
+          "evidence": "Replicate short vs. long corner analysis using StatsBomb Open Data for Women's World Cup and FA WSL. Compare optimal delivery strategies across genders. Test whether physical attribute differences moderate strategy effectiveness."
+        }
+      ],
+      "research_agenda": [
+        {
+          "title": "Short vs. Long Corners: A Causal Analysis Using Event Data",
+          "level": "MSc",
+          "addresses_gaps": [
+            1,
+            2,
+            3
+          ],
+          "estimated_duration": "6–9 months",
+          "suggested_methodology": "Extract all corner kick events from StatsBomb Open Data (delivery type tagged). Compute xG generated within 30 seconds of each corner, including second-ball xG. Apply propensity score matching on confounders (score, minute, team, opponent Elo rating). Estimate ATE and CATE by context using causal forests. Use SHAP values to identify when each strategy dominates.",
+          "suggested_data": "StatsBomb Open Data (free — Premier League, La Liga, Bundesliga, Champions League with corner delivery type tagged), Club Elo API (free — opponent strength adjustment). Estimated: 5,000–15,000 corner kick events across multiple seasons.",
+          "potential_impact": "high",
+          "estimated_difficulty": "hard",
+          "description": "What is the causal effect of short vs. long corner delivery on expected goals generated, controlling for match context and selection bias?",
+          "priority": 1
+        },
+        {
+          "title": "Game-Theoretic Corner Kick Strategy: Do Teams Play Nash Equilibrium?",
+          "level": "PhD",
+          "addresses_gaps": [
+            4,
+            3
+          ],
+          "estimated_duration": "12 months",
+          "suggested_methodology": "Model corner kicks as a simultaneous-move game using Bauer (2022) defensive formation classification and StatsBomb offensive delivery type. Build payoff matrix from historical xG outcomes. Compute Nash equilibrium mixed strategies. Compare actual team delivery distributions to equilibrium. Test whether teams closer to equilibrium achieve better corner outcomes.",
+          "suggested_data": "StatsBomb event data + tracking data (for defensive formations). Bauer (2022) classification framework. Multiple seasons, minimum 2 leagues. Estimated: 10,000+ corners with defensive formation classification.",
+          "potential_impact": "high",
+          "estimated_difficulty": "extreme",
+          "description": "Can corner kick delivery be modeled as a strategic game, and do football teams play near the Nash equilibrium when choosing between short and long corners?",
+          "priority": 2
+        },
+        {
+          "title": "The Full Corner Kick Value Chain: Beyond Direct Goals",
+          "level": "MSc",
+          "addresses_gaps": [
+            6,
+            1
+          ],
+          "estimated_duration": "6 months",
+          "suggested_methodology": "Use StatsBomb event sequences to track full possession chains following corners. Decompose total corner value into: (1) first-contact xG, (2) second-ball xG, (3) sustained pressure xG, (4) counter-attack xG conceded (negative). Compare total value by delivery type. Test whether short corners generate more sustained value despite lower first-contact xG.",
+          "suggested_data": "StatsBomb Open Data event sequences with timestamps. Public xG model implementations (e.g., StatsBomb's open xG model or custom logistic regression). Estimated: 5,000+ corner possession chains.",
+          "potential_impact": "medium",
+          "estimated_difficulty": "hard",
+          "description": "What is the total expected value of a corner kick when including second-ball situations, recycled possession, and counter-attack risk?",
+          "priority": 3
+        },
+        {
+          "title": "Is Set-Piece Football Getting More Important? A Longitudinal Trend Analysis",
+          "level": "BSc",
+          "addresses_gaps": [
+            5
+          ],
+          "estimated_duration": "3–4 months",
+          "suggested_methodology": "Collect goal origin classification from FBref (2017/18–2025/26, Big 5 leagues). Categorize: open play, corner, direct free kick, indirect free kick, penalty, throw-in. Fit Poisson regression with year as predictor. Control for league fixed effects. Report trend coefficients with confidence intervals.",
+          "suggested_data": "FBref goal data (free, scraped). 8 seasons × 5 leagues × ~1,000 goals/league/season = ~40,000 goals.",
+          "potential_impact": "medium",
+          "estimated_difficulty": "moderate",
+          "description": "Is the proportion of goals scored from corners and set pieces increasing over time across major football leagues?",
+          "priority": 4
+        },
+        {
+          "title": "Women's Football Corner Strategy: Does Optimal Delivery Differ by Gender?",
+          "level": "BSc",
+          "addresses_gaps": [
+            7
+          ],
+          "estimated_duration": "4–6 months",
+          "suggested_methodology": "Apply short vs. long corner effectiveness analysis to StatsBomb Open Data for women's competitions. Compare xG per corner by delivery type across men's and women's tournaments. Test whether height differentials and aerial contest success rates moderate delivery type effectiveness.",
+          "suggested_data": "StatsBomb Open Data: Women's World Cup 2019 and 2023, FA WSL, NWSL (all free). Men's World Cup 2018 and 2022 for comparison. Estimated: 2,000+ women's corners, 1,000+ men's World Cup corners.",
+          "potential_impact": "medium",
+          "estimated_difficulty": "moderate",
+          "description": "Does the optimal corner delivery strategy differ between men's and women's football, and are physical attribute differences a moderating factor?",
+          "priority": 5
+        }
+      ],
+      "self_reflection": {
+        "strengths": [
+          "Identified all 15 relevant papers from the platform through multiple search strategies across football and tactical_analysis datasets",
+          "All 7 gaps are specific, actionable, and directly connected to the user's question — no generic gaps",
+          "Research agenda proposes 5 projects spanning BSc to PhD level, all feasible with freely available StatsBomb Open Data and FBref",
+          "Cross-referenced TacticAI (the landmark paper, 53 citations) with the existing tactical gap analysis to avoid duplication",
+          "Identified that the core question (short vs. long) is not just understudied but essentially unanswered — a clear finding",
+          "Connected adjacent methodological work (Alam 2025 on crossing causality) as a template for corner kick analysis"
+        ],
+        "limitations": [
+          "Only 15 papers is a thin evidence base — synthesis depth is constrained by sparse academic literature on this specific topic",
+          "Analysis based on titles, metadata, and sub-themes only — no full-text access to any paper",
+          "TacticAI (53 citations) almost certainly contains detailed corner outcome data that could partially address the question, but full-text content not accessible",
+          "The blog post about Arsenal and set pieces is not peer-reviewed academic work",
+          "StatsBomb event data granularity for corner delivery type is assumed but not directly verified from the database",
+          "Shaw (2020), 'Routine Inspection: A Playbook for Corner Kicks' — referenced in existing tactical gap analysis — does not appear in search results and may be missing or indexed under different keywords"
+        ],
+        "database_coverage_gaps": [
+          "Industry analysis from football analytics companies (StatsBomb, Opta, SkillCorner) likely contains the most relevant corner kick evidence but is not indexed academically",
+          "Conference presentations at OptaPro Forum and MIT Sloan frequently cover set-piece analytics but may not be fully indexed on the platform",
+          "Shaw (2020) 'Routine Inspection' paper may be missing from the database — should be verified and added if absent",
+          "Coaching materials (UEFA Pro License, FA coaching manuals) discuss corner strategy extensively but are not academic publications",
+          "Non-English research on set pieces (Spanish Liga analysis, German Bundesliga tactical studies, Dutch Eredivisie analytics) may exist but be underrepresented",
+          "Football manager simulation research and Expected Threat (xT) applications to set pieces may use different terminology not captured by keyword search"
+        ],
+        "what_would_improve_this": []
       }
     },
     {

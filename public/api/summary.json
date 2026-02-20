@@ -1,14 +1,14 @@
 {
   "description": "Summary statistics for the Living Sports Analytics platform",
-  "exported_at": "2026-02-20T08:23:24.045Z",
+  "exported_at": "2026-02-20T08:52:47.432Z",
   "papers": {
-    "total": 58802,
-    "with_abstract": 51721,
-    "classified": 14313,
-    "relevant": 13829
+    "total": 58814,
+    "with_abstract": 51733,
+    "classified": 14325,
+    "relevant": 13841
   },
   "authors": {
-    "total": 174649,
+    "total": 174661,
     "with_gender": 94438
   },
   "distributions": {
@@ -19,7 +19,7 @@
       },
       {
         "sport": "football",
-        "count": 3027
+        "count": 3039
       },
       {
         "sport": "other",
@@ -149,15 +149,15 @@
     "methodology": [
       {
         "methodology": "statistical",
-        "count": 8112
+        "count": 8116
       },
       {
         "methodology": "descriptive",
-        "count": 1501
+        "count": 1505
       },
       {
         "methodology": "review",
-        "count": 844
+        "count": 845
       },
       {
         "methodology": "machine_learning",
@@ -169,7 +169,7 @@
       },
       {
         "methodology": "mixed_methods",
-        "count": 525
+        "count": 526
       },
       {
         "methodology": "deep_learning",
@@ -185,7 +185,7 @@
       },
       {
         "methodology": "computer_vision",
-        "count": 176
+        "count": 177
       },
       {
         "methodology": "optimization",
@@ -193,7 +193,7 @@
       },
       {
         "methodology": "meta_analysis",
-        "count": 130
+        "count": 131
       },
       {
         "methodology": "network_analysis",
@@ -247,7 +247,7 @@
       },
       {
         "theme": "tactical_analysis",
-        "count": 481
+        "count": 493
       },
       {
         "theme": "coaching",
@@ -297,7 +297,7 @@
     "data_type": [
       {
         "data_type": "event",
-        "count": 2905
+        "count": 2914
       },
       {
         "data_type": "physiological",
@@ -309,7 +309,7 @@
       },
       {
         "data_type": "mixed",
-        "count": 2044
+        "count": 2045
       },
       {
         "data_type": "tracking",
@@ -321,7 +321,7 @@
       },
       {
         "data_type": "video",
-        "count": 1088
+        "count": 1089
       },
       {
         "data_type": "text",
@@ -329,11 +329,11 @@
       },
       {
         "data_type": null,
-        "count": 1
+        "count": 2
       }
     ]
   },
-  "womens_sport": 1669,
+  "womens_sport": 1670,
   "trends": {
     "sport_by_year": [
       {
@@ -839,7 +839,7 @@
       {
         "year": 2018,
         "sport": "football",
-        "count": 106
+        "count": 107
       },
       {
         "year": 2018,
@@ -2486,7 +2486,7 @@
       {
         "year": 2018,
         "methodology": "computer_vision",
-        "count": 7
+        "count": 8
       },
       {
         "year": 2018,
@@ -3503,7 +3503,7 @@
       {
         "year": 2018,
         "theme": "tactical_analysis",
-        "count": 19
+        "count": 20
       },
       {
         "year": 2018,

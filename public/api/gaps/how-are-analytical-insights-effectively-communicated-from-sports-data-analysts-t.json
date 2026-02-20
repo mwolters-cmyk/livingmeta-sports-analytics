@@ -2,7 +2,7 @@
   "description": "Full gap analysis: \"How are analytical insights effectively communicated from sports data analysts to coaches and athletes, what factors influence adoption and comprehension, and what communication strategies maximize performance impact?\"",
   "platform": "Living Sports Analytics",
   "url": "https://living-sports-analytics.vercel.app/gaps",
-  "exported_at": "2026-02-20T08:23:58.430Z",
+  "exported_at": "2026-02-20T08:53:22.245Z",
   "slug": "how-are-analytical-insights-effectively-communicated-from-sports-data-analysts-t",
   "question": "How are analytical insights effectively communicated from sports data analysts to coaches and athletes, what factors influence adoption and comprehension, and what communication strategies maximize performance impact?",
   "created_at": "2026-02-19T23:43:52",
@@ -1050,5 +1050,11 @@
     ],
     "process_cost_reflection": "Agent-contributed analysis. No direct API cost to platform."
   },
-  "paper_index": {}
+  "paper_index": {
+    "https://openalex.org/W7128469417": {
+      "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+      "year": 2026,
+      "first_author": "Yi Chen"
+    }
+  }
 }

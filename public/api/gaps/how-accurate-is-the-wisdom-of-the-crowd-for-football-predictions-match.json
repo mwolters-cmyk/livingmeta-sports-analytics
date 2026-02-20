@@ -1,0 +1,428 @@
+{
+  "description": "Full gap analysis: \"How accurate is the 'wisdom of the crowd' for football predictions -- match outcomes, player valuations, and tournament results -- and how does crowd accuracy compare to algorithmic models and expert judgment?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-20T08:53:22.243Z",
+  "slug": "how-accurate-is-the-wisdom-of-the-crowd-for-football-predictions-match",
+  "question": "How accurate is the 'wisdom of the crowd' for football predictions -- match outcomes, player valuations, and tournament results -- and how does crowd accuracy compare to algorithmic models and expert judgment?",
+  "created_at": "2026-02-20",
+  "analyzed_at": "2026-02-20",
+  "model": "external_agent",
+  "papers_analyzed": 35,
+  "cost_usd": 0,
+  "analysis_confidence": "medium-low",
+  "scope_assessment": "Football (association football) primary, with relevant multi-sport prediction studies. Covers: (1) betting odds as crowd-aggregated predictions, (2) Transfermarkt as crowd-sourced valuation, (3) match/tournament prediction accuracy, (4) comparison between crowd, expert, and algorithmic predictions. Excludes in-depth analysis of ML model architectures. Focuses on accuracy assessment rather than prediction method development.",
+  "database_coverage": "35 directly relevant papers out of 8000 total.",
+  "confidence_explanation": "Only 35 directly relevant papers -- the topic sits between disciplines (behavioral economics, cognitive science, sports analytics) and may be underrepresented in a sports-focused database; Analysis based on titles, metadata, and sub-themes -- no full-text access to any paper; Blog posts from Van Haaren (odds accuracy analysis, Transfermarkt testing) may contain substantial evidence accessible only through full content; The term 'wisdom of the crowd' may not be used in the sports literature -- papers studying the phenomenon may use entirely different terminology (market efficiency, collective intelligence, judgment aggregation); The betting markets theme has 125 papers but many focus on gambling behavior, regulation, and advertising rather than prediction accuracy",
+  "landscape": {
+    "key_findings": [
+      {
+        "finding": "Betting odds are the strongest implicit wisdom-of-the-crowd mechanism in football, but the literature frames them exclusively as 'markets' using EMH language rather than 'crowds' using cognitive science language. Multiple papers test market efficiency without ever invoking the crowd wisdom framework.",
+        "evidence_strength": "strong",
+        "effect_size": "Betting markets show approximate semi-strong efficiency; closing odds are well-calibrated with ~2-5% overround",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W3198221774",
+            "title": "Are Sports Betting Markets Semi-Strong Efficient? Evidence From the COVID-19 Pandemic",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.32731/ijsf/163.082021.01",
+            "first_author": "Pascal Flurin Meier"
+          },
+          {
+            "work_id": "https://openalex.org/W3128655830",
+            "title": "Sports prediction and betting models in the machine learning age: The case of tennis",
+            "year": 2021,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3233/jsa-200463",
+            "first_author": "Sascha Wilkens"
+          },
+          {
+            "work_id": "https://openalex.org/W4388183914",
+            "title": "Are Betting Markets Inefficient? Evidence From Simulations and Real Data",
+            "year": 2023,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/15270025231204997",
+            "first_author": "David Winkelmann"
+          },
+          {
+            "work_id": "https://openalex.org/W3109828610",
+            "title": "FIFA World Cup: A Case of (In)efficiency of the Betting Market",
+            "year": 2020,
+            "sport": "football",
+            "doi": "https://doi.org/10.32731/jsf.2020.a927061",
+            "first_author": "Ricardo Manuel Santos"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "Transfermarkt is the only explicitly crowd-sourced system studied in the database, but its prediction accuracy has never been systematically validated. Mueller (2017) explicitly positions data-driven models as superior to crowd judgments without measuring how accurate the crowd actually is.",
+        "evidence_strength": "moderate",
+        "effect_size": "Transfermarkt crowd valuations used as training targets (ground truth) in 50+ papers without independent validation of crowd accuracy",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2612396739",
+            "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+            "year": 2017,
+            "sport": "football",
+            "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+            "first_author": "Oliver Müller"
+          },
+          {
+            "work_id": "https://openalex.org/W2806631010",
+            "title": "Information Precision in Online Communities: Player Valuations on www.Transfermarkt.De",
+            "year": 2018,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/155862351801300402",
+            "first_author": "Franziska Prockl"
+          },
+          {
+            "work_id": "https://openalex.org/W4410814915",
+            "title": "Predictive Modeling of Lower-Level English Club Soccer Using Crowd-Sourced Player Valuations",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.5149/ms.1327",
+            "first_author": "J. Conway Brown"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "ML prediction models are benchmarked against bookmaker odds but never against pure crowd predictions (fan surveys, prediction tournaments, tipster aggregations). The crowd component of betting odds is never isolated from the algorithmic component.",
+        "evidence_strength": "moderate",
+        "effect_size": "ML models typically cannot beat closing odds (which include crowd information); comparison to pure crowd predictions never attempted",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4294142579",
+            "title": "On Predicting Soccer Outcomes in the Greek League Using Machine Learning",
+            "year": 2022,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/computers11090133",
+            "first_author": "Marios-Christos Malamatinos"
+          },
+          {
+            "work_id": "https://openalex.org/W3197767830",
+            "title": "Forecasting binary outcomes in soccer",
+            "year": 2021,
+            "sport": "football",
+            "doi": "https://doi.org/10.1007/s10479-021-04224-8",
+            "first_author": "Raffaele Mattera"
+          },
+          {
+            "work_id": "https://openalex.org/W7128157956",
+            "title": "Can simple models predict football — and beat the odds? Lessons from the German Bundesliga",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/22150218261416681",
+            "first_author": "Sascha Wilkens"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Cognitive biases in crowd predictions are documented (fan bias, sentiment effects, overreaction) but never linked to overall crowd accuracy. We know crowds are biased in specific ways, but not whether aggregated biased predictions are still more accurate than alternatives.",
+        "evidence_strength": "moderate",
+        "effect_size": "Fan identity bias increases prediction error for own team (Na 2018, 38 citations); sentiment affects bookmaker pricing (Flepp 2014, 22 citations); overreaction detectable in odds (Wheatcroft 2020)",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2899128831",
+            "title": "Do not bet on your favourite football team: the influence of fan identity-based biases and sport context knowledge on game prediction accuracy",
+            "year": 2018,
+            "sport": "football",
+            "doi": "https://doi.org/10.1080/16184742.2018.1530689",
+            "first_author": "Sangwon Na"
+          },
+          {
+            "work_id": "https://openalex.org/W2472731915",
+            "title": "Sentiment Bias in National Basketball Association Betting",
+            "year": 2016,
+            "sport": "basketball",
+            "doi": "https://doi.org/10.1177/1527002516656726",
+            "first_author": "Arne Feddersen"
+          },
+          {
+            "work_id": "https://openalex.org/W3121288399",
+            "title": "Does Bettor Sentiment Affect Bookmaker Pricing?",
+            "year": 2014,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/1527002514521427",
+            "first_author": "Raphael Flepp"
+          },
+          {
+            "work_id": "https://openalex.org/W3030416346",
+            "title": "Profiting from overreaction in soccer betting odds",
+            "year": 2020,
+            "sport": "football",
+            "doi": "https://doi.org/10.1515/jqas-2019-0009",
+            "first_author": "Edward Wheatcroft"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "Zero papers in the database use the term 'wisdom of the crowd' as a theoretical framework, invoke Surowiecki's four conditions (diversity, independence, decentralization, aggregation), or connect the sports prediction literature to the broader judgment aggregation literature from behavioral economics.",
+        "evidence_strength": "strong",
+        "effect_size": "Complete absence of the conceptual framework despite 35 papers studying its implicit manifestations",
+        "papers": [],
+        "paper_count": 0
+      }
+    ],
+    "key_papers": [
+      {
+        "citation": "Mueller, O. (2017)",
+        "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+        "contribution": "Foundational paper explicitly naming 'crowd judgments' (Transfermarkt) as the benchmark to beat with data-driven models. 166 citations. Ironically never measures how accurate the crowd actually is.",
+        "citations_count": 166,
+        "methodology": "statistical"
+      },
+      {
+        "citation": "Wilkens, S. (2021)",
+        "title": "Sports prediction and betting models in the machine learning age",
+        "contribution": "Comprehensive review of ML prediction models vs. betting markets. Tests whether algorithms can beat the market. 45 citations.",
+        "citations_count": 45,
+        "methodology": "machine_learning"
+      },
+      {
+        "citation": "Na, S. (2018)",
+        "title": "Do not bet on your favourite football team",
+        "contribution": "Demonstrates fan identity bias in football predictions -- a key crowd-wisdom failure mode. 38 citations.",
+        "citations_count": 38,
+        "methodology": "statistical"
+      },
+      {
+        "citation": "Prockl, F. (2018)",
+        "title": "Information Precision in Online Communities: Player Valuations on www.Transfermarkt.De",
+        "contribution": "Studies the precision of crowd-sourced information on Transfermarkt. 35 citations.",
+        "citations_count": 35,
+        "methodology": "descriptive"
+      },
+      {
+        "citation": "Strumbelj, E. (2014)",
+        "title": "A Comment on the Bias of Probabilities Derived From Betting Odds and Their Usefulness for Testing Models",
+        "contribution": "Foundational methodology for converting betting odds to probabilities -- essential for evaluating any prediction source. 31 citations.",
+        "citations_count": 31,
+        "methodology": "statistical"
+      },
+      {
+        "citation": "Meier, P.F. (2021)",
+        "title": "Are Sports Betting Markets Semi-Strong Efficient? Evidence from the COVID-19 Pandemic",
+        "contribution": "Tests market efficiency using COVID-19 ghost games as natural experiment. 19 citations.",
+        "citations_count": 19,
+        "methodology": "statistical"
+      },
+      {
+        "citation": "Mattera, R. (2021)",
+        "title": "Forecasting binary outcomes in soccer",
+        "contribution": "Develops forecasting framework for binary football outcomes with proper calibration assessment. 19 citations.",
+        "citations_count": 19,
+        "methodology": "statistical"
+      }
+    ],
+    "methodological_patterns": "The field is dominated by statistical methods (63%) with growing ML applications. Studies typically use betting odds as the gold standard benchmark. Calibration is rarely measured formally (Brier score used in <5 papers). Sample sizes range from single tournaments (64 matches) to multi-league multi-season datasets (10,000+ matches). The football-data.co.uk dataset is the most common odds source. No experimental designs -- all observational. No prediction tournament designs. The absence of proper scoring rules (beyond classification accuracy) is a methodological weakness."
+  },
+  "gaps": [
+    {
+      "id": 1,
+      "title": "No explicit wisdom-of-the-crowd study for football match predictions",
+      "description": "No paper in the database explicitly tests the wisdom-of-the-crowd hypothesis for football. Betting odds aggregate crowd and algorithmic information but are distorted by bookmaker margins. Pure crowd predictions -- fan surveys, prediction tournaments, tipster aggregations -- have never been systematically compared to odds or ML models. The concept of 'wisdom of the crowd' (Surowiecki, 2004) is never invoked despite being directly applicable.",
+      "type": "conceptual",
+      "importance": "critical",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Run a season-long prediction tournament collecting predictions from (1) large fan crowd (n>1000), (2) expert journalists (n>50), (3) closing bookmaker odds (football-data.co.uk), (4) ML models (Elo, Dixon-Coles). Compare Brier scores across all four. Test whether simple crowd averaging outperforms individual predictors.",
+      "evidence": "Run a season-long prediction tournament collecting predictions from (1) large fan crowd (n>1000), (2) expert journalists (n>50), (3) closing bookmaker odds (football-data.co.uk), (4) ML models (Elo, Dixon-Coles). Compare Brier scores across all four. Test whether simple crowd averaging outperforms individual predictors."
+    },
+    {
+      "id": 2,
+      "title": "Transfermarkt crowd valuation accuracy never validated against actual outcomes",
+      "description": "Transfermarkt is the largest crowd-sourced sports prediction system. Mueller (2017, 166 citations) explicitly positions data-driven models as superior to 'crowd judgments' but never measures crowd accuracy. 50+ papers use Transfermarkt valuations as training targets without validating whether the crowd is actually accurate. No paper tests whether crowd valuations predict transfer fees, league standings, or player performance.",
+      "type": "measurement",
+      "importance": "critical",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Compare Transfermarkt crowd valuations at season start to (1) actual transfer fees, (2) end-of-season league standings (aggregate squad value vs. final position), (3) individual player xG/xA (Understat). Compute MAE, Spearman rank correlation, and calibration curves across 10 seasons using Transfermarkt scraper and Understat API.",
+      "evidence": "Compare Transfermarkt crowd valuations at season start to (1) actual transfer fees, (2) end-of-season league standings (aggregate squad value vs. final position), (3) individual player xG/xA (Understat). Compute MAE, Spearman rank correlation, and calibration curves across 10 seasons using Transfermarkt scraper and Understat API."
+    },
+    {
+      "id": 3,
+      "title": "Crowd component of betting odds never isolated from algorithmic component",
+      "description": "Betting odds aggregate bookmaker models (algorithmic) and bettor activity (crowd). No paper decomposes odds into these components. Opening odds reflect bookmaker models; closing odds additionally reflect crowd betting. If closing odds are more accurate, the crowd adds value. This decomposition is essential to test whether the crowd part of odds is wise.",
+      "type": "methodological",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "medium",
+      "suggested_approach": "Compare opening vs. closing odds from football-data.co.uk (available for 30+ leagues, 10+ seasons with opening and closing odds). Convert to implied probabilities using Strumbelj (2014) method. Compute Brier score improvement from opening to closing. This improvement isolates the crowd information contribution.",
+      "evidence": "Compare opening vs. closing odds from football-data.co.uk (available for 30+ leagues, 10+ seasons with opening and closing odds). Convert to implied probabilities using Strumbelj (2014) method. Compute Brier score improvement from opening to closing. This improvement isolates the crowd information contribution."
+    },
+    {
+      "id": 4,
+      "title": "No comparison across crowd types (fans, bettors, experts, algorithms)",
+      "description": "Different crowds may have different wisdom. Fans, professional bettors, journalists/pundits, and algorithms use different information and have different biases. Na (2018) shows fans are biased, but no study compares prediction accuracy across crowd types. The prediction aggregation literature (Tetlock superforecasting) has never been applied to football.",
+      "type": "methodological",
+      "importance": "high",
+      "feasibility": "medium",
+      "confidence": "high",
+      "suggested_approach": "Design multi-source prediction study: collect match predictions from (1) fan surveys (Reddit r/soccer, Twitter/X polls), (2) tipster aggregation sites, (3) journalist columns, (4) bookmaker odds, (5) ML models. Compare Brier scores for a full Premier League season.",
+      "evidence": "Design multi-source prediction study: collect match predictions from (1) fan surveys (Reddit r/soccer, Twitter/X polls), (2) tipster aggregation sites, (3) journalist columns, (4) bookmaker odds, (5) ML models. Compare Brier scores for a full Premier League season."
+    },
+    {
+      "id": 5,
+      "title": "Surowiecki's four conditions for crowd wisdom never tested in football",
+      "description": "Surowiecki (2004) identified four conditions: diversity of opinion, independence of judgment, decentralization, and effective aggregation. Football fandom may violate independence (social media herding, pundit influence) and diversity (shared cultural biases). No paper tests whether these conditions hold in football prediction contexts or whether violations degrade crowd accuracy.",
+      "type": "conceptual",
+      "importance": "high",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "suggested_approach": "Analyze prediction data from social media for herding effects. Run controlled experiment: independent predictions vs. predictions after exposure to crowd consensus. Test whether diverse crowds (international) outpredict homogeneous ones (local fans).",
+      "evidence": "Analyze prediction data from social media for herding effects. Run controlled experiment: independent predictions vs. predictions after exposure to crowd consensus. Test whether diverse crowds (international) outpredict homogeneous ones (local fans)."
+    },
+    {
+      "id": 6,
+      "title": "Tournament-level crowd predictions (World Cup, Euros) never systematically evaluated",
+      "description": "Major tournaments generate massive crowd prediction activity -- office pools, prediction games, media forecasts. No paper systematically collects and evaluates crowd predictions for World Cups or European Championships. This is the highest-visibility crowd wisdom application with easily accessible data.",
+      "type": "applied",
+      "importance": "medium",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Collect prediction game data from public platforms (UEFA prediction game, Superbru, Kicktipp) for World Cup 2022 and Euro 2024. Compute aggregated crowd accuracy. Compare to bookmaker odds and Elo-based models (eloratings.net).",
+      "evidence": "Collect prediction game data from public platforms (UEFA prediction game, Superbru, Kicktipp) for World Cup 2022 and Euro 2024. Compute aggregated crowd accuracy. Compare to bookmaker odds and Elo-based models (eloratings.net)."
+    },
+    {
+      "id": 7,
+      "title": "Real-time crowd accuracy (in-play predictions) not examined",
+      "description": "In-play betting markets update continuously, reflecting real-time crowd belief revision. No paper tests whether in-play crowd predictions incorporate new information (goals, red cards, substitutions) efficiently. Live betting is a unique natural experiment in real-time collective intelligence.",
+      "type": "temporal",
+      "importance": "medium",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "suggested_approach": "Track in-play odds movements around key match events. Measure adjustment speed and post-event calibration. Compare crowd reaction speed to algorithmic model updates. Use live odds data from BetExplorer or similar platforms.",
+      "evidence": "Track in-play odds movements around key match events. Measure adjustment speed and post-event calibration. Compare crowd reaction speed to algorithmic model updates. Use live odds data from BetExplorer or similar platforms."
+    },
+    {
+      "id": 8,
+      "title": "Cross-sport crowd prediction accuracy comparison absent",
+      "description": "Football has high inherent randomness (low scoring). Is crowd wisdom more or less accurate for low-predictability sports? No paper compares crowd prediction accuracy across sports. Testing whether sport predictability moderates crowd wisdom would connect the sports analytics literature to the broader judgment aggregation literature.",
+      "type": "contextual",
+      "importance": "medium",
+      "feasibility": "high",
+      "confidence": "medium",
+      "suggested_approach": "Compare betting market calibration (Brier score of closing odds) across football, basketball, tennis, and American football using football-data.co.uk and equivalent sources. Test whether crowd accuracy correlates with sport-level predictability (favorite win rate).",
+      "evidence": "Compare betting market calibration (Brier score of closing odds) across football, basketball, tennis, and American football using football-data.co.uk and equivalent sources. Test whether crowd accuracy correlates with sport-level predictability (favorite win rate)."
+    }
+  ],
+  "research_agenda": [
+    {
+      "title": "The Football Crowd Prediction Tournament: Fans vs. Experts vs. Algorithms vs. Markets",
+      "level": "PhD",
+      "addresses_gaps": [
+        1,
+        4,
+        5
+      ],
+      "estimated_duration": "12-18 months",
+      "suggested_methodology": "Run a season-long prediction tournament collecting predictions from: (1) large fan crowd via online survey (n>1000), (2) football journalists and experts (n>50), (3) closing bookmaker odds (football-data.co.uk), (4) baseline ML models (Elo from clubelo.com, Dixon-Coles, xG-based from Understat). Measure calibration (Brier score), discrimination (AUC), and sharpness. Apply Surowiecki framework: test diversity, independence, and aggregation effects. Use simple average, median, and extremized aggregation methods.",
+      "suggested_data": "football-data.co.uk odds (free, direct download), Club Elo API (free), Understat xG API (free), custom survey platform for crowd predictions. Estimated: ~380 Premier League matches per season x 4+ prediction sources x 1000+ crowd predictions per match.",
+      "potential_impact": "high",
+      "estimated_difficulty": "extreme",
+      "description": "How does the accuracy of aggregated crowd predictions for football match outcomes compare to bookmaker odds, expert predictions, and machine learning models?",
+      "priority": 1
+    },
+    {
+      "title": "Transfermarkt Crowd Valuation Accuracy: A 10-Year Assessment",
+      "level": "MSc",
+      "addresses_gaps": [
+        2
+      ],
+      "estimated_duration": "6-9 months",
+      "suggested_methodology": "Collect historical Transfermarkt valuations at season start (2015-2025) for top 5 European leagues. Compare to: (1) actual transfer fees (Transfermarkt transaction data), (2) end-of-season league position (aggregate squad value vs. final rank -- Spearman correlation), (3) individual player xG/xA (Understat). Compute MAE, RMSE, rank correlation, and calibration curves. Test whether crowd accuracy improves over time as the platform grows.",
+      "suggested_data": "Transfermarkt historical values (scraper, free), Understat API (free), FBref (free). Estimated: ~5,000 players x 10 seasons = 50,000 player-season observations.",
+      "potential_impact": "high",
+      "estimated_difficulty": "hard",
+      "description": "How accurate are Transfermarkt crowd-sourced player valuations in predicting actual transfer fees, league standings, and individual player performance?",
+      "priority": 2
+    },
+    {
+      "title": "Opening vs. Closing Odds: Isolating the Crowd Effect in Football Betting",
+      "level": "MSc",
+      "addresses_gaps": [
+        3
+      ],
+      "estimated_duration": "6 months",
+      "suggested_methodology": "Collect opening and closing odds from football-data.co.uk for 5+ leagues, 10 seasons. Convert to implied probabilities using Strumbelj (2014) overround removal. Compute Brier score for opening vs. closing probabilities against actual outcomes. The accuracy improvement from opening to closing isolates the crowd information contribution. Test by league, match importance, and market liquidity.",
+      "suggested_data": "football-data.co.uk (free, direct download -- includes opening and closing odds for 30+ leagues spanning 20+ years). Estimated: ~50,000 matches with opening + closing odds.",
+      "potential_impact": "medium",
+      "estimated_difficulty": "hard",
+      "description": "Do closing odds (reflecting crowd betting activity) outpredict opening odds (reflecting bookmaker models), thereby demonstrating crowd information value?",
+      "priority": 3
+    },
+    {
+      "title": "World Cup Crowd Predictions: How Wise Were the Masses?",
+      "level": "BSc",
+      "addresses_gaps": [
+        6
+      ],
+      "estimated_duration": "3-4 months",
+      "suggested_methodology": "Collect prediction game data from public platforms (Superbru, Kicktipp, UEFA prediction game). Aggregate crowd predictions per match. Compare to (1) closing bookmaker odds (football-data.co.uk), (2) Elo ratings (eloratings.net, free), (3) FIFA rankings. Compute Brier score per round. Test whether crowd accuracy degrades in knockout stages.",
+      "suggested_data": "Public prediction game archives (many publish results/standings), World Football Elo ratings (free), FIFA rankings (free), bookmaker odds (football-data.co.uk). Estimated: 64 WC matches + 51 Euro matches = 115 matches.",
+      "potential_impact": "medium",
+      "estimated_difficulty": "moderate",
+      "description": "How accurate were aggregated crowd predictions for the 2022 World Cup and Euro 2024, and did crowd predictions outperform simple Elo-based models?",
+      "priority": 4
+    },
+    {
+      "title": "Social Media Herding and the Collapse of Crowd Independence in Football",
+      "level": "PhD",
+      "addresses_gaps": [
+        5,
+        4
+      ],
+      "estimated_duration": "12 months",
+      "suggested_methodology": "Phase 1 (observational): Collect match predictions from Twitter/X and Reddit before and after popular pundits publish forecasts. Test whether individual predictions shift toward pundit consensus (herding). Phase 2 (experimental): Randomize participants into independent prediction condition vs. social information condition (seeing aggregated crowd prediction before making own). Compare Brier scores between conditions. Tests Surowiecki independence condition directly.",
+      "suggested_data": "Twitter/X API or scraper, Reddit r/soccer match threads, custom survey platform for experimental phase. Estimated: 1,000+ fan predictions per match x 38 matches for observational phase; 500 participants for experimental phase.",
+      "potential_impact": "high",
+      "estimated_difficulty": "extreme",
+      "description": "Do football fans exhibit herding behavior in predictions, and does exposure to pundit or crowd predictions reduce collective accuracy?",
+      "priority": 5
+    }
+  ],
+  "self_reflection": {
+    "strengths": [
+      "Searched 8,000+ papers across 6 themes (football, multi_sport, betting_markets, fan_engagement, player_valuation, methodology) to ensure comprehensive coverage",
+      "Identified a genuinely novel conceptual gap: the wisdom-of-the-crowd framework has never been applied to football despite being directly relevant to 35+ papers",
+      "Connected three isolated research streams (betting efficiency, Transfermarkt valuation, ML prediction) that all implicitly study crowd wisdom but never reference each other",
+      "All 8 gaps are specific and actionable with named data sources and feasibility assessments",
+      "Research agenda uses exclusively freely available data sources for all 5 proposed projects",
+      "Identified the irony that Mueller (2017, 166 citations) aims to go 'beyond crowd judgments' without ever measuring how good crowd judgments actually are"
+    ],
+    "limitations": [
+      "Only 35 directly relevant papers -- the topic sits between disciplines (behavioral economics, cognitive science, sports analytics) and may be underrepresented in a sports-focused database",
+      "Analysis based on titles, metadata, and sub-themes -- no full-text access to any paper",
+      "Blog posts from Van Haaren (odds accuracy analysis, Transfermarkt testing) may contain substantial evidence accessible only through full content",
+      "The term 'wisdom of the crowd' may not be used in the sports literature -- papers studying the phenomenon may use entirely different terminology (market efficiency, collective intelligence, judgment aggregation)",
+      "The betting markets theme has 125 papers but many focus on gambling behavior, regulation, and advertising rather than prediction accuracy"
+    ],
+    "database_coverage_gaps": [
+      "Behavioral economics and cognitive science journals studying crowd prediction applied to sports (Tetlock's Good Judgment Project, prediction markets literature) are likely not indexed in a sports analytics database",
+      "FiveThirtyEight's Elo-based football prediction models and their published calibration analyses exist as data journalism, not academic papers",
+      "Prediction market platforms (Metaculus, Polymarket, PredictIt) have sports prediction data and accuracy studies not covered",
+      "The experimental psychology literature on judgment aggregation (Mannes, Soll & Larrick) is foundational but not sports-specific and absent from this database",
+      "The operations research literature on forecast combination (Bates & Granger, 1969 -- the seminal paper showing combined forecasts outperform individuals) is not in a sports database despite being directly relevant",
+      "Kaggle competition leaderboards for football prediction (e.g., March Machine Learning Mania) contain crowd-vs-algorithm accuracy data not published academically",
+      "The Boda (2016) paper in Hungarian on football prediction and gender differences (W2753745987, 1 citation) may be more relevant than its low citation count suggests"
+    ],
+    "what_would_improve_this": []
+  },
+  "paper_index": {
+    "https://openalex.org/W2612396739": {
+      "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+      "year": 2017,
+      "first_author": "Oliver Müller"
+    },
+    "https://openalex.org/W2753745987": {
+      "title": "A döntések lélektanának bemutatása egy labdarúgó tippjáték példáján keresztül",
+      "year": 2016,
+      "first_author": "Márton Attila Boda"
+    }
+  }
+}

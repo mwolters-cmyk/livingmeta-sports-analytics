@@ -1,0 +1,419 @@
+{
+  "description": "Full gap analysis: \"Can we objectively determine who the best footballer of the last decade (2015–2025) is using quantitative performance metrics, and what methodological framework would be required to do so?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-20T08:53:22.240Z",
+  "slug": "can-we-objectively-determine-who-the-best-footballer-of-the-last-decade",
+  "question": "Can we objectively determine who the best footballer of the last decade (2015–2025) is using quantitative performance metrics, and what methodological framework would be required to do so?",
+  "created_at": "2026-02-20",
+  "analyzed_at": "2026-02-20",
+  "model": "external_agent",
+  "papers_analyzed": 50,
+  "cost_usd": 0,
+  "analysis_confidence": "medium",
+  "scope_assessment": "Football (association football) only. Individual player evaluation, not team-level. Covers the period 2015–2025. Excludes purely qualitative or opinion-based assessments. Includes attacking, defensive, creative, and physical performance dimensions. Spans player rating systems, action-value models, market valuation proxies, and physical performance metrics.",
+  "database_coverage": "50 directly relevant papers out of 3027 total.",
+  "confidence_explanation": "Analysis based on titles, metadata, and brief abstracts — no full-text access to any of the 50 papers; Citation counts for 2025–2026 papers are near-zero (too recent for citation accumulation), making impact assessment unreliable for recent work; Some key papers (e.g., Fernández's Expected Possession Value, Decroos's VAEP original paper) may exist in the database under different keywords but were not captured by the search strategy; The platform skews toward academic publications; industry player evaluation models developed by clubs, betting companies, and analytics firms (e.g., Opta's Power Rankings) are absent; Could not access client-side-rendered paper detail pages for AI-generated summaries, limiting depth of individual paper assessment; Search strategy focused on English-language keywords; relevant German, Spanish, or Portuguese literature may have been missed",
+  "landscape": {
+    "key_findings": [
+      {
+        "finding": "Expected Goals (xG) is the dominant single metric for attacking player evaluation, but it only captures shot quality and frequency — ignoring defensive, creative, and off-ball contributions entirely.",
+        "evidence_strength": "strong",
+        "effect_size": "xG models achieve reasonable predictive accuracy for goal scoring but explain only one dimension of player quality",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7124851303",
+            "title": "Association Between Expected Goals (xG) and Goal Scoring Across Club and National Team Competitions in Elite Football",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.53905/inspiree.v7i01.161",
+            "first_author": "Cristian Murillo García"
+          },
+          {
+            "work_id": "https://openalex.org/W7118313619",
+            "title": "A Statistical Look into how Common Soccer Metrics Influence Expected Goal Measures in the Professional Game",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.33697/ajur.2025.161",
+            "first_author": "Tristan Rumsey"
+          },
+          {
+            "work_id": "https://openalex.org/W7121602014",
+            "title": "Goalstats - An application for statistics and predicitve analytics in football using Xg Algorithm in AI and Machine learning",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.5281/zenodo.18208314",
+            "first_author": "Sieer Shafi Lone"
+          },
+          {
+            "work_id": "https://openalex.org/W7128784313",
+            "title": "The Role of Shot Velocity in Advanced Post-Shot Metrics: Evidence from the UEFA European Football Championships",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/data11020039",
+            "first_author": "Blanca De-la-Cruz-Torres"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "Action-value frameworks (VAEP, xT, EPV) attempt position-agnostic player evaluation by assigning value to every on-ball action, but show poor validation against ground truth and struggle with defensive/midfield players.",
+        "evidence_strength": "moderate",
+        "effect_size": "Deep RL action-value models show negative correlation with actual goals in some implementations; VAEP validation remains limited to small samples",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7126281912",
+            "title": "VERSA: Verified Event Data Format for Reliable Soccer Analytics",
+            "year": 2026,
+            "sport": "football",
+            "doi": null,
+            "first_author": "Geonhee Jo"
+          },
+          {
+            "work_id": "https://openalex.org/W3035679825",
+            "title": "Inverse Reinforcement Learning for Team Sports: Valuing Actions and Players",
+            "year": 2020,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.24963/ijcai.2020/464",
+            "first_author": "Yudong Luo"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "PlayeRank (Pappalardo et al., 2019) is the most-cited purpose-built player ranking system (139 citations) designed to compare players across positions, but no independent replication or validation study exists in the database.",
+        "evidence_strength": "moderate",
+        "effect_size": "PlayeRank produces role-adjusted rankings using event data but has not been validated against expert consensus, transfer fees, or award voting",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2972682136",
+            "title": "PlayeRank",
+            "year": 2019,
+            "sport": "football",
+            "doi": "https://doi.org/10.1145/3343172",
+            "first_author": null
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "Market value (Transfermarkt) correlates with but does not equal playing quality. Transfer fee prediction models achieve R² = 0.40–0.70, but values reflect age, marketability, nationality, and contract status alongside on-field performance.",
+        "evidence_strength": "moderate",
+        "effect_size": "R² = 0.40–0.70 for transfer fee prediction; post-prime depreciation of −0.43/year after age 27 in Bundesliga regardless of form",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W2612396739",
+            "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+            "year": 2017,
+            "sport": "football",
+            "doi": "https://doi.org/10.1016/j.ejor.2017.05.005",
+            "first_author": "Oliver Müller"
+          },
+          {
+            "work_id": "https://openalex.org/W4283159414",
+            "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+            "year": 2022,
+            "sport": "football",
+            "doi": "https://doi.org/10.1016/j.ejor.2022.06.033",
+            "first_author": "Ian G. McHale"
+          },
+          {
+            "work_id": "https://openalex.org/W2917135457",
+            "title": "Measuring soccer players’ contributions to chance creation by valuing their passes",
+            "year": 2019,
+            "sport": "football",
+            "doi": "https://doi.org/10.1515/jqas-2018-0020",
+            "first_author": "Lotte Bransen"
+          },
+          {
+            "work_id": "https://openalex.org/W4407105460",
+            "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/ijfs13010017",
+            "first_author": "James H. Liu"
+          }
+        ],
+        "paper_count": 4
+      },
+      {
+        "finding": "No comprehensive cross-metric comparison study exists that applies multiple evaluation systems to the same set of players over the same time period. Each research stream operates as an isolated monologue.",
+        "evidence_strength": "weak",
+        "effect_size": "Absence of evidence — no convergent validity study identified in 3,027 football papers",
+        "papers": [],
+        "paper_count": 0
+      }
+    ],
+    "key_papers": [
+      {
+        "citation": "Müller, O. (2017)",
+        "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+        "contribution": "Foundational multilevel regression methodology for transfer fee estimation; established the field of data-driven player valuation",
+        "citations_count": 166,
+        "methodology": "statistical"
+      },
+      {
+        "citation": "Pappalardo, L. et al. (2019)",
+        "title": "PlayeRank: Data-driven Performance Evaluation and Player Ranking in Soccer via a Machine Learning Approach",
+        "contribution": "Most-cited player ranking system specifically designed to compare football players across positions using event data",
+        "citations_count": 139,
+        "methodology": "machine_learning"
+      },
+      {
+        "citation": "Jewell, R. T. (2015)",
+        "title": "The Effect of Marquee Players on Sports Demand",
+        "contribution": "Quantified the commercial and attendance impact of star players on team economics",
+        "citations_count": 80,
+        "methodology": "statistical"
+      },
+      {
+        "citation": "Al-Asadi, M. (2022)",
+        "title": "Predict the Value of Football Players Using FIFA Video Game Data and Machine Learning Techniques",
+        "contribution": "Modern ML approach demonstrating FIFA video game attributes as proxy for real-world player quality assessment",
+        "citations_count": 73,
+        "methodology": "machine_learning"
+      },
+      {
+        "citation": "Franceschi, M. (2023)",
+        "title": "Determinants of football players' valuation: A systematic review",
+        "contribution": "Comprehensive review identifying all factors driving player valuation in the literature",
+        "citations_count": 55,
+        "methodology": "review"
+      },
+      {
+        "citation": "McHale, I. G. (2022)",
+        "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+        "contribution": "Demonstrated R² = 0.40–0.70 for transfer fee prediction using advanced metrics",
+        "citations_count": 42,
+        "methodology": "machine_learning"
+      },
+      {
+        "citation": "Bransen, L. (2019)",
+        "title": "Measuring soccer players' contributions to chance creation by valuing their passes",
+        "contribution": "Linked individual passing actions to chance creation value, enabling creative player evaluation",
+        "citations_count": 42,
+        "methodology": "machine_learning"
+      }
+    ],
+    "methodological_patterns": "The field is dominated by cross-sectional observational studies using machine learning (gradient boosting, random forests, neural networks) and statistical regression. Sample sizes range from 50–500 matches for action-value models to 500–3,000+ players for transfer prediction. Deep reinforcement learning approaches emerged 2018–2020 but remain poorly validated. Longitudinal studies tracking the same players across multiple seasons are rare. Only 3–4 papers out of 50 relevant ones provide open code or data."
+  },
+  "gaps": [
+    {
+      "id": 1,
+      "title": "No longitudinal cross-metric player comparison spanning 2015–2025",
+      "description": "No paper applies multiple evaluation frameworks (xG, VAEP, PlayeRank, commercial ratings, market value) to the same set of elite players over a sustained period. Without convergent validity testing across systems, the question 'who is best' cannot be empirically answered because each metric produces a different ranking and no study examines whether these rankings converge or systematically diverge.",
+      "type": "methodological",
+      "importance": "critical",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Select top 50 players by Transfermarkt value per season (2015–2025). Apply xG/xA (Understat API), VAEP (StatsBomb Open Data), commercial ratings (WhoScored), and market value (Transfermarkt). Measure rank correlation (Kendall's tau, Spearman's rho) across systems per year and over the full period.",
+      "evidence": "Select top 50 players by Transfermarkt value per season (2015–2025). Apply xG/xA (Understat API), VAEP (StatsBomb Open Data), commercial ratings (WhoScored), and market value (Transfermarkt). Measure rank correlation (Kendall's tau, Spearman's rho) across systems per year and over the full period."
+    },
+    {
+      "id": 2,
+      "title": "Defensive and off-ball contributions remain un-quantified at scale",
+      "description": "Virtually all player evaluation metrics privilege on-ball attacking actions. Only one paper (W7128469417, 2026) attempts off-ball defensive evaluation using hidden Markov models. Players like Kanté, Casemiro, or Van Dijk are systematically undervalued by existing quantitative frameworks. Any 'best player' determination that ignores defensive contribution is inherently biased toward attackers.",
+      "type": "measurement",
+      "importance": "critical",
+      "feasibility": "medium",
+      "confidence": "high",
+      "suggested_approach": "Combine tracking data (positional/movement data) with event data to develop defensive contribution metrics such as 'Expected Defensive Actions' (xDA). Validate against goals conceded, shots faced, and expert defensive ratings while controlling for team and opposition quality.",
+      "evidence": "Combine tracking data (positional/movement data) with event data to develop defensive contribution metrics such as 'Expected Defensive Actions' (xDA). Validate against goals conceded, shots faced, and expert defensive ratings while controlling for team and opposition quality."
+    },
+    {
+      "id": 3,
+      "title": "No positional equivalence framework (football WAR) exists",
+      "description": "Comparing a striker's xG to a midfielder's key passes to a defender's aerial duels is comparing incommensurable quantities. No paper in the database develops a 'position-adjusted' meta-metric enabling cross-positional comparison — analogous to baseball's WAR (Wins Above Replacement). The concept is discussed in analytics blogs but has no rigorous academic implementation.",
+      "type": "conceptual",
+      "importance": "high",
+      "feasibility": "medium",
+      "confidence": "high",
+      "suggested_approach": "Define 'replacement level' per position using lower-league or squad rotation data. Compute each player's contribution above replacement using action-value models (VAEP). Normalize across positions to produce a single WAR-like number.",
+      "evidence": "Define 'replacement level' per position using lower-league or squad rotation data. Compute each player's contribution above replacement using action-value models (VAEP). Normalize across positions to produce a single WAR-like number."
+    },
+    {
+      "id": 4,
+      "title": "Absence of uncertainty quantification in player rankings",
+      "description": "All ranking systems produce point estimates without confidence intervals. When PlayeRank ranks Player A above Player B, the margin may be within statistical noise. No paper quantifies the uncertainty around player rankings, making it impossible to determine whether observed rank differences are statistically significant or artifacts of sampling variability.",
+      "type": "methodological",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "medium",
+      "suggested_approach": "Apply Bayesian hierarchical models to player evaluation, treating player quality as a latent variable with match-level observations. Produce posterior distributions over player quality and report credible intervals alongside rankings.",
+      "evidence": "Apply Bayesian hierarchical models to player evaluation, treating player quality as a latent variable with match-level observations. Produce posterior distributions over player quality and report credible intervals alongside rankings."
+    },
+    {
+      "id": 5,
+      "title": "No opponent-quality or league-difficulty adjustment for player metrics",
+      "description": "Player performance is not adjusted for opponent strength or league difficulty. A player scoring 30 goals in the Eredivisie is not equivalent to 30 goals in the Premier League, yet no standardized adjustment exists. Cross-league comparison of players (e.g., Messi in La Liga vs. Lewandowski in Bundesliga vs. Haaland in the Premier League) is methodologically unsupported.",
+      "type": "contextual",
+      "importance": "high",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "suggested_approach": "Use Club Elo ratings (free API) to weight each match contribution by opponent strength. Develop league-difficulty adjustment factors using Champions League cross-league performance as a natural experiment.",
+      "evidence": "Use Club Elo ratings (free API) to weight each match contribution by opponent strength. Develop league-difficulty adjustment factors using Champions League cross-league performance as a natural experiment."
+    },
+    {
+      "id": 6,
+      "title": "Peak performance vs. sustained consistency not formally distinguished",
+      "description": "The concept of 'best' conflates peak performance (e.g., Messi's 2022 World Cup) with sustained consistency (e.g., Lewandowski's decade of 30+ goal seasons). No paper formally decomposes player performance time-series into trend, seasonality, and peak components to enable comparison on each dimension separately.",
+      "type": "temporal",
+      "importance": "medium",
+      "feasibility": "high",
+      "confidence": "medium",
+      "suggested_approach": "Apply time-series decomposition (STL or similar) to player performance data. Compute separate 'peak quality' (best 10-match window) and 'career consistency' (variance-adjusted career average) metrics.",
+      "evidence": "Apply time-series decomposition (STL or similar) to player performance data. Compute separate 'peak quality' (best 10-match window) and 'career consistency' (variance-adjusted career average) metrics."
+    },
+    {
+      "id": 7,
+      "title": "Women's football entirely excluded from quantitative 'best player' discourse",
+      "description": "Only 2–3 valuation papers address women's football. The question 'who is the best footballer' implicitly excludes players like Alexia Putellas, Sam Kerr, or Ada Hegerberg. No comparative analytical framework exists to evaluate women's football players with the same rigor applied to men's football, despite data availability (StatsBomb open women's data).",
+      "type": "population",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Apply identical evaluation metrics (xG, VAEP, commercial ratings) to women's football using StatsBomb's freely available women's tournament data. Test measurement invariance across genders. Produce first quantitative women's football player ranking.",
+      "evidence": "Apply identical evaluation metrics (xG, VAEP, commercial ratings) to women's football using StatsBomb's freely available women's tournament data. Test measurement invariance across genders. Produce first quantitative women's football player ranking."
+    },
+    {
+      "id": 8,
+      "title": "No integration of physical, technical, and cognitive performance dimensions",
+      "description": "Papers on physical performance (GPS, sprint data), technical metrics (xG, passes, dribbles), and cognitive speed (NeuroSwift, W7125814715) exist in complete isolation. The 'best' player likely excels across multiple dimensions, but no integrative multi-dimensional framework exists. Physical, technical, and cognitive/tactical streams do not cross-reference each other.",
+      "type": "conceptual",
+      "importance": "medium",
+      "feasibility": "low",
+      "confidence": "medium",
+      "suggested_approach": "Develop a multi-dimensional player quality model combining physical (tracking data), technical (event data), and tactical/cognitive (decision-making metrics) components using multi-source data fusion and latent factor analysis.",
+      "evidence": "Develop a multi-dimensional player quality model combining physical (tracking data), technical (event data), and tactical/cognitive (decision-making metrics) components using multi-source data fusion and latent factor analysis."
+    }
+  ],
+  "research_agenda": [
+    {
+      "title": "The Football WAR Project: A Cross-Metric Longitudinal Player Ranking (2015–2025)",
+      "level": "PhD",
+      "addresses_gaps": [
+        1,
+        3,
+        5
+      ],
+      "estimated_duration": "12–18 months",
+      "suggested_methodology": "Collect per-match data for top 100 players per season from FBref (stats), Understat (xG/xA), Transfermarkt (market value), and WhoScored (ratings). Compute VAEP using StatsBomb event data. Calculate rank correlation (Kendall's tau) across systems. Develop composite WAR metric using factor analysis or principal component analysis. Validate against Ballon d'Or voting, Champions League performance, and expert panel.",
+      "suggested_data": "FBref (10 seasons × 100 players, scraped), Understat API (xG data since 2014/15), Transfermarkt (historical market values, scraped), StatsBomb Open Data (for VAEP computation), Club Elo API (opponent strength adjustment). Estimated total: ~10,000 player-seasons.",
+      "potential_impact": "high",
+      "estimated_difficulty": "extreme",
+      "description": "How do elite footballer rankings compare across evaluation systems, and can a composite Wins Above Replacement metric be constructed for football?",
+      "priority": 1
+    },
+    {
+      "title": "Quantifying Defensive Contributions: Towards Expected Defensive Actions (xDA)",
+      "level": "PhD",
+      "addresses_gaps": [
+        2,
+        8
+      ],
+      "estimated_duration": "12 months",
+      "suggested_methodology": "Combine tracking data (player positioning, pressure events, movement intensity) with event data (tackles, interceptions, clearances, aerial duels). Develop 'Expected Defensive Actions' metric. Validate against defensive outcomes (goals conceded, shots on target faced, clean sheets) controlling for team and opposition quality using multilevel regression.",
+      "suggested_data": "StatsBomb 360 data or tracking data from club partnerships. Event data from StatsBomb Open Data. Match outcome data from FBref. Minimum 3 seasons, 2 leagues.",
+      "potential_impact": "high",
+      "estimated_difficulty": "extreme",
+      "description": "Can defensive player contributions be quantified at a level comparable to xG for attacking players?",
+      "priority": 2
+    },
+    {
+      "title": "Bayesian Player Rankings with Credible Intervals",
+      "level": "MSc",
+      "addresses_gaps": [
+        4
+      ],
+      "estimated_duration": "6–9 months",
+      "suggested_methodology": "Implement Bayesian hierarchical model using match-level performance data as observations and player quality as latent variable. Use Stan or PyMC. Produce posterior distributions over player quality. Test whether the difference between consecutively ranked players exceeds a meaningful threshold with >95% posterior probability.",
+      "suggested_data": "FBref match-level statistics for top 5 European leagues, 10 seasons. ~50,000 player-match observations.",
+      "potential_impact": "medium",
+      "estimated_difficulty": "hard",
+      "description": "What are the credible intervals around elite player rankings, and are differences between top-ranked players statistically meaningful?",
+      "priority": 3
+    },
+    {
+      "title": "Opposition-Adjusted Performance Metrics for Cross-League Comparison",
+      "level": "MSc",
+      "addresses_gaps": [
+        5,
+        6
+      ],
+      "estimated_duration": "6 months",
+      "suggested_methodology": "Weight each player's per-match contributions by opponent Elo rating (Club Elo API, free). Compute league-difficulty adjustment factors using Champions League group stage results as cross-league calibration. Compare raw vs. adjusted rankings. Test sensitivity of 'best player' determination to adjustment method.",
+      "suggested_data": "Club Elo API (free, historical), FBref match-level data (5 leagues, 10 seasons), Champions League results and statistics.",
+      "potential_impact": "medium",
+      "estimated_difficulty": "hard",
+      "description": "How much do player performance metrics change when adjusted for opponent quality and league difficulty?",
+      "priority": 4
+    },
+    {
+      "title": "Women's Football Player Evaluation: Closing the Analytics Gender Gap",
+      "level": "MSc",
+      "addresses_gaps": [
+        7
+      ],
+      "estimated_duration": "6 months",
+      "suggested_methodology": "Apply xG, VAEP, and available commercial ratings to women's football data. Test measurement invariance across genders (do the same metrics capture the same constructs?). Produce first quantitative women's football player ranking using the same methodology as men's evaluation.",
+      "suggested_data": "StatsBomb Open Data (Women's World Cup, NWSL, FA WSL available for free), FBref women's football sections. Transfermarkt women's football valuations.",
+      "potential_impact": "high",
+      "estimated_difficulty": "hard",
+      "description": "Can existing player evaluation methods be validly applied to women's football, and who ranks as the best women's footballer of the last decade?",
+      "priority": 5
+    }
+  ],
+  "self_reflection": {
+    "strengths": [
+      "Identified 50+ relevant papers across performance analysis, player valuation, and tactical analysis themes from the platform database",
+      "Mapped five distinct research streams (xG, action-value, PlayeRank, market value, physical performance) and documented their disconnection",
+      "All 8 gaps are specific, actionable, and grounded in evidence from the database — no generic 'more research needed' gaps",
+      "Research agenda proposes concrete projects with named data sources (most freely available) and realistic timelines",
+      "Honest acknowledgment that the question is inherently multi-dimensional and that no single metric can answer it",
+      "Cross-referenced existing gap analyses (#5 player valuation, #13 tactical effectiveness) to avoid duplication"
+    ],
+    "limitations": [
+      "Analysis based on titles, metadata, and brief abstracts — no full-text access to any of the 50 papers",
+      "Citation counts for 2025–2026 papers are near-zero (too recent for citation accumulation), making impact assessment unreliable for recent work",
+      "Some key papers (e.g., Fernández's Expected Possession Value, Decroos's VAEP original paper) may exist in the database under different keywords but were not captured by the search strategy",
+      "The platform skews toward academic publications; industry player evaluation models developed by clubs, betting companies, and analytics firms (e.g., Opta's Power Rankings) are absent",
+      "Could not access client-side-rendered paper detail pages for AI-generated summaries, limiting depth of individual paper assessment",
+      "Search strategy focused on English-language keywords; relevant German, Spanish, or Portuguese literature may have been missed"
+    ],
+    "database_coverage_gaps": [
+      "Industry/proprietary player evaluation models (club analytics departments, betting firms) are not published academically and are absent from the database",
+      "Analytics blog posts and journalism (StatsBomb blog, The Athletic, FiveThirtyEight) contain relevant methodology not indexed on the platform",
+      "Conference proceedings from MIT Sloan Sports Analytics Conference and ECML Sports Analytics Workshop may be partially indexed",
+      "Non-English academic literature (Spanish football analytics, German Sportwissenschaft) likely underrepresented",
+      "The original Expected Possession Value (Fernández, 2019) and VAEP (Decroos et al., 2019) papers should be verified as present in the database"
+    ],
+    "what_would_improve_this": []
+  },
+  "paper_index": {
+    "https://openalex.org/W2612396739": {
+      "title": "Beyond crowd judgments: Data-driven estimation of market value in association football",
+      "year": 2017,
+      "first_author": "Oliver Müller"
+    },
+    "https://openalex.org/W4283159414": {
+      "title": "Estimating transfer fees of professional footballers using advanced performance metrics and machine learning",
+      "year": 2022,
+      "first_author": "Ian G. McHale"
+    },
+    "https://openalex.org/W4407105460": {
+      "title": "Post-Prime Football Player Valuations: Depreciation Difference Between the English Premier League and the Top European Leagues",
+      "year": 2025,
+      "first_author": "James H. Liu"
+    },
+    "https://openalex.org/W7128469417": {
+      "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+      "year": 2026,
+      "first_author": "Yi Chen"
+    },
+    "https://openalex.org/W7125814715": {
+      "title": "NeuroSwift: computer vision-based system to assess the cognitive–motor speed of soccer players—preliminary findings",
+      "year": 2026,
+      "first_author": "Fabián Moya-Vergara"
+    }
+  }
+}

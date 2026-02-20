@@ -1,6 +1,6 @@
 {
   "description": "Per-theme paper files. Each file contains all papers for one research theme in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
-  "exported_at": "2026-02-20T08:23:58.692Z",
+  "exported_at": "2026-02-20T08:53:22.479Z",
   "fields": [
     "work_id",
     "title",
@@ -16,7 +16,7 @@
     "referenced_works_count"
   ],
   "total_themes": 20,
-  "total_papers": 13829,
+  "total_papers": 13841,
   "themes": [
     {
       "theme": "performance_analysis",
@@ -77,9 +77,9 @@
     {
       "theme": "tactical_analysis",
       "slug": "tactical_analysis",
-      "total": 481,
+      "total": 493,
       "url": "/api/papers/theme/tactical_analysis.json",
-      "size_kb": 139
+      "size_kb": 142
     },
     {
       "theme": "coaching",

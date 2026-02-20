@@ -1,6 +1,6 @@
 {
   "description": "Machine-readable catalog of all data sources, tools, and libraries in the Living Sports Analytics platform. Each entry includes access instructions for AI agents where available.",
-  "exported_at": "2026-02-20T08:23:58.314Z",
+  "exported_at": "2026-02-20T08:53:22.177Z",
   "total": 733,
   "with_programmatic_access": 128,
   "without_access": 605,
