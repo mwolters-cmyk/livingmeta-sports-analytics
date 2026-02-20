@@ -498,7 +498,7 @@ export default function Home() {
                 <a href="/api/pipeline.json" className="hover:text-orange transition-colors">/api/pipeline.json</a>
               </h3>
               <p className="text-sm text-gray-500">
-                Full classification taxonomy (33 sports, 13 methods, 17 themes),
+                Full classification taxonomy (33 sports, 14 methods, 19 themes),
                 ingestion instructions, contribution guide.
               </p>
             </div>

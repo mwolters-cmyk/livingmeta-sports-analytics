@@ -154,7 +154,7 @@ export default function FeedsPage() {
           <div className="space-y-4">
             {/* Phase 1: Journals */}
             <div className="rounded-lg border border-emerald-100 bg-white p-4">
-              <h4 className="mb-1 text-sm font-semibold text-navy">Phase 1: Journal monitoring (28 journals)</h4>
+              <h4 className="mb-1 text-sm font-semibold text-navy">Phase 1: Journal monitoring (29 journals)</h4>
               <p className="mb-2 text-xs text-gray-500">
                 Every paper published in these journals is fetched &mdash; no keyword filter needed.
                 These are the core sports analytics, sports medicine, sport management, and sport economics journals.
@@ -187,9 +187,9 @@ export default function FeedsPage() {
 
             {/* Phase 2: Keywords */}
             <div className="rounded-lg border border-emerald-100 bg-white p-4">
-              <h4 className="mb-1 text-sm font-semibold text-navy">Phase 2: Keyword search (~100 queries)</h4>
+              <h4 className="mb-1 text-sm font-semibold text-navy">Phase 2: Keyword search (~164 queries)</h4>
               <p className="mb-2 text-xs text-gray-500">
-                Catches papers in journals outside Phase 1. Keywords are organized in 5 groups,
+                Catches papers in journals outside Phase 1. Keywords are organized in 10 groups,
                 each tuned for precision. The search uses OpenAlex full-text search (?search=) combined with
                 type:article and is_paratext:false filters.
               </p>
@@ -218,10 +218,40 @@ export default function FeedsPage() {
                     &ldquo;injury prediction sport&rdquo;, &ldquo;transfer market football&rdquo;, &ldquo;talent identification sport&rdquo;, &ldquo;referee decision sport&rdquo;, &ldquo;fan engagement analytics&rdquo; &hellip;
                   </p>
                 </div>
-                <div className="sm:col-span-2">
+                <div>
                   <p className="text-xs font-medium text-navy">Gender &amp; women&apos;s sport (17 queries)</p>
                   <p className="text-[10px] text-gray-500">
                     &ldquo;women&apos;s sport&rdquo;, &ldquo;female athlete&rdquo;, &ldquo;WNBA&rdquo;, &ldquo;women&apos;s cycling performance&rdquo;, &ldquo;gender equity sport&rdquo;, &ldquo;paralympic athlete performance&rdquo; &hellip;
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-navy">Injury &amp; rehabilitation (15 queries)</p>
+                  <p className="text-[10px] text-gray-500">
+                    &ldquo;sport injury prevention&rdquo;, &ldquo;ACL injury sport&rdquo;, &ldquo;hamstring injury football&rdquo;, &ldquo;concussion sport&rdquo;, &ldquo;return to sport injury&rdquo; &hellip;
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-navy">Female athlete medicine (14 queries)</p>
+                  <p className="text-[10px] text-gray-500">
+                    &ldquo;female athlete triad&rdquo;, &ldquo;RED-S athlete&rdquo;, &ldquo;menstrual cycle sport performance&rdquo;, &ldquo;ACL injury female athlete&rdquo; &hellip;
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-navy">Sports economics (15 queries)</p>
+                  <p className="text-[10px] text-gray-500">
+                    &ldquo;sport economics&rdquo;, &ldquo;athlete salary sport&rdquo;, &ldquo;revenue sharing sport&rdquo;, &ldquo;stadium economics&rdquo;, &ldquo;salary cap sport&rdquo; &hellip;
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-navy">OR &amp; optimization (11 queries)</p>
+                  <p className="text-[10px] text-gray-500">
+                    &ldquo;operations research sport&rdquo;, &ldquo;scheduling optimization sport&rdquo;, &ldquo;draft optimization sport&rdquo;, &ldquo;lineup optimization&rdquo; &hellip;
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-navy">Conference &amp; grey lit (7 queries)</p>
+                  <p className="text-[10px] text-gray-500">
+                    &ldquo;Sloan Sports Analytics Conference&rdquo;, &ldquo;MIT Sloan sport&rdquo;, &ldquo;KDD sport&rdquo;, &ldquo;StatsBomb open data&rdquo; &hellip;
                   </p>
                 </div>
               </div>
@@ -232,24 +262,6 @@ export default function FeedsPage() {
               </p>
             </div>
 
-            {/* Reserve keywords */}
-            <div className="rounded-lg border border-gray-100 bg-gray-50 p-4">
-              <h4 className="mb-1 text-sm font-semibold text-gray-600">Reserve keyword groups (not in weekly poll)</h4>
-              <p className="mb-2 text-xs text-gray-500">
-                Defined in config.py but not yet activated in the watcher. Available for targeted runs or future expansion.
-              </p>
-              <div className="flex flex-wrap gap-2 text-[10px] text-gray-400">
-                <span>Injury &amp; rehabilitation (15)</span>
-                <span>&middot;</span>
-                <span>Female athlete medicine (14)</span>
-                <span>&middot;</span>
-                <span>Sports economics (15)</span>
-                <span>&middot;</span>
-                <span>OR &amp; optimization (11)</span>
-                <span>&middot;</span>
-                <span>Conference &amp; grey lit (7)</span>
-              </div>
-            </div>
           </div>
 
           {/* AI agent sweetspot instruction */}
@@ -341,12 +353,12 @@ export default function FeedsPage() {
 
             {/* Methodologies */}
             <div className="mb-3">
-              <p className="mb-1.5 text-xs font-medium text-navy">Methodologies (13)</p>
+              <p className="mb-1.5 text-xs font-medium text-navy">Methodologies (14)</p>
               <div className="flex flex-wrap gap-1">
                 {[
                   "statistical", "machine_learning", "deep_learning", "NLP",
                   "computer_vision", "simulation", "optimization", "network_analysis",
-                  "qualitative", "mixed_methods", "review", "meta_analysis", "other",
+                  "qualitative", "mixed_methods", "descriptive", "review", "meta_analysis", "other",
                 ].map((m) => (
                   <span key={m} className="rounded-full bg-violet-100 px-2 py-0.5 text-[10px] text-violet-700">
                     {m.replace(/_/g, " ")}
@@ -357,14 +369,15 @@ export default function FeedsPage() {
 
             {/* Themes */}
             <div>
-              <p className="mb-1.5 text-xs font-medium text-navy">Themes (17)</p>
+              <p className="mb-1.5 text-xs font-medium text-navy">Themes (19)</p>
               <div className="flex flex-wrap gap-1">
                 {[
                   "performance_analysis", "injury_prevention", "tactical_analysis",
                   "betting_markets", "player_development", "player_valuation",
                   "transfer_market", "gender_equity", "bias_detection",
                   "data_engineering", "fan_engagement", "coaching",
-                  "nutrition_recovery", "psychology", "biomechanics", "methodology", "other",
+                  "nutrition_recovery", "psychology", "biomechanics",
+                  "physiology", "epidemiology", "methodology", "other",
                 ].map((t) => (
                   <span key={t} className="rounded-full bg-purple-100 px-2 py-0.5 text-[10px] text-purple-700">
                     {t.replace(/_/g, " ")}

@@ -700,14 +700,15 @@ try {
       methodologies: [
         "statistical", "machine_learning", "deep_learning", "NLP",
         "computer_vision", "simulation", "optimization", "network_analysis",
-        "qualitative", "mixed_methods", "review", "meta_analysis", "other",
+        "qualitative", "mixed_methods", "descriptive", "review", "meta_analysis", "other",
       ],
       themes: [
         "performance_analysis", "injury_prevention", "tactical_analysis",
         "betting_markets", "player_development", "player_valuation",
         "transfer_market", "gender_equity", "bias_detection",
         "data_engineering", "fan_engagement", "coaching",
-        "nutrition_recovery", "psychology", "biomechanics", "methodology", "other",
+        "nutrition_recovery", "psychology", "biomechanics",
+        "physiology", "epidemiology", "methodology", "other",
       ],
       relevance_scale: {
         min: 1,
@@ -1011,7 +1012,7 @@ try {
       `Search and filter ${classifiedRelevant.toLocaleString("en-US")}+ classified sports analytics papers by sport, methodology, theme, keyword`,
       `Read ${gapCount} AI-generated research gap analyses that identify what's studied, what's missing, and what to research next`,
       `Find ${resourceCount}+ data sources, tools, and libraries used in sports analytics research`,
-      "Access full classification taxonomy (33 sports, 13 methodologies, 17 themes)",  // counts from classification_taxonomy arrays below; update if taxonomy changes
+      "Access full classification taxonomy (33 sports, 14 methodologies, 19 themes)",  // counts from classification_taxonomy arrays below; update if taxonomy changes
       "Download structured data for bulk analysis",
       "Contribute gap analyses, scrapers, and data sources to grow the platform",
     ],

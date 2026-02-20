@@ -50,6 +50,7 @@
       "network_analysis",
       "qualitative",
       "mixed_methods",
+      "descriptive",
       "review",
       "meta_analysis",
       "other"
@@ -70,6 +71,8 @@
       "nutrition_recovery",
       "psychology",
       "biomechanics",
+      "physiology",
+      "epidemiology",
       "methodology",
       "other"
     ],

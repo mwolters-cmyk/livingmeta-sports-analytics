@@ -74,7 +74,7 @@ export default function ContributePage() {
           <h1 className="mb-3 text-3xl font-bold">Contribute</h1>
           <p className="max-w-2xl text-lg text-gray-300">
             You have an AI coding agent. This platform has nearly 14,000
-            classified sports analytics papers, 12 gap analyses, and an API
+            classified sports analytics papers, 17 gap analyses, and an API
             designed for agents. Put them together.
           </p>
         </div>
