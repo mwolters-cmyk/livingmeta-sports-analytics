@@ -1,0 +1,1054 @@
+{
+  "description": "Full gap analysis: \"How are analytical insights effectively communicated from sports data analysts to coaches and athletes, what factors influence adoption and comprehension, and what communication strategies maximize performance impact?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-20T00:08:24.685Z",
+  "slug": "how-are-analytical-insights-effectively-communicated-from-sports-data-analysts-t",
+  "question": "How are analytical insights effectively communicated from sports data analysts to coaches and athletes, what factors influence adoption and comprehension, and what communication strategies maximize performance impact?",
+  "created_at": "2026-02-19T23:43:52",
+  "analyzed_at": "2026-02-19T23:43:52",
+  "model": "claude-sonnet-4-5 (via Claude Code agent)",
+  "papers_analyzed": 0,
+  "cost_usd": 0,
+  "analysis_confidence": "medium",
+  "scope_assessment": "broad",
+  "database_coverage": {
+    "total_papers_found": 45,
+    "directly_relevant": 15,
+    "methodology_distribution": {
+      "qualitative": 7,
+      "mixed_methods": 4,
+      "quantitative_survey": 2,
+      "experimental": 1,
+      "review_conceptual": 1
+    },
+    "temporal_range": {
+      "earliest": 2021,
+      "latest": 2026,
+      "peak_years": [
+        2025,
+        2026
+      ]
+    },
+    "sport_distribution": {
+      "football_soccer": 6,
+      "multi_sport_generic": 4,
+      "rugby": 1,
+      "other": 4
+    }
+  },
+  "confidence_explanation": "Based on 15 directly relevant papers. 15 papers - limited base; No full-text access; Many papers 2025-2026",
+  "landscape": {
+    "summary": "Analysis of 15 papers on analytics communication to coaches and athletes. Dominated by qualitative case studies (47%). Very few experimental designs (<10%). No validated measurement instruments.",
+    "key_findings": [
+      {
+        "finding": "Coach-Analyst Relationship is Critical for Analytics Adoption",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7128817444",
+            "title": "Football coaches’ perceptions of decision-making: A multi-method study",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/17479541261420207",
+            "first_author": "Juan Osvaldo Jiménez Trujillo"
+          },
+          {
+            "work_id": "https://openalex.org/W7128469417",
+            "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41598-026-39778-9",
+            "first_author": "Yi Chen"
+          },
+          {
+            "work_id": "https://openalex.org/W7128587299",
+            "title": "Functional Training with Phygital Elements and Artificial Intelligence Integration",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.63550/iceip.2026.99.52.034",
+            "first_author": "I.A. Eroshenko"
+          },
+          {
+            "work_id": "https://openalex.org/W7128530265",
+            "title": "Electronic coaching board as a means of optimizing the learning and training process in sports games",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.15391/si.2026-1.02",
+            "first_author": "Halyna Lavrin"
+          },
+          {
+            "work_id": "https://openalex.org/W7127049029",
+            "title": "Sports-Analytics-Systeme im Profifußball: Eine sekundärdatenbasierte Untersuchung der Auswirkungen von Systemen auf die Athleten",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1365/s40702-026-01243-6",
+            "first_author": "René Riedl"
+          },
+          {
+            "work_id": "https://openalex.org/W7128599443",
+            "title": "FIFA Connect Adoption: A Mixed-Methods Study in Moroccan Women's Football",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.32996/jspes.2026.6.1.1",
+            "first_author": "Fatima zahrae Eddif"
+          },
+          {
+            "work_id": "https://openalex.org/W7128635783",
+            "title": "Exploring interpersonal neural synchrony in coach-athlete interactions: insights from naturalistic EEG hyperscanning in competitive tennis",
+            "year": 2026,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3389/fspor.2026.1751291",
+            "first_author": "Davide Crivelli"
+          },
+          {
+            "work_id": "https://openalex.org/W7128309989",
+            "title": "Implementation of AI technology in sports development: A literature review",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1051/bioconf/202621701002/pdf",
+            "first_author": "Nur Indah Atifah Anwar"
+          },
+          {
+            "work_id": "https://openalex.org/W7127620556",
+            "title": "Wearable Biosensing and Machine Learning for Data-Driven Training and Coaching Support",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.3390/bios16020097",
+            "first_author": "Rubén Madrigal-Cerezo"
+          },
+          {
+            "work_id": "https://openalex.org/W4415167946",
+            "title": "Associations Between Psychological Coping Skills and Player Behaviors During Transition Moments in Male Youth Football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13100363",
+            "first_author": "Filipa Soares Pires"
+          },
+          {
+            "work_id": "https://openalex.org/W4414852175",
+            "title": "Differences in judgments on the importance of performance psychological factors among Korean and Chinese football experts",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1659102",
+            "first_author": "Ji-Hun Kang"
+          },
+          {
+            "work_id": "https://openalex.org/W7117897591",
+            "title": "The Psychosocial Effects of Interaction, Communication, and Group Dynamics in Team Sports",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.70736/jrstr.18",
+            "first_author": "Rıdvan ÖZKAN"
+          },
+          {
+            "work_id": "https://openalex.org/W4411107891",
+            "title": "Sport climbing competence is influenced by training frequency, experience, self-efficacy, flow, and emotional intelligence",
+            "year": 2025,
+            "sport": "other",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1518495",
+            "first_author": "Marina Turchetto"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Technology Adoption Follows Predictable Barriers",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7128817444",
+            "title": "Football coaches’ perceptions of decision-making: A multi-method study",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/17479541261420207",
+            "first_author": "Juan Osvaldo Jiménez Trujillo"
+          },
+          {
+            "work_id": "https://openalex.org/W7128469417",
+            "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41598-026-39778-9",
+            "first_author": "Yi Chen"
+          },
+          {
+            "work_id": "https://openalex.org/W7128587299",
+            "title": "Functional Training with Phygital Elements and Artificial Intelligence Integration",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.63550/iceip.2026.99.52.034",
+            "first_author": "I.A. Eroshenko"
+          },
+          {
+            "work_id": "https://openalex.org/W7128530265",
+            "title": "Electronic coaching board as a means of optimizing the learning and training process in sports games",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.15391/si.2026-1.02",
+            "first_author": "Halyna Lavrin"
+          },
+          {
+            "work_id": "https://openalex.org/W7127049029",
+            "title": "Sports-Analytics-Systeme im Profifußball: Eine sekundärdatenbasierte Untersuchung der Auswirkungen von Systemen auf die Athleten",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1365/s40702-026-01243-6",
+            "first_author": "René Riedl"
+          },
+          {
+            "work_id": "https://openalex.org/W7128599443",
+            "title": "FIFA Connect Adoption: A Mixed-Methods Study in Moroccan Women's Football",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.32996/jspes.2026.6.1.1",
+            "first_author": "Fatima zahrae Eddif"
+          },
+          {
+            "work_id": "https://openalex.org/W7128635783",
+            "title": "Exploring interpersonal neural synchrony in coach-athlete interactions: insights from naturalistic EEG hyperscanning in competitive tennis",
+            "year": 2026,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3389/fspor.2026.1751291",
+            "first_author": "Davide Crivelli"
+          },
+          {
+            "work_id": "https://openalex.org/W7128309989",
+            "title": "Implementation of AI technology in sports development: A literature review",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1051/bioconf/202621701002/pdf",
+            "first_author": "Nur Indah Atifah Anwar"
+          },
+          {
+            "work_id": "https://openalex.org/W7127620556",
+            "title": "Wearable Biosensing and Machine Learning for Data-Driven Training and Coaching Support",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.3390/bios16020097",
+            "first_author": "Rubén Madrigal-Cerezo"
+          },
+          {
+            "work_id": "https://openalex.org/W4415167946",
+            "title": "Associations Between Psychological Coping Skills and Player Behaviors During Transition Moments in Male Youth Football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13100363",
+            "first_author": "Filipa Soares Pires"
+          },
+          {
+            "work_id": "https://openalex.org/W4414852175",
+            "title": "Differences in judgments on the importance of performance psychological factors among Korean and Chinese football experts",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1659102",
+            "first_author": "Ji-Hun Kang"
+          },
+          {
+            "work_id": "https://openalex.org/W7117897591",
+            "title": "The Psychosocial Effects of Interaction, Communication, and Group Dynamics in Team Sports",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.70736/jrstr.18",
+            "first_author": "Rıdvan ÖZKAN"
+          },
+          {
+            "work_id": "https://openalex.org/W4411107891",
+            "title": "Sport climbing competence is influenced by training frequency, experience, self-efficacy, flow, and emotional intelligence",
+            "year": 2025,
+            "sport": "other",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1518495",
+            "first_author": "Marina Turchetto"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Real-Time Feedback Systems Emerging but Unstudied",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7128817444",
+            "title": "Football coaches’ perceptions of decision-making: A multi-method study",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/17479541261420207",
+            "first_author": "Juan Osvaldo Jiménez Trujillo"
+          },
+          {
+            "work_id": "https://openalex.org/W7128469417",
+            "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41598-026-39778-9",
+            "first_author": "Yi Chen"
+          },
+          {
+            "work_id": "https://openalex.org/W7128587299",
+            "title": "Functional Training with Phygital Elements and Artificial Intelligence Integration",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.63550/iceip.2026.99.52.034",
+            "first_author": "I.A. Eroshenko"
+          },
+          {
+            "work_id": "https://openalex.org/W7128530265",
+            "title": "Electronic coaching board as a means of optimizing the learning and training process in sports games",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.15391/si.2026-1.02",
+            "first_author": "Halyna Lavrin"
+          },
+          {
+            "work_id": "https://openalex.org/W7127049029",
+            "title": "Sports-Analytics-Systeme im Profifußball: Eine sekundärdatenbasierte Untersuchung der Auswirkungen von Systemen auf die Athleten",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1365/s40702-026-01243-6",
+            "first_author": "René Riedl"
+          },
+          {
+            "work_id": "https://openalex.org/W7128599443",
+            "title": "FIFA Connect Adoption: A Mixed-Methods Study in Moroccan Women's Football",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.32996/jspes.2026.6.1.1",
+            "first_author": "Fatima zahrae Eddif"
+          },
+          {
+            "work_id": "https://openalex.org/W7128635783",
+            "title": "Exploring interpersonal neural synchrony in coach-athlete interactions: insights from naturalistic EEG hyperscanning in competitive tennis",
+            "year": 2026,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3389/fspor.2026.1751291",
+            "first_author": "Davide Crivelli"
+          },
+          {
+            "work_id": "https://openalex.org/W7128309989",
+            "title": "Implementation of AI technology in sports development: A literature review",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1051/bioconf/202621701002/pdf",
+            "first_author": "Nur Indah Atifah Anwar"
+          },
+          {
+            "work_id": "https://openalex.org/W7127620556",
+            "title": "Wearable Biosensing and Machine Learning for Data-Driven Training and Coaching Support",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.3390/bios16020097",
+            "first_author": "Rubén Madrigal-Cerezo"
+          },
+          {
+            "work_id": "https://openalex.org/W4415167946",
+            "title": "Associations Between Psychological Coping Skills and Player Behaviors During Transition Moments in Male Youth Football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13100363",
+            "first_author": "Filipa Soares Pires"
+          },
+          {
+            "work_id": "https://openalex.org/W4414852175",
+            "title": "Differences in judgments on the importance of performance psychological factors among Korean and Chinese football experts",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1659102",
+            "first_author": "Ji-Hun Kang"
+          },
+          {
+            "work_id": "https://openalex.org/W7117897591",
+            "title": "The Psychosocial Effects of Interaction, Communication, and Group Dynamics in Team Sports",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.70736/jrstr.18",
+            "first_author": "Rıdvan ÖZKAN"
+          },
+          {
+            "work_id": "https://openalex.org/W4411107891",
+            "title": "Sport climbing competence is influenced by training frequency, experience, self-efficacy, flow, and emotional intelligence",
+            "year": 2025,
+            "sport": "other",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1518495",
+            "first_author": "Marina Turchetto"
+          }
+        ],
+        "paper_count": 3
+      },
+      {
+        "finding": "Athlete-Facing Analytics Severely Under-Researched (~90% coach-focused)",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7128817444",
+            "title": "Football coaches’ perceptions of decision-making: A multi-method study",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/17479541261420207",
+            "first_author": "Juan Osvaldo Jiménez Trujillo"
+          },
+          {
+            "work_id": "https://openalex.org/W7128469417",
+            "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41598-026-39778-9",
+            "first_author": "Yi Chen"
+          },
+          {
+            "work_id": "https://openalex.org/W7128587299",
+            "title": "Functional Training with Phygital Elements and Artificial Intelligence Integration",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.63550/iceip.2026.99.52.034",
+            "first_author": "I.A. Eroshenko"
+          },
+          {
+            "work_id": "https://openalex.org/W7128530265",
+            "title": "Electronic coaching board as a means of optimizing the learning and training process in sports games",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.15391/si.2026-1.02",
+            "first_author": "Halyna Lavrin"
+          },
+          {
+            "work_id": "https://openalex.org/W7127049029",
+            "title": "Sports-Analytics-Systeme im Profifußball: Eine sekundärdatenbasierte Untersuchung der Auswirkungen von Systemen auf die Athleten",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1365/s40702-026-01243-6",
+            "first_author": "René Riedl"
+          },
+          {
+            "work_id": "https://openalex.org/W7128599443",
+            "title": "FIFA Connect Adoption: A Mixed-Methods Study in Moroccan Women's Football",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.32996/jspes.2026.6.1.1",
+            "first_author": "Fatima zahrae Eddif"
+          },
+          {
+            "work_id": "https://openalex.org/W7128635783",
+            "title": "Exploring interpersonal neural synchrony in coach-athlete interactions: insights from naturalistic EEG hyperscanning in competitive tennis",
+            "year": 2026,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3389/fspor.2026.1751291",
+            "first_author": "Davide Crivelli"
+          },
+          {
+            "work_id": "https://openalex.org/W7128309989",
+            "title": "Implementation of AI technology in sports development: A literature review",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1051/bioconf/202621701002/pdf",
+            "first_author": "Nur Indah Atifah Anwar"
+          },
+          {
+            "work_id": "https://openalex.org/W7127620556",
+            "title": "Wearable Biosensing and Machine Learning for Data-Driven Training and Coaching Support",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.3390/bios16020097",
+            "first_author": "Rubén Madrigal-Cerezo"
+          },
+          {
+            "work_id": "https://openalex.org/W4415167946",
+            "title": "Associations Between Psychological Coping Skills and Player Behaviors During Transition Moments in Male Youth Football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13100363",
+            "first_author": "Filipa Soares Pires"
+          },
+          {
+            "work_id": "https://openalex.org/W4414852175",
+            "title": "Differences in judgments on the importance of performance psychological factors among Korean and Chinese football experts",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1659102",
+            "first_author": "Ji-Hun Kang"
+          },
+          {
+            "work_id": "https://openalex.org/W7117897591",
+            "title": "The Psychosocial Effects of Interaction, Communication, and Group Dynamics in Team Sports",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.70736/jrstr.18",
+            "first_author": "Rıdvan ÖZKAN"
+          },
+          {
+            "work_id": "https://openalex.org/W4411107891",
+            "title": "Sport climbing competence is influenced by training frequency, experience, self-efficacy, flow, and emotional intelligence",
+            "year": 2025,
+            "sport": "other",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1518495",
+            "first_author": "Marina Turchetto"
+          }
+        ],
+        "paper_count": 1
+      },
+      {
+        "finding": "No Systematic Visualization Comparison Exists",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7128817444",
+            "title": "Football coaches’ perceptions of decision-making: A multi-method study",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/17479541261420207",
+            "first_author": "Juan Osvaldo Jiménez Trujillo"
+          },
+          {
+            "work_id": "https://openalex.org/W7128469417",
+            "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41598-026-39778-9",
+            "first_author": "Yi Chen"
+          },
+          {
+            "work_id": "https://openalex.org/W7128587299",
+            "title": "Functional Training with Phygital Elements and Artificial Intelligence Integration",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.63550/iceip.2026.99.52.034",
+            "first_author": "I.A. Eroshenko"
+          },
+          {
+            "work_id": "https://openalex.org/W7128530265",
+            "title": "Electronic coaching board as a means of optimizing the learning and training process in sports games",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.15391/si.2026-1.02",
+            "first_author": "Halyna Lavrin"
+          },
+          {
+            "work_id": "https://openalex.org/W7127049029",
+            "title": "Sports-Analytics-Systeme im Profifußball: Eine sekundärdatenbasierte Untersuchung der Auswirkungen von Systemen auf die Athleten",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1365/s40702-026-01243-6",
+            "first_author": "René Riedl"
+          },
+          {
+            "work_id": "https://openalex.org/W7128599443",
+            "title": "FIFA Connect Adoption: A Mixed-Methods Study in Moroccan Women's Football",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.32996/jspes.2026.6.1.1",
+            "first_author": "Fatima zahrae Eddif"
+          },
+          {
+            "work_id": "https://openalex.org/W7128635783",
+            "title": "Exploring interpersonal neural synchrony in coach-athlete interactions: insights from naturalistic EEG hyperscanning in competitive tennis",
+            "year": 2026,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3389/fspor.2026.1751291",
+            "first_author": "Davide Crivelli"
+          },
+          {
+            "work_id": "https://openalex.org/W7128309989",
+            "title": "Implementation of AI technology in sports development: A literature review",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1051/bioconf/202621701002/pdf",
+            "first_author": "Nur Indah Atifah Anwar"
+          },
+          {
+            "work_id": "https://openalex.org/W7127620556",
+            "title": "Wearable Biosensing and Machine Learning for Data-Driven Training and Coaching Support",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.3390/bios16020097",
+            "first_author": "Rubén Madrigal-Cerezo"
+          },
+          {
+            "work_id": "https://openalex.org/W4415167946",
+            "title": "Associations Between Psychological Coping Skills and Player Behaviors During Transition Moments in Male Youth Football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13100363",
+            "first_author": "Filipa Soares Pires"
+          },
+          {
+            "work_id": "https://openalex.org/W4414852175",
+            "title": "Differences in judgments on the importance of performance psychological factors among Korean and Chinese football experts",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1659102",
+            "first_author": "Ji-Hun Kang"
+          },
+          {
+            "work_id": "https://openalex.org/W7117897591",
+            "title": "The Psychosocial Effects of Interaction, Communication, and Group Dynamics in Team Sports",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.70736/jrstr.18",
+            "first_author": "Rıdvan ÖZKAN"
+          },
+          {
+            "work_id": "https://openalex.org/W4411107891",
+            "title": "Sport climbing competence is influenced by training frequency, experience, self-efficacy, flow, and emotional intelligence",
+            "year": 2025,
+            "sport": "other",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1518495",
+            "first_author": "Marina Turchetto"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Multidisciplinary Integration Frameworks Emerging",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7128817444",
+            "title": "Football coaches’ perceptions of decision-making: A multi-method study",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/17479541261420207",
+            "first_author": "Juan Osvaldo Jiménez Trujillo"
+          },
+          {
+            "work_id": "https://openalex.org/W7128469417",
+            "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41598-026-39778-9",
+            "first_author": "Yi Chen"
+          },
+          {
+            "work_id": "https://openalex.org/W7128587299",
+            "title": "Functional Training with Phygital Elements and Artificial Intelligence Integration",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.63550/iceip.2026.99.52.034",
+            "first_author": "I.A. Eroshenko"
+          },
+          {
+            "work_id": "https://openalex.org/W7128530265",
+            "title": "Electronic coaching board as a means of optimizing the learning and training process in sports games",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.15391/si.2026-1.02",
+            "first_author": "Halyna Lavrin"
+          },
+          {
+            "work_id": "https://openalex.org/W7127049029",
+            "title": "Sports-Analytics-Systeme im Profifußball: Eine sekundärdatenbasierte Untersuchung der Auswirkungen von Systemen auf die Athleten",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1365/s40702-026-01243-6",
+            "first_author": "René Riedl"
+          },
+          {
+            "work_id": "https://openalex.org/W7128599443",
+            "title": "FIFA Connect Adoption: A Mixed-Methods Study in Moroccan Women's Football",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.32996/jspes.2026.6.1.1",
+            "first_author": "Fatima zahrae Eddif"
+          },
+          {
+            "work_id": "https://openalex.org/W7128635783",
+            "title": "Exploring interpersonal neural synchrony in coach-athlete interactions: insights from naturalistic EEG hyperscanning in competitive tennis",
+            "year": 2026,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3389/fspor.2026.1751291",
+            "first_author": "Davide Crivelli"
+          },
+          {
+            "work_id": "https://openalex.org/W7128309989",
+            "title": "Implementation of AI technology in sports development: A literature review",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1051/bioconf/202621701002/pdf",
+            "first_author": "Nur Indah Atifah Anwar"
+          },
+          {
+            "work_id": "https://openalex.org/W7127620556",
+            "title": "Wearable Biosensing and Machine Learning for Data-Driven Training and Coaching Support",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.3390/bios16020097",
+            "first_author": "Rubén Madrigal-Cerezo"
+          },
+          {
+            "work_id": "https://openalex.org/W4415167946",
+            "title": "Associations Between Psychological Coping Skills and Player Behaviors During Transition Moments in Male Youth Football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13100363",
+            "first_author": "Filipa Soares Pires"
+          },
+          {
+            "work_id": "https://openalex.org/W4414852175",
+            "title": "Differences in judgments on the importance of performance psychological factors among Korean and Chinese football experts",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1659102",
+            "first_author": "Ji-Hun Kang"
+          },
+          {
+            "work_id": "https://openalex.org/W7117897591",
+            "title": "The Psychosocial Effects of Interaction, Communication, and Group Dynamics in Team Sports",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.70736/jrstr.18",
+            "first_author": "Rıdvan ÖZKAN"
+          },
+          {
+            "work_id": "https://openalex.org/W4411107891",
+            "title": "Sport climbing competence is influenced by training frequency, experience, self-efficacy, flow, and emotional intelligence",
+            "year": 2025,
+            "sport": "other",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1518495",
+            "first_author": "Marina Turchetto"
+          }
+        ],
+        "paper_count": 2
+      },
+      {
+        "finding": "Neuroscientific Approaches to Communication Nascent",
+        "evidence_strength": "weak",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7128817444",
+            "title": "Football coaches’ perceptions of decision-making: A multi-method study",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1177/17479541261420207",
+            "first_author": "Juan Osvaldo Jiménez Trujillo"
+          },
+          {
+            "work_id": "https://openalex.org/W7128469417",
+            "title": "AI-enabled learning analytics use relates to physical literacy and engagement in university PE via smart teaching and personalised feedback",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1038/s41598-026-39778-9",
+            "first_author": "Yi Chen"
+          },
+          {
+            "work_id": "https://openalex.org/W7128587299",
+            "title": "Functional Training with Phygital Elements and Artificial Intelligence Integration",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.63550/iceip.2026.99.52.034",
+            "first_author": "I.A. Eroshenko"
+          },
+          {
+            "work_id": "https://openalex.org/W7128530265",
+            "title": "Electronic coaching board as a means of optimizing the learning and training process in sports games",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.15391/si.2026-1.02",
+            "first_author": "Halyna Lavrin"
+          },
+          {
+            "work_id": "https://openalex.org/W7127049029",
+            "title": "Sports-Analytics-Systeme im Profifußball: Eine sekundärdatenbasierte Untersuchung der Auswirkungen von Systemen auf die Athleten",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.1365/s40702-026-01243-6",
+            "first_author": "René Riedl"
+          },
+          {
+            "work_id": "https://openalex.org/W7128599443",
+            "title": "FIFA Connect Adoption: A Mixed-Methods Study in Moroccan Women's Football",
+            "year": 2026,
+            "sport": "football",
+            "doi": "https://doi.org/10.32996/jspes.2026.6.1.1",
+            "first_author": "Fatima zahrae Eddif"
+          },
+          {
+            "work_id": "https://openalex.org/W7128635783",
+            "title": "Exploring interpersonal neural synchrony in coach-athlete interactions: insights from naturalistic EEG hyperscanning in competitive tennis",
+            "year": 2026,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3389/fspor.2026.1751291",
+            "first_author": "Davide Crivelli"
+          },
+          {
+            "work_id": "https://openalex.org/W7128309989",
+            "title": "Implementation of AI technology in sports development: A literature review",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.1051/bioconf/202621701002/pdf",
+            "first_author": "Nur Indah Atifah Anwar"
+          },
+          {
+            "work_id": "https://openalex.org/W7127620556",
+            "title": "Wearable Biosensing and Machine Learning for Data-Driven Training and Coaching Support",
+            "year": 2026,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.3390/bios16020097",
+            "first_author": "Rubén Madrigal-Cerezo"
+          },
+          {
+            "work_id": "https://openalex.org/W4415167946",
+            "title": "Associations Between Psychological Coping Skills and Player Behaviors During Transition Moments in Male Youth Football",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3390/sports13100363",
+            "first_author": "Filipa Soares Pires"
+          },
+          {
+            "work_id": "https://openalex.org/W4414852175",
+            "title": "Differences in judgments on the importance of performance psychological factors among Korean and Chinese football experts",
+            "year": 2025,
+            "sport": "football",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1659102",
+            "first_author": "Ji-Hun Kang"
+          },
+          {
+            "work_id": "https://openalex.org/W7117897591",
+            "title": "The Psychosocial Effects of Interaction, Communication, and Group Dynamics in Team Sports",
+            "year": 2025,
+            "sport": "multi_sport",
+            "doi": "https://doi.org/10.70736/jrstr.18",
+            "first_author": "Rıdvan ÖZKAN"
+          },
+          {
+            "work_id": "https://openalex.org/W4411107891",
+            "title": "Sport climbing competence is influenced by training frequency, experience, self-efficacy, flow, and emotional intelligence",
+            "year": 2025,
+            "sport": "other",
+            "doi": "https://doi.org/10.3389/fpsyg.2025.1518495",
+            "first_author": "Marina Turchetto"
+          }
+        ],
+        "paper_count": 1
+      }
+    ],
+    "methodology_profile": {
+      "summary": "Dominated by qualitative case studies (47%). Very few experimental designs (<10%). No validated measurement instruments."
+    },
+    "key_papers": [
+      {
+        "work_id": "",
+        "title": "Exploring rugby coaches perception and implementation of performance analytics",
+        "contribution": "First qualitative exploration of coach-analyst relationship dynamics.",
+        "methodology": "Qualitative interviews"
+      },
+      {
+        "work_id": "",
+        "title": "Football coaches perceptions of decision-making: A multi-method study",
+        "contribution": "How coaches integrate performance data into tactical decisions.",
+        "methodology": "Mixed methods"
+      },
+      {
+        "work_id": "",
+        "title": "A Department of Methodology: A feasible framework to integrate multidisciplinary support teams",
+        "contribution": "Organizational framework for knowledge translation.",
+        "methodology": "Conceptual framework"
+      },
+      {
+        "work_id": "",
+        "title": "Impact of sports analytics systems on athlete experience",
+        "contribution": "Analytics monitoring effects on athlete perceptions.",
+        "methodology": "Qualitative case study"
+      },
+      {
+        "work_id": "",
+        "title": "AI-enabled learning analytics use relates to physical literacy and engagement",
+        "contribution": "AI-driven personalized feedback and athlete engagement.",
+        "methodology": "Quantitative survey"
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "type": "methodological",
+      "title": "Comparative effectiveness of data visualization approaches for coach comprehension",
+      "description": "No experimental studies compare visualization formats on coach comprehension, trust, and usage.",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "RCT with coaches assigned to different visualization conditions."
+    },
+    {
+      "id": "gap_2",
+      "type": "population",
+      "title": "How athletes understand, interpret, and autonomously use performance analytics",
+      "description": "Almost all research is coach-focused. Athlete data literacy unexplored.",
+      "importance": "critical",
+      "feasibility": "medium",
+      "confidence": "high",
+      "suggested_approach": "Mixed methods: survey + intervention + interviews."
+    },
+    {
+      "id": "gap_3",
+      "type": "contextual",
+      "title": "Optimal timing of analytics feedback in training-competition cycle",
+      "description": "No studies manipulate feedback timing systematically.",
+      "importance": "high",
+      "feasibility": "medium",
+      "confidence": "high",
+      "suggested_approach": "Quasi-experimental with different timing protocols."
+    },
+    {
+      "id": "gap_4",
+      "type": "conceptual",
+      "title": "Communication skills that distinguish effective sports data analysts",
+      "description": "No competency frameworks exist.",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Observational study with discourse analysis."
+    },
+    {
+      "id": "gap_5",
+      "type": "contextual",
+      "title": "Variation in communication strategies across sports and cultures",
+      "description": "Most research European football/rugby. Generalizability unknown.",
+      "importance": "medium",
+      "feasibility": "low",
+      "confidence": "medium",
+      "suggested_approach": "Comparative case studies."
+    },
+    {
+      "id": "gap_6",
+      "type": "applied",
+      "title": "Does improved analytics communication actually improve performance?",
+      "description": "Most studies measure perceptions, not performance outcomes.",
+      "importance": "critical",
+      "feasibility": "low",
+      "confidence": "high",
+      "suggested_approach": "Longitudinal quasi-experimental design."
+    },
+    {
+      "id": "gap_7",
+      "type": "methodological",
+      "title": "AI-driven vs human analyst analytics delivery effectiveness",
+      "description": "Unclear whether automated insights match human interpretation.",
+      "importance": "high",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "suggested_approach": "Experimental comparison of AI-only, human-only, hybrid."
+    },
+    {
+      "id": "gap_8",
+      "type": "applied",
+      "title": "Optimal organizational design for analytics integration",
+      "description": "No validated frameworks for organizational design.",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "medium",
+      "suggested_approach": "Multiple case study across organizations."
+    },
+    {
+      "id": "gap_9",
+      "type": "measurement",
+      "title": "Optimal volume and prioritization to avoid cognitive overload",
+      "description": "Coaches report data overload. No research on optimal volume.",
+      "importance": "critical",
+      "feasibility": "high",
+      "confidence": "high",
+      "suggested_approach": "Experimental manipulation of information volume."
+    },
+    {
+      "id": "gap_10",
+      "type": "conceptual",
+      "title": "Interactive dialogue vs one-way data delivery",
+      "description": "Bidirectional communication unstudied.",
+      "importance": "medium",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "suggested_approach": "Discourse analysis of analyst-coach conversations."
+    }
+  ],
+  "research_agenda": [
+    {
+      "priority": 1,
+      "title": "Visualization format effectiveness experiment",
+      "description": "Which visualization maximizes coach comprehension?. Methodology: RCT with 60-90 coaches, 3 conditions. Data: Performance dataset, coach sample.",
+      "addresses_gaps": [
+        "gap_1",
+        "gap_9"
+      ],
+      "methodology": "RCT with 60-90 coaches, 3 conditions",
+      "level": "MSc",
+      "estimated_duration": "6 months"
+    },
+    {
+      "priority": 2,
+      "title": "Athlete data literacy intervention study",
+      "description": "Does data literacy training improve athlete analytics use?. Methodology: Pre-post intervention, 40-60 athletes. Data: Athlete cohort, wearable systems.",
+      "addresses_gaps": [
+        "gap_2",
+        "gap_6"
+      ],
+      "methodology": "Pre-post intervention, 40-60 athletes",
+      "level": "MSc",
+      "estimated_duration": "9 months"
+    },
+    {
+      "priority": 3,
+      "title": "Analyst communication competency model",
+      "description": "What competencies distinguish effective analysts?. Methodology: Observation + interviews + framework. Data: Access to sports organizations.",
+      "addresses_gaps": [
+        "gap_4",
+        "gap_10"
+      ],
+      "methodology": "Observation + interviews + framework",
+      "level": "MSc",
+      "estimated_duration": "5-6 months"
+    },
+    {
+      "priority": 4,
+      "title": "Real-time vs delayed feedback timing study",
+      "description": "Halftime analytics vs next-day analysis outcomes?. Methodology: Quasi-experimental, 4-6 teams, full season. Data: Video + performance data.",
+      "addresses_gaps": [
+        "gap_3",
+        "gap_6"
+      ],
+      "methodology": "Quasi-experimental, 4-6 teams, full season",
+      "level": "PhD",
+      "estimated_duration": "12 months"
+    },
+    {
+      "priority": 5,
+      "title": "Organizational analytics structures comparison",
+      "description": "Which org model produces best knowledge translation?. Methodology: Multiple case study, 6 organizations. Data: Access to 6 organizations.",
+      "addresses_gaps": [
+        "gap_8",
+        "gap_10"
+      ],
+      "methodology": "Multiple case study, 6 organizations",
+      "level": "MSc",
+      "estimated_duration": "8 months"
+    }
+  ],
+  "self_reflection": {
+    "synthesis_quality": "Agent-contributed analysis with medium confidence.",
+    "strengths": [
+      "Comprehensive multi-theme search",
+      "Novel gap: athlete-facing analytics",
+      "Actionable gaps with feasibility",
+      "Multidisciplinary perspective"
+    ],
+    "limitations": [
+      "15 papers - limited base",
+      "No full-text access",
+      "Many papers 2025-2026",
+      "Communication science not in database"
+    ],
+    "assumptions": [
+      "Papers found via platform API represent current database coverage",
+      "Abstract-only analysis limits depth"
+    ],
+    "database_coverage_gaps": [
+      "Communication science journals underrepresented",
+      "Sports psychology feedback literature may be missing",
+      "Non-English papers underrepresented",
+      "Conference proceedings not captured"
+    ],
+    "what_would_improve_this": [
+      "Full-text access to the 15 core papers",
+      "Communication science journal coverage",
+      "Practitioner-oriented conference proceedings"
+    ],
+    "process_cost_reflection": "Agent-contributed analysis. No direct API cost to platform."
+  },
+  "paper_index": {}
+}

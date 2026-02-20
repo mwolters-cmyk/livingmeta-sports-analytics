@@ -1,25 +1,25 @@
 {
   "description": "Summary statistics for the Living Sports Analytics platform",
-  "exported_at": "2026-02-19T23:26:15.971Z",
+  "exported_at": "2026-02-20T00:07:43.383Z",
   "papers": {
-    "total": 58796,
-    "with_abstract": 51715,
-    "classified": 14307,
-    "relevant": 13823
+    "total": 58802,
+    "with_abstract": 51721,
+    "classified": 14313,
+    "relevant": 13829
   },
   "authors": {
-    "total": 174644,
+    "total": 174649,
     "with_gender": 94438
   },
   "distributions": {
     "sport": [
       {
         "sport": "multi_sport",
-        "count": 3084
+        "count": 3087
       },
       {
         "sport": "football",
-        "count": 3024
+        "count": 3027
       },
       {
         "sport": "other",
@@ -149,7 +149,7 @@
     "methodology": [
       {
         "methodology": "statistical",
-        "count": 8107
+        "count": 8112
       },
       {
         "methodology": "descriptive",
@@ -157,7 +157,7 @@
       },
       {
         "methodology": "review",
-        "count": 843
+        "count": 844
       },
       {
         "methodology": "machine_learning",
@@ -227,7 +227,7 @@
       },
       {
         "theme": "methodology",
-        "count": 1011
+        "count": 1012
       },
       {
         "theme": "psychology",
@@ -263,7 +263,7 @@
       },
       {
         "theme": "player_valuation",
-        "count": 269
+        "count": 273
       },
       {
         "theme": "nutrition_recovery",
@@ -287,7 +287,7 @@
       },
       {
         "theme": "transfer_market",
-        "count": 44
+        "count": 45
       },
       {
         "theme": null,
@@ -297,7 +297,7 @@
     "data_type": [
       {
         "data_type": "event",
-        "count": 2903
+        "count": 2905
       },
       {
         "data_type": "physiological",
@@ -317,7 +317,7 @@
       },
       {
         "data_type": "not_specified",
-        "count": 1107
+        "count": 1110
       },
       {
         "data_type": "video",
@@ -326,6 +326,10 @@
       {
         "data_type": "text",
         "count": 466
+      },
+      {
+        "data_type": null,
+        "count": 1
       }
     ]
   },

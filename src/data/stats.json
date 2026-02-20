@@ -1,12 +1,12 @@
 {
-  "totalPapers": 58796,
-  "totalAuthors": 174644,
+  "totalPapers": 58802,
+  "totalAuthors": 174649,
   "authorsWithGender": 94438,
   "genderPercentage": 54.1,
-  "papersWithAbstract": 51715,
+  "papersWithAbstract": 51721,
   "abstractPercentage": 88,
-  "journalCount": 14701,
-  "oldestPaper": "2013-10-16",
+  "journalCount": 14703,
+  "oldestPaper": "2009",
   "newestPaper": "2026-12-19",
   "topJournals": [
     {
@@ -73,7 +73,7 @@
   "genderBreakdown": [
     {
       "gender": "unknown",
-      "count": 49435
+      "count": 49440
     },
     {
       "gender": "male",
@@ -93,6 +93,10 @@
     }
   ],
   "yearlyPapers": [
+    {
+      "year": 2009,
+      "count": 1
+    },
     {
       "year": 2013,
       "count": 2
@@ -150,18 +154,18 @@
       "count": 3882
     }
   ],
-  "totalClassified": 14307,
-  "classifiedRelevant": 13823,
+  "totalClassified": 14313,
+  "classifiedRelevant": 13829,
   "classifiedNotApplicable": 484,
   "womensSportCount": 1669,
   "sportDistribution": [
     {
       "sport": "multi_sport",
-      "count": 3084
+      "count": 3087
     },
     {
       "sport": "football",
-      "count": 3024
+      "count": 3027
     },
     {
       "sport": "other",
@@ -291,7 +295,7 @@
   "methodologyDistribution": [
     {
       "methodology": "statistical",
-      "count": 8107
+      "count": 8112
     },
     {
       "methodology": "descriptive",
@@ -299,7 +303,7 @@
     },
     {
       "methodology": "review",
-      "count": 843
+      "count": 844
     },
     {
       "methodology": "machine_learning",
@@ -369,7 +373,7 @@
     },
     {
       "theme": "methodology",
-      "count": 1011
+      "count": 1012
     },
     {
       "theme": "psychology",
@@ -405,7 +409,7 @@
     },
     {
       "theme": "player_valuation",
-      "count": 269
+      "count": 273
     },
     {
       "theme": "nutrition_recovery",
@@ -429,7 +433,7 @@
     },
     {
       "theme": "transfer_market",
-      "count": 44
+      "count": 45
     },
     {
       "theme": null,
@@ -439,7 +443,7 @@
   "dataTypeDistribution": [
     {
       "data_type": "event",
-      "count": 2903
+      "count": 2905
     },
     {
       "data_type": "physiological",
@@ -459,7 +463,7 @@
     },
     {
       "data_type": "not_specified",
-      "count": 1107
+      "count": 1110
     },
     {
       "data_type": "video",
@@ -468,6 +472,10 @@
     {
       "data_type": "text",
       "count": 466
+    },
+    {
+      "data_type": null,
+      "count": 1
     }
   ],
   "topSubThemes": [
@@ -606,12 +614,12 @@
       "count": 41
     },
     {
-      "content_type": "conference_paper",
-      "count": 18
+      "content_type": "working_paper",
+      "count": 23
     },
     {
-      "content_type": "working_paper",
-      "count": 17
+      "content_type": "conference_paper",
+      "count": 18
     },
     {
       "content_type": "thesis",
@@ -4614,5 +4622,5 @@
       "count": 3
     }
   ],
-  "exportedAt": "2026-02-19T23:26:10.805Z"
+  "exportedAt": "2026-02-20T00:07:36.449Z"
 }

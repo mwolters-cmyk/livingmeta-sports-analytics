@@ -11,17 +11,17 @@
     "url": "https://living-sports-analytics.vercel.app"
   },
   "stats": {
-    "papers_classified": 13823,
-    "papers_total_in_db": 58796,
-    "gap_analyses": 12,
+    "papers_classified": 13829,
+    "papers_total_in_db": 58802,
+    "gap_analyses": 13,
     "data_sources": 733,
     "data_sources_with_programmatic_access": 128,
     "sports_covered": 33,
-    "last_updated": "2026-02-19T23:29:06.270Z"
+    "last_updated": "2026-02-20T00:08:24.600Z"
   },
   "capabilities": [
-    "Search and filter 13,823+ classified sports analytics papers by sport, methodology, theme, keyword",
-    "Read 12 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
+    "Search and filter 13,829+ classified sports analytics papers by sport, methodology, theme, keyword",
+    "Read 13 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
     "Find 733+ data sources, tools, and libraries used in sports analytics research",
     "Access full classification taxonomy (33 sports, 13 methodologies, 17 themes)",
     "Download structured data for bulk analysis",
@@ -88,6 +88,7 @@
         "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
         "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
         "does-dismissing-a-football-head-coach-during-the-season-actually-improve-team-pe",
+        "how-are-analytical-insights-effectively-communicated-from-sports-data-analysts-t",
         "how-do-you-reliably-determine-the-market-value-of-a-football-player-and-how-does",
         "how-does-the-rise-of-sports-analytics-affect-the-fan-experience-does-having-acce",
         "how-is-machine-learning-used-for-injury-prediction-and-prevention-in-football",
@@ -323,6 +324,12 @@
       "slug": "does-dismissing-a-football-head-coach-during-the-season-actually-improve-team-pe",
       "question": "Does dismissing a football head coach during the season actually improve team performance, and what analytical methods can reliably isolate this causal effect?",
       "papers_analyzed": 449,
+      "confidence": "medium"
+    },
+    {
+      "slug": "how-are-analytical-insights-effectively-communicated-from-sports-data-analysts-t",
+      "question": "How are analytical insights effectively communicated from sports data analysts to coaches and athletes, what factors influence adoption and comprehension, and what communication strategies maximize performance impact?",
+      "papers_analyzed": 0,
       "confidence": "medium"
     },
     {
