@@ -1,21 +1,21 @@
 {
   "description": "Summary statistics for the Living Sports Analytics platform",
-  "exported_at": "2026-02-20T08:52:47.432Z",
+  "exported_at": "2026-02-20T11:13:51.336Z",
   "papers": {
-    "total": 58814,
-    "with_abstract": 51733,
-    "classified": 14325,
-    "relevant": 13841
+    "total": 58816,
+    "with_abstract": 51734,
+    "classified": 14327,
+    "relevant": 13843
   },
   "authors": {
-    "total": 174661,
+    "total": 174670,
     "with_gender": 94438
   },
   "distributions": {
     "sport": [
       {
         "sport": "multi_sport",
-        "count": 3087
+        "count": 3088
       },
       {
         "sport": "football",
@@ -35,7 +35,7 @@
       },
       {
         "sport": "tennis",
-        "count": 455
+        "count": 456
       },
       {
         "sport": "volleyball",
@@ -149,7 +149,7 @@
     "methodology": [
       {
         "methodology": "statistical",
-        "count": 8116
+        "count": 8117
       },
       {
         "methodology": "descriptive",
@@ -197,7 +197,7 @@
       },
       {
         "methodology": "network_analysis",
-        "count": 75
+        "count": 76
       },
       {
         "methodology": "NLP",
@@ -215,7 +215,7 @@
     "theme": [
       {
         "theme": "performance_analysis",
-        "count": 4499
+        "count": 4500
       },
       {
         "theme": "injury_prevention",
@@ -263,7 +263,7 @@
       },
       {
         "theme": "player_valuation",
-        "count": 273
+        "count": 274
       },
       {
         "theme": "nutrition_recovery",
@@ -297,7 +297,7 @@
     "data_type": [
       {
         "data_type": "event",
-        "count": 2914
+        "count": 2915
       },
       {
         "data_type": "physiological",
@@ -329,7 +329,7 @@
       },
       {
         "data_type": null,
-        "count": 2
+        "count": 3
       }
     ]
   },

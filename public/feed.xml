@@ -5,7 +5,7 @@
     <link>https://living-sports-analytics.vercel.app</link>
     <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Feb 2026 08:53:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Feb 2026 11:14:28 GMT</lastBuildDate>
     <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://living-sports-analytics.vercel.app/icon.png</url>
@@ -13,10 +13,32 @@
       <link>https://living-sports-analytics.vercel.app</link>
     </image>
     <item>
+      <title>Exponential growth combined with exponential decline explains lifetime performance evolution in individual and human species</title>
+      <link>https://doi.org/10.1007/s11357-011-9274-9</link>
+      <description>Mathematical model of career performance curves showing exponential growth and decline across multiple sports.</description>
+      <pubDate>Tue, 21 Jun 2011 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2088008659</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>multi_sport</category>
+      <category>performance_analysis</category>
+      <category>journal_article</category>
+    </item>
+    <item>
+      <title>Who Is the Best Player Ever? A Complex Network Analysis of the History of Professional Tennis</title>
+      <link>https://doi.org/10.1371/journal.pone.0017249</link>
+      <description>We considered all matches played by professional tennis players between 1968 and 2010, and, on the basis of this data set, constructed a directed and weighted network of contacts. The resulting graph showed complex features, typical of many real networked systems studied in literature. We developed a diffusion algorithm and applied it to the tennis contact network in order to rank professional players. Jimmy Connors was identified as the best player in the history of tennis according to our ranking procedure. We performed a complete analysis by determining the best players on specific playing surfaces as well as the best ones in each of the years covered by the data set. The results of our technique were compared to those of two other well established methods. In general, we observed that our ranking method performed better: it had a higher predictive power and did not require the arbitrary introduction of external criteria for the correct assessment of the quality of players. The present work provides novel evidence of the utility of tools and methods of network theory in real applications.</description>
+      <pubDate>Wed, 09 Feb 2011 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://openalex.org/W2165058082</guid>
+      <source url="https://living-sports-analytics.vercel.app">Living Sports Analytics</source>
+      <category>tennis</category>
+      <category>player_valuation</category>
+      <category>journal_article</category>
+    </item>
+    <item>
       <title>Notational Analysis of Corner Kicks in English Premier League Soccer</title>
       <link>https://www.taylorfrancis.com/chapters/edit/10.4324/9780203412992-38</link>
       <description>This study analysed corner kicks from English Premier League matches to identify factors contributing to corner kick success. 160 corner kicks from 20 EPL matches were analysed using a computerized notational analysis system. Results showed inswinging deliveries yielded more goals (66% of all corner kick goals) while outswinging corners generated more shot attempts (60.7%). A critical delivery area was identified between the penalty spot and the six-yard box, with near-post deliveries proving most effective for goal scoring. The study introduced the concept of the goalkeeper area of uncertainty as a framework for understanding corner kick effectiveness.</description>
-      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 11:14:28 GMT</pubDate>
       <guid isPermaLink="false">conference:ce916bce9b37dbaa</guid>
       <source url="https://living-sports-analytics.vercel.app">Science and Football V</source>
       <category>football</category>
@@ -159,7 +181,7 @@
       <title>The Economic Design of Sporting Contests</title>
       <link>https://doi.org/10.1257/002205103771800004</link>
       <description>This paper reviews the literature on commercial sport through the lens of the economic theory of contests/tournaments. It seeks to draw together research on incentives in individualistic sports such as golf and footraces with the research on uncertainty of outcome and competitive balance in team sports such as baseball and soccer. The contest framework is used to analyze issues such as the optimal distribution of prizes, the impact of revenue sharing, salary caps, draft rules, and a variety of other restraints commonly employed in sports leagues. The paper draws heavily on a comparative analysis of contest organization, in particular between North America and Europe.</description>
-      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 11:14:28 GMT</pubDate>
       <guid isPermaLink="false">preprint:2674fea161c8c93e</guid>
       <source url="https://living-sports-analytics.vercel.app">Journal of Economic Literature</source>
       <category>multi_sport</category>
@@ -170,7 +192,7 @@
       <title>Testing Causality Between Team Performance and Payroll</title>
       <link>https://doi.org/10.1177/152700250200300204</link>
       <description>The link between team payroll and competitive balance plays a central role in the theory of team sports but is seldom investigated empirically. This paper uses data on team payrolls in Major League Baseball between 1980 and 2000 to examine the link and implements Granger causality tests to establish whether the relationship runs from payroll to performance or vice versa. While there is no evidence that causality runs from payroll to performance over the entire sample period, the data shows that the cross section correlation between payroll and performance increased significantly in the 1990s. As a comparison, the paper examines the relationship between pay and performance in English soccer, and it is shown that Granger causality from higher payrolls to better performance cannot be rejected. We argue that this difference may be a consequence of the open market for player talent that obtains in soccer compared to the significant restrictions on trade that exist in Major League Baseball.</description>
-      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 11:14:28 GMT</pubDate>
       <guid isPermaLink="false">preprint:83456bed83710d33</guid>
       <source url="https://living-sports-analytics.vercel.app">Journal of Sports Economics</source>
       <category>multi_sport</category>
@@ -181,7 +203,7 @@
       <title>The English Football Industry: profit, performance and industrial structure</title>
       <link>https://doi.org/10.1080/02692179700000008</link>
       <description>The English (Association) Football League is a long established industrial cartel selling a highly popular product with only imperfect substitutes. Despite that, the majority of its member clubs lose money and the industry has faced successive financial crises over the last decade. This paper develops an empirical model of the financial performance of English League clubs using a high quality dataset of 48 clubs over the period 1974-89. The underlying model explains how rents are competed away through the maximising behaviour of club owners subject to production constraints. This model is parameterised by a system of equations which describe the behaviour of a maximising owner subject to demand and production constraints. The model is then used to examine the coordination failure which lies at the heart of the English Football League&apos;s decline and to assess the prospects for the Premier League.</description>
-      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 11:14:28 GMT</pubDate>
       <guid isPermaLink="false">preprint:9637658eafc76cf9</guid>
       <source url="https://living-sports-analytics.vercel.app">International Review of Applied Economics</source>
       <category>football</category>
@@ -192,7 +214,7 @@
       <title>Welfare Economics of “Financial Fair Play” in a Sports League With Benefactor Owners</title>
       <link>https://doi.org/10.1177/1527002512465759</link>
       <description>With European soccer leagues in mind, a novel model of club owner objectives nests standard profit (and win) maximization, but adds benefactor behavior where owners inject personal funds to increase their team’s quality. A “generosity” parameter differentiates owners; parameter value zero equates to profit maximizers, with benefactors emerging at sufficiently positive values. The model is used to investigate consequences of Union of European Football Associations’ (UEFA) “Financial Fair Play” regulations (FFP) for the league, aimed to preclude benefactor injections. Assuming (post-Bosman) a relatively large elasticity of talent supply to the league, FFP is a poor regulatory device, creating welfare losses for fans, owners, and players.</description>
-      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 11:14:28 GMT</pubDate>
       <guid isPermaLink="false">preprint:af3736279e0e62bf</guid>
       <source url="https://living-sports-analytics.vercel.app">Journal of Sports Economics</source>
       <category>football</category>
@@ -203,7 +225,7 @@
       <title>Financial fair play in European football</title>
       <link>https://doi.org/10.1111/1468-0327.12031</link>
       <description>In 2010 UEFA, the governing body of European football, announced a set of financial restraints, which clubs must observe when seeking to enter its competitions, notably the UEFA Champions League. We analyse the financial and sporting impact of these ‘Financial Fair Play’ (FFP) regulations in four major European football leagues. We first discuss the details of FFP and frame these regulations in the institutional set-up of the European football industry. We then show how the break-even constraint embedded in FFP could substantially reduce average payrolls and wage-to-turnover ratios, while strengthening the position of the traditional top teams. Since the benefits of the break-even rule to consumers remain unclear, we argue that these rent-shifting regulations might fall foul of European competition law.— Thomas Peeters and Stefan Szymanski</description>
-      <pubDate>Fri, 20 Feb 2026 08:53:22 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 11:14:28 GMT</pubDate>
       <guid isPermaLink="false">preprint:c676048ab1e79685</guid>
       <source url="https://living-sports-analytics.vercel.app">Economic Policy</source>
       <category>football</category>
@@ -538,28 +560,6 @@
       <source url="https://living-sports-analytics.vercel.app">Cuadernos de Psicología del Deporte</source>
       <category>multi_sport</category>
       <category>player_development</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Sports Injury and Illness Epidemiology: Thailand Team Surveillance During the 30th Southeast Asian Games</title>
-      <link>https://doi.org/10.5812/asjsm.116382</link>
-      <description>Prospective surveillance of 980 Thai athletes at the 30th SEA Games found 86 injuries and 21 illnesses per 1000 athletes, with lower leg injury (14%) and ligament sprains (25%) most common, identifying priorities for injury prevention in multi-sport events.</description>
-      <pubDate>Thu, 13 Jan 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4206063662</guid>
-      <source url="https://living-sports-analytics.vercel.app">Asian Journal of Sports Medicine</source>
-      <category>multi_sport</category>
-      <category>epidemiology</category>
-      <category>journal_article</category>
-    </item>
-    <item>
-      <title>Comparative Study on Biomechanics of Two Legs in the Action of Single-Leg Landing in Men’s Badminton</title>
-      <link>https://doi.org/10.32604/mcb.2022.017044</link>
-      <description>Motion capture analysis of single-leg landing in male badminton players revealed significant biomechanical differences between legs in center of gravity position, with implications for injury prevention.</description>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">https://openalex.org/W4206180290</guid>
-      <source url="https://living-sports-analytics.vercel.app">Molecular &amp; cellular biomechanics</source>
-      <category>badminton</category>
-      <category>biomechanics</category>
       <category>journal_article</category>
     </item>
   </channel>

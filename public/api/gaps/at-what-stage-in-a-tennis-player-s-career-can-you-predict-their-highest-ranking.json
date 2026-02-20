@@ -1,0 +1,302 @@
+{
+  "description": "Full gap analysis: \"At what stage in a tennis player's career can you predict their highest ranking?\"",
+  "platform": "Living Sports Analytics",
+  "url": "https://living-sports-analytics.vercel.app/gaps",
+  "exported_at": "2026-02-20T11:14:27.581Z",
+  "slug": "at-what-stage-in-a-tennis-player-s-career-can-you-predict-their-highest-ranking",
+  "question": "At what stage in a tennis player's career can you predict their highest ranking?",
+  "created_at": "",
+  "analyzed_at": "",
+  "model": "external_agent:claude-sonnet-4-6",
+  "papers_analyzed": 18,
+  "cost_usd": 0,
+  "analysis_confidence": "unknown",
+  "scope_assessment": "",
+  "database_coverage": "",
+  "confidence_explanation": "",
+  "landscape": {
+    "key_findings": [
+      {
+        "finding": "Junior performance is predictive of professional outcomes, but the prediction horizon is unquantified",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W7118024631",
+            "title": "The Predictive Validity of the ITF Juniors Tour for Professional Tennis Career Outcomes",
+            "year": 2025,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.52383/itfcoaching.v33i97.668",
+            "first_author": "Katharina Schöttl"
+          },
+          {
+            "work_id": "https://openalex.org/W4225557030",
+            "title": "Early talent identification in tennis: A retrospective study",
+            "year": 2021,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.30827/digibug.73876",
+            "first_author": "Maximilian Siener"
+          }
+        ]
+      },
+      {
+        "finding": "Early career wins and tournament prestige create a structural fingerprint of future career shape within the first 1-2 professional years",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4394961244",
+            "title": "Early career wins and tournament prestige characterize tennis players’ trajectories",
+            "year": 2024,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.1140/epjds/s13688-024-00472-3",
+            "first_author": "Chiara Zappalà"
+          }
+        ]
+      },
+      {
+        "finding": "ML models predict Top 100 membership (binary) but not peak ranking level (continuous)",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4389166474",
+            "title": "Analyzing game statistics and career trajectories of female elite junior tennis players: A machine learning approach",
+            "year": 2023,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.1371/journal.pone.0295075",
+            "first_author": "Michal Bozděch"
+          },
+          {
+            "work_id": "https://openalex.org/W4297194854",
+            "title": "How Can Machine Learning Determine Whether a Women's Tennis Player Will Make it to Top 100?",
+            "year": 2022,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.47611/jsrhs.v11i2.2847",
+            "first_author": "Saina Deshpande"
+          }
+        ]
+      },
+      {
+        "finding": "Regulatory changes (WTA Age Eligibility Rule) measurably reshape career trajectories and complicate cross-era prediction",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4223509697",
+            "title": "Differences in career longevity before and after implementation of the Women’s Tennis Association Tour Age Eligibility Rule and Player Development Programmes: a 25-year study",
+            "year": 2022,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.1136/bjsports-2021-104620",
+            "first_author": "Carol L. Otis"
+          }
+        ]
+      },
+      {
+        "finding": "Relative age effect is present in junior tennis but attenuates at elite level and is not a reliable career peak predictor",
+        "evidence_strength": "moderate",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4388666337",
+            "title": "The Relative Age Effect of Participants in the World Junior Tennis Finals in 2012–2016",
+            "year": 2023,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.47197/retos.v51.99664",
+            "first_author": "Adrián Agricola"
+          },
+          {
+            "work_id": "https://openalex.org/W2886489993",
+            "title": "Longitudinal Study of the Influence of the Relative Age Effect (RAE) on Czech Tennis Players Aged 10 - 12.",
+            "year": 2018,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.5817/sts2018-1-14",
+            "first_author": "Roman Koloničný"
+          }
+        ]
+      },
+      {
+        "finding": "Match-level ML prediction (Glicko, random forests, Grand Slam models) is more mature than career trajectory prediction",
+        "evidence_strength": "strong",
+        "papers": [
+          {
+            "work_id": "https://openalex.org/W4226177585",
+            "title": "A study of forecasting tennis matches via the Glicko model",
+            "year": 2022,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.1371/journal.pone.0266838",
+            "first_author": "Jack C. Yue"
+          },
+          {
+            "work_id": "https://openalex.org/W4410518733",
+            "title": "Comparing modern machine learning approaches and different forecast strategies on Grand Slam tennis tournaments",
+            "year": 2025,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.1177/22150218251338954",
+            "first_author": "N. Buhamra"
+          },
+          {
+            "work_id": "https://openalex.org/W3128655830",
+            "title": "Sports prediction and betting models in the machine learning age: The case of tennis",
+            "year": 2021,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3233/jsa-200463",
+            "first_author": "Sascha Wilkens"
+          },
+          {
+            "work_id": "https://openalex.org/W3181255087",
+            "title": "Random forest model identifies serve strength as a key predictor of tennis match outcome",
+            "year": 2021,
+            "sport": "tennis",
+            "doi": "https://doi.org/10.3233/jsa-200515",
+            "first_author": "Zijian Gao"
+          }
+        ]
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "gap_1",
+      "title": "The prediction horizon has never been systematically mapped — no study compares prediction accuracy ",
+      "description": "No study asks: how much does prediction accuracy improve from junior exit to professional season 1, season 2, season 3, or age 22, 24, 26? Papers study junior predictors in isolation or professional trajectories in isolation. The core question — when does prediction become reliable — is empirically unanswered.",
+      "type": "methodological",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "high",
+      "evidence": "No study asks: how much does prediction accuracy improve from junior exit to professional season 1, season 2, season 3, or age 22, 24, 26? Papers study junior predictors in isolation or professional trajectories in isolation. The core question — when does prediction become reliable — is empirically unanswered."
+    },
+    {
+      "id": "gap_2",
+      "title": "Men's tennis career prediction is essentially unstudied; ~70% of career development papers focus on ",
+      "description": "The ATP has a longer and deeper ranking history than the WTA, with more players and more data. Yet career trajectory prediction studies overwhelmingly use WTA data. Whether predictors identified for women generalise to men is unknown.",
+      "type": "population",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "high",
+      "evidence": "The ATP has a longer and deeper ranking history than the WTA, with more players and more data. Yet career trajectory prediction studies overwhelmingly use WTA data. Whether predictors identified for women generalise to men is unknown."
+    },
+    {
+      "id": "gap_3",
+      "title": "ML models predict binary success (Top 100 yes/no) rather than continuous peak ranking — the more inf",
+      "description": "Predicting whether a player ever reaches Top 100 is a coarse outcome. A regression model predicting log(peak_ranking) from early career features would be more actionable for scouts, academies, and federation resource allocation decisions.",
+      "type": "measurement",
+      "importance": "high",
+      "feasibility": "high",
+      "confidence": "high",
+      "evidence": "Predicting whether a player ever reaches Top 100 is a coarse outcome. A regression model predicting log(peak_ranking) from early career features would be more actionable for scouts, academies, and federation resource allocation decisions."
+    },
+    {
+      "id": "gap_4",
+      "title": "No taxonomy of tennis career trajectory shapes exists with early discriminating markers",
+      "description": "Players follow qualitatively different career arcs: early peakers, late bloomers, consistently-ranked journeymen, and junior phenoms who fade. No study has clustered ATP/WTA ranking trajectory time series and identified what early features distinguish these types.",
+      "type": "conceptual",
+      "importance": "medium",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "evidence": "Players follow qualitatively different career arcs: early peakers, late bloomers, consistently-ranked journeymen, and junior phenoms who fade. No study has clustered ATP/WTA ranking trajectory time series and identified what early features distinguish these types."
+    },
+    {
+      "id": "gap_5",
+      "title": "External factors (injury, coaching changes, surface specialisation) are absent from career trajector",
+      "description": "Career development papers use performance metrics and rankings. Injury history, coaching tenure changes, and surface win-rate profiles are not incorporated despite known influence on career development.",
+      "type": "contextual",
+      "importance": "medium",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "evidence": "Career development papers use performance metrics and rankings. Injury history, coaching tenure changes, and surface win-rate profiles are not incorporated despite known influence on career development."
+    },
+    {
+      "id": "gap_6",
+      "title": "Cross-era validity of predictive models is untested after major rule changes",
+      "description": "The WTA Age Eligibility Rule fundamentally changed when players enter the tour. COVID-19 disrupted the 2020 ranking system. Models trained on pre-2016 data may not generalise to current cohorts.",
+      "type": "temporal",
+      "importance": "medium",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "evidence": "The WTA Age Eligibility Rule fundamentally changed when players enter the tour. COVID-19 disrupted the 2020 ranking system. Models trained on pre-2016 data may not generalise to current cohorts."
+    },
+    {
+      "id": "gap_7",
+      "title": "No study identifies leading indicators of career peak having been passed — the asymmetric decline pr",
+      "description": "Predicting the highest ranking requires knowing both when the peak will occur and when the player has passed it. No study identifies early warning signals of terminal career decline that precede observable ranking drops.",
+      "type": "applied",
+      "importance": "medium",
+      "feasibility": "medium",
+      "confidence": "medium",
+      "evidence": "Predicting the highest ranking requires knowing both when the peak will occur and when the player has passed it. No study identifies early warning signals of terminal career decline that precede observable ranking drops."
+    }
+  ],
+  "research_agenda": [
+    {
+      "title": "The prediction horizon study: when does career peak ranking become forecastable?",
+      "description": "For each player in a cohort (e.g., all ATP/WTA players debuting 2000-2015), compute features at multiple time horizons: ITF junior exit ranking, ATP/WTA ranking after season 1, 2, 3, age 20, 22, 24. Train regression models predicting log(peak_ranking_achieved). Plot R-squared vs. time horizon to produce a prediction accuracy curve answering precisely when forecasts become reliable.",
+      "suggested_methodology": "longitudinal regression with time-indexed feature sets",
+      "suggested_data": "Jeff Sackmann tennis_atp/tennis_wta GitHub datasets (free, comprehensive ATP/WTA rankings 1968-present), ITF Junior World Rankings historical data, OpenAlex for citation network expansion",
+      "potential_impact": "Would address identified research gaps",
+      "estimated_difficulty": "hard",
+      "priority": "high"
+    },
+    {
+      "title": "Career trajectory typology: clustering ATP/WTA ranking arcs and their early markers",
+      "description": "Normalise ranking trajectories by age of professional debut. Apply clustering to identify 4-6 career shape archetypes. For each cluster, identify the earliest career-stage features that statistically distinguish it. Validate on held-out cohorts.",
+      "suggested_methodology": "time-series clustering (k-means, DTW distance) + discriminant analysis",
+      "suggested_data": "Jeff Sackmann tennis_atp/tennis_wta datasets, ATP/WTA official statistics",
+      "potential_impact": "Would address identified research gaps",
+      "estimated_difficulty": "hard",
+      "priority": "medium"
+    },
+    {
+      "title": "ATP replication: are career predictors gender-symmetric in professional tennis?",
+      "description": "Replicate the methodology of W4389166474 (ML on female junior career trajectories) on ATP data. Compare feature importance and model accuracy between genders. Test whether WTA-derived findings transfer to men.",
+      "suggested_methodology": "machine learning classification and regression (replication study)",
+      "suggested_data": "Jeff Sackmann tennis_atp dataset, ITF Junior Rankings (ATP equivalent)",
+      "potential_impact": "Would address identified research gaps",
+      "estimated_difficulty": "hard",
+      "priority": "medium"
+    }
+  ],
+  "self_reflection": {
+    "strengths": [
+      "13 directly relevant papers cover the question from multiple methodological angles (statistical, ML, network analysis, qualitative)",
+      "Temporal coverage is strong for recent work (2022-2025), capturing the most current methods",
+      "Internal snowballing added 5 additional platform papers; external snowballing identified 3 important missing papers"
+    ],
+    "limitations": [
+      "Platform underrepresents sports economics literature where career earnings and incentive studies may address career peak timing indirectly",
+      "Non-English publications (particularly Central/Eastern European tennis research and Chinese player development studies) likely absent",
+      "Binary classification ML papers are over-represented relative to continuous prediction papers, which may reflect a genuine gap or a search bias"
+    ],
+    "missing_papers_identified": [
+      {
+        "title": "Who Is the Best Player Ever? A Complex Network Analysis of the History of Professional Tennis",
+        "authors": "Radicchi F.",
+        "year": 2011,
+        "doi": "10.1371/journal.pone.0017249",
+        "citations": 160,
+        "why_relevant": "Foundational network analysis of ATP ranking history; methodological precursor to career trajectory and ranking prediction research in tennis."
+      },
+      {
+        "title": "Exponential growth combined with exponential decline explains lifetime performance evolution in individual and human species",
+        "authors": "Berthelot G. et al.",
+        "year": 2011,
+        "doi": "10.1007/s11357-011-9274-9",
+        "citations": 130,
+        "why_relevant": "Provides the mathematical framework (growth + decline curve) for modelling career arcs across sports. Directly applicable to ranking trajectory prediction."
+      },
+      {
+        "title": "When do soccer players peak? A note",
+        "authors": "Dendir S.",
+        "year": 2016,
+        "doi": "10.3233/jsa-160021",
+        "citations": 66,
+        "why_relevant": "Cross-sport benchmark: establishes methodology for peak age analysis that should be replicated in tennis."
+      }
+    ],
+    "confidence": "medium",
+    "confidence_note": "Confidence in research landscape (what has been studied): medium-high. Confidence in gap identification: medium. Cannot rule out relevant literature in sports economics journals or the substantial body of non-English player development research.",
+    "overall_confidence": "medium"
+  },
+  "paper_index": {
+    "https://openalex.org/W4389166474": {
+      "title": "Analyzing game statistics and career trajectories of female elite junior tennis players: A machine learning approach",
+      "year": 2023,
+      "first_author": "Michal Bozděch"
+    }
+  }
+}

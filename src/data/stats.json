@@ -1,9 +1,9 @@
 {
-  "totalPapers": 58814,
-  "totalAuthors": 174661,
+  "totalPapers": 58816,
+  "totalAuthors": 174670,
   "authorsWithGender": 94438,
   "genderPercentage": 54.1,
-  "papersWithAbstract": 51733,
+  "papersWithAbstract": 51734,
   "abstractPercentage": 88,
   "journalCount": 14704,
   "oldestPaper": "2009",
@@ -73,7 +73,7 @@
   "genderBreakdown": [
     {
       "gender": "unknown",
-      "count": 49452
+      "count": 49461
     },
     {
       "gender": "male",
@@ -154,14 +154,14 @@
       "count": 3882
     }
   ],
-  "totalClassified": 14325,
-  "classifiedRelevant": 13841,
+  "totalClassified": 14327,
+  "classifiedRelevant": 13843,
   "classifiedNotApplicable": 484,
   "womensSportCount": 1670,
   "sportDistribution": [
     {
       "sport": "multi_sport",
-      "count": 3087
+      "count": 3088
     },
     {
       "sport": "football",
@@ -181,7 +181,7 @@
     },
     {
       "sport": "tennis",
-      "count": 455
+      "count": 456
     },
     {
       "sport": "volleyball",
@@ -295,7 +295,7 @@
   "methodologyDistribution": [
     {
       "methodology": "statistical",
-      "count": 8116
+      "count": 8117
     },
     {
       "methodology": "descriptive",
@@ -343,7 +343,7 @@
     },
     {
       "methodology": "network_analysis",
-      "count": 75
+      "count": 76
     },
     {
       "methodology": "NLP",
@@ -361,7 +361,7 @@
   "themeDistribution": [
     {
       "theme": "performance_analysis",
-      "count": 4499
+      "count": 4500
     },
     {
       "theme": "injury_prevention",
@@ -409,7 +409,7 @@
     },
     {
       "theme": "player_valuation",
-      "count": 273
+      "count": 274
     },
     {
       "theme": "nutrition_recovery",
@@ -443,7 +443,7 @@
   "dataTypeDistribution": [
     {
       "data_type": "event",
-      "count": 2914
+      "count": 2915
     },
     {
       "data_type": "physiological",
@@ -475,7 +475,7 @@
     },
     {
       "data_type": null,
-      "count": 2
+      "count": 3
     }
   ],
   "topSubThemes": [
@@ -603,7 +603,7 @@
   "contentTypeDistribution": [
     {
       "content_type": "journal_article",
-      "count": 13421
+      "count": 13423
     },
     {
       "content_type": "blog_post",
@@ -4622,5 +4622,5 @@
       "count": 3
     }
   ],
-  "exportedAt": "2026-02-20T08:52:42.699Z"
+  "exportedAt": "2026-02-20T11:13:48.545Z"
 }

@@ -1,7 +1,7 @@
 {
   "description": "Index of all AI-generated research gap analyses on the Living Sports Analytics platform. Fetch full content at /api/gaps/<slug>.json.",
-  "exported_at": "2026-02-20T08:53:22.237Z",
-  "total": 16,
+  "exported_at": "2026-02-20T11:14:27.579Z",
+  "total": 17,
   "no_match_action": {
     "instruction": "If NONE of the analyses below match your user's topic AND you found ≥5 papers on the platform, your highest-value action right now is to BUILD a gap analysis. Do not just report this finding — act on it.",
     "say_to_user": "I found papers on your topic but no existing gap analysis covers it. I can build one for you right now following the platform's protocol — it will give you a structured overview of what's studied, what's missing, and concrete research ideas. Shall I do this?",
@@ -10,6 +10,17 @@
     "takes": "~5-10 minutes"
   },
   "analyses": [
+    {
+      "slug": "at-what-stage-in-a-tennis-player-s-career-can-you-predict-their-highest-ranking",
+      "question": "At what stage in a tennis player's career can you predict their highest ranking?",
+      "papers_analyzed": 18,
+      "confidence": "unknown",
+      "scope": "",
+      "gap_count": 7,
+      "agenda_items": 3,
+      "created_at": "",
+      "url": "/api/gaps/at-what-stage-in-a-tennis-player-s-career-can-you-predict-their-highest-ranking.json"
+    },
     {
       "slug": "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
       "question": "Can cycling race outcomes be reliably predicted, and what factors drive prediction accuracy?",

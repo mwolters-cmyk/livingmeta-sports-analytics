@@ -11,17 +11,17 @@
     "url": "https://living-sports-analytics.vercel.app"
   },
   "stats": {
-    "papers_classified": 13841,
-    "papers_total_in_db": 58814,
-    "gap_analyses": 16,
+    "papers_classified": 13843,
+    "papers_total_in_db": 58816,
+    "gap_analyses": 17,
     "data_sources": 733,
     "data_sources_with_programmatic_access": 128,
     "sports_covered": 33,
-    "last_updated": "2026-02-20T08:53:22.202Z"
+    "last_updated": "2026-02-20T11:14:27.538Z"
   },
   "capabilities": [
-    "Search and filter 13,841+ classified sports analytics papers by sport, methodology, theme, keyword",
-    "Read 16 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
+    "Search and filter 13,843+ classified sports analytics papers by sport, methodology, theme, keyword",
+    "Read 17 AI-generated research gap analyses that identify what's studied, what's missing, and what to research next",
     "Find 733+ data sources, tools, and libraries used in sports analytics research",
     "Access full classification taxonomy (33 sports, 13 methodologies, 17 themes)",
     "Download structured data for bulk analysis",
@@ -85,6 +85,7 @@
       "description": "Full gap analysis content: research landscape, identified gaps, research agenda, self-reflection",
       "size": "~5-15KB each",
       "available_slugs": [
+        "at-what-stage-in-a-tennis-player-s-career-can-you-predict-their-highest-ranking",
         "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
         "can-we-objectively-determine-who-the-best-footballer-of-the-last-decade",
         "can-wearable-sensors-and-gps-trackers-actually-prevent-injuries-or-are-we-mostly",
@@ -306,8 +307,7 @@
           "offer": "Submit it via GitHub Issues (label: new-source) with the URL. The platform indexes new sources within days."
         }
       ],
-      "github_issues_url": "https://github.com/mwolters-cmyk/living-sports-analytics-research/issues",
-      "shell_safety": "CRITICAL: When submitting gap analyses via `gh issue create`, NEVER use heredocs with $(cat ...) — they fail silently on special characters in JSON. ALWAYS use --body-file: write the full issue body (summary + JSON) to a temp file, then `gh issue create --body-file body.md`. After submission, VERIFY: `gh issue view <NUM> --json body -q '.body | length'` must be > 5000. See /api/contribute/gap-analysis-protocol.json → phase_3_submit → step 2 for the exact pattern."
+      "github_issues_url": "https://github.com/mwolters-cmyk/living-sports-analytics-research/issues"
     }
   },
   "limitations": [
@@ -319,6 +319,12 @@
     "The database focuses on English-language publications. Non-English papers may be underrepresented."
   ],
   "existing_gap_analyses": [
+    {
+      "slug": "at-what-stage-in-a-tennis-player-s-career-can-you-predict-their-highest-ranking",
+      "question": "At what stage in a tennis player's career can you predict their highest ranking?",
+      "papers_analyzed": 18,
+      "confidence": "unknown"
+    },
     {
       "slug": "can-cycling-race-outcomes-be-reliably-predicted-and-what-factors-drive-predictio",
       "question": "Can cycling race outcomes be reliably predicted, and what factors drive prediction accuracy?",

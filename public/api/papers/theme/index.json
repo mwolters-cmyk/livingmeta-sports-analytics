@@ -1,6 +1,6 @@
 {
   "description": "Per-theme paper files. Each file contains all papers for one research theme in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
-  "exported_at": "2026-02-20T08:53:22.479Z",
+  "exported_at": "2026-02-20T11:14:27.873Z",
   "fields": [
     "work_id",
     "title",
@@ -16,12 +16,12 @@
     "referenced_works_count"
   ],
   "total_themes": 20,
-  "total_papers": 13841,
+  "total_papers": 13843,
   "themes": [
     {
       "theme": "performance_analysis",
       "slug": "performance_analysis",
-      "total": 4499,
+      "total": 4500,
       "url": "/api/papers/theme/performance_analysis.json",
       "size_kb": 1367
     },
@@ -105,9 +105,9 @@
     {
       "theme": "player_valuation",
       "slug": "player_valuation",
-      "total": 273,
+      "total": 274,
       "url": "/api/papers/theme/player_valuation.json",
-      "size_kb": 76
+      "size_kb": 77
     },
     {
       "theme": "nutrition_recovery",

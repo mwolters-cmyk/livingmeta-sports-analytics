@@ -1,6 +1,6 @@
 {
   "description": "Per-sport paper files. Each file contains all papers for one sport in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
-  "exported_at": "2026-02-20T08:53:22.412Z",
+  "exported_at": "2026-02-20T11:14:27.793Z",
   "fields": [
     "work_id",
     "title",
@@ -16,14 +16,14 @@
     "referenced_works_count"
   ],
   "total_sports": 33,
-  "total_papers": 13841,
+  "total_papers": 13843,
   "sports": [
     {
       "sport": "multi_sport",
       "slug": "multi_sport",
-      "total": 3087,
+      "total": 3088,
       "url": "/api/papers/sport/multi_sport.json",
-      "size_kb": 946
+      "size_kb": 947
     },
     {
       "sport": "football",
@@ -56,7 +56,7 @@
     {
       "sport": "tennis",
       "slug": "tennis",
-      "total": 455,
+      "total": 456,
       "url": "/api/papers/sport/tennis.json",
       "size_kb": 133
     },

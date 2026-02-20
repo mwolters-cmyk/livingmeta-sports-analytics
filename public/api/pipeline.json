@@ -1,6 +1,6 @@
 {
   "description": "Machine-readable pipeline configuration for the Living Sports Analytics platform. Use this to understand how to contribute sources, what classification taxonomy is used, and how papers are processed.",
-  "exported_at": "2026-02-20T08:53:22.181Z",
+  "exported_at": "2026-02-20T11:14:27.515Z",
   "version": "1.0",
   "platform_url": "https://living-sports-analytics.vercel.app",
   "classification_taxonomy": {
