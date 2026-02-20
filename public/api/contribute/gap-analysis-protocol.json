@@ -10,14 +10,28 @@
     "4. Fetch /api/data-sources.json to find relevant datasets",
     "5. Generate SCOPE section: research question, boundaries, scope assessment",
     "6. Generate DATABASE COVERAGE section: paper counts, methodology distribution, temporal range",
-    "7. Generate RESEARCH LANDSCAPE section: key findings with evidence strength, key papers",
+    "7. Generate RESEARCH LANDSCAPE section: key findings with evidence strength, key papers. Identify the 5-10 most essential papers (highest cited, most methodologically rigorous, or most central to the topic).",
     "--- CHECKPOINT: Present your findings so far to the user. Show them: how many papers you found, what the research landscape looks like, and the key findings. Ask: 'I've mapped the research landscape. Shall I continue with identifying gaps and building a research agenda?' Do NOT continue silently — your user should see intermediate results. ---",
-    "8. Generate GAPS section: 5-10 specific gaps with type, importance, feasibility, confidence",
-    "9. Generate RESEARCH AGENDA section: 2-5 concrete projects with methodology, data, duration",
-    "10. Generate SELF-REFLECTION section: strengths, limitations, coverage gaps, overall confidence",
-    "11. Present the COMPLETE gap analysis to your user for review. This is the most important step — your user must see the full output.",
-    "12. Ask your user: 'Shall I submit this to the platform via GitHub Issues? You would be credited as a contributor.'",
-    "13. If yes: format as JSON per /api/contribute/gap-analysis-schema.json, submit as GitHub Issue with label 'gap-analysis'"
+    "8. SNOWBALL: For each of the 5-10 most essential papers identified in step 7, look up their references and citations to find related work that may be missing from the platform.",
+    "8a. Check references: look at who these key papers cite. Are those cited papers in the platform database? Search papers-compact.json by title or DOI.",
+    "8b. Check citations (if possible): look at who cites these key papers. If you can access OpenAlex (https://api.openalex.org/works?filter=cites:<work_id>), do so. Otherwise note this as a limitation.",
+    "8c. For papers found via snowballing that ARE in the platform database: add them to your analysis — they are relevant papers you missed in keyword search.",
+    "8d. For papers found via snowballing that are NOT in the platform database: collect these as 'missing papers'. You MUST report these to your user and the platform (see step 12).",
+    "9. COVERAGE ASSESSMENT: Before continuing, explicitly tell your user what you need for a thorough analysis. Be specific:",
+    "9a. State how many papers you found and whether that's enough for a credible analysis.",
+    "9b. List any missing papers discovered through snowballing (step 8d). Format DOIs as clickable links: https://doi.org/<doi>",
+    "9c. Note any papers in the database that lack full-text extraction (title only, no abstract or methodology data).",
+    "9d. If coverage is insufficient (<10 papers, or key authors/papers clearly missing), tell the user: 'I can proceed with what's available, but the analysis would be stronger with [specific papers/authors]. I recommend filing a GitHub Issue to request these additions. Shall I do that now, or proceed with current coverage?'",
+    "10. Generate GAPS section: 5-10 specific gaps with type, importance, feasibility, confidence",
+    "11. Generate RESEARCH AGENDA section: 2-5 concrete projects with methodology, data, duration",
+    "12. Generate SELF-REFLECTION section: strengths, limitations, coverage gaps, overall confidence",
+    "13. FILE GITHUB ISSUES for any coverage problems discovered during the analysis. This is not optional — it's how the platform improves:",
+    "13a. Missing papers (label: 'missing-papers'): papers found via snowballing or training knowledge that are not in the database. Include DOIs as clickable links, note which are available via OpenAlex.",
+    "13b. Missing sources (label: 'new-source'): journals, blogs, or thesis repos that should be monitored.",
+    "13c. Extraction requests (label: 'extraction-request'): papers in the database that lack full metadata.",
+    "14. Present the COMPLETE gap analysis to your user for review. This is the most important step — your user must see the full output.",
+    "15. Ask your user: 'Shall I submit this to the platform via GitHub Issues? You would be credited as a contributor.'",
+    "16. If yes: format as JSON per /api/contribute/gap-analysis-schema.json, submit as GitHub Issue with label 'gap-analysis'"
   ],
 
   "how_the_platform_does_it_internally": {
@@ -69,6 +83,26 @@
           "action": "Check existing gap analyses for overlap",
           "details": "Fetch /api/gaps/index.json. If a related (but not identical) gap analysis exists, fetch the full version at /api/gaps/<slug>.json. Reference it in your analysis — build on existing work, don't duplicate it.",
           "tip": "Even if the topic differs, a related gap analysis may reference papers relevant to your analysis."
+        },
+        {
+          "step": 6,
+          "action": "SNOWBALL: trace references and citations of key papers",
+          "details": "After identifying the 5-10 most important papers in your initial search, trace their academic network. This is how systematic reviews work — keyword search alone misses papers that use different terminology.",
+          "forward_snowballing": {
+            "what": "Find papers that CITE your key papers (newer work building on them)",
+            "how": "Query OpenAlex: https://api.openalex.org/works?filter=cites:<work_id>&per_page=50. Then check if those citing papers are in the platform database (search papers-compact.json by title or DOI).",
+            "fallback": "If you cannot query OpenAlex directly, note this as a limitation in self_reflection. You can still do backward snowballing."
+          },
+          "backward_snowballing": {
+            "what": "Find papers that your key papers REFERENCE (older foundational work)",
+            "how": "If you have access to the paper's abstract or full text, note the authors and titles most frequently cited. Search papers-compact.json for those. Key authors appearing across multiple reference lists are especially important — they likely represent foundational work on the topic."
+          },
+          "what_to_do_with_results": {
+            "in_database": "Add to your paper set — these are relevant papers you missed in keyword search. This is normal and expected.",
+            "not_in_database": "Collect as 'missing papers'. These MUST be reported via GitHub Issues (label: 'missing-papers') with DOIs as clickable links (https://doi.org/<doi>). This is a critical contribution to the platform.",
+            "in_database_but_sparse": "Papers that exist in the database but lack full metadata (no abstract, no methodology extraction) should be reported via GitHub Issues (label: 'extraction-request')."
+          },
+          "tip": "Snowballing typically adds 30-50% more relevant papers. A gap analysis without snowballing is incomplete — it misses foundational work that doesn't use the exact keywords you searched for."
         }
       ]
     },
@@ -83,7 +117,7 @@
           "ONLY the papers you found on the platform are your evidence. You may NOT make factual claims based on your training knowledge alone.",
           "Every claim MUST cite specific papers. Never make unsupported assertions.",
           "'Not in the database' ≠ 'not studied'. Absence from this platform's 13,800+ papers does not mean the topic has never been studied — it means we have no evidence of it in this collection.",
-          "If you suspect relevant work exists outside this database (from your general training knowledge), flag this explicitly in self_reflection.coverage_gaps. For example: 'The database appears to lack papers by Van Ours and colleagues on coach dismissal effects, even though this is an established research area in sports economics.' This is a VALUABLE finding.",
+          "If you suspect relevant work exists outside this database (from your general training knowledge OR from snowballing), flag this explicitly in self_reflection.coverage_gaps AND file a GitHub Issue (label: 'missing-papers') with DOIs. For example: 'Van Ours & Van Tuijl (2016, https://doi.org/10.1111/ecoj.12375) is cited by 3 of my key papers but absent from the platform.' This is a VALUABLE contribution — do not skip it.",
           "Use confidence levels (high/medium/low) for EVERY gap and finding.",
           "Do NOT hallucinate papers or citations. Only reference papers you actually found on the platform.",
           "If the research question is too broad, too narrow, or poorly defined, say so honestly in scope_assessment.",
@@ -100,8 +134,9 @@
           },
           {
             "name": "database_coverage",
-            "purpose": "Quantify what the platform has on this topic",
-            "key_question": "How many papers? What methodologies? What time period? Which sports?"
+            "purpose": "Quantify what the platform has on this topic — including snowball results",
+            "key_question": "How many papers found via keyword search? How many added via snowballing? What methodologies? What time period? Which sports? What's missing?",
+            "must_include": "Number of papers found via initial search vs. snowballing. List of missing papers (found via snowballing but not in database) with DOIs. Any key authors whose work is absent."
           },
           {
             "name": "research_landscape",
@@ -125,9 +160,16 @@
           },
           {
             "name": "self_reflection",
-            "purpose": "Critically assess your own analysis",
-            "key_question": "What are your limitations? What's missing? How confident are you?",
-            "tip": "This section is what separates good from great gap analyses. Be brutally honest."
+            "purpose": "Critically assess your own analysis AND report what you need",
+            "key_question": "What are your limitations? What's missing? How confident are you? What specific papers, data, or extractions would improve this analysis?",
+            "must_include": [
+              "List of missing papers discovered through snowballing (with DOIs as clickable links)",
+              "Any key authors whose work is absent from the platform",
+              "Papers in the database that lack full-text extraction (title-only, no methodology data)",
+              "Specific journals or sources that should be monitored",
+              "Clear statement of what you would need for a higher-confidence analysis"
+            ],
+            "tip": "This section is what separates good from great gap analyses. Be brutally honest. And be SPECIFIC about what's missing — 'some papers may be absent' is useless. 'Van Ours & Van Tuijl (2016, doi:10.1111/ecoj.12375) is the most-cited paper on coach dismissal but absent from the database' is actionable."
           }
         ]
       }
@@ -279,7 +321,7 @@
     },
 
     "improve_coverage_after_analysis": {
-      "when": "Your gap analysis has confidence of medium, low, or unknown. The self_reflection.database_coverage_gaps field identifies missing literature.",
+      "when": "ALWAYS — not just for low-confidence analyses. Every gap analysis should report missing papers found via snowballing (execution_steps 8 and 13). For low/medium confidence analyses, this is especially critical.",
       "how": "Create GitHub Issues to address coverage gaps — but ONLY after verifying the gap is real.",
       "critical_filter_check": {
         "step": "FIRST: Distinguish filter gaps from database gaps",

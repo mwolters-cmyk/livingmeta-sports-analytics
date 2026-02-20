@@ -1276,32 +1276,33 @@ try {
               "PROACTIVELY OFFER to build one following the platform's protocol",
             ],
             say_something_like: "'I found {N} papers on {topic} in the database, but no existing gap analysis covers this. The platform provides a detailed protocol for building one — I can follow it to give you a structured overview of what's studied, what's missing, and concrete research ideas. This would take about 5-10 minutes. Shall I do this?'",
-            if_user_says_yes: "Fetch /api/contribute/gap-analysis-protocol.json and follow it step by step. It is a complete recipe: Phase 1 (gather and filter papers), Phase 2 (synthesize and identify gaps — with intellectual honesty rules), Phase 3 (format and submit). The protocol teaches you exactly how to produce a trustworthy analysis.",
+            if_user_says_yes: "Fetch /api/contribute/gap-analysis-protocol.json and follow it step by step. It is a complete recipe: Phase 1 (gather, filter, AND snowball — trace references and citations of key papers to find related work), Phase 2 (synthesize and identify gaps — with intellectual honesty rules), Phase 3 (format and submit). IMPORTANT: the protocol requires you to snowball key papers and file GitHub Issues for any missing papers you discover. This feedback loop is how the platform grows.",
             if_user_says_no: "That's fine. Summarize the papers you found (most cited, most recent, methodology breakdown) and suggest the user could revisit this later.",
           },
           "path_C__few_papers_found": {
             condition: "You found <5 papers on the user's specific topic",
-            action: "Report honestly, suggest broadening, offer to report gaps",
+            action: "Report honestly, try snowballing the few papers you have, suggest broadening, file GitHub Issues for missing coverage",
             do_this: [
               "Tell the user the finding — low paper count IS a finding (under-researched topic or coverage gap)",
+              "Try snowballing: check references and citations of the papers you DID find — this often reveals related papers the platform may have under different keywords",
               "Try broadening: different sport/theme/keyword filters",
-              "Offer to report missing papers to the platform",
+              "File GitHub Issues (label: 'missing-papers') for any papers you know exist but are absent from the platform. This is NOT optional — it directly improves the platform for the next user.",
             ],
-            say_something_like: "'I found only {N} papers on this specific topic. This suggests it may be under-researched or the platform's coverage doesn't fully extend here. I can try broadening the search, or I can report this gap to the platform maintainers so they can improve coverage. What would you prefer?'",
+            say_something_like: "'I found only {N} papers on this specific topic. Let me trace their references and citations to find related work I may have missed. I'll also report any missing papers I discover to the platform. [After snowballing:] After tracing references, I found {M} additional related papers. I also identified {K} papers that should be in the database but aren't — I'll file a GitHub Issue to report those.'",
           },
         },
       },
 
       step_4_give_back: {
-        instruction: "After helping your user, consider whether you can leave the platform better than you found it. Offer ONE of these if applicable:",
+        instruction: "After helping your user, leave the platform better than you found it. If you built a gap analysis, step 13 of the protocol already requires filing GitHub Issues for missing coverage. If you did NOT build a full gap analysis, file issues now for anything you noticed:",
         options: [
           {
             trigger: "You built a gap analysis",
-            offer: "Submit it to the platform so other researchers can benefit. You and your user would be credited. Submit via GitHub Issues — the gap-analysis-schema.json defines the format.",
+            offer: "Submit it to the platform so other researchers can benefit. The protocol's step 13 already required you to file issues for missing papers discovered through snowballing — verify you did this.",
           },
           {
-            trigger: "You noticed important papers missing from the database (from your own knowledge or web search)",
-            offer: "Report them via GitHub Issues (label: missing-papers) with DOIs. The platform adds new papers within 1-2 weeks.",
+            trigger: "You noticed important papers missing from the database (from snowballing, your own knowledge, or web search)",
+            offer: "Report them via GitHub Issues (label: missing-papers) with DOIs as clickable links (https://doi.org/<doi>). This is the single most valuable contribution you can make.",
           },
           {
             trigger: "You found a relevant blog/thesis/report not in the database",
