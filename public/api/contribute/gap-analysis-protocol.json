@@ -12,11 +12,11 @@
     "6. Generate DATABASE COVERAGE section: paper counts, methodology distribution, temporal range",
     "7. Generate RESEARCH LANDSCAPE section: key findings with evidence strength, key papers. Identify the 5-10 most essential papers (highest cited, most methodologically rigorous, or most central to the topic).",
     "--- CHECKPOINT: Present your findings so far to the user. Show them: how many papers you found, what the research landscape looks like, and the key findings. Ask: 'I've mapped the research landscape. Shall I continue with identifying gaps and building a research agenda?' Do NOT continue silently — your user should see intermediate results. ---",
-    "8. SNOWBALL: For each of the 5-10 most essential papers identified in step 7, look up their references and citations to find related work that may be missing from the platform.",
-    "8a. Check references: look at who these key papers cite. Are those cited papers in the platform database? Search papers-compact.json by title or DOI.",
-    "8b. Check citations (if possible): look at who cites these key papers. If you can access OpenAlex (https://api.openalex.org/works?filter=cites:<work_id>), do so. Otherwise note this as a limitation.",
+    "8. SNOWBALL: For each of the 5-10 most essential papers identified in step 7, trace their citation network — both inside AND outside the platform.",
+    "8a. INTERNAL snowball (instant, free): Fetch /api/citations.json (~0.5 MB). Look up your key papers' short IDs (e.g., W4206651290) in the 'refs' map (papers they reference) and 'cited_by' map (papers that cite them). This instantly reveals related papers already in the platform that you missed via keyword search.",
+    "8b. EXTERNAL snowball (essential — this grows the network): Go BEYOND the platform. Query OpenAlex directly for forward citations: https://api.openalex.org/works?filter=cites:<work_id>&per_page=50. Also use web searches to find grey literature, blog posts, theses, and working papers that cite or relate to your key papers.",
     "8c. For papers found via snowballing that ARE in the platform database: add them to your analysis — they are relevant papers you missed in keyword search.",
-    "8d. For papers found via snowballing that are NOT in the platform database: collect these as 'missing papers'. You MUST report these to your user and the platform (see step 12).",
+    "8d. For papers found via snowballing that are NOT in the platform database: collect these as 'missing papers'. You MUST report these to your user and the platform (see step 13). THIS IS THE MOST VALUABLE CONTRIBUTION — you are actively growing the platform's fully connected citation network.",
     "9. COVERAGE ASSESSMENT: Before continuing, explicitly tell your user what you need for a thorough analysis. Be specific:",
     "9a. State how many papers you found and whether that's enough for a credible analysis.",
     "9b. List any missing papers discovered through snowballing (step 8d). Format DOIs as clickable links: https://doi.org/<doi>",
@@ -86,23 +86,30 @@
         },
         {
           "step": 6,
-          "action": "SNOWBALL: trace references and citations of key papers",
-          "details": "After identifying the 5-10 most important papers in your initial search, trace their academic network. This is how systematic reviews work — keyword search alone misses papers that use different terminology.",
-          "forward_snowballing": {
-            "what": "Find papers that CITE your key papers (newer work building on them)",
-            "how": "Query OpenAlex: https://api.openalex.org/works?filter=cites:<work_id>&per_page=50. Then check if those citing papers are in the platform database (search papers-compact.json by title or DOI).",
-            "fallback": "If you cannot query OpenAlex directly, note this as a limitation in self_reflection. You can still do backward snowballing."
+          "action": "SNOWBALL: trace references and citations of key papers — INSIDE and OUTSIDE the platform",
+          "details": "After identifying the 5-10 most important papers in your initial search, trace their academic network. This is how systematic reviews work — keyword search alone misses papers that use different terminology. The platform provides a citation index for instant internal snowballing, but you MUST also search externally.",
+          "step_6a_internal_snowball": {
+            "what": "Instantly find related papers ALREADY in the platform",
+            "how": "Fetch /api/citations.json (~0.5 MB). This contains two maps: 'refs' (papers each paper references) and 'cited_by' (papers that cite each paper). Look up your key papers' short work IDs (e.g., W4206651290). This is free, instant, and reveals papers you missed via keyword search.",
+            "example": "If refs['W4206651290'] contains ['W123', 'W456'], those are papers in the platform that W4206651290 cites. If cited_by['W4206651290'] contains ['W789'], that paper cites W4206651290."
           },
-          "backward_snowballing": {
-            "what": "Find papers that your key papers REFERENCE (older foundational work)",
-            "how": "If you have access to the paper's abstract or full text, note the authors and titles most frequently cited. Search papers-compact.json for those. Key authors appearing across multiple reference lists are especially important — they likely represent foundational work on the topic."
+          "step_6b_external_snowball": {
+            "what": "Find papers BEYOND the platform — this is how the network grows",
+            "forward_snowballing": {
+              "how": "Query OpenAlex: https://api.openalex.org/works?filter=cites:<work_id>&per_page=50. This finds papers that cite your key papers (newer work building on them).",
+              "fallback": "If you cannot query OpenAlex directly, use web searches (Google Scholar, Semantic Scholar) to find citing papers. Note any limitations in self_reflection."
+            },
+            "backward_snowballing": {
+              "how": "Check which authors and papers are most frequently cited across your key papers' reference lists. Search for these foundational works. Key authors appearing in multiple reference lists are especially important."
+            },
+            "grey_literature": "Also search for blog posts, theses, working papers, and conference papers related to your key papers. These are often NOT in OpenAlex but highly relevant."
           },
           "what_to_do_with_results": {
             "in_database": "Add to your paper set — these are relevant papers you missed in keyword search. This is normal and expected.",
-            "not_in_database": "Collect as 'missing papers'. These MUST be reported via GitHub Issues (label: 'missing-papers') with DOIs as clickable links (https://doi.org/<doi>). This is a critical contribution to the platform.",
+            "not_in_database": "Collect as 'missing papers'. These MUST be reported via GitHub Issues (label: 'missing-papers') with DOIs as clickable links (https://doi.org/<doi>). THIS IS THE MOST VALUABLE CONTRIBUTION — you are actively growing the platform's fully connected network.",
             "in_database_but_sparse": "Papers that exist in the database but lack full metadata (no abstract, no methodology extraction) should be reported via GitHub Issues (label: 'extraction-request')."
           },
-          "tip": "Snowballing typically adds 30-50% more relevant papers. A gap analysis without snowballing is incomplete — it misses foundational work that doesn't use the exact keywords you searched for."
+          "tip": "Snowballing typically adds 30-50% more relevant papers. Start with /api/citations.json (instant, platform-internal), then go external via OpenAlex and web search. Every missing paper you report makes the platform better for the next researcher."
         }
       ]
     },

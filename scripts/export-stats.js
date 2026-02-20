@@ -1063,7 +1063,7 @@ try {
         description:
           "Compact search index of all classified papers. Array-of-arrays format for efficiency. Use this for programmatic search.",
         size: "~2-3MB",
-        tip: "Fields are in order: work_id, title, sport, methodology, theme, pub_year, cited_by_count, first_author, doi, content_type, sub_theme. For AI summaries, use /api/classifications.json.",
+        tip: "Fields are in order: work_id, title, sport, methodology, theme, pub_year, cited_by_count, first_author, doi, content_type, sub_theme, referenced_works_count. For AI summaries, use /api/classifications.json. Papers with high referenced_works_count are prime candidates for snowballing.",
       },
       gap_analyses_index: {
         url: "/api/gaps/index.json",
@@ -1128,6 +1128,13 @@ try {
         url: "/feed.xml",
         description: "RSS feed of the 50 most recently added papers",
         size: "small",
+      },
+      citation_network: {
+        url: "/api/citations.json",
+        description:
+          "Citation network graph: two lookup maps for instant snowballing. 'refs' = papers each paper references (backward snowball). 'cited_by' = papers that cite each paper (forward snowball). Only internal edges (both papers in the platform). Short work IDs (W-prefix).",
+        size: "~0.5MB",
+        tip: "ESSENTIAL for snowballing during gap analyses. Fetch this first for instant platform-internal snowballing. Then go beyond the platform: query OpenAlex directly for external citations and file GitHub Issues for missing papers you discover.",
       },
       contribution_protocol: {
         url: "/api/contribute/gap-analysis-protocol.json",
@@ -1276,19 +1283,19 @@ try {
               "PROACTIVELY OFFER to build one following the platform's protocol",
             ],
             say_something_like: "'I found {N} papers on {topic} in the database, but no existing gap analysis covers this. The platform provides a detailed protocol for building one — I can follow it to give you a structured overview of what's studied, what's missing, and concrete research ideas. This would take about 5-10 minutes. Shall I do this?'",
-            if_user_says_yes: "Fetch /api/contribute/gap-analysis-protocol.json and follow it step by step. It is a complete recipe: Phase 1 (gather, filter, AND snowball — trace references and citations of key papers to find related work), Phase 2 (synthesize and identify gaps — with intellectual honesty rules), Phase 3 (format and submit). IMPORTANT: the protocol requires you to snowball key papers and file GitHub Issues for any missing papers you discover. This feedback loop is how the platform grows.",
+            if_user_says_yes: "Fetch /api/contribute/gap-analysis-protocol.json and follow it step by step. It is a complete recipe: Phase 1 (gather, filter, AND snowball — use /api/citations.json for instant internal snowballing, then query OpenAlex for external papers), Phase 2 (synthesize and identify gaps — with intellectual honesty rules), Phase 3 (format and submit). IMPORTANT: the protocol requires you to snowball key papers and file GitHub Issues for any missing papers you discover. Every gap analysis should grow the platform's network.",
             if_user_says_no: "That's fine. Summarize the papers you found (most cited, most recent, methodology breakdown) and suggest the user could revisit this later.",
           },
           "path_C__few_papers_found": {
             condition: "You found <5 papers on the user's specific topic",
-            action: "Report honestly, try snowballing the few papers you have, suggest broadening, file GitHub Issues for missing coverage",
+            action: "Report honestly, snowball aggressively (internal via /api/citations.json + external via OpenAlex/web), suggest broadening, file GitHub Issues for missing coverage",
             do_this: [
               "Tell the user the finding — low paper count IS a finding (under-researched topic or coverage gap)",
-              "Try snowballing: check references and citations of the papers you DID find — this often reveals related papers the platform may have under different keywords",
+              "Snowball AGGRESSIVELY: 1) Fetch /api/citations.json for instant platform-internal snowballing of the papers you found. 2) Query OpenAlex for forward/backward citations beyond the platform. 3) Web search for grey literature (blogs, theses, working papers).",
               "Try broadening: different sport/theme/keyword filters",
-              "File GitHub Issues (label: 'missing-papers') for any papers you know exist but are absent from the platform. This is NOT optional — it directly improves the platform for the next user.",
+              "File GitHub Issues (label: 'missing-papers') for any papers you know exist but are absent from the platform. This is NOT optional — it directly grows the network for the next user.",
             ],
-            say_something_like: "'I found only {N} papers on this specific topic. Let me trace their references and citations to find related work I may have missed. I'll also report any missing papers I discover to the platform. [After snowballing:] After tracing references, I found {M} additional related papers. I also identified {K} papers that should be in the database but aren't — I'll file a GitHub Issue to report those.'",
+            say_something_like: "'I found only {N} papers on this specific topic. Let me trace their references and citations — both within the platform (via the citation index) and externally via OpenAlex — to find related work. [After snowballing:] After tracing the citation network, I found {M} additional related papers in the platform and identified {K} papers that should be added. I'll file a GitHub Issue to report those.'",
           },
         },
       },
@@ -1459,6 +1466,7 @@ try {
     "doi",
     "content_type",
     "sub_theme",
+    "referenced_works_count",
   ];
 
   const compactPapers = classifiedPapers.map((p) => [
@@ -1473,6 +1481,7 @@ try {
     p.doi || "",
     p.content_type || "journal_article",
     p.sub_theme || "",
+    p.referenced_works_count || 0,
   ]);
 
   const compactOutput = {
@@ -1747,6 +1756,73 @@ function buildRssFeed(items) {
 const rssXml = buildRssFeed(recentItems);
 fs.writeFileSync(path.join(__dirname, "..", "public", "feed.xml"), rssXml);
 console.log(`Exported RSS feed: ${recentItems.length} items`);
+
+// =============================================================================
+// CITATION NETWORK — /api/citations.json
+// Two lookup maps for instant snowballing by AI agents.
+// Only internal edges (both papers classified as relevant, score >= 5).
+// =============================================================================
+try {
+  const relevantWorkIds = new Set(classifiedPapers.map((p) => p.work_id));
+
+  const citationRows = db
+    .prepare(`SELECT citing_paper_id, cited_paper_id FROM paper_citations`)
+    .all();
+
+  const refs = {}; // paper → papers it references (backward snowball)
+  const citedBy = {}; // paper → papers that cite it (forward snowball)
+  let internalEdges = 0;
+
+  for (const row of citationRows) {
+    if (
+      relevantWorkIds.has(row.citing_paper_id) &&
+      relevantWorkIds.has(row.cited_paper_id)
+    ) {
+      const shortCiting = row.citing_paper_id.replace(
+        "https://openalex.org/",
+        ""
+      );
+      const shortCited = row.cited_paper_id.replace(
+        "https://openalex.org/",
+        ""
+      );
+
+      if (!refs[shortCiting]) refs[shortCiting] = [];
+      refs[shortCiting].push(shortCited);
+
+      if (!citedBy[shortCited]) citedBy[shortCited] = [];
+      citedBy[shortCited].push(shortCiting);
+
+      internalEdges++;
+    }
+  }
+
+  const citationsData = {
+    description:
+      "Citation network for snowballing. 'refs' = papers each paper references (backward snowball: who do they cite?). 'cited_by' = papers that cite each paper (forward snowball: who cites them?). Only internal edges (both papers in platform). Short work IDs (W-prefix). For external snowballing, query OpenAlex directly: https://api.openalex.org/works?filter=cites:<work_id>",
+    generated_at: new Date().toISOString(),
+    internal_edges: internalEdges,
+    papers_with_refs: Object.keys(refs).length,
+    papers_cited: Object.keys(citedBy).length,
+    refs,
+    cited_by: citedBy,
+  };
+
+  fs.writeFileSync(
+    path.join(PUBLIC_DIR, "citations.json"),
+    JSON.stringify(citationsData)
+  );
+
+  const citSizeBytes = fs.statSync(
+    path.join(PUBLIC_DIR, "citations.json")
+  ).size;
+  const citSizeMB = (citSizeBytes / 1024 / 1024).toFixed(1);
+  console.log(
+    `Exported citations.json: ${internalEdges.toLocaleString()} internal edges, ${Object.keys(refs).length.toLocaleString()} papers with refs, ${citSizeMB}MB`
+  );
+} catch (e) {
+  console.log(`citations.json export failed: ${e.message}`);
+}
 
 console.log(`\nAll data exported to:`);
 console.log(`  Internal: ${OUTPUT_DIR}`);
