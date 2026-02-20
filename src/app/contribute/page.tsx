@@ -49,17 +49,17 @@ function PromptBlock({
 }
 
 /* ─── The prompt templates ─── */
-const gapAnalysisPrompt = `Go to https://sports-analytics.nl/api/agent.json and treat it as a workflow. My research question is: [YOUR TOPIC HERE]
+const gapAnalysisPrompt = `Go to https://living-sports-analytics.vercel.app/api/agent.json and treat it as a workflow. My research question is: [YOUR TOPIC HERE]
 
 Follow the agent_instructions step by step. Search for papers, check if a gap analysis exists, and if not, build one following the platform's protocol. Show me your findings at each step.`;
 
-const gapAnalysisPromptChatGPT = `Search the web for https://sports-analytics.nl/api/agent.json and read it carefully. Treat the agent_instructions as a step-by-step workflow to execute.
+const gapAnalysisPromptChatGPT = `Search the web for https://living-sports-analytics.vercel.app/api/agent.json and read it carefully. Treat the agent_instructions as a step-by-step workflow to execute.
 
 My research question is: [YOUR TOPIC HERE]
 
 Follow each step: search their paper database, check for existing gap analyses, and if none exists for my topic, build one following their protocol at /api/contribute/gap-analysis-protocol.json. Show me what you find at each step.`;
 
-const missingPapersPrompt = `Go to https://sports-analytics.nl/api/agent.json and treat it as a workflow. I think these papers are missing from the platform's database:
+const missingPapersPrompt = `Go to https://living-sports-analytics.vercel.app/api/agent.json and treat it as a workflow. I think these papers are missing from the platform's database:
 
 [PASTE DOIS OR TITLES HERE]
 
