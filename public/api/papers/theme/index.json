@@ -1,6 +1,6 @@
 {
   "description": "Per-theme paper files. Each file contains all papers for one research theme in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
-  "exported_at": "2026-02-20T00:08:24.980Z",
+  "exported_at": "2026-02-20T08:23:58.692Z",
   "fields": [
     "work_id",
     "title",
@@ -12,7 +12,8 @@
     "first_author",
     "doi",
     "content_type",
-    "sub_theme"
+    "sub_theme",
+    "referenced_works_count"
   ],
   "total_themes": 20,
   "total_papers": 13829,
@@ -22,77 +23,77 @@
       "slug": "performance_analysis",
       "total": 4499,
       "url": "/api/papers/theme/performance_analysis.json",
-      "size_kb": 1357
+      "size_kb": 1367
     },
     {
       "theme": "injury_prevention",
       "slug": "injury_prevention",
       "total": 1331,
       "url": "/api/papers/theme/injury_prevention.json",
-      "size_kb": 429
+      "size_kb": 432
     },
     {
       "theme": "player_development",
       "slug": "player_development",
       "total": 1237,
       "url": "/api/papers/theme/player_development.json",
-      "size_kb": 388
+      "size_kb": 391
     },
     {
       "theme": "methodology",
       "slug": "methodology",
       "total": 1012,
       "url": "/api/papers/theme/methodology.json",
-      "size_kb": 285
+      "size_kb": 287
     },
     {
       "theme": "psychology",
       "slug": "psychology",
       "total": 818,
       "url": "/api/papers/theme/psychology.json",
-      "size_kb": 245
+      "size_kb": 247
     },
     {
       "theme": "fan_engagement",
       "slug": "fan_engagement",
       "total": 771,
       "url": "/api/papers/theme/fan_engagement.json",
-      "size_kb": 226
+      "size_kb": 228
     },
     {
       "theme": "physiology",
       "slug": "physiology",
       "total": 658,
       "url": "/api/papers/theme/physiology.json",
-      "size_kb": 200
+      "size_kb": 202
     },
     {
       "theme": "biomechanics",
       "slug": "biomechanics",
       "total": 638,
       "url": "/api/papers/theme/biomechanics.json",
-      "size_kb": 189
+      "size_kb": 191
     },
     {
       "theme": "tactical_analysis",
       "slug": "tactical_analysis",
       "total": 481,
       "url": "/api/papers/theme/tactical_analysis.json",
-      "size_kb": 138
+      "size_kb": 139
     },
     {
       "theme": "coaching",
       "slug": "coaching",
       "total": 455,
       "url": "/api/papers/theme/coaching.json",
-      "size_kb": 136
+      "size_kb": 137
     },
     {
       "theme": "data_engineering",
       "slug": "data_engineering",
       "total": 380,
       "url": "/api/papers/theme/data_engineering.json",
-      "size_kb": 110
+      "size_kb": 111
     },
     {
       "theme": "bias_detection",
@@ -113,14 +114,14 @@
       "slug": "nutrition_recovery",
       "total": 222,
       "url": "/api/papers/theme/nutrition_recovery.json",
-      "size_kb": 71
+      "size_kb": 72
     },
     {
       "theme": "epidemiology",
       "slug": "epidemiology",
       "total": 212,
       "url": "/api/papers/theme/epidemiology.json",
-      "size_kb": 64
+      "size_kb": 65
     },
     {
       "theme": "gender_equity",
@@ -141,7 +142,7 @@
       "slug": "betting_markets",
       "total": 125,
       "url": "/api/papers/theme/betting_markets.json",
-      "size_kb": 34
+      "size_kb": 35
     },
     {
       "theme": "transfer_market",

@@ -926,6 +926,7 @@ try {
       contribution_protocol: "/api/contribute/gap-analysis-protocol.json",
       contribution_schema: "/api/contribute/gap-analysis-schema.json",
       contribution_example: "/api/contribute/gap-analysis-example.json",
+      citation_network: "/api/citations.json",
       feed_xml: "/feed.xml",
     },
   };
@@ -1523,7 +1524,7 @@ try {
   const compactFields = [
     "work_id", "title", "sport", "methodology", "theme",
     "pub_year", "cited_by_count", "first_author", "doi",
-    "content_type", "sub_theme",
+    "content_type", "sub_theme", "referenced_works_count",
   ];
 
   // Group papers by sport
@@ -1543,6 +1544,7 @@ try {
       p.doi || "",
       p.content_type || "journal_article",
       p.sub_theme || "",
+      p.referenced_works_count || 0,
     ]);
   }
 
@@ -1610,7 +1612,7 @@ try {
   const compactFields = [
     "work_id", "title", "sport", "methodology", "theme",
     "pub_year", "cited_by_count", "first_author", "doi",
-    "content_type", "sub_theme",
+    "content_type", "sub_theme", "referenced_works_count",
   ];
 
   // Group papers by theme
@@ -1630,6 +1632,7 @@ try {
       p.doi || "",
       p.content_type || "journal_article",
       p.sub_theme || "",
+      p.referenced_works_count || 0,
     ]);
   }
 

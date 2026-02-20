@@ -5,7 +5,7 @@
     <link>https://living-sports-analytics.vercel.app</link>
     <description>Latest sports analytics research papers, blog posts, and grey literature — curated and classified by AI</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Feb 2026 00:08:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Feb 2026 08:23:59 GMT</lastBuildDate>
     <atom:link href="https://living-sports-analytics.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://living-sports-analytics.vercel.app/icon.png</url>
@@ -27,7 +27,7 @@
       <title>The Economic Design of Sporting Contests</title>
       <link>https://doi.org/10.1257/002205103771800004</link>
       <description>This paper reviews the literature on commercial sport through the lens of the economic theory of contests/tournaments. It seeks to draw together research on incentives in individualistic sports such as golf and footraces with the research on uncertainty of outcome and competitive balance in team sports such as baseball and soccer. The contest framework is used to analyze issues such as the optimal distribution of prizes, the impact of revenue sharing, salary caps, draft rules, and a variety of other restraints commonly employed in sports leagues. The paper draws heavily on a comparative analysis of contest organization, in particular between North America and Europe.</description>
-      <pubDate>Fri, 20 Feb 2026 00:08:25 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
       <guid isPermaLink="false">preprint:2674fea161c8c93e</guid>
       <source url="https://living-sports-analytics.vercel.app">Journal of Economic Literature</source>
       <category>multi_sport</category>
@@ -38,7 +38,7 @@
       <title>Testing Causality Between Team Performance and Payroll</title>
       <link>https://doi.org/10.1177/152700250200300204</link>
       <description>The link between team payroll and competitive balance plays a central role in the theory of team sports but is seldom investigated empirically. This paper uses data on team payrolls in Major League Baseball between 1980 and 2000 to examine the link and implements Granger causality tests to establish whether the relationship runs from payroll to performance or vice versa. While there is no evidence that causality runs from payroll to performance over the entire sample period, the data shows that the cross section correlation between payroll and performance increased significantly in the 1990s. As a comparison, the paper examines the relationship between pay and performance in English soccer, and it is shown that Granger causality from higher payrolls to better performance cannot be rejected. We argue that this difference may be a consequence of the open market for player talent that obtains in soccer compared to the significant restrictions on trade that exist in Major League Baseball.</description>
-      <pubDate>Fri, 20 Feb 2026 00:08:25 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
       <guid isPermaLink="false">preprint:83456bed83710d33</guid>
       <source url="https://living-sports-analytics.vercel.app">Journal of Sports Economics</source>
       <category>multi_sport</category>
@@ -49,7 +49,7 @@
       <title>The English Football Industry: profit, performance and industrial structure</title>
       <link>https://doi.org/10.1080/02692179700000008</link>
       <description>The English (Association) Football League is a long established industrial cartel selling a highly popular product with only imperfect substitutes. Despite that, the majority of its member clubs lose money and the industry has faced successive financial crises over the last decade. This paper develops an empirical model of the financial performance of English League clubs using a high quality dataset of 48 clubs over the period 1974-89. The underlying model explains how rents are competed away through the maximising behaviour of club owners subject to production constraints. This model is parameterised by a system of equations which describe the behaviour of a maximising owner subject to demand and production constraints. The model is then used to examine the coordination failure which lies at the heart of the English Football League&apos;s decline and to assess the prospects for the Premier League.</description>
-      <pubDate>Fri, 20 Feb 2026 00:08:25 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
       <guid isPermaLink="false">preprint:9637658eafc76cf9</guid>
       <source url="https://living-sports-analytics.vercel.app">International Review of Applied Economics</source>
       <category>football</category>
@@ -60,7 +60,7 @@
       <title>Welfare Economics of “Financial Fair Play” in a Sports League With Benefactor Owners</title>
       <link>https://doi.org/10.1177/1527002512465759</link>
       <description>With European soccer leagues in mind, a novel model of club owner objectives nests standard profit (and win) maximization, but adds benefactor behavior where owners inject personal funds to increase their team’s quality. A “generosity” parameter differentiates owners; parameter value zero equates to profit maximizers, with benefactors emerging at sufficiently positive values. The model is used to investigate consequences of Union of European Football Associations’ (UEFA) “Financial Fair Play” regulations (FFP) for the league, aimed to preclude benefactor injections. Assuming (post-Bosman) a relatively large elasticity of talent supply to the league, FFP is a poor regulatory device, creating welfare losses for fans, owners, and players.</description>
-      <pubDate>Fri, 20 Feb 2026 00:08:25 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
       <guid isPermaLink="false">preprint:af3736279e0e62bf</guid>
       <source url="https://living-sports-analytics.vercel.app">Journal of Sports Economics</source>
       <category>football</category>
@@ -71,7 +71,7 @@
       <title>Financial fair play in European football</title>
       <link>https://doi.org/10.1111/1468-0327.12031</link>
       <description>In 2010 UEFA, the governing body of European football, announced a set of financial restraints, which clubs must observe when seeking to enter its competitions, notably the UEFA Champions League. We analyse the financial and sporting impact of these ‘Financial Fair Play’ (FFP) regulations in four major European football leagues. We first discuss the details of FFP and frame these regulations in the institutional set-up of the European football industry. We then show how the break-even constraint embedded in FFP could substantially reduce average payrolls and wage-to-turnover ratios, while strengthening the position of the traditional top teams. Since the benefits of the break-even rule to consumers remain unclear, we argue that these rent-shifting regulations might fall foul of European competition law.— Thomas Peeters and Stefan Szymanski</description>
-      <pubDate>Fri, 20 Feb 2026 00:08:25 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:23:59 GMT</pubDate>
       <guid isPermaLink="false">preprint:c676048ab1e79685</guid>
       <source url="https://living-sports-analytics.vercel.app">Economic Policy</source>
       <category>football</category>

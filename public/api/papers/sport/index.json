@@ -1,6 +1,6 @@
 {
   "description": "Per-sport paper files. Each file contains all papers for one sport in compact array-of-arrays format. Designed for AI agents — each file is small enough for WebFetch.",
-  "exported_at": "2026-02-20T00:08:24.862Z",
+  "exported_at": "2026-02-20T08:23:58.613Z",
   "fields": [
     "work_id",
     "title",
@@ -12,7 +12,8 @@
     "first_author",
     "doi",
     "content_type",
-    "sub_theme"
+    "sub_theme",
+    "referenced_works_count"
   ],
   "total_sports": 33,
   "total_papers": 13829,
@@ -22,49 +23,49 @@
       "slug": "multi_sport",
       "total": 3087,
       "url": "/api/papers/sport/multi_sport.json",
-      "size_kb": 939
+      "size_kb": 946
     },
     {
       "sport": "football",
       "slug": "football",
       "total": 3027,
       "url": "/api/papers/sport/football.json",
-      "size_kb": 892
+      "size_kb": 899
     },
     {
       "sport": "other",
       "slug": "other",
       "total": 1265,
       "url": "/api/papers/sport/other.json",
-      "size_kb": 381
+      "size_kb": 384
     },
     {
       "sport": "athletics",
       "slug": "athletics",
       "total": 979,
       "url": "/api/papers/sport/athletics.json",
-      "size_kb": 302
+      "size_kb": 305
     },
     {
       "sport": "basketball",
       "slug": "basketball",
       "total": 915,
       "url": "/api/papers/sport/basketball.json",
-      "size_kb": 273
+      "size_kb": 275
     },
     {
       "sport": "tennis",
       "slug": "tennis",
       "total": 455,
       "url": "/api/papers/sport/tennis.json",
-      "size_kb": 132
+      "size_kb": 133
     },
     {
       "sport": "volleyball",
       "slug": "volleyball",
       "total": 356,
       "url": "/api/papers/sport/volleyball.json",
-      "size_kb": 113
+      "size_kb": 114
     },
     {
       "sport": "american_football",
@@ -85,42 +86,42 @@
       "slug": "cycling",
       "total": 328,
       "url": "/api/papers/sport/cycling.json",
-      "size_kb": 101
+      "size_kb": 102
     },
     {
       "sport": "rugby",
       "slug": "rugby",
       "total": 306,
       "url": "/api/papers/sport/rugby.json",
-      "size_kb": 95
+      "size_kb": 96
     },
     {
       "sport": "boxing_mma",
       "slug": "boxing_mma",
       "total": 296,
       "url": "/api/papers/sport/boxing_mma.json",
-      "size_kb": 91
+      "size_kb": 92
     },
     {
       "sport": "swimming",
       "slug": "swimming",
       "total": 230,
       "url": "/api/papers/sport/swimming.json",
-      "size_kb": 70
+      "size_kb": 71
     },
     {
       "sport": "skiing",
       "slug": "skiing",
       "total": 215,
       "url": "/api/papers/sport/skiing.json",
-      "size_kb": 65
+      "size_kb": 66
     },
     {
       "sport": "handball",
       "slug": "handball",
       "total": 208,
       "url": "/api/papers/sport/handball.json",
-      "size_kb": 65
+      "size_kb": 66
     },
     {
       "sport": "esports",
@@ -134,7 +135,7 @@
       "slug": "ice_hockey",
       "total": 178,
       "url": "/api/papers/sport/ice_hockey.json",
-      "size_kb": 52
+      "size_kb": 53
     },
     {
       "sport": "cricket",
@@ -155,7 +156,7 @@
       "slug": "badminton",
       "total": 133,
       "url": "/api/papers/sport/badminton.json",
-      "size_kb": 41
+      "size_kb": 42
     },
     {
       "sport": "futsal",
@@ -169,7 +170,7 @@
       "slug": "rowing",
       "total": 115,
       "url": "/api/papers/sport/rowing.json",
-      "size_kb": 35
+      "size_kb": 36
     },
     {
       "sport": "golf",
